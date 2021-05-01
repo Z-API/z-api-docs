@@ -9,7 +9,23 @@
 
 module.exports = {
   tutorialSidebar: {
-    'Quick Start': ['doc1', 'introduction', 'doc3'],
-    Features: ['mdx'],
+    'Quick Start': [
+      'exemplos',
+      'quickstart/introduction',
+      'quickstart/authentication',
+    ],
+    Instância: [
+      'instance/introduction',
+      'instance/qrcode',
+      'instance/qrcode-base64',
+      'instance/restart',
+      'instance/restore-session',
+      'instance/disconnect',
+      'instance/status',
+    ],
+    'Enviar mensagem': [
+      'send-message/send-message-text',
+      'send-message/send-message-image',
+    ],
   },
 };

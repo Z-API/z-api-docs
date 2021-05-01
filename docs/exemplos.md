@@ -1,7 +1,6 @@
 ---
-id: doc1
+id: exemplos
 title: Style Guide
-sidebar_label: Style Guide
 slug: /
 ---
 

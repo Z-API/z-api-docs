@@ -20,7 +20,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://www.z-api.io/wp-content/themes/z-api/favicon.png',
-  organizationName: 'fourpixelit',
+  organizationName: 'Z-API',
   projectName: 'z-api-docs',
   themeConfig: {
     navbar: {
