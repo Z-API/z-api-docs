@@ -17,9 +17,8 @@ module.exports = {
     Instância: [
       'instance/introduction',
       'instance/qrcode',
-      'instance/qrcode-base64',
-      'instance/restart',
       'instance/restore-session',
+      'instance/restart',
       'instance/disconnect',
       'instance/status',
     ],

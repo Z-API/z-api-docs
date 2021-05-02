@@ -1,6 +1,10 @@
 ---
 id: disconnect
-title: Desconectar instância
+title: Desconectar
 ---
 
-oi
+### Desconectando do **Z-API**
+
+Este metodo desconecta seu número do Z-API.
+
+Mas não se preocupe, para conectar novamente bastar ler o QRCode :)
