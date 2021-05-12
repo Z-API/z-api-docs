@@ -5,27 +5,29 @@ title: Pegar QRCode
 
 ### Introdução
 
-Sim ! Assim como no Whatsapp Web você vai precisar ler um Qrcode para conectar-se ao Z-API.
+Sim ! Como no Whatsapp Web você vai precisar ler um QRCode para conectar-se ao Z-API.
 
-Existem 2 formas que você pode utilizar para realizar esta leitura, a primeira delas você pode conectar-se através do nosso painel admin e na outra você pode disponibilizar a experiência dentro da sua propria aplicação.
+Existem 2 formas que você pode utilizar para realizar esta leitura que são: - Se conectar através do nosso painel admin - Disponibilizar a experiência dentro da sua própria aplicação através dos metodos desta sessão.
 
-Para quem optar por implementar dentro da sua aplicação temos 2 metodos disponveis para que você consiga pegar o QRCode.
+Você pode optar por um dos 2 métodos disponíveis para pegar o QRCode do Whatsapp conforme exemplo abaixo.
 
 ### Pegando QRCode - bytes
 
-Este metodo retorna os bytes do QRCode para que você possa renderizar em um componente do tipo QRCode compativel com sua linguagem de programação.
+Este método retorna os bytes do QRCode para que você possa renderizar em um componente do tipo QRCode compatível com sua linguagem de programação.
 
 ### Pegando QRCode - Imagem
 
-Este metodo retorna uma imagem do tipo base64 para que você possa renderizar em um compoente do tipo Imagem compativel com sua linguagem e programação.
+Este método retorna uma imagem do tipo base64 para que você possa renderizar em um compoente do tipo Imagem compativel com sua linguagem e programação.
 
 :::note
 
-Se você optou por implementar a leitura do QRCode em sua aplicação você precisa saber que o Whatsapp invalida o QRCode a cada 20 segundos.
+Se você optou por implementar a leitura do QRCode em sua aplicação, você precisa saber que o Whatsapp invalida o QRCode a cada 20 segundos.
 
-Caso você chame o metodo e já esteja conectado o retorno será de que você ja esta conectado.
+Caso você chame o metodo e já esteja conectado o retorno será de que você já esta conectado.
+
+Uma vez conectado você ja pode começar a utilizar os metodos Z-API para manipular seu WhatsApp.
 
 **Recomendações:**
 
-- Crie um metodo randon com intervalos entre 10 e 20 segundos para chamar a API para pegar o novo QRCode.
-- Caso o usuário não leia o QRCode após 3 chamadas interrompa o fluxo e adicione um botão solicitação a interação do usuário novamente afim de evitar a chama excessiva desnecessário a API do whatsapp.
+- Crie um metodo randon com intervalos entre 10 e 20 segundos para chamar a API e pegar o novo QRCode.
+- Caso o usuário não leia o QRCode após 3 chamadas interrompa o fluxo e adicione um botão solicitando a interação do usuário (EX: Tentar novamente) afim de evitar a chamadas excessiva desnecessárias a API do Whatsapp.
