@@ -23,8 +23,16 @@ module.exports = {
       'instance/status',
     ],
     'Enviar mensagem': [
+      'send-message/introduction',
       'send-message/send-message-text',
       'send-message/send-message-image',
+      'send-message/send-message-audio',
+      'send-message/send-message-video',
+      'send-message/send-message-document',
+      'send-message/send-message-link',
+      'send-message/send-message-location',
+      'send-message/send-message-product',
+      'send-message/send-message-catalog',
     ],
   },
 };
