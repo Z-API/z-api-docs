@@ -13,7 +13,7 @@ title: Enviar texto simples
 
 ## Conceituação
 
-Como proprio nome do método já diz "enviar texto", utilizamos ele para enviar mensagens, é um metodo bem simples mas você pode incremetar e deixar ele mais "charmozinho" utilizando formataçao e emojis, se você ainda não sabe como formatar textos clique nos links abaixo e siga as instruções:
+Como proprio nome do método já diz "enviar texto" é utilizado para enviar mensagens, é um metodo bem simples mas você pode incremetar e deixar ele mais "charmozinho" utilizando formataçao e emojis, se você ainda não sabe como formatar textos clique nos links abaixo e siga as instruções:
 
 - Como [formatar fontes] no Whatsapp
 
@@ -42,3 +42,7 @@ Para fazer o teste basta copiar um emoji e colar em seu texto, você pode usar e
 ---
 
 ## Code
+
+---
+
+## Atributos
