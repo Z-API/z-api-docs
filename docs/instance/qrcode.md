@@ -3,17 +3,27 @@ id: qrcode
 title: Pegar QRCode
 ---
 
-### Método
+## Método
 
 #### /qr-code
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/qr-code
 
+Pegando QRCode - bytes
+
+Este método retorna os bytes do QRCode para que você possa renderizar em um componente do tipo QRCode compatível com sua linguagem de programação.
+
 #### /qr-code/image
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/qr-code/image
 
-### Conceituação
+Pegando QRCode - Imagem
+
+Este método retorna uma imagem do tipo base64 para que você possa renderizar em um compoente do tipo Imagem compativel com sua linguagem e programação.
+
+---
+
+## Conceituação
 
 Sim ! Como no Whatsapp Web você vai precisar ler um QRCode para conectar-se ao Z-API.
 
@@ -21,15 +31,19 @@ Existem 2 formas que você pode utilizar para realizar esta leitura que são: - 
 
 Você pode optar por um dos 2 métodos disponíveis para pegar o QRCode do Whatsapp conforme exemplo abaixo.
 
-#### Pegando QRCode - bytes
+---
 
-Este método retorna os bytes do QRCode para que você possa renderizar em um componente do tipo QRCode compatível com sua linguagem de programação.
+## Atributos
 
-#### Pegando QRCode - Imagem
+| Atributos     | Tipo | Descrição |
+| :------------ | :--: | :-------- |
+| Sem Atributos |      |           |
 
-Este método retorna uma imagem do tipo base64 para que você possa renderizar em um compoente do tipo Imagem compativel com sua linguagem e programação.
+---
 
-### Code
+## Code
+
+---
 
 :::note
 

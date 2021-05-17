@@ -13,8 +13,12 @@ module.exports = {
       'exemplos',
       'quickstart/introduction',
       'quickstart/authentication',
+      'quickstart/webhook',
     ],
-    Instância: [
+    'Boas Práticas': [
+      'bestpractices/blockednumber',
+      ],
+     Instância: [
       'instance/introduction',
       'instance/qrcode',
       'instance/restore-session',

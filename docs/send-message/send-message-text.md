@@ -9,17 +9,36 @@ title: Enviar texto simples
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text
 
-### Conceituação
+---
 
-### Atributos
+## Conceituação
+
+Como proprio nome do método já diz "enviar texto", utilizamos ele para enviar mensagens, é um metodo bem simples mas você pode incremetar e deixar ele mais "charmozinho" utilizando formataçao e emojis, se você ainda não sabe como formatar textos clique nos links abaixo e siga as instruções:
+
+- Como [formatar fontes] no Whatsapp
+
+- Onde [copiar emojis]
+
+[formatar fontes]: https://faq.whatsapp.com/general/chats/how-to-format-your-messages/?lang=pt_br
+[copiar emojis]: https://getemoji.com/
+
+:::tip Sobre emojis
+
+O que você precisa saber é que ele é um caracter ASCII normal assim com existe a fonte Times New Roman por exemplo, existem fontes de emojis, pense que você pode criar sua própria galeria de emojis.
+
+Para fazer o teste basta copiar um emoji e colar em seu texto, você pode usar este aqui 🤪 se quizer :)
+
+:::
+
+---
+
+## Atributos
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatario no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números sem máscara |
+| phone | string | Telefone do destinatario no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números sem formataçao ou máscara |
 | message | string | Texto a ser enviado |
 
-\*\* Você pode enviar emojis 🤪 eles são caracteres, então pode copiar criar sua propria paleta ou utilizar no meio do seu código colando o caracter do emoji
+---
 
 ## Code
-
-<iframe src="//api.apiembed.com/?source=https://rawcdn.githack.com/Z-API/z-api-docs/15e8d4dc8e2ad7a112d534cc731a1c6961f1be7a/json-examples/instance-status.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

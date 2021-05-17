@@ -3,13 +3,15 @@ id: status
 title: Status da instância
 ---
 
-### Método
+## Método
 
 #### /Status
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/status
 
-### Conceituação
+---
+
+## Conceituação
 
 Este método é responsavel por lhe passar informações sobre a saúde da sua instância no Z-API, para uma boa qualidade de envio e recebimento é preciso tomar os seguinte cuidados:
 
@@ -19,7 +21,9 @@ Este método é responsavel por lhe passar informações sobre a saúde da sua i
 
 - Monitore os atributos deste método.
 
-### Atributos
+---
+
+## Atributos
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
@@ -27,6 +31,8 @@ Este método é responsavel por lhe passar informações sobre a saúde da sua i
 | session | boolean | Indica se sua instância tem um token ativo no WhatsApp |
 | error | string | Informa detalhes caso algum dos atributos não esteja true - 'You are already connected.' - 'You need to restore the session.' - 'You are not connected.' |
 | smartphoneConnected | boolean | Indica se o celular esta conectado a internet |
+
+---
 
 ## Code
 
