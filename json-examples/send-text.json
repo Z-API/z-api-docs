@@ -7,11 +7,15 @@
         {
             "name": "Accept",
             "value": "application/json"
+        },
+        {
+            "name": "Content-Type",
+            "value": "application/json"
         }
     ],
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{phone: '5511999998888', message: 'Welcome *Z-API*'}"
+        "text": "{\"phone\": \"5511999998888\", \"message\": \"Welcome *Z-API*\"}"
     }
 }
