@@ -11,7 +11,7 @@
     ],
     "cookies": [],
     "postData": {
-        "phone": "5544999999999",
-        "message": "Welcome to *Z-API*"
+        "mimeType": "application/json",
+        "text": "{phone: '5511999998888', message: 'Welcome *Z-API*'}"
     }
 }
