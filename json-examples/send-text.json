@@ -5,10 +5,6 @@
     "queryString": [],
     "headers": [
         {
-            "name": "Accept",
-            "value": "application/json"
-        },
-        {
             "name": "Content-Type",
             "value": "application/json"
         }
