@@ -13,7 +13,7 @@ title: Restaurar sessão
 
 ## Conceituação
 
-Este método tenta restaurar a sua conexão com Whatsapp com base na informações salvas na sessão do Z-API, esta funcionalidade é indicada para casos onde o webhook de desconexão é enviado. Caso você recebe um webhook de desconexão pode tentar reestabelecer/recuperar a conexão utilizando este método.
+Este método tenta restaurar a sua conexão com Whatsapp com base nas informações salvas na sessão do Z-API. Esta funcionalidade é indicada para casos onde o webhook de desconexão é enviado. Caso você receba um webhook de desconexão pode tentar reestabelecer a conexão utilizando este método.
 
 ---
 

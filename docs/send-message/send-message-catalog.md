@@ -1,6 +1,6 @@
 ---
 id: send-message-catalog
-title: Enviar catalogo
+title: Enviar catálogo
 ---
 
 oi

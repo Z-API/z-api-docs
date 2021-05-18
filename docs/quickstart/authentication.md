@@ -11,10 +11,10 @@ Não é difícil imaginar que para comunicação entre API’s vamos precisar es
 
 ## Como consigo meu id e token ?
 
-Logo após você criar sua conta no Z-API você vai precisar criar uma instância (abaixo vou contextualizar melhor o termo instância) e esta possui um ID para identificá-la e um token, estas 2 informações juntas serão responsáveis para garantir a segurança da comunicação entre sua aplicação e a nossa. Para visualizar o ID da sua instância e o token basta acessar a instância e clicar em editar, lá você encontra todos os dados referente a instância. Lembrando que você pode ter várias instâncias, mas cada uma delas tem seu próprio ID e token.
+Logo após você criar sua conta no Z-API você vai precisar criar uma instância e esta possui um ID e um token para identificá-la. Estas 2 informações juntas serão responsáveis em garantir a segurança da comunicação entre sua aplicação e a nossa. Para visualizar o ID e o token da sua instância basta acessar a instância no painel de administrador e clicar em editar, lá você encontra todos os dados referente a instância. Lembrando que você pode ter várias instâncias, mas cada uma delas tem seu próprio ID e token.
 
 ---
 
 :::important
 
-Nunca compartilhe o seu id e token com ninguém.
+Nunca compartilhe o seu ID e token com ninguém.

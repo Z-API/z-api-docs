@@ -13,7 +13,7 @@ title: Status da instância
 
 ## Conceituação
 
-Este método é responsavel por lhe passar informações sobre a saúde da sua instância no Z-API, para uma boa qualidade de envio e recebimento é preciso tomar os seguinte cuidados:
+Este método é responsável por lhe passar informações sobre a saúde da sua instância no Z-API, para uma boa qualidade de envio e recebimento é preciso tomar os seguinte cuidados:
 
 - Configure os webhooks no Z-API para receber notificações sobre mudanças no status da sua instância.
 
@@ -27,10 +27,10 @@ Este método é responsavel por lhe passar informações sobre a saúde da sua i
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| connected | boolean | Indica se seu numero esta conectado ao Z-API |
+| connected | boolean | Indica se seu número está conectado ao Z-API |
 | session | boolean | Indica se sua instância tem um token ativo no WhatsApp |
 | error | string | Informa detalhes caso algum dos atributos não esteja true - 'You are already connected.' - 'You need to restore the session.' - 'You are not connected.' |
-| smartphoneConnected | boolean | Indica se o celular esta conectado a internet |
+| smartphoneConnected | boolean | Indica se o celular está conectado à internet |
 
 ---
 

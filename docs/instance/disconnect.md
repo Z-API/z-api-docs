@@ -13,7 +13,7 @@ title: Desconectar
 
 ## Conceituação
 
-Este metodo desconecta seu número do Z-API.
+Este método desconecta seu número do Z-API.
 
 Mas não se preocupe, para conectar novamente bastar ler o QRCode :)
 
@@ -25,6 +25,6 @@ Mas não se preocupe, para conectar novamente bastar ler o QRCode :)
 
 :::important Não se esqueça !
 
-Uma vez desconectado todos os metodos da API ficam indisponvieis e os webhooks deixam de ser enviados.
+Uma vez desconectado todos os metodos da API ficam indisponíveis e os webhooks deixam de ser enviados.
 
 :::
