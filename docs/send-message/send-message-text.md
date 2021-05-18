@@ -13,6 +13,10 @@ title: Enviar texto simples
 
 Neste método você poderá enviar textos simples mas, você pode incrementá-los utilizando a formatação de texto e emojis, por exemplo. Caso você ainda não saiba como fazer isso, clique nos links abaixo e siga as instruções:
 
+- Como [formatar fontes] no Whatsapp
+
+- Onde [copiar emojis]
+
 [formatar textos no whatsapp]: https://faq.whatsapp.com/general/chats/how-to-format-your-messages/?lang=pt_br
 [copiar emojis]: https://fsymbols.com/pt/emoji/
 
@@ -36,3 +40,7 @@ Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utiliz
 ---
 
 ## Code
+
+---
+
+## Atributos
