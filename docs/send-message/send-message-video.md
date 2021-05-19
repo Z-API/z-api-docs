@@ -26,4 +26,4 @@ title: Enviar video
 
 ---
 
-## Atributos
+## Response

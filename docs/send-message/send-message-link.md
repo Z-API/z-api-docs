@@ -26,4 +26,4 @@ title: Enviar link
 
 ---
 
-## Atributos
+## Response
