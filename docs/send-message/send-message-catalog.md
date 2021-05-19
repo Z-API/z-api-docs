@@ -26,4 +26,4 @@ title: Enviar catálogo
 
 ---
 
-## Atributos
+## Response

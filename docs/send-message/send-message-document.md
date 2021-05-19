@@ -26,4 +26,4 @@ title: Enviar documento
 
 ---
 
-## Atributos
+## Response

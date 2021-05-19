@@ -38,5 +38,36 @@ module.exports = {
       'send-message/send-message-product',
       'send-message/send-message-catalog',
     ],
+    'Contatos': [
+      'contacts/introduction',
+      'contacts/get-contacts',
+      'contacts/get-metadata-contact',
+      'contacts/get-profile-picture',
+    ],
+    'Chats': [
+      'chats/introduction',
+      'chats/get-chats',
+     /* 'chats/get-metadata-chat',
+      'chats/get-message-chat',*/
+    ],
+    'Grupos': [
+      'group/introduction',
+      'group/create-group',
+     /* 'group/update-group-name',
+      'group/add-admin',
+      'group/remove-admin',
+      'group/add-participant',
+      'group/remove-participant',
+      'group/leave-group',
+      'group/group-metadata/{phone}',*/
+    ],
+    'Status': [
+      'status/introduction',
+      'status/send-text-status',
+      /*
+      'status/send-image-status',
+
+      */
+    ],
   },
 };

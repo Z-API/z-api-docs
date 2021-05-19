@@ -26,4 +26,4 @@ title: Enviar áudio
 
 ---
 
-## Atributos
+## Response

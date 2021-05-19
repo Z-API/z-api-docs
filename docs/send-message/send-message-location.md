@@ -26,4 +26,4 @@ title: Enviar localização
 
 ---
 
-## Atributos
+## Response

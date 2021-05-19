@@ -1,17 +1,17 @@
 ---
-id: send-message-image
-title: Enviar imagem
+id: get-contacts
+title: Pegar contatos
 ---
 
 ## Método
 
-#### /send-image
+#### /send-audio
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-image
-
-## Conceituação
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/
 
 ---
+
+## Conceituação
 
 ## Atributos
 
