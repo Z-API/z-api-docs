@@ -39,9 +39,9 @@ Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utiliz
 
 ### Opcionais
 
-| Atributos |  Tipo  | Descrição |
-| :-------- | :----: | :-------- |
-| customID  | string |           |
+| Atributos | Tipo | Descrição |
+| :-------- | :--: | :-------- |
+|           |      |           |
 
 ---
 
@@ -63,17 +63,13 @@ Exemplo
 }
 ```
 
----
-
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
 
----
-
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maiO,ria "application/json"
+Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
 
 ---
 
