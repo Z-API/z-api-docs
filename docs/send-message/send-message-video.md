@@ -1,13 +1,13 @@
 ---
 id: send-message-video
-title: Enviar áudio
+title: Enviar video
 ---
 
 ## Método
 
 #### /send-audio
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-audio
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-video
 
 ---
 
@@ -15,9 +15,9 @@ title: Enviar áudio
 
 Método responsavel por enviar audios para os seus chats, você pode trabalhar com as audios de 2 formas que são:
 
-Por Link, onde você temum audio hospedado em algum lugar da internet e envia apenas o link da mesma.
+Por Link, onde você temum video hospedado em algum lugar da internet e envia apenas o link da mesmo.
 
-Por Base64, se você optar por esta opção precisará ter em sua aplicação um método para converter o audio em Base64.
+Por Base64, se você optar por esta opção precisará ter em sua aplicação um método para converter o video em Base64.
 
 ---
 
@@ -28,7 +28,7 @@ Por Base64, se você optar por esta opção precisará ter em sua aplicação um
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| audio | string | Link do audio ou seu Base64 |
+| video | string | Link do video ou seu Base64 |
 
 ### Opcionais
 
@@ -68,4 +68,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ## Code
 
----
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-video.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
