@@ -69,5 +69,13 @@ module.exports = {
 
       */
     ],
+    'Fila': [
+      'status/introduction',
+      'status/send-text-status',
+      /*
+      'status/send-image-status',
+
+      */
+    ],
   },
 };

@@ -7,7 +7,7 @@ title: Enviar texto simples
 
 #### /send-text
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text
 
 ## Conceituação
 
@@ -20,7 +20,7 @@ Neste método você poderá enviar textos simples mas, você pode incrementá-lo
 [formatar textos no whatsapp]: https://faq.whatsapp.com/general/chats/how-to-format-your-messages/?lang=pt_br
 [copiar emojis]: https://fsymbols.com/pt/emoji/
 
-:::tip Sobre emojis
+#### Sobre emojis
 
 > Sobre emojis o que você precisa saber é que ele é um caracter ASCII normal assim com existe a fonte Times New Roman por exemplo, existem fontes de emojis, pense que você pode criar sua própria >galeria de emojis.
 
@@ -58,14 +58,22 @@ Exemplo
 
 ```json
 {
-  "zaapId": "3999984263738042930CD6ECDE9DF533",
-  "messageId": "D241F829732339502B68"
+  "zaapId": "3999984263738042930CD6ECDE9VDWSA",
+  "messageId": "D241XXXX732339502B68"
 }
 ```
 
+---
+
+### 405
+
+Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+
+---
+
 ### 415
 
-### 404
+Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maiO,ria "application/json"
 
 ---
 
