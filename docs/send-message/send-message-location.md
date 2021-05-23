@@ -5,25 +5,80 @@ title: Enviar localização
 
 ## Método
 
-#### /
+#### /send-location
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-location
 
 ---
 
 ## Conceituação
 
+Com este método você pode enviar uma localização aos seus contatos.
+
+---
+
 ## Atributos
+
+### Obrigatórios
+
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| title | string | Titulo para sua localização ex: Minha casa |
+| address | string | Endereço da localização que esta enviando, composto por logradouro, numero, bairro, cidade, UF e CEP, tudo separado por virgula |
+| latitude | string | Latitude da localização enviada |
+| longitude | string | Longitude da localização enviada |
+
+### Opcionais
 
 | Atributos | Tipo | Descrição |
 | :-------- | :--: | :-------- |
 |           |      |           |
-|           |      |           |
+
+---
+
+## Request Body
+
+```json
+{
+  "phone": "5511999998888",
+  "title": "Google Brasil",
+  "address": "Av. Brg. Faria Lima, 3477 - Itaim Bibi, São Paulo - SP, 04538-133",
+  "latitude": "-23.0696347",
+  "longitude": "-50.4357913"
+}
+```
+
+---
+
+## Response
+
+### 200
+
+| Atributos | Tipo   | Descrição      |
+| :-------- | :----- | :------------- |
+| zaapId    | string | id no z-api    |
+| messageId | string | id no whatsapp |
+
+Exemplo
+
+```json
+{
+  "zaapId": "3999984263738042930CD6ECDE9VDWSA",
+  "messageId": "D241XXXX732339502B68"
+}
+```
+
+### 405
+
+Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+
+### 415
+
+Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
 
 ---
 
 ## Code
 
----
-
-## Response
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-location.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

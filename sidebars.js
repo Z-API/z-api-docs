@@ -77,8 +77,8 @@ module.exports = {
       */
     ],
     Webhooks: [
-      'webhooks/introduction',
-      /*
+      /* 'webhooks/introduction',
+     
       'status/send-image-status',
 
       */
