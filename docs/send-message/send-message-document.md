@@ -17,7 +17,7 @@ title: Enviar documentos
 
 ## Conceituação
 
-Simples e objetivo este método permite você enviar arquivos para seus contatos.
+Método responsavel por enviar documentos aos seus contatos ele é simples e objetivo.
 
 ---
 

@@ -33,8 +33,8 @@ module.exports = {
       'send-message/send-message-document',
       'send-message/send-message-link',
       'send-message/send-message-location',
-      'send-message/send-message-product',
-      'send-message/send-message-catalog',
+      /* 'send-message/send-message-product',
+      'send-message/send-message-catalog',*/
       'send-message/send-message-contact',
     ],
     Contatos: [

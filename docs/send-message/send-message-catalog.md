@@ -7,7 +7,7 @@ title: Enviar catálogo
 
 #### /
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/
 
 ---
 

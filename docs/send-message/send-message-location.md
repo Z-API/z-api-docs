@@ -13,7 +13,7 @@ title: Enviar localização
 
 ## Conceituação
 
-Com este método você pode enviar uma localização aos seus contatos.
+Método responsavel por enviar uma localização fixa aos seus contatos, muito utilizado para enviar a localização de um endereços.
 
 ---
 
@@ -25,7 +25,7 @@ Com este método você pode enviar uma localização aos seus contatos.
 | :-- | :-: | :-- |
 | phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | title | string | Titulo para sua localização ex: Minha casa |
-| address | string | Endereço da localização que esta enviando, composto por logradouro, numero, bairro, cidade, UF e CEP, tudo separado por virgula |
+| address | string | Endereço da localização que esta enviando composto por logradouro, numero, bairro, cidade, UF e CEP, tudo separado por virgula |
 | latitude | string | Latitude da localização enviada |
 | longitude | string | Longitude da localização enviada |
 

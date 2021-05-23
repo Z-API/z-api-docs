@@ -13,6 +13,14 @@ title: Enviar link
 
 ## Conceituação
 
+Método responsavel por enviar um link aos seus contatos, muito utilzado para compartilhar links para que os usuários sejam direcionados a um site.
+
+:::tip Sobre links
+
+É importante você saber que o link só fica clicavel caso o destinatário ja tenha seu telefone nos contatos, ou se o mesmo iniciar uma conversa com vocë.
+
+:::
+
 ---
 
 ## Atributos
