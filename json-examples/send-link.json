@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"phone\": \"5511999998888\",\"message\": \"Aqui você coloca um texto sobre o site, atenção esse texto preciso ter o link que será enviado no final da mensagem! Assim: https://z-api.io\",\"image\": \"https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media\",\"linkUrl\": \"https://z-api.io\",\"title\": \"Z-API\",\"linkDescription\": \"Integração com o whatsapp\" }"
+        "text": "{\"phone\": \"5511999998888\",\"message\": \"Aqui você coloca um texto sobre o site, atenção esse texto preciso ter o link que será enviado no final da mensagem! Assim: https://z-api.io\",\"image\": \"https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media\",\"linkUrl\": \"https://z-api.io\",\"title\": \"Z-API\",\"linkDescription\": \"Integração com o whatsapp\"}"
     }
 }
