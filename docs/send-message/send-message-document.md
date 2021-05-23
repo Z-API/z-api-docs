@@ -1,6 +1,6 @@
 ---
 id: send-message-document
-title: Envia documentos
+title: Enviar documentos
 ---
 
 ## Método
