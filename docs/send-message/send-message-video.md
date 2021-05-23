@@ -38,6 +38,19 @@ Por Base64, se você optar por esta opção precisará ter em sua aplicação um
 
 ---
 
+## Request Body
+
+```json
+{
+  "phone": "5511912341234",
+  "contactName": "Z-API Contato",
+  "contactPhone": "554498398733",
+  "contactBusinessDescription": "Z-API Asas para sua imaginação"
+}
+```
+
+---
+
 ## Response
 
 ### 200

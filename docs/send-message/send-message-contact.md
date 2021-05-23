@@ -5,7 +5,7 @@ title: Enviar contato
 
 ## Método
 
-#### /send-text
+#### /send-contact
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contact
 
@@ -13,7 +13,7 @@ title: Enviar contato
 
 ## Conceituação
 
-Simples, o objetivo este método permite você enviar um contato, você não precisa ter ele em seus contatos, basta preencher os atributos do contato para enviar.
+Simples e objetivo este método permite você enviar um contato, você não precisa ter ele em seus contatos, basta preencher os atributos do metodo com informações do contato e enviar.
 
 ---
 
@@ -24,8 +24,8 @@ Simples, o objetivo este método permite você enviar um contato, você não pre
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| contactName | string |Nome do contato |
-| contactPhone | string |Telefone do contato que você quer compartilhar |
+| contactName | string | Nome do contato |
+| contactPhone | string | Telefone do contato que você quer compartilhar |
 | contactBusinessDescription | string | Brever descrição sobre o contato (não é exibido no whatsapp web) |
 
 ### Opcionais
@@ -33,6 +33,19 @@ Simples, o objetivo este método permite você enviar um contato, você não pre
 | Atributos | Tipo | Descrição |
 | :-------- | :--: | :-------- |
 |           |      |           |
+
+---
+
+## Request Body
+
+```json
+{
+  "phone": "5511912341234",
+  "contactName": "Z-API Contato",
+  "contactPhone": "554498398733",
+  "contactBusinessDescription": "Z-API Asas para sua imaginação"
+}
+```
 
 ---
 
@@ -66,5 +79,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-audio.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
-```
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-contact.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

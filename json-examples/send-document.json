@@ -1,0 +1,17 @@
+{
+    "method": "POST",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-document/pdf",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"phone\": \"5511999998888\", \"document\": \"https://expoforest.com.br/wp-content/uploads/2017/05/exemplo.pdf\", \"fileName\": \"Meu PDF\"}"
+    }
+}

@@ -15,10 +15,8 @@ module.exports = {
       'quickstart/authentication',
       'quickstart/webhook',
     ],
-    'Boas Práticas': [
-      'bestpractices/blockednumber',
-      ],
-     Instância: [
+    'Boas Práticas': ['bestpractices/blockednumber'],
+    Instância: [
       'instance/introduction',
       'instance/qrcode',
       'instance/restore-session',
@@ -37,23 +35,24 @@ module.exports = {
       'send-message/send-message-location',
       'send-message/send-message-product',
       'send-message/send-message-catalog',
+      'send-message/send-message-contact',
     ],
-    'Contatos': [
+    Contatos: [
       'contacts/introduction',
       'contacts/get-contacts',
       'contacts/get-metadata-contact',
       'contacts/get-profile-picture',
     ],
-    'Chats': [
+    Chats: [
       'chats/introduction',
       'chats/get-chats',
-     /* 'chats/get-metadata-chat',
+      /* 'chats/get-metadata-chat',
       'chats/get-message-chat',*/
     ],
-    'Grupos': [
+    Grupos: [
       'group/introduction',
       'group/create-group',
-     /* 'group/update-group-name',
+      /* 'group/update-group-name',
       'group/add-admin',
       'group/remove-admin',
       'group/add-participant',
@@ -61,7 +60,7 @@ module.exports = {
       'group/leave-group',
       'group/group-metadata/{phone}',*/
     ],
-    'Status': [
+    Status: [
       'status/introduction',
       'status/send-text-status',
       /*
@@ -69,9 +68,16 @@ module.exports = {
 
       */
     ],
-    'Fila': [
+    Fila: [
       'status/introduction',
       'status/send-text-status',
+      /*
+      'status/send-image-status',
+
+      */
+    ],
+    Webhooks: [
+      'webhooks/introduction',
       /*
       'status/send-image-status',
 

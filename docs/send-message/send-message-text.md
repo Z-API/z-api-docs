@@ -15,18 +15,31 @@ title: Enviar texto simples
 
 Neste método você poderá enviar textos simples mas, você pode incrementá-los utilizando a formatação de texto e emojis, por exemplo. Caso você ainda não saiba como fazer isso, clique nos links abaixo e siga as instruções:
 
-- Como [formatar fontes] no Whatsapp
+- Para saber como formata fontes no Whatsapp [clique aqui]
 
-- Onde [copiar emojis]
+- Você também pode utilizar **quebra linhas** em suas mensagens porém isso pode ser feito de formas diferentes, isso muda por fatores como a plataforma que sua aplicação esta rodando e linguagem de programação utilizada, até o momento indentificamos as seguinte:
 
-[formatar textos no whatsapp]: https://faq.whatsapp.com/general/chats/how-to-format-your-messages/?lang=pt_br
-[copiar emojis]: https://fsymbols.com/pt/emoji/
+  > - \n
+  > - \r
+  > - \r\n
+  > - %0a
 
-#### Sobre emojis
+  Verifique a que mais se adequa ao seu caso.
 
-> Sobre emojis o que você precisa saber é que ele é um caracter ASCII normal assim com existe a fonte Times New Roman por exemplo, existem fontes de emojis, pense que você pode criar sua própria >galeria de emojis.
+  **Se descobrir uma maneira nova de fazer quebra de linhas por favor nos avise :)**
+
+- Outro recurso que você pode explorar é a utilização de emojis, se você precisar pegar alguns emojis use este [link]
+
+[clique aqui]: https://faq.whatsapp.com/general/chats/how-to-format-your-messages/?lang=pt_br
+[link]: https://fsymbols.com/pt/emoji/
+
+:::tip Sobre emojis
+
+Sobre emojis o que você precisa saber é que ele é um caracter ASCII normal assim com existe a fonte Times New Roman por exemplo, existem fontes de emojis, pense que você pode criar sua própria >galeria de emojis.
 
 Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utilizar este aqui 🤪 se quiser.
+
+:::
 
 ---
 
@@ -44,6 +57,17 @@ Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utiliz
 | Atributos | Tipo | Descrição |
 | :-------- | :--: | :-------- |
 |           |      |           |
+
+---
+
+## Request Body
+
+```json
+{
+  "phone": "5511912341234",
+  "message": "Welcome to *Z-API*"
+}
+```
 
 ---
 
@@ -78,4 +102,3 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 ## Code
 
 <iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-audio.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
-```

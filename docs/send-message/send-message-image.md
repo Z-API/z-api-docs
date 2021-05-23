@@ -23,11 +23,11 @@ Você pode fazer um teste com este tipo de envio utilizando um [conversor online
 
 [conversor online]: https://www.base64-image.de/
 
-:::caution Tamanho de imagens
+### Tamanho de imagens
 
-O Whatsapp bloqueia o envio de imagens grandes, para melhor performance da sua aplicação evite enviar arquivos com mais de 3mb.
+O Whatsapp limita o tamanho de imagens e sua politica muda constantemente para melhor entender sobre este limites consulte diretamente as politicas [clicando aqui]
 
-:::
+[clicando aqui]: https://developers.facebook.com/docs/whatsapp/api/media/#post-processing
 
 ---
 
@@ -45,6 +45,18 @@ O Whatsapp bloqueia o envio de imagens grandes, para melhor performance da sua a
 | Atributos |  Tipo  | Descrição            |
 | :-------- | :----: | :------------------- |
 | caption   | string | Titulo da sua imagem |
+
+---
+
+## Request Body
+
+```json
+{
+  "phone": "5511912341234",
+  "image": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg",
+  "caption": "Logo"
+}
+```
 
 ---
 
@@ -79,5 +91,3 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 ## Code
 
 <iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-image.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
-
----
