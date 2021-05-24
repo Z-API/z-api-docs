@@ -5,7 +5,7 @@ title: Enviar link
 
 ## Método
 
-#### /send-text
+#### /send-link
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-link
 

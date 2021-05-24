@@ -5,7 +5,7 @@ title: Enviar video
 
 ## Método
 
-#### /send-audio
+#### /send-video
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-video
 
