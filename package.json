@@ -1,7 +1,7 @@
 {
   "name": "z-api-docs",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
