@@ -17,8 +17,6 @@ Método responsavel por enviar uma localização fixa aos seus contatos, muito u
 
 ---
 
-## Atributos
-
 ### Obrigatórios
 
 | Atributos | Tipo | Descrição |
