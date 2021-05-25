@@ -1,23 +1,19 @@
 ---
-id: send-message-audio
-title: Enviar áudio
+id: send-message-contact
+title: Enviar contato
 ---
 
 ## Método
 
-#### /send-audio
+#### /send-contact
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-audio
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contact
 
 ---
 
 ## Conceituação
 
-Método responsavel por enviar audios para os seus chats, você pode trabalhar com as audios de 2 formas que são:
-
-Por Link, onde você temum audio hospedado em algum lugar da internet e envia apenas o link da mesma.
-
-Por Base64, se você optar por esta opção precisará ter em sua aplicação um método para converter o audio em Base64.
+Simples e objetivo este método permite você enviar um contato, você não precisa ter ele em seus contatos, basta preencher os atributos do metodo com informações do contato e enviar.
 
 ---
 
@@ -28,13 +24,15 @@ Por Base64, se você optar por esta opção precisará ter em sua aplicação um
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| audio | string | Link do audio ou seu Base64 |
+| contactName | string | Nome do contato |
+| contactPhone | string | Telefone do contato que você quer compartilhar |
+| contactBusinessDescription | string | Brever descrição sobre o contato (não é exibido no whatsapp web) |
 
 ### Opcionais
 
 | Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| :-- | :-: | :-- |
+| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 
 ---
 
@@ -43,7 +41,9 @@ Por Base64, se você optar por esta opção precisará ter em sua aplicação um
 ```json
 {
   "phone": "5511912341234",
-  "audio": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
+  "contactName": "Z-API Contato",
+  "contactPhone": "554498398733",
+  "contactBusinessDescription": "Z-API Asas para sua imaginação"
 }
 ```
 
@@ -79,4 +79,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-audio.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-contact.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

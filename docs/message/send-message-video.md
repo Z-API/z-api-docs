@@ -33,8 +33,8 @@ Por Base64, se você optar por esta opção precisará ter em sua aplicação um
 ### Opcionais
 
 | Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| :-- | :-: | :-- |
+| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 
 ---
 

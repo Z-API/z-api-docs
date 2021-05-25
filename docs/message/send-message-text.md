@@ -55,8 +55,8 @@ Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utiliz
 ### Opcionais
 
 | Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| :-- | :-: | :-- |
+| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 
 ---
 

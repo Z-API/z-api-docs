@@ -32,9 +32,10 @@ Método responsavel por enviar documentos aos seus contatos ele é simples e obj
 
 ### Opcionais
 
-| Atributos |  Tipo  | Descrição         |
-| :-------- | :----: | :---------------- |
-| fileName  | String | Nome do documento |
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| fileName | String | Nome do documento |
+| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 
 ---
 

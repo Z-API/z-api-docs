@@ -17,6 +17,8 @@ Método responsavel por enviar uma localização fixa aos seus contatos, muito u
 
 ---
 
+## Atributos
+
 ### Obrigatórios
 
 | Atributos | Tipo | Descrição |
@@ -30,8 +32,8 @@ Método responsavel por enviar uma localização fixa aos seus contatos, muito u
 ### Opcionais
 
 | Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| :-- | :-: | :-- |
+| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 
 ---
 

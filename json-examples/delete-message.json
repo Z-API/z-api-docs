@@ -1,0 +1,17 @@
+{
+    "method": "DELETE",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/delete",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"messageId\": \"3999984263738042930CD6ECDE9VDWSA\",\"phone\": \"5511999998888\", \"owner\": true}"
+    }
+}

@@ -39,8 +39,8 @@ Método responsavel por enviar um link aos seus contatos, muito utilzado para co
 ### Opcionais
 
 | Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| :-- | :-: | :-- |
+| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 
 ---
 

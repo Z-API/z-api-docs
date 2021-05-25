@@ -42,9 +42,10 @@ O Whatsapp limita o tamanho de imagens e sua politica muda constantemente para m
 
 ### Opcionais
 
-| Atributos |  Tipo  | Descrição            |
-| :-------- | :----: | :------------------- |
-| caption   | string | Titulo da sua imagem |
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| caption | string | Titulo da sua imagem |
+| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 
 ---
 
