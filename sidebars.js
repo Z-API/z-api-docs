@@ -24,7 +24,7 @@ module.exports = {
       'instance/disconnect',
       'instance/status',
     ],
-    'Enviar mensagem': [
+    Mensagens: [
       'message/introduction',
       'message/send-message-text',
       'message/send-message-image',
@@ -37,6 +37,7 @@ module.exports = {
       'send-message/send-message-catalog',*/
       'message/send-message-contact',
       'message/delete-message',
+      'message/read-message',
     ],
     Contatos: [
       'contacts/introduction',

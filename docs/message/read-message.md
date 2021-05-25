@@ -1,19 +1,19 @@
 ---
-id: delete-message
-title: Deletar mensagens
+id: read-message
+title: Ler mensagens
 ---
 
 ## Método
 
-#### /send-audio
+#### /read-message
 
-`DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/messages
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/read-message
 
 ---
 
 ## Conceituação
 
-Método utilizado para apagar uma mensagem em um chat, você pode deletar tanto uma mensagem que enviou quanto uma mensagen enviada por um contato, para utilizar este recurso você só vai precisar do messageId da mensagem que quer apagar.
+Método utilizado para marcar uma mensagem em um chat como lida.
 
 ---
 
@@ -23,9 +23,8 @@ Método utilizado para apagar uma mensagem em um chat, você pode deletar tanto 
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| messageId | string | id original da mensagem, no caso de mensagem enviada por você é o código que vem no seu reponse, caso seja uma mensagem enviada por um contato você vai receber este messageId pelo seu webhook de receive |
 | phone | string | Telefone do destinatário/remetente no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| owner | boolean | Informe true caso você tenha enviado a mensagem ou false para casos onde seja uma mensagem recebida |
+| messageId | string | id original da mensagem, no caso de mensagem enviada por você é o código que vem no seu reponse, caso seja uma mensagem enviada por um contato você vai receber este messageId pelo seu webhook de receive |
 
 ### Opcionais
 
@@ -39,9 +38,8 @@ Método utilizado para apagar uma mensagem em um chat, você pode deletar tanto 
 
 ```json
 {
-  "messageId": "3999984263738042930CD6ECDE9VDWSA",
   "phone": "5511999998888",
-  "owner": true
+  "messageId": "3999984263738042930CD6ECDE9VDWSA"
 }
 ```
 
