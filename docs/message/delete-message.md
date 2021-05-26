@@ -5,7 +5,7 @@ title: Deletar mensagens
 
 ## Método
 
-#### /send-audio
+#### /messages
 
 `DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/messages
 
@@ -35,15 +35,15 @@ Método utilizado para apagar uma mensagem em um chat, você pode deletar tanto 
 
 ---
 
-## Request Body
+## Request Params
 
-```json
-{
-  "messageId": "3999984263738042930CD6ECDE9VDWSA",
-  "phone": "5511999998888",
-  "owner": true
-}
-```
+#### URL exemplo
+
+Método
+
+`DELETE`
+
+https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/messages?messageId=123&phone=5511999998888&owner=true
 
 ---
 
