@@ -5,6 +5,4 @@ title: Introdução
 
 ### Conceituação
 
-:::caution Sobre contatos
-
-:::
+Conforme já falamos no tópico anterior para o Whatsapp tudo é um chat, neste tópico você vai encontrar todos métodos para buscar informações sobre seus chats.

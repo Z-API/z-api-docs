@@ -1,5 +1,5 @@
 ---
-id: get-chats
+id: get-message-chats
 title: Pegar mensagens do chat
 ---
 
@@ -65,7 +65,7 @@ Segue Json conforme sequência abaixo:
 - Emoji
 - Link
 
-````json
+```json
 [
   {
     "instanceId": "399793F5C962B0F227576EA28507E212",
@@ -141,9 +141,7 @@ Segue Json conforme sequência abaixo:
     "contact": {
       "displayName": "Z-api - Atendimento",
       "vCard": "BEGIN:VCARD\nVERSION:3.0\nN:;Z-api - Atendimento;;;\nFN:Z-api - Atendimento\nTEL;type=CELL;waid=554498398733:+55 44 9839-8733\nX-WA-BIZ-NAME:Z-api - Atendimento\nX-WA-BIZ-DESCRIPTION:Whatsapp para programadores!\nEND:VCARD",
-      "phones": [
-        "554498398733"
-      ]
+      "phones": ["554498398733"]
     }
   },
   {
@@ -184,7 +182,8 @@ Segue Json conforme sequência abaixo:
       "isCatalog": false
     }
   }
-]```
+]
+```
 
 ### 405
 
@@ -199,4 +198,3 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 ## Code
 
 <iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/get-message-chat.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
-````

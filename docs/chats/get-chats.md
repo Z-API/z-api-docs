@@ -1,6 +1,6 @@
 ---
 id: get-chats
-title: Enviar audio
+title: Pegar chats
 ---
 
 ## Método

@@ -48,8 +48,8 @@ module.exports = {
     Chats: [
       'chats/introduction',
       'chats/get-chats',
-      /* 'chats/get-metadata-chat',
-      'chats/get-message-chat',*/
+      'chats/get-message-chats',
+      'chats/get-metadata-chat',
     ],
     Grupos: [
       'group/introduction',
