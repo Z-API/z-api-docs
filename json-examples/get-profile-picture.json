@@ -1,0 +1,19 @@
+{
+    "method": "GET",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/profile-picture",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [{
+        "name": "phone",
+        "value": "5511999999999",
+        "comment": ""
+    },
+    ],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "cookies": [],
+    "postData": {}
+}
