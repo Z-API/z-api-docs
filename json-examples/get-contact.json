@@ -5,12 +5,12 @@
     "queryString": [
         {
             "name": "page",
-            "value": "1",
+            "value": 1,
             "comment": ""
         },
         {
             "name": "pageSize",
-            "value": "100",
+            "value": 100,
             "comment": ""
         }
     ],

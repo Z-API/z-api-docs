@@ -1,6 +1,7 @@
 ---
 id: introduction
 title: Introdução
+slug: /
 ---
 
 ## Z-API - Asas para sua imaginação!
@@ -13,7 +14,7 @@ title: Introdução
 
 Você provavelmente já deve saber, mas vamos reafirmar!
 
-**Z-API** é um serviço RestFul que provê uma API que permite que você interaja com seu Whatsapp através uma API simples e intuitiva, além de  webhooks para te avisar sobre interações com seu número.
+**Z-API** é um serviço RestFul que provê uma API que permite que você interaja com seu Whatsapp através uma API simples e intuitiva, além de webhooks para te avisar sobre interações com seu número.
 
 ---
 

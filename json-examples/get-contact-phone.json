@@ -1,8 +1,10 @@
 {
     "method": "GET",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contact/TELEFONE_DO_CONTATO",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contact/5511999999999",
     "httpVersion": "HTTP/1.1",
-    "queryString": [],
+    "queryString": [
+     
+    ],
     "headers": [
         {
             "name": "Content-Type",

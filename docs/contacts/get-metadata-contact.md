@@ -1,6 +1,6 @@
 ---
 id: get-metadata-contact
-title: Pega Metadata do Contato
+title: Pegar Metadata do Contato
 ---
 
 ## Método
@@ -13,7 +13,7 @@ title: Pega Metadata do Contato
 
 ## Conceituação
 
-Este método é reponsavel por retornar as informações do metadado do contato.
+Este método é reponsavel por retornar as informações do metadata do contato.
 
 :::tip Dica sobre imagem do contato
 
@@ -45,7 +45,7 @@ Se você pretente armazenar a imagem do seu contato observe que sempre retornamo
 
 Método
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/551199999999
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/5511999999999
 
 ---
 

@@ -10,7 +10,6 @@
 module.exports = {
   tutorialSidebar: {
     'Quick Start': [
-      'exemplos',
       'quickstart/introduction',
       'quickstart/authentication',
       'quickstart/webhook',
@@ -44,6 +43,7 @@ module.exports = {
       'contacts/get-contacts',
       'contacts/get-metadata-contact',
       'contacts/get-profile-picture',
+      'contacts/get-iswhatsapp',
     ],
     Chats: [
       'chats/introduction',
@@ -85,5 +85,6 @@ module.exports = {
 
       */
     ],
+    Sample: ['sample/exemplos'],
   },
 };
