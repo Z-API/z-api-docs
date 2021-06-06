@@ -3,7 +3,16 @@
     "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat/5511999999999",
     "httpVersion": "HTTP/1.1",
     "queryString": [
-     
+        {
+            "name": "amount",
+            "value": 1,
+            "comment": ""
+        },
+        {
+            "name": "lastMessageId",
+            "value": "messageID" ,
+            "comment": ""
+        }
     ],
     "headers": [
         {
