@@ -13,7 +13,7 @@ title: Criando grupos
 
 ## Conceituação
 
-Este método é reponsavel por retornar todos os contatos do Whatsapp. Lembre-se do que foi dito na introdução sobre numero de contatos, caso tenho pulado esta parte, sugiro que você volte um passo e leia a nossa introdução sobre contatos.
+Este método é reponsavel por criar um grupo com sua imagem e participantes.
 
 ---
 
@@ -25,12 +25,13 @@ Este método é reponsavel por retornar todos os contatos do Whatsapp. Lembre-se
 | :-- | :-: | :-- |
 | groupName | string | Nome do grupo a ser criado |
 | phones | array<string> | Array com os numeros a serem adicionados no grupo |
+| profileImage | string | url da imagem ou o base64 |
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| Atributos    |  Tipo  | Descrição                 |
+| :----------- | :----: | :------------------------ |
+| profileImage | string | url da imagem ou o base64 |
 
 ---
 
@@ -40,32 +41,28 @@ Este método é reponsavel por retornar todos os contatos do Whatsapp. Lembre-se
 
 Método
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts?page=1&pageSize=20
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
 
 ---
 
 ## Response
 
+{ "phone": "5511999999999-1623281429", "invitationLink": "https://chat.whatsapp.com/DCayftVlS6zHWtlvfd3hUa" }
+
 ### 200
 
-| Atributos | Tipo | Descrição |
-| :-- | :-- | :-- |
-| phone | string | Phone do contato |
-| name | string | **Nome e sobrenome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
-| short | string | **Nome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
-| vname | string | Nome do contato caso você tenha ele como contato |
-| notify | string | Nome informado nas configurações de nome do Whatsapp |
+| Atributos      | Tipo   | Descrição                 |
+| :------------- | :----- | :------------------------ |
+| phone          | string | id/fone do grupo          |
+| invitationLink | string | link para entrar no grupo |
 
 Exemplo
 
 ```json
 [
   {
-    "name": "Nome e sobrenome do contato 1",
-    "short": "Nome do contato 1",
-    "notify": "Nome no Whatsapp 1",
-    "vname": "Nome no vcard",
-    "phone": "559999999999"
+    "groupName": "Meu grupo no Z-API",
+    "phones": ["5511999999999"]
   }
 ]
 ```
@@ -82,4 +79,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/get-contacts.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/creat-group.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
