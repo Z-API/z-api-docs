@@ -5,21 +5,16 @@
     "queryString": [
         {
             "name": "page",
-            "value": 1,
+            "value": "1",
             "comment": ""
         },
         {
             "name": "pageSize",
-            "value": 2,
+            "value": "2",
             "comment": ""
         },
     ],
-    "headers": [
-        {
-            "name": "Content-Type",
-            "value": "application/json"
-        }
-    ],
+    "headers": [],
     "cookies": [],
     "postData": {}
 }
