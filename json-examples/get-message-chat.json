@@ -5,7 +5,7 @@
     "queryString": [
         {
             "name": "amount",
-            "value": 1,
+            "value": "1",
             "comment": ""
         },
         {
@@ -15,10 +15,7 @@
         }
     ],
     "headers": [
-        {
-            "name": "Content-Type",
-            "value": "application/json"
-        }
+
     ],
     "cookies": [],
     "postData": {}
