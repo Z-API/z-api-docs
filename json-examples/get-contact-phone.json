@@ -6,10 +6,7 @@
      
     ],
     "headers": [
-        {
-            "name": "Content-Type",
-            "value": "application/json"
-        }
+
     ],
     "cookies": [],
     "postData": {}
