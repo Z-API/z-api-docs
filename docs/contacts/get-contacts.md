@@ -53,7 +53,7 @@ Método
 | phone | string | Phone do contato |
 | name | string | **Nome e sobrenome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
 | short | string | **Nome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
-| vname | string | Nome do Vcard do contato, caso ele tenha |
+| vname | string | Nome do contato caso você tenha ele como contato |
 | notify | string | Nome informado nas configurações de nome do Whatsapp |
 
 Exemplo

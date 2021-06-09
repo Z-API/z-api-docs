@@ -13,6 +13,8 @@ title: Criando grupos
 
 ## Conceituação
 
+Este método é reponsavel por retornar todos os contatos do Whatsapp. Lembre-se do que foi dito na introdução sobre numero de contatos, caso tenho pulado esta parte, sugiro que você volte um passo e leia a nossa introdução sobre contatos.
+
 ---
 
 ## Atributos
@@ -20,11 +22,9 @@ title: Criando grupos
 ### Obrigatórios
 
 | Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
-|           |      |           |
-
----
+| :-- | :-: | :-- |
+| groupName | string | Nome do grupo a ser criado |
+| phones | array<string> | Array com os numeros a serem adicionados no grupo |
 
 ### Opcionais
 
@@ -32,38 +32,54 @@ title: Criando grupos
 | :-------- | :--: | :-------- |
 |           |      |           |
 
-## Response
+---
+
+## Request Params
+
+#### URL exemplo
+
+Método
+
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts?page=1&pageSize=20
 
 ---
+
+## Response
 
 ### 200
 
 | Atributos | Tipo | Descrição |
-| :-------- | :--- | :-------- |
-|           |      |           |
-|           |      |           |
+| :-- | :-- | :-- |
+| phone | string | Phone do contato |
+| name | string | **Nome e sobrenome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
+| short | string | **Nome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
+| vname | string | Nome do contato caso você tenha ele como contato |
+| notify | string | Nome informado nas configurações de nome do Whatsapp |
 
 Exemplo
 
 ```json
-{
-  "zaapId": "3999984263738042930CD6ECDE9DF533",
-  "messageId": "D241F829732339502B68"
-}
+[
+  {
+    "name": "Nome e sobrenome do contato 1",
+    "short": "Nome do contato 1",
+    "notify": "Nome no Whatsapp 1",
+    "vname": "Nome no vcard",
+    "phone": "559999999999"
+  }
+]
 ```
 
----
+### 405
+
+Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
 
 ### 415
 
----
-
-### 404
+Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
 
 ---
 
 ## Code
 
-```
-
-```
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/get-contacts.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
