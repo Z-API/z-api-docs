@@ -1,7 +1,7 @@
 ---
-id:id: add-admin
+id:id: group-add-admin
 
-title: Remove um contato do grupo
+title: Promove um contato a admin do grupo
 ---
 
 ## Método
@@ -20,10 +20,10 @@ Este método é reponsavel adicionar um ou mais administradores ao grupo.
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| groupId | string | id/fone do grupo |
-| phones | array<string> | Array com os numeros a serem adicionados no grupo |
+| Atributos |     Tipo     | Descrição                                         |
+| :-------- | :----------: | :------------------------------------------------ |
+| groupId   |    string    | id/fone do grupo                                  |
+| phones    | array string | Array com os numeros a serem adicionados no grupo |
 
 ### Opcionais
 

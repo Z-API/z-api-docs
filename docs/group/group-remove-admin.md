@@ -1,11 +1,11 @@
 ---
-id: remove-admin
+id: group-remove-admin
 title: Remove um administrador do grupo
 ---
 
 ## Método
 
-#### /send-text
+#### /remove-admin
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remove-admin
 
@@ -19,10 +19,10 @@ Este método é reponsavel remover um ou mais admistradores de um grupo.
 
 ### Obrigatórios
 
-| Atributos |     Tipo      | Descrição                                       |
-| :-------- | :-----------: | :---------------------------------------------- |
-| groupId   |    string     | id/fone do grupo                                |
-| phones    | array<string> | Array com os numeros a serem removidos do grupo |
+| Atributos |     Tipo     | Descrição                                       |
+| :-------- | :----------: | :---------------------------------------------- |
+| groupId   |    string    | id/fone do grupo                                |
+| phones    | array string | Array com os numeros a serem removidos do grupo |
 
 ### Opcionais
 

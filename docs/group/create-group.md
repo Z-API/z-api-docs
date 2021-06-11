@@ -5,7 +5,7 @@ title: Criando grupos
 
 ## Método
 
-#### /send-text
+#### /create-group
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
 
@@ -21,10 +21,10 @@ Este método é reponsavel por criar um grupo com sua imagem e participantes.
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| groupName | string | Nome do grupo a ser criado |
-| phones | array<string> | Array com os numeros a serem adicionados no grupo |
+| Atributos |     Tipo     | Descrição                                         |
+| :-------- | :----------: | :------------------------------------------------ |
+| groupName |    string    | Nome do grupo a ser criado                        |
+| phones    | array string | Array com os numeros a serem adicionados no grupo |
 
 ### Opcionais
 

@@ -54,10 +54,10 @@ module.exports = {
     Grupos: [
       'group/introduction',
       'group/create-group',
-      /* 'group/update-group-name',
-      'group/add-admin',
-      'group/remove-admin',
-      'group/add-participant',
+      'group/group-add-admin',
+      'group/group-remove-admin',
+      'group/update-group-name',
+      /* 'group/add-participant',
       'group/remove-participant',
       'group/leave-group',
       'group/group-metadata/{phone}',*/
