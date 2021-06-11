@@ -24,7 +24,7 @@ Método utilizado para apagar uma mensagem em um chat, você pode deletar tanto 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | messageId | string | id original da mensagem, no caso de mensagem enviada por você é o código que vem no seu reponse, caso seja uma mensagem enviada por um contato você vai receber este messageId pelo seu webhook de receive |
-| phone | string | Telefone do destinatário/remetente no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário/remetente no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | owner | boolean | Informe true caso você tenha enviado a mensagem ou false para casos onde seja uma mensagem recebida |
 
 ### Opcionais

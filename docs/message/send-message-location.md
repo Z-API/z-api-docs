@@ -23,7 +23,7 @@ Método responsavel por enviar uma localização fixa aos seus contatos, muito u
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | title | string | Titulo para sua localização ex: Minha casa |
 | address | string | Endereço da localização que esta enviando composto por logradouro, numero, bairro, cidade, UF e CEP, tudo separado por virgula |
 | latitude | string | Latitude da localização enviada |
