@@ -1,19 +1,19 @@
 ---
-id: update-group-name
-title: Atualiza o nome do grupo
+id: update-group-photo
+title: Atualiza a imagem de um grupo
 ---
 
 ## Método
 
-#### /update-group-name
+#### /update-group-photo
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-name
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-photo
 
 ---
 
 ## Conceituação
 
-Este método é reponsavel alterar o nome de um grupo existente.
+Este método é reponsavel alterar a imagem de um grupo existente.
 
 ---
 
@@ -21,10 +21,10 @@ Este método é reponsavel alterar o nome de um grupo existente.
 
 ### Obrigatórios
 
-| Atributos |  Tipo  | Descrição                                         |
-| :-------- | :----: | :------------------------------------------------ |
-| groupName | string | Nome do grupo a ser criado                        |
-| groupId   | string | Array com os numeros a serem adicionados no grupo |
+| Atributos  |  Tipo  | Descrição               |
+| :--------- | :----: | :---------------------- |
+| groupId    | string | id do grupo             |
+| groupPhoto | string | Url ou Base64 da imagem |
 
 ### Opcionais
 
@@ -39,7 +39,7 @@ Este método é reponsavel alterar o nome de um grupo existente.
 
 Método
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-name
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-photo
 
 ---
 
@@ -79,4 +79,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/update-group-name.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/update-group-photo.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

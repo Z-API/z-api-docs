@@ -57,6 +57,7 @@ module.exports = {
       'group/group-add-admin',
       'group/group-remove-admin',
       'group/update-group-name',
+      'group/update-group-photo',
       /* 'group/add-participant',
       'group/remove-participant',
       'group/leave-group',
