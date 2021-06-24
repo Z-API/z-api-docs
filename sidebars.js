@@ -15,6 +15,8 @@ module.exports = {
       'quickstart/webhook',
     ],
     'Boas Práticas': ['bestpractices/blockednumber'],
+
+    Dicas: ['tips/enable-fix-number'],
     Instância: [
       'instance/introduction',
       'instance/qrcode',
