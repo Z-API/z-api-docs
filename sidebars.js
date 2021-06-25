@@ -16,7 +16,14 @@ module.exports = {
     ],
     'Boas Práticas': ['bestpractices/blockednumber'],
 
-    Dicas: ['tips/enable-fix-number'],
+    Dicas: [
+      'tips/enable-fix-number',
+      'tips/disable-screem-blocked',
+      'tips/android-active',
+      'tips/stability',
+      'tips/emulators',
+    ],
+
     Instância: [
       'instance/introduction',
       'instance/qrcode',
