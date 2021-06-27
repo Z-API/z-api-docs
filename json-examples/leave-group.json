@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/creat-group",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/leave-group",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [
@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"groupName\": \"Meu grupo Z-API\", \"phones\": [\"5511999999999\",\"5511888888888\"], \"profileImage\": \"https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg\"}"
+        "text": "{\"groupId\": \"5511999999999-1623281429\"}"
     }
 }

@@ -30,7 +30,7 @@ Não temos restrições quanto a utilização mas geralmente são 2 públicos be
 
 ## Tá bom! mas o que dá para fazer com ele?
 
-De forma bem direta, tudo que você faz com Whatsapp Web você poderá fazer utilizando nosso serviço. Para isso basta ler o QRcode para utilizar nosso serviço!
+De forma bem direta, tudo que você faz com Whatsapp Web você poderá fazer utilizando nosso serviço. Para isso basta ler o QRcode do Z-API e utilizar nosso serviço!
 
 ---
 

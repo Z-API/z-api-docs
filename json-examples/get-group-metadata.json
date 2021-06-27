@@ -1,0 +1,13 @@
+{
+    "method": "GET",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata/5511999999999-1623281429",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [
+     
+    ],
+    "headers": [
+
+    ],
+    "cookies": [],
+    "postData": {}
+}

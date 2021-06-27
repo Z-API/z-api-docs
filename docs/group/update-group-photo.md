@@ -1,6 +1,6 @@
 ---
 id: update-group-photo
-title: Atualiza a imagem de um grupo
+title: Atualizar imagem do grupo
 ---
 
 ## Método
@@ -13,7 +13,7 @@ title: Atualiza a imagem de um grupo
 
 ## Conceituação
 
-Este método é reponsavel alterar a imagem de um grupo existente.
+Este método é reponsavel alterar a imagem de um grupo já existente.
 
 ---
 
@@ -23,7 +23,7 @@ Este método é reponsavel alterar a imagem de um grupo existente.
 
 | Atributos  |  Tipo  | Descrição               |
 | :--------- | :----: | :---------------------- |
-| groupId    | string | id do grupo             |
+| groupId    | string | ID/Fone do grupo        |
 | groupPhoto | string | Url ou Base64 da imagem |
 
 ### Opcionais
@@ -33,23 +33,32 @@ Este método é reponsavel alterar a imagem de um grupo existente.
 
 ---
 
-## Request Params
+## Request Body
 
-#### URL exemplo
+#### URL
 
 Método
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-photo
 
----
-
-## Response
+#### Body
 
 ```json
 {
-  "value": true
+  "groupId": "string",
+  "groupPhoto": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg"
 }
 ```
+
+:::tip Enviar imagem Base64
+
+Se você tem duvidas em como enviar uma imagem Base64 acesse o tópico mensagens "Enviar Imagem", lá você vai encontrar tudo que precisa saber sobre envio neste formato.
+
+:::
+
+---
+
+## Response
 
 ### 200
 
@@ -60,11 +69,9 @@ Método
 Exemplo
 
 ```json
-[
-  {
-    "value": true
-  }
-]
+{
+  "value": true
+}
 ```
 
 ### 405

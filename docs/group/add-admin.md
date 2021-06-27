@@ -1,7 +1,7 @@
 ---
-id:id: group-add-admin
+id:id: add-admin
 
-title: Promove um contato a admin do grupo
+title: Promover admin do grupo
 ---
 
 ## Método
@@ -12,7 +12,7 @@ title: Promove um contato a admin do grupo
 
 ## Conceituação
 
-Este método é reponsavel adicionar um ou mais administradores ao grupo.
+Este método é reponsavel por promover participamentes do grupo à administradores, você pode provomover um ou mais participamente à administrador.
 
 ---
 
@@ -20,10 +20,10 @@ Este método é reponsavel adicionar um ou mais administradores ao grupo.
 
 ### Obrigatórios
 
-| Atributos |     Tipo     | Descrição                                         |
-| :-------- | :----------: | :------------------------------------------------ |
-| groupId   |    string    | id/fone do grupo                                  |
-| phones    | array string | Array com os numeros a serem adicionados no grupo |
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| groupId | string | ID/Fone do grupo |
+| phones | array string | Array com os numero(s) do(s) participante(s) a serem promovidos |
 
 ### Opcionais
 
@@ -32,23 +32,24 @@ Este método é reponsavel adicionar um ou mais administradores ao grupo.
 
 ---
 
-## Request Params
+## Request Body
 
-#### URL exemplo
-
-Método
+#### URL
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-admin
+
+#### Body
+
+```json
+{
+  "groupId": "5511999999999-1623281429",
+  "phones": ["5544999999999", "5544888888888"]
+}
+```
 
 ---
 
 ## Response
-
-```json
-{
-  "value": true
-}
-```
 
 ### 200
 
@@ -56,14 +57,12 @@ Método
 | :-- | :-- | :-- |
 | value | boolean | true caso tenha tenha dado certo e false em caso de falha |
 
-Exemplo
+**Exemplo**
 
 ```json
-[
-  {
-    "value": true
-  }
-]
+{
+  "value": true
+}
 ```
 
 ### 405

@@ -13,7 +13,13 @@ title: Criando grupos
 
 ## Conceituação
 
-Este método é reponsavel por criar um grupo com sua imagem e participantes.
+Este método é reponsavel por criar um grupo com seus respectivos participantes. Infelizmente não é possivel criar o grupo com imagem, mas você pode logo após a criação utilizar-se do método Update-group-photo que esta nesta mesma sessão.
+
+:::tip Dica
+
+Assim como no WhastWeb você vai precisar adicionar ao menos um contato para conseguir criar um grupo.
+
+:::
 
 ---
 
@@ -28,42 +34,45 @@ Este método é reponsavel por criar um grupo com sua imagem e participantes.
 
 ### Opcionais
 
-| Atributos    |  Tipo  | Descrição                 |
-| :----------- | :----: | :------------------------ |
-| profileImage | string | url da imagem ou o base64 |
+| Atributos | Tipo | Descrição |
+| :-------- | :--: | :-------- |
+|           |      |           |
 
 ---
 
-## Request Params
+## Request Body
 
-#### URL exemplo
+**Método**
 
-Método
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
+**Exemplo**
+
+```json
+{
+  "groupName": "Meu grupo no Z-API",
+  "phones": ["5511999999999", "5511888888888"]
+}
+```
 
 ---
 
 ## Response
 
-{ "phone": "5511999999999-1623281429", "invitationLink": "https://chat.whatsapp.com/DCayftVlS6zHWtlvfd3hUa" }
-
 ### 200
 
 | Atributos      | Tipo   | Descrição                 |
 | :------------- | :----- | :------------------------ |
-| phone          | string | id/fone do grupo          |
+| phone          | string | ID/Fone do grupo          |
 | invitationLink | string | link para entrar no grupo |
 
-Exemplo
+**Exemplo**
 
 ```json
-[
-  {
-    "groupName": "Meu grupo no Z-API",
-    "phones": ["5511999999999"]
-  }
-]
+{
+  "phone": "5511999999999-1623281429",
+  "invitationLink": "https://chat.whatsapp.com/DCaqftVlS6dHWtlvfd3hUa"
+}
 ```
 
 ### 405

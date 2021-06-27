@@ -63,14 +63,14 @@ module.exports = {
     Grupos: [
       'group/introduction',
       'group/create-group',
-      'group/group-add-admin',
-      'group/group-remove-admin',
       'group/update-group-name',
       'group/update-group-photo',
-      /* 'group/add-participant',
+      'group/add-participant',
       'group/remove-participant',
+      'group/add-admin',
+      'group/remove-admin',
       'group/leave-group',
-      'group/group-metadata/{phone}',*/
+      'group/metadata-group',
     ],
     Status: [
       'status/introduction',

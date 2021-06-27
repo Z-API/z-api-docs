@@ -1,6 +1,6 @@
 ---
-id: group-remove-admin
-title: Remove um administrador do grupo
+id: remove-admin
+title: Remover admin do grupo
 ---
 
 ## Método
@@ -19,10 +19,10 @@ Este método é reponsavel remover um ou mais admistradores de um grupo.
 
 ### Obrigatórios
 
-| Atributos |     Tipo     | Descrição                                       |
-| :-------- | :----------: | :---------------------------------------------- |
-| groupId   |    string    | id/fone do grupo                                |
-| phones    | array string | Array com os numeros a serem removidos do grupo |
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| groupId | string | id/fone do grupo |
+| phones | array string | Array com os numero(s) a ser(em) removido(s) da administração do grupo |
 
 ### Opcionais
 
@@ -31,23 +31,24 @@ Este método é reponsavel remover um ou mais admistradores de um grupo.
 
 ---
 
-## Request Params
+## Request Body
 
-#### URL exemplo
-
-Método
+#### URL
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remove-admin
+
+#### Body
+
+```json
+{
+  "groupId": "5511999999999-1623281429",
+  "phones": ["5544999999999", "5544888888888"]
+}
+```
 
 ---
 
 ## Response
-
-```json
-{
-  "value": true
-}
-```
 
 ### 200
 
@@ -55,14 +56,12 @@ Método
 | :-- | :-- | :-- |
 | value | boolean | true caso tenha tenha dado certo e false em caso de falha |
 
-Exemplo
+**Exemplo**
 
 ```json
-[
-  {
-    "value": true
-  }
-]
+{
+  "value": true
+}
 ```
 
 ### 405

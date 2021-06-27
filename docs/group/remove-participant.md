@@ -1,19 +1,18 @@
 ---
-id: update-group-name
-title: Atualizar nome do grupo
+id:id: remove-participant
+
+title: Remove Participantes
 ---
 
 ## Método
 
-#### /update-group-name
+#### /add-participant
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-name
-
----
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remove-participant
 
 ## Conceituação
 
-Este método é reponsavel alterar o nome de um grupo já existente.
+Este método é reponsável por remover participantes do grupo.
 
 ---
 
@@ -21,10 +20,10 @@ Este método é reponsavel alterar o nome de um grupo já existente.
 
 ### Obrigatórios
 
-| Atributos |  Tipo  | Descrição                  |
-| :-------- | :----: | :------------------------- |
-| groupId   | string | ID/Fone do grupo           |
-| groupName | string | Nome do grupo a ser criado |
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| groupId | string | ID/Fone do grupo |
+| phones | array string | Array com os numero(s) do(s) participante(s) a serem removidos |
 
 ### Opcionais
 
@@ -37,14 +36,14 @@ Este método é reponsavel alterar o nome de um grupo já existente.
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-name
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remove-participant
 
 #### Body
 
 ```json
 {
   "groupId": "5511999999999-1623281429",
-  "groupName": "Mudou o nome Meu grupo no Z-API"
+  "phones": ["5544999999999", "5544888888888"]
 }
 ```
 
@@ -78,4 +77,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/update-group-name.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/remove-participant.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
