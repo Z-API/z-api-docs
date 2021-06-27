@@ -51,7 +51,15 @@ Este método retorna o metadata do grupo com todas informações do grupo e de s
 | creation     | timestamp    | Timestamp da data de criação do grupo |
 | participants | array string | com dados dos participantes           |
 
-Array String (participants) | Atributos | Tipo | Descrição | | :-- | :-- | :-- | | phone | string | Fone do participante | | isAdmin | string | Indica se o participante é administrador do grupo | | isSuperAdmin | string | Indica se é o criador do grupo | | short | string | Nome curto do participante | | name | string | Nome do participante |
+Array String (participants)
+
+| Atributos    | Tipo   | Descrição                                         |
+| :----------- | :----- | :------------------------------------------------ |
+| phone        | string | Fone do participante                              |
+| isAdmin      | string | Indica se o participante é administrador do grupo |
+| isSuperAdmin | string | Indica se é o criador do grupo                    |
+| short        | string | Nome curto do participante                        |
+| name         | string | Nome do participante                              |
 
 **Exemplo**
 
