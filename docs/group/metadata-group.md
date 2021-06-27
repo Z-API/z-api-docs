@@ -70,7 +70,11 @@ Array String (participants)
   "subject": "Meu grupo no Z-API",
   "creation": 1588721491000,
   "participants": [
-    {"phone": "5511888888888", "isAdmin": false, "isSuperAdmin": false},
+    {
+      "phone": "5511888888888",
+      "isAdmin": false,
+      "isSuperAdmin": false
+    },
     {
       "phone": "5511777777777",
       "isAdmin": true,
