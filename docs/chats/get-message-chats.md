@@ -5,9 +5,9 @@ title: Pegar mensagens do chat
 
 ## Método
 
-#### /chats
+#### /chat-messages/{phone}
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats/{phone}
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat-messages/{phone}
 
 ---
 
@@ -41,7 +41,7 @@ Este método é reponsavel por retornar todas conversas de um chat.
 
 Método
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats/{phone}
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat-messages/{phone}
 
 ---
 
