@@ -14,9 +14,8 @@ module.exports = {
       'quickstart/authentication',
       'quickstart/webhook',
     ],
-    'Boas Práticas': ['bestpractices/blockednumber'],
-
     Dicas: [
+      'tips/blockednumber',
       'tips/enable-fix-number',
       'tips/disable-screem-blocked',
       'tips/android-active',
@@ -72,21 +71,17 @@ module.exports = {
       'group/leave-group',
       'group/metadata-group',
     ],
+    'Lista de Transmissão': ['broadcast/introduction'],
     Status: [
       'status/introduction',
       'status/send-text-status',
-      /*
       'status/send-image-status',
-
-      */
     ],
-    Fila: [
-      'status/introduction',
-      'status/send-text-status',
-      /*
-      'status/send-image-status',
-
-      */
+    'Fila de Mensagens': [
+      'queue/introduction',
+      'queue/get-queue',
+      'queue/delete-queue',
+      'queue/delete-queue-id',
     ],
     Webhooks: [
       /* 'webhooks/introduction',

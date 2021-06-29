@@ -3,7 +3,7 @@ id: blockednumber
 title: Bloqueios e Banimentos
 ---
 
-:::caution Existe possibilidade do Whatsapp bloquear meu número ?
+:::caution Existe alguma possibilidade do Whatsapp bloquear meu número ?
 
 **SIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM**
 
@@ -13,10 +13,11 @@ title: Bloqueios e Banimentos
 
 ## Introdução
 
+### Boas práticas !
+
 Criamos este tópico para compartilhar um pouco de tudo que aprendemos sobre boas práticas afim de evitar aborrecimentos com bloqueios e banimentos no Whatsapp.
 
-Gostaria de iniciar fazendo a seguinte reflexão com você: provavelmente você recebe diariamente vários SMSs com publicidades de lojas, promoções, operadoras de telefonia e por aí vai. 
-Agora pense: e pelo Whatsapp quantas mensagens deste tipo você recebe? Geralmente são poucas, não é mesmo? Caso você receba o Whatsapp permite você marcar como spam e até mesmo bloquear o contato.
+Gostaria de iniciar fazendo a seguinte reflexão com você, provavelmente você recebe diariamente vários SMSs com publicidades de lojas, promoções, operadoras de telefonia e por aí vai. Agora pense, e pelo Whatsapp quantas mensagens deste tipo você recebe? Provalmente nenhuma ou pouquissímas não é mesmo? Meso assim caso você receba o Whatsapp permite você marcar como spam e até mesmo bloquear o contato.
 
 # O WHATSAPP NÃO PERMITE SPAM!
 

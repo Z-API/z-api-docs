@@ -1,17 +1,19 @@
 ---
 id: send-text-status
-title: Enviando Status
+title: Enviando texto status
 ---
 
 ## Método
 
-#### /send-text
+#### /send-text-status
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text-status
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text-status
 
 ---
 
 ## Conceituação
+
+Você pode postar textos no seu status e este método é responsavel por isso, lembre-se que os status somem após 24 horas.
 
 ---
 
@@ -19,10 +21,9 @@ title: Enviando Status
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
-|           |      |           |
+| Atributos |  Tipo  | Descrição                              |
+| :-------- | :----: | :------------------------------------- |
+| message   | String | Mensagem a ser enviada para seu status |
 
 ---
 
@@ -32,38 +33,54 @@ title: Enviando Status
 | :-------- | :--: | :-------- |
 |           |      |           |
 
-## Response
-
 ---
 
-### 200
+## Request Body
 
-| Atributos | Tipo | Descrição |
-| :-------- | :--- | :-------- |
-|           |      |           |
-|           |      |           |
+#### URL
 
-Exemplo
+Método
+
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text-status
+
+#### Body
 
 ```json
 {
-  "zaapId": "3999984263738042930CD6ECDE9DF533",
-  "messageId": "D241F829732339502B68"
+  "message": "Sua mensagem para status"
 }
 ```
 
 ---
 
+## Response
+
+### 200
+
+| Atributos | Tipo   | Descrição      |
+| :-------- | :----- | :------------- |
+| zaapId    | string | id no z-api    |
+| messageId | string | id no whatsapp |
+
+Exemplo
+
+```json
+{
+  "zaapId": "3999984263738042930CD6ECDE9VDWSA",
+  "messageId": "D241XXXX732339502B68"
+}
+```
+
+### 405
+
+Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+
 ### 415
 
----
-
-### 404
+Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
 
 ---
 
 ## Code
 
-```
-
-```
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-text-status.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

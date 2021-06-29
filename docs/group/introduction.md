@@ -7,7 +7,9 @@ title: Introdução
 
 Neste tópico você vai conhecer todos os métodos disponiveis para manipulação de grupos.
 
-Assim como os contatos os grupos também são para o whatsapp, então basicamente tudo que você envia/recebe de um contato você também terá com os grupos, o que você precisa entender é que o id do grupo nada mais é que o fone de quem criou concatenado com um timestamp e é esta id que você vai utilizar no fone para realizar a manipulação do grupo, este numero id/fone. Para você conseguir este id/fone utilize o metodo get/chats.
+Como já dito anteriormente para o Whatsatpp tudo é um chat, sabendo disso o grupo nada mais é que um chate e basicamente tudo que você envia/recebe de em chat poderá enviar/receber com os grupos. O grupo possui um ID/Fone que nada mais é do que o fone de quem criou concatenado com um timestamp algo parececido com "5511999999999-162327528", e é este ID/Fone que você vai utilizar como fone para realizar os envios para seus grupos. Para você conseguir este ID/Fone utilize o metodo get/chats.
+
+Neste tópico você também vai encontrar também metódos para criação e administração de grupos.
 
 :::tip ID/Fone de Grupos
 
