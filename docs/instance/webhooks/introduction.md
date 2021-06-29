@@ -1,6 +1,6 @@
 ---
-id: webhook
-title: Webhook
+id: introduction
+title: Introdução
 ---
 
 ## O que é e para que serve?
@@ -39,7 +39,7 @@ Como configurar meu Webhook?
 
 Acesse nosso painel admin, vá em opções e escolha "editar instância".
 
-![img](../../img/EditInstance.jpg)
+![img](../../../img/EditInstance.jpg)
 
 :::important
 

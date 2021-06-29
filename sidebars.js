@@ -9,11 +9,7 @@
 
 module.exports = {
   tutorialSidebar: {
-    'Quick Start': [
-      'quickstart/introduction',
-      'quickstart/authentication',
-      'quickstart/webhook',
-    ],
+    'Quick Start': ['quickstart/introduction', 'quickstart/authentication'],
     Dicas: [
       'tips/blockednumber',
       'tips/enable-fix-number',
@@ -30,6 +26,15 @@ module.exports = {
       'instance/restart',
       'instance/disconnect',
       'instance/status',
+      {
+        webhook: [
+          'instance/webhooks/introduction',
+          'instance/webhooks/update-webhook-delivery',
+          'instance/webhooks/update-webhook-disconnected',
+          'instance/webhooks/update-webhook-message-status',
+          'instance/webhooks/update-webhook-receive',
+        ],
+      },
     ],
     Mensagens: [
       'message/introduction',
