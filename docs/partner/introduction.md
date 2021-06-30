@@ -67,11 +67,11 @@ Após aderir ao plano de parceria você deverá criar instâncias unica e exclus
 
 ## Métodos
 
-Criar Instância
+[Criar Instância]
 
-Assinar Instância
+[Assinar Instância]
 
-Cancelar Instância
+[Cancelar Instância]
 
 [criar instância]: https://developer.z-api.io/partner/create-instance
 [assinar instância]: https://developer.z-api.io/partner/sign-instance
