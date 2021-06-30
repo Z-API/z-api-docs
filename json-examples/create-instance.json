@@ -1,0 +1,17 @@
+{
+    "method": "POST",
+    "url": "https://api.z-api.io/instances/integrator/on-demand",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"name\": \"Instancia Z-API - 9292812\", \"deliveryCallbackUrl\": \"https://meuwebhook.com.br/delivery\", \"receivedCallbackUrl\": \"https://meuwebhook.com.br/receive\", \"disconnectedCallbackUrl\": \"https://meuwebhook.com.br/disconnected\", \"messageStatusCallbackUrl\": \"https://meuwebhook.com.br/status\"}"
+    }
+}
