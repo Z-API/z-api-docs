@@ -7,6 +7,10 @@
         {
             "name": "Content-Type",
             "value": "application/json"
+        },
+        {   
+            "name": "Authorization",
+            "value": "Bearer SEU-TOKEN-AQUI"
         }
     ],
     "cookies": [],

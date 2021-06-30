@@ -58,3 +58,21 @@ Durante a adesão do plano a empresa integradora pode optar pela migração a to
 Recomendamos a nossos clientes a prática do modelo pré-pago em suas soluções pois não trabalhamos com pro rata.
 
 :::
+
+:::caution Atenção
+
+Após aderir ao plano de parceria você deverá criar instâncias unica e exclusivamente via API, as instâncias criadas no painel admin não serão ativadas.
+
+:::
+
+## Métodos
+
+Criar Instância
+
+Assinar Instância
+
+Cancelar Instância
+
+[criar instância]: https://developer.z-api.io/partner/create-instance
+[assinar instância]: https://developer.z-api.io/partner/sign-instance
+[cancelar instância]: https://developer.z-api.io/partner/unsubscribes-instance
