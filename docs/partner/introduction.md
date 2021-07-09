@@ -17,19 +17,19 @@ Os tokens contém um número limite de utilização, mas durante nossa parceria 
 
 #### Primeiro token
 
-    - Permite criar 25 instâncias, ao atingir este número o integrador deve solicitar o seu novo token.
+> Permite criar 25 instâncias, ao atingir este número o integrador deve solicitar o seu novo token.
 
 #### Segundo token
 
-    - Permite criar +25 instâncias, com valor da segunda faixa tarifária.
+> Permite criar +25 instâncias, com valor da segunda faixa tarifária.
 
 #### Terceiro token
 
-    - Permite criar +50 instâncias, com valor da terceira e última faixa tarifária.
+> Permite criar +50 instâncias, com valor da terceira e última faixa tarifária.
 
 #### Token definitivo
 
-    - Com este token o céu é o límite ;)
+> Com este token o céu é o límite ;)
 
 ---
 
@@ -41,7 +41,7 @@ Os tokens contém um número limite de utilização, mas durante nossa parceria 
 
 ---
 
-### FATURAMENTO
+### Faturamento
 
 Nosso ciclo de faturamento funciona da seguinte forma:
 

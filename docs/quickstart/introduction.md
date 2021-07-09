@@ -16,6 +16,14 @@ Você provavelmente já deve saber, mas vamos reafirmar!
 
 **Z-API** é um serviço RestFul que provê uma API que permite que você interaja com seu Whatsapp através uma API simples e intuitiva, além de webhooks para te avisar sobre interações com seu número.
 
+:::important Importante
+
+Utilizamos a sessão do Whatsapp Web para prover nossos serviços, durante o tempo que estiver conectado em nosso serviço não é possivel utiliza-lo.
+
+O Whatsapp vem noticiando que em breve será possivel ter o Whatsapp Web aberto em mais de um disponsitivo, mas ele ainda não divulgou quando esta funcionalidade estaria disponível.
+
+:::
+
 ---
 
 ## Quem pode utilizar Z-API?
@@ -49,6 +57,12 @@ Para exemplificar, segue os passos de envio de uma mensagem de texto simples:
 5. Assim que o destinatário receber a mensagem, o Webhook de message-status é chamado informando RECEIVED e
 
 6. Por fim quando o destinatário ler a mensagem o messages-status é chamado informando READ
+
+---
+
+## Limites
+
+Começei por este tópico porque é bem comum as pessoas perguntarem sobre quais os limites de envios com Z-API. Nós **NÃO TEMOS LIMITE** para número de mensagens enviadas ! Mas é imporante você entender que esta utilizando uma sessão do Whatsapp Web, então o padrão de utilização precisa ser compatível, além disso sempre recomendamos que você leia atentamente as politicas estabelecidas pelo proprio Whatsapp em sua pagina oficial https://www.whatsapp.com/legal.
 
 ---
 

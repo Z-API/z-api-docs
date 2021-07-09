@@ -1,7 +1,7 @@
 ---
 id:id: update-webhook-disconnected
 
-title: Atualiza webhook desconexão
+title: Disconnected
 ---
 
 ## Método

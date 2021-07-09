@@ -19,6 +19,14 @@ Por Link, onde você temum video hospedado em algum lugar da internet e envia ap
 
 Por Base64, se você optar por esta opção precisará ter em sua aplicação um método para converter o video em Base64.
 
+### Tamanho e formatos
+
+O Whatsapp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio Whatsapp.
+
+Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
+
+[link]: https://developers.facebook.com/docs/whatsapp/api/media
+
 ---
 
 ## Atributos

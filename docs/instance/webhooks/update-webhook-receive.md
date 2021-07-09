@@ -1,7 +1,7 @@
 ---
 id:id: update-webhook-receive
 
-title: Atualiza webhook recebimento
+title: Receive
 ---
 
 ## Método

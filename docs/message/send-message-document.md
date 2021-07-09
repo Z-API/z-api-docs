@@ -13,6 +13,14 @@ title: Enviar documentos
 
 [clique aqui]: https://developers.facebook.com/docs/whatsapp/api/media/#post-processing
 
+### Tamanho e formatos
+
+O Whatsapp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio Whatsapp.
+
+Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
+
+[link]: https://developers.facebook.com/docs/whatsapp/api/media
+
 ---
 
 ## Conceituação

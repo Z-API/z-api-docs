@@ -32,11 +32,13 @@ Exemplos:
 [conversor 1]: https://www.base64-image.de/
 [conversor 2]: https://base64.guru/converter/encode/image
 
-### Tamanho de imagens
+### Tamanho e formatos
 
-O Whatsapp limita o tamanho de imagens e sua politica muda constantemente para melhor entender sobre este limites consulte diretamente as politicas [clicando aqui]
+O Whatsapp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio Whatsapp.
 
-[clicando aqui]: https://developers.facebook.com/docs/whatsapp/api/media/#post-processing
+Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
+
+[link]: https://developers.facebook.com/docs/whatsapp/api/media
 
 ---
 

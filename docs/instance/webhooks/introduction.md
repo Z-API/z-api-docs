@@ -9,38 +9,42 @@ Segundo o Google, Webhook é um recurso usado na internet para que uma aplicaç�
 
 Então se você está se integrando com o _Z-API_ e precisa receber informações pelo Whatsapp, é necessário prover estes end-points na sua aplicação para conseguirmos te avisar sobre tudo que acontece no seu Whatsapp. Ou seja, toda vez que o número conectado receber uma interação, vamos fazer uma requisição com o método POST para a URL configurada previamente. (Para cada requisição há um corpo em JSON específico)
 
-Atualmente temos 4 webhooks, são eles:
+O Z-API oferece dentro das configurações da instância no painel admin o apontamento de webhooks para que ele possa notificar você sobre interações com seus chats/contatos, atualiações sobre suas mensagem e mudanças na estado da sua instância.
 
-> Você não precisa configurar todos, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com _Z-API_
+### Nossos webhooks
 
----
+#### Delivery
 
-## Ao Enviar
+Responsavel por avisar você que sua mensagem foi entregue ao Whatsapp, mas isso não significa necessáriamente que seu contato a recebeu, para informações de recebimento e leitura você vai precisar observar o webhook de status.
 
-    Utilizado para te passar
+#### Receive
 
----
+Este webhook será chamado toda vez que alguem interagir com seu numero no whatsapp.
 
-## Ao Receber
+#### Status
 
----
+Este método vai lhe avisar de todas mudanças de status que sua mensagem sofrer, se ela for recebida, lida, respondida ou excluida, ou seja uma mesma mensagem pode passar por varios status, e ter o mesmo status mais de uma vez, que é o caso de respondida.
 
-## Ao desconectar
+#### Disconnected
 
----
+Este webhook será chamado sempre que nosso serviço identificar alguma indisponibiidade na comunicação, seja do seu celular com o whatsapp ou mesmo da conexão entre seu celular e o Z-API.
 
-## Ao receber status de mensagem
+:::tip Dicas
 
-> Você não precisa configurar todos, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com _Z-API_
+- Não deixe de ler nossa sessão dicas, lá você vai encontrar alguns tópicos de como melhorar sua conexão com Z-API e ter mais qualidade no serviço.
 
----
+- Você não precisa configurar todos webhookds, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com _Z-API_
 
-Como configurar meu Webhook?
+:::
 
-Acesse nosso painel admin, vá em opções e escolha "editar instância".
-
-![img](../../../img/EditInstance.jpg)
+## Como configurar meu Webhook?
 
 :::important
 
 Nunca compartilhe o seu ID e token com ninguém.
+
+:::
+
+Acesse nosso painel admin, vá em opções e escolha "editar instância".
+
+![img](../../../img/EditInstance.jpg)

@@ -16,6 +16,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"name\": \"Instancia Z-API - 9292812\", \"deliveryCallbackUrl\": \"https://meuwebhook.com.br/delivery\", \"receivedCallbackUrl\": \"https://meuwebhook.com.br/receive\", \"disconnectedCallbackUrl\": \"https://meuwebhook.com.br/disconnected\", \"messageStatusCallbackUrl\": \"https://meuwebhook.com.br/status\"}"
+        "text": "{\"name\": \"Instancia Z-API - 9292812\", \"deliveryCallbackUrl\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/delivery\", \"receivedCallbackUrl\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/receive\", \"disconnectedCallbackUrl\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/disconnected\", \"messageStatusCallbackUrl\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/status\"}"
     }
 }
