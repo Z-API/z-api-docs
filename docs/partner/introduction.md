@@ -5,6 +5,12 @@ title: Introdução
 
 ## Parceiro Integrador
 
+### Boas Vindas
+
+Se você esta neste tópico ja quebrou algumas castanhas com a gente não é mesmo ?
+
+Estamos muito felizes em você considerar ser um parceiro integrador nosso, queremos muito ser benção em seus negócios e esperamos que você prospere muito, e obvio esperamos poder de ajudar nesta empreitada, por isso agora que você já atingiu 25 licenças já nos conhecemos bem e nossa parceria fica ainda mais forte estaremos aqui prontos para lhe ajudar e crecermos juntos, por isso conte com a gente !
+
 ### Modelo de Integrador
 
 Ao aderir ao programa de integrador sua empresa receberá um token de integrador e a documentação para criação/assinatura/cancelamento de instâncias tudo isso via api sem a necessidade de acesso a nossa interface admin.
@@ -75,4 +81,4 @@ Após aderir ao plano de parceria você deverá criar instâncias unica e exclus
 
 [criar instância]: https://developer.z-api.io/partner/create-instance
 [assinar instância]: https://developer.z-api.io/partner/sign-instance
-[cancelar instância]: https://developer.z-api.io/partner/unsubscribes-instance
+[cancelar instância]: https://developer.z-api.io/partner/unsubscribe-instance
