@@ -15,7 +15,7 @@ module.exports = {
   },
   title: 'Z-API Docs',
   tagline: 'Documentação completa da API',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://developer.z-api.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -114,8 +114,7 @@ module.exports = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/Z-API/z-api-docs/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
