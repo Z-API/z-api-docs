@@ -7,7 +7,7 @@ title: Enviar contato
 
 #### /send-contact
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contact
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-contact
 
 ---
 
