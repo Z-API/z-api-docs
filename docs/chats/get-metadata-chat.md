@@ -1,6 +1,6 @@
 ---
 id: get-metadata-chat
-title: Pegar Metadata do Chat
+title: Pegar metadata do Chat
 ---
 
 ## Método

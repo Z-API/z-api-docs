@@ -53,7 +53,7 @@ Método
 | name | string | **Nome ** atribudo ao chat, lembrando que se for um grupo ou lista de transmissão deve retorar os respectivos IDs |
 | phone | string | Phone do contato |
 | unread | string | indica o numero de mensagens não lidas em um chat |
-| lastMessageTime | string | Timestamp com a data e hora da ultima ingeração com o chat |
+| lastMessageTime | string | Timestamp com a data e hora da última interação com o chat |
 | isMuted | string | 0 ou 1 indica se você silênciou ou não este chat |
 | isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |
 | profileThumbnail | string | URL da foto do chat **o Whatsapp apaga após 48h** |

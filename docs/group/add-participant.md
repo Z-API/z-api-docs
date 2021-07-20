@@ -1,6 +1,5 @@
 ---
-id:id: add-participant
-
+id: add-participant
 title: Adicionar Participantes
 ---
 
