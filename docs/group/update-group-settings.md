@@ -13,7 +13,11 @@ title: Configurações do grupo
 
 Este método permite você alterar as preferências do grupo.
 
-:::caution Atenção Somente administradores podem alterar as preferências do grupo :::
+:::caution
+
+Atenção Somente administradores podem alterar as preferências do grupo
+
+:::
 
 ---
 
