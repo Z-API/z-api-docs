@@ -1,18 +1,19 @@
 ---
-id:id: add-admin
-
-title: Promover admin do grupo
+id:id: update-group-settings
+title: Configurações do grupo
 ---
 
 ## Método
 
-#### /add-admin
+#### /update-group-settings
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-admin
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-settings
 
 ## Conceituação
 
-Este método é reponsavel por promover participamentes do grupo à administradores, você pode provomover um ou mais participamente à administrador.
+Este método permite você alterar as preferências do grupo.
+
+:::attention Atenção Somente administradores podem alterar as preferências do grupo :::
 
 ---
 
@@ -20,15 +21,15 @@ Este método é reponsavel por promover participamentes do grupo à administrado
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| groupId | string | ID/Fone do grupo |
-| phones | array string | Array com os numero(s) do(s) participante(s) a serem promovidos |
+| Atributos |  Tipo  | Descrição        |
+| :-------- | :----: | :--------------- |
+| phone     | string | ID/Fone do grupo |
 
 ### Opcionais
 
 | Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
+| :-- | :-: | :-- |
+| adminOnlyMessage | boolean | Somente administrador podem enviar mensagens no grupo |
 
 ---
 
@@ -36,14 +37,14 @@ Este método é reponsavel por promover participamentes do grupo à administrado
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-admin
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/adminOnlyMessage
 
 #### Body
 
 ```json
 {
   "groupId": "5511999999999-1623281429",
-  "phones": ["5544999999999", "5544888888888"]
+  "adminOnlyMessage": true
 }
 ```
 
@@ -77,4 +78,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/add-admin.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/adminOnlyMessage.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

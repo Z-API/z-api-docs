@@ -53,9 +53,9 @@ Este método é reponsável por remover participantes do grupo.
 
 ### 200
 
-| Atributos | Tipo | Descrição |
-| :-- | :-- | :-- |
-| value | boolean | true caso tenha tenha dado certo e false em caso de falha |
+| Atributos | Tipo    | Descrição                                           |
+| :-------- | :------ | :-------------------------------------------------- |
+| value     | boolean | true caso tenha dado certo e false em caso de falha |
 
 **Exemplo**
 

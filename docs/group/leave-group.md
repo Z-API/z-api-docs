@@ -51,9 +51,9 @@ Este método permite você sair de um grupo ao qual participa.
 
 ### 200
 
-| Atributos | Tipo | Descrição |
-| :-- | :-- | :-- |
-| value | boolean | true caso tenha tenha dado certo e false em caso de falha |
+| Atributos | Tipo    | Descrição                                           |
+| :-------- | :------ | :-------------------------------------------------- |
+| value     | boolean | true caso tenha dado certo e false em caso de falha |
 
 **Exemplo**
 

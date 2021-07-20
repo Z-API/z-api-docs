@@ -17,14 +17,14 @@ Neste método você poderá enviar textos simples mas, você pode incrementá-lo
 
 - Para saber como formata fontes no Whatsapp [clique aqui]
 
-- Você também pode utilizar **quebra linhas** em suas mensagens porém isso pode ser feito de formas diferentes, isso muda por fatores como a plataforma que sua aplicação esta rodando e linguagem de programação utilizada, até o momento identificamos as seguinte:
+- Você também pode utilizar **quebra linhas** em suas mensagens porém isso pode ser feito de formas diferentes, isso muda por fatores como a plataforma que sua aplicação esta rodando e linguagem de programação utilizada, até o momento indentificamos as seguinte:
 
   > - \n
   > - \r
   > - \r\n
   > - %0a
 
-  Verifique a que mais se adéqua ao seu caso.
+  Verifique a que mais se adequa ao seu caso.
 
   **Se descobrir uma maneira nova de fazer quebra de linhas por favor nos avise :)**
 
@@ -35,7 +35,7 @@ Neste método você poderá enviar textos simples mas, você pode incrementá-lo
 
 :::tip Sobre emojis
 
-Sobre emojis o que você precisa saber é que ele é um carácter ASCII normal assim com existe a fonte Times New Roman por exemplo, existem fontes de emojis, pense que você pode criar sua própria >galeria de emojis.
+Sobre emojis o que você precisa saber é que ele é um caracter ASCII normal assim com existe a fonte Times New Roman por exemplo, existem fontes de emojis, pense que você pode criar sua própria >galeria de emojis.
 
 Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utilizar este aqui 🤪 se quiser.
 
