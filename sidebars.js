@@ -26,6 +26,7 @@ module.exports = {
       'instance/restart',
       'instance/disconnect',
       'instance/status',
+      'instance/device',
       {
         webhook: [
           'instance/webhooks/introduction',
