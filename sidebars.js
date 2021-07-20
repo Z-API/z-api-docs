@@ -78,6 +78,7 @@ module.exports = {
       'group/remove-admin',
       'group/leave-group',
       'group/metadata-group',
+      'group/update-group-settings',
     ],
     'Lista de Transmissão': ['broadcast/introduction'],
     Status: [
