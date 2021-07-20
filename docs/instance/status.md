@@ -13,7 +13,7 @@ title: Status da instância
 
 ## Conceituação
 
-Este método é responsável por lhe passar informações sobre a saúde da sua instância no Z-API, para uma boa qualidade de envio e recebimento é preciso tomar os seguintes cuidados:
+Este método é responsável por lhe passar informações sobre a saúde da sua instância no Z-API, para uma boa qualidade de envio e recebimento é preciso tomar os seguinte cuidados:
 
 - Configure os webhooks no Z-API para receber notificações sobre mudanças no status da sua instância.
 
@@ -36,4 +36,4 @@ Este método é responsável por lhe passar informações sobre a saúde da sua 
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://rawcdn.githack.com/Z-API/z-api-docs/15e8d4dc8e2ad7a112d534cc731a1c6961f1be7a/json-examples/instance-status.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/status.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
