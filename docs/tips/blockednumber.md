@@ -17,11 +17,11 @@ title: Bloqueios e Banimentos
 
 Criamos este tópico para compartilhar um pouco de tudo que aprendemos sobre boas práticas afim de evitar aborrecimentos com bloqueios e banimentos no Whatsapp.
 
-Gostaria de iniciar fazendo a seguinte reflexão com você, provavelmente você recebe diariamente vários SMSs com publicidades de lojas, promoções, operadoras de telefonia e por aí vai. Agora pense, e pelo Whatsapp quantas mensagens deste tipo você recebe? Provalmente nenhuma ou pouquissímas não é mesmo? Meso assim caso você receba o Whatsapp permite você marcar como spam e até mesmo bloquear o contato.
+Gostaria de iniciar fazendo a seguinte reflexão com você, é bem provavel que você receba diariamente vários SMSs com publicidades de lojas, promoções, operadoras de telefonia e por aí vai. Agora pense, e pelo Whatsapp quantas mensagens deste tipo você recebe? Provavelmente nenhuma ou pouquíssimas não é mesmo? Meso assim caso você receba o Whatsapp permite você marcar como spam e até mesmo bloquear o contato.
 
 # O WHATSAPP NÃO PERMITE SPAM!
 
-O Whatsapp é muito rigoroso quando o assunto é envio de spam e por isso damos mais atenção para ele do que para o SMS. Por que deixamos vários SMSs acumularem e não consiguimos deixar de olhar para o celular imediatamente ao receber um Whatsapp? Pois sabemos que recebemos um Whatsapp de algum contato conhecido e raramente recebemos promoções pelo mesmo.
+O Whatsapp é muito rigoroso quando o assunto é envio de spam e por isso damos mais atenção para ele do que para o SMS. Por que deixamos vários SMSs acumularem e não conseguimos deixar de olhar para o celular imediatamente ao receber um Whatsapp? Pois sabemos que recebemos um Whatsapp de algum contato conhecido e raramente recebemos promoções pelo mesmo.
 
 ---
 
@@ -49,7 +49,7 @@ Sempre em nossas conversas utilizamos o case de um dos nossos clientes mais anti
 
 - Ofereça a opção do destinatário não receber mais mensagens e monitore os webhooks para tratar essas interações e
 
-- Se for possível dispare por lista de transmissão. (Nosso serviço não tem acesso aos seus contatos, então não é possivel criar listas de transmissão pela nossa API :( )
+- Se for possível dispare por lista de transmissão. (Nosso serviço não tem acesso aos seus contatos, então não é possível criar listas de transmissão pela nossa API :( )
 
 :::warning Cuidado
 

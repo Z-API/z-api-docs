@@ -11,7 +11,7 @@ Voltando para o tópico Android, abaixo listamos em 3 passos como você manter s
 
 ### Primeiro passo
 
-Você vai precisar habilitar o modo desenvolvedor, para isso você precisa acessar as configurações do seu celular depois vá em Sistema e em seguinda Sobre o dispositivo. Deppois em número da versão e clique nele 7 vezes seguidas sobre ele, e pronto.
+Você vai precisar habilitar o modo desenvolvedor, para isso você precisa acessar as configurações do seu celular depois vá em Sistema e em seguida Sobre o dispositivo. Depois em número da versão e clique nele 7 vezes seguidas sobre ele, e pronto.
 
 ![img](../../img/WABAndroidAtivo.png)
 
@@ -19,7 +19,7 @@ Você vai precisar habilitar o modo desenvolvedor, para isso você precisa acess
 
 ### Segundo passo
 
-Depois de ativada as opções de desenvolvedor você vai receber um pedido para confirmar seu método de desbloqueio de tela. Quando voltar ao menu de anterior vai perceber que mais opções estarão disponiveis no final do menu.
+Depois de ativada as opções de desenvolvedor você vai receber um pedido para confirmar seu método de desbloqueio de tela. Quando voltar ao menu de anterior vai perceber que mais opções estarão disponíveis no final do menu.
 
 ![img](../../img/WABAndroidAtivo1.png)
 

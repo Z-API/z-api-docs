@@ -7,7 +7,7 @@ title: Introdução
 
 Uma instância é uma conexão a partir de um número de telefone com conta no WhatsApp, que será responsável pelo envio e recebimento de mensagens. É possível criar várias instâncias para que você consiga ter vários números de WhatsApp conectado a sua conta.
 
-Técnicamente falando uma instância nada mais é do que uma máquina virtual (ou container) dentro da nossa infraestrutura de servidores, dedicada a prover um ambiente para conexão do seu número. 
+Tecnicamente falando uma instância nada mais é do que uma máquina virtual (ou container) dentro da nossa infraestrutura de servidores, dedicada a prover um ambiente para conexão do seu número.
 
 Cada instância só possui um número, caso precise conectar mais números será necessário criar mais instâncias. Mas uma instância não é presa a um único número, ou seja, você pode desconectar um número e conectar outro na mesma instância.
 

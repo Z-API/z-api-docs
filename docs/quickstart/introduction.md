@@ -18,9 +18,9 @@ Você provavelmente já deve saber, mas vamos reafirmar!
 
 :::important Importante
 
-Utilizamos a sessão do Whatsapp Web para prover nossos serviços, durante o tempo que estiver conectado em nosso serviço não é possivel utiliza-lo.
+Utilizamos a sessão do Whatsapp Web para prover nossos serviços, durante o tempo que estiver conectado em nosso serviço não é possível utiliza-lo.
 
-O Whatsapp vem noticiando que em breve será possivel ter o Whatsapp Web aberto em mais de um disponsitivo, mas ele ainda não divulgou quando esta funcionalidade estaria disponível.
+O Whatsapp vem noticiando que em breve será possível ter o Whatsapp Web aberto em mais de um dispositivo, mas ele ainda não divulgou quando esta funcionalidade estaria disponível.
 
 :::
 
@@ -28,27 +28,27 @@ O Whatsapp vem noticiando que em breve será possivel ter o Whatsapp Web aberto 
 
 ## Quem pode utilizar Z-API?
 
-Não temos restrições quanto a utilização mas geralmente são 2 públicos bem distintos que utilizam nossos serviços. São eles:
+Não temos restrições quanto a utilização, mas geralmente são 2 públicos bem distintos que utilizam nossos serviços. São eles:
 
-- Programadores com conhecimentos em API's RestFul. Se você não é, mas conhece alguém com estas competências, já serve :) e
+- Programadores com conhecimentos em API's RestFul. Se você não é, mas conhece alguém com estas competências, já serve :)
 
 - Utilizadores de soluções de terceiros que permitam integração com Z-API
 
 ---
 
-## Tá bom! mas o que dá para fazer com ele?
+## Tábom! mas o que dá para fazer com ele?
 
 De forma bem direta, tudo que você faz com Whatsapp Web você poderá fazer utilizando nosso serviço. Para isso basta ler o QRcode do Z-API e utilizar nosso serviço!
 
 ---
 
-## Técnicamente, como funciona o fluxo de envio?
+## Tecnicamente, como funciona o fluxo de envio?
 
 Para exemplificar, segue os passos de envio de uma mensagem de texto simples:
 
-1. Você envia via API uma mensagem para o Z-api;
+1. Você envia via API uma mensagem para o Z-API;
 
-2. O Z-api adiciona em uma fila e te retorna o ID da mensagem;
+2. O Z-API adiciona em uma fila e te retorna o ID da mensagem;
 
 3. Sua instância processa a fila enviando para o WhatsApp;
 
@@ -62,7 +62,7 @@ Para exemplificar, segue os passos de envio de uma mensagem de texto simples:
 
 ## Limites
 
-Começei por este tópico porque é bem comum as pessoas perguntarem sobre quais os limites de envios com Z-API. Nós **NÃO TEMOS LIMITE** para número de mensagens enviadas ! Mas é imporante você entender que esta utilizando uma sessão do Whatsapp Web, então o padrão de utilização precisa ser compatível, além disso sempre recomendamos que você leia atentamente as politicas estabelecidas pelo proprio Whatsapp em sua pagina oficial https://www.whatsapp.com/legal.
+Iniciei por este tópico porque é bem comum as pessoas perguntarem sobre quais os limites de envios com Z-API. Nós **NÃO TEMOS LIMITE** para número de mensagens enviadas! Mas é importante você entender que esta utilizando uma sessão do Whatsapp Web, então o padrão de utilização precisa ser compatível, além disso sempre recomendamos que você leia atentamente as políticas estabelecidas pelo proprio Whatsapp em sua pagina oficial https://www.whatsapp.com/legal.
 
 ---
 

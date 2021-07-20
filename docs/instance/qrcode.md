@@ -27,7 +27,8 @@ Este método retorna uma imagem do tipo base64. Você poderá renderizar em um c
 
 Sim! Como no Whatsapp Web você vai precisar ler um QRCode para conectar-se ao Z-API.
 
-Existem 2 formas que você pode utilizar para realizar esta leitura. São elas: 
+Existem 2 formas que você pode utilizar para realizar esta leitura. São elas:
+
 - Se conectar através do nosso painel de administrador ou
 - Disponibilizar a experiência dentro da sua própria aplicação através dos métodos descritos nesta sessão.
 
@@ -53,7 +54,7 @@ Se você optou por implementar a leitura do QRCode em sua aplicação, você pre
 
 Caso você chame o método e já esteja conectado ele não permitirá que você conecte novamente.
 
-Uma vez conectado você já pode começar a utilizar os metodos Z-API para manipular seu WhatsApp.
+Uma vez conectado você já pode começar a utilizar os métodos Z-API para manipular seu WhatsApp.
 
 :::
 
