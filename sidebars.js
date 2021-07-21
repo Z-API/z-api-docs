@@ -99,6 +99,12 @@ module.exports = {
 
       */
     ],
+    Parceiros: [
+      'partner/introduction',
+      'partner/create-instance',
+      'partner/sign-instance',
+      'partner/unsubscribe-instance',
+    ],
     Sample: ['sample/exemplos'],
   },
 };
