@@ -15,6 +15,12 @@ title: Enviar lista de opções
 
 Neste método você poderá enviar mensagens de texto com uma lista de opções, onde o usuário poderá selecionar uma das opções enviadas.
 
+:::caution IMPORTANTE
+
+Esta funcionalidade está disponivel apenas para envios com contas Whatsapp NÃO COMERCIAL.
+
+:::
+
 ---
 
 ## Atributos
