@@ -19,4 +19,4 @@ Para melhor tangibilizar, nos próximos tópicos vamos de forma ordenada te ajud
 
 :::tip Curiosidade
 
-É bacana você saber que toda vez que você cria uma instância um nossos FlyBots, que são responsáveis por orquestrar nosso Devops, inicia o processo de criação de um container com a Stack Z-API na AWS Brasil. Sim! todos nossos serviços nacionais rodam na AWS Brasil.
+É bacana você saber que toda vez que você cria uma instância nossos FlyBots responsáveis por orquestrar todo nosso Devops, inicia o processo de criação de um container com a Stack Z-API na AWS Brasil. Sim! todos nossos serviços são nacionais e rodam na AWS Brasil.
