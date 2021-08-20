@@ -51,9 +51,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 ```json
 {
   "phone": "5511912341234",
-  "contactName": "Z-API Contato",
-  "contactPhone": "554498398733",
-  "contactBusinessDescription": "Z-API Asas para sua imaginação"
+  "video": "https://www.youtube.com/watch?v=esnMDtMysHo"
 }
 ```
 
