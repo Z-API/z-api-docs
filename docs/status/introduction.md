@@ -10,3 +10,5 @@ Tópico dificil este rsrsr, talvez por nunca ter utilizado o recurso eu nunca pe
 <img src="../../img/Status1.jpeg" width='400px' style={{marginRight: 20}}/> <img src="../../img/Status3.jpeg" width='400px' style={{marginRight: 20}}/>
 
 <img src="../../img/Status4.jpeg" width='400px' style={{marginRight: 20}}/> <img src="../../img/Status6.jpeg" width='400px' style={{marginRight: 20}}/>
+
+![img](../../img/Status4.jpeg)

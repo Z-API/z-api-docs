@@ -10,6 +10,7 @@
 module.exports = {
   tutorialSidebar: {
     'Quick Start': ['quickstart/introduction', 'quickstart/authentication'],
+
     Dicas: [
       'tips/blockednumber',
       'tips/enable-fix-number',
@@ -105,6 +106,8 @@ module.exports = {
       'partner/sign-instance',
       'partner/unsubscribe-instance',
     ],
+    'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
+
     Sample: ['sample/exemplos'],
   },
 };
