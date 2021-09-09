@@ -18,6 +18,7 @@ module.exports = {
       'tips/android-active',
       'tips/stability',
       'tips/emulators',
+      'tips/Z-APIvsAPI-OFICIAL',
     ],
 
     Instância: [
