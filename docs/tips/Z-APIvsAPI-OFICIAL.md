@@ -3,8 +3,6 @@ id: Z-APIvsAPI-OFICIAL
 title: Z-API vs API Oficial
 ---
 
-https://docs.google.com/document/d/1F9AIhA0rkIWROMlBoJLpX_xA9Tg-26fGlX2-n1NHeuQ/edit#
-
 ## As Diferenças do Z-API e o WhatsApp Business API.
 
 Qual é a melhor alternativa para você?
