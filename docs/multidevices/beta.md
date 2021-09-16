@@ -11,11 +11,7 @@ Mas com a mesma transparência de sempre precisamos te dizer que realmente quase
 
 Durante este processo nosso time se empenhou para entregar a mesma experiência de antes com os beneficios desta nova versão. Nossos testes estão sendo criteriosos e abrangentes, mas como todo bom Dev você ja sabe que em algum momento poderemos identificar algum ponto que passou desapercebido em nossos testes e quando isso acontecer saiba que estaremos aqui para o mais rapido possivel procurar uma solução e em tempo record corrigir.
 
-## Quem pode ser beta Z-API ?
-
-Não criamos barreiras de entrada, nosso desejo é de que o mais rápido possivel ela esteja disponivel para todos nossos clientes.
-
-Inicialmente vamos limitar à 100 clientes(que já possuam conta com assinatura ativa) com o máximo de 10 instâncias por cliente e obvio que também esteja disposto a quebrar umas castanhas com a gente :)
+---
 
 ## Check-List Beta
 
@@ -25,8 +21,63 @@ Inicialmente vamos limitar à 100 clientes(que já possuam conta com assinatura 
 
 3 - Estar disposto a contribuir com a evolução do Z-API.
 
-Os selecionados serão adicionados em um novo grupo aberto, onde nosso time estara a disposição para tirar todas as duvidas e resolver o mais rápido possível qualquer incidente.
+---
 
-Na proxima semana faremos o beta com aproximadamente 20 clientes e nossa meta é que em 30 dias todos ja possam estar desfrutando dessa belezura :)
+## Compatibilidade
 
-Se você já atendende os requisitos solicite sua participação através do form https://forms.gle/6MG8RypxWz91uxcc7
+### Instância
+  - Pegar QRCode em string (100% compatível) ✅
+  - Pegar QRCode em base64 (100% compatível) ✅
+  - Reiniciar instância (100% compatível) ✅
+  - Desconectar (100% compatível) ✅
+  - Status da instância (100% compatível) ✅
+  - Forçar restaurar sessão (100% compatível) ✅
+  - Pegar telefone conectado (100% compatível) ✅
+
+### Mensagens
+  - Enviar texto (100% compatível) ✅
+  - Enviar localização (100% compatível) ✅
+  - Enviar link (100% compatível) ✅
+  - Enviar imagem (100% compatível) ✅
+  - Enviar audio (100% compatível) ✅
+  - Enviar video (100% compatível) ✅
+  - Enviar documento (100% compatível) ✅
+  - Enviar contato (100% compatível) ✅
+  - Enviar botões (100% compatível) ✅
+  - Enviar lista de opções (100% compatível) ✅
+  - Ler mensagem (100% compatível) ✅
+  - Responder mensagem (em estudo) ⚠️
+  - Encaminhar mensagem (em estudo) ⚠️
+  - Deletar mensagens (em estudo) ⚠️
+
+### Contatos
+  - Pegar contatos (em estudo) ⚠️
+  - Pegar foto de um contato (100% compatível) ✅
+
+### Chats
+  - Pegar chats (em estudo) ⚠️
+  - Pegar chats por telefone (em estudo) ⚠️
+  - Motificar chat (em estudo) ⚠️
+  - Listar mensagens por chat (em estudo) ⚠️
+
+### Grupos
+  - Criar grupo (100% compatível) ✅
+  - Alterar nome (100% compatível) ✅
+  - Alterar descrição (100% compatível) ✅
+  - Adicionar permissão de admin (100% compatível) ✅
+  - Retirar permissão de admin (100% compatível) ✅
+  - Adicionar pessoa ao grupo (100% compatível) ✅
+  - Remover pessoa do grupo (100% compatível) ✅
+  - Sair do grupo (100% compatível) ✅
+  - Pegar metadata do grupo (100% compatível) ✅
+
+### Fila 
+  - Pegar todas mensagens na fila (100% compatível) ✅
+  - Deletar fila (100% compatível) ✅
+  - Pegar mensagem na fila por id (100% compatível) ✅
+
+### Webhooks
+  - Ao enviar (100% compatível) ✅
+  - Ao desconectar (100% compatível) ✅
+  - Ao receber (100% compatível) ✅
+  - Status da mensagem (100% compatível) ✅
