@@ -26,58 +26,66 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 ## Compatibilidade
 
 ### Instância
-  - Pegar QRCode em string (100% compatível) ✅
-  - Pegar QRCode em base64 (100% compatível) ✅
-  - Reiniciar instância (100% compatível) ✅
-  - Desconectar (100% compatível) ✅
-  - Status da instância (100% compatível) ✅
-  - Forçar restaurar sessão (100% compatível) ✅
-  - Pegar telefone conectado (100% compatível) ✅
+
+- Pegar QRCode em string (100% compatível) ✅
+- Pegar QRCode em base64 (100% compatível) ✅
+- Reiniciar instância (100% compatível) ✅
+- Desconectar (100% compatível) ✅
+- Status da instância (100% compatível) ✅
+- Forçar restaurar sessão (100% compatível) ✅
+- Pegar telefone conectado (100% compatível) ✅
 
 ### Mensagens
-  - Enviar texto (100% compatível) ✅
-  - Enviar localização (100% compatível) ✅
-  - Enviar link (100% compatível) ✅
-  - Enviar imagem (100% compatível) ✅
-  - Enviar audio (100% compatível) ✅
-  - Enviar video (100% compatível) ✅
-  - Enviar documento (100% compatível) ✅
-  - Enviar contato (100% compatível) ✅
-  - Enviar botões (100% compatível) ✅
-  - Enviar lista de opções (100% compatível) ✅
-  - Ler mensagem (100% compatível) ✅
-  - Responder mensagem (em estudo) ⚠️
-  - Encaminhar mensagem (em estudo) ⚠️
-  - Deletar mensagens (em estudo) ⚠️
+
+- Enviar texto (100% compatível) ✅
+- Enviar localização (100% compatível) ✅
+- Enviar link (100% compatível) ✅
+- Enviar imagem (100% compatível) ✅
+- Enviar stickers (100% compatível) ✅
+- Enviar audio (100% compatível) ✅
+- Enviar video (100% compatível) ✅
+- Enviar documento (100% compatível) ✅
+- Enviar contato (100% compatível) ✅
+- Enviar botões (100% compatível) ✅
+- Enviar lista de opções (100% compatível) ✅
+- Ler mensagem (100% compatível) ✅
+- Responder mensagem (em estudo) ⚠️
+- Encaminhar mensagem (em estudo) ⚠️
+- Deletar mensagens (em estudo) ⚠️
 
 ### Contatos
-  - Pegar contatos (em estudo) ⚠️
-  - Pegar foto de um contato (100% compatível) ✅
+
+- Pegar contatos (em estudo) ⚠️
+- Pegar foto de um contato (100% compatível) ✅
 
 ### Chats
-  - Pegar chats (em estudo) ⚠️
-  - Pegar chats por telefone (em estudo) ⚠️
-  - Motificar chat (em estudo) ⚠️
-  - Listar mensagens por chat (em estudo) ⚠️
+
+- Pegar chats (em estudo) ⚠️
+- Pegar chats por telefone (em estudo) ⚠️
+- Motificar chat (em estudo) ⚠️
+- Listar mensagens por chat (em estudo) ⚠️
 
 ### Grupos
-  - Criar grupo (100% compatível) ✅
-  - Alterar nome (100% compatível) ✅
-  - Alterar descrição (100% compatível) ✅
-  - Adicionar permissão de admin (100% compatível) ✅
-  - Retirar permissão de admin (100% compatível) ✅
-  - Adicionar pessoa ao grupo (100% compatível) ✅
-  - Remover pessoa do grupo (100% compatível) ✅
-  - Sair do grupo (100% compatível) ✅
-  - Pegar metadata do grupo (100% compatível) ✅
 
-### Fila 
-  - Pegar todas mensagens na fila (100% compatível) ✅
-  - Deletar fila (100% compatível) ✅
-  - Pegar mensagem na fila por id (100% compatível) ✅
+- Criar grupo (100% compatível) ✅
+- Alterar nome (100% compatível) ✅
+- Alterar descrição (100% compatível) ✅
+- Adicionar permissão de admin (100% compatível) ✅
+- Retirar permissão de admin (100% compatível) ✅
+- Adicionar pessoa ao grupo (100% compatível) ✅
+- Remover pessoa do grupo (100% compatível) ✅
+- Sair do grupo (100% compatível) ✅
+- Pegar metadata do grupo (100% compatível) ✅
+
+### Fila
+
+- Pegar todas mensagens na fila (100% compatível) ✅
+- Deletar fila (100% compatível) ✅
+- Pegar mensagem na fila por id (100% compatível) ✅
 
 ### Webhooks
-  - Ao enviar (100% compatível) ✅
-  - Ao desconectar (100% compatível) ✅
-  - Ao receber (100% compatível) ✅
-  - Status da mensagem (100% compatível) ✅
+
+- Ao enviar (100% compatível) ✅
+- Ao desconectar (100% compatível) ✅
+- Ao receber (100% compatível) ✅
+- Status da mensagem (100% compatível) ✅
