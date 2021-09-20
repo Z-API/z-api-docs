@@ -30,12 +30,12 @@ module.exports = {
       'instance/status',
       'instance/device',
       {
-        webhook: [
-          'instance/webhooks/introduction',
-          'instance/webhooks/update-webhook-delivery',
-          'instance/webhooks/update-webhook-disconnected',
-          'instance/webhooks/update-webhook-message-status',
-          'instance/webhooks/update-webhook-receive',
+        'Configurar Webhooks': [
+          'instance/webhooksConf/introduction',
+          'instance/webhooksConf/update-webhook-delivery',
+          'instance/webhooksConf/update-webhook-disconnected',
+          'instance/webhooksConf/update-webhook-message-status',
+          'instance/webhooksConf/update-webhook-receive',
         ],
       },
     ],
@@ -95,13 +95,13 @@ module.exports = {
       'queue/delete-queue',
       'queue/delete-queue-id',
     ],
-    Webhooks: [
-      /* 'webhooks/introduction',
-     
-      'status/send-image-status',
-
-      */
-    ],
+    // Webhooks: [
+    //   'webhooks/introduction',
+    //   'webhooks/on-message-send',
+    //   'webhooks/on-message-received',
+    //   'webhooks/on-whatsapp-disconnected',
+    //   'webhooks/on-whatsapp-message-status-changes',
+    // ],
     Parceiros: [
       'partner/introduction',
       'partner/create-instance',
