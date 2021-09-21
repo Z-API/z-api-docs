@@ -7,6 +7,8 @@ title: Introdução
 
 Neste tópico falaremos sobre os **RETORNOS** dos webhooks que utilizamos.
 
+As instâncias do Z-API faz requisições com o método POST dos eventos realizados por ela para a URL configurada previamente. Para cada requisição há um corpo em JSON específico que será descrito em seguida.
+
 ## O que é e para que serve?
 
 Segundo o Google, Webhook é um recurso usado na internet para que uma aplicação se comunique com outra, fornecendo dados em tempo real sempre que um evento acontecer. Desta forma os dois sistemas realizam trocas de informações sem que nenhuma ação externa precise ser realizada.
