@@ -95,13 +95,13 @@ module.exports = {
       'queue/delete-queue',
       'queue/delete-queue-id',
     ],
-    // Webhooks: [
-    //   'webhooks/introduction',
-    //   'webhooks/on-message-send',
-    //   'webhooks/on-message-received',
-    //   'webhooks/on-whatsapp-disconnected',
-    //   'webhooks/on-whatsapp-message-status-changes',
-    // ],
+    Webhooks: [
+      'webhooks/introduction',
+      'webhooks/on-message-send',
+      'webhooks/on-message-received',
+      'webhooks/on-whatsapp-disconnected',
+      'webhooks/on-whatsapp-message-status-changes',
+    ],
     Parceiros: [
       'partner/introduction',
       'partner/create-instance',
