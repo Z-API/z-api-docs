@@ -19,6 +19,10 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ---
 
+![img](../../img/status.png)
+
+---
+
 ## Atributos
 
 ### Obrigatórios
