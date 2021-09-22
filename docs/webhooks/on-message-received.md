@@ -3,9 +3,7 @@ id: on-message-received
 title: Ao rececer
 ---
 
-<!-- ## Método
-
-### `PUT` https:// -->
+## Método on-message-received
 
 ## Conceituação
 

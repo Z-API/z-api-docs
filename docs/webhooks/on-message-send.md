@@ -3,9 +3,7 @@ id: on-message-send
 title: Ao enviar
 ---
 
-<!-- ## Método
-
-#### `POST` https:// -->
+## Método on-message-send
 
 ## Conceituação
 

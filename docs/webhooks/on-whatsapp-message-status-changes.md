@@ -3,9 +3,7 @@ id: on-whatsapp-message-status-changes
 title: Receber status
 ---
 
-<!-- ## Método
-
-### `PUT` https:// -->
+## Método on-whatsapp-message-status-changes
 
 ## Conceituação
 
