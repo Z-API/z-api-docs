@@ -7,7 +7,13 @@ title: Introdução
 
 Neste tópico falaremos sobre os **RETORNOS** dos webhooks que utilizamos.
 
-As instâncias do Z-API faz requisições com o método POST dos eventos realizados por ela para a URL configurada previamente. Para cada requisição há um corpo em JSON específico que será descrito em seguida.
+As instâncias do Z-API fazem requisições com o método **POST** dos eventos realizados por ela para a URL configurada previamente. Para cada requisição há um corpo em JSON específico que será descrito em seguida.
+
+:::caution Importante
+
+Seu end-point precisa aceitar um **POST**
+
+:::
 
 ## O que é e para que serve?
 

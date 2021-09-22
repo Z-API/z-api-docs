@@ -1,11 +1,11 @@
 ---
 id: on-whatsapp-message-status-changes
-title: Receber status
+title: Status da mensagem
 ---
 
 ## Método
 
-### `on-whatsapp-message-status-changes`
+### `POST` on-whatsapp-message-status-changes
 
 ## Conceituação
 

@@ -101,6 +101,7 @@ module.exports = {
       'webhooks/on-message-received',
       'webhooks/on-whatsapp-disconnected',
       'webhooks/on-whatsapp-message-status-changes',
+      'webhooks/on-chat-presence',
     ],
     Parceiros: [
       'partner/introduction',
