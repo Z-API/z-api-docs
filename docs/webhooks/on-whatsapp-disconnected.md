@@ -3,7 +3,9 @@ id: on-whatsapp-disconnected
 title: Ao desconectar
 ---
 
-## Método on-whatsapp-disconnected
+## Método
+
+### `on-whatsapp-disconnected`
 
 ## Conceituação
 

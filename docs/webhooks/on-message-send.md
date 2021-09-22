@@ -3,7 +3,9 @@ id: on-message-send
 title: Ao enviar
 ---
 
-## Método on-message-send
+## Método
+
+### `on-message-send`
 
 ## Conceituação
 

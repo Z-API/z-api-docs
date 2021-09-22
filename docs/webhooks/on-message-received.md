@@ -3,7 +3,9 @@ id: on-message-received
 title: Ao rececer
 ---
 
-## Método on-message-received
+## Método
+
+### `on-message-received`
 
 ## Conceituação
 

@@ -3,7 +3,9 @@ id: on-whatsapp-message-status-changes
 title: Receber status
 ---
 
-## Método on-whatsapp-message-status-changes
+## Método
+
+### `on-whatsapp-message-status-changes`
 
 ## Conceituação
 
