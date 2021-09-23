@@ -56,6 +56,7 @@ module.exports = {
       'message/send-option-list',
       'message/delete-message',
       'message/read-message',
+      'message/reply-message',
     ],
     Contatos: [
       'contacts/introduction',
