@@ -110,6 +110,11 @@ module.exports = {
       'partner/sign-instance',
       'partner/unsubscribe-instance',
     ],
+
+    Integradores: [
+      'integrators/find-my-pack'
+    ],
+
     'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
 
     Sample: ['sample/exemplos'],

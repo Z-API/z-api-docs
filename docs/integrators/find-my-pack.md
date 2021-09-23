@@ -1,0 +1,16 @@
+---
+id: find-my-pack
+title: Find My Pack
+---
+
+## Introdução
+
+O controle logístico é essencial para seu e-commerce ter sucesso. Conheça as funcionalidades oferecidas pela Find My Pack que eleverão o seu atendimento pós-vendas ao nível de excelência
+
+---
+
+### Tutorial para integrar
+
+Disponibilizamos um vídeo tutorial para ajudar com a integração com a [Find My Pack](https://www.findmypack.com.br/)
+
+<iframe width="675" height="380" src="../../video/z-api.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
