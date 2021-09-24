@@ -51,11 +51,11 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 - Ler mensagem (100% compatível) ✅
 - Responder mensagem (em estudo) ⚠️
 - Encaminhar mensagem (em estudo) ⚠️
-- Deletar mensagens (em estudo) ⚠️
+- Deletar mensagens (100% compatível) ✅
 
 ### Contatos
 
-- Pegar contatos (em estudo) ⚠️
+- Pegar contatos (100% compatível) ✅
 - Pegar foto de um contato (100% compatível) ✅
 
 ### Chats
