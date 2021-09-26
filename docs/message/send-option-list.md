@@ -60,7 +60,7 @@ Esta funcionalidade está disponivel apenas para envios com contas Whatsapp NÃO
 
 ```json
 {
-  "phone": "5511912341234",
+  "phone": "5511999999999",
   "message": "Selecione e melhor opção:",
   "optionList": {
     "title": "Opções disponíveis",

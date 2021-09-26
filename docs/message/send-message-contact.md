@@ -40,7 +40,7 @@ Simples e objetivo este método permite você enviar um contato, você não prec
 
 ```json
 {
-  "phone": "5511912341234",
+  "phone": "5511999999999",
   "contactName": "Z-API Contato",
   "contactPhone": "554498398733",
   "contactBusinessDescription": "Z-API Asas para sua imaginação"

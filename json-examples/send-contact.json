@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"phone\": \"5511999998888\", \"contactName\": \"Nome do contato\", \"contactPhone\": \"5511912341234\", \"contactBusinessDescription\": \"Breve descricao do contato\"}"
+        "text": "{\"phone\": \"5511999998888\", \"contactName\": \"Nome do contato\", \"contactPhone\": \"5511999999999\", \"contactBusinessDescription\": \"Breve descricao do contato\"}"
     }
 }

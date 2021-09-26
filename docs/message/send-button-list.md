@@ -51,7 +51,7 @@ Neste método você poderá enviar mensagens de texto com botões de ação, o c
 
 ```json
 {
-  "phone": "5511912341234",
+  "phone": "5511999999999",
   "message": "Z-API é Bom ?",
   "buttonList": {
     "buttons": [
