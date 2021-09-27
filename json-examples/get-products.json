@@ -1,5 +1,5 @@
 {
-  "method": "POST",
+  "method": "GET",
   "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalogs",
   "httpVersion": "HTTP/1.1",
   "queryString": [],
