@@ -64,7 +64,7 @@ Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utiliz
 
 ```json
 {
-  "phone": "5511912341234",
+  "phone": "5511999999999",
   "message": "Welcome to *Z-API*"
 }
 ```

@@ -141,7 +141,7 @@ Segue Json conforme sequência abaixo:
     "contact": {
       "displayName": "Z-api - Atendimento",
       "vCard": "BEGIN:VCARD\nVERSION:3.0\nN:;Z-api - Atendimento;;;\nFN:Z-api - Atendimento\nTEL;type=CELL;waid=554498398733:+55 44 9839-8733\nX-WA-BIZ-NAME:Z-api - Atendimento\nX-WA-BIZ-DESCRIPTION:Whatsapp para programadores!\nEND:VCARD",
-      "phones": ["554498398733"]
+      "phones": ["5511999999999"]
     }
   },
   {

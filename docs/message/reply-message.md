@@ -31,7 +31,7 @@ Caso tenha qualquer dúvida sobre como enviar uma mensagem de texto, você pode 
 
 ```json
 {
-  "phone": "5511912341234",
+  "phone": "5511999999999",
   "message": "Welcome to *Z-API*",
   "messageId": "3999984263738042930CD6ECDE9VDWSA"
 }
