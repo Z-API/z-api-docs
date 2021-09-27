@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/delete-product",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/product/{{id-do-produto}}",
   "httpVersion": "HTTP/1.1",
   "queryString": [],
   "headers": [

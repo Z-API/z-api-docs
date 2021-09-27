@@ -1,6 +1,6 @@
 ---
 id: edit-product
-title: Salvar/editar Produto
+title: Criar/editar Produto
 ---
 
 ## Método
