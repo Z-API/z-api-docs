@@ -98,9 +98,9 @@ module.exports = {
     ],
     'Whatsapp Business': [
       'business/introduction',
+      'business/edit-product',
       'business/get-products',
       'business/get-products-phone',
-      'business/edit-product',
       'business/get-product-id',
       'business/delete-product',
     ],
