@@ -18,9 +18,9 @@ Você provavelmente já deve saber, mas vamos reafirmar!
 
 :::important Importante
 
-Utilizamos a sessão do Whatsapp Web para prover nossos serviços, durante o tempo que estiver conectado em nosso serviço não é possível utiliza-lo.
+O Z-API utiliza o mesmo canal de comunicação utilizado pelo whatsapp web para disponibilizar as APIs. Caso você utilize a versão comum do Whatsapp, **NÃO** será possível você utilizar o whasapp web junto com Z-API.
 
-O Whatsapp vem noticiando que em breve será possível ter o Whatsapp Web aberto em mais de um dispositivo, mas ele ainda não divulgou quando esta funcionalidade estaria disponível.
+Recentemente o Whatsapp lançou a funcionalidade de múltiplos dispositivos, isso **permite** que você conecte até **4** dispositivos no seu Whatsapp. Caso essa opção **esteja ativada** em seu celular, você poderá utilizar o whatsapp web juntamente com Z-API, sem a necessidade de manter o telefone conectado a internet a todo momento.
 
 :::
 
