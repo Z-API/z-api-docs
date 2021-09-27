@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/edit-product",
+  "httpVersion": "HTTP/1.1",
+  "queryString": [],
+  "headers": [
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "cookies": [],
+  "postData": {
+    "mimeType": "application/json",
+    "text": "{\"currency\": \"BRL\", \"description\": \"Uma descricao do produto*\", \"images\": \"https://avatars.githubusercontent.com/u/60630101?s=200&v=4\", \"isHidden\": \"false\", \"name\": \"Meu primeiro produto\", \"price\": \"20\", \"integrationId\": \"002\", \"url\": \"https://z-api.io\"}"
+  }
+}

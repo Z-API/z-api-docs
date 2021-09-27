@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/get-products-phone",
+  "httpVersion": "HTTP/1.1",
+  "queryString": [],
+  "headers": [
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "cookies": [],
+  "postData": {
+    "mimeType": "application/json",
+    "text": "{\"cartEnabled\": \"true\", \"availability\": \"in stock*\", \"id\": \"999999999999999\", \"retailerId\": \"null\", \"price\": \"100000\", \"currency\": \"BRL\", \"name\": \"Mouse\", \"quantity\": \"null\", \"images\": \"https://\"}"
+  }
+}

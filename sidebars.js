@@ -96,6 +96,14 @@ module.exports = {
       'queue/delete-queue',
       'queue/delete-queue-id',
     ],
+    'Whatsapp Business': [
+      'business/introduction',
+      'business/get-products',
+      'business/get-products-phone',
+      'business/edit-product',
+      'business/get-product-id',
+      'business/delete-product',
+    ],
     Webhooks: [
       'webhooks/introduction',
       'webhooks/on-message-send',
