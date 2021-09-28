@@ -1,6 +1,6 @@
 ---
 id: on-message-received
-title: Ao rececer
+title: Ao receber
 ---
 
 ## Método
