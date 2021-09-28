@@ -393,6 +393,91 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ---
 
+## Notification Response
+
+### Conceituação
+
+As notificações são mensagens de WhatsApp que se baseiam em modelos de mensagens prévias do WhatsApp.
+
+Posto dessa forma, aqui estão documentadas as notificações que recebemos, caso não queira receber essas notificações é necessário ignorar a mensagem quando ela chegar com o atributo notification.
+
+### Exemplos
+
+```json
+case 'GROUP_PARTICIPANT_LEAVE':
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Participante " + valor2.notificationparameters + " saiu do grupo!<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case 'E2E_ENCRYPTED':
+// code block
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>As mensagens são protegidas com a criptografia<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case 'GROUP_CREATE':
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Criou o grupo \'" + valor2.notificationparameters + "\'<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case 'GROUP_PARTICIPANT_ADD':
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Participante " + valor2.notificationparameters + " adicionado.<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case "CALL_MISSED_VOICE":
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Chamada de voz perdida!<br><br></span>" + campohora + "</div></div>"
+break
+```
+
+```json
+case "CALL_MISSED_VIDEO":
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Chamada de vídeo perdida!<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case 'GROUP_PARTICIPANT_REMOVE':
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Participante " + valor2.notificationparameters + " foi removido.<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case "CIPHERTEXT":
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>As mensagens são protegidas com a criptografia de ponta.<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case "BLUE_MSG_SELF_PREMISE_UNVERIFIED":
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Você está conversando com uma conta comercial, mas ainda não foi confirmada pelo WhatsApp.<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case "BLUE_MSG_SELF_PREMISE_VERIFIED":
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Você está conversando com uma conta comercial verificada pelo WhatsApp.<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case "BIZ_MOVE_TO_CONSUMER_APP":
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Esta conta comercial agora está registrada como uma conta pessoal e pode não mais pertencer a uma empresa.<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+```json
+case "REVOKE":
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Apagou uma mensagem.<br><br></span>" + campohora + "</div></div>"
+break;
+```
+
+---
+
 ## Code
 
 <iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/on-message-received.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
