@@ -5,7 +5,7 @@ title: Status do chat
 
 ## Método
 
-### `POST` on-chat-presence
+### `PUT` on-chat-presence
 
 ## Conceituação
 

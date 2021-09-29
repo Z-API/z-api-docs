@@ -5,7 +5,7 @@ title: Status da mensagem
 
 ## Método
 
-### `POST` on-whatsapp-message-status-changes
+### `PUT` on-whatsapp-message-status-changes
 
 ## Conceituação
 

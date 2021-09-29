@@ -5,7 +5,7 @@ title: Ao enviar
 
 ## Método
 
-### `POST` on-message-send
+### `PUT` on-message-send
 
 ## Conceituação
 
