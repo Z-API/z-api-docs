@@ -29,19 +29,23 @@ Então se você está se integrando com o Z-API e precisa receber informações 
 
 - Ao enviar
 
-  Webhook responsável por te retorar os dados de envio
+  Webhook responsável pleo retorno dos dados de envio
 
 - Ao receber
 
-  Webhook responsável por te retornar os dados de recebimento
+  Webhook responsável pelo retorno dos dados de recebimento
 
 - Ao desconectar
 
-  Webhook responsável por te retornar os dados de desconexão
+  Webhook responsável pelo retorno dos dados de desconexão
 
 - Receber status
 
-  Webhook responsável por te retornar os dados do status da mensagem
+  Webhook responsável pelo retorno dos dados do status da mensagem
+
+- Status do chat
+
+  Webhook responsável pelo retorno do status do chat
 
 ---
 

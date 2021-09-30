@@ -73,6 +73,27 @@ O Z-API não aceita webhooks que não sejam HTTPS
 }
 ```
 
+### Parou de digitar ou apagou o que estava digitando
+
+```json
+{
+  "type": "PresenceChatCallback",
+  "phone": "5544999999999",
+  "status": "PAUSED",
+  "lastSeen": null
+}
+```
+
+:::tip Aviso
+
+**Observação:**
+
+Após receber um composing ou um recording, um **PAUSED** será retornado quando o evento parar
+
+O stauts **PAUSED** apenas é retornado se estiver usando o beta multi-devices
+
+:::
+
 ### Gravando áudio no chat
 
 ```json
