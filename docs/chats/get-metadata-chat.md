@@ -7,7 +7,7 @@ title: Pegar metadata do Chat
 
 #### /chat/{phone}
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat/{phone}
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats/{phone}
 
 ---
 
