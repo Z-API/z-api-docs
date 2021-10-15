@@ -9,7 +9,9 @@ O Z-API disponibiliza a seus usuários um sistema de fila que funciona unicament
 
 :::tip Tempo de envio
 
-Nossa fila trabalha com tempo de envio alternado entre uma mensagem e outra afim de simular o comportamento humano este intervalo fica em um range randômico entre 2 e 5 segundos por mensagem.
+Nossa fila trabalha com tempo de envio alternado entre uma mensagem e outra afim de simular o comportamento humano este intervalo fica em um range default randômico entre 1~3 segundos por mensagem.
+
+Caso queria aumentar o delay das mensagens, você pode passar o atributo delayMessage no body da requisição. Para saber como veja em [Send-message](../message/send-message-text#opcionais)
 
 :::
 

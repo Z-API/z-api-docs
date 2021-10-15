@@ -24,6 +24,7 @@ Caso tenha qualquer dúvida sobre como enviar uma mensagem de texto, você pode 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | messageId | string | id original da mensagem, no caso de mensagem enviada por você é o código que vem no seu reponse, caso seja uma mensagem enviada por um contato você vai receber este messageId pelo seu webhook de receive |
+| delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5). O delay default caso não seja informado é de 1~3 sec |
 
 ---
 
