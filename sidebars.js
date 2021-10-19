@@ -70,6 +70,7 @@ module.exports = {
       'chats/get-chats',
       'chats/get-message-chats',
       'chats/get-metadata-chat',
+      'chats/archive-chat',
     ],
     Grupos: [
       'group/introduction',
@@ -119,9 +120,7 @@ module.exports = {
       'partner/unsubscribe-instance',
     ],
 
-    Integradores: [
-      'integrators/find-my-pack'
-    ],
+    Integradores: ['integrators/find-my-pack'],
 
     'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
 
