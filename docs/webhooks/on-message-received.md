@@ -91,6 +91,59 @@ O Z-API não aceita webhooks que não sejam HTTPS
 }
 ```
 
+### Exemplo de retorno de texto (Lista de Botão)
+
+```json
+{
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1634645380000,
+  "status": "RECEIVED",
+  "chatName": "Nome",
+  "senderPhoto": "https://",
+  "senderName": "Nome",
+  "participantPhone": null,
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "buttonsResponseMessage": {
+    "buttonId": "1",
+    "message": "Ótimo"
+  }
+}
+```
+
+### Exemplo de retorno de texto (Lista de Opcão)
+
+```json
+{
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1634645683000,
+  "status": "RECEIVED",
+  "chatName": "Nome",
+  "senderPhoto": "https://",
+  "senderName": "Nome",
+  "participantPhone": null,
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "listResponseMessage": {
+    "message": "Z-API Asas para sua imaginação",
+    "title": "Z-API",
+    "selectedRowId": "1"
+  }
+}
+```
+
 ### Exemplo de retorno de foto
 
 ```json

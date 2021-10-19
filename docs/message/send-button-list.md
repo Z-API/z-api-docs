@@ -108,7 +108,7 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 Link para a response do webhook (ao receber)
 
-[Webhook](../webhooks/on-message-received#response)
+[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto-lista-de-botão)
 
 ---
 
