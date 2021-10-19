@@ -1,6 +1,6 @@
 ---
-id: archive-chat
-title: Arquivar chats
+id: delete-chat
+title: Deletar Chats
 ---
 
 ## Método
@@ -13,7 +13,7 @@ title: Arquivar chats
 
 ## Conceituação
 
-Este método é reponsavel por arquivar e desarquivarseus chats.
+Este método é reponsavel por deletar seus chats.
 
 ---
 
@@ -24,7 +24,7 @@ Este método é reponsavel por arquivar e desarquivarseus chats.
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | integer | Número de telefone que você deseja alterar no **SEU** chat |
-| action | string | Atributo para arquivar e desarquivar o chat |
+| action | string | Atributo para deletar o chat |
 
 ---
 
@@ -34,8 +34,8 @@ Exemplo
 
 ```json
 {
-"phone": "5544991515165",
-"action": "archive" ou "unarchive"
+  "phone": "5544991515165",
+  "action": "delete"
 }
 ```
 
