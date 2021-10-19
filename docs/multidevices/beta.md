@@ -52,6 +52,7 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 - Responder mensagem (em estudo) ⚠️
 - Encaminhar mensagem (em estudo) ⚠️
 - Deletar mensagens (100% compatível) ✅
+- Enviar mensagens para lista de transmissão (em estudo) ⚠️
 
 ### Contatos
 
