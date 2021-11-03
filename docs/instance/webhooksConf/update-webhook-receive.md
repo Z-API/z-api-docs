@@ -6,9 +6,9 @@ title: Receive
 
 ## Método
 
-#### /update-webhook-receive
+#### /update-webhook-received
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-receive
+`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-received
 
 ## Conceituação
 
