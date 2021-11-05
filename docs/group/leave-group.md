@@ -14,6 +14,12 @@ title: Sair do grupo
 
 Este método permite você sair de um grupo ao qual participa.
 
+:::caution Atenção
+
+No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+
+:::
+
 ---
 
 ## Atributos
@@ -40,9 +46,19 @@ Este método permite você sair de um grupo ao qual participa.
 #### Body
 
 ```json
-{
-  "groupId": "5511999999999-1623281429"
-}
+
+Forma antiga -
+  {
+    "groupId": "5511999999999-1623281429"
+  }
+
+-----------------------------------------
+
+Forma nova -
+  {
+    "groupId": "120363019502650977-group"
+  }
+
 ```
 
 ---

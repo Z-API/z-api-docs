@@ -15,6 +15,12 @@ title: Atualizar nome do grupo
 
 Este método é reponsavel alterar o nome de um grupo já existente.
 
+:::caution Atenção
+
+No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+
+:::
+
 ---
 
 ## Atributos
@@ -42,10 +48,21 @@ Este método é reponsavel alterar o nome de um grupo já existente.
 #### Body
 
 ```json
-{
-  "groupId": "5511999999999-1623281429",
-  "groupName": "Mudou o nome Meu grupo no Z-API"
-}
+
+Forma antiga -
+  {
+    "groupId": "5511999999999-1623281429",
+    "groupName": "Mudou o nome Meu grupo no Z-API"
+  }
+
+-----------------------------------------------
+
+Forma nova -
+  {
+    "groupId": "120363019502650977-group",
+    "groupName": "Mudou o nome Meu grupo no Z-API"
+  }
+
 ```
 
 ---

@@ -21,6 +21,12 @@ Assim como no WhastWeb você vai precisar adicionar ao menos um contato para con
 
 :::
 
+:::caution Atenção
+
+No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+
+:::
+
 ---
 
 ## Atributos
@@ -69,10 +75,21 @@ Assim como no WhastWeb você vai precisar adicionar ao menos um contato para con
 **Exemplo**
 
 ```json
-{
-  "phone": "5511999999999-1623281429",
-  "invitationLink": "https://chat.whatsapp.com/DCaqftVlS6dHWtlvfd3hUa"
-}
+
+Forma antiga -
+  {
+    "phone": "5511999999999-1623281429",
+    "invitationLink": "https://chat.whatsapp.com/DCaqftVlS6dHWtlvfd3hUa"
+  }
+
+------------------------------------------------
+
+Forma nova
+  {
+    "phone": "120363019502650977-group",
+    "invitationLink": "https://chat.whatsapp.com/GONwbGGDkLe8BifUWwLgct"
+  }
+
 ```
 
 ### 405

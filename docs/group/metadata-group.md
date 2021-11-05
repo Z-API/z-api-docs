@@ -14,6 +14,12 @@ title: Metadata do Grupo
 
 Este método retorna o metadata do grupo com todas informações do grupo e de seus partipantes.
 
+:::caution Atenção
+
+No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+
+:::
+
 ---
 
 ## Atributos
@@ -64,8 +70,36 @@ Array String (participants)
 **Exemplo**
 
 ```json
-{
-  "phone": "5511999999999-1623281429",
+
+Forma antiga -
+  {
+    "phone": "5511999999999-1623281429",
+    "owner": "5511999999999",
+    "subject": "Meu grupo no Z-API",
+    "creation": 1588721491000,
+    "participants": [
+      {
+        "phone": "5511888888888",
+        "isAdmin": false,
+        "isSuperAdmin": false
+      },
+      {
+        "phone": "5511777777777",
+        "isAdmin": true,
+        "isSuperAdmin": false,
+        "short": "ZAPIs",
+        "name": "ZAPIs Boys"
+      }
+    ],
+    "subjectTime": 1617805323000,
+    "subjectOwner": "554497050785"
+  }
+
+  ------------------------------------
+
+  Forma nova -
+  {
+  "phone": "120363019502650977-group",
   "owner": "5511999999999",
   "subject": "Meu grupo no Z-API",
   "creation": 1588721491000,
@@ -86,6 +120,7 @@ Array String (participants)
   "subjectTime": 1617805323000,
   "subjectOwner": "554497050785"
 }
+
 ```
 
 ### 405

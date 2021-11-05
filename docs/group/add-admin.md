@@ -14,6 +14,12 @@ title: Promover admin do grupo
 
 Este método é reponsavel por promover participamentes do grupo à administradores, você pode provomover um ou mais participamente à administrador.
 
+:::caution Atenção
+
+No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+
+:::
+
 ---
 
 ## Atributos
@@ -41,10 +47,21 @@ Este método é reponsavel por promover participamentes do grupo à administrado
 #### Body
 
 ```json
-{
-  "groupId": "5511999999999-1623281429",
-  "phones": ["5544999999999", "5544888888888"]
-}
+
+Forma antiga -
+  {
+    "groupId": "5511999999999-1623281429",
+    "phones": ["5544999999999", "5544888888888"]
+  }
+
+  -------------------------------------------------
+
+Forma nova -
+  {
+    "groupId": "120363019502650977-group",
+    "phones": ["5544999999999", "5544888888888"]
+  }
+
 ```
 
 ---
