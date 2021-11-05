@@ -16,3 +16,9 @@ Neste tópico você também vai encontrar também metódos para criação e admi
 Para melhor frisar, pense que o id/fone do grupo é o numero de quem criou concatenado com um timestamp, algo parecido com isso 5511999999999 - 1623275280
 
 :::
+
+:::caution Atenção
+
+No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+
+:::
