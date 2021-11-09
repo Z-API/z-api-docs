@@ -5,7 +5,7 @@ title: Ao desconectar
 
 ## Método
 
-### `PUT` on-whatsapp-disconnected
+## `POST` on-whatsapp-disconnected
 
 ## Conceituação
 

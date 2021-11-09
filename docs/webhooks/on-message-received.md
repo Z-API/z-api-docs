@@ -5,7 +5,7 @@ title: Ao receber
 
 ## Método
 
-### `PUT` on-message-received
+## `POST` on-message-received
 
 ## Conceituação
 

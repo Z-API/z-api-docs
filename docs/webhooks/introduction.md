@@ -11,7 +11,7 @@ As instâncias do Z-API fazem requisições com o método **POST** dos eventos r
 
 :::caution Importante
 
-Seu endpoint precisa aceitar um **PUT**
+Seu endpoint precisa aceitar um **POST**
 
 Esses endpoints são para trocar a URL que a instância irá chamar quando o evento acontecer
 
