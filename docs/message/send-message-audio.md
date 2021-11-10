@@ -52,7 +52,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 ```json
 {
   "phone": "5511999999999",
-  "audio": "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
+  "audio": "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
 }
 ```
 
