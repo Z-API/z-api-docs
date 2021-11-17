@@ -70,7 +70,7 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 
 - Criar grupo (100% compatível) ✅
 - Alterar nome (100% compatível) ✅
-- Alterar descrição (100% compatível) ✅
+<!-- - Alterar descrição (100% compatível) ✅ -->
 - Adicionar permissão de admin (100% compatível) ✅
 - Retirar permissão de admin (100% compatível) ✅
 - Adicionar pessoa ao grupo (100% compatível) ✅
