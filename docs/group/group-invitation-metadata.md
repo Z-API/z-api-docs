@@ -1,14 +1,14 @@
 ---
 id:id: group-invitation-metadata
 
-title: Metadata do Grupo
+title: Metadata do Grupo por Convite
 ---
 
 ## Método
 
 #### /group-invitation-metadata
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={**URL DO CONVITE\*\*}
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={**URL** **DO** **CONVITE**}
 
 ## Conceituação
 
