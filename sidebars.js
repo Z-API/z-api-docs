@@ -29,15 +29,15 @@ module.exports = {
       'instance/disconnect',
       'instance/status',
       'instance/device',
-      {
-        'Configurar Webhooks': [
-          'instance/webhooksConf/introduction',
-          'instance/webhooksConf/update-webhook-delivery',
-          'instance/webhooksConf/update-webhook-disconnected',
-          'instance/webhooksConf/update-webhook-message-status',
-          'instance/webhooksConf/update-webhook-receive',
-        ],
-      },
+      // {
+      //   'Configurar Webhooks': [
+      //     'instance/webhooksConf/introduction',
+      //     'instance/webhooksConf/update-webhook-delivery',
+      //     'instance/webhooksConf/update-webhook-disconnected',
+      //     'instance/webhooksConf/update-webhook-message-status',
+      //     'instance/webhooksConf/update-webhook-receive',
+      //   ],
+      // },
     ],
     Mensagens: [
       'message/introduction',
@@ -84,7 +84,9 @@ module.exports = {
       'group/remove-admin',
       'group/leave-group',
       'group/metadata-group',
+      'group/group-invitation-metadata',
       'group/update-group-settings',
+      'group/update-group-description',
     ],
     'Lista de Transmissão': ['broadcast/introduction'],
     Status: [

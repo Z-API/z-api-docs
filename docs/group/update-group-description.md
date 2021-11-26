@@ -1,17 +1,17 @@
 ---
-id: update-group-settings
-title: Configurações do grupo
+id: update-group-description
+title: Alterar descrição
 ---
 
 ## Método
 
-#### /update-group-settings
+#### /update-group-description
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-settings
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-description
 
 ## Conceituação
 
-Este método permite você alterar as preferências do grupo.
+Este método permite você alterar a descrição do grupo.
 
 :::caution Atenção
 
@@ -31,24 +31,12 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ### Obrigatórios
 
-| Atributos |  Tipo  | Descrição        |
-| :-------- | :----: | :--------------- |
-| phone     | string | ID/Fone do grupo |
-
-### Opcionais
-
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| adminOnlyMessage | boolean | Somente administrador podem enviar mensagens no grupo |
-| adminOnlySettings | boolean | Atributo para permitir que apenas os admins façam edições no grupo |
+| Atributos        |  Tipo  | Descrição                                  |
+| :--------------- | :----: | :----------------------------------------- |
+| phone            | string | ID/Fone do grupo                           |
+| groupDescription | string | Atributo para alterar a descrição do grupo |
 
 ---
-
-## Request Body
-
-#### URL
-
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/adminOnlyMessage
 
 #### Body
 
@@ -57,7 +45,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 Forma antiga -
   {
     "groupId": "5511999999999-1623281429",
-    "adminOnlyMessage": true
+    "groupDescription": "descrição do grupo"
   }
 
 ----------------------------------------
@@ -65,7 +53,7 @@ Forma antiga -
 Forma nova -
   {
     "groupId": "120363019502650977-group",
-    "adminOnlyMessage": true
+    "groupDescription": "descrição do grupo"
   }
 
 ```
@@ -108,4 +96,4 @@ Link para a response do webhook (ao receber)
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/update-group-settings.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/update-group-description.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
