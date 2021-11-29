@@ -553,8 +553,6 @@ campo_html = "<div align='center'><div class='alert alert-primary' role='alert'>
 break;
 ```
 
----
-
 <!-- ## Code
 
 <iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/on-message-received.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe> -->
