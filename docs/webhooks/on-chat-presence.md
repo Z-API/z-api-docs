@@ -19,6 +19,30 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ---
 
+## Atualizando Webhook
+
+Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
+
+### API
+
+#### /update-webhook-chat-presence
+
+`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-chat-presence
+
+#### Request Body
+
+#### Body
+
+```json
+{
+  "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/presence"
+}
+```
+
+---
+
+### Painel Administrativo
+
 ![img](../../img/chatPresence.png)
 
 ---

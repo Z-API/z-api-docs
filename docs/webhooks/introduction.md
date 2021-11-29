@@ -25,27 +25,23 @@ Então se você está se integrando com o Z-API e precisa receber informações 
 
 ---
 
-## Nossos webhooks
+### Nossos webhooks
 
-- Ao enviar
+#### Delivery
 
-  Webhook responsável pleo retorno dos dados de envio
+Responsavel por avisar você que sua mensagem foi entregue ao Whatsapp, mas isso não significa necessáriamente que seu contato a recebeu, para informações de recebimento e leitura você vai precisar observar o webhook de status.
 
-- Ao receber
+#### Receive
 
-  Webhook responsável pelo retorno dos dados de recebimento
+Este webhook será chamado toda vez que alguem interagir com seu numero no whatsapp.
 
-- Ao desconectar
+#### Status
 
-  Webhook responsável pelo retorno dos dados de desconexão
+Este método vai lhe avisar de todas mudanças de status que sua mensagem sofrer, se ela for recebida, lida, respondida ou excluida, ou seja uma mesma mensagem pode passar por varios status, e ter o mesmo status mais de uma vez, que é o caso de respondida.
 
-- Receber status
+#### Disconnected
 
-  Webhook responsável pelo retorno dos dados do status da mensagem
-
-- Status do chat
-
-  Webhook responsável pelo retorno do status do chat
+Este webhook será chamado sempre que nosso serviço identificar alguma indisponibiidade na comunicação, seja do seu celular com o whatsapp ou mesmo da conexão entre seu celular e o Z-API.
 
 ---
 
@@ -56,3 +52,15 @@ Então se você está se integrando com o Z-API e precisa receber informações 
 - Você não precisa configurar todos webhookds, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com Z-API
 
 :::
+
+## Como configurar meu Webhook?
+
+:::important
+
+Nunca compartilhe o seu ID e token com ninguém.
+
+:::
+
+Acesse nosso painel admin, vá em opções e escolha "editar instância".
+
+![img](../../img/EditInstance.jpg)

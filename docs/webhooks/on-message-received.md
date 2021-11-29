@@ -19,6 +19,30 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ---
 
+## Atualizando Webhook
+
+Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
+
+### API
+
+#### /update-webhook-received
+
+`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-received
+
+#### Request Body
+
+#### Body
+
+```json
+{
+  "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/receive"
+}
+```
+
+---
+
+### Painel Administrativo
+
 ![img](../../img/received.png)
 
 ---
@@ -531,6 +555,6 @@ break;
 
 ---
 
-## Code
+<!-- ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/on-message-received.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/on-message-received.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe> -->

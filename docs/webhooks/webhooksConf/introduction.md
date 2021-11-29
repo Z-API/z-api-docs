@@ -36,15 +36,3 @@ Este webhook será chamado sempre que nosso serviço identificar alguma indispon
 - Você não precisa configurar todos webhookds, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com _Z-API_
 
 :::
-
-## Como configurar meu Webhook?
-
-:::important
-
-Nunca compartilhe o seu ID e token com ninguém.
-
-:::
-
-Acesse nosso painel admin, vá em opções e escolha "editar instância".
-
-![img](../../../img/EditInstance.jpg)
