@@ -33,7 +33,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 | Atributos        |  Tipo  | Descrição                                  |
 | :--------------- | :----: | :----------------------------------------- |
-| phone            | string | ID/Fone do grupo                           |
+| groupId          | string | ID/Fone do grupo                           |
 | groupDescription | string | Atributo para alterar a descrição do grupo |
 
 ---
