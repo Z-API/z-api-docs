@@ -21,16 +21,16 @@ Nesse método você será capaz de cadastrar e atualizar um produto no seu catá
 
 ### Obrigatórios
 
-| Atributos     |  Tipo   | Descrição                                      |
-| :------------ | :-----: | :--------------------------------------------- |
-| currency      | string  | Tipo da Moeda                                  |
-| description   | string  | Descrição do produto                           |
-| images        | string  | Url da imagem do produto                       |
-| isHidden      | boolean | Atributo para "esconder" o produto no catálogo |
-| name          | string  | Nome do produto                                |
-| price         | integer | Preço do produto                               |
-| integrationId | string  | Id do produto                                  |
-| url           | string  | Url da rota do z-api                           |
+| Atributos   |  Tipo   | Descrição                                      |
+| :---------- | :-----: | :--------------------------------------------- |
+| currency    | string  | Tipo da Moeda                                  |
+| description | string  | Descrição do produto                           |
+| images      | string  | Url da imagem do produto                       |
+| isHidden    | boolean | Atributo para "esconder" o produto no catálogo |
+| name        | string  | Nome do produto                                |
+| price       | integer | Preço do produto                               |
+| retailerId  | string  | Id do produto                                  |
+| url         | string  | Url da rota do z-api                           |
 
 ## Request Body
 
@@ -42,7 +42,7 @@ Nesse método você será capaz de cadastrar e atualizar um produto no seu catá
   "isHidden": false,
   "name": "Meu primeiro produto",
   "price": 20,
-  "integrationId": "002",
+  "retailerId": "002",
   "url": "https://z-api.io"
 }
 ```
