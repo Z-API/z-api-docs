@@ -49,10 +49,10 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 - Enviar botões (100% compatível) ✅
 - Enviar lista de opções (100% compatível) ✅
 - Ler mensagem (100% compatível) ✅
-- Responder mensagem (em estudo) ⚠️
-- Encaminhar mensagem (em estudo) ⚠️
+- Responder mensagem (100% compatível) ✅
+- Encaminhar mensagem (100% compatível) ✅
 - Deletar mensagens (100% compatível) ✅
-- Enviar mensagens para lista de transmissão (em estudo) ⚠️
+- Enviar mensagens para lista de transmissão (Limitado pello Whatsapp / [Whatsapp link](https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=en) ) ⚠️
 
 ### Contatos
 
