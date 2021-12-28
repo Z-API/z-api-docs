@@ -70,6 +70,7 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 
 - Criar grupo (100% compatível) ✅
 - Alterar nome (100% compatível) ✅
+- Alterar imagem (50% compatível (apenas imagens que sejam jpeg e que tenham tamanho menor que 600x600)) ✅
 <!-- - Alterar descrição (100% compatível) ✅ -->
 - Adicionar permissão de admin (100% compatível) ✅
 - Retirar permissão de admin (100% compatível) ✅
