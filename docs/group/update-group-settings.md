@@ -41,12 +41,6 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ## Request Body
 
-#### URL
-
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/adminOnlyMessage
-
-#### Body
-
 ```json
 
 Forma antiga -
