@@ -33,7 +33,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| groupId | string | ID/Fone do grupo |
+| phone | string | ID/Fone do grupo |
 | adminOnlyMessage | boolean | Somente administrador podem enviar mensagens no grupo |
 | adminOnlySettings | boolean | Atributo para permitir que apenas os admins façam edições no grupo |
 
@@ -45,7 +45,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 Forma antiga -
   {
-    "groupId": "5511999999999-1623281429",
+    "phone": "5511999999999-1623281429",
     "adminOnlyMessage": true
   }
 
@@ -53,7 +53,7 @@ Forma antiga -
 
 Forma nova -
   {
-    "groupId": "120363019502650977-group",
+    "phone": "120363019502650977-group",
     "adminOnlyMessage": true
   }
 
