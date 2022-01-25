@@ -63,7 +63,7 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 
 - Pegar chats (100% compatível) ✅
 - Pegar chats por telefone (100% compatível) ✅
-- Modificar chat (em estudo) ⚠️
+- Modificar chat (100% compatível) ✅
 - Listar mensagens por chat (em estudo) ⚠️
 
 ### Grupos

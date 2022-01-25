@@ -62,6 +62,7 @@ module.exports = {
       'chats/get-message-chats',
       'chats/get-metadata-chat',
       'chats/archive-chat',
+      'chats/pin-chat',
       'chats/delete-chat',
     ],
     Grupos: [
