@@ -26,7 +26,6 @@ Simples e objetivo este método permite você enviar um contato, você não prec
 | phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | contactName | string | Nome do contato |
 | contactPhone | string | Telefone do contato que você quer compartilhar |
-| contactBusinessDescription | string | Brever descrição sobre o contato (não é exibido no whatsapp web) |
 
 ### Opcionais
 
@@ -34,6 +33,7 @@ Simples e objetivo este método permite você enviar um contato, você não prec
 | :-- | :-: | :-- |
 | messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| contactBusinessDescription | string | Brever descrição sobre o contato (não é exibido no whatsapp web) |
 
 ---
 
@@ -43,8 +43,7 @@ Simples e objetivo este método permite você enviar um contato, você não prec
 {
   "phone": "5511999999999",
   "contactName": "Z-API Contato",
-  "contactPhone": "554498398733",
-  "contactBusinessDescription": "Z-API Asas para sua imaginação"
+  "contactPhone": "554498398733"
 }
 ```
 
