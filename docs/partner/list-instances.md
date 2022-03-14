@@ -28,7 +28,13 @@ Método utilizado para listar todas as instâncias criadas.
 | :-------- | :----:  | :----------------------------- |
 | page      | integer | Utilizado para paginação você de informar aqui a pagina de chats que quer buscar |
 | pageSize  | integer | Especifica o tamanho do retorno de chats por pagina|
-| query     | number  | Busca pelo nome e id da instancia |
+
+
+### Opcionais
+
+| Atributos | Tipo | Descrição |
+| :-------- | :--: | :-------- |
+| query     | number  | Busca pelo nome e id da instancia | 
 
 
 

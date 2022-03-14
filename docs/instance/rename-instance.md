@@ -30,7 +30,7 @@ Método utilizado para renomear uma instância.
 
 **Método**
 
-`PUT` <https://api.z-api.io/instances/>
+`PUT` <https://api.z-api.io/instances/ID_INSTANCE/token/TOKEN_INSTANCE/update-name/>
 
 **Exemplo**
 

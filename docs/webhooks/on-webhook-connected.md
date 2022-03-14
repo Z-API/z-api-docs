@@ -1,11 +1,13 @@
 ---
 id: on-webhook-connected
-title: Confirmar conexão 
+title: Ao conectar 
 ---
 
 ## Conceituação
 
 Esse é o webhook de retorno de conexão do Celular com o Z-api
+
+Esse é webhook é disparado quando o Z-API se conectada ao Whatsapp, isso pode acontecer quando le o qr-code, quando reiniciar a instancia e etc
 
 :::caution Atenção
 
@@ -37,11 +39,11 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-### Painel Administrativo
+<!-- ### Painel Administrativo -->
 
-![img](../../img/status.png)
+<!-- ![img](../../img/status.png) -->
 
----
+<!-- --- -->
 
 ## Atributos
 
