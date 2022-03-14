@@ -3,10 +3,6 @@ id: on-whatsapp-disconnected
 title: Ao desconectar
 ---
 
-## Método
-
-#### `POST` on-whatsapp-disconnected
-
 ## Conceituação
 
 Esse é o webhook de resposta de desconexão
@@ -69,7 +65,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "momment": 1580163342,
   "error": "Device has been disconnected",
   "disconnected": true,
-  "type": "DisconnectedCallback"
+  "type": "DisconnectedCallback",
+  "instanceId": "instance.id"
 }
 ```
 

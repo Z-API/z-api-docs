@@ -2,11 +2,6 @@
 id: on-message-received
 title: Ao receber
 ---
-
-## Método
-
-#### `POST` on-message-received
-
 ## Conceituação
 
 Esse é o webhook de retorno de mensagens recebidas
@@ -111,7 +106,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "type": "ReceivedCallback",
   "text": {
     "message": "teste"
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -137,7 +133,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "buttonsResponseMessage": {
     "buttonId": "1",
     "message": "Ótimo"
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -164,7 +161,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
     "message": "Z-API Asas para sua imaginação",
     "title": "Z-API",
     "selectedRowId": "1"
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -190,7 +188,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
     "imageUrl": "https://",
     "thumbnailUrl": "https://",
     "caption": ""
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -214,7 +213,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "audio": {
     "audioUrl": "https://",
     "mimeType": "audio/ogg; codecs=opus"
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -239,7 +239,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
     "videoUrl": "https://",
     "mimeType": "video/mp4",
     "caption": ""
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -264,7 +265,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
     "displayName": "Cesar Baleco",
     "vCard": "BEGIN:VCARD\nVERSION:3.0\nN:;nome;;;\nFN:nome\nTEL;type=CELL;type=VOICE;waid=5544999999999:+55 44 9999-9999\nEND:VCARD",
     "phones": ["5544999999999"]
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -291,7 +293,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
     "title": "nome",
     "pageCount": 1,
     "fileName": "nome.pdf"
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -317,7 +320,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
     "latitude": -99.9999999999999999,
     "address": "",
     "url": ""
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -341,7 +345,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "sticker": {
     "stickerUrl": "https://",
     "mimeType": "image/webp"
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -374,7 +379,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
       "status": "WAITING",
       "transactionStatus": "COLLECT_SUCCESS"
     }
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -395,7 +401,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "broadcast": false,
   "type": "ReceivedCallback",
   "notification": "PAYMENT_ACTION_REQUEST_DECLINED",
-  "notificationParameters": ["5544999999999", "BRL", "1000"]
+  "notificationParameters": ["5544999999999", "BRL", "1000"],
+  "instanceId": "instance.id"
 }
 ```
 
@@ -424,7 +431,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
       "status": "COMPLETE",
       "transactionStatus": "SUCCESS"
     }
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 
@@ -456,7 +464,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
     "retailerId": "",
     "firstImageId": "",
     "title": "name"
-  }
+  },
+  "instanceId": "instance.id"
 }
 ```
 

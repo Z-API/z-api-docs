@@ -1,0 +1,21 @@
+{
+    "method": "PUT",
+    "url": "https://api.z-api.io/instances",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        },
+        {   
+            "name": "Authorization",
+            "value": "Bearer SEU-TOKEN-AQUI"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"value\": \"Name\"}"
+    }
+}

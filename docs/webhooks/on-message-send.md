@@ -2,11 +2,6 @@
 id: on-message-send
 title: Ao enviar
 ---
-
-## Método
-
-#### `POST` on-message-send
-
 ## Conceituação
 
 Esse é o webhook de retorno de mensagens enviadas
@@ -79,7 +74,8 @@ Os possíveis retornos do webhook **on-message-send** estão cadastrado logo aba
   "customId": "123",
   "zaapId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
-  "type": "DeliveryCallback"
+  "type": "DeliveryCallback",
+  "instanceId": "instance.id"
 }
 ```
 

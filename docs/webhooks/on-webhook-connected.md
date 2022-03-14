@@ -1,12 +1,11 @@
 ---
-id: on-whatsapp-message-status-changes
-title: Status da mensagem
+id: on-webhook-connected
+title: Confirmar conexão 
 ---
-
 
 ## Conceituação
 
-Esse é o webhook de retorno do status da mensagem
+Esse é o webhook de retorno de conexão do Celular com o Z-api
 
 :::caution Atenção
 
@@ -22,9 +21,9 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ### API
 
-#### /update-webhook-status
+#### /update-webhook-connected
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-message-status
+`PUT` <https://api.z-api.io/instances/id/{id}/token/{token}/update-webhook-connected>
 
 #### Request Body
 
@@ -50,9 +49,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| status | string | Tipo do status no qual a mensagem se encontra. |
-| id | string | Identificador(es) da(s) mensagem(ns). |
-| phone | string | Número de telefone de destino da mensagem. |
+| connected | boolean | status da instância. |
+| phone | string | Número conectado. |
 | momment | string | Momento em que a instância foi desconectada do número. |
 | type | string | Tipo do evento da instância, nesse caso será "MessageStatusCallback". |
 
@@ -64,12 +62,14 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ```json
 {
-  "status": "MESSAGE_RECEIVED",
-  "ids": ["999999999999999999999"],
-  "momment": 1632234645000,
-  "phone": "5544999999999",
-  "type": "MessageStatusCallback",
+
+  "type": 'ConnectedCallback',
+  "connected": true,
+  "momment": 26151515154,
+  "instanceId": instance.id,
+  "phone": "numero",,
   "instanceId": "instance.id"
+
 }
 ```
 

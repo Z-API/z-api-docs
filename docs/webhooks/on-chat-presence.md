@@ -2,11 +2,6 @@
 id: on-chat-presence
 title: Status do chat
 ---
-
-## Método
-
-#### `POST` on-chat-presence
-
 ## Conceituação
 
 Esse é o webhook de retorno status do chat
@@ -71,7 +66,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "type": "PresenceChatCallback",
   "phone": "5544999999999",
   "status": "UNAVAILABLE",
-  "lastSeen": null
+  "lastSeen": null,
+  "instanceId": "instance.id"
 }
 ```
 
@@ -82,7 +78,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "type": "PresenceChatCallback",
   "phone": "5544999999999",
   "status": "AVAILABLE",
-  "lastSeen": null
+  "lastSeen": null,
+  "instanceId": "instance.id"
 }
 ```
 
@@ -93,7 +90,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "type": "PresenceChatCallback",
   "phone": "5544999999999",
   "status": "COMPOSING",
-  "lastSeen": null
+  "lastSeen": null,
+  "instanceId": "instance.id"
 }
 ```
 
@@ -104,7 +102,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
   "type": "PresenceChatCallback",
   "phone": "5544999999999",
   "status": "PAUSED",
-  "lastSeen": null
+  "lastSeen": null,
+  "instanceId": "instance.id"
 }
 ```
 
@@ -125,7 +124,8 @@ O stauts **PAUSED** apenas é retornado se estiver usando o beta multi-devices
   "type": "PresenceChatCallback",
   "phone": "5544999999999",
   "status": "RECORDING",
-  "lastSeen": null
+  "lastSeen": null,
+  "instanceId": "instance.id"
 }
 ```
 
