@@ -29,6 +29,7 @@ module.exports = {
       'instance/disconnect',
       'instance/status',
       'instance/device',
+      'instance/rename-instance'
     ],
     Mensagens: [
       'message/introduction',
@@ -106,12 +107,17 @@ module.exports = {
       'webhooks/on-whatsapp-disconnected',
       'webhooks/on-whatsapp-message-status-changes',
       'webhooks/on-chat-presence',
+      'webhooks/on-webhook-connected',
+
     ],
     Parceiros: [
       'partner/introduction',
       'partner/create-instance',
       'partner/sign-instance',
       'partner/unsubscribe-instance',
+      'partner/list-instances',
+      
+     
     ],
 
     Integradores: ['integrators/find-my-pack'],
