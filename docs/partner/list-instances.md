@@ -44,16 +44,11 @@ Método utilizado para listar todas as instâncias criadas.
 
 #### Query params
 
-| key   |          value          | description |
-| :---- | :---------------------: | :---------- |
-| query | 51505050505050051418164 |             |
-
-```json
-{
-  "pageSize": 1,
-  "page": 1
-}
-```
+| key      |    value     | description |
+| :------- | :----------: | :---------- |
+| query    | 999999999999 |             |
+| pageSize |      1       |             |
+| page     |      1       |             |
 
 ---
 
