@@ -15,28 +15,22 @@ title: Listando instâncias
 
 Método utilizado para listar todas as instâncias criadas.
 
-
-
-
 ---
 
 ## Atributos
 
 ### Obrigatórios
 
-| Atributos |  Tipo   | Descrição                      |
-| :-------- | :----:  | :----------------------------- |
-| page      | integer | Utilizado para paginação você de informar aqui a pagina de chats que quer buscar |
-| pageSize  | integer | Especifica o tamanho do retorno de chats por pagina|
-
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| page | integer | Utilizado para paginação você de informar aqui a pagina de chats que quer buscar |
+| pageSize | integer | Especifica o tamanho do retorno de chats por pagina |
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-| query     | number  | Busca pelo nome e id da instancia | 
-
-
+| Atributos |  Tipo  | Descrição                         |
+| :-------- | :----: | :-------------------------------- |
+| query     | number | Busca pelo nome e id da instancia |
 
 ---
 
@@ -48,11 +42,16 @@ Método utilizado para listar todas as instâncias criadas.
 
 **Exemplo**
 
+#### Query params
+
+| key   |          value          | description |
+| :---- | :---------------------: | :---------- |
+| query | 51505050505050051418164 |             |
+
 ```json
 {
-    "pageSize": 1,
-    "page": 1,
-    "query": "8823XWIE982KII99012K2L",
+  "pageSize": 1,
+  "page": 1
 }
 ```
 
@@ -72,31 +71,31 @@ Método utilizado para listar todas as instâncias criadas.
 
 ```json
 {
-    "total": 1,
-    "totalPage": 1,
-    "pageSize": 1,
-    "page": 1,
-    "content": [
-        {
-            "token": "",
-            "tenant": "",
-            "created": "",
-            "due": 1648565999675,
-            "paymentStatus": "",
-            "deliveryCallbackUrl": "",
-            "receivedCallbackUrl": "",
-            "disconnectedCallbackUrl": "",
-            "messageStatusCallbackUrl": "",
-            "receivedAndDeliveryCallbackUrl": "",
-            "presenceChatCallbackUrl": "",
-            "connectedCallbackUrl": "",
-            "receivedStatusCallbackUrl":"",
-            "phoneConnected": false,
-            "whatsappConnected": false,
-            "name": "",
-            "id": ""
-        }
-    ]
+  "total": 1,
+  "totalPage": 1,
+  "pageSize": 1,
+  "page": 1,
+  "content": [
+    {
+      "token": "",
+      "tenant": "",
+      "created": "",
+      "due": 1648565999675,
+      "paymentStatus": "",
+      "deliveryCallbackUrl": "",
+      "receivedCallbackUrl": "",
+      "disconnectedCallbackUrl": "",
+      "messageStatusCallbackUrl": "",
+      "receivedAndDeliveryCallbackUrl": "",
+      "presenceChatCallbackUrl": "",
+      "connectedCallbackUrl": "",
+      "receivedStatusCallbackUrl": "",
+      "phoneConnected": false,
+      "whatsappConnected": false,
+      "name": "",
+      "id": ""
+    }
+  ]
 }
 ```
 
