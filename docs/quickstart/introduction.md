@@ -36,7 +36,7 @@ Não temos restrições quanto a utilização, mas geralmente são 2 públicos b
 
 ---
 
-## Tábom! mas o que dá para fazer com ele?
+## Tá bom! Mas o que dá para fazer com ele?
 
 De forma bem direta, tudo que você faz com Whatsapp Web você poderá fazer utilizando nosso serviço. Para isso basta ler o QRcode do Z-API e utilizar nosso serviço!
 

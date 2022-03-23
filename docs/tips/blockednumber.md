@@ -25,7 +25,7 @@ O Whatsapp é muito rigoroso quando o assunto é envio de spam e por isso damos 
 
 ---
 
-## Quantas mensagens posso enviar
+## Quantas mensagens posso enviar?
 
 Quantidade é algo importante sim, mas não é só sobre a quantidade enviada, o fator _PARA QUEM_ muitas vezes é o ponto chave.
 
@@ -47,9 +47,7 @@ Sempre em nossas conversas utilizamos o case de um dos nossos clientes mais anti
 
 - Tente convencer o destinatário a interagir com seu número, principalmente se você souber que ele não possui seu número na agenda;
 
-- Ofereça a opção do destinatário não receber mais mensagens e monitore os webhooks para tratar essas interações e
-
-- Se for possível dispare por lista de transmissão. (Nosso serviço não tem acesso aos seus contatos, então não é possível criar listas de transmissão pela nossa API :( )
+- Ofereça a opção do destinatário não receber mais mensagens e monitore os webhooks para tratar essas interações, se for possível dispare por lista de transmissão. (Nosso serviço não tem acesso aos seus contatos, então não é possível criar listas de transmissão pela nossa API).
 
 :::warning Cuidado
 
