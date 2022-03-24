@@ -1,14 +1,19 @@
 {
-  "method": "GET",
-  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={**URL DO CONVITE**}",
-  "httpVersion": "HTTP/1.1",
-  "queryString": [],
-  "headers": [
-    {
-      "name": "Content-Type",
-      "value": "application/json"
-    }
-  ],
-  "cookies": [],
-  "postData": {}
+    "method": "GET",
+   "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={**URL**DO**CONVITE**}",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Accept",
+            "value": "application/json"
+        }
+    ],
+    "cookies": [],
+    "postData": {}
 }
+
+
+
+
+

@@ -2,15 +2,14 @@
     "method": "GET",
     "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata/5511999999999-1623281429",
     "httpVersion": "HTTP/1.1",
-    "queryString": [
-     
-    ],
+    "queryString": [],
     "headers": [
         {
-            "name": "Content-Type",
+            "name": "Accept",
             "value": "application/json"
         }
     ],
     "cookies": [],
     "postData": {}
 }
+
