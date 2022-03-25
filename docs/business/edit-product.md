@@ -11,7 +11,7 @@ title: Criar/editar Produto
 
 ---
 
-## Condeituação
+## Conceituação
 
 Nesse método você será capaz de cadastrar e atualizar um produto no seu catálogo
 
