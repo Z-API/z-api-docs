@@ -43,10 +43,12 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-## Atributos
+## Retornos dos webhooks
 
-### Obrigatórios
+Os possíveis retornos do webhook **on-whatsapp-disconnected** estão cadastrado logo abaixo:
 
+
+## Response
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | momment | integer | Momento em que a instância foi desconectada do número. |
@@ -55,8 +57,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 | type | string | Tipo do evento da instância, nesse caso será "DisconnectedCallback". |
 
 ---
-
-## Response
 
 ### 200
 

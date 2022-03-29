@@ -44,9 +44,12 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-## Atributos
+## Retornos dos webhooks
 
-### Obrigatórios
+Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão cadastrado logo abaixo:
+
+
+## Response
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
@@ -57,8 +60,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 | type | string | Tipo do evento da instância, nesse caso será "MessageStatusCallback". |
 
 ---
-
-## Response
 
 ### 200
 

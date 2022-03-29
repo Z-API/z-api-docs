@@ -46,25 +46,17 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 Os possíveis retornos do webhook **on-message-send** estão cadastrado logo abaixo:
 
-## Atributos
 
-### Obrigatórios
+## Response
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Número de telefone de destino da mensagem. |
 | zaapId | string | Identificador da mensagem na conversa. |
 | type | string | Tipo do evento da instância, nesse caso será "DeliveryCallback". |
-
-### Opcionais
-
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
 | customId | string | Identificador provido pelo usuário para controle de mensagem utilizando seus próprios IDs. |
 
 ---
-
-## Response
 
 ### 200
 

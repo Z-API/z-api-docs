@@ -42,9 +42,12 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-## Atributos
+## Retornos dos webhooks
 
-### Obrigatórios
+Os possíveis retornos do webhook **on-chat-presence** estão cadastrado logo abaixo:
+
+
+## Response
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
@@ -54,8 +57,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 | lastSeen | timestamp | Identificador da ultima vez presente do usuário. |
 
 ---
-
-## Response
 
 ### 200
 

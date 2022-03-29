@@ -42,9 +42,12 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-## Atributos
+## Retornos dos webhooks
 
-### Obrigatórios
+Os possíveis retornos do webhook **on-message-received** estão cadastrado logo abaixo:
+
+
+## Response
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
@@ -83,7 +86,7 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 | sticker.mimeType | string | MimeType do sticker. |
 | sticker.stickerUrl | string | Url do sticker. |
 
-## Response
+---
 
 ### 200
 
