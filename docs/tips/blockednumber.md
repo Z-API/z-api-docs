@@ -3,7 +3,7 @@ id: blockednumber
 title: Bloqueios e Banimentos
 ---
 
-:::caution Existe alguma possibilidade do Whatsapp bloquear meu número ?
+:::caution Existe alguma possibilidade do Whatsapp bloquear meu número?
 
 **SIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM**
 
@@ -13,11 +13,11 @@ title: Bloqueios e Banimentos
 
 ## Introdução
 
-### Boas práticas !
+### Boas práticas!
 
 Criamos este tópico para compartilhar um pouco de tudo que aprendemos sobre boas práticas afim de evitar aborrecimentos com bloqueios e banimentos no Whatsapp.
 
-Gostaria de iniciar fazendo a seguinte reflexão com você, é bem provavel que você receba diariamente vários SMSs com publicidades de lojas, promoções, operadoras de telefonia e por aí vai. Agora pense, e pelo Whatsapp quantas mensagens deste tipo você recebe? Provavelmente nenhuma ou pouquíssimas não é mesmo? Meso assim caso você receba o Whatsapp permite você marcar como spam e até mesmo bloquear o contato.
+Gostaria de iniciar fazendo a seguinte reflexão com você, é bem provavel que você receba diariamente vários SMSs com publicidades de lojas, promoções, operadoras de telefonia e por aí vai. Agora pense, e pelo Whatsapp quantas mensagens deste tipo você recebe? Provavelmente nenhuma ou pouquíssimas não é mesmo? Mesmo assim caso você receba o Whatsapp permite você marcar como spam e até mesmo bloquear o contato.
 
 # O WHATSAPP NÃO PERMITE SPAM!
 
@@ -35,7 +35,7 @@ Sempre em nossas conversas utilizamos o case de um dos nossos clientes mais anti
 
 - Segundo: Ele personaliza as mensagens com dados do destinatário, para que todas mensagens não fiquem exatamente iguais;
 
-- Terceiro: sempre dê uma opção para o destinatário deixar de receber as mensagens. Exemplo: "Digite 2 para não receber mais estas mensagens", com isso ele monitora os webhooks para retirar os números que não querem mais receber da lista de envios e
+- Terceiro: sempre dê uma opção para o destinatário deixar de receber as mensagens. Exemplo: "Digite 2 para não receber mais estas mensagens", com isso ele monitora os webhooks para retirar os números que não querem mais receber da lista de envios.
 
 - Quarto: Ele faz disparos por listas de transmissão, pois em listas de transmissão só recebem as suas mensagens destinatário que possuem o seu número nos contatos, logo ele não vai ter a opção de bloquear ou marcar como spam.
 

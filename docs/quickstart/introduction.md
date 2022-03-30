@@ -6,7 +6,7 @@ slug: /
 
 ## Z-API - Asas para sua imaginação!
 
-**Z-API** foi desenvolvido por **programadores para programadores**, por isso prezamos pela simplicidade e objetividade de tudo que nos propomos a fazer, sendo assim chega de conversa fiada e ** Let's Bora !**
+**Z-API** foi desenvolvido por **programadores para programadores**, por isso prezamos pela simplicidade e objetividade de tudo que nos propomos a fazer, sendo assim chega de conversa fiada e ** Let's Bora!**
 
 ---
 
@@ -54,7 +54,7 @@ Para exemplificar, segue os passos de envio de uma mensagem de texto simples:
 
 4. Seu Webhook de delivery é chamado quando sua mensagem for enviada;
 
-5. Assim que o destinatário receber a mensagem, o Webhook de message-status é chamado informando RECEIVED e
+5. Assim que o destinatário receber a mensagem, o Webhook de message-status é chamado informando RECEIVED.
 
 6. Por fim quando o destinatário ler a mensagem o messages-status é chamado informando READ
 
@@ -66,7 +66,7 @@ Iniciei por este tópico porque é bem comum as pessoas perguntarem sobre quais 
 
 ---
 
-:::note **NÃO ARMAZENAMOS MENSAGENS !**
+:::note **NÃO ARMAZENAMOS MENSAGENS!**
 
 Todas as mensagens enviadas para nossa API serão encaminhadas para uma fila de mensageria e após o envio as mesmas são apagadas.
 

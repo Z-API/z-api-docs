@@ -32,9 +32,9 @@ O WhatsApp Business vai pedir autorização para acessar os arquivos do celular,
 
 ### Terceiro passo
 
-Você receberá um código, mas como não é possível receber um SMS em um telefone fixo, aguarde até que a contagem e escolha a opção **Me ligue**
+Você receberá um código, mas como não é possível receber um SMS em um telefone fixo, aguarde até que a contagem e escolha a opção **Me ligue**.
 
-E pronto você receberá uma ligação do WhatsApp Business que falará o código de ativação, ai é só digitar no campo indicado ;)
+E pronto você receberá uma ligação do WhatsApp Business que falará o código de ativação, aí é só digitar no campo indicado ;)
 
 ![img](../../img/WABCodigo.png)
 
@@ -42,6 +42,6 @@ E pronto você receberá uma ligação do WhatsApp Business que falará o códig
 
 ### Quarto passo
 
-Seja Feliz !
+Seja Feliz!
 
-Faça as configurações no app Whatsapp Bussines e leia o QrCode Z-API para dar Asas para sua imaginação !
+Faça as configurações no app Whatsapp Bussines e leia o QrCode Z-API para dar Asas para sua imaginação!
