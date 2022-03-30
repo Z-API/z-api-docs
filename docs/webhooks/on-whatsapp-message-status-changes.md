@@ -49,7 +49,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| status | string | Tipo do status no qual a mensagem se encontra. (SENT,RECEIVED,READ,READ-SELF,PLAYED) |
+| status | string | Status da mensagem (SENT - se foi enviada, RECEIVED - se foi recebida, READ - se foi lida, READ-SELF - confirmação de leitura inativa, PLAYED - se foi ouvida ) |
 | id | string | Identificador(es) da(s) mensagem(ns). |
 | phone | string | Número de telefone de destino da mensagem. |
 | momment | string | Momento em que a instância foi desconectada do número. |
@@ -61,7 +61,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
 
 ```json
 {
-  "status": "MESSAGE_SENT",
+  "status": "SENT",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
   "phone": "5544999999999",
@@ -69,7 +69,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
   "instanceId": "instance.id"
 }
 {
-  "status": "MESSAGE_RECEIVED",
+  "status": "RECEIVED",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
   "phone": "5544999999999",
@@ -77,7 +77,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
   "instanceId": "instance.id"
 }
 {
-  "status": "MESSAGE_READ",
+  "status": "READ",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
   "phone": "5544999999999",
@@ -85,7 +85,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
   "instanceId": "instance.id"
 }
 {
-  "status": "MESSAGE_READ-SELF",
+  "status": "READ-SELF",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
   "phone": "5544999999999",
@@ -93,7 +93,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
   "instanceId": "instance.id"
 }
 {
-  "status": "MESSAGE_PLAYED",
+  "status": "PLAYED",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
   "phone": "5544999999999",
