@@ -27,8 +27,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 #### Request Body
 
-#### Body
-
 ```json
 {
   "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/disconnected"
@@ -47,8 +45,8 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 Os possíveis retornos do webhook **on-whatsapp-disconnected** estão cadastrado logo abaixo:
 
-
 ## Response
+
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | momment | integer | Momento em que a instância foi desconectada do número. |
