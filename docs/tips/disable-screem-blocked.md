@@ -7,7 +7,7 @@ title: Bloqueio de tela
 
 Como você já deve ter percebido quando seu celular bloqueia a tela o whatsapp para de rodar em segundo plano o que pode ocasionar em perda de conexão com a internet, fazendo com que sua conexão como o Whatsapp Web seja interrompida consequentemente caso esteja conectado ao Z-API seu serviço pode ser afetado. Por isso fizemos um passo a passo ensinado como mitigar este problema.
 
-**Os exemplos abaixo foram realizados com celular Android**
+**Os exemplos abaixo foram realizados com celular Android:**
 
 ### Primeiro passo
 
@@ -59,6 +59,6 @@ Desative o bloqueio de telas.
 
 ### Sétimo passo
 
-Seja feliz !
+Seja feliz!
 
 ![img](../../img/WABRetirandoBloqueio8.jpeg)

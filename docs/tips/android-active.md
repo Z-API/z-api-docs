@@ -27,6 +27,6 @@ Depois de ativada as opções de desenvolvedor você vai receber um pedido para 
 
 ### Terceiro passo
 
-Agora já temos as opções de desenvolvedor. Dentro dela escolha a opção Manter a tela sempre ativa, e com a opção ativa o dispositivo permanecerá com a tela ligada mesmo durante o carregamento da bateria ;).
+Agora já temos as opções de desenvolvedor. Dentro dela escolha a opção Manter a tela sempre ativa, e com a opção ativa o dispositivo permanecerá com a tela ligada mesmo durante o carregamento da bateria ;)
 
 ![img](../../img/WABAndroidAtivo2.png)

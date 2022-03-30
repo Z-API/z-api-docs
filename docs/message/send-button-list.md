@@ -67,7 +67,7 @@ Neste método você poderá enviar mensagens de texto com botões de ação, o c
       },
       {
         "id": "2",
-        "label": "Excelênte"
+        "label": "Excelente"
       }
     ]
   }
