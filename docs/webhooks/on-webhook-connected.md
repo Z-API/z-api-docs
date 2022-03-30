@@ -1,6 +1,6 @@
 ---
 id: on-webhook-connected
-title: Ao conectar 
+title: Ao conectar
 ---
 
 ## Conceituação
@@ -29,8 +29,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 #### Request Body
 
-#### Body
-
 ```json
 {
   "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/status"
@@ -45,13 +43,11 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 <!-- --- -->
 
-
-
 ---
+
 ## Retornos dos webhooks
 
 Os possíveis retornos do webhook **on-webhook-connected** estão cadastrado logo abaixo:
-
 
 ## Response
 

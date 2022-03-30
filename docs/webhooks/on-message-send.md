@@ -2,6 +2,7 @@
 id: on-message-send
 title: Ao enviar
 ---
+
 ## Conceituação
 
 Esse é o webhook de retorno de mensagens enviadas
@@ -26,8 +27,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 #### Request Body
 
-#### Body
-
 ```json
 {
   "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/delivery"
@@ -45,7 +44,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 ## Retornos dos webhooks
 
 Os possíveis retornos do webhook **on-message-send** estão cadastrado logo abaixo:
-
 
 ## Response
 

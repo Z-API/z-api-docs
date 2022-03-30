@@ -3,7 +3,6 @@ id: on-whatsapp-message-status-changes
 title: Status da mensagem
 ---
 
-
 ## Conceituação
 
 Esse é o webhook de retorno do status da mensagem
@@ -28,8 +27,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 #### Request Body
 
-#### Body
-
 ```json
 {
   "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/status"
@@ -48,12 +45,11 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão cadastrado logo abaixo:
 
-
 ## Response
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| status | string | Tipo do status no qual a mensagem se encontra. |
+| status | string | Tipo do status no qual a mensagem se encontra. (SENT,RECEIVED,READ,READ-SELF,PLAYED) |
 | id | string | Identificador(es) da(s) mensagem(ns). |
 | phone | string | Número de telefone de destino da mensagem. |
 | momment | string | Momento em que a instância foi desconectada do número. |
@@ -65,7 +61,39 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
 
 ```json
 {
+  "status": "MESSAGE_SENT",
+  "ids": ["999999999999999999999"],
+  "momment": 1632234645000,
+  "phone": "5544999999999",
+  "type": "MessageStatusCallback",
+  "instanceId": "instance.id"
+}
+{
   "status": "MESSAGE_RECEIVED",
+  "ids": ["999999999999999999999"],
+  "momment": 1632234645000,
+  "phone": "5544999999999",
+  "type": "MessageStatusCallback",
+  "instanceId": "instance.id"
+}
+{
+  "status": "MESSAGE_READ",
+  "ids": ["999999999999999999999"],
+  "momment": 1632234645000,
+  "phone": "5544999999999",
+  "type": "MessageStatusCallback",
+  "instanceId": "instance.id"
+}
+{
+  "status": "MESSAGE_READ-SELF",
+  "ids": ["999999999999999999999"],
+  "momment": 1632234645000,
+  "phone": "5544999999999",
+  "type": "MessageStatusCallback",
+  "instanceId": "instance.id"
+}
+{
+  "status": "MESSAGE_PLAYED",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
   "phone": "5544999999999",

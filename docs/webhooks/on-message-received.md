@@ -2,6 +2,7 @@
 id: on-message-received
 title: Ao receber
 ---
+
 ## Conceituação
 
 Esse é o webhook de retorno de mensagens recebidas
@@ -26,8 +27,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 #### Request Body
 
-#### Body
-
 ```json
 {
   "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/receive"
@@ -45,7 +44,6 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 ## Retornos dos webhooks
 
 Os possíveis retornos do webhook **on-message-received** estão cadastrado logo abaixo:
-
 
 ## Response
 
