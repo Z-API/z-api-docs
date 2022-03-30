@@ -19,4 +19,4 @@ Para melhor tangibilizar, nos próximos tópicos vamos de forma ordenada te ajud
 
 :::tip Curiosidade
 
-É bacana você saber que toda vez que você cria uma instância nossos FlyBots responsáveis por orquestrar todo nosso Devops, inicia o processo de criação de um container com a Stack Z-API na AWS Brasil. Sim! todos nossos serviços são nacionais e rodam na AWS Brasil.
+É bacana você saber que toda vez que você cria uma instância nossos FlyBots responsáveis por orquestrar todo nosso Devops, inicia o processo de criação de um container com a Stack Z-API na Oracle Cloud. Sim! todos nossos serviços são nacionais e rodam na Oracle Cloud.
