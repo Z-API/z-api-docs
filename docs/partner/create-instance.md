@@ -43,6 +43,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
+| sessionName | string | Atributo para alterar o nome da sessão no whatsapp (em aparelhos conectados) |
 | deliveryCallbackUrl | string | EndPoint do webhook de mensagens entregues - delivery |
 | receivedCallbackUrl | string | EndPoint do webhook de mensagens recebidas - receive |
 | disconnectedCallbackUrl | string | EndPoint do webhook de desconexão ou perca de comunicação - disconnected |
@@ -61,6 +62,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 ```json
 {
   "name": "Instancia Z-API - 9292812",
+  "sessionName": "Testes testes",
   "deliveryCallbackUrl": "https://meuwebhook.com.br/delivery",
   "receivedCallbackUrl": "https://meuwebhook.com.br/receive",
   "disconnectedCallbackUrl": "https://meuwebhook.com.br/disconnected",
