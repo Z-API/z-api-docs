@@ -470,6 +470,52 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+##
+
+### Exemplo de retorno de carrinho
+
+```json
+{
+  "waitingMessage": false,
+  "isGroup": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632233527000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "name",
+  "photo": "https://",
+  "broadcast": false,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "order": {
+    "itemCount": 1,
+    "orderId": "422508169684569",
+    "message": "",
+    "orderTitle": "name",
+    "sellerJid": "5544999999999",
+    "thumbnailUrl": "https://",
+    "token": "AR5d4yUr+DmSzeCR2kUtPEeMfS+eG0O+S/T/17B+oY1mfA==",
+    "currency": "BRL",
+    "total": 2000,
+    "subTotal": 2000,
+    "products": [
+      {
+        "quantity": 1,
+        "name": "nameProduct",
+        "productId": "5338924696127051",
+        "retailerId": "1242",
+        "price": 2000,
+        "currencyCode": "BRL"
+      }
+    ]
+  }
+}
+```
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
