@@ -52,7 +52,6 @@ Os possíveis retornos do webhook **on-message-send** estão cadastrado logo aba
 | phone | string | Número de telefone de destino da mensagem. |
 | zaapId | string | Identificador da mensagem na conversa. |
 | type | string | Tipo do evento da instância, nesse caso será "DeliveryCallback". |
-| customId | string | Identificador provido pelo usuário para controle de mensagem utilizando seus próprios IDs. |
 
 ---
 
@@ -61,7 +60,6 @@ Os possíveis retornos do webhook **on-message-send** estão cadastrado logo aba
 ```json
 {
   "phone": "554499999999",
-  "customId": "123",
   "zaapId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "type": "DeliveryCallback",
