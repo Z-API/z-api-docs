@@ -28,7 +28,6 @@ Este método é responsável por lhe passar informações sobre a saúde da sua 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | connected | boolean | Indica se seu número está conectado ao Z-API |
-| session | boolean | Indica se sua instância tem um token ativo no WhatsApp |
 | error | string | Informa detalhes caso algum dos atributos não esteja true - 'You are already connected.' - 'You need to restore the session.' - 'You are not connected.' |
 | smartphoneConnected | boolean | Indica se o celular está conectado à internet |
 
