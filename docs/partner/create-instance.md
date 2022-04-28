@@ -47,6 +47,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 | deliveryCallbackUrl | string | EndPoint do webhook de mensagens entregues - delivery |
 | receivedCallbackUrl | string | EndPoint do webhook de mensagens recebidas - receive |
 | disconnectedCallbackUrl | string | EndPoint do webhook de desconexão ou perca de comunicação - disconnected |
+| connectedCallbackUrl | string | EndPoint do webhook de conexão - connected |
 | messageStatusCallbackUrl | string | EndPoint do webhook de Status |
 
 ---
@@ -66,6 +67,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
   "deliveryCallbackUrl": "https://meuwebhook.com.br/delivery",
   "receivedCallbackUrl": "https://meuwebhook.com.br/receive",
   "disconnectedCallbackUrl": "https://meuwebhook.com.br/disconnected",
+  "connectedCallbackUrl": "https://meuwebhook.com.br/connected",
   "messageStatusCallbackUrl": "https://meuwebhook.com.br/status"
 }
 ```
