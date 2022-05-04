@@ -49,6 +49,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
+| waitingMessage | string | Identifica se a sua mensagem está com status de "Aguardando a mensagem"|
 | phone | string | Número de telefone, ou do grupo que enviou a mensagem. |
 | participantPhone | string | Número de telefone do membro do grupo que enviou a mensagem. |
 | messageId | string | Idetificador da mensagem na conversa. |
@@ -92,6 +93,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -116,6 +119,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -143,6 +148,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -171,6 +178,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -198,6 +207,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -223,6 +234,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -249,6 +262,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -275,6 +290,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -303,6 +320,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -330,6 +349,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -355,6 +376,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -389,6 +412,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -411,6 +436,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -441,6 +468,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "waitingMessage": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
