@@ -19,12 +19,14 @@ Neste método você poderá enviar reações a mensagens enviadas ou recebidas, 
 
 ## Atributos
 
+[link]: https://fsymbols.com/pt/emoji/
+
 ### Obrigatórios
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| reaction | string | Emoji de reação |
+| reaction | string | Emoji de reação (veja opções de emoji nesse [link]) |
 | messageId | string | Id da mensagem que vai receber a reação |
 
 ### Opcionais
