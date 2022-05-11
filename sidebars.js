@@ -29,11 +29,12 @@ module.exports = {
       'instance/disconnect',
       'instance/status',
       'instance/device',
-      'instance/rename-instance'
+      'instance/rename-instance',
     ],
     Mensagens: [
       'message/introduction',
       'message/send-message-text',
+      'message/send-message-reaction',
       'message/send-message-image',
       'message/send-message-sticker',
       'message/send-message-audio',
@@ -108,7 +109,6 @@ module.exports = {
       'webhooks/on-whatsapp-message-status-changes',
       'webhooks/on-chat-presence',
       'webhooks/on-webhook-connected',
-
     ],
     Parceiros: [
       'partner/introduction',
@@ -116,8 +116,6 @@ module.exports = {
       'partner/sign-instance',
       'partner/unsubscribe-instance',
       'partner/list-instances',
-      
-     
     ],
 
     Integradores: ['integrators/find-my-pack'],
