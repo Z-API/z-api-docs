@@ -101,6 +101,10 @@ Exemplo
 }
 ```
 
+Exemplo no Whatsapp
+
+![img](../../img/send-button-list.jpeg)
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
