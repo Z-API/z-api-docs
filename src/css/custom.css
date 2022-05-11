@@ -33,3 +33,16 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+img[alt=image] {
+  width: 410px;
+  height: 830px;
+
+  border-radius: 20px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+   
+}
+
+

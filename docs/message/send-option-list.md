@@ -15,6 +15,8 @@ title: Enviar lista de opções
 
 Neste método você poderá enviar mensagens de texto com uma lista de opções, onde o usuário poderá selecionar uma das opções enviadas.
 
+![image](../../img/send-option-list.jpeg)
+
 ---
 
 ## Atributos
@@ -100,10 +102,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-Exemplo no Whatsapp
-
-![img](../../img/send-button-list.jpeg)
 
 ### 405
 

@@ -15,6 +15,8 @@ title: Deletar mensagens
 
 Método utilizado para apagar uma mensagem em um chat, você pode deletar tanto uma mensagem que enviou quanto uma mensagen enviada por um contato, para utilizar este recurso você só vai precisar do messageId da mensagem que quer apagar.
 
+![image](../../img/delete-message.jpeg)
+
 ---
 
 ## Atributos

@@ -27,6 +27,8 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 Método responsavel por enviar documentos aos seus contatos ele é simples e objetivo.
 
+![image](../../img/send-message-document.jpeg)
+
 ---
 
 ## Atributos
@@ -77,10 +79,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-Exemplo no Whatsapp
-
-![img](../../img/send-message-document.jpeg)
 
 ### 405
 

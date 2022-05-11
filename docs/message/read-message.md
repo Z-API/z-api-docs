@@ -15,6 +15,8 @@ title: Ler mensagens
 
 Método utilizado para marcar uma mensagem em um chat como lida.
 
+![image](../../video/read-message.gif)
+
 ---
 
 ## Atributos

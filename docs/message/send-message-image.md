@@ -40,6 +40,8 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 [link]: https://developers.facebook.com/docs/whatsapp/api/media
 
+![image](../../img/send-message-image.jpeg)
+
 ---
 
 ## Atributos
@@ -102,10 +104,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-Exemplo no Whatsapp
-
-![img](../../img/send-message-image.jpeg)
 
 ### 405
 

@@ -39,7 +39,9 @@ Sobre emojis o que você precisa saber é que ele é um caracter ASCII normal as
 
 Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utilizar este aqui 🤪 se quiser.
 
-:::
+::: Exemplo no Whatsapp
+
+![image](../../img/send-message-text.jpeg)
 
 ---
 
@@ -88,10 +90,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-Exemplo no Whatsapp
-
-![img](../../img/send-message-audio.jpeg)
 
 ### 405
 

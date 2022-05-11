@@ -15,6 +15,8 @@ title: Enviar contato
 
 Simples e objetivo este método permite você enviar um contato, você não precisa ter ele em seus contatos, basta preencher os atributos do metodo com informações do contato e enviar.
 
+![image](../../img/send-message-contact.jpeg)
+
 ---
 
 ## Atributos
@@ -66,10 +68,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-Exemplo no Whatsapp
-
-![img](../../img/send-message-contact.jpeg)
 
 ### 405
 

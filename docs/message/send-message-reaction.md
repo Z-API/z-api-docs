@@ -15,6 +15,8 @@ title: Enviar reação
 
 Neste método você poderá enviar reações a mensagens enviadas ou recebidas, você precisa informar o telefone do chat, um emoji e a mensagem que será reagida!
 
+![image](../../img/send-message-reaction.jpeg)
+
 ---
 
 ## Atributos
@@ -66,10 +68,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-| Exemplo no Whatsapp
-
-![img](../../img/send-message-reaction.jpeg)
 
 ### 405
 

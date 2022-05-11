@@ -21,6 +21,8 @@ Método responsavel por enviar um link aos seus contatos, muito utilzado para co
 
 :::
 
+![image](../../img/send-message-link.jpeg)
+
 ---
 
 ## Atributos
@@ -77,10 +79,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-Exemplo no Whatsapp
-
-![img](../../img/send-message-link.jpeg)
 
 ### 405
 

@@ -15,6 +15,8 @@ title: Enviar localização
 
 Método responsavel por enviar uma localização fixa aos seus contatos, muito utilizado para enviar a localização de um endereços.
 
+![image](../../img/send-message-location.jpeg)
+
 ---
 
 ## Atributos
@@ -69,10 +71,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-Exemplo no Whatsapp
-
-![img](../../img/send-message-location.jpeg)
 
 ### 405
 

@@ -15,6 +15,8 @@ Caso tenha qualquer dúvida sobre como enviar uma mensagem de texto, você pode 
 
 :::
 
+![image](../../img/reply-message.jpeg)
+
 ---
 
 ## Atributos

@@ -15,6 +15,8 @@ title: Enviar texto com botões
 
 Neste método você poderá enviar mensagens de texto com botões de ação, o conteudo do botão ex: SIM / Não, poderão ser escolhidos pelo usuário e será utilizado como resposta da mensagem enviada junto com os botões.
 
+![image](../../img/send-button-list.jpeg)
+
 ---
 
 ## Atributos
@@ -93,10 +95,6 @@ Exemplo
   "messageId": "D241XXXX732339502B68"
 }
 ```
-
-Exemplo no Whatsapp
-
-![img ](../../img/send-option-list.jpeg)
 
 ### 405
 
