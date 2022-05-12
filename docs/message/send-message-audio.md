@@ -54,7 +54,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 ```json
 {
   "phone": "5511999999999",
-  "audio": "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
+  "audio": "https://tuningmania.com.br/autosom/mp3/75%20~%2079%20Hz.MP3"
 }
 ```
 
