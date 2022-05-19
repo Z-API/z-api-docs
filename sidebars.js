@@ -35,6 +35,7 @@ module.exports = {
       'message/introduction',
       'message/send-message-text',
       'message/send-message-reaction',
+      'message/send-remove-reaction',
       'message/send-message-image',
       'message/send-message-sticker',
       'message/send-message-audio',
