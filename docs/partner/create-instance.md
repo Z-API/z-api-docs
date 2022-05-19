@@ -76,7 +76,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 
 ## Response
 
-### 201
+### 200
 
 | Atributos | Tipo      | Descrição                     |
 | :-------- | :-------- | :---------------------------- |
