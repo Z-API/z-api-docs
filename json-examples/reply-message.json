@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/reply-message",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text",
   "httpVersion": "HTTP/1.1",
   "queryString": [],
   "headers": [
@@ -12,6 +12,6 @@
   "cookies": [],
   "postData": {
     "mimeType": "application/json",
-    "text": "{\"phone\": \"5511999998888\", \"message\": \"Welcome to *Z-API*\"}"
+    "text": "{\"phone\": \"5511999998888\", \"message\": \"Welcome to *Z-API*\", \"messageId\": \"Welcome to *Z-API*\"}"
   }
 }
