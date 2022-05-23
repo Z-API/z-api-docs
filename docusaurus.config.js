@@ -38,10 +38,10 @@ module.exports = {
           'https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg',
       },
       items: [
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
     // footer: {
