@@ -12,6 +12,14 @@ module.exports = {
   i18n: {
     defaultLocale: 'pt',
     locales: ['pt', 'en'],
+    localeConfigs: {
+      pt: {
+        label: 'Português',
+      },
+      en: {
+        label: 'English',
+      },
+    },
   },
   title: 'Z-API Docs',
   tagline: 'Documentação completa da API',
@@ -29,7 +37,12 @@ module.exports = {
         src:
           'https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg',
       },
-      items: [],
+      items: [
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+      ],
     },
     // footer: {
     //   style: 'dark',
