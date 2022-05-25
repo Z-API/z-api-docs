@@ -1,9 +1,9 @@
 ---
 id: send-image-status
-title: Enviando imagem status
+title: Sending image status 
 ---
 
-## Método
+## Method
 
 #### /send-image-status
 
@@ -11,23 +11,23 @@ title: Enviando imagem status
 
 ---
 
-## Conceituação
+## Concept
 
-Método responsavel por enviar uma imagem para seu status, lembre-se que os status somem após 24 horas.
+Method responsible for sending an image to your status, remember that statuses disappear after 24 hours.
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory
 
-| Atributos |  Tipo  | Descrição                    |
+| Attributes |  Type | Description                    |
 | :-------- | :----: | :--------------------------- |
-| image     | String | Link da imagem ou seu Base64 |
+| image     | String | Images link or Base64 |
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -37,7 +37,7 @@ Método responsavel por enviar uma imagem para seu status, lembre-se que os stat
 
 #### URL
 
-Método
+Method
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-image-status
 
@@ -49,9 +49,9 @@ Método
 }
 ```
 
-:::tip Enviar imagem Base64
+:::tip Send base64 image
 
-Se você tem duvidas em como enviar uma imagem Base64 acesse o tópico mensagens "Enviar Imagem", lá você vai encontrar tudo que precisa saber sobre envio neste formato.
+If you have doubts about how to send a Base64 image, access the "Send Image" message topic, there you will find everything you need to know about sending in this format.
 
 :::
 
@@ -61,10 +61,10 @@ Se você tem duvidas em como enviar uma imagem Base64 acesse o tópico mensagens
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
+| Attributos| Type   | Description      |
 | :-------- | :----- | :------------- |
-| zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| zaapId    | string | id on z-api    |
+| messageId | string | id on whatsapp |
 
 Exemplo
 
@@ -77,7 +77,7 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 

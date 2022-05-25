@@ -1,12 +1,12 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction
 ---
 
-## Lista de transmissão
+## Transmission list 
 
-Como já dito anteriomente para o Whatsapp tudo é um chat e no caso da lista de transmissão não é diferente, assim como no caso dos grupos você pode pegar facilmente suas listas de trasmissões através do método get/chats, as listas de transmissão vem com uma ID/Fone concacteando com a palavra "-broadcast" que ficaria algo parecido com "1624901640-broadcast".
+As I said before, for Whatsapp everything is a chat and in the case of the broadcast list it is no different, just like in the case of groups you can easily get your broadcast lists through the get/chats method, the broadcast lists come with an ID/Phone concatenating with the word "-broadcast" which would look something like "1624901640-broadcast".
 
-Você pode utilizar todos os métodos da sessão mensagens para enviar texto e arquivos para sua lista de transmissão, passando o ID/Fone da lista de transmissão.
+You can use all methods of the messaging session to send text and files to your broadcast list by passing the broadcast list ID/Phone.
 
-Diferente dos grupos todas interações e repostas das mensagens enviadas por uma lista de transmissão geram interações individuais, ou seja, caso o destinatário se manifeste você poderá interagir com o mesmo individualmente.
+Unlike groups, all interactions and responses to messages sent by a broadcast list generate individual interactions, that is, if the recipient manifests himself, you can interact with him individually.

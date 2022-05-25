@@ -82,13 +82,13 @@ module.exports = {
       'group/update-group-settings',
       'group/update-group-description',
     ],
-    'Lista de Transmissão': ['broadcast/introduction'],
+    'Transmission list': ['broadcast/introduction'],
     Status: [
       'status/introduction',
       'status/send-text-status',
       'status/send-image-status',
     ],
-    'Fila de Mensagens': [
+    'Message queue': [
       'queue/introduction',
       'queue/get-queue',
       'queue/delete-queue',
@@ -111,7 +111,7 @@ module.exports = {
       'webhooks/on-chat-presence',
       'webhooks/on-webhook-connected',
     ],
-    Parceiros: [
+    Partners: [
       'partner/introduction',
       'partner/create-instance',
       'partner/sign-instance',
@@ -119,7 +119,7 @@ module.exports = {
       'partner/list-instances',
     ],
 
-    Integradores: ['integrators/find-my-pack'],
+    Integradors: ['integrators/find-my-pack'],
 
     'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
 
