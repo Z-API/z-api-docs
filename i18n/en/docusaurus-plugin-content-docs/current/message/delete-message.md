@@ -1,9 +1,9 @@
 ---
 id: delete-message
-title: Deletar mensagens
+title: Deleting messages 
 ---
 
-## Método
+## Method
 
 #### /messages
 
@@ -11,27 +11,27 @@ title: Deletar mensagens
 
 ---
 
-## Conceituação
+## Concept
 
-Método utilizado para apagar uma mensagem em um chat, você pode deletar tanto uma mensagem que enviou quanto uma mensagen enviada por um contato, para utilizar este recurso você só vai precisar do messageId da mensagem que quer apagar.
+Method used to delete a text sent in a chat. You will be able to delete a message that you sent as well as a message that was sent by a contact. To use this resource you will only need the messageId of the message that you want to delete.
 
 ![image](../../../../../img/delete-message.jpeg)
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| messageId | string | id original da mensagem, no caso de mensagem enviada por você é o código que vem no seu reponse, caso seja uma mensagem enviada por um contato você vai receber este messageId pelo seu webhook de receive |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário/remetente no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| owner | boolean | Informe true caso você tenha enviado a mensagem ou false para casos onde seja uma mensagem recebida |
+| messageId | string | Original messages id, in case the message was sent by you it is the code that comes in the response. In case it is a message sent by a contact you will receive this messageID through your webhook receive. |
+| phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask |
+| owner | boolean | Enter true if you have sent the message or false for cases where it is an incoming message |
 
-### Opcionais
+### Optionals
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -39,9 +39,9 @@ Método utilizado para apagar uma mensagem em um chat, você pode deletar tanto 
 
 ## Request Params
 
-#### URL exemplo
+#### URL example 
 
-Método
+Method 
 
 `DELETE`
 
@@ -55,11 +55,11 @@ https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/messages?messageId=
 
 No content
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--- | :-------- |
 |           |      |           |
 
-Exemplo
+Example 
 
 ```json
 {}
@@ -67,17 +67,17 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link for webhooks response (upon receiving)
 
 [Webhook](../webhooks/on-message-received#response)
 

@@ -1,9 +1,9 @@
 ---
 id: send-button-list
-title: Enviar texto com botões
+title: Send texts with buttons 
 ---
 
-## Método
+## Methods
 
 #### /send-button-list
 
@@ -11,47 +11,47 @@ title: Enviar texto com botões
 
 ---
 
-## Conceituação
+## Concept 
 
-Neste método você poderá enviar mensagens de texto com botões de ação, o conteudo do botão ex: SIM / Não, poderão ser escolhidos pelo usuário e será utilizado como resposta da mensagem enviada junto com os botões.
+In this method you will be able to send text messages with action buttons. Buttons content ex: YES / NO, they will be able to be chosen by the user and it will be used as an answer to the text that was sent.
 
 ![image](../../../../../img/send-button-list.jpeg)
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| message | string | Texto a ser enviado |
-| buttonList | buttonList | Objeto do tipo botão |
+| phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
+| message | string | Text to be sent |
+| buttonList | buttonList | Type button object |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs.|
 
 ### Button List
 
-| Atributos |  Tipo  | Descrição                     |
+| Attributes |  Type  | Description                     |
 | :-------- | :----: | :---------------------------- |
-| buttons   | button | lista de botões a ser enviado |
+| buttons   | button | List of buttons to be sent    |
 
 ### Button
 
-| Atributos |  Tipo  | Descrição          |
+| Attributes |  Type  | Description          |
 | :-------- | :----: | :----------------- |
-| label     | string | Texto para o botão |
+| label     | string | Text for the button |
 
 ### Opcionais Button
 
-| Atributos |  Tipo  | Descrição              |
+| Attributes |  Type  | Description              |
 | :-------- | :----: | :--------------------- |
-| id        | string | Identificador do botão |
+| id        | string | Button identifier |
 
 ---
 
@@ -82,12 +82,12 @@ Neste método você poderá enviar mensagens de texto com botões de ação, o c
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
+| Attributes | Type   | Description       |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
 | messageId | string | id no whatsapp |
 
-Exemplo
+Example 
 
 ```json
 {
@@ -98,17 +98,17 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link for webhooks response (upon receiving)
 
 [Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto-lista-de-botão)
 

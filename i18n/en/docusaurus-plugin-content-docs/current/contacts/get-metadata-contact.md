@@ -11,29 +11,29 @@ title: Pegar metadata do contato
 
 ---
 
-## Conceituação
+## Concept
+This method is responsible for returning all of you contact’s metadata 
 
-Este método é reponsavel por retornar as informações do metadata do contato.
+:::tip Tip about contact's image 
 
-:::tip Dica sobre imagem do contato
 
-Se você pretente armazenar a imagem do seu contato observe que sempre retornamos no get-contacts o atribucom imgUrl com ela para você, porém é importante lembrar que esta fica disponivel por apenas **48 horas**, após este periodo o link da imagem é excluido pelo próprio Whatsapp. Sugerimos que caso precise atualizar a imagem do seu contato você utilize o proximo método desta documentação, o **get-profile-picture**.
+If you intend to store your contact's image, please note that we always return in get-contacts the attribute with imgUrl with it for you, but it is important to remember that it is only available for 48 hours. After this period the image link is deleted by Whatsapp itself . We suggest that if you need to update your contact's image, you use the next method in this documentation, **get-profile-picture**.
 
 :::
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telephone number in the format DDI DDD NUMERS Ex: 551199999999. **IMPORTANT**  only send numbers without formatting or a mask  |
 
-### Opcionais
+### Optionals
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -41,9 +41,9 @@ Se você pretente armazenar a imagem do seu contato observe que sempre retornamo
 
 ## Request Params
 
-#### URL exemplo
+#### URL example
 
-Método
+Method
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/5511999999999
 
@@ -53,34 +53,33 @@ Método
 
 ### 200
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-- | :-- |
-| phone | string | Phone do contato |
-| name | string | **Nome e sobrenome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
-| short | string | **Nome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
-| vname | string | Nome do Vcard do contato, caso ele tenha |
-| notify | string | Nome informado nas configurações de nome do Whatsapp |
-| imgUrl | string | URL da foto do contato **o Whatsapp apaga após 48h** |
+| phone | string | Contacts phone |
+| name | string | **First and last name** of the contact, it will only return filled in if you have the number in your contacts |
+| short | string | Contact **name**, it will only return filled in if you have the number in your contacts |
+| vname | string | Contact name if you have him as a contact |
+| notify | string | Name entered in Whatsapp name settings |
+| imgUrl | string | Contact photo URL **Whatsapp deletes after 48h** |
 
-Exemplo
+Example 
 
 ```json
 {
-  "name": "Nome e sobrenome do contato",
+  "name": "Contact's first and last name",
   "phone": "551199999999",
-  "notify": "Nome do contado no Whatsapp",
-  "short": "Nome do contato",
-  "imgUrl": "url da foto do contato "
+  "notify": "Contact's name on Whatsapp",
+  "short": "Contact's name",
+  "imgUrl": "Contact's photo URL  "
 }
 ```
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
-
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

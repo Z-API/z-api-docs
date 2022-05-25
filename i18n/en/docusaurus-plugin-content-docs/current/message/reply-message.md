@@ -1,17 +1,20 @@
 ---
 id: reply-message
-title: Responder mensagem
+title: Answer Messages 
 ---
 
-## Conceituação
+## Concept 
 
-Nesse tópico falaremos um pouco sobre como responder uma mensagem diretamente!
+In this topic we will talk a little about how to respond to a text directly. 
 
-Quando você utiliza o método [send-text](send-message-text) existe um atributo opcional chamado **messageId**, esse é um atributo que recebe o Id de uma mensagem qualquer, quando esse atributo é passado, sua mensagem será diretamente relacionada a mensagem do Id informado.
+
+When you use the [send-text](send-message-text) method there is an optional attribute called **messageId**, this is an attribute that receives the Id of any message, when this attribute is passed, your message will be directly related to the message of the informed Id.
 
 :::tip
 
-Caso tenha qualquer dúvida sobre como enviar uma mensagem de texto, você pode ler sobre isso no nosso tópico de [**Enviar texto simples**](send-message-text)
+
+If you have any questions about how to send a text message, you can read about it in our [**Send plain text**](send-message-text) thread
+
 
 :::
 
@@ -19,14 +22,14 @@ Caso tenha qualquer dúvida sobre como enviar uma mensagem de texto, você pode 
 
 ---
 
-## Atributos
+## Attributes
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description  |
 | :-- | :-: | :-- |
-| messageId | string | id original da mensagem, no caso de mensagem enviada por você é o código que vem no seu reponse, caso seja uma mensagem enviada por um contato você vai receber este messageId pelo seu webhook de receive |
-| delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| messageId | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
+| delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
 
 ---
 
@@ -55,17 +58,17 @@ Caso tenha qualquer dúvida sobre como enviar uma mensagem de texto, você pode 
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link for webhooks response (upon receiving)
 
 [Webhook](../webhooks/on-message-received#response)
 

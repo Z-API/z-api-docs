@@ -1,24 +1,29 @@
 ---
 id: stability
-title: Estabilidade com Z-API
+title: Stability with Z-API
 ---
 
-## Introdução
+## Introduction 
 
-Para uma qualidade do serviço temos algumas dicas que podem ajudar e muito na estabilidade e qualidade da sua conexão com Z-API abaixo vamos pontuar em tópicos.
+For quality of service we have a few tips that could help out a lot with stability and the quality of your connection with Z-API.
 
-## Aparelho dedicado
 
-Sabemos que nem sempre é possível, mas se conseguir evitar a utilização do aparelho para outras atividades pode contribuir para uma boa estabilidade e qualidade dos serviços Z-API. Uma boa dica é utilizar emuladores Android. Para maiores informações procure o tópico Emuladores nesta mesma sessão.
+## Dedicated device 
 
-## Aparelho sempre conectado
+We know that it’s not always possible however, try to avoid using the device for other activities to ensure stability and quality of Z-API services. A good tip is to use Android emulators. For more information on this topic search for emulators in this same section.
 
-Para o funcionamento do Z-API ele precisa o aparelho esteja ligado e conectado na internet o tempo todo, assim como no versão do WhatsWeb se o aparelho perder a conexão, nosso serviço para de funcionar. Por isso é muito importante que ele esteja sempre conectado a internet.
 
-## Boa conexão de internet
+## Device always connected 
 
-Mantenha seu celular conectado a um wi-fi com boa velocidade de conexão e evite utilizar apenas o plano de dados do celular.a velocidade de sua internet impacta diretamente na qualidade da troca de informações entre seu celular e o Z-API.
 
-## WhatsApp sempre aberto
 
-Manter o aplicativo do Whatsapp sempre aberto ajuda a manter a conexão entre nosso serviço e seu celular, assim como no Whatsweb precisamos nos comunicar com seu celular, quando você travar ou bloquear o celular o whatsapp pode parar de rodar em segundo plano e ocasionar em perda de conexão com a internet, isso vai causar indisponibilidade do nosso serviço. Por fim, caso consiga, recomendamos instalar o aplicativo Keep Phone On, ele ajuda a manter seu telefone sempre ligado.
+For proper functioning of Z-API it needs to have the device always connected to the internet. Just like on WhatsApp web if the device loses connection, our service will also stop working. Hence why it is very important for the device to always be connected.
+
+
+## Good internet connection  
+
+Keep your phone connected to a wifi with good connection speeds and avoid using your cellphone data. The speed of your internet directly impacts the quality of exchange of information between your phone and Z-API.
+
+## WhatsApp always open
+
+Keeping the WhatsApp app always open helps maintain connection between our service and your phone. Just like WhatsApp web needs to communicate with your phone, when you lock your phone WhatsApp can stop running in the background which might cause loss of internet connection. This will cause unavailability of our service. Finally, if you can we recommend you to download  the app “Keep Phone On” it will help keep your phone always on.

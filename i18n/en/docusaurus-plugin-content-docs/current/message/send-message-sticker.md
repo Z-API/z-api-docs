@@ -1,9 +1,9 @@
 ---
 id: send-message-sticker
-title: Enviar sticker
+title: Send stickers
 ---
 
-## Método
+## Method 
 
 #### /send-sticker
 
@@ -11,19 +11,19 @@ title: Enviar sticker
 
 ---
 
-## Conceituação
+## Concept
 
-Método responsavel por enviar imagens para os seus chats você pode trabalhar com as imagens de 2 formas que são:
+This method is responsible for sending images for your chats, you can work with two types of images which are:
 
-- Por Link, onde você tem um sticker hospedada em algum lugar da internet e envia apenas o link da mesma.
+- By link, this means that if you have an image that is being hosted somewhere on the internet you can simply just send the link
 
-- Por Base64, se você optar por esta opção precisará ter em sua aplicação um método para converter o sticker em Base64, para ter certeza que sua conversão funcionou copie o Base64 gerado e cole na barra de endereço do seu navegador, caso seja um sticker válida seu navegador vai conseguir renderiza-la, caso o navegador não consiga, revise seu método :).
+- By base64, if you opted for this option you will need to have a method in your application to convert an image to base64. To make sure that your conversion worked, copy the generated Base64 and paste it in your browser's address bar, if it's a valid image your browser will be able to render it, if the browser can't, check your method :)
 
   **_ IMPORTANTE _** se optar por base64 antes do binário você precisa adicionar a seguinte expressão ** data:image/png;base64, \*_ seu codigo base64 _\* **
 
-Você pode fazer um teste com este tipo de envio utilizando um conversor online de imagens para Base64.
+You can test this type with this type of submission by using an online converter of images to base64.
 
-Exemplos:
+Examples:
 
 [conversor 1]
 
@@ -32,11 +32,11 @@ Exemplos:
 [conversor 1]: https://www.base64-image.de/
 [conversor 2]: https://base64.guru/converter/encode/image
 
-### Tamanho e formatos
+### Sizes and formats
 
-O Whatsapp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio Whatsapp.
+WhatsApp limits the sizes of files and its politics constantly changes and because of that we always recommend that you verify directly on WhatsApp’s website.
 
-Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
+In this [link] you can find everything that you need to know about formatting and file sizing.
 
 [link]: https://developers.facebook.com/docs/whatsapp/api/media
 
@@ -48,17 +48,17 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| sticker | string | Link do sticker ou seu Base64 |
+| phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
+| sticker | string | Image’s link or its Base64 |
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
-| delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
+| delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
 
 ---
 
@@ -88,12 +88,12 @@ BASE64
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
+| Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
-| zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| zaapId    | string | id on z-api    |
+| messageId | string | id on whatsapp |
 
-Exemplo
+Example
 
 ```json
 {
@@ -104,17 +104,16 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
----
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link for webhooks response (upon receiving)
 
 [Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-sticker)
 

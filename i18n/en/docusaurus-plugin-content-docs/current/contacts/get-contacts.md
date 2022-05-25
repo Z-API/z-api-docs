@@ -1,9 +1,9 @@
 ---
 id: get-contacts
-title: Pegar contatos
+title: Get contacts
 ---
 
-## Método
+## Method
 
 #### /contacts
 
@@ -11,24 +11,24 @@ title: Pegar contatos
 
 ---
 
-## Conceituação
+## Concept
 
-Este método é reponsavel por retornar todos os contatos do Whatsapp. Lembre-se do que foi dito na introdução sobre numero de contatos, caso tenho pulado esta parte, sugiro que você volte um passo e leia a nossa introdução sobre contatos.
+This method is responsible for returning all of your Whatsapp contacts. Remember what was said in the introduction about contact numbers. In case you skipped this part, I suggest that you take a step back and read our introduction.
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| page | integer | Utilizado para paginação você de informar aqui a pagina de contatos que quer buscar |
-| pageSize | integer | Especifica o tamanho do retorno de contatos por pagina |
+| page | integer | Used for pagination you have to inform here the contact page you want to search |
+| pageSize | integer | Specifies the size of the contact return per page |
 
-### Opcionais
+### Optionals
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -36,9 +36,9 @@ Este método é reponsavel por retornar todos os contatos do Whatsapp. Lembre-se
 
 ## Request Params
 
-#### URL exemplo
+#### URL example
 
-Método
+Method
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts?page=1&pageSize=20
 
@@ -48,15 +48,15 @@ Método
 
 ### 200
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-- | :-- |
-| phone | string | Phone do contato |
-| name | string | **Nome e sobrenome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
-| short | string | **Nome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
-| vname | string | Nome do contato caso você tenha ele como contato |
-| notify | string | Nome informado nas configurações de nome do Whatsapp |
+| phone | string | Contacts phone |
+| name | string | **First and last name** of the contact, it will only return filled in if you have the number in your contacts |
+| short | string | Contact **name**, it will only return filled in if you have the number in your contacts |
+| vname | string | Contact name if you have him as a contact |
+| notify | string | Name entered in Whatsapp name settings |
 
-Exemplo
+Example 
 
 ```json
 [
@@ -72,11 +72,11 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

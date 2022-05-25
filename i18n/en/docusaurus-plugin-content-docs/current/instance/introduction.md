@@ -1,22 +1,22 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction
 ---
 
-## Mas afinal o que é uma instância ?
+## What is an instance anyway?
 
-Uma instância é uma conexão a partir de um número de telefone com conta no WhatsApp, que será responsável pelo envio e recebimento de mensagens. É possível criar várias instâncias para que você consiga ter vários números de WhatsApp conectado a sua conta.
+An instance is a connection with a phone number that has a WhatsApp account, which will be responsible for sending and receiving messages. It is possible to create various instances so that you can have several numbers on WhatsApp connected to your account.
 
-Tecnicamente falando uma instância nada mais é do que uma máquina virtual (ou container) dentro da nossa infraestrutura de servidores, dedicada a prover um ambiente para conexão do seu número.
+Technically speaking an instance is nothing more than a virtual machine (or contained) within the infrastructure of servers that are dedicated to providing you with a connection to your phone number.
 
-Cada instância só possui um número, caso precise conectar mais números será necessário criar mais instâncias. Mas uma instância não é presa a um único número, ou seja, você pode desconectar um número e conectar outro na mesma instância.
+Each instance has a number, in case you need more numbers it will be necessary to create more instances. An instance is not chained to a unique number, that means you can disconnect your number and connect another one in the same instance.
 
-Para ajudar você a entender o funcionamento do Z-API, nosso serviço roda com base em um Whatsapp Web, e abstraímos os métodos permitindo que você manipule via API RestFul.
+To help you understand the functionality of Z-API, our service runs with a model that is based on WhatsApp Web and we abstract the methods allowing you to manipulate them through RestFul API.
 
-Para melhor tangibilizar, nos próximos tópicos vamos de forma ordenada te ajudar nos primeiros passos.
+To make it more concrete, in the next sections we will help you take your first steps.
 
 ---
 
-:::tip Curiosidade
+:::tip Curiosity
 
-É bacana você saber que toda vez que você cria uma instância nossos FlyBots responsáveis por orquestrar todo nosso Devops, inicia o processo de criação de um container com a Stack Z-API na Oracle Cloud. Sim! todos nossos serviços são nacionais e rodam na Oracle Cloud.
+It is neat to know that each time you create an instance our FlyBots that are responsible for orchestrating all of our devops, starts the creation process with a Stack Z-API in AWS Brasil. YEAH! All of our services are nacional a run on AWS Brasil.

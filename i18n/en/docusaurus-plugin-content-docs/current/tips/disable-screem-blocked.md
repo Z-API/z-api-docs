@@ -1,64 +1,64 @@
 ---
 id: disable-screem-blocked
-title: Bloqueio de tela
+title: Lock screen 
 ---
 
-## Introdução
+## Introduction 
 
-Como você já deve ter percebido quando seu celular bloqueia a tela o whatsapp para de rodar em segundo plano o que pode ocasionar em perda de conexão com a internet, fazendo com que sua conexão como o Whatsapp Web seja interrompida consequentemente caso esteja conectado ao Z-API seu serviço pode ser afetado. Por isso fizemos um passo a passo ensinado como mitigar este problema.
 
-**Os exemplos abaixo foram realizados com celular Android:**
 
-### Primeiro passo
+Like you might have already noticed when your phone locks and brings you to the lockscreen. WhatsApp will stop running in the background which might make you lose your connection to the internet and WhatsApp Web. In this case, if you are using Z-API your connection to it will be affected. For this, we made a step by step guide on how to avoid this issue.
 
-Acesse as configurações do Android
 
-![img](../../../../../img/WABRetirandoBloqueio1.jpeg)
+**The examples below were made on an Android**
 
-### Segundo passo
+### First step 
 
-Depois acesse “Bloqueio de tela e senhas”
+Access Android's settings
 
-![img](../../../../../img/WABRetirandoBloqueio2.jpeg)
+![img](../../../../../img/LockscreenOne.jpeg)
 
----
+### Second step
 
-### Terceiro passo
+Go to “Always-on display & Lock screen”
 
-Selecione a opção sempre ativa.
-
-![img](../../../../../img/WABRetirandoBloqueio3.jpeg)
+![img](../../../../../img/LockscreenTwo.jpeg)
 
 ---
 
-### Quarto passo
+### Third step
 
-Em seguida vá em Senhas e Segurança.
+Select the option “always-on display”
 
-![img](../../../../../img/WABRetirandoBloqueio4.jpeg)
-
----
-
-### Quinto passo
-
-Escolha a opçao senhas
-
-![img](../../../../../img/WABRetirandoBloqueio5.jpeg)
+![img](../../../../../img/LockscreenFourth.jpeg)
 
 ---
 
-### Sexto passo
+### Fourth step
 
-Desative o bloqueio de telas.
+Right after go to passwords and security.
 
-![img](../../../../../img/WABRetirandoBloqueio6.jpeg)
-
-![img](../../../../../img/WABRetirandoBloqueio7.jpeg)
+![img](../../../../../img/LockscreenFifth.jpeg)
 
 ---
 
-### Sétimo passo
+### Fifth step
 
-Seja feliz!
+Click on "turn off screen lock"
 
-![img](../../../../../img/WABRetirandoBloqueio8.jpeg)
+![img](../../../../../img/LockscreenSixth.jpeg)
+
+---
+
+### Sixth step
+
+Turn off screen locks
+
+![img](../../../../../img/Lockscreenseventh.jpeg)
+
+
+
+---
+
+
+

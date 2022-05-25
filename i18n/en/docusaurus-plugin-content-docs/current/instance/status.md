@@ -1,9 +1,9 @@
 ---
 id: status
-title: Status da instância
+title: Instance status
 ---
 
-## Método
+## Method
 
 #### /Status
 
@@ -11,25 +11,25 @@ title: Status da instância
 
 ---
 
-## Conceituação
+## Concept
 
-Este método é responsável por lhe passar informações sobre a saúde da sua instância no Z-API, para uma boa qualidade de envio e recebimento é preciso tomar os seguinte cuidados:
+This method is responsible for giving you information about the health of your instance on Z-API. For good quality sending and receiving it is necessary to take the following precautions:
 
-- Configure os webhooks no Z-API para receber notificações sobre mudanças no status da sua instância.
+- Configure your webhooks on Z-API to receive notifications about changes on the status of your instance. 
 
-- Desabilite a otimização de bateria do celular conectado mesmo que seja um emulador (exemplo para Android https://youtu.be/Z1baLLXyvTM).
+- Disable battery optimization of the cell phone that is connected, even if it is just an emulator (example for android https://youtu.be/Z1baLLXyvTM).    
 
-- Monitore os atributos deste método.
+- Monitor the attributes of this method.
 
 ---
 
-## Atributos
+## Attributes 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| connected | boolean | Indica se seu número está conectado ao Z-API |
-| error | string | Informa detalhes caso algum dos atributos não esteja true - 'You are already connected.' - 'You need to restore the session.' - 'You are not connected.' |
-| smartphoneConnected | boolean | Indica se o celular está conectado à internet |
+| connected | boolean | Indicates if your number is connected to Z-API |
+| error | string | nforms details if any of the attributes is not true.   - 'You are already connected.' - 'You need to restore the session.' - 'You are not connected.' |
+| smartphoneConnected | boolean | Indicates if the phone is connected to the internet |
 
 ---
 

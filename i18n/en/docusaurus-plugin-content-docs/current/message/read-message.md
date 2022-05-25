@@ -1,9 +1,9 @@
 ---
 id: read-message
-title: Ler mensagens
+title: Read texts 
 ---
 
-## Método
+## Method 
 
 #### /read-message
 
@@ -11,26 +11,26 @@ title: Ler mensagens
 
 ---
 
-## Conceituação
+## Concept 
 
-Método utilizado para marcar uma mensagem em um chat como lida.
+Method used to mark a text message as read 
 
 ![image](../../../../../video/read-message.gif)
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description  |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário/remetente no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| messageId | string | id original da mensagem, no caso de mensagem enviada por você é o código que vem no seu reponse, caso seja uma mensagem enviada por um contato você vai receber este messageId pelo seu webhook de receive |
+| phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
+| messageId | string | Original messages id, in case the message was sent by you it is the code that comes in the response. In case it is a message sent by a contact you will receive this messageID through your webhook’s receive. |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -53,11 +53,11 @@ Método utilizado para marcar uma mensagem em um chat como lida.
 
 No content
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--- | :-------- |
 |           |      |           |
 
-Exemplo
+Example 
 
 ```json
 {}
@@ -65,17 +65,16 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
-
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link for webhooks response (upon receiving)
 
 [Webhook](../webhooks/on-message-received#response)
 

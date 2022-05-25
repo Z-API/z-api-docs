@@ -1,20 +1,23 @@
 ---
 id: authentication
-title: Autenticação e Segurança
+title: Authentication and security
 ---
 
-## O que é e para que serve?
+## What is it and what is its purpose?
 
-Não é difícil imaginar que para comunicação entre API’s vamos precisar estabelecer um protocolo de segurança entre as partes, ou seja entre o Z-API e sua aplicação, todas as interações com nossa API precisará ser autenticada por um ID e um token.
+
+It’s not difficult to imagine that to have communication with APIs we must establish a protocol of security between both parties. What we mean is that for every interaction with Z-API and your APP, you will need to an authentication by an ID or a token.
 
 ---
 
-## Como consigo meu id e token?
+## How do I get my id and token? 
 
-Logo após você criar sua conta no Z-API você vai precisar criar uma instância e esta possui um ID e um token para identificá-la. Estas 2 informações juntas serão responsáveis em garantir a segurança da comunicação entre sua aplicação e a nossa. Para visualizar o ID e o token da sua instância basta acessar a instância no painel de administrador e clicar em editar, lá você encontra todos os dados referente a instância. Lembrando que você pode ter várias instâncias, mas cada uma delas tem seu próprio ID e token.
+Right after you create your account on Z-API you will need to create an instance which will contain an ID and a token to be able to identify yourself. This information will be responsible for guaranteeing the security of your communication between your application and ours. To be able to visualize your instance’s ID and your token all that is necessary is to access the admins panel and click on edit. There you will find all of the data pertaining to your instance. As a reminder, remember that you can have various instances however each one of them will have their ID and token.
+
 
 ---
 
 :::important
 
-Nunca compartilhe o seu ID e token com ninguém.
+
+Never share your ID or token with anyone.

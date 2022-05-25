@@ -1,9 +1,8 @@
 ---
 id: disconnect
-title: Desconectar
+title: Disconnect
 ---
-
-## Método
+## Method 
 
 #### /disconnect
 
@@ -11,11 +10,11 @@ title: Desconectar
 
 ---
 
-## Conceituação
+## Concept
 
-Este método desconecta seu número do Z-API.
+This method disconnects your Z-API number 
 
-Mas não se preocupe, para conectar novamente bastar ler o QRCode :)
+However, you don't need to worry. To reconnect again all you need to do is read the QRCode :)
 
 ---
 
@@ -23,8 +22,7 @@ Mas não se preocupe, para conectar novamente bastar ler o QRCode :)
 
 ---
 
-:::important Não se esqueça !
+:::important Don't forget !
 
-Uma vez desconectado todos os metodos da API ficam indisponíveis e os webhooks deixam de ser enviados.
-
+Once you disconnect and all of the methods become unavailable, the webhooks stop being sent.
 :::

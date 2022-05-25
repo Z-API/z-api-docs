@@ -1,9 +1,9 @@
 ---
 id: restore-session
-title: Restaurar sessão
+title: Restoring session 
 ---
 
-## Método
+## Method 
 
 #### /restore-session
 
@@ -11,9 +11,9 @@ title: Restaurar sessão
 
 ---
 
-## Conceituação
+## Concept
 
-Este método tenta restaurar a sua conexão com Whatsapp com base nas informações salvas na sessão do Z-API. Esta funcionalidade é indicada para casos onde o webhook de desconexão é enviado. Caso você receba um webhook de desconexão pode tentar reestabelecer a conexão utilizando este método.
+This method tries to restore your connection with WhatsApp based off of the information saved in the Z-API session.
 
 ---
 
@@ -29,11 +29,11 @@ Este método tenta restaurar a sua conexão com Whatsapp com base nas informaç�
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

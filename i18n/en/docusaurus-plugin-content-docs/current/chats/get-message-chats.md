@@ -1,9 +1,9 @@
 ---
 id: get-message-chats
-title: Pegar mensagens do chat
+title: Get messages from chat
 ---
 
-## Método
+## Method 
 
 #### /chat-messages/{phone}
 
@@ -11,25 +11,25 @@ title: Pegar mensagens do chat
 
 ---
 
-## Conceituação
+## Concept 
 
-Este método é reponsavel por retornar todas conversas de um chat.
+This method is responsible for returning all conversations in a chat.
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| amount | integer | Quantidade de mensagens que deseja buscar, é recomendado que você busque de 10 em 10 mensagens para que sua aplicação não fique muito lenta. |
-| lastMessageId | string | messageId da ultima mensagem que você buscou |
+| phone | string | telephone number in the format DDI DDD NUMERS Ex: 551199999999. **IMPORTANT**  only send numbers without formatting or a mask |
+| amount | integer | Number of messages you want to search, it is recommended that you search 10 messages at a time so that your application doesn't get too slow.|
+| lastMessageId | string | Messsageid of the last message that you sent  |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -37,9 +37,9 @@ Este método é reponsavel por retornar todas conversas de um chat.
 
 ## Request Params
 
-#### URL exemplo
+#### URL example
 
-Método
+Method
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat-messages/{phone}
 
@@ -49,21 +49,22 @@ Método
 
 ### 200
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--- | :-------- |
 
-Cada tipo de mensagem tem um tipo de atributo diferente no exemplo abaixo vamos mostrar alguns deles.
+Each message type has a different attribute type. In the example below we will show you some of them.
 
-Exemplo
+Example 
 
-Segue Json conforme sequência abaixo:
+JSON follows the sequence as shown below.
 
-- Texto Simples
-- Imagem
-- Documento
-- Contato
-- Emoji
-- Link
+ - plain text
+ - Image
+ - Document
+ - Contact - 
+ - Emoji
+ - Link
+
 
 ```json
 [
@@ -81,7 +82,7 @@ Segue Json conforme sequência abaixo:
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "text": {
-      "message": "Uma mensagem de texto simples"
+      "message": "A simple plain text message"
     }
   },
   {
@@ -187,11 +188,11 @@ Segue Json conforme sequência abaixo:
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

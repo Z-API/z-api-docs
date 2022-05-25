@@ -1,9 +1,9 @@
 ---
 id: delete-chat
-title: Deletar Chats
+title: Delete chats
 ---
 
-## Método
+## Method
 
 #### /modify-chat
 
@@ -11,26 +11,26 @@ title: Deletar Chats
 
 ---
 
-## Conceituação
+## Concept
 
-Este método é reponsavel por deletar seus chats.
+This method is responsible for deleting chats 
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | integer | Número de telefone que você deseja alterar no **SEU** chat |
-| action | string | Atributo para deletar o chat |
+| phone | integer | Phone number you want to change in **YOUR** chat |
+| action | string | Attribute for deleting a chat  |
 
 ---
 
 ## Request Body
 
-Exemplo
+Example
 
 ```json
 {
@@ -45,11 +45,11 @@ Exemplo
 
 ### 200
 
-| Atributos | Tipo    | Descrição                       |
+| Attributes | Type    | Description                       |
 | :-------- | :------ | :------------------------------ |
-| value     | boolean | Atributo de confirmaçaõ da ação |
+| value     | boolean | Action confirmation attribute  |
 
-Exemplo
+Example 
 
 ```json
 {
@@ -59,11 +59,11 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

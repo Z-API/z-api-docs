@@ -1,9 +1,9 @@
 ---
 id: get-profile-picture
-title: Pegar imagem do contato
+title: Get contact image 
 ---
 
-## Método
+## Method 
 
 #### /profile-picture
 
@@ -11,27 +11,28 @@ title: Pegar imagem do contato
 
 ---
 
-## Conceituação
+## Concept
 
-Este método é reponsavel por retornar a url com a imagem do contato atualizada.
+This method is responsible for returning a url with your contacts picture updated.
 
-Como já dito no tópico anterior **Lembre-se**
+As already stated in the previous topic please **Remember**    
 
-Se você pretente armazenar a imagem do seu contato observe que sempre retornamos no get-contacts o atribucom imgUrl com ela para você, porém é importante lembrar que esta fica disponivel por apenas **48 horas**, após este periodo o link da imagem é excluido pelo próprio Whatsapp. Sugerimos que caso precise atualizar a imagem do seu contato você utilize o proximo método desta documentação, o **get-profile-picture**.
+If you intend to store your contact's image, please note that we always return in get-contacts the attribute with imgUrl with it for you, but it is important to remember that it is only available for 48 hours, after this period the image link is deleted by Whatsapp itself . We suggest that if you need to update your contact's image, you use the next method in this documentation, **get-profile-picture**.
+
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | telephone number in the format DDI DDD NUMERS Ex: 551199999999. **IMPORTANT**  only send numbers without formatting or a mask  |
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -39,9 +40,9 @@ Se você pretente armazenar a imagem do seu contato observe que sempre retornamo
 
 ## Request Params
 
-#### URL exemplo
+#### URL example
 
-Método
+Method
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/profile-picture?phone=551199999999
 
@@ -51,27 +52,27 @@ Método
 
 ### 200
 
-| Atributos | Tipo   | Descrição                 |
+| Attributes | Type   | Description                 |
 | :-------- | :----- | :------------------------ |
-| link      | string | Url com a foto do contato |
+| link      | string | Url with the contact’s picture|
 
-Exemplo
+Example 
 
 ```json
 [
   {
-    "link": "Url com a foto do contato"
+    "link": "Url with the contact’s picture"
   }
 ]
 ```
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

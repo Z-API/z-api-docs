@@ -1,9 +1,9 @@
 ---
 id: create-group
-title: Criando grupos
+title: Creating groups 
 ---
 
-## Método
+## Method 
 
 #### /create-group
 
@@ -11,36 +11,36 @@ title: Criando grupos
 
 ---
 
-## Conceituação
+## Concept
 
-Este método é reponsavel por criar um grupo com seus respectivos participantes. Infelizmente não é possivel criar o grupo com imagem, mas você pode logo após a criação utilizar-se do método Update-group-photo que esta nesta mesma sessão.
+This method is responsible for creating a group with its respective participants. Unfortunately it's not possible to create the group with an image, but you can right after the creation use the Update-group-photo method that is in this same session.
 
-:::tip Dica
+:::tip Tip
 
-Assim como no WhastWeb você vai precisar adicionar ao menos um contato para conseguir criar um grupo.
+Just like WhatsApp you will need to add at least one contact to be able to create a group 
 
 :::
 
-:::caution Atenção
+:::caution Attention
 
-No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+On November 4, 2021 whatsapp changed the format of creating new groups. before: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
 
 :::
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos |     Tipo     | Descrição                                         |
+| Attributes |     Type     | Description                                         |
 | :-------- | :----------: | :------------------------------------------------ |
-| groupName |    string    | Nome do grupo a ser criado                        |
-| phones    | array string | Array com os numeros a serem adicionados no grupo |
+| groupName |    string    | Name of group to be created                       |
+| phones    | array string | Array with the numbers to be added to the group |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -48,15 +48,15 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ## Request Body
 
-**Método**
+**Method**
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
 
-**Exemplo**
+**Example**
 
 ```json
 {
-  "groupName": "Meu grupo no Z-API",
+  "groupName": "My group on Z-API",
   "phones": ["5511999999999", "5511888888888"]
 }
 ```
@@ -67,16 +67,16 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ### 200
 
-| Atributos      | Tipo   | Descrição                 |
+| Attributes    | Type   | Description                |
 | :------------- | :----- | :------------------------ |
-| phone          | string | ID/Fone do grupo          |
-| invitationLink | string | link para entrar no grupo |
+| phone          | string | Group ID/phone          |
+| invitationLink | string | Link to join group |
 
 **Exemplo**
 
 ```json
 
-Forma antiga -
+Old way -
   {
     "phone": "5511999999999-1623281429",
     "invitationLink": "https://chat.whatsapp.com/DCaqftVlS6dHWtlvfd3hUa"
@@ -84,7 +84,7 @@ Forma antiga -
 
 ------------------------------------------------
 
-Forma nova
+New way
   {
     "phone": "120363019502650977-group",
     "invitationLink": "https://chat.whatsapp.com/GONwbGGDkLe8BifUWwLgct"
@@ -94,17 +94,17 @@ Forma nova
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link to webhook response (on receipt)
 
 [Webhook](../webhooks/on-message-received#response)
 

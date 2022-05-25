@@ -1,22 +1,22 @@
 ---
 id:id: group-invitation-metadata
 
-title: Metadata do Grupo por Convite
+title: Group Metadata by invite
 ---
 
-## Método
+## Method 
 
 #### /group-invitation-metadata
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={**URL** **DO** **CONVITE**}
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={ URL }
 
-## Conceituação
+## Concept
 
-Este método retorna o metadata do grupo com todas informações do grupo e de seus partipantes.
+This method returns the group metadata with all information about the group and its participants.
 
-:::caution Atenção
+:::caution Attention 
 
-No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+On November 4, 2021 whatsapp changed the format of creating new groups. before: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
 
 :::
 
@@ -26,33 +26,34 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ### 200
 
-| Atributos    | Tipo         | Descrição                             |
+| Attributes   | Type         | Description                           |
 | :----------- | :----------- | :------------------------------------ |
-| phone        | string       | ID/Fone do Grupo                      |
-| owner        | string       | Numero do criador do grupo            |
-| subject      | string       | Nome do grupo                         |
-| creation     | timestamp    | Timestamp da data de criação do grupo |
-| participants | array string | com dados dos participantes           |
+| phone        | string       | Group ID/phone                        |
+| owner        | string       | Group creators number                 |
+| subject      | string       | Group’s name                          |
+| creation     | timestamp    | Group creation date timestamp         |  
+| participants | array string | with participant data                 |
 
 Array String (participants)
 
 | Atributos    | Tipo   | Descrição                                         |
 | :----------- | :----- | :------------------------------------------------ |
-| phone        | string | Fone do participante                              |
-| isAdmin      | string | Indica se o participante é administrador do grupo |
-| isSuperAdmin | string | Indica se é o criador do grupo                    |
-| short        | string | Nome curto do participante                        |
-| name         | string | Nome do participante                              |
+| phone        | string | Participants phone                                |
+| isAdmin      | string | Indicates if the participant is the group’s admin |
+| isSuperAdmin | string | Indicates whether you are the creator of the group|
+| short        | string | Participant’s short name                          |
+| name         | string | Participant’s name                                |
 
-**Exemplo**
+
+**Example **
 
 ```json
 
-Forma antiga -
+Old way -
   {
     "phone": "5511999999999-1623281429",
     "owner": "5511999999999",
-    "subject": "Meu grupo no Z-API",
+    "subject": "My group on whatsapp",
     "creation": 1588721491000,
     "participants": [
       {
@@ -74,11 +75,11 @@ Forma antiga -
 
   ------------------------------------
 
-  Forma nova -
+  New way -
   {
   "phone": "120363019502650977-group",
   "owner": "5511999999999",
-  "subject": "Meu grupo no Z-API",
+  "subject": "My group on whatsapp",
   "creation": 1588721491000,
   "participants": [
     {
@@ -102,11 +103,11 @@ Forma antiga -
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
