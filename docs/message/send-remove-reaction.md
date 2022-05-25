@@ -13,7 +13,7 @@ title: Remover reação
 
 ## Conceituação
 
-Neste método você poderá enviar reações a mensagens enviadas ou recebidas, você precisa informar o telefone do chat, um emoji e a mensagem que será reagida!
+Neste método você removerá a reação das mensagens enviadas ou recebidas. Você precisa informar o telefone do chat e o messageId da mensagem!
 
 ![image](../../video/remove-reaction.gif)
 
@@ -28,7 +28,7 @@ Neste método você poderá enviar reações a mensagens enviadas ou recebidas, 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| messageId | string | Id da mensagem que vai receber a reação |
+| messageId | string | Id da mensagem que será removida a reação |
 
 ### Opcionais
 
@@ -43,7 +43,7 @@ Neste método você poderá enviar reações a mensagens enviadas ou recebidas, 
 ```json
 {
   "phone": "PHONE DO CHAT",
-  "messageId": "mensagem que será reagida"
+  "messageId": "mensagem que será removida reação"
 }
 ```
 
