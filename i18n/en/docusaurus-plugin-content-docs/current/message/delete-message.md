@@ -15,7 +15,7 @@ title: Deleting messages
 
 Method used to delete a text sent in a chat. You will be able to delete a message that you sent as well as a message that was sent by a contact. To use this resource you will only need the messageId of the message that you want to delete.
 
-![image](../../../../../img/delete-message.jpeg)
+![image](../../../../../img/DeleteText.jpeg)
 
 ---
 

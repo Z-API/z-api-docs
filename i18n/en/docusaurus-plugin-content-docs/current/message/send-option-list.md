@@ -15,7 +15,7 @@ title: Sending options list
 
 In this method you will be able to send text messages with a list of options where the user will be able to choose one of the options sent.
 
-![image](../../../../../img/send-option-list.jpeg)
+![image](../../../../../img/SendingOptionlist.jpeg)
 
 ---
 

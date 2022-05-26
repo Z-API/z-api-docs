@@ -15,7 +15,7 @@ title: Send location
 
 Method responsible for sending a fixed location to your contacts, it is mostly used to send an address’s location. 
 
-![image](../../../../../img/send-message-location.jpeg)
+![image](../../../../../img/SendingLocation.jpeg)
 
 ---
 

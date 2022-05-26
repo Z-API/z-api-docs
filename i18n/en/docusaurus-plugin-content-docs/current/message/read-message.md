@@ -15,7 +15,7 @@ title: Read texts
 
 Method used to mark a text message as read 
 
-![image](../../../../../video/read-message.gif)
+![image](../../../../../video/Readtexts.gif)
 
 ---
 

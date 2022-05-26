@@ -18,7 +18,7 @@ If you have any questions about how to send a text message, you can read about i
 
 :::
 
-![image](../../../../../img/reply-message.jpeg)
+![image](../../../../../img/Replytext.jpeg)
 
 ---
 

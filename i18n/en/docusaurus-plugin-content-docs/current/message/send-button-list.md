@@ -15,7 +15,7 @@ title: Send texts with buttons
 
 In this method you will be able to send text messages with action buttons. Buttons content ex: YES / NO, they will be able to be chosen by the user and it will be used as an answer to the text that was sent.
 
-![image](../../../../../img/send-button-list.jpeg)
+![image](../../../../../img/SendingButton.jpeg)
 
 ---
 
