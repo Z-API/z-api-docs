@@ -21,7 +21,7 @@ It is important for you to know that the link is only clickable if the recipient
 
 :::
 
-![image](../../../../../img/send-message-link.jpeg)
+![image](../../../../../img/SendingLink.jpeg)
 
 ---
 

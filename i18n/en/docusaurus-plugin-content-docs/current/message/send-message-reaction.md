@@ -17,7 +17,7 @@ In this method you will be able to react to messages that were sent or recieved 
 
 
 
-![image](../../../../../img/send-message-reaction.jpeg)
+![image](../../../../../img/Reaction.jpeg)
 
 ---
 

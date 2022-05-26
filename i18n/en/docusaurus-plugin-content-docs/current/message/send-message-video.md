@@ -26,7 +26,7 @@ WhatsApp limits the sizes of files and its politics constantly changes and becau
 In this [link] you can find everything that you need to know about formatting and file sizing.
 [link]: https://developers.facebook.com/docs/whatsapp/api/media
 
-![image](../../../../../img/send-message-video.jpeg)
+![image](../../../../../img/SendingVideo.jpeg)
 
 ---
 

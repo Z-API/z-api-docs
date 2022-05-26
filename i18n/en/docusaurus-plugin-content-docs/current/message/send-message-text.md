@@ -42,7 +42,7 @@ To test this, just copy an emoji and paste into your text! You can use this one 
 
 ::: Exemplo no Whatsapp
 
-![image](../../../../../img/send-message-text.jpeg)
+![image](../../../../../img/Plaintext.jpeg)
 
 ---
 

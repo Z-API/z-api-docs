@@ -42,7 +42,7 @@ In this [link] you can find everything that you need to know about formatting an
 
 [link]: https://developers.facebook.com/docs/whatsapp/api/media
 
-![image](../../../../../img/send-message-image.jpeg)
+![image](../../../../../img/Sendingimage.jpeg)
 
 ---
 

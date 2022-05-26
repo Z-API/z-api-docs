@@ -15,7 +15,7 @@ title: Remove reaction
 
 In this method you will remove the reaction from sent or received messages. You just need to inform the number in the chat and the messageId of the message!
 
-![image](../../../../../video/remove-reaction.gif)
+![image](../../../../../img/Removingreaction.jpeg)
 
 ---
 

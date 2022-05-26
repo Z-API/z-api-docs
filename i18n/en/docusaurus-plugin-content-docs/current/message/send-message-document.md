@@ -28,7 +28,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 Method responsible for sending documents to your contacts. It is simple and objective.
 
-![image](../../../../../img/send-message-document.jpeg)
+![image](../../../../../img/SendingDocument.jpeg)
 
 ---
 

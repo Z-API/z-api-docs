@@ -16,7 +16,7 @@ title: Send contact
 
 Simple and object, this method allows you to send a contact. You don't need to have it added to your contacts list, all you have to do is fill in the method attributes with the contact information and send.
 
-![image](../../../../../img/send-message-contact.jpeg)
+![image](../../../../../img/SendingContact.jpeg)
 
 ---
 
