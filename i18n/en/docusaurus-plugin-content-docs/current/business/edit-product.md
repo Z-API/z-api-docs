@@ -1,9 +1,9 @@
 ---
 id: edit-product
-title: Criar/editar Produto
+title: Create/edit product 
 ---
 
-## Método
+## Method
 
 #### /products
 
@@ -11,26 +11,26 @@ title: Criar/editar Produto
 
 ---
 
-## Conceituação
+## Concept
 
-Nesse método você será capaz de cadastrar e atualizar um produto no seu catálogo
+In this method you will be able to register and update a product in your catalog 
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos   |  Tipo   | Descrição                                      |
+| Attributes   |  Type   | Description                                     |
 | :---------- | :-----: | :--------------------------------------------- |
-| currency    | string  | Tipo da Moeda                                  |
-| description | string  | Descrição do produto                           |
-| images      | string  | Url da imagem do produto                       |
-| isHidden    | boolean | Atributo para "esconder" o produto no catálogo |
-| name        | string  | Nome do produto                                |
-| price       | integer | Preço do produto                               |
-| retailerId  | string  | Id do produto                                  |
-| url         | string  | Url da rota do z-api                           |
+| currency    | string  | Currency type                                 |
+| description | string  | Product description                            |
+| images      | string  | Product’s image Url                       |
+| isHidden    | boolean | Attribute to “hide” the product in the catalog|
+| name        | string  | Product name                                |
+| price       | integer | Product price                               |
+| retailerId  | string  | Product ID                                  |
+| url         | string  | Z-APIs Url route                           |
 
 ## Request Body
 
@@ -40,7 +40,7 @@ Nesse método você será capaz de cadastrar e atualizar um produto no seu catá
   "description": "Uma descricao do produto",
   "images": ["https://avatars.githubusercontent.com/u/60630101?s=200&v=4"],
   "isHidden": false,
-  "name": "Meu primeiro produto",
+  "name": "My first product",
   "price": 20,
   "retailerId": "002",
   "url": "https://z-api.io"
@@ -53,11 +53,11 @@ Nesse método você será capaz de cadastrar e atualizar um produto no seu catá
 
 ### 200
 
-| Atributos | Tipo   | Descrição     |
+| Attributes | Type   | Description     |
 | :-------- | :----- | :------------ |
-| id        | string | Id do produto |
+| id        | string | Product ID  |
 
-Exemplo
+Example
 
 ```json
 {
@@ -67,17 +67,17 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link to webhook response (on receipt)
 
 [Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-produto)
 

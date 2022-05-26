@@ -1,23 +1,23 @@
 ---
 id: on-whatsapp-message-status-changes
-title: Status da mensagem
+title: Message status 
 ---
 
-## Conceituação
+## Concept
 
-Esse é o webhook de retorno do status da mensagem
+This is the message status return webhook
 
-:::caution Atenção
+:::caution Attention
 
-O Z-API não aceita webhooks que não sejam HTTPS
+Z-API does not accept webhooks that aren’t HTTPS
 
 :::
 
 ---
 
-## Atualizando Webhook
+## Updating the Webhook
 
-Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
+To update the webhook route, you can do it through the API or through the admin panel.
 
 ### API
 
@@ -35,25 +35,25 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-### Painel Administrativo
+### Administrative panel 
 
 ![img](../../../../../img/status.png)
 
 ---
 
-## Retornos dos webhooks
+## Webhook’s returns 
 
-Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão cadastrado logo abaixo:
+The possible returns of the **on-whatsapp-message-status-changes**  webhook are registered below:
 
 ## Response
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type| Description |
 | :-- | :-: | :-- |
-| status | string | Status da mensagem (SENT - se foi enviada, RECEIVED - se foi recebida, READ - se foi lida, READ-SELF - confirmação de leitura inativa, PLAYED - se foi ouvida ) |
-| id | string | Identificador(es) da(s) mensagem(ns). |
-| phone | string | Número de telefone de destino da mensagem. |
-| momment | string | Momento em que a instância foi desconectada do número. |
-| type | string | Tipo do evento da instância, nesse caso será "MessageStatusCallback". |
+| status | string | Message status (SENT - if sent, RECEIVED - if received, READ - if read, READ-SELF - read confirmation inactive, PLAYED - if heard) |
+| id | string | Identifier’s of the message |
+| phone | string | Message destination phone number. |
+| momment | string | Time when the instance was disconnected from the number. |
+| type | string | Instance event type, in this case it will be "MessageStatusCallback". |
 
 ---
 
@@ -104,11 +104,11 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 <!--
 ## Code

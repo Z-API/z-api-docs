@@ -1,25 +1,25 @@
 ---
 id: on-webhook-connected
-title: Ao conectar
+title: When connecting
 ---
 
-## Conceituação
+## Concept
 
-Esse é o webhook de retorno de conexão do Celular com o Z-api
+This is the mobile connection return webhook with Z-api
 
-Esse é webhook é disparado quando o Z-API se conectada ao Whatsapp, isso pode acontecer quando le o qr-code, quando reiniciar a instancia e etc
+This webhook is triggered when the Z-API is connected to Whatsapp, this can happen when reading the qr-code, when restarting the instance, etc.
 
-:::caution Atenção
+:::caution Attention
 
-O Z-API não aceita webhooks que não sejam HTTPS
+Z-API does not accept webhooks that aren’t HTTPS
 
 :::
 
 ---
 
-## Atualizando Webhook
+## Updating the Webhook
 
-Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
+To update the webhook route, you can do it through the API or through the admin panel.
 
 ### API
 
@@ -45,18 +45,18 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-## Retornos dos webhooks
+## Webhook’s returns 
 
-Os possíveis retornos do webhook **on-webhook-connected** estão cadastrado logo abaixo:
+The possible returns of the **on-webhook-connected** webhook are registered below:
 
 ## Response
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type| Description |
 | :-- | :-: | :-- |
-| connected | boolean | status da instância. |
-| phone | string | Número conectado. |
-| momment | string | Momento em que a instância foi desconectada do número. |
-| type | string | Tipo do evento da instância, nesse caso será "MessageStatusCallback". |
+| connected | boolean | Instance status  |
+| phone | string | Number connected  |
+| momment | string | Time when the instance was disconnected from the number. |
+| type | string | Instance event type, in this case it will be "MessageStatusCallback". |
 
 ---
 
@@ -77,11 +77,11 @@ Os possíveis retornos do webhook **on-webhook-connected** estão cadastrado log
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 <!--
 ## Code

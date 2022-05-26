@@ -1,9 +1,9 @@
 ---
 id: sign-instance
-title: Assinando uma instância
+title: Subscribing to an instance 
 ---
 
-## Método
+## Method
 
 #### /subscription
 
@@ -11,29 +11,29 @@ title: Assinando uma instância
 
 ---
 
-## Conceituação
+## Concept
 
-Método utilizado para assinar uma instância.
+Method used to subscribe to an instance 
 
-:::caution Atenção
+:::caution Attention 
 
-Você só conseguirá assinar instâncias criadas via API com este método.
+You will only be able to subscribe to instances created via API with this method
 
 :::
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type | Description|
 | :-------- | :--: | :-------- |
 |           |      |           |
 
-### Opcionais
+### Optionals
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type | Description|
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -41,7 +41,7 @@ Você só conseguirá assinar instâncias criadas via API com este método.
 
 ## Request Params
 
-**Método**
+**Method**
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/{SEU_TOKEN}/integrator/on-demand/subscription
 
@@ -55,17 +55,17 @@ OK
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link to webhook response (on receipt)
 
 [Webhook](../webhooks/on-message-received#response)
 

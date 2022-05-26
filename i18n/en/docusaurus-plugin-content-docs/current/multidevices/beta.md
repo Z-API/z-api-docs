@@ -1,93 +1,101 @@
 ---
 id: beta
-title: Programa Beta Z-API
+title: Program Beta Z-API 
 ---
 
-## Sobre o beta Z-API multi-device
+## About beta Z-API multi-device
 
-Estamos aqui **"deitando o cabelo"** para conseguir entregar da forma mais transparente possivel todas as novidades desta nova versão para você :)
+We are here **pulling our hairs out** to be able to deliver in the most transparent way possible all the news of this new version for you :)
 
-Mas com a mesma transparência de sempre precisamos te dizer que realmente quase nada foi aproveitado da versão anterior, tivemos que criar uma nova versão onde pouco se aproveitou da anterior, isso foi muito legal pois conseguimos melhorar ainda mais nossa performance e estabilidade.
+With the same transparency as always, we need to tell you that really almost nothing was used from the previous version, we had to create a new version where little was used from the previous one. This was very cool because we managed to improve our performance and stability even more.
 
-Durante este processo nosso time se empenhou para entregar a mesma experiência de antes com os beneficios desta nova versão. Nossos testes estão sendo criteriosos e abrangentes, mas como todo bom Dev você ja sabe que em algum momento poderemos identificar algum ponto que passou desapercebido em nossos testes e quando isso acontecer saiba que estaremos aqui para o mais rapido possivel procurar uma solução e em tempo record corrigir.
 
----
-
-## Check-List Beta
-
-1 - Ser cliente com ao menos 1 instância ativa.
-
-2 - Ter um numero com a versão que permite habilitar mult-devices
-
-3 - Estar disposto a contribuir com a evolução do Z-API.
+During this process our team worked hard to deliver the same experience as before with the benefits of this new version. Our tests are thorough and comprehensive, but as any good Dev you already know that at some point we will be able to identify some information that went unnoticed in our tests and when this happens know that we will be here to look for a solution as soon as possible and in record time.
 
 ---
 
-## Compatibilidade
+## Beta checklist 
 
-### Instância
+1 - Be a cliente with less than 1 active instance
 
-- Pegar QRCode em string (100% compatível) ✅
-- Pegar QRCode em base64 (100% compatível) ✅
-- Reiniciar instância (100% compatível) ✅
-- Desconectar (100% compatível) ✅
-- Status da instância (100% compatível) ✅
-- Forçar restaurar sessão (100% compatível) ✅
-- Pegar telefone conectado (100% compatível) ✅
+2 - Have a number(device) with a version that allows you to use multi-devices
+
+3 - Be willing to contribute to the evolution of Z-API
+
+---
+
+## Compatibility 
+
+### Instance 
+
+- Get QRCode in string (100% compatible) ✅
+- Get QRCode in base64 (100% compatible) ✅
+- Restart instance (100% compatible) ✅
+- Disconnect (100% compatible) ✅
+- Instance status (100% compatible) ✅
+- Force restore session (100% compatible) ✅
+- Pick up connected phone (100% compatible) ✅
+
 
 ### Mensagens
 
-- Enviar texto (100% compatível) ✅
-- Enviar localização (100% compatível) ✅
-- Enviar link (100% compatível) ✅
-- Enviar imagem (100% compatível) ✅
-- Enviar stickers (100% compatível) ✅
-- Enviar audio (100% compatível) ✅
-- Enviar video (100% compatível) ✅
-- Enviar documento (100% compatível) ✅
-- Enviar contato (100% compatível) ✅
-- Enviar botões (100% compatível) ✅
-- Enviar lista de opções (100% compatível) ✅
-- Ler mensagem (100% compatível) ✅
-- Responder mensagem (100% compatível) ✅
-- Encaminhar mensagem (100% compatível) ✅
-- Deletar mensagens (100% compatível) ✅
-- Enviar mensagens para lista de transmissão (Limitado pello Whatsapp / [Whatsapp link](https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=en) ) ⚠️
+- Send text (100% compatible) ✅
+- Submit location (100% compatible) ✅
+- Send link (100% compatible) ✅
+- Upload image (100% compatible) ✅
+- Send stickers (100% compatible) ✅
+- Send audio (100% compatible) ✅
+- Upload video (100% compatible) ✅
+- Send document (100% compatible) ✅
+- Send contact (100% compatible) ✅
+- Send buttons (100% compatible) ✅
+- Send picklist (100% compatible) ✅
+- Read message (100% compatible) ✅
+- Reply message (100% compatible) ✅
+- Forward message (100% compatible) ✅
+- Delete messages (100% compatible) ✅
+- Send messages to the transmission list(Limited by Whatsapp/ [Whatsapp link](https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=en) ) ⚠️
 
-### Contatos
 
-- Pegar contatos (100% compatível) ✅
-- Pegar foto de um contato (100% compatível) ✅
+
+
+### Contacts
+
+- Get contacts (100% compatible) ✅
+- Get a contact’s picture (100% compatible) ✅
 
 ### Chats
 
-- Pegar chats (100% compatível) ✅
-- Pegar chats por telefone (100% compatível) ✅
-- Modificar chat (100% compatível) ✅
-- Listar mensagens por chat (em estudo) ⚠️
+- Get chats (100% compatible) ✅
+- Get phone chats (100% compatible) ✅
+- Modify chat (100% compatible) ✅
+- List messages by chat (being studied) ⚠️
 
-### Grupos
 
-- Criar grupo (100% compatível) ✅
-- Alterar nome (100% compatível) ✅
-- Alterar imagem (50% compatível (apenas imagens que sejam jpeg e que tenham tamanho menor que 600x600)) ✅
+### Groups
+
+- Create group (100% compatible) ✅
+- Change name (100% compatible) ✅
+- Change Image (50% compatible (only images that are jpeg and smaller than 600x600) ✅
 <!-- - Alterar descrição (100% compatível) ✅ -->
-- Adicionar permissão de admin (100% compatível) ✅
-- Retirar permissão de admin (100% compatível) ✅
-- Adicionar pessoa ao grupo (100% compatível) ✅
-- Remover pessoa do grupo (100% compatível) ✅
-- Sair do grupo (100% compatível) ✅
-- Pegar metadata do grupo (100% compatível) ✅
+- Add admin permission (100% compatible) ✅
+- Withdraw admin permission (100% compatible) ✅
+- Add person to a group (100% compatible) ✅
+- Remove person from a group (100% compatible) ✅
+- Leave group (100% compatible) ✅
+- Get metadata from group (100% compatible) ✅
 
-### Fila
 
-- Pegar todas mensagens na fila (100% compatível) ✅
-- Deletar fila (100% compatível) ✅
-- Pegar mensagem na fila por id (100% compatível) ✅
+### Queue
+
+- Get all messages in queue (100% compatible) ✅
+- Delete queue (100% compatible) ✅
+- Get queued message by id (100% compatible) ✅
+
 
 ### Webhooks
 
-- Ao enviar (100% compatível) ✅
-- Ao desconectar (100% compatível) ✅
-- Ao receber (100% compatível) ✅
-- Status da mensagem (100% compatível) ✅
+- When sending (100% compatible) ✅
+- When disconnecting (100% compatible) ✅
+- Upon receipt (100% compatible) ✅
+- Message status (100% compatible) ✅

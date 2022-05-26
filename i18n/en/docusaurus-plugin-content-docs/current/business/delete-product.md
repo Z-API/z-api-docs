@@ -1,9 +1,9 @@
 ---
 id: delete-product
-title: Deletar Produto
+title: Deleting a product 
 ---
 
-## Método
+## Method 
 
 #### /products/id-do-produto
 
@@ -11,19 +11,19 @@ title: Deletar Produto
 
 ---
 
-## Condeituação
+## Concept
 
-Nesse método você será capaz de deletar um produto pelo seu id
+In this method you will be able to delete a product by its ID 
 
 ## Response
 
 ### 200
 
-| Atributos | Tipo    | Descrição               |
+| Attributes| Type    | Description             |
 | :-------- | :------ | :---------------------- |
-| success   | boolean | Atributo de confirmação |
+| success   | boolean | confirmation attribute  |
 
-Exemplo
+Example
 
 ```json
 {
@@ -33,11 +33,11 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

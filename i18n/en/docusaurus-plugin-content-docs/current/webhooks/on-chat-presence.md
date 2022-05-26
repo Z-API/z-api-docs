@@ -1,23 +1,23 @@
 ---
 id: on-chat-presence
-title: Status do chat
+title: Chat status 
 ---
 
-## Conceituação
+## Concept
 
-Esse é o webhook de retorno status do chat
+This is the chat status return webhook
 
-:::caution Atenção
+:::caution Attention
 
-O Z-API não aceita webhooks que não sejam HTTPS
+Z-API does not accept webhooks that aren’t HTTPS
 
 :::
 
 ---
 
-## Atualizando Webhook
+## Updating the webhook
 
-Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
+To update the webhook route, you can do it through the API or through the admin panel.
 
 ### API
 
@@ -35,30 +35,30 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-### Painel Administrativo
+###  Administrative panel
 
 ![img](../../../../../img/chatPresence.png)
 
 ---
 
-## Retornos dos webhooks
+## Webhook’s returns 
 
-Os possíveis retornos do webhook **on-chat-presence** estão cadastrado logo abaixo:
+The possible returns of the **on-chat-presence** webhook are registered below:
 
 ## Response
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type| Description |
 | :-- | :-: | :-- |
-| type | string | Tipo do evento da instância, nesse caso será "DeliveryCallback". |
-| phone | string | Número de telefone de destino da mensagem. |
-| status | string | Identificador do status do chat ex: (Digitando...) status pode conter ( UNAVAILABLE, AVAILABLE, COMPOSING, RECORDING) |
-| lastSeen | timestamp | Identificador da ultima vez presente do usuário. |
+| type | string | Instance event type, in this case it will be "DeliveryCallback". |
+| phone | string | Message destination phone number.|
+| status | string | Chat status identifier eg (typing...) status can contain ( UNAVAILABLE, AVAILABLE, COMPOSING, RECORDING) |
+| lastSeen | timestamp | User's last present time identifier. |
 
 ---
 
 ### 200
 
-### Fora do chat
+### Outside of the chat 
 
 ```json
 {
@@ -70,7 +70,7 @@ Os possíveis retornos do webhook **on-chat-presence** estão cadastrado logo ab
 }
 ```
 
-### Dentro do chat
+### Inside the chat
 
 ```json
 {
@@ -82,7 +82,7 @@ Os possíveis retornos do webhook **on-chat-presence** estão cadastrado logo ab
 }
 ```
 
-### Digitando no chat
+### Typing in chat
 
 ```json
 {
@@ -94,7 +94,7 @@ Os possíveis retornos do webhook **on-chat-presence** estão cadastrado logo ab
 }
 ```
 
-### Parou de digitar ou apagou o que estava digitando
+### Stopped typing or deleted what you were typing 
 
 ```json
 {
@@ -106,17 +106,17 @@ Os possíveis retornos do webhook **on-chat-presence** estão cadastrado logo ab
 }
 ```
 
-:::tip Aviso
+:::tip Notice
 
-**Observação:**
+**Observation:**
 
-Após receber um composing ou um recording, um **PAUSED** será retornado quando o evento parar
+After receiving a composing or recording, a **PAUSED** will be returned when the event stops
 
-O stauts **PAUSED** apenas é retornado se estiver usando o beta multi-devices
+status **PAUSED** is only returned if using beta multi-devices
 
 :::
 
-### Gravando áudio no chat
+### Recording audio in chat
 
 ```json
 {
@@ -128,19 +128,19 @@ O stauts **PAUSED** apenas é retornado se estiver usando o beta multi-devices
 }
 ```
 
-:::tip Aviso
+:::tip Notice
 
-O stauts **RECORDING** apenas é retornado se estiver usando o beta multi-devices
+The status **RECORDING** is only returned if using beta multi-devices
 
 :::
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 <!-- ---
 

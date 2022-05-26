@@ -1,22 +1,23 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction
 ---
 
-## Sobre o Whatsapp Business
+## about Whatsapp Business
 
-Agora temos novas APIs para o **Whatsapp Business**:
+We now have new APIs for **Whatsapp Business**:
 
-- Criar ou editar um produto
-- Pegar meu catalogo de produtos
-- Pegar catalogo de produtos de outro número business
-- Pegar dados de um produto por ID
-- Excluir um produto por ID
+- Create or edit a product 
+- Get my product catalogs 
+- Get product catalogs from other business numbers
+- Get data from a product by ID
+- Delete a product by ID
+
 
 ---
 
 :::note
 
-Todas as novas APIs **só funcionam** em Whatsapp Business, e também são **disponíveis apenas** para Whatsapp Business que utilizam o [**"Multi Device"**](../multidevices/introduction)
+All new APIs only work in Whatsapp Business and are also only available for Whatsapp Business while using [**Multi Device**](../multidevices/introduction)
 
 :::

@@ -1,31 +1,31 @@
 ---
 id: get-queue
-title: Fila
+title: Queue 
 ---
 
-## Método
+## Method
 
 #### /queue
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
 
-## Conceituação
+## Concept
 
-Este método é reponsavel por retornar todas mensagens que estão em sua fila aguardando para ser processada.
+This method is responsible for returning all messages that are in your queue waiting to be processed. 
 
 ---
 
-## Atributos
+## Attributes 
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Descrition |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -33,9 +33,9 @@ Este método é reponsavel por retornar todas mensagens que estão em sua fila a
 
 ## Request Params
 
-#### URL exemplo
+#### URL example 
 
-Método
+Method 
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
 
@@ -45,23 +45,23 @@ Método
 
 ### 200
 
-| Atributos | Tipo         | Descrição                       |
+| Attributes | Type         | Description                       |
 | :-------- | :----------- | :------------------------------ |
-| size      | string       | Numero de mensagens na fila     |
-| messages  | array string | Array com as menssagens da fila |
+| size      | string       | Number of messages in queue    |
+| messages  | array string | Array with queue messages|
 
-Array Messages
+Messages Array 
 
-| Atributos | Tipo     | Descrição                   |
+| Attributes | Type     | Description                   |
 | :-------- | :------- | :-------------------------- |
-| size      | string   | Numero de mensagens na fila |
-| Message   | string   | Texto da Mensagem           |
-| Phone     | string   | Fone do destinatário        |
-| ZaapId    | string   | ID da mensagem no Z-API     |
-| Created   | timetamp | Data da mensagem            |
-| MessageId | string   | ID da mensagem              |
+| size      | string   | Number of messages in queue |
+| Message   | string   | Text message                |
+| Phone     | string   | Recipients phone            |
+| ZaapId    | string   | Z-API message ID            |
+| Created   | timetamp | Messages date               |
+| MessageId | string   | Message ID                  |
 
-Exemplo
+Example 
 
 ```json
 {
@@ -91,7 +91,7 @@ Neste caso certifique que esteja enviando o corretamente a especificação do m�
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
