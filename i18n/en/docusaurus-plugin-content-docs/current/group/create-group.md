@@ -27,6 +27,12 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 :::
 
+:::warning Warning 
+
+You should never let anyone have or know the number that's connected to Z-API and is  responsible for creating the group in the array of numbers that the group will be composed of.
+
+:::
+
 ---
 
 ## Attributes
