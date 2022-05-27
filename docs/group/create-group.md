@@ -17,7 +17,7 @@ Este método é reponsavel por criar um grupo com seus respectivos participantes
 
 :::tip Dica
 
-Assim como no WhastWeb você vai precisar adicionar ao menos um contato para conseguir criar um grupo.
+Assim como no Whatsapp Web você vai precisar adicionar ao menos um contato para conseguir criar um grupo.
 
 :::
 
@@ -27,6 +27,10 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 :::
 
+:::warning
+ Você não deve passar o número conectado ao Z-API que é responsável pela criação do grupo no array de números que vão compor o grupo.
+
+:::
 ---
 
 ## Atributos
