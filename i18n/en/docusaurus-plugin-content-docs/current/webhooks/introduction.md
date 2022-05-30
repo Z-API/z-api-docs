@@ -1,66 +1,69 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction 
 ---
 
-## Conceituação
+## Concept
 
-Neste tópico falaremos sobre os **RETORNOS** dos webhooks que utilizamos.
+In this topic we will talk about the **RETURNS** of the webhooks we use.
 
-As instâncias do Z-API fazem requisições com o método **POST** dos eventos realizados por ela para a URL configurada previamente. Para cada requisição há um corpo em JSON específico que será descrito em seguida.
+Z-API instances make requests with the POST method of the events performed by it to the previously configured URL. For each request there is a specific JSON body that will be described next.
 
-:::caution Importante
+:::caution Important
 
-Seu endpoint precisa aceitar um **POST**
+Your endpoint needs to accept a **POST**
 
-Esses endpoints são para trocar a URL que a instância irá chamar quando o evento acontecer
+These endpoints are for changing the URL that the instance will call when the event happens.
 
 :::
 
-## O que é e para que serve?
+## What is it and what is it used for?
 
-Segundo o Google, Webhook é um recurso usado na internet para que uma aplicação se comunique com outra, fornecendo dados em tempo real sempre que um evento acontecer. Desta forma os dois sistemas realizam trocas de informações sem que nenhuma ação externa precise ser realizada.
+According to Google, a Webhook is a resource used on the internet for one application to communicate with another, providing real-time data whenever an event happens. This way, the two systems exchange information without any external action being necessary.
 
-Então se você está se integrando com o Z-API e precisa receber informações pelo Whatsapp, é necessário prover estes end-points na sua aplicação para conseguirmos te avisar sobre tudo que acontece no seu Whatsapp. Ou seja, toda vez que o número conectado receber uma interação, vamos fazer uma requisição com o método POST para a URL configurada previamente. (Para cada requisição há um corpo em JSON específico)
+If you are integrating with Z-API and need to receive information via Whatsapp, it is necessary to provide these endpoints in your application so that we can notify you about everything that happens on your WhatsApp. That is, every time the connected number receives an interaction, we will make a request with the POST method to the previously configured URL. (For each request there is a specific JSON body)
 
 ---
 
-### Nossos webhooks
+### Our webhooks
 
-#### Delivery
+#### Delivery 
 
-Responsavel por avisar você que sua mensagem foi entregue ao Whatsapp, mas isso não significa necessáriamente que seu contato a recebeu, para informações de recebimento e leitura você vai precisar observar o webhook de status.
+Responsible for notifying you that your message has been delivered to Whatsapp. However this does not necessarily mean that your contact has received it. For reading and receiving information you will need to look at the webhook’s status.
 
 #### Receive
 
-Este webhook será chamado toda vez que alguem interagir com seu numero no whatsapp.
+This webhook will be called every time someone interacts with your number on whatsapp.
 
 #### Status
 
-Este método vai lhe avisar de todas mudanças de status que sua mensagem sofrer, se ela for recebida, lida, respondida ou excluida, ou seja uma mesma mensagem pode passar por varios status, e ter o mesmo status mais de uma vez, que é o caso de respondida.
+This method will notify you of all status changes that your message undergoes, if it is received, read, replied to or deleted. The same message can go through several statuses, and have the same status more than once, which is the answered case.
 
 #### Disconnected
 
-Este webhook será chamado sempre que nosso serviço identificar alguma indisponibiidade na comunicação, seja do seu celular com o whatsapp ou mesmo da conexão entre seu celular e o Z-API.
+This webhook will be called whenever our service identifies any communication unavailability, whether from your cell phone with whatsapp or even the connection between your cell phone and the Z-API.
+
 
 ---
 
-:::tip Dica
+:::tip Tip
 
-- Não deixe de ler nossa sessão dicas, lá você vai encontrar alguns tópicos de como melhorar sua conexão com Z-API e ter mais qualidade no serviço.
+- Be sure to read our tips section, there you will find some topics on how to improve your connection with Z-API and have more quality of service.
 
-- Você não precisa configurar todos webhookds, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com Z-API
+- You don't need to configure all webhooks, but the more control you have over your instance, the more you will be able to extract resources and develop business with Z-API
 
 :::
 
-## Como configurar meu Webhook?
+## How do I configure my webhook?
 
 :::important
 
-Nunca compartilhe o seu ID e token com ninguém.
+Never share your ID and token with anyone.
 
 :::
 
 Acesse nosso painel admin, vá em opções e escolha "editar instância".
+
+Access our admin panel, go to options and choose "edit instance"
 
 ![img](../../../../../img/EditInstance.jpg)

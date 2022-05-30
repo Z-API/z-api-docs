@@ -1,8 +1,8 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction
 ---
 
-### Conceituação
+### Concept
 
-Conforme já falamos no tópico anterior para o Whatsapp tudo é um chat, neste tópico você vai encontrar todos métodos para buscar informações sobre seus chats.
+As we said in the previous topic for Whatsapp everything is a chat, in this topic you will find all the methods to search for information about your chats.

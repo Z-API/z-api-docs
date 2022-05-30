@@ -1,9 +1,9 @@
 ---
 id: get-metadata-chat
-title: Pegar metadata do Chat
+title: Get chat metada
 ---
 
-## Método
+## Method
 
 #### /chat/{phone}
 
@@ -11,23 +11,24 @@ title: Pegar metadata do Chat
 
 ---
 
-## Conceituação
+## Concept
 
-Este método é reponsavel por retornar as informações do metadata de um chat.
+This method is responsible for returning the metadata of a chat.
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory
 
-| Atributos | Tipo | Descrição |
+
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telephone number in the format DDI DDD NUMERS Ex: 551199999999. **IMPORTANT**  only send numbers without formatting or a mask |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -35,9 +36,9 @@ Este método é reponsavel por retornar as informações do metadata de um chat.
 
 ## Request Params
 
-#### URL exemplo
+#### URL example 
 
-Método
+Method 
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat/5511999999999
 
@@ -47,17 +48,17 @@ Método
 
 ### 200
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-- | :-- |
-| phone | string | Phone do contato |
-| unread | string | indica o numero de mensagens não lidas em um chat |
-| lastMessageTime | string | Timestamp com a data e hora da ultima ingeração com o chat |
-| isMuted | string | 0 ou 1 indica se você silênciou ou não este chat |
-| isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |
-| profileThumbnail | string | URL da foto do chat **o Whatsapp apaga após 48h** |
-| messagesUnread | integer | **descontinuado** |
+| phone | string | Contact’s phone  |
+| unread | string | Indicates the number of messages that haven’t been read in a chat |
+| lastMessageTime | string | Timestamp with date and time of your last interaction with that chat |
+| isMuted | string | 0 or 1 indicates if you have silenced or not a certain chat |
+| isMarkedSpam | boolean | True or false indicates if you have marked a chat as spam |
+| profileThumbnail | string | Chat photo URL that **Whatsapp deletes after 48h**|
+| messagesUnread | integer | **discontinued** |
 
-Exemplo
+Example 
 
 ```json
 {
@@ -73,11 +74,12 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
+
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

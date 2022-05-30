@@ -1,9 +1,9 @@
 ---
 id: get-products
-title: Pegar Produtos
+title: Get products 
 ---
 
-## Método
+## Method
 
 #### /catalogs
 
@@ -11,27 +11,29 @@ title: Pegar Produtos
 
 ---
 
-## Condeituação
+## Concept
 
-Nesse método você será capaz de pegar os produtos de um catálogo do whatsapp Business
+With this method you will be able to get the products from a Whatsapp Business catalag 
+
+
 
 ## Response
 
 ### 200
 
-| Atributos    | Tipo    | Descrição                                        |
+| Attributes    | Type    | Description                                        |
 | :----------- | :------ | :----------------------------------------------- |
-| cartEnabled  | boolean | Atributo para saber se o carrinho está ativo     |
-| availability | string  | Atributo para saber a disponibilidade do produto |
-| id           | string  | Id do produto                                    |
-| retailerId   | boolean | ID do varejista                                  |
-| price        | string  | Preço do produto                                 |
-| currency     | string  | Tipo da moeda                                    |
-| name         | string  | Nome do produto                                  |
-| quantity     | boolean | Atributo de quantidade de produto                |
-| images       | string  | Link da imagem do produto                        |
+| cartEnabled  | boolean | Attribute to know if your cart is active     |
+| availability | string  | Attribute to know product availability  |
+| id           | string  | Product ID                                    |
+| retailerId   | boolean | Retailer ID                                  |
+| price        | string  | Product price                                |
+| currency     | string  | Currency type                                    |
+| name         | string  | Product type                                  |
+| quantity     | boolean | Product quantity attribute                 |
+| images       | string  | Product image link                         |
 
-Exemplo
+Example 
 
 ```json
 {
@@ -53,11 +55,11 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

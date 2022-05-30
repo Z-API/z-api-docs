@@ -1,38 +1,38 @@
 ---
 id: add-participant
-title: Adicionar Participantes
+title: Adding partocipants
 ---
 
-## Método
+## Method
 
 #### /add-participant
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-participant
 
-## Conceituação
+## Concept
 
-Este método é reponsável por adicionar novos participantes ao grupo.
+This method is responsible for adding new members to the group 
 
-:::caution Atenção
+:::caution Attention
 
-No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+On November 4, 2021 whatsapp changed the format of creating new groups. before: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
 
 :::
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type|  Description |
 | :-- | :-: | :-- |
-| groupId | string | ID/Fone do grupo |
-| phones | array string | Array com os numero(s) do(s) participante(s) a serem adicionados |
+| groupId | string | Group ID/phone |
+| phones | array string | Array with the number(s) of the participant(s) to be added |
 
-### Opcionais
+### Optionals
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type | Description|
 | :-------- | :--: | :-------- |
 
 ---
@@ -47,7 +47,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ```json
 
-Forma antiga -
+Old way -
   {
     "groupId": "5511999999999-1623281429",
     "phones": ["5544999999999", "5544888888888"]
@@ -55,7 +55,7 @@ Forma antiga -
 
   -------------------------------------------------
 
-Forma nova -
+New way -
   {
     "groupId": "120363019502650977-group",
     "phones": ["5544999999999", "5544888888888"]
@@ -69,11 +69,11 @@ Forma nova -
 
 ### 200
 
-| Atributos | Tipo    | Descrição                                           |
+| Attributes| Type    | Description                                         |
 | :-------- | :------ | :-------------------------------------------------- |
-| value     | boolean | true caso tenha dado certo e false em caso de falha |
+| value     | boolean | true if it worked and false if it failed            |
 
-**Exemplo**
+**Example**
 
 ```json
 {
@@ -83,17 +83,17 @@ Forma nova -
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link to webhook response (on receipt)
 
 [Webhook](../webhooks/on-message-received#response)
 

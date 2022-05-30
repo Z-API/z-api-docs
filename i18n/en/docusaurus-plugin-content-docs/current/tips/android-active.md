@@ -1,32 +1,32 @@
 ---
 id: android-active
-title: Android sempre ativo
+title: Android always active 
 ---
 
-## Introdução
+## Introduction
 
-Como todo bom dev você sabe o quanto a Apple dificulta nossa vida não é mesmo ? Logo não temos um tutorial como manter o IOS sempre ativo infelizmente, se você descobrir como fazer isso no IOS não esqueça de nos avisar, teremos prazer em retificar este tópico :)
+Every good dev knows how much apple can make our lives difficult, am i right? Which brings me to the point that we unfortunately don´t have a tutorial on how to keep IOS devices always active. If you happen to find out or already know how to do that on IOS please be sure to let us know and we'll be more than happy to rectify this topic :)
 
-Voltando para o tópico Android, abaixo listamos em 3 passos como você manter seu Android sempre ativo e manter sua conexão com o Z-API "tinindo".
+Going back to Android, below we've listed 3 steps on how to keep your Android always active and how to keep your connection with Z-API running clean.
 
-### Primeiro passo
+### First step 
 
-Você vai precisar habilitar o modo desenvolvedor, para isso você precisa acessar as configurações do seu celular depois vá em Sistema e em seguida Sobre o dispositivo. Depois em número da versão e clique nele 7 vezes seguidas sobre ele, e pronto.
+You will need to enable development mode. For this you will need to go to our phone`s settings. Once you're there go to “system'' then “about your system”. Click on the version’s number 7 times and you're done.
 
-![img](../../../../../img/WABAndroidAtivo.png)
+![img](../../../../../img/aaaOne.jpg)
 
 ---
 
-### Segundo passo
+### Second Step
 
-Depois de ativada as opções de desenvolvedor você vai receber um pedido para confirmar seu método de desbloqueio de tela. Quando voltar ao menu de anterior vai perceber que mais opções estarão disponíveis no final do menu.
+After activating the developer options you will be asked to confirm your screen unlock method. When you return to the previous menu you will notice that more options will be available at the bottom of the menu.
 
-![img](../../../../../img/WABAndroidAtivo1.png)
+
+![img](../../../../../img/aaaTwo.jpg)
 
 ---
 
 ### Terceiro passo
 
-Agora já temos as opções de desenvolvedor. Dentro dela escolha a opção Manter a tela sempre ativa, e com a opção ativa o dispositivo permanecerá com a tela ligada mesmo durante o carregamento da bateria ;)
+Now that we have developer options. In the menu choose the option “stay awake”. With this option enabled the device’s screen will always stay on even while charging its battery!
 
-![img](../../../../../img/WABAndroidAtivo2.png)

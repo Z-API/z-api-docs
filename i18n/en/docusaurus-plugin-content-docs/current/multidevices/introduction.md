@@ -1,56 +1,56 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction
 ---
 
 ## Multi-Devices
 
-Vamos falar sobre Multi-Devices ?
+Let's talk about Multi-Devices ? 
 
-O que é ? onde vive ? do que se alimenta ?
+What is it? Where does it live? What does it feed off of?
 
-Brincadeiras à parte, hoje estamos aqui para falar um pouquinho da nova versão do Whatsapp e suas principais características, vamos separar alguns tópicos a seguir para tentar te contextualizar da melhor forma.
+Jokes apart, today we are here to talk a little about this new Whatsapp version and its main characteristics. We will devide the topics to give you better context.
 
-Mas antes disso ccredito que ninguem melhor que o proprio Whatsapp para falar desta nova feature por isso vamos deixar aqui o link para acompanhar direto da fonte :)
+Before that, no one better than Whatsapp themselves to talk about this new feature and that is why we will leave a link here so you can hear it straight from the source :)
 
 https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=pt_br
 
 ---
 
-## Mas o que esta “bendita” versão tem de especial ?
+## What makes this dang version so special?
 
-Ela vem com uma série de novidades, mas vou destacar 2 que consideramos serem a mais impactantes para quem utiliza a nossa API que são:
+It comes with a number of new features, but I will highlight 2 that we consider to be the most impactful for those who use our API, which are:
 
-- **4 dispositivos simultâneos**
+- **4 devices simultaneously**
 
-Você pode ter até quatro dispositivos conectados de uma só vez, porém só é possível conectar um celular à sua conta do WhatsApp, ou seja você pode ter um aparelho celular e até 3 whatsapp web ou desktop abertos simultaneamente.
+You can have up to four devices connected at once, but it is only possible to connect one mobile phone to your WhatsApp account. This means that you can have a mobile device and up to 3 whatsapp web or desktop open simultaneously.
 
-- **Envia e recebe mensagem sem a necessidade do celular estar ligado**
+- **Send and receive messages without needing a cell phone to be on** 
 
-Você não precisa mais ter o celular conectado para enviar e receber mensagens pelo Whatsapp web ou desktop. Porém seus dispositivos adicionais serão desconectados caso você não use o WhatsApp no seu celular por mais de 14 dias.
-
----
-
-## Limitações
-
-Tá curioso para saber as limitações né ?
-
-Talvez não se trate bem de limitações, mas sim de recursos ainda não compatíveis, abaixo vou listar os principais:
-
-- Ver localização em tempo real em aparelhos adicionais.
-- Fixar conversas no WhatsApp Web e no WhatsApp para computador.
-- Entrar em grupos e ver e redefinir convites para grupos no WhatsApp Web e no WhatsApp para computador. Você precisará usar seu celular para executar essas ações.
-- Enviar mensagens ou fazer chamadas usando seu aparelho conectado para contatos que usam versões muitos antigas do WhatsApp.
-- Fazer chamadas usando o Portal ou o WhatsApp para computador para aparelhos conectados que não participam da versão beta para múltiplos aparelhos.
-- Outras contas do WhatsApp no seu Portal só funcionarão se estiverem participando da versão beta para múltiplos aparelhos.
-- Mudar o nome da empresa ou as etiquetas no WhatsApp Business usando o WhatsApp Web ou o WhatsApp para computador.
+You no longer need to have your cell phone connected to send and receive messages via Whatsapp web or desktop. However, your additional devices will be disconnected if you do not use WhatsApp on your mobile for more than 14 days.
 
 ---
 
-## Compatibilidade com Z-API
+## Limitations
 
-E o Z-API é compatível com esta nova versão ?
+Curious to know the limitations right? :)
 
-Sim ! Temos orgulho em compartilhar que conseguimos compatibilizar todos os métodos e abstrair toda complexidade da nova versão afim de entregar à nossos clientes de uma forma simples e transparente todos recursos desta nova versão.
+Ok maybe it's not really about limitations however it is about features not yet supported. Below I'll list the main ones:
 
-Mas calma, as mudanças foram muito além das features citadas acima, existem bem mais coisas envolidas, para nós a mais critica foi a mudança no modelo de criptografia que permite que mesmo sem o celular ligado toda a segurança no trafego de mensagens de ponta a ponta.
+- View real-time location on additional devices.
+- Pin conversations on WhatsApp Web and WhatsApp for desktop.
+- Join groups, view and reset group invites on WhatsApp Web and WhatsApp desktop. You will need to use your cell phone to perform these actions.
+- Send messages or make calls to contacts who use very old versions of WhatsApp using your connected device.
+- Make calls using Portal or desktop WhatsApp to connected devices that are not participating in the multi-device beta.
+- Other WhatsApp accounts on your Portal will only work if they are participating in the multi-device beta.
+- Change business name or labels in WhatsApp Business using WhatsApp Web or WhatsApp desktop.
+
+---
+
+## Z-API compatibility 
+
+Is Z-API compatible with this new version ?  
+
+Yes ! We are proud to share that we managed to make all the methods compatible and abstract all the complexity of the new version in order to deliver all features of this new version to our customers in a simple and transparent way.
+
+But slow down, the changes went far beyond the features mentioned above, there are a lot of things involved. For us the most critical change was in the encryption model that allows, even without the cell phone on, all the security in the message traffic from end to end .

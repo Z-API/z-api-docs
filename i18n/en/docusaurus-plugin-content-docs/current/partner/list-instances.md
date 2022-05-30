@@ -1,9 +1,9 @@
 ---
 id: list-instances
-title: Listando instâncias
+title: Listing instances 
 ---
 
-## Método
+## Method 
 
 #### /instances
 
@@ -11,36 +11,35 @@ title: Listando instâncias
 
 ---
 
-## Conceituação
+## Concept
 
-Método utilizado para listar todas as instâncias criadas.
+This method is used to list every instance created 
 
 ---
 
-## Atributos
+## Attributes
+### Mandatory 
 
-### Obrigatórios
-
-| Atributos | Tipo | Descrição |
+| Attributes| Type | Description |
 | :-- | :-: | :-- |
-| page | integer | Utilizado para paginação você de informar aqui a pagina de chats que quer buscar |
-| pageSize | integer | Especifica o tamanho do retorno de chats por pagina |
+| page | integer | Used for pagination, you must inform here the page of chats you want to search |
+| pageSize | integer | Specifies the size of the return chats per page|
 
-### Opcionais
+### Optionals
 
-| Atributos |  Tipo  | Descrição                         |
-| :-------- | :----: | :-------------------------------- |
-| query     | number | Busca pelo nome e id da instancia |
+| Attributes|  Type  | Description                         |
+| :-------- | :----: | :--------------------------------   |
+| query     | number | Search by instance name and id      |
 
 ---
 
 ## Request Body
 
-**Método**
+**Method**
 
 `GET` <https://api.z-api.io/instances/>
 
-**Exemplo**
+**Example**
 
 #### Query params
 
@@ -56,13 +55,13 @@ Método utilizado para listar todas as instâncias criadas.
 
 ### 201
 
-| Atributos | Tipo      | Descrição                     |
+| Attributes| Type      | Description                   |
 | :-------- | :-------- | :---------------------------- |
-| id        | string    | ID da instância criada        |
-| token     | string    | TOKEN da instância criada     |
-| due       | timestamp | Data de validade da instância |
+| id        | string    | Created instance’s ID         |
+| token     | string    | TOKEN of the created instance |
+| due       | timestamp | Instance expiration date      |
 
-**Exemplo**
+**Example**
 
 ```json
 {
@@ -96,17 +95,17 @@ Método utilizado para listar todas as instâncias criadas.
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link to webhook response (on receipt)
 
 [Webhook](../webhooks/on-message-received#response)
 

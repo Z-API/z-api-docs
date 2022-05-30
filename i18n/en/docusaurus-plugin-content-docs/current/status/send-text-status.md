@@ -1,9 +1,9 @@
 ---
 id: send-text-status
-title: Enviando texto status
+title: Sending status text 
 ---
 
-## Método
+## Method
 
 #### /send-text-status
 
@@ -11,25 +11,25 @@ title: Enviando texto status
 
 ---
 
-## Conceituação
+## Concept
 
-Você pode postar textos no seu status e este método é responsavel por isso, lembre-se que os status somem após 24 horas.
+You can post texts in your status and this method is responsible for that, remember that statuses disappear after 24 hours.
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos |  Tipo  | Descrição                              |
+| Attributes |  Type | Description                              |
 | :-------- | :----: | :------------------------------------- |
-| message   | String | Mensagem a ser enviada para seu status |
+| message   | String | Text to be sent to status  |
 
 ---
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -39,7 +39,7 @@ Você pode postar textos no seu status e este método é responsavel por isso, l
 
 #### URL
 
-Método
+Method
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text-status
 
@@ -47,7 +47,7 @@ Método
 
 ```json
 {
-  "message": "Sua mensagem para status"
+  "message": "Your message status"
 }
 ```
 
@@ -57,12 +57,12 @@ Método
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
+| Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
-| zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| zaapId    | string | id on z-api    |
+| messageId | string | id on whatsapp |
 
-Exemplo
+Example
 
 ```json
 {
@@ -73,11 +73,11 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 

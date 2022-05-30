@@ -4,80 +4,91 @@ title: Introduction
 slug: /
 ---
 
-## Z-API - Asas para sua imaginação!
+## Z-API - Wings for your imagination! 
 
-**Z-API** foi desenvolvido por **programadores para programadores**, por isso prezamos pela simplicidade e objetividade de tudo que nos propomos a fazer, sendo assim chega de conversa fiada e ** Let's Bora!**
+**Z-API** was developed for **programmers by programmers**, this is why we value the simplicity and objectivity of everything we proposed to do. Enough small talk and **let's dive in!**
 
 ---
 
-## Mas o que é Z-API?
+## What is Z-API?
 
-Você provavelmente já deve saber, mas vamos reafirmar!
+You probably already know but let's go over it!
 
-**Z-API** é um serviço RestFul que provê uma API que permite que você interaja com seu Whatsapp através uma API simples e intuitiva, além de webhooks para te avisar sobre interações com seu número.
 
-:::important Importante
+**Z-API** is a RestFul service that provides an API that allows you to interact with whatsapp through a simple and intuitive API as well as webhooks to alert you of interactions with your number.
 
-O Z-API utiliza o mesmo canal de comunicação utilizado pelo whatsapp web para disponibilizar as APIs. Caso você utilize a versão comum do Whatsapp, **NÃO** será possível você utilizar o whasapp web junto com Z-API.
 
-Recentemente o Whatsapp lançou a funcionalidade de múltiplos dispositivos, isso **permite** que você conecte até **4** dispositivos no seu Whatsapp. Caso essa opção **esteja ativada** em seu celular, você poderá utilizar o whatsapp web juntamente com Z-API, sem a necessidade de manter o telefone conectado a internet a todo momento.
+:::important Important
+
+
+Z-API utilizes the same channel of communication used by whatsapp web to make the APIs accessible . In case you use a common version of whatsapp, it **won't** be possible to make use of our Z-API with whatsapp web.
+
+Recently, WhatsApp launched a functionality that **allows** you to use multiple devices, this allows you to connect up to **4** devices on the same number. In case this option **is enabled** on your device, you will be able to take advantage of our Z-API coupled with WhatsApp without having to keep your device connected to the internet at every moment.
+
+
 
 :::
 
 ---
 
-## Quem pode utilizar Z-API?
+## Who can use Z-API?
 
-Não temos restrições quanto a utilização, mas geralmente são 2 públicos bem distintos que utilizam nossos serviços. São eles:
+While we don't have restrictions on how it is used, we normally have two very distinct groups that use our services. They are:
 
-- Programadores com conhecimentos em API's RestFul. Se você não é, mas conhece alguém com estas competências, já serve :)
 
-- Utilizadores de soluções de terceiros que permitam integração com Z-API
+- Programmers that have knowledge and understanding of RestFul APIs. If that is not you, but you know someone with this knowledge, that will work as well :)
 
----
-
-## Tá bom! Mas o que dá para fazer com ele?
-
-De forma bem direta, tudo que você faz com Whatsapp Web você poderá fazer utilizando nosso serviço. Para isso basta ler o QRcode do Z-API e utilizar nosso serviço!
+- Users who use third party solutions that allow Z-API integration.
 
 ---
 
-## Tecnicamente, como funciona o fluxo de envio?
+## Enough! What are we able to do with it??
 
-Para exemplificar, segue os passos de envio de uma mensagem de texto simples:
-
-1. Você envia via API uma mensagem para o Z-API;
-
-2. O Z-API adiciona em uma fila e te retorna o ID da mensagem;
-
-3. Sua instância processa a fila enviando para o WhatsApp;
-
-4. Seu Webhook de delivery é chamado quando sua mensagem for enviada;
-
-5. Assim que o destinatário receber a mensagem, o Webhook de message-status é chamado informando RECEIVED.
-
-6. Por fim quando o destinatário ler a mensagem o messages-status é chamado informando READ
+To be straight forward, everything that you are able to do with WhatsApp you will be able to do while using our service. To do this all you have to do is read the Z-API QRcode and get straight to it!
 
 ---
 
-## Limites
+## Technically, how does the flow of delivery work? 
 
-Iniciei por este tópico porque é bem comum as pessoas perguntarem sobre quais os limites de envios com Z-API. Nós **NÃO TEMOS LIMITE** para número de mensagens enviadas! Mas é importante você entender que esta utilizando uma sessão do Whatsapp Web, então o padrão de utilização precisa ser compatível, além disso sempre recomendamos que você leia atentamente as políticas estabelecidas pelo proprio Whatsapp em sua pagina oficial https://www.whatsapp.com/legal.
+For an example, follow the steps of sending simple text:
+
+1. You send a message via API straight to Z-API;
+
+2. Z-API then adds you to a queue and returns a message ID;
+
+3. Your instance will process your queue and send it to WhatsApp.
+
+4. Your webhook of delivery is called when your message is sent 
+
+5. As soon as the recipient receives the message, the webhook os message-status is called informing RECEIVED and..
+
+6. Finally, when the recipient reads the message the message-status is called informing READ
+
+
 
 ---
 
-:::note **NÃO ARMAZENAMOS MENSAGENS!**
+## Limits
 
-Todas as mensagens enviadas para nossa API serão encaminhadas para uma fila de mensageria e após o envio as mesmas são apagadas.
+Start with this topic because it is very common for people to ask about what the limits of delivery are with Z-API. we **DON'T HAVE LIMITS** for number of messages sent! However, it is important that you understand you are using a WhatsApp web session. Therefore, the pattern of usage needs to be compatible. Furthermore, we always recommend that you intently read the politics established by Whatsapp web on their official website https://www.whatsapp.com/legal. 
+
+
+---
+
+:::note **WE DON'T STORE MESSAGES!**
+
+All of the messages sent to our API will be forwarded to a queue of messages and after it has been sent they will be deleted.
 
 :::
 
-:::important Lembre-se
+:::important Remember 
 
-O Facebook tem comportamentos diferentes para cada uma das versões do Whatsapp, nossa API disponibiliza métodos compativeis com a versão WEB.
+Facebook behaves differently with each version of WhatsApp web, our API makes available methods compatible with the WEB versions. 
 
 :::
 
-:::caution Ponto de Atenção
+:::caution Point of attention 
 
-Muito cuidado! Não se esqueça que uma vez conectado seu número ao nosso serviço você não conseguirá mais utilizar o mesmo número no Whatsapp Web. Esta limitação é temporária, tendo em vista que o Whatsapp já está divulgando uma nova funcionalidade que permitirá mais de um Whatsapp Web conectados simultaneamente.
+Be cautious! Don't forget once you connect your number with our service you won't be able to use the same number on WhatsApp web. This limitation is only temporary, keeping in mind that WhatsApp is already unveiling a new functionality that will allow more than one instance connected simultaneously. 
+
+

@@ -1,37 +1,37 @@
 ---
 id: get-iswhatsapp
-title: Número com Whatsapp ?
+title: Number with Whatsapp ? 
 ---
 
-## Método
+## Method
 
 #### /phone-exists
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-exists
 
-## Conceituação
+## Concept
 
-Este método retorna se o número tem ou não Whatsapp.
+This method returns whether or not the number has Whatsapp.
 
-:::important Importante
+:::important Important
 
-Z-API não foi desenvolvido para dissiminação de spam para contatos que você não conhece, mesmo assim recomendamos que caso não tenha certeza que o número que vai enviar mensagens tenha Watsapp você pode e deve utilizar este método para certificar-se.
+ Z-API is not designed to spread spam to contacts you don't know, however we recommend that if you are not sure whether the number you are going to send messages to has Whatsapp you can and should use this method to make sure.
 
 :::
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telephone number in the format DDI DDD NUMERS Ex: 551199999999. **IMPORTANT**  only send numbers without formatting or a mask  |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -39,9 +39,9 @@ Z-API não foi desenvolvido para dissiminação de spam para contatos que você 
 
 ## Request Params
 
-#### URL exemplo
+#### URL example
 
-Método
+Method
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-exists/5511999999999
 
@@ -51,11 +51,11 @@ Método
 
 ### 200
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-- | :-- |
-| exists | boolean | true para caso exista e false para casos onde o número não tenha Whatsapp |
+| exists | boolean | True for if it exists and false for cases where the number does not have Whatsapp |
 
-Exemplo
+Example
 
 ```json
 [
@@ -67,11 +67,12 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
+
 
 ---
 

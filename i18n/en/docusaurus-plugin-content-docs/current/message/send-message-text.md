@@ -1,9 +1,9 @@
 ---
 id: send-message-text
-title: Enviar texto simples
+title: Sending plain text
 ---
 
-## Método
+## Method
 
 #### /send-text
 
@@ -11,54 +11,55 @@ title: Enviar texto simples
 
 ---
 
-## Conceituação
+## Concept
 
-Neste método você poderá enviar textos simples mas, você pode incrementá-los utilizando a formatação de texto e emojis, por exemplo. Caso você ainda não saiba como fazer isso, clique nos links abaixo e siga as instruções:
+In this method you will be able to send simple texts, you can add to them by using the formatting of text and emojis. In case you don’t know how to do that, you can click the links below and follow the instructions:
 
-- Para saber como formata fontes no Whatsapp [clique aqui]
+- To format texts on WhatsApp [click here] 
 
-- Você também pode utilizar **quebra linhas** em suas mensagens porém isso pode ser feito de formas diferentes, isso muda por fatores como a plataforma que sua aplicação esta rodando e linguagem de programação utilizada, até o momento indentificamos as seguinte:
+- You can also use line breaks in your messages however, this can be done in different ways. This will depend on the platform that you are using as well as the language, up until this moment we have identified the following.
+
 
   > - \n
   > - \r
   > - \r\n
   > - %0a
 
-  Verifique a que mais se adequa ao seu caso.
+  Identify which will be the most adequate for your case.
 
-  **Se descobrir uma maneira nova de fazer quebra de linhas por favor nos avise :)**
+  **If you can find a different way of doing a line break please let us know :)**
+- Another resource that you can explore and use are emojis,  if need be you can find a few here [link]
 
-- Outro recurso que você pode explorar é a utilização de emojis, se você precisar pegar alguns emojis use este [link]
-
-[clique aqui]: https://faq.whatsapp.com/general/chats/how-to-format-your-messages/?lang=pt_br
+[click here]: https://faq.whatsapp.com/general/chats/how-to-format-your-messages/?lang=pt_br
 [link]: https://fsymbols.com/pt/emoji/
 
 :::tip Sobre emojis
 
-Sobre emojis o que você precisa saber é que ele é um caracter ASCII normal assim com existe a fonte Times New Roman por exemplo, existem fontes de emojis, pense que você pode criar sua própria >galeria de emojis.
+What you need to know is that it is a normal ASCII character. Just like there are character fonts you can have emoji fonts. You are actually able to create your own gallery of emojis! 
 
-Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utilizar este aqui 🤪 se quiser.
+
+To test this, just copy an emoji and paste into your text! You can use this one 🤪  if you’d like
 
 ::: Exemplo no Whatsapp
 
-![image](../../../../../img/send-message-text.jpeg)
+![image](../../../../../img/Plaintext.jpeg)
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| message | string | Texto a ser enviado |
+| phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask |
+| message | string | Text to be sent|
 
-### Opcionais
+### Optional
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| delayMessage | number |In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs|
 
 ---
 
@@ -77,12 +78,12 @@ Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utiliz
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
+| Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
 | messageId | string | id no whatsapp |
 
-Exemplo
+Example
 
 ```json
 {
@@ -93,17 +94,17 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link to webhook response (on receipt)
 
 [Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto)
 

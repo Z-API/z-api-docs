@@ -1,24 +1,25 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction 
 ---
 
-### Conceituação
+### Concept 
 
-Neste tópico você vai conhecer todos os métodos disponiveis para manipulação de grupos.
+In this topic you will get to know all of the methods available for manipulating groups.
 
-Como já dito anteriormente para o Whatsatpp tudo é um chat, sabendo disso o grupo nada mais é que um chate e basicamente tudo que você envia/recebe de em chat poderá enviar/receber com os grupos. O grupo possui um ID/Fone que nada mais é do que o fone de quem criou concatenado com um timestamp algo parececido com "5511999999999-162327528", e é este ID/Fone que você vai utilizar como fone para realizar os envios para seus grupos. Para você conseguir este ID/Fone utilize o metodo get/chats.
+As I said before for Whatsapp everything's a chat, knowing that the group is nothing more than a chat and basically everything you send/receive in chat you can send/receive with the groups. The group has an ID/Phone that is nothing more than the phone of the person who created it concatenated with a timestamp something similar to "5511999999999-162327528", and it is this ID/Phone that you will use as a phone to send to your groups . To get this ID/Phone use the get/chats method.
 
-Neste tópico você também vai encontrar também metódos para criação e administração de grupos.
+In this topic you will also find methods for creating and managing groups.
 
-:::tip ID/Fone de Grupos
+:::tip Group ID/phone
 
-Para melhor frisar, pense que o id/fone do grupo é o numero de quem criou concatenado com um timestamp, algo parecido com isso 5511999999999 - 1623275280
+To better emphasize, think that the id/phone of the group is the number of who created it concatenated with a timestamp, something like this 5511999999999 - 1623275280
+
 
 :::
 
-:::caution Atenção
+:::caution Attention 
 
-No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+On November 4, 2021 whatsapp changed the format of creating new groups. before: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
 
 :::

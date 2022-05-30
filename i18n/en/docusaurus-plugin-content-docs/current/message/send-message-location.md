@@ -1,9 +1,9 @@
 ---
 id: send-message-location
-title: Enviar localização
+title: Send location 
 ---
 
-## Método
+## Method 
 
 #### /send-location
 
@@ -11,32 +11,32 @@ title: Enviar localização
 
 ---
 
-## Conceituação
+## Concept
 
-Método responsavel por enviar uma localização fixa aos seus contatos, muito utilizado para enviar a localização de um endereços.
+Method responsible for sending a fixed location to your contacts, it is mostly used to send an address’s location. 
 
-![image](../../../../../img/send-message-location.jpeg)
+![image](../../../../../img/SendingLocation.jpeg)
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| title | string | Titulo para sua localização ex: Minha casa |
-| address | string | Endereço da localização que esta enviando composto por logradouro, numero, bairro, cidade, UF e CEP, tudo separado por virgula |
-| latitude | string | Latitude da localização enviada |
-| longitude | string | Longitude da localização enviada |
+| phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
+| title | string | Title for your location ex: My house |
+| address | string | Location of the address that you are sending along with street, number, neighborhood, city, state and zip code, all separated by a comma |
+| latitude | string | Location’s latitude  |
+| longitude | string | Location’s longitude  |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
-| delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
+| delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
 
 ---
 
@@ -58,12 +58,12 @@ Método responsavel por enviar uma localização fixa aos seus contatos, muito u
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
+| Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
-| zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| zaapId    | string | id on z-api    |
+| messageId | string | id on whatsapp |
 
-Exemplo
+Example 
 
 ```json
 {
@@ -74,17 +74,17 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link for webhooks response (upon receiving)
 
 [Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-localização)
 

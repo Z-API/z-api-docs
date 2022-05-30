@@ -1,11 +1,11 @@
 ---
 id: emulators
-title: Emuladores Android
+title: Android Emulators  
 ---
 
-## Introdução
+## Introduction 
 
-Para realmente ter um serviço de qualidade rondando "liso" recomendamos caso possível a utilização de emuladores Android, não é requisito mas, sabemos que utilizar-se deste recurso pode ajudar e muito na boa qualidade do serviço. No mercado existem diversas soluções, inclusive Clouds preparados para fornecer como serviço a hospedagem do seu número, abaixo vamos listar algumas soluções cujas quais temos clientes operando com sucesso.
+For you to really have quality service that runs “clean” we recommend if possible, to utilize Android emulators. It is not a requirement however, we know that using this type of resource can greatly help having quality service. There are a multitude of solutions in the marketplace, including clouds prepared to host your phone number. Below we are going to list a couple of solutions which we have clients operating with success.
 
 ## Emuladores
 
@@ -19,11 +19,11 @@ Para realmente ter um serviço de qualidade rondando "liso" recomendamos caso po
 
 [Cloud Emulator]
 
-Mas fique a vontade em procurar outras opções:)
+But feel free to look for other options :)
 
-:::tip Números VOIP
+:::tip VOIP numbers 
 
-Para dar um toque final você ainda pode conciliar o emulador com um número VOIP, para saber como ativar leia o tópico Habilitando um número fixo nesta mesma sessão :)
+To give a final touch you can still reconcile the emulator with a VoIP number. To figure out how to enable this read the topic “Enabling a fixed number” in this same section :) 
 
 :::
 

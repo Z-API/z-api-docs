@@ -1,9 +1,9 @@
 ---
 id: send-message-link
-title: Enviar link
+title: Send link
 ---
 
-## Método
+## Method
 
 #### /send-link
 
@@ -11,39 +11,39 @@ title: Enviar link
 
 ---
 
-## Conceituação
+## Concept
 
-Método responsavel por enviar um link aos seus contatos, muito utilzado para compartilhar links para que os usuários sejam direcionados a um site.
+Method responsible for sending links to your contacts, it is used to share links so that the user can be redirected to a website.
 
-:::tip Sobre links
+:::tip About links
 
-É importante você saber que o link só fica clicavel caso o destinatário ja tenha seu telefone nos contatos, ou se o mesmo iniciar uma conversa com vocë.
+It is important for you to know that the link is only clickable if the recipient already has your phone number in their contacts, or if they start a conversation with you.
 
 :::
 
-![image](../../../../../img/send-message-link.jpeg)
+![image](../../../../../img/SendingLink.jpeg)
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandatory 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| message | string | Texto sobre seu link. **Não esqueça de informar o mesmo valor do linkURL no final deste texto.** |
-| image | string | Link da imagem |
-| linkUrl | string | Url do seu link |
-| title | string | Titulo para o link |
-| linkDescription | string | descrição do link |
+| phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
+| message | string | Text about your link. **Don’t forget to inform the same value of the linkURL at the end of this text.** |
+| image | string | Images link |
+| linkUrl | string | Links URL |
+| title | string | Title for your link |
+| linkDescription | string | Links description |
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
-| delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
+| delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
 
 ---
 
@@ -66,12 +66,12 @@ Método responsavel por enviar um link aos seus contatos, muito utilzado para co
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
+| Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
-| zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| zaapId    | string | id on z-api    |
+| messageId | string | id on whatsapp |
 
-Exemplo
+Example
 
 ```json
 {
@@ -82,17 +82,17 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link for webhooks response (upon receiving)
 
 [Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto)
 

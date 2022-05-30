@@ -1,23 +1,23 @@
 ---
 id: on-message-received
-title: Ao receber
+title: Upon receiving 
 ---
 
-## Conceituação
+## Concept
 
-Esse é o webhook de retorno de mensagens recebidas
+This is the incoming message return webhook
 
-:::caution Atenção
+:::caution Attention 
 
-O Z-API não aceita webhooks que não sejam HTTPS
+Z-API does not accept webhooks that aren’t HTTPS
 
 :::
 
 ---
 
-## Atualizando Webhook
+## Updating the webhook
 
-Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
+To update the webhook route, you can do it through the API or through the admin panel.
 
 ### API
 
@@ -35,61 +35,61 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 ---
 
-### Painel Administrativo
+### Administrative panel 
 
 ![img](../../../../../img/received.png)
 
 ---
 
-## Retornos dos webhooks
+## Returns from webhooks 
 
-Os possíveis retornos do webhook **on-message-received** estão cadastrado logo abaixo:
+The possible returns of the **on-message-received** webhook are registered below:
 
 ## Response
 
-| Atributos | Tipo | Descrição |
+| Attributos| Type| Description |
 | :-- | :-: | :-- |
-| waitingMessage | boolean | Identifica se a sua mensagem está com status de "Aguardando a mensagem" |
-| phone | string | Número de telefone, ou do grupo que enviou a mensagem. |
-| participantPhone | string | Número de telefone do membro do grupo que enviou a mensagem. |
-| messageId | string | Idetificador da mensagem na conversa. |
-| status | string | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED). |
-| referenceMessageId | string | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
-| momment | integer | Momento em que a mensagem foi recebida ou do erro. |
-| type | string | Tipo do evento da instância, nesse caso será "ReceivedCallBack". |
-| photo | string | Url da foto do usuário que enviou a mensagem. |
-| text.message | string | Texto da mensagem. |
-| image.caption | string | Leganda da foto. |
-| image.imageUrl | string | Url da foto. |
-| image.thumbnailUrl | string | Url da thumbnail da foto. |
-| image.mimeType | string | MimeType da imagem. |
-| audio.mimeType | string | MimeType do áudio. |
-| audio.audioUrl | string | Url do áudio. |
-| video.caption | string | Legenda do vídeo. |
-| video.videoUrl | string | Url do vídeo. |
-| video.mimeType | string | MimeType do vídeo. |
-| contact.displayName | string | Nome do contato. |
-| contact.vCard | string | VCard contendo as informações do contato. |
-| document.mimeType | string | MimeType do documento. |
-| document.fileName | string | Nome do documento. |
-| document.title | string | Título do documento. |
-| document.pageCount | string | Número de páginas do documento. |
-| document.thumbnailUrl | string | Url da thumbnail do documento. |
-| document.documentUrl | string | Url do documento. |
-| location.thumbnailUrl | string | Url da thumbnail da localização. |
-| location.longitude | float | Longitude da localização. |
-| location.latitude | float | Latitude da localização. |
-| location.url | string | Url da localização. |
-| location.name | string | Nome da localização. |
-| location.address | string | Endereço da localização. |
-| sticker.mimeType | string | MimeType do sticker. |
-| sticker.stickerUrl | string | Url do sticker. |
+| waitingMessage | boolean | Identifies if your message is in "Waiting for message" status |
+| phone | string | Phone number, or number of the group that sent the message. |
+| participantPhone | string | Phone number of the group member who sent the message. |
+| messageId | string | Message identifier in the conversation. |
+| status | string | Status the message is in at the time of sending (PENDING, SENT, RECEIVED, READ or PLAYED). |
+| referenceMessageId | string | Reference the message that was replied to in case the message received is a reply to a message in the conversation. |
+| momment | integer | Time when the message was received or from the error. |
+| type | string | Instance event type, in this case it will be "ReceivedCallBack". |
+| photo | string | Photo url of the user who sent the message. |
+| text.message | string | Message text. |
+| image.caption | string | Photo’s caption  |
+| image.imageUrl | string | Photo’s URL |
+| image.thumbnailUrl | string | Photo’s URL thumbnail  |
+| image.mimeType | string | Image’s Mime Type |
+| audio.mimeType | string | Audio’s MimeType |
+| audio.audioUrl | string | Audio’s URL |
+| video.caption | string | Video’s caption |
+| video.videoUrl | string | Video’s URL  |
+| video.mimeType | string | Video’s MimeType |
+| contact.displayName | string | Contact’s name  |
+| contact.vCard | string | VCard containing the contact information. |
+| document.mimeType | string | Document’s MimeType |
+| document.fileName | string | Document’s name |
+| document.title | string | Document’s Title  |
+| document.pageCount | string | Number of pages in the document  |
+| document.thumbnailUrl | string | URL of the document's thumbnail. |
+| document.documentUrl | string | Document’s URL |
+| location.thumbnailUrl | string | Location thumbnail url. |
+| location.longitude | float | Location’s longitude  |
+| location.latitude | float | Location's latitude |
+| location.url | string | Localization’s URL |
+| location.name | string | Localization’s name |
+| location.address | string | Localizations’s address  |
+| sticker.mimeType | string | Sticker’s MimeType |
+| sticker.stickerUrl | string | Stickers URL  |
 
 ---
 
 ### 200
 
-### Exemplo de retorno de texto
+### Text return example 
 
 ```json
 {
@@ -109,13 +109,13 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "broadcast": false,
   "type": "ReceivedCallback",
   "text": {
-    "message": "teste"
+    "message": "test"
   },
   "instanceId": "instance.id"
 }
 ```
 
-### Exemplo de retorno de reação
+### Reaction return example
 
 ```json
 {
@@ -148,8 +148,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de texto (Lista de Botão)
-
+### Example return text (Button List)
 ```json
 {
   "waitingMessage": false,
@@ -177,7 +176,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de texto (Lista de Opcão)
+### Example return text (Picklist)
 
 ```json
 {
@@ -199,7 +198,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "forwarded": false,
   "type": "ReceivedCallback",
   "listResponseMessage": {
-    "message": "Z-API Asas para sua imaginação",
+    "message": "Z-API Wings for your imagination",
     "title": "Z-API",
     "selectedRowId": "1"
   },
@@ -207,7 +206,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de foto
+### Photo return example
 
 ```json
 {
@@ -236,7 +235,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de áudio
+### Audio feedback example 
 
 ```json
 {
@@ -263,7 +262,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de vídeo
+### Video feedback example
 
 ```json
 {
@@ -291,7 +290,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de contato
+### Contact feedback example 
 
 ```json
 {
@@ -319,7 +318,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de documento
+### Document feedback example 
 
 ```json
 {
@@ -349,7 +348,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de localização
+### Localization’s feedback example 
 
 ```json
 {
@@ -378,7 +377,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de sticker
+### Sticker feedback example 
 
 ```json
 {
@@ -405,7 +404,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de pagamento feito
+### Example of return of payment made
 
 ```json
 {
@@ -441,7 +440,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de pedido de pagamento
+### Payment request return example
 
 ```json
 {
@@ -465,7 +464,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de recebimento de pagamento
+### Example of payment receipt return
 
 ```json
 {
@@ -497,7 +496,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de produto
+### Product return example
 
 ```json
 {
@@ -534,7 +533,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ##
 
-### Exemplo de retorno de carrinho
+### Cart return example 
 
 ```json
 {
@@ -580,23 +579,23 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Notification Response
 
-### Conceituação
+### Concept
 
-As notificações são mensagens de WhatsApp que se baseiam em modelos de mensagens prévias do WhatsApp.
+Notifications are WhatsApp messages that are based on WhatsApp preview message templates.
 
-Posto dessa forma, aqui estão documentadas as notificações que recebemos, caso não queira receber essas notificações é necessário ignorar a mensagem quando ela chegar com o atributo notification.
+This way, the notifications we receive are documented here, if you do not want to receive these notifications, you must ignore the message when it arrives with the notification attribute.
 
-### Exemplos
+### Examples 
 
 ```json
 case 'GROUP_PARTICIPANT_LEAVE':

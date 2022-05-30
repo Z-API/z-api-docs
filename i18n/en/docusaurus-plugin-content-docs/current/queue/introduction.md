@@ -1,30 +1,31 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction
 ---
 
-## Fila
+## Queue 
 
-O Z-API disponibiliza a seus usuários um sistema de fila que funciona unicamente para as mensagens envidas através da nossa API. Esta fila exerce um importante papel em nossa arquitetura que é o de organizar e ordenar as mensagens até que as mesmas sejam entregues ao Whatsapp. Este recurso também é muito útil para aquelas situaçoes onde o celular conectado ao Z-API passa por algumas instabilidade ou fique fora da internet. Caso isso ocorra, ou seja, se o celular fica por um periodo fora ar, assim que você voltar a conectar as mensagens serão enviadas ao destinatário normalmente.
+Z-API provides its users with a queuing system that works only for messages sent through our API. This queue plays an important role in our architecture, which is to organize and order messages until they are delivered to Whatsapp. This feature is also very useful for those situations where the cell phone connected to the Z-API goes through some instability or has no internet connection. If this occurs, that is, if the cell phone is offline for a period, as soon as you reconnect the messages will be sent to the recipient normally.
 
-:::tip Tempo de envio
+:::tip Sending time 
 
-Nossa fila trabalha com tempo de envio alternado entre uma mensagem e outra afim de simular o comportamento humano este intervalo fica em um range default randômico entre 1~3 segundos por mensagem.
+Our queue works with sending time alternating between one message and another in order to simulate human behavior, this interval is in a random default range between 1~3 seconds per message
 
-Caso queria aumentar o delay das mensagens, você pode passar o atributo delayMessage no body da requisição. Para saber como veja em [Send-message](../message/send-message-text#opcionais)
+If you want to increase the delay of messages, you can pass the delayMessage attribute in the body of the request. To find out how look at [Send-message](../message/send-message-text#opcionais)
+
 
 :::
 
-## Recomendação
+## Recommendation 
 
-Recomendamos que sempre antes se conectar você verifique se existem mensagens pendêntes de envio na fila, caso tenha avise seu usuário e solicite a ele a decisão de enviar ou não enviar mais estas mensagens que estão na fila. Imagine que talvez as mensagens na fila possam já não fazer mais sentido para serem enviadas, então é importente notificar o usuário e dar esta decisão a ele.
+We recommend that before connecting you always check if there are any pending messages sent in the queue, if you do notify your user and ask him to decide whether or not to send these messages that are in the queue. Imagine that maybe the messages in the queue may no longer make sense to be sent, so it is important to notify the user and give him this decision.
 
-Sempre que você se conectar ao Z-API ele vai automaticamente executar a fila disparar as mensagens da fila caso tenha. Então muito cuidado!
+Whenever you connect to Z-API it will automatically execute the queue and fire off any messages that are pending, so be very careful! 
 
-Você pode apagar uma fila via API ou ainda pelo painel admin do Z-API.
+You can delete a queue via API or better yet through the Z-API admin panel.
 
-:::tip Limite da Fila
+:::tip Limit queue 
 
-O Z-API permite até 1000 mensagens para celulares descontectados em sua fila antes de começar a rejeitar novas mensagens para fila.
+Z-API allows up to 1000 messages for a disconnected cell phone in its queue before it starts rejecting new messages to the queue.
 
 :::

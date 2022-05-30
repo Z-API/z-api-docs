@@ -1,46 +1,46 @@
 ---
 id: qrcode
-title: Pegar QRCode
+title: Get QRCode
 ---
 
-## Método
+## Method
 
 #### /qr-code
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/qr-code
 
-Pegando QRCode - bytes
+Getting QRCode - bytes
 
-Este método retorna os bytes do QRCode. Você poderá renderizar em um componente do tipo QRCode compatível com sua linguagem de programação.
+This method returns the bytes of the QR code. You can render this in a component of the type QR code that is compatible with the language that you use to program.
 
 #### /qr-code/image
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/qr-code/image
 
-Pegando QRCode - Imagem
+Getting QRCode - Image
 
-Este método retorna uma imagem do tipo base64. Você poderá renderizar em um componente do tipo imagem compatível com sua linguagem de programação.
-
----
-
-## Conceituação
-
-Sim! Como no Whatsapp Web você vai precisar ler um QRCode para conectar-se ao Z-API.
-
-Existem 2 formas que você pode utilizar para realizar esta leitura. São elas:
-
-- Se conectar através do nosso painel de administrador ou
-- Disponibilizar a experiência dentro da sua própria aplicação através dos métodos descritos nesta sessão.
-
-Você pode optar por um dos métodos disponíveis para ler o QRCode do Whatsapp, conforme exemplo abaixo:
+This method returns an image of the type base64. You can render this in a component of the type image that is compatible with the language that you use to program.
 
 ---
 
-## Atributos
+## Concept
 
-| Atributos     | Tipo | Descrição |
-| :------------ | :--: | :-------- |
-| Sem Atributos |      |           |
+Yes! Just like on WhatsApp Web you will need to read a QR code to connect to Z-API.
+
+There are two ways that you can do the reading of the QR code. They are:
+
+- Connect through our admin panel or
+- Make this experience available within your own application using the methods described in this section.
+
+You can opt for one of the methods available to read WhatsApps Qr code, as shown below: 
+
+---
+
+## Attributes 
+
+| Attributes    | Type | Description |
+| :------------ | :--: | :---------- |
+| no Attributes |      |             |
 
 ---
 
@@ -50,17 +50,17 @@ Você pode optar por um dos métodos disponíveis para ler o QRCode do Whatsapp,
 
 :::note
 
-Se você optou por implementar a leitura do QRCode em sua aplicação, você precisa saber que o Whatsapp invalida o QRCode a cada 20 segundos.
+If you opted to implement the Qr code reading feature in your app, you need to know that WhatsApp invalidades the Qr code every 20 seconds.
 
-Caso você chame o método e já esteja conectado ele não permitirá que você conecte novamente.
+In case you call on this method and it is already connected it will not allow you to connect again.
 
-Uma vez conectado você já pode começar a utilizar os métodos Z-API para manipular seu WhatsApp.
-
+Once you care connected you can start using Z-API’s methods to manipulate WhatsApp 
 :::
 
 :::important
 
-**Recomendações:**
+**Recommendations:**
 
-- Crie um método com intervalos entre 10 e 20 segundos para chamar a API e pegar o novo QRCode.
-- Caso o usuário não leia o QRCode após 3 chamadas, interrompa o fluxo e adicione um botão solicitando interação do mesmo para evitar chamadas desnecessárias para a API do Whatsapp. :::
+- Create a method with intervals of 10 to 20 seconds to call the API and get a new Qr code.
+- If the user does not read the Qr code after 3 calls, stop the flow and add a button to request its interaction to avoid unnecessary calls to the WhatsApp API. If the user does not read the QRCode after 3 calls, stop the flow and add a button requesting its interaction to avoid unnecessary calls to the WhatsApp API.
+:::

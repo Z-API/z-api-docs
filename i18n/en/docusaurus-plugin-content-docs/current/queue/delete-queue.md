@@ -1,31 +1,31 @@
 ---
 id: delete-queue
-title: Apagando uma Fila
+title: Deleting a queue 
 ---
 
-## Método
+## Method 
 
 #### /queue
 
 `DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
 
-## Conceituação
+## Concept
 
-Este método é reponsavel por DELETAR todas mensagens que estão em sua fila aguardando para ser processada.
+This method is responsible for DELETING all messages that are in your queue waiting to be processed.
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Mandotory
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type | Description  |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 |           |      |           |
 
@@ -35,7 +35,7 @@ Este método é reponsavel por DELETAR todas mensagens que estão em sua fila ag
 
 #### URL exemplo
 
-Método
+Method 
 
 `DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
 
@@ -47,17 +47,17 @@ Método
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link to webhook response (on receipt)
 
 [Webhook](../webhooks/on-message-received#response)
 

@@ -1,9 +1,9 @@
 ---
 id: device
-title: Dados do celular
+title: Cell phone data
 ---
 
-## Método
+## Method
 
 #### /Status
 
@@ -11,13 +11,13 @@ title: Dados do celular
 
 ---
 
-## Conceituação
+## Concept
 
-Este método é responsável por retornar informações sobre o device/celular conectado
+This method is responsible for returning the information about the device/cell phone connected 
 
 ---
 
-## Atributos
+## Attributes 
 
 ```json
 {

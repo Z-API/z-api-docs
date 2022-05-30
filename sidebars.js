@@ -11,7 +11,7 @@ module.exports = {
   tutorialSidebar: {
     'Quick Start': ['quickstart/introduction', 'quickstart/authentication'],
 
-    Dicas: [
+    Tips: [
       'tips/blockednumber',
       'tips/enable-fix-number',
       'tips/disable-screem-blocked',
@@ -21,7 +21,7 @@ module.exports = {
       'tips/Z-APIvsAPI-OFICIAL',
     ],
 
-    Instância: [
+    Instance: [
       'instance/introduction',
       'instance/qrcode',
       'instance/restore-session',
@@ -31,7 +31,7 @@ module.exports = {
       'instance/device',
       'instance/rename-instance',
     ],
-    Mensagens: [
+    Messages: [
       'message/introduction',
       'message/send-message-text',
       'message/send-message-reaction',
@@ -43,8 +43,8 @@ module.exports = {
       'message/send-message-document',
       'message/send-message-link',
       'message/send-message-location',
-      /* 'send-message/send-message-product',
-      'send-message/send-message-catalog',*/
+       /* 'send-message/send-message-product',
+       'send-message/send-message-catalog', */
       'message/send-message-contact',
       'message/send-button-list',
       'message/send-option-list',
@@ -52,7 +52,7 @@ module.exports = {
       'message/read-message',
       'message/reply-message',
     ],
-    Contatos: [
+    Contacts: [
       'contacts/introduction',
       'contacts/get-contacts',
       'contacts/get-metadata-contact',
@@ -67,7 +67,7 @@ module.exports = {
       'chats/archive-chat',
       'chats/delete-chat',
     ],
-    Grupos: [
+    Groups: [
       'group/introduction',
       'group/create-group',
       'group/update-group-name',
@@ -82,13 +82,13 @@ module.exports = {
       'group/update-group-settings',
       'group/update-group-description',
     ],
-    'Lista de Transmissão': ['broadcast/introduction'],
+    'Transmission list': ['broadcast/introduction'],
     Status: [
       'status/introduction',
       'status/send-text-status',
       'status/send-image-status',
     ],
-    'Fila de Mensagens': [
+    'Message queue': [
       'queue/introduction',
       'queue/get-queue',
       'queue/delete-queue',
@@ -112,7 +112,7 @@ module.exports = {
       'webhooks/on-chat-presence',
       'webhooks/on-webhook-connected',
     ],
-    Parceiros: [
+    Partners: [
       'partner/introduction',
       'partner/create-instance',
       'partner/sign-instance',
@@ -120,7 +120,7 @@ module.exports = {
       'partner/list-instances',
     ],
 
-    Integradores: ['integrators/find-my-pack'],
+    Integradors: ['integrators/find-my-pack'],
 
     'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
 

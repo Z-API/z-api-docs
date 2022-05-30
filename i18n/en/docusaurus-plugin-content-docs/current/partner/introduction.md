@@ -1,72 +1,73 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction 
 ---
 
-## Parceiro Integrador
+## Integrating partner
 
-### Boas Vindas
+### Welcome
 
 Se você esta neste tópico ja quebrou algumas castanhas com a gente não é mesmo ?
 
-Estamos muito felizes em você considerar ser um parceiro integrador nosso, queremos muito ser benção em seus negócios e esperamos que você prospere muito, e obvio esperamos poder de ajudar nesta empreitada, por isso agora que você já atingiu 25 licenças já nos conhecemos bem e nossa parceria fica ainda mais forte estaremos aqui prontos para lhe ajudar e crecermos juntos, por isso conte com a gente !
+If you are on this topic you've already busted your chops with us, aint that right?
 
-### Modelo de Integrador
+We are very happy for you to consider being an integrator partner of ours, we really want to be a blessing in your business and we hope you prosper a lot, and of course we hope to be able to help in this endeavor. So now that you have reached 25 licenses, we already know each other well and our partnership gets even stronger. We will be here ready to help you and grow together, so count on us !
 
-Ao aderir ao programa de integrador sua empresa receberá um token de integrador e a documentação para criação/assinatura/cancelamento de instâncias tudo isso via api sem a necessidade de acesso a nossa interface admin.
+### Integrator model 
 
----
-
-### Token integrador
-
-Os tokens contém um número limite de utilização, mas durante nossa parceria este limite passa por algumas mudanças conforme abaixo.
-
-#### Primeiro token
-
-> Permite criar 25 instâncias, ao atingir este número o integrador deve solicitar o seu novo token.
-
-#### Segundo token
-
-> Permite criar +25 instâncias, com valor da segunda faixa tarifária.
-
-#### Terceiro token
-
-> Permite criar +50 instâncias, com valor da terceira e última faixa tarifária.
-
-#### Token definitivo
-
-> Com este token o céu é o límite ;)
+By joining the integrator program, your company will receive an integrator token and documentation for creating/subscribing/canceling instances all via api without the need to access our admin interface.
 
 ---
 
-### IMPORTANTE
+### Integrador token
 
-- Toda responsabilidade de uso do token é do cliente, lembre-se que sua empresa é responsável financeiramente por todas instâncias criadas, portanto evite o uso em modo teste.
-- Ao criar a instância ela vem com o default de 2 dias para trial, após este período a instância vai parar e um job nosso irá excluir a instância, caso queira manter a instância é preciso chamar o método de assinatura. Não é necessário chamar o método de cancelamento neste caso pois a instância ainda é trial.
-- O Modelo de integrador neste momento é feito pós pago, em breve nós teremos pré-pago.
+The tokens contain a limited number of uses, but during our partnership this limit goes through some changes as mentioned below 
+
+#### First token
+
+> It allows creating 25 instances, when reaching this number the integrator must request its new token.
+
+#### Second token
+
+> Allows you to create +25 instances, with the value of the second tariff band.
+
+#### Third token
+
+> Allows you to create +50 instances, with the value of the third and last tariff band.
+
+#### Definitive token 
+
+> The Sky is the limit with this one ;)
 
 ---
 
-### Faturamento
+### IMPORTANT
 
-Nosso ciclo de faturamento funciona da seguinte forma:
+- The customer is responsible for using the token, remember that your company is financially responsible for all instances created, so avoid using it in test mode.
+- When creating an instance it comes with the default 2 days of trial, after this period the instance will stop and one of us will delete the instance, if you want to keep the instance you need to call the signature method. It is not necessary to call the cancel method in this case as the instance is still a trial.
+- The integrator model at the moment is post-paid, soon we will have pre-paid.
+---
 
-- Toda instância assinada entre os dias 01 ao dia 31 será agrupada e disponibilizada em um único pagamento com vencimento no dia 05 do próximo mês subsequente.
+### Invoicing 
 
-- Instâncias canceladas ficarão ativas até seu vencimento, ou seja em caso de cancelamento hoje a mesma ainda será cobrada na próxima fatura e estará disponível para uso até seu vencimento original.
+Our billing cycle works as follows:
 
-- Todas instâncias tem data de expiração no dia 10 que será o prazo máximo para o funcionamento do serviço em casos de não pagamento, no dia 15 nosso DevOps excluirá todas instâncias da conta.
+- Every instance signed between the 1st and the 31st will be grouped and made available in a single payment due on the 5th of the next month.
 
-Durante a adesão do plano a empresa integradora pode optar pela migração a todas as instâncias ativas no modelo pré-pago para o novo modelo pós pago, porém este desejo precisa ser manifestado no ato da adesão. Não é possível migrar posteriormente :(
+- Canceled instances will remain active until their expiration date, that is, if canceled today, they will still be charged on the next invoice and will be available for use until their original expiration date.
 
-:::tip Como cobrar de seu cliente
+- All instances have an expiration date on the 10th, which will be the maximum term for the service to function in cases of non-payment, on the 15th our DevOps will delete all instances from the account.
 
-Recomendamos a nossos clientes a prática do modelo pré-pago em suas soluções pois não trabalhamos com pro rata.
+When joining the plan, the integrator company can choose to migrate all active instances in the prepaid model to the new postpaid model, but this desire must be manifested in the act of joining. You are unable to migrate later :(
+
+:::tip How to charge your clients 
+
+We recommend our customers to use the prepaid model in their solutions as we do not work on a pro rata basis.
 
 :::
 
-:::caution Atenção
+:::caution Attention 
 
-Após aderir ao plano de parceria você deverá criar instâncias unica e exclusivamente via API, as instâncias criadas no painel admin não serão ativadas.
+After joining the partnership plan you will have to create instances only and exclusively via API, the instances created in the admin panel will not be activated.
 
 :::

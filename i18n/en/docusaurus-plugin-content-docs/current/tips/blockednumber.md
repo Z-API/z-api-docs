@@ -1,54 +1,70 @@
 ---
 id: blockednumber
-title: Bloqueios e Banimentos
+title: Blocks and bans 
 ---
 
-:::caution Existe alguma possibilidade do Whatsapp bloquear meu número?
+:::caution Are there any possibilities that WhatsApp will block my number? 
 
-**SIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM**
+**YEAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH THERE SURE IS.**
 
 :::
 
 ---
 
-## Introdução
+## Introduction
 
-### Boas práticas!
+### Good practices! 
 
-Criamos este tópico para compartilhar um pouco de tudo que aprendemos sobre boas práticas afim de evitar aborrecimentos com bloqueios e banimentos no Whatsapp.
 
-Gostaria de iniciar fazendo a seguinte reflexão com você, é bem provavel que você receba diariamente vários SMSs com publicidades de lojas, promoções, operadoras de telefonia e por aí vai. Agora pense, e pelo Whatsapp quantas mensagens deste tipo você recebe? Provavelmente nenhuma ou pouquíssimas não é mesmo? Mesmo assim caso você receba o Whatsapp permite você marcar como spam e até mesmo bloquear o contato.
+We created this topic to share a little bit of what we learned about good practices with the intention of avoiding the nuisance of being blocked or banned on WhatsApp.
 
-# O WHATSAPP NÃO PERMITE SPAM!
 
-O Whatsapp é muito rigoroso quando o assunto é envio de spam e por isso damos mais atenção para ele do que para o SMS. Por que deixamos vários SMSs acumularem e não conseguimos deixar de olhar para o celular imediatamente ao receber um Whatsapp? Pois sabemos que recebemos um Whatsapp de algum contato conhecido e raramente recebemos promoções pelo mesmo.
+
+We would like to start by sharing the following reflection with you, it is very probable that you receive various messages in a day, those being sent by stores, promotions, telemarketers and so on. Now think, just through WhatsApp how many of those messages do you recieve? Probably none or very few isn’t that true? Even with that being the case WhatsApp allows you to mark those messages as spam and lets you block those numbers and contacts. 
+
+
+
+# WHATSAPP DOESN'T ALLOW SPAM
+
+
+WhatsApp is very rigorous when the topic is about sending spam and that is why we pay more attention to them than regular SMS messages. Why is it that we let various texts accumulate and yet we just can’t keep ourselves from looking at our phone when someone sends us a WhatsApp? Because we know that we rarely receive spam on WhatsApp and we know it will most likely be someone that we know trying to get into contact and rarely does someone we know send us promotions or things alike.
+
 
 ---
 
-## Quantas mensagens posso enviar?
+## How many messages can i send?
 
-Quantidade é algo importante sim, mas não é só sobre a quantidade enviada, o fator _PARA QUEM_ muitas vezes é o ponto chave.
 
-Sempre em nossas conversas utilizamos o case de um dos nossos clientes mais antigos, que hoje envia mensagens promocionais pelo Whatsapp para mais de 80 mil pessoas diariamente e nunca teve seu número bloqueado. Quando o procuramos e indagamos sobre como ele conseguia tal façanha, ele gentilmente compartilhou a seguinte técnica:
+Quantity is something very important, however it is not about how many messages you can send. The key is all about _WHO CAN I_ send many messages to 
 
-- Primeiro: Para receber mensagem com promoções o destinatário precisa adicionar o número da empresa nos contatos e enviar uma mensagem dizendo "quero promoções". Esta simples ação diminui significantemente o risco de bloqueios, pois com o seu número na agenda e iniciando a conversa os botões de bloqueio e denúncia de spam não aparecem;
 
-- Segundo: Ele personaliza as mensagens com dados do destinatário, para que todas mensagens não fiquem exatamente iguais;
+We always use the same case of the oldest client we have, Who today sends promotional messages to more than 80 thousand people daily and has never had his number blocked. When we talked to him and asked about how he was pulling this off, he kindly shared the following techniques: 
 
-- Terceiro: sempre dê uma opção para o destinatário deixar de receber as mensagens. Exemplo: "Digite 2 para não receber mais estas mensagens", com isso ele monitora os webhooks para retirar os números que não querem mais receber da lista de envios.
 
-- Quarto: Ele faz disparos por listas de transmissão, pois em listas de transmissão só recebem as suas mensagens destinatário que possuem o seu número nos contatos, logo ele não vai ter a opção de bloquear ou marcar como spam.
+
+
+- First: To receive messages about promotions the recipient needs to add the company’s number as one of their contacts and send them a message saying “i want promotions”. This simple actions significantly lowers the chances of being blocked because with his number in our agenda and starting the conversation the buttons displayed for blocking and  marking as spam do not show; 
+
+
+- Second: He personalizes the texts with information from the recipient, so the messages won’t be exactly the same;
+
+- Third: Always give them an option to stop receiving the messages. Example: “type 2 to stop receiving messages”. With this he monitors the webhooks making sure he takes out any of the numbers that do not wish to receive anymore messages. 
+
+- Fourth: He only sends messages through his broadcast list  
 
 **Resumo**
 
-- Evite enviar mensagens para quem não tem seu número nos contatos;
+- Avoid sending messages to people who aren’t in your contacts list.
 
-- Personalize as mensagens com informações do destinatário. Se não for possível, use atributos aleatórios para diferenciar cada mensagem;
+- Personalize messages with information from your recipient. In case that is not possible, use random attributes to make each message different. 
 
-- Tente convencer o destinatário a interagir com seu número, principalmente se você souber que ele não possui seu número na agenda;
+- try to convince the recipient to interact with your number. Especially if you know he doesn't have your number saved in his contacts list.
 
-- Ofereça a opção do destinatário não receber mais mensagens e monitore os webhooks para tratar essas interações, se for possível dispare por lista de transmissão. (Nosso serviço não tem acesso aos seus contatos, então não é possível criar listas de transmissão pela nossa API).
+- Offer an option for them to not receive anymore messages and monitor your webhooks to be able to treat those interactions and..
+                                                                                                                                                     
+- If possible only send messages through your broadcast list.
 
-:::warning Cuidado
 
-Se 3% dos destinatários marcarem sua mensagem como spam seu número será banido!
+:::warning Warning
+
+If only 3% of your recipients mark your messages as spam your number will be banned!!!

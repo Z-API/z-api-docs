@@ -1,9 +1,9 @@
 ---
 id: update-group-photo
-title: Atualizar imagem do grupo
+title: Update group image 
 ---
 
-## Método
+## Method 
 
 #### /update-group-photo
 
@@ -11,30 +11,30 @@ title: Atualizar imagem do grupo
 
 ---
 
-## Conceituação
+## Concept 
 
-Este método é reponsavel alterar a imagem de um grupo já existente.
+This method is reponsibible for changing a group image that already exists
 
-:::caution Atenção
+:::caution Attention
 
-No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+On November 4, 2021 whatsapp changed the format of creating new groups. before: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
 
 :::
 
 ---
 
-## Atributos
+## Atributes
 
-### Obrigatórios
+### Mandatory
 
-| Atributos  |  Tipo  | Descrição               |
+| Attributes |  Type  | Description             |
 | :--------- | :----: | :---------------------- |
-| groupId    | string | ID/Fone do grupo        |
-| groupPhoto | string | Url ou Base64 da imagem |
+| groupId    | string | Group ID/phone          |
+| groupPhoto | string | Image’s url or base64   |
 
-### Opcionais
+### Optionals 
 
-| Atributos | Tipo | Descrição |
+| Attributes| Type | Description|
 | :-------- | :--: | :-------- |
 
 ---
@@ -43,7 +43,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 #### URL
 
-Método
+Method
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-photo
 
@@ -56,9 +56,9 @@ Método
 }
 ```
 
-:::tip Enviar imagem Base64
+:::tip Send Base64 image 
 
-Se você tem duvidas em como enviar uma imagem Base64 acesse o tópico mensagens "Enviar Imagem", lá você vai encontrar tudo que precisa saber sobre envio neste formato.
+If you have doubts about how to send a Base64 image, access the "Send Image" message topic, there you will find everything you need to know about sending in this format.
 
 :::
 
@@ -68,11 +68,11 @@ Se você tem duvidas em como enviar uma imagem Base64 acesse o tópico mensagens
 
 ### 200
 
-| Atributos | Tipo    | Descrição                                           |
+| Attributes| Type    | Description                                         |
 | :-------- | :------ | :-------------------------------------------------- |
-| value     | boolean | true caso tenha dado certo e false em caso de falha |
+| value     | boolean | true if it worked and false if it failed |
 
-Exemplo
+Example
 
 ```json
 {
@@ -82,17 +82,17 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
+Link to webhook response (on receipt)
 
 [Webhook](../webhooks/on-message-received#response)
 

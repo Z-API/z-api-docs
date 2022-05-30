@@ -1,9 +1,9 @@
 ---
 id: restart
-title: Reiniciar instância
+title: Restarting instance
 ---
 
-## Método
+## Method 
 
 #### /restart
 
@@ -11,13 +11,13 @@ title: Reiniciar instância
 
 ---
 
-## Conceituação
+## Concept
 
-Se você como todo bom Dev pulou a introdução e ainda não tem bem claro o conceito de instância, sugiro fortemente que você dê um passo atrás e leia a introdução deste tópico.
+If you like every good dev, skipped the introduction and still doesn’t have a clear concept of instance. I strongly suggest that you take a step back and read this topic's introduction.
 
-Pronto, agora que você já sabe o que é uma instância fica bem mais fácil de explicar :)
+Okay, now that you know what an instance is, it’s much easier to explain :)
 
-Este método basicamente é o botão "Reiniciar" do seu sistema operacional ou seja, como todo usuário expert, em casos onde tudo parece dar errado tente control+alt+del ou reinicia!
+This method is basically a “restart” button for your operating system. Like every expert user, if everything goes wrong you can use CTRL+ALT+DEL.
 
 ---
 
@@ -33,11 +33,11 @@ Este método basicamente é o botão "Reiniciar" do seu sistema operacional ou s
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
 
 ---
 
@@ -47,4 +47,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 :::note
 
-Não! Você não precisa ler o QRCode se reiniciar a sua instância.
+No! You don’t need to read the QRCode if you restart your session.

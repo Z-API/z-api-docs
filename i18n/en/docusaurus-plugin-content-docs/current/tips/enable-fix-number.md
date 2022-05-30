@@ -1,15 +1,16 @@
 ---
 id: enable-fix-number
-title: Habilitando um número fixo
+title: Enabling a fixed number
 ---
 
-## Introdução
+## Introduction 
 
-Para habilitar um número fixo, você vai precisar ter um aparelho celular para hospedar seu número fixo. (esta opção fica disponível no Whatsapp Business). No passo a passo que criamos utilizamos um celular com Android.
+To enable a fixed number, you need to have a cellphone in order to host your fixed number. (This option is available for WhatsApp business). In this step by step guide that we created we used an Android. 
 
-### Primeiro passo
 
-Baixe o aplicativo Whatsapp Business em um celular
+### First step
+
+Download the app “WhatsApp business” on your phone.
 
 [Android]
 
@@ -18,30 +19,33 @@ Baixe o aplicativo Whatsapp Business em um celular
 [android]: https://play.google.com/store/apps/details?id=com.whatsapp.w4b&hl=pt_BR&gl=US
 [ios]: https://apps.apple.com/us/app/whatsapp-business/id1386412985
 
-![img](../../../../../img/WAB.jpeg)
+
+![img](../../../../../img/WhatsAppOne.jpeg)
 
 ---
 
-### Segundo passo
+### Second step 
 
-O WhatsApp Business vai pedir autorização para acessar os arquivos do celular, escolha a opção continuar para liberar o acesso. Na tela seguinte, escolha o país e informe o número do seu telefone fixo.
+WhatsApp business will ask for your permission to access the files on your phone, choose the continue option to allow them to do so. On the following screen, choose your country and enter your fixed number. 
 
-![img](../../../../../img/WABTermos.png)
+![img](../../../../../img/WhatsAppSecond.jpeg)
 
----
 
-### Terceiro passo
-
-Você receberá um código, mas como não é possível receber um SMS em um telefone fixo, aguarde até que a contagem e escolha a opção **Me ligue**.
-
-E pronto você receberá uma ligação do WhatsApp Business que falará o código de ativação, aí é só digitar no campo indicado ;)
-
-![img](../../../../../img/WABCodigo.png)
 
 ---
 
-### Quarto passo
+### Third step
 
-Seja Feliz!
 
-Faça as configurações no app Whatsapp Bussines e leia o QrCode Z-API para dar Asas para sua imaginação!
+You will receive a code, however since you can't receive texts on a fixed number, wait until the timer counts down and gives you the **call me** option.
+
+
+
+
+![img](../../../../../img/WhatsAppThird.jpg)
+---
+
+### Fourth step
+Be happy!
+
+Make any alterations to your settings on WhatsApp business and read Z-API’s QrCode to give wings to your imagination !

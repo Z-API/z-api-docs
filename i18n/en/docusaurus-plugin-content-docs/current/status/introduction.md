@@ -1,11 +1,11 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction
 ---
 
-### Conceituação
+### Concept
 
-Tópico dificil este rsrsr, talvez por nunca ter utilizado o recurso eu nunca percebi muito valor nele, também não olho muito os status das pessoas talvez por utlizar o Whatsapp apenas para comunicação, mas enfim o recurso esta disponivel e cada um usa da forma que achar melhor. Se você como eu mal conhece este recurso ele fica "perdidinho" em uma aba entre Conversas e Chamadas, abaixo vou listar algumas imagens que explicam, segundo o proprio Whatsappp o para que serve o recurso
+This is a difficult topic lol, maybe because I've never used this feature all that much I never noticed it's worth it. I also don’t really look at people's status since I only use Whatsapp as a means of communication but anyways this feature is available to anyone to be able to use however they see fit. If you, like me, barely know this feature, it is "lost" in a tab between Conversations and Calls, below I will list some images that explain, according to Whatsappp itself, what the feature is for
 
 ![img](../../../../../img/Status1.jpeg)
 
