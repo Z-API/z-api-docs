@@ -1,23 +1,23 @@
 ---
-id: mention-participant 
-title: Mencionar membro
+id: forward-message
+title: Reencaminhar mensagem
 ---
 
 ## Método
 
-#### /send-text
+#### /forward-message
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text
+
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/forward-message
 
 ---
 
 ## Conceituação
 
-Este método é responsável por fazer a menção dos participantes em um grupo. 
+Simples e objetivo, neste método você poderá reencaminhar as mensagens através da api precisando apenas do messageId da mensagem que deseja encaminhar, e o phone do chat onde esse messageId se encontra.
 
 
-
-![image](../../img/mentioned-participant.jpeg)
+![image](../../img/reencaminhar.jpeg)
 
 ---
 
@@ -28,8 +28,8 @@ Este método é responsável por fazer a menção dos participantes em um grupo.
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| message | string | Texto a ser enviado. Deve conter o @ com o numero |
-| mentioned | string | Numero a ser mencionado |
+| messageId | string | ID da mensagem que vai ser reencaminhada |
+| messagePhone | string | Número do chat onde o messageId se encontra |
 
 ### Opcionais
 
@@ -44,8 +44,8 @@ Este método é responsável por fazer a menção dos participantes em um grupo.
 ```json
 {
   "phone": "5511999999999",
-  "message": "Welcome to *Z-API group* @numero",
-  "mentioned": [numero]
+  "messageId": "3999984263738042930CD6ECDE9VDWSA",
+  "messagePhone": "5511888888888"
 }
 ```
 
@@ -58,14 +58,12 @@ Este método é responsável por fazer a menção dos participantes em um grupo.
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
 
 Exemplo
 
 ```json
 {
-  "zaapId": "3999984263738042930CD6ECDE9VDWSA",
-  "messageId": "D241XXXX732339502B68"
+  "zaapId": "3999984263738042930CD6ECDE9VDWSA"
 }
 ```
 

@@ -34,6 +34,7 @@ module.exports = {
     Messages: [
       'message/introduction',
       'message/send-message-text',
+      'message/forward-message',
       'message/send-message-reaction',
       'message/send-remove-reaction',
       'message/send-message-image',
