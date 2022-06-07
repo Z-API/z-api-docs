@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-photo",
+    "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-group-photo",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [
@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"groupID\": \"ID do Grupo\", \"groupPhoto\": \"Url ou Base64 da foto\"}"
+        "text": "{\"groupID\": \"ID do Grupo\", \"groupPhoto\": \"URL or Base64 of the photo\"}"
     }
 }

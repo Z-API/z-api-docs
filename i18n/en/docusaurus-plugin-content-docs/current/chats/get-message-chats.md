@@ -7,7 +7,7 @@ title: Get messages from chat
 
 #### /chat-messages/{phone}
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat-messages/{phone}
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chat-messages/{phone}
 
 ---
 
@@ -41,7 +41,7 @@ This method is responsible for returning all conversations in a chat.
 
 Method
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat-messages/{phone}
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chat-messages/{phone}
 
 ---
 
@@ -75,7 +75,7 @@ JSON follows the sequence as shown below.
     "fromMe": false,
     "momment": 1623008318000,
     "status": "RECEIVED",
-    "chatName": "Z-API Suporte",
+    "chatName": "Z-API Support",
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "senderName": "5511999999999",
     "participantPhone": null,
@@ -92,9 +92,9 @@ JSON follows the sequence as shown below.
     "fromMe": false,
     "momment": 1623008355000,
     "status": "RECEIVED",
-    "chatName": "Z-API Suporte",
+    "chatName": "Z-API Support",
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-    "senderName": "Z-API Suporte",
+    "senderName": "Z-API Support",
     "participantPhone": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
@@ -102,7 +102,7 @@ JSON follows the sequence as shown below.
       "mimeType": "image/jpeg",
       "imageUrl": "https://storage.z-api.io/instances/399793F5C962B0F227576EA28507E212/3EB09E1F42DCBF393D27.jpeg",
       "thumbnailUrl": "https://storage.z-api.io/instances/399793F5C962B0F227576EA28507E212/3EB09E1F42DCBF393D27.jpeg",
-      "caption": "Uma imagem com texto"
+      "caption": "An image with text"
     }
   },
   {
@@ -112,18 +112,18 @@ JSON follows the sequence as shown below.
     "fromMe": false,
     "momment": 1623008445000,
     "status": "RECEIVED",
-    "chatName": "Z-API Suporte",
+    "chatName": "Z-API Support",
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-    "senderName": "Z-API Suporte",
+    "senderName": "Z-API Support",
     "participantPhone": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "document": {
       "documentUrl": "https://storage.z-api.io/instances/399793F5C962B0F227576EA28507E212/3EB0282CF7A8FE6E3404.pdf",
       "mimeType": "application/pdf",
-      "title": "Personalidade “Virtuoso” (ISTP-A _ ISTP-T) _ 16Personalities.pdf",
+      "title": " Virtuous personality” (ISTP-A _ ISTP-T) _ 16Personalities.pdf",
       "pageCount": 5,
-      "fileName": "Personalidade “Virtuoso” (ISTP-A _ ISTP-T) _ 16Personalities.pdf"
+      "fileName": " Virtous personality” (ISTP-A _ ISTP-T) _ 16Personalities.pdf"
     }
   },
   {
@@ -133,15 +133,15 @@ JSON follows the sequence as shown below.
     "fromMe": false,
     "momment": 1623008464000,
     "status": "RECEIVED",
-    "chatName": "Z-API Suporte",
+    "chatName": "Z-API Support",
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-    "senderName": "Z-API Suporte",
+    "senderName": "Z-API Support",
     "participantPhone": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "contact": {
-      "displayName": "Z-api - Atendimento",
-      "vCard": "BEGIN:VCARD\nVERSION:3.0\nN:;Z-api - Atendimento;;;\nFN:Z-api - Atendimento\nTEL;type=CELL;waid=554498398733:+55 44 9839-8733\nX-WA-BIZ-NAME:Z-api - Atendimento\nX-WA-BIZ-DESCRIPTION:Whatsapp para programadores!\nEND:VCARD",
+      "displayName": "Z-api - Service",
+      "vCard": "BEGIN:VCARD\nVERSION:3.0\nN:;Z-api - Service;;;\nFN:Z-api - Service\nTEL;type=CELL;waid=554498398733:+55 44 9839-8733\nX-WA-BIZ-NAME:Z-api - Atendimento\nX-WA-BIZ-DESCRIPTION:Whatsapp for programmers!\nEND:VCARD",
       "phones": ["5511999999999"]
     }
   },
@@ -152,9 +152,9 @@ JSON follows the sequence as shown below.
     "fromMe": false,
     "momment": 1623008479000,
     "status": "RECEIVED",
-    "chatName": "Z-API Suporte",
+    "chatName": "Z-API Support",
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-    "senderName": "Z-API Suporte",
+    "senderName": "Z-API Support",
     "participantPhone": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
@@ -169,9 +169,9 @@ JSON follows the sequence as shown below.
     "fromMe": false,
     "momment": 1623008501000,
     "status": "RECEIVED",
-    "chatName": "Z-API Suporte",
+    "chatName": "Z-API Support",
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-    "senderName": "Z-API Suporte",
+    "senderName": "Z-API Support",
     "participantPhone": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
@@ -179,7 +179,7 @@ JSON follows the sequence as shown below.
       "message": "https://www.z-api.io/",
       "url": "https://www.z-api.io/",
       "urlDescription": null,
-      "urlTitle": "Whatsapp API: Integre sua empresa | Z-API",
+      "urlTitle": "Whatsapp API: Integrate your business | Z-API",
       "isCatalog": false
     }
   }

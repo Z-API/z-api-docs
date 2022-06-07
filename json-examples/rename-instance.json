@@ -10,7 +10,7 @@
         },
         {   
             "name": "Authorization",
-            "value": "Bearer SEU-TOKEN-AQUI"
+            "value": "Bearer YOUR-TOKEN-HERE"
         }
     ],
     "cookies": [],

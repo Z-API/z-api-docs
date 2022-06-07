@@ -7,7 +7,7 @@ title: Deleting a queue
 
 #### /queue
 
-`DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
+`DELETE` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue
 
 ## Concept
 
@@ -33,11 +33,11 @@ This method is responsible for DELETING all messages that are in your queue wait
 
 ## Request Params
 
-#### URL exemplo
+#### URL example
 
 Method 
 
-`DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
+`DELETE` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue
 
 ---
 

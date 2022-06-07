@@ -7,7 +7,7 @@ title: Sending options list
 
 #### /send-option-list
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-option-list
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-option-list
 
 ---
 
@@ -35,7 +35,7 @@ In this method you will be able to send text messages with a list of options whe
 | :-- | :-: | :-- |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
 
-### Option List
+### Options List
 
 | Attributes   |  Type  | Description                       |
 | :---------- | :----: | :------------------------------ |
@@ -43,14 +43,14 @@ In this method you will be able to send text messages with a list of options whe
 | buttonLabel | string | Button text that opens the list|
 | options     | option | Options list                |
 
-### Option
+### Options
 
 | Attributes   |  Type  | Description          |
 | :---------- | :----: | :----------------- |
 | description | string | Option’s description |
 | title       | string | Options title   |
 
-### Opcionais Button
+### Button optionals
 
 | Attributes |  Type | Description            |
 | :-------- | :----: | :--------------------- |
@@ -63,20 +63,20 @@ In this method you will be able to send text messages with a list of options whe
 ```json
 {
   "phone": "5511999999999",
-  "message": "Selecione e melhor opção:",
+  "message": "Choose the best option:",
   "optionList": {
-    "title": "Opções disponíveis",
-    "buttonLabel": "Abrir lista de opções",
+    "title": "Available options",
+    "buttonLabel": "Open options list",
     "options": [
       {
         "id": "1",
-        "description": "Z-API Asas para sua imaginação",
+        "description": "Z-API Wings for your imagination",
         "title": "Z-API"
       },
       {
         "id": "2",
-        "description": "Não funcionam",
-        "title": "Outros"
+        "description": "Doesnt't work",
+        "title": "Others"
       }
     ]
   }
@@ -117,7 +117,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto-lista-de-opcão)
+[Webhook](../webhooks/on-message-received#example-of-an-options-list-return)
 
 ---
 

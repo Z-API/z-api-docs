@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-document/pdf",
+    "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-document/pdf",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [
@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"phone\": \"5511999998888\", \"document\": \"https://expoforest.com.br/wp-content/uploads/2017/05/exemplo.pdf\", \"fileName\": \"Meu PDF\"}"
+        "text": "{\"phone\": \"5511999998888\", \"document\": \"https://expoforest.com.br/wp-content/uploads/2017/05/exemplo.pdf\", \"fileName\": \"My PDF\"}"
     }
 }

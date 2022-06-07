@@ -7,7 +7,7 @@ title: Send contact
 
 #### /send-contact
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-contact
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-contact
 
 ---
 
@@ -45,7 +45,7 @@ Simple and object, this method allows you to send a contact. You don't need to h
 ```json
 {
   "phone": "5511999999999",
-  "contactName": "Z-API Contato",
+  "contactName": "Z-API Contact",
   "contactPhone": "554498398733"
 }
 ```
@@ -84,7 +84,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-contato)
+[Webhook](../webhooks/on-message-received#example-of-contact-return)
 
 ---
 

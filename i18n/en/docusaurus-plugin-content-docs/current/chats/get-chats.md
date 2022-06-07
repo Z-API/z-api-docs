@@ -7,7 +7,7 @@ title: Get chats
 
 #### /chats
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chats
 
 ---
 
@@ -26,7 +26,7 @@ This method is responsible for returning all of your chats
 | page | integer | Used for pagination, you must inform the page of chats you want to search. |
 | pageSize | integer | Specifies the size of the return chats  per page |
 
-### Opcionais
+### Optionals
 
 | Attributes | Type | Description |
 | :-------- | :--: | :-------- |
@@ -40,7 +40,7 @@ This method is responsible for returning all of your chats
 
 Method 
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chats
 
 ---
 
@@ -64,7 +64,7 @@ Example
 ```json
 [
   {
-    "name": "Z-API SUPORTE",
+    "name": "Z-API SUPPORT",
     "phone": "5511999999999",
     "unread": "0",
     "lastMessageTime": "1622991687",

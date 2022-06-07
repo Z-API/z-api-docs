@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-contact",
+    "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-contact",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [
@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"phone\": \"5511999998888\", \"contactName\": \"Nome do contato\", \"contactPhone\": \"5511999999999\", \"contactBusinessDescription\": \"Breve descricao do contato\"}"
+        "text": "{\"phone\": \"5511999998888\", \"contactName\": \"Contact's name\", \"contactPhone\": \"5511999999999\", \"contactBusinessDescription\": \"Brief contact description\"}"
     }
 }

@@ -1,13 +1,13 @@
 ---
 id: add-participant
-title: Adding partocipants
+title: Adding participants
 ---
 
 ## Method
 
 #### /add-participant
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-participant
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/add-participant
 
 ## Concept
 
@@ -41,7 +41,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-participant
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/add-participant
 
 #### Body
 

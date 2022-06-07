@@ -22,7 +22,7 @@ Talking about IDs, we strongly recommend that you store in your application the 
 ```json
 {
   "zaapId": "3999984263738042930CD6ECDE9VDWSA",
-  "messageId": "D241XXXX732339502B68" // salve este ID
+  "messageId": "D241XXXX732339502B68" // Save this ID
 }
 ```
 

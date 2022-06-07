@@ -23,13 +23,13 @@ To update the webhook route, you can do it through the API or through the admin 
 
 #### /update-webhook-status
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-message-status
+`PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-webhook-message-status
 
 #### Request Body
 
 ```json
 {
-  "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/status"
+  "value": "https://your-systems-address.com.br/instancia/YOUR_INSTANCE/status"
 }
 ```
 

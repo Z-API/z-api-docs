@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-settings",
+    "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-group-settings",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [

@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/on-message-received",
+  "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/on-message-received",
   "httpVersion": "HTTP/1.1",
   "queryString": [],
   "headers": [
@@ -12,6 +12,6 @@
   "cookies": [],
   "postData": {
     "mimeType": "application/json",
-    "text": "{\"value\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/delivery\"}"
+    "text": "{\"value\": \"https://your-systems-address.com/instance/YOUR_INSTANCE/delivery\"}"
   }
 }

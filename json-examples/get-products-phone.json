@@ -1,6 +1,6 @@
 {
   "method": "GET",
-  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalogs/{{numero-de-telefone}}",
+  "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/catalogs/{{telephone-number}}",
   "httpVersion": "HTTP/1.1",
   "queryString": [],
   "headers": [

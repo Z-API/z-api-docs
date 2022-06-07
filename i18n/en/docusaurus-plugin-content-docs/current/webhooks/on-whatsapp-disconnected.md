@@ -23,13 +23,13 @@ To update the webhook route, you can do it through the API or through the admin 
 
 #### /update-webhook-disconnected
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-disconnected
+`PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-webhook-disconnected
 
 #### Request Body
 
 ```json
 {
-  "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/disconnected"
+  "value": "https://your-systems-address.com/instance/YOUR_INSTANCE/disconnected"
 }
 ```
 

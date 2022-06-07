@@ -7,7 +7,7 @@ title: Send texts with buttons
 
 #### /send-button-list
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-button-list
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-button-list
 
 ---
 
@@ -47,7 +47,7 @@ In this method you will be able to send text messages with action buttons. Butto
 | :-------- | :----: | :----------------- |
 | label     | string | Text for the button |
 
-### Opcionais Button
+### Button optionals
 
 | Attributes |  Type  | Description              |
 | :-------- | :----: | :--------------------- |
@@ -60,16 +60,16 @@ In this method you will be able to send text messages with action buttons. Butto
 ```json
 {
   "phone": "5511999999999",
-  "message": "Z-API é Bom ?",
+  "message": "Is Z-API Good ?",
   "buttonList": {
     "buttons": [
       {
         "id": "1",
-        "label": "Ótimo"
+        "label": "GREAT"
       },
       {
         "id": "2",
-        "label": "Excelente"
+        "label": "EXCELLENT"
       }
     ]
   }
@@ -110,7 +110,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto-lista-de-botão)
+[Webhook](../webhooks/on-message-received#example-of-button-list-return)
 
 ---
 

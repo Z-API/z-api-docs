@@ -2,7 +2,7 @@
 id: create-instance
 title: Creating an instance
 ---
-## Método
+## Method
 
 #### /on-demand
 
@@ -61,13 +61,13 @@ If you do not subscribe within 2 days, our devops will automatically delete the 
 
 ```json
 {
-  "name": "Instancia Z-API - 9292812",
+  "name": "Instance Z-API - 9292812",
   "sessionName": "Tests tests",
-  "deliveryCallbackUrl": "https://meuwebhook.com.br/delivery",
-  "receivedCallbackUrl": "https://meuwebhook.com.br/receive",
-  "disconnectedCallbackUrl": "https://meuwebhook.com.br/disconnected",
-  "connectedCallbackUrl": "https://meuwebhook.com.br/connected",
-  "messageStatusCallbackUrl": "https://meuwebhook.com.br/status"
+  "deliveryCallbackUrl": "https://mywebhook.com.br/delivery",
+  "receivedCallbackUrl": "https://mywebhook.com.br/receive",
+  "disconnectedCallbackUrl": "https://mywebhook.com.br/disconnected",
+  "connectedCallbackUrl": "https://mywebhook.com.br/connected",
+  "messageStatusCallbackUrl": "https://mywebhook.com.br/status"
 }
 ```
 

@@ -52,7 +52,7 @@ We always use the same case of the oldest client we have, Who today sends promot
 
 - Fourth: He only sends messages through his broadcast list  
 
-**Resumo**
+**Summary**
 
 - Avoid sending messages to people who aren’t in your contacts list.
 

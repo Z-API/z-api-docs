@@ -5,9 +5,9 @@ title: Get product (ID)
 
 ## Method
 
-#### /products/id-do-produto
+#### /products/product-ID
 
-`GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/products/{{Id-do-produto}}
+`GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/products/{{product-ID}}
 
 ---
 

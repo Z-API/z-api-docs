@@ -7,7 +7,7 @@ title: Sending image status
 
 #### /send-image-status
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-image-status
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-image-status
 
 ---
 
@@ -25,7 +25,7 @@ Method responsible for sending an image to your status, remember that statuses d
 | :-------- | :----: | :--------------------------- |
 | image     | String | Images link or Base64 |
 
-### Opcionais
+### Optionals
 
 | Attributes | Type | Description |
 | :-------- | :--: | :-------- |
@@ -39,7 +39,7 @@ Method responsible for sending an image to your status, remember that statuses d
 
 Method
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-image-status
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-image-status
 
 #### Body
 
@@ -61,12 +61,12 @@ If you have doubts about how to send a Base64 image, access the "Send Image" mes
 
 ### 200
 
-| Attributos| Type   | Description      |
+| Attributes| Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
 | messageId | string | id on whatsapp |
 
-Exemplo
+Example
 
 ```json
 {

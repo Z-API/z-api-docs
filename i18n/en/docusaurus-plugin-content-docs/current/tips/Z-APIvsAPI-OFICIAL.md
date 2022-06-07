@@ -3,7 +3,8 @@ id: Z-APIvsAPI-OFICIAL
 title: Z-API vs API Oficial
 ---
 
-## As Diferenças do Z-API e o WhatsApp Business API.
+## The differences between Z-API and Whatsapp Business API 
+
 
 Which is best for you for you? 
 

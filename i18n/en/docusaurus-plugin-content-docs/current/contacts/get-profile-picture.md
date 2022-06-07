@@ -1,13 +1,13 @@
 ---
 id: get-profile-picture
-title: Get contact image 
+title: Get contact profile picture 
 ---
 
 ## Method 
 
 #### /profile-picture
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/profile-picture
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/profile-picture
 
 ---
 
@@ -44,7 +44,7 @@ If you intend to store your contact's image, please note that we always return i
 
 Method
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/profile-picture?phone=551199999999
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/profile-picture?phone=551199999999
 
 ---
 

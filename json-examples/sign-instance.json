@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/{SEU_TOKEN}/integrator/on-demand/subscription",
+    "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/{YOUR_TOKEN}/integrator/on-demand/subscription",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [
@@ -10,7 +10,7 @@
         },
         {   
             "name": "Authorization",
-            "value": "Bearer SEU-TOKEN-AQUI"
+            "value": "Bearer YOUR-TOKEN-HERE"
         }
     ],
     "cookies": [],

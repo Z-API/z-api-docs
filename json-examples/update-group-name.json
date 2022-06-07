@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-name",
+    "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-group-name",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [
@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"groupName\": \"Novo nonme Z-API\", \"groupId\": \"5511999999999\"}"
+        "text": "{\"groupName\": \"New name on Z-API\", \"groupId\": \"5511999999999\"}"
     }
 }

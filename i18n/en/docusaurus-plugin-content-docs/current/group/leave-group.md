@@ -7,7 +7,7 @@ title: Leave group
 ## Method
 #### /leave-group
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/leave-group
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/leave-group
 
 ## Concept
 
@@ -29,7 +29,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 | :-------- | :----: | :--------------- |
 | groupId   | string | Groups ID/phone |
 
-### Opcionais
+### Optionals
 
 | Attributes| Type | Description |
 | :-------- | :--: | :-------- |
@@ -40,7 +40,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/leave-group
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/leave-group
 
 #### Body
 

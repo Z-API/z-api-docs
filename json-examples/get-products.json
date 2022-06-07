@@ -1,6 +1,6 @@
 {
   "method": "GET",
-  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalogs",
+  "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/catalogs",
   "httpVersion": "HTTP/1.1",
   "queryString": [],
   "headers": [

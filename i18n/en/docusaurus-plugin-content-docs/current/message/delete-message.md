@@ -7,7 +7,7 @@ title: Deleting messages
 
 #### /messages
 
-`DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/messages
+`DELETE` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/messages
 
 ---
 
@@ -45,7 +45,7 @@ Method
 
 `DELETE`
 
-https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/messages?messageId=123&phone=5511999998888&owner=true
+https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/messages?messageId=123&phone=5511999998888&owner=true
 
 ---
 

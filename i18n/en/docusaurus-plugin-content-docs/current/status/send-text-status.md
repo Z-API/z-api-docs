@@ -1,13 +1,13 @@
 ---
 id: send-text-status
-title: Sending status text 
+title: Sending text status 
 ---
 
 ## Method
 
 #### /send-text-status
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text-status
+`POST` https://api.z-api.io/instances/YOUR_INSTANCIA/token/YOUR_TOKEN/send-text-status
 
 ---
 
@@ -27,7 +27,7 @@ You can post texts in your status and this method is responsible for that, remem
 
 ---
 
-### Opcionais
+### Optionals 
 
 | Attributes | Type | Description |
 | :-------- | :--: | :-------- |
@@ -41,7 +41,7 @@ You can post texts in your status and this method is responsible for that, remem
 
 Method
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text-status
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-text-status
 
 #### Body
 

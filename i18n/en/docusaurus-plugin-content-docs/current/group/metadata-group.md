@@ -8,7 +8,7 @@ title: Group metadata
 
 #### /group-metadata
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/group-metadata
 
 ## Concept
 
@@ -41,7 +41,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata/{phone}
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/group-metadata/{phone}
 
 ---
 
@@ -129,6 +129,7 @@ In this case certify that you are sending the correct specification of the metho
 ### 415
 
 In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
+
 ---
 
 ## Code

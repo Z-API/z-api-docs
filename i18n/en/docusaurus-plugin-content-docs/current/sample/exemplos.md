@@ -3,9 +3,9 @@ id: exemplos
 title: Style Guide
 ---
 
-TEMPO DE ENVIO de msg
+Message send time
 
-NOS WEBHOOKD LEMBRAR DO REFERENCEDID webhook de contatos catalos etc
+On the webhook remember referenceID.
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 

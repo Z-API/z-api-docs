@@ -7,7 +7,7 @@ title: Sending plain text
 
 #### /send-text
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-text
 
 ---
 

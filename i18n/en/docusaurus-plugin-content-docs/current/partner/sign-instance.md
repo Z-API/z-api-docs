@@ -43,7 +43,7 @@ You will only be able to subscribe to instances created via API with this method
 
 **Method**
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/{SEU_TOKEN}/integrator/on-demand/subscription
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/{YOUR_TOKEN}/integrator/on-demand/subscription
 
 ---
 

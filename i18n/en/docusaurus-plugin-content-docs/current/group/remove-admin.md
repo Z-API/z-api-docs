@@ -7,7 +7,7 @@ title: Remove admin from group
 
 #### /remove-admin
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remove-admin
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/remove-admin
 
 ## Concept
 
@@ -41,7 +41,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remove-admin
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/remove-admin
 
 #### Body
 

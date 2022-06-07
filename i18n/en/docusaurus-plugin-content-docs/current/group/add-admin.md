@@ -8,7 +8,7 @@ title: Promote group admin
 
 #### /add-admin
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-admin
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/add-admin
 
 ## Concept
 
@@ -42,7 +42,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-admin
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/add-admin
 
 #### Body
 

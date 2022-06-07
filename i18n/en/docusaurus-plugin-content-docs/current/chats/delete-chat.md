@@ -7,7 +7,7 @@ title: Delete chats
 
 #### /modify-chat
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/modify-chat
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/modify-chat
 
 ---
 

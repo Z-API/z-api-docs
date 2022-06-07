@@ -8,7 +8,7 @@ title: Group Metadata by invite
 
 #### /group-invitation-metadata
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={ URL }
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/group-invitation-metadata?url={ URL }
 
 ## Concept
 
@@ -36,7 +36,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 Array String (participants)
 
-| Atributos    | Tipo   | Descrição                                         |
+| Attributes   | Type   | Description                                      |
 | :----------- | :----- | :------------------------------------------------ |
 | phone        | string | Participants phone                                |
 | isAdmin      | string | Indicates if the participant is the group’s admin |
@@ -53,7 +53,7 @@ Old way -
   {
     "phone": "5511999999999-1623281429",
     "owner": "5511999999999",
-    "subject": "My group on whatsapp",
+    "subject": "My group on Whatsapp",
     "creation": 1588721491000,
     "participants": [
       {

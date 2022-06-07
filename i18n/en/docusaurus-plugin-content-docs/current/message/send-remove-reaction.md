@@ -7,7 +7,7 @@ title: Remove reaction
 
 #### /send-remove-reaction
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-remove-reaction
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-remove-reaction
 
 ---
 
@@ -42,7 +42,7 @@ In this method you will remove the reaction from sent or received messages. You 
 
 ```json
 {
-  "phone": "PHONE DO CHAT",
+  "phone": "CHAT PHONE",
   "messageId": "messages that will be removed"
 }
 ```

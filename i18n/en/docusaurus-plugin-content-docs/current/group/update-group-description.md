@@ -7,7 +7,7 @@ title: Edit description
 
 #### /update-group-description
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-description
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-group-description
 
 ## Concept
 
@@ -45,7 +45,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 Old way -
   {
     "groupId": "5511999999999-1623281429",
-    "groupDescription": "descrição do grupo"
+    "groupDescription": "Group description"
   }
 
 ----------------------------------------
@@ -53,7 +53,7 @@ Old way -
 New way -
   {
     "groupId": "120363019502650977-group",
-    "groupDescription": "descrição do grupo"
+    "groupDescription": "Group description"
   }
 
 ```

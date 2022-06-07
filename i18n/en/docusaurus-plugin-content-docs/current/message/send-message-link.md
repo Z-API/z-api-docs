@@ -7,7 +7,7 @@ title: Send link
 
 #### /send-link
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-link
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-link
 
 ---
 
@@ -38,7 +38,7 @@ It is important for you to know that the link is only clickable if the recipient
 | title | string | Title for your link |
 | linkDescription | string | Links description |
 
-### Opcionais
+### Optionals
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |
@@ -52,11 +52,11 @@ It is important for you to know that the link is only clickable if the recipient
 ```json
 {
   "phone": "5511999998888",
-  "message": "Aqui você coloca um texto sobre o site, atenção esse texto preciso ter o link que será enviado no final da mensagem! Assim: https://z-api.io",
+  "message": "Here you can put text about your website. This message needs to have the link that you will send so pay attention! Like this: https://z-api.io",
   "image": "https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media",
   "linkUrl": "https://z-api.io",
   "title": "Z-API",
-  "linkDescription": "Integração com o whatsapp"
+  "linkDescription": "Integration with Whatsapp"
 }
 ```
 

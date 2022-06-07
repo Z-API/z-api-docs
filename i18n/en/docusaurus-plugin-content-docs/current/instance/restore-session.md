@@ -7,7 +7,7 @@ title: Restoring session
 
 #### /restore-session
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/restore-session
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/restore-session
 
 ---
 

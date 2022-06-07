@@ -7,7 +7,7 @@ title: Sending Image
 
 #### /send-image
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-image
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-image
 
 ---
 
@@ -55,7 +55,7 @@ In this [link] you can find everything that you need to know about formatting an
 | phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask |
 | image | string | Image’s link or its Base64 |
 
-### Opcionais
+### Optionals
 
 | Attributes | Type | Description|
 | :-- | :-: | :-- |

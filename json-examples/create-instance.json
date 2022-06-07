@@ -10,12 +10,12 @@
         },
         {   
             "name": "Authorization",
-            "value": "Bearer SEU-TOKEN-AQUI"
+            "value": "Bearer YOUR-TOKEN-HERE"
         }
     ],
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"name\": \"Instancia Z-API - 9292812\", \"deliveryCallbackUrl\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/delivery\", \"receivedCallbackUrl\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/receive\", \"disconnectedCallbackUrl\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/disconnected\", \"messageStatusCallbackUrl\": \"https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/status\"}"
+        "text": "{\"name\": \"Z-API Instance  - 9292812\", \"deliveryCallbackUrl\": \"https://your-systems-address.com.br/instance/YOUR_INSTANCE/delivery\", \"receivedCallbackUrl\": \"https://your-systems-address.com.br/instance/YOUR_INSTANCE/receive\", \"disconnectedCallbackUrl\": \"https://your-systems-address.com.br/instance/YOUR_INSTANCE/disconnected\", \"messageStatusCallbackUrl\": \"https://your-systems-address.com.br/instance/YOUR_INSTANCE/status\"}"
     }
 }

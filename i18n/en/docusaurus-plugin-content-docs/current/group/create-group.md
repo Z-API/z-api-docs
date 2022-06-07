@@ -7,7 +7,7 @@ title: Creating groups
 
 #### /create-group
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/create-group
 
 ---
 
@@ -56,7 +56,7 @@ You should never let anyone have or know the number that's connected to Z-API an
 
 **Method**
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/create-group
 
 **Example**
 
@@ -78,7 +78,7 @@ You should never let anyone have or know the number that's connected to Z-API an
 | phone          | string | Group ID/phone          |
 | invitationLink | string | Link to join group |
 
-**Exemplo**
+**Example**
 
 ```json
 

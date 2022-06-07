@@ -7,7 +7,7 @@ title: Get chat metada
 
 #### /chat/{phone}
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats/{phone}
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chats/{phone}
 
 ---
 
@@ -40,7 +40,7 @@ This method is responsible for returning the metadata of a chat.
 
 Method 
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat/5511999999999
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chat/5511999999999
 
 ---
 

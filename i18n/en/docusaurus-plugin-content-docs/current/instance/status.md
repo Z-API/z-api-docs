@@ -7,7 +7,7 @@ title: Instance status
 
 #### /Status
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/status
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/status
 
 ---
 

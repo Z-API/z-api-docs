@@ -5,9 +5,9 @@ title: Deleting a product
 
 ## Method 
 
-#### /products/id-do-produto
+#### /products/product-ID
 
-`DELETE` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/products/{{id-do-produto}}
+`DELETE` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/products/{{product-ID}}
 
 ---
 

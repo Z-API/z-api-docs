@@ -31,7 +31,7 @@ To update the webhook route, you can do it through the API or through the admin 
 
 ```json
 {
-  "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/status"
+  "value": "https://your-systemas-address.com.br/instance/YOUR_INSTANCE/status"
 }
 ```
 

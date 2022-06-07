@@ -7,7 +7,7 @@ title: Send video
 
 #### /send-video
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-video
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-video
 
 ---
 
@@ -39,7 +39,7 @@ In this [link] you can find everything that you need to know about formatting an
 | phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
 | video | string | video’s link or its Base64|
 
-### Opcionais
+### Optionals
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |
@@ -95,7 +95,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-vídeo)
+[Webhook](../webhooks/on-message-received#example-of-video-return)
 
 ---
 

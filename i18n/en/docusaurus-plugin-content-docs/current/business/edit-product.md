@@ -37,7 +37,7 @@ In this method you will be able to register and update a product in your catalog
 ```json
 {
   "currency": "BRL",
-  "description": "Uma descricao do produto",
+  "description": "A product description",
   "images": ["https://avatars.githubusercontent.com/u/60630101?s=200&v=4"],
   "isHidden": false,
   "name": "My first product",

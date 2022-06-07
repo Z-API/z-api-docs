@@ -5,9 +5,9 @@ title: Get products (phone)
 
 ## Method
 
-#### /catalogs/Numero-de-telefone
+#### /catalogs/Telephone-number
 
-`GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/catalogs/{{Numero-de-telefone}}
+`GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/catalogs/{{Telephone-number}}
 
 ---
 

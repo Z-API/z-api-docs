@@ -7,7 +7,7 @@ title: Get contacts
 
 #### /contacts
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts
 
 ---
 
@@ -40,7 +40,7 @@ This method is responsible for returning all of your Whatsapp contacts. Remember
 
 Method
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts?page=1&pageSize=20
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts?page=1&pageSize=20
 
 ---
 
@@ -61,10 +61,10 @@ Example
 ```json
 [
   {
-    "name": "Nome e sobrenome do contato 1",
-    "short": "Nome do contato 1",
-    "notify": "Nome no Whatsapp 1",
-    "vname": "Nome no vcard",
+    "name": "First contact's name and last name",
+    "short": "First contact's name",
+    "notify": "Name on Whatsapp",
+    "vname": "Name on vcard",
     "phone": "559999999999"
   }
 ]

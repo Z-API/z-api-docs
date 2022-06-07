@@ -7,7 +7,7 @@ title: Number with Whatsapp ?
 
 #### /phone-exists
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-exists
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/phone-exists
 
 ## Concept
 
@@ -43,7 +43,7 @@ This method returns whether or not the number has Whatsapp.
 
 Method
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-exists/5511999999999
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/phone-exists/5511999999999
 
 ---
 

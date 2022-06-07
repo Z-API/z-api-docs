@@ -26,7 +26,7 @@ After activating the developer options you will be asked to confirm your screen 
 
 ---
 
-### Terceiro passo
+### Third step
 
 Now that we have developer options. In the menu choose the option “stay awake”. With this option enabled the device’s screen will always stay on even while charging its battery!
 

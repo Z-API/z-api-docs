@@ -7,7 +7,7 @@ title: Send audio
 
 #### /send-audio
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-audio
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-audio
 
 ---
 
@@ -40,7 +40,7 @@ In this [link]  you can find everything that you need to know about formatting a
 | phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
 | audio | string | audio’s link or its Base64 |
 
-### Opcionais
+### Optionals
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |
@@ -69,7 +69,7 @@ In this [link]  you can find everything that you need to know about formatting a
 | zaapId    | string | id on z-api    |
 | messageId | string | id on whatsapp |
 
-Exxample 
+Example 
 
 ```json
 {
@@ -92,7 +92,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-áudio)
+[Webhook](../webhooks/on-message-received#example-of-audio-return)
 
 ---
 

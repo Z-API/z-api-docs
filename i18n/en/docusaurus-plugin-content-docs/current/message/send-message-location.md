@@ -7,7 +7,7 @@ title: Send location
 
 #### /send-location
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-location
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-location
 
 ---
 
@@ -86,7 +86,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-localização)
+[Webhook](../webhooks/on-message-received#example-of-localization-return)
 
 ---
 

@@ -1,6 +1,6 @@
 {
     "method": "GET",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/status",
+    "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/status",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [

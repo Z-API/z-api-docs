@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-option-list",
+    "url": "https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-option-list",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [
@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"phone\": \"5511999998888\", \"message\": \"Selecione e melhor opção:\",\"optionList\": { \"title\": \"Opções disponíveis\", \"buttonLabel\": \"Abrir lista de opções\", \"options\": [ { \"id\": \"1\", \"description\": \"Z-API Asas para sua imaginação\", \"title\": \"Z-API\" }, { \"id\": \"2\", \"description\": \"Não funcionam\", \"title\": \"Outros\" } ] }}"
+        "text": "{\"phone\": \"5511999998888\", \"message\": \"Choose the best option:\",\"optionList\": { \"title\": \"Options available\", \"buttonLabel\": \"Open options list\", \"options\": [ { \"id\": \"1\", \"description\": \"Z-API Wings for your imagination\", \"title\": \"Z-API\" }, { \"id\": \"2\", \"description\": \"Doesn't work\", \"title\": \"Others\" } ] }}"
     }
 }

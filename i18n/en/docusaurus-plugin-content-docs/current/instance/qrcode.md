@@ -7,7 +7,7 @@ title: Get QRCode
 
 #### /qr-code
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/qr-code
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/qr-code
 
 Getting QRCode - bytes
 
@@ -15,7 +15,7 @@ This method returns the bytes of the QR code. You can render this in a component
 
 #### /qr-code/image
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/qr-code/image
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/qr-code/image
 
 Getting QRCode - Image
 

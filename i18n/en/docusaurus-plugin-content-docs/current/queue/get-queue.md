@@ -7,7 +7,7 @@ title: Queue
 
 #### /queue
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue
 
 ## Concept
 
@@ -37,7 +37,7 @@ This method is responsible for returning all messages that are in your queue wai
 
 Method 
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue
 
 ---
 
@@ -68,14 +68,14 @@ Example
   "size": 2,
   "messages": [
     {
-      "Message": "Mensagem da fila 1",
+      "Message": "Message queue 1",
       "Phone": "5511999999999",
       "ZaapId": "39BB1684570F00E91090F6BBC7EE7646",
       "Created": 1624977905648,
       "MessageId": "7AD29EAA5EF34C301F0B"
     },
     {
-      "Message": "Mensagem da fila 2",
+      "Message": "Message queue  2",
       "Phone": "5511999999999",
       "ZaapId": "39BB1685172AB008542A7E0B862A54DF",
       "Created": 1624977906907,
@@ -87,7 +87,7 @@ Example
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
 
 ### 415
 

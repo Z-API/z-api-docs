@@ -7,7 +7,7 @@ title: Send documents
 
 #### /send-document/{extension}
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-document/ **{extension}**
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-document/ **{extension}**
 
 
 > **Don’t forget!** You need to inform the **{extension}** parameter with the extension of the file you want to send! Theoretically this method should support all types of documents, as long as they are within WhatsApp's own file size policies (to know more about these limits [click here]).
@@ -41,7 +41,7 @@ Method responsible for sending documents to your contacts. It is simple and obje
 | phone | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
 | document | string | video’s link or its Base64 |
 
-### Opcionais
+### Optionals
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |
@@ -94,7 +94,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-documento)
+[Webhook](../webhooks/on-message-received#example-of-document-return)
 
 ---
 
