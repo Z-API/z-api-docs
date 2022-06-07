@@ -23,6 +23,9 @@ module.exports = {
 
     Instance: [
       'instance/introduction',
+      'instance/update-auto-read-message',
+      'instance/update-call-reject-auto',
+      'instance/update-call-reject-message',
       'instance/qrcode',
       'instance/restore-session',
       'instance/restart',
