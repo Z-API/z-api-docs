@@ -13,15 +13,15 @@ Para a mensagem ser enviada o método anterior (Rejeitar chamadas) precisa estar
 ---
 ### Método
 
-#### /update-call-reject-auto
+#### /update-call-reject-message
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-call-reject-auto
+`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-call-reject-message
 
 #### Request Body
 
 ```json
 {
-"value": true ou false
+"value": "Mensagem de resposta"
 }
 ```
 
