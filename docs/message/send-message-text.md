@@ -81,13 +81,16 @@ Para fazer o teste basta copiar um emoji e colar em seu texto! Você pode utiliz
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
 | messageId | string | id no whatsapp |
+| id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
+
 
 Exemplo
 
 ```json
 {
   "zaapId": "3999984263738042930CD6ECDE9VDWSA",
-  "messageId": "D241XXXX732339502B68"
+  "messageId": "D241XXXX732339502B68",
+  "id": "D241XXXX732339502B68"
 }
 ```
 
