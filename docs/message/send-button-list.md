@@ -29,6 +29,11 @@ Neste método você poderá enviar mensagens de texto com botões de ação, o c
 | message | string | Texto a ser enviado |
 | buttonList | buttonList | Objeto do tipo botão |
 
+:::important
+
+ O atributo "message" não pode ser enviado vazio!
+:::
+
 ### Opcionais
 
 | Atributos | Tipo | Descrição |
