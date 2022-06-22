@@ -24,6 +24,7 @@ module.exports = {
     Instance: [
       'instance/introduction',
       'instance/update-auto-read-message',
+      'instance/profile-picture',
       'instance/update-call-reject-auto',
       'instance/update-call-reject-message',
       'instance/qrcode',
@@ -105,6 +106,9 @@ module.exports = {
       'business/get-products',
       'business/get-products-phone',
       'business/get-product-id',
+      'business/tags',
+      'business/tags-add',
+      'business/tags-remove',
       'business/delete-product',
     ],
     Webhooks: [
