@@ -21,18 +21,15 @@ Este método é responsável por retornar informações sobre o device/celular c
 
 ```json
 {
-  "phone": "",
-  "imgUrl": null,
-  "device": {
-    "wa_version": "2.21.10.16",
-    "mcc": "724",
-    "mnc": "039",
-    "os_version": "7.1.2",
-    "device_manufacturer": "samsung",
-    "device_model": "SM-N975F",
-    "osbuildnumber": "samsung-user 7.1.2 20171130.276299 release-keys",
-    "platform": "smba"
-  }
+"phone": "",
+"imgUrl": "",
+"name": "",
+"device": {
+"sessionName": "Z-API",
+"device_model": "Z-API"
+},
+"sessionId": 66,
+"isBusiness": true
 }
 ```
 
