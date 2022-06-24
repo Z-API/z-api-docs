@@ -108,10 +108,10 @@ module.exports = {
       'business/get-products',
       'business/get-products-phone',
       'business/get-product-id',
+      'business/delete-product',
       'business/tags',
       'business/tags-add',
       'business/tags-remove',
-      'business/delete-product',
     ],
     Webhooks: [
       'webhooks/introduction',
