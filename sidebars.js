@@ -49,7 +49,7 @@ module.exports = {
       'message/send-message-document',
       'message/send-message-link',
       'message/send-message-location',
-       /* 'send-message/send-message-product',
+      /* 'send-message/send-message-product',
        'send-message/send-message-catalog', */
       'message/send-message-contact',
       'message/send-button-list',
@@ -73,6 +73,7 @@ module.exports = {
       'chats/archive-chat',
       'chats/delete-chat',
     ],
+    Calls: ['calls/introduction', 'calls/send-call'],
     Groups: [
       'group/introduction',
       'group/create-group',

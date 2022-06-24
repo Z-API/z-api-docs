@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-call",
+  "httpVersion": "HTTP/1.1",
+  "queryString": [],
+  "headers": [
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "cookies": [],
+  "postData": {
+    "mimeType": "application/json",
+    "text": "{\"phone\": \"5511999998888\", \"callDuration\": 5}"
+  }
+}
