@@ -15,7 +15,7 @@ title: Enviar áudio
 
 Método responsavel por enviar audios para os seus chats, você pode trabalhar com as audios de 2 formas que são:
 
-Por Link, onde você temum audio hospedado em algum lugar da internet e envia apenas o link da mesma.
+Por Link, onde você tem um audio hospedado em algum lugar da internet e envia apenas o link do mesmo.
 
 Por Base64, se você optar por esta opção precisará ter em sua aplicação um método para converter o audio em Base64.
 

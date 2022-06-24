@@ -284,8 +284,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "type": "ReceivedCallback",
   "video": {
     "videoUrl": "https://",
-    "mimeType": "video/mp4",
-    "caption": ""
+    "caption": "",
+    "mimeType": "video/mp4"
   },
   "instanceId": "instance.id"
 }
@@ -400,6 +400,33 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "sticker": {
     "stickerUrl": "https://",
     "mimeType": "image/webp"
+  },
+  "instanceId": "instance.id"
+}
+```
+
+### Exemplo de retorno de GIF
+```json
+{
+  "waitingMessage": false,
+  "isGroup": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228889000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "video": {
+    "videoUrl": "https://",
+    "caption": "",
+    "mimeType": "video/mp4"
   },
   "instanceId": "instance.id"
 }

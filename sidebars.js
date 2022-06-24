@@ -43,6 +43,7 @@ module.exports = {
       'message/send-remove-reaction',
       'message/send-message-image',
       'message/send-message-sticker',
+      'message/send-message-gif',
       'message/send-message-audio',
       'message/send-message-video',
       'message/send-message-document',
