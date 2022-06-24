@@ -1,6 +1,6 @@
 ---
 id: delete-queue-id
-title: Apagando msg fila
+title: Apagando mensagem fila
 ---
 
 ## Método

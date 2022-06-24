@@ -13,7 +13,7 @@ title: Enviar GIF
 
 ## Conceituação
 
-Método responsavel por enviar GIFs para os seus chats através da api
+Método responsavel por enviar GIFs para os seus chats através da api (O arquivo a ser enviado precisa ser um MP4)
 
 ### Tamanho e formatos
 
