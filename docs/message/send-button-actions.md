@@ -62,29 +62,29 @@ Neste método você poderá enviar mensagens de texto com botões de ação, voc
 
 ```json
 {
-"phone": "551199999999",
-"message": "uma mensagem",
-"title": "se quiser vincular um titulo",
-"footer": "se quiser vincular um rodape top",
-"buttonActions": [
-{
-"id": "1",
-"type": "CALL",
-"phone": "554498398733",
-"label": "Fale conosco"
-},
-{
-"id": "2",
-"type": "URL",
-"url": "https://z-api.io",
-"label": "Visite nosso site"
-},
-{
-"id": "3",
-"type": "REPLY",
-"label": "Falar com atendente"
-}
-]
+    "phone": "551199999999",
+    "message": "uma mensagem",
+    "title": "se quiser vincular um titulo",
+    "footer": "se quiser vincular um rodape top",
+    "buttonActions": [
+        {
+            "id": "1",
+            "type": "CALL",
+            "phone": "554498398733",
+            "label": "Fale conosco"
+        },
+        {
+            "id": "2",
+            "type": "URL",
+            "url": "https://z-api.io",
+            "label": "Visite nosso site"
+        },
+        {
+            "id": "3",
+            "type": "REPLY",
+            "label": "Falar com atendente"
+        }
+    ]
 }
 ```
 
