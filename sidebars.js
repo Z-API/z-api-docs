@@ -52,6 +52,7 @@ module.exports = {
       /* 'send-message/send-message-product',
        'send-message/send-message-catalog', */
       'message/send-message-contact',
+      'message/send-button-actions',
       'message/send-button-list',
       'message/send-option-list',
       'message/delete-message',
