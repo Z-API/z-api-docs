@@ -58,9 +58,10 @@ Uma vez conectado você já pode começar a utilizar os métodos Z-API para mani
 
 :::
 
-:::important Importante
+:::important
 
 **Recomendações:**
 
 - Crie um método com intervalos entre 10 e 20 segundos para chamar a API e pegar o novo QRCode.
-- Caso o usuário não leia o QRCode após 3 chamadas, interrompa o fluxo e adicione um botão solicitando interação do mesmo para evitar chamadas desnecessárias para a API do Whatsapp. :::
+- Caso o usuário não leia o QRCode após 3 chamadas, interrompa o fluxo e adicione um botão solicitando interação do mesmo para evitar chamadas desnecessárias para a API do Whatsapp.
+:::

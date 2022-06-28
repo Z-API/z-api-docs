@@ -21,15 +21,15 @@ Este método é responsável por retornar informações sobre o device/celular c
 
 ```json
 {
-"phone": "",
-"imgUrl": "",
-"name": "",
-"device": {
-"sessionName": "Z-API",
-"device_model": "Z-API"
-},
-"sessionId": 66,
-"isBusiness": true
+    "phone": "",
+    "imgUrl": "",
+    "name": "",
+    "device": {
+        "sessionName": "Z-API",
+        "device_model": "Z-API"
+    },
+    "sessionId": 66,
+    "isBusiness": true
 }
 ```
 
