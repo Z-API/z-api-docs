@@ -15,7 +15,7 @@ title: Remover etiquetas de um chat
 
 Através deste método, é possível remover as etiquetas de um chat no whatsapp business
 
-:::important
+:::important importante
 Este método está disponível apenas para dispositivos conectados a versão Multi-Devices do whatsapp.
 :::
 

@@ -11,11 +11,13 @@ title: Enviar texto com botões de ação
 
 ---
 
+:::caution Atenção!
+Este método está em versão Beta
+:::
+
 ## Conceituação
 
 Neste método você poderá enviar mensagens de texto com botões de ação, você conseguirá redirecionar para links, fazer chamadas, e também dar respostas padrões.
-
-
 
 ---
 
@@ -29,18 +31,14 @@ Neste método você poderá enviar mensagens de texto com botões de ação, voc
 | message | string | Texto a ser enviado |
 | buttonActions | buttonActions | Objeto do tipo botão |
 
-
-
-
 ### button Actions
 
 | Atributos |  Tipo  | Descrição                     |
 | :-------- | :----: | :---------------------------- |
 | type | string | Tipos de botão a ser enviados (CALL, URL, REPLY)|
 |  phone    | string | Número atribuído ao botão caso seja do tipo CALL|
-|  URL      | string | Link atribuído ao botão caso seja do tipo URL|
+|  url      | string | Link atribuído ao botão caso seja do tipo URL|
 | label     | string | Texto para o botão |
-
 
 ### Opcionais Button
 

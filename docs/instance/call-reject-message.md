@@ -7,7 +7,7 @@ title:  Mensagem de ligação
 
 Através desse método você define a mensagem que será enviada após rejeitar a chamada de voz recebida pela API.
 
-:::important
+:::important importante
 Para a mensagem ser enviada o método anterior (Rejeitar chamadas) precisa estar ativo!
 :::
 ---

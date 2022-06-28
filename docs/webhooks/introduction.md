@@ -55,7 +55,7 @@ Este webhook será chamado sempre que nosso serviço identificar alguma indispon
 
 ## Como configurar meu Webhook?
 
-:::important
+:::important Importante
 
 Nunca compartilhe o seu ID e token com ninguém.
 
@@ -63,4 +63,4 @@ Nunca compartilhe o seu ID e token com ninguém.
 
 Acesse nosso painel admin, vá em opções e escolha "editar instância".
 
-![img](../../img/EditInstance.jpg)
+![img](../../img/EditInstance.jpeg)
