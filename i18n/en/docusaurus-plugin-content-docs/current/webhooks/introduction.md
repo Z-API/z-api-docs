@@ -66,4 +66,4 @@ Acesse nosso painel admin, vá em opções e escolha "editar instância".
 
 Access our admin panel, go to options and choose "edit instance"
 
-![img](../../../../../img/EditInstance.jpg)
+![img](../../../../../img/EditInstance.jpeg)
