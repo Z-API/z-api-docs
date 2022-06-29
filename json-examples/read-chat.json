@@ -1,0 +1,9 @@
+{
+  "method": "POST",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/modify-chat",
+  "httpVersion": "HTTP/1.1",
+  "postData": {
+    "mimeType": "application/json",
+    "text": "{\"phone\": \"5544991515165\", \"action\": \"read / unread*\"}"
+  }
+}

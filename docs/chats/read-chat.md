@@ -1,6 +1,6 @@
 ---
-id: archive-chat
-title: Arquivar chats
+id: read-chat
+title: Ler chats
 ---
 
 ## Método
@@ -13,7 +13,7 @@ title: Arquivar chats
 
 ## Conceituação
 
-Este método é reponsavel por arquivar e desarquivar seus chats.
+Este método é reponsavel por realizar a ação de ler um chat como um todo, ou também marcar um chat como não lido
 
 ---
 
@@ -24,7 +24,7 @@ Este método é reponsavel por arquivar e desarquivar seus chats.
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | integer | Número de telefone que você deseja alterar no **SEU** chat |
-| action | string | Atributo para arquivar e desarquivar o chat |
+| action | string | Atributo para marcar o chat (read ou unread)|
 
 ---
 
@@ -35,7 +35,7 @@ Exemplo
 ```json
 {
   "phone": "5544999999999",
-  "action": "archive" ou "unarchive"
+  "action": "read" ou "unread"
 }
 ```
 
@@ -69,4 +69,4 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/archive-chat.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/read-chat.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

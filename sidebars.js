@@ -71,6 +71,7 @@ module.exports = {
       'chats/get-chats',
       'chats/get-message-chats',
       'chats/get-metadata-chat',
+      'chats/read-chat',
       'chats/archive-chat',
       'chats/delete-chat',
     ],
