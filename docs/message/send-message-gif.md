@@ -48,8 +48,8 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 ```json
 {
-"phone": "",
-"gif": "https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/04/file_example_MP4_480_1_5MG.mp4"
+  "phone": "",
+  "gif": "https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/04/file_example_MP4_480_1_5MG.mp4"
 }
 ```
 

@@ -37,7 +37,7 @@ Method used to rename an instance.
 ```json
 Body 
 {
-"value": "novo nome"
+  "value": "novo nome"
 }
 ```
 

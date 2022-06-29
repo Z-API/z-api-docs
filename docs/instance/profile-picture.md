@@ -39,7 +39,7 @@ Este método é reponsavel alterar a sua imagem de perfil no Whatsapp
 
 ```json
 {
-"value": "URL da imagem"
+  "value": "URL da imagem"
 }
 ```
 

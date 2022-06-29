@@ -37,7 +37,7 @@ Método utilizado para renomear uma instância.
 ```json
 Body 
 {
-"value": "novo nome"
+  "value": "novo nome"
 }
 ```
 

@@ -19,7 +19,7 @@ Esse método ativa a leitura automática de todas as mensagens recebidas pela AP
 
 ```json
 {
-"value": true ou false
+  "value": true ou false
 }
 ```
 

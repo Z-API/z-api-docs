@@ -34,8 +34,8 @@ Exemplo
 
 ```json
 {
-"phone": "5544999999999",
-"action": "pin" ou "unpin"
+  "phone": "5544999999999",
+  "action": "pin" ou "unpin"
 }
 ```
 
