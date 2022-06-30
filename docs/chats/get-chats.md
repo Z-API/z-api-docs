@@ -50,13 +50,15 @@ Método
 
 | Atributos | Tipo | Descrição |
 | :-- | :-- | :-- |
-| name | string | **Nome ** atribudo ao chat, lembrando que se for um grupo ou lista de transmissão deve retorar os respectivos IDs |
-| phone | string | Phone do contato |
-| unread | string | indica o numero de mensagens não lidas em um chat |
+| archived  | boolean | true ou false indica se o chat está arquivado   |
+| pinned    | boolean | true ou false indica se o chat está fixado      |
+| phone     | string  | Phone do contato |
+| unread    | string  | indica o numero de mensagens não lidas em um chat |
+| name      | string  | **Nome ** atribudo ao chat, lembrando que se for um grupo ou lista de transmissão deve retorar os respectivos IDs |
 | lastMessageTime | string | Timestamp com a data e hora da última interação com o chat |
-| isMuted | string | 0 ou 1 indica se você silênciou ou não este chat |
+| muteEndTime | string | Timestamp com a data e hora que a notificação vai ser reativada (-1 é para sempre) |
+| isMuted     | string  | 0 ou 1 indica se você silênciou ou não este chat |
 | isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |
-| profileThumbnail | string | URL da foto do chat **o Whatsapp apaga após 48h** |
 | messagesUnread | integer | **descontinuado** |
 
 Exemplo
@@ -64,24 +66,27 @@ Exemplo
 ```json
 [
   {
-    "name": "Z-API SUPORTE",
+    "archived": "false",
+    "pinned": "true",
+    "messagesUnread": 0,
     "phone": "5511999999999",
     "unread": "0",
+    "name": "Z-API SUPORTE",
     "lastMessageTime": "1622991687",
     "isMuted": "0",
-    "isMarkedSpam": "false",
-    "profileThumbnail": null,
-    "messagesUnread": 0
+    "isMarkedSpam": "false"
   },
   {
-    "name": "Z-api - Team",
+    "archived": "false",
+    "pinned": "true",
+    "messagesUnread": 0,
     "phone": "5511999999999",
     "unread": "0",
+    "name": "Z-api - Team",
     "lastMessageTime": "1622990503",
+    "muteEndTime": 1655953774000,
     "isMuted": "0",
-    "isMarkedSpam": "false",
-    "profileThumbnail": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-    "messagesUnread": 0
+    "isMarkedSpam": "false"
   }
 ]
 ```
