@@ -60,6 +60,15 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 }
 ```
 
+##### Envio por Base64
+```json
+{
+  "phone": "5544999999999",
+  "video": "data:video/mp4;base64,AAYXJ0eHJlZgIGZ0eXBtc0eHDQyAAg3NDINCiUlRUAAAG1wNDJtcD",
+  "caption": "Test"
+}
+```
+
 ---
 
 ## Response
@@ -81,6 +90,7 @@ Exemplo
   "id": "D241XXXX732339502B68"
 }
 ```
+
 
 ### 405
 

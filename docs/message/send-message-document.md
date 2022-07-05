@@ -52,10 +52,19 @@ Método responsavel por enviar documentos aos seus contatos ele é simples e obj
 
 ## Request Body
 
+##### Envio por URL
 ```json
 {
   "phone": "5544999999999",
   "document": "https://expoforest.com.br/wp-content/uploads/2017/05/exemplo.pdf",
+  "fileName": "Meu PDF"
+}
+```
+##### Envio por Base64
+```json
+{
+  "phone": "5544999999999",
+  "document": "data:application/pdf;base64,JVBERiN0YXJ0eHJlZg0KMjg3NDINCiUlRU9G0xLj",
   "fileName": "Meu PDF"
 }
 ```
