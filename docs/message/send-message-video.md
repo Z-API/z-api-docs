@@ -52,6 +52,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 ## Request Body
 
+##### Envio por URL
 ```json
 {
   "phone": "5511999999999",
