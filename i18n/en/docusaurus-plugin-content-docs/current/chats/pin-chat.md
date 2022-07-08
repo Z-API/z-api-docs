@@ -13,7 +13,7 @@ title: Fixar chats
 
 ## Conceituação
 
-Este método é reponsavel por fixar e desfixar seus chats.
+Este método é reponsavel por fixar e desafixar seus chats.
 
 ---
 
@@ -22,9 +22,9 @@ Este método é reponsavel por fixar e desfixar seus chats.
 ### Obrigatórios
 
 | Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| phone | integer | Número de telefone que você deseja alterar no **SEU** chat |
-| action | string | Atributo para arquivar e desarquivar o chat |
+| :--    |  :-:    | :-- |
+| phone  | integer | Número de telefone que você deseja alterar no **SEU** chat |
+| action | string  | Atributo para fixar e desafixar o chat |
 
 ---
 
