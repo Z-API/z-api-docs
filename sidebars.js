@@ -73,6 +73,7 @@ module.exports = {
       'chats/get-metadata-chat',
       'chats/read-chat',
       'chats/archive-chat',
+      'chats/pin-chat',
       'chats/delete-chat',
     ],
     Calls: ['calls/introduction', 'calls/send-call'],
