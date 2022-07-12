@@ -56,6 +56,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 | status | string | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED). |
 | referenceMessageId | string | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
 | momment | integer | Momento em que a mensagem foi recebida ou do erro. |
+| messageExpirationSeconds | integer | Tempo das mensagens temporárias |
 | type | string | Tipo do evento da instância, nesse caso será "ReceivedCallBack". |
 | photo | string | Url da foto do usuário que enviou a mensagem. |
 | text.message | string | Texto da mensagem. |
