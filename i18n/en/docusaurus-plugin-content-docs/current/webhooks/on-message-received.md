@@ -56,17 +56,16 @@ The possible returns of the **on-message-received** webhook are registered below
 | status | string | Status the message is in at the time of sending (PENDING, SENT, RECEIVED, READ or PLAYED). |
 | referenceMessageId | string | Reference the message that was replied to in case the message received is a reply to a message in the conversation. |
 | momment | integer | Time when the message was received or from the error. |
-| type  | string | Instance event type, in this case it will be "ReceivedCallBack". |
+| type | string | Instance event type, in this case it will be "ReceivedCallBack". |
 | photo | string | Photo url of the user who sent the message. |
 | text.message | string | Message text. |
 | image.caption | string | Photo’s caption  |
 | image.imageUrl | string | Photo’s URL |
 | image.thumbnailUrl | string | Photo’s URL thumbnail  |
 | image.mimeType | string | Image’s Mime Type |
-| isGroup  | boolean | Indica se o chat é um grupo|
 | audio.mimeType | string | Audio’s MimeType |
 | audio.audioUrl | string | Audio’s URL |
-| video.caption  | string | Video’s caption |
+| video.caption | string | Video’s caption |
 | video.videoUrl | string | Video’s URL  |
 | video.mimeType | string | Video’s MimeType |
 | contact.displayName | string | Contact’s name  |
