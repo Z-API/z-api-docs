@@ -64,6 +64,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 | image.imageUrl | string | Url da foto. |
 | image.thumbnailUrl | string | Url da thumbnail da foto. |
 | image.mimeType | string | MimeType da imagem. |
+| isGroup  | boolean | Indica se o chat é um grupo|
 | audio.mimeType | string | MimeType do áudio. |
 | audio.audioUrl | string | Url do áudio. |
 | video.caption | string | Legenda do vídeo. |

@@ -51,54 +51,65 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
 | :-- | :-: | :-- |
 | status | string | Status da mensagem (SENT - se foi enviada, RECEIVED - se foi recebida, READ - se foi lida, READ-SELF - confirmação de leitura inativa, PLAYED - se foi ouvida ) |
 | id | string | Identificador(es) da(s) mensagem(ns). |
+| momment | integer | Momento em que a instância foi desconectada do número. |
+| phoneDevice | integer | Indica o dispositivo que ocorreu o evento (0 - Celular)|
 | phone | string | Número de telefone de destino da mensagem. |
-| momment | string | Momento em que a instância foi desconectada do número. |
-| type | string | Tipo do evento da instância, nesse caso será "MessageStatusCallback". |
-
+| type  | string | Tipo do evento da instância, nesse caso será "MessageStatusCallback". |
+| isGroup  | boolean | Indica se o chat é um grupo|
 ---
 
 ### 200
 
 ```json
 {
+  "instanceId": "instance.id"
   "status": "SENT",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
+  "phoneDevice": 0,
   "phone": "5544999999999",
   "type": "MessageStatusCallback",
-  "instanceId": "instance.id"
+  "isGroup": false
 }
 {
+  "instanceId": "instance.id"
   "status": "RECEIVED",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
+  "phoneDevice": 0,
   "phone": "5544999999999",
   "type": "MessageStatusCallback",
-  "instanceId": "instance.id"
+  "isGroup": false
 }
 {
+  "instanceId": "instance.id"
   "status": "READ",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
+  "phoneDevice": 0,
   "phone": "5544999999999",
   "type": "MessageStatusCallback",
-  "instanceId": "instance.id"
+  "isGroup": false
 }
 {
+  "instanceId": "instance.id"
   "status": "READ-SELF",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
+  "phoneDevice": 0,
   "phone": "5544999999999",
   "type": "MessageStatusCallback",
-  "instanceId": "instance.id"
+  "isGroup": false
 }
 {
+  "instanceId": "instance.id"
   "status": "PLAYED",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
+  "phoneDevice": 0,
   "phone": "5544999999999",
   "type": "MessageStatusCallback",
-  "instanceId": "instance.id"
+  "isGroup": false
 }
 ```
 
