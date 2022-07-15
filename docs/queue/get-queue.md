@@ -56,34 +56,48 @@ Método
 
 Array Messages
 
-| Atributos | Tipo     | Descrição                   |
-| :-------- | :------- | :-------------------------- |
-| size      | string   | Numero de mensagens na fila |
-| Message   | string   | Texto da Mensagem           |
-| Phone     | string   | Fone do destinatário        |
-| ZaapId    | string   | ID da mensagem no Z-API     |
-| Created   | timetamp | Data da mensagem            |
-| MessageId | string   | ID da mensagem              |
+| Atributos    | Tipo     | Descrição                   |
+| :----------  | :------- | :-------------------------- |
+| _id          | string   | ID da mensagem no Z-API     |
+| DelayMessage | string   | Tempo em segundos entre o envio das mensagens |
+| Message      | string   | Texto da Mensagem           |
+| IsTrial      | boolean  | Indica se a instância está utilizando trial   |
+| InstanceId   | string   | ID da instância             |
+| Phone        | string   | Número do destinatário      |
+| ZaapId       | string   | ID da mensagem no Z-API     |
+| DelayTyping  | string   | Duração do indicador do chat "digitando..."   |
+| MessageId    | string   | ID da mensagem              |
+| Created      | timetamp | Data da mensagem            |
 
 Exemplo
 
 ```json
 {
-  "size": 2,
-  "messages": [
+  [
     {
+      "_id": "39BB1684570F00E91090F6BBC7EE7646",
+      "DelayMessage": -1,
       "Message": "Mensagem da fila 1",
+      "IsTrial": false,
+      "InstanceId": "3A5D07856DC26A1C9E2E08E691E63271",
       "Phone": "5511999999999",
       "ZaapId": "39BB1684570F00E91090F6BBC7EE7646",
+      "DelayTyping": 0,
+      "MessageId": "7AD29EAA5EF34C301F0B",
       "Created": 1624977905648,
-      "MessageId": "7AD29EAA5EF34C301F0B"
+      
     },
     {
+      "_id": "39BB1684570F00E91090F6BBC7EE7646",
+      "DelayMessage": -1,
       "Message": "Mensagem da fila 2",
+      "IsTrial": false,
+      "InstanceId": "3A5D07856DC26A1C9E2E08E691E63271",
       "Phone": "5511999999999",
-      "ZaapId": "39BB1685172AB008542A7E0B862A54DF",
+      "ZaapId": "39BB1684570F00E91090F6BBC7EE7646",
+      "DelayTyping": 5,
+      "MessageId": "7AD29EAA5EF34C301F0B",
       "Created": 1624977906907,
-      "MessageId": "517AEF0FDE834DADJJFC8"
     }
   ]
 }
