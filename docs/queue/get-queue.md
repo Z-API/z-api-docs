@@ -27,7 +27,7 @@ Este método é reponsavel por retornar todas mensagens que estão em sua fila a
 
 | Atributos | Tipo | Descrição |
 | :-------- | :--: | :-------- |
-|           |      |           |
+| count     | string | Atributo utilizado para retornar o número de mensagens na fila |
 
 ---
 
@@ -39,6 +39,11 @@ Método
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
 
+ ou
+
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue/count
+
+
 ---
 
 ## Response
@@ -47,7 +52,6 @@ Método
 
 | Atributos | Tipo         | Descrição                       |
 | :-------- | :----------- | :------------------------------ |
-| size      | string       | Numero de mensagens na fila     |
 | messages  | array string | Array com as menssagens da fila |
 
 Array Messages
