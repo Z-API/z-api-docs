@@ -25,33 +25,36 @@ Neste método você poderá enviar mensagens de texto com botões de ação, voc
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| message | string | Texto a ser enviado |
+| Atributos   | Tipo          | Descrição |
+| :----------:| :-----------: | :-------- |
+| phone         | string        | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| message       | string        | Texto a ser enviado  |
 | buttonActions | buttonActions | Objeto do tipo botão |
 
 ### button Actions
 
 | Atributos |  Tipo  | Descrição                     |
 | :-------- | :----: | :---------------------------- |
-| type | string | Tipos de botão a ser enviados (CALL, URL, REPLY)|
-|  phone    | string | Número atribuído ao botão caso seja do tipo CALL|
-|  url      | string | Link atribuído ao botão caso seja do tipo URL|
+| type      | string | Tipos de botão a ser enviados (CALL, URL, REPLY) |
+| phone     | string | Número atribuído ao botão caso seja do tipo CALL |
+| url       | string | Link atribuído ao botão caso seja do tipo URL.   |
 | label     | string | Texto para o botão |
+
+:::tip Dica:
+ O Whatsapp possui um link específico para copiar textos, passando esse link no atributo url, o seu botão passa a ser um botão de copiar (https://www.whatsapp.com/otp/copy/seutexto)
+:::
 
 ### Opcionais Button
 
-| Atributos |  Tipo  | Descrição              |
-| :-------- | :----: | :--------------------- |
-| id        | string | Identificador do botão |
-| title | string | Caso queira enviar um título |
-| footer | string | Caso queira enviar um rodapé|
+| Atributos |  Tipo  | Descrição                    |
+| :-------- | :----: | :---------------------       |
+| id        | string | Identificador do botão       |
+| title     | string | Caso queira enviar um título |
+| footer    | string | Caso queira enviar um rodapé |
 
 ### Opcionais
-
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
+| Atributos    | Tipo   | Descrição |
+| :---------   | :----: | :-------- |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
 
 ---
