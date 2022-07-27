@@ -11,6 +11,10 @@ title: Pegar mensagens do chat
 
 ---
 
+:::caution Atenção!
+Este método não está disponivel na versão Multi Device, pois o Z-API não armazena as mensagens. A única maneira de obter as mensagens recebidas na versão Multi Device são via [Webhook de mensagens recebidas](../webhooks/on-message-received)
+:::
+
 ## Conceituação
 
 Este método é reponsavel por retornar todas conversas de um chat.
@@ -21,10 +25,10 @@ Este método é reponsavel por retornar todas conversas de um chat.
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| amount | integer | Quantidade de mensagens que deseja buscar, é recomendado que você busque de 10 em 10 mensagens para que sua aplicação não fique muito lenta. |
+| Atributos | Tipo   | Descrição |
+| :--       | :-:    | :--       |
+| phone     | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| amount    | integer | Quantidade de mensagens que deseja buscar, é recomendado que você busque de 10 em 10 mensagens para que sua aplicação não fique muito lenta. |
 | lastMessageId | string | messageId da ultima mensagem que você buscou |
 
 ### Opcionais
