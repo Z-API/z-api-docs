@@ -49,13 +49,15 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ### 200
 
-| Atributos    | Tipo         | Descrição                             |
-| :----------- | :----------- | :------------------------------------ |
-| phone        | string       | ID/Fone do Grupo                      |
-| owner        | string       | Numero do criador do grupo            |
-| subject      | string       | Nome do grupo                         |
-| creation     | timestamp    | Timestamp da data de criação do grupo |
-| participants | array string | com dados dos participantes           |
+| Atributos      | Tipo         | Descrição                             |
+| :-----------   | :----------- | :------------------------------------ |
+| phone          | string       | ID/Fone do Grupo                      |
+| description    | string       | Descrição do grupo                    |
+| owner          | string       | Numero do criador do grupo            |
+| subject        | string       | Nome do grupo                         |
+| creation       | timestamp    | Timestamp da data de criação do grupo |
+| invitationLink | url          | Link de convite do grupo (retorna apenas para admin) |
+| participants   | array string | com dados dos participantes           |
 
 Array String (participants)
 
@@ -100,9 +102,11 @@ Forma antiga -
   Forma nova -
   {
   "phone": "120363019502650977-group",
+  "description": "Grupo Z-API",
   "owner": "5511999999999",
   "subject": "Meu grupo no Z-API",
   "creation": 1588721491000,
+  "invitationLink": "https://chat.whatsapp.com/40Aasd6af1",
   "participants": [
     {
       "phone": "5511888888888",
