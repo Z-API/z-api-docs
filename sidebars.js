@@ -54,6 +54,7 @@ module.exports = {
       'message/send-message-contact',
       'message/send-button-actions',
       'message/send-button-list',
+      'message/send-button-list-image',
       'message/send-option-list',
       'message/delete-message',
       'message/read-message',
