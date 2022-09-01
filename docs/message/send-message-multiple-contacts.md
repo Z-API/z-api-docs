@@ -15,7 +15,7 @@ title: Enviar varios contatos
 
 Simples e objetivo este método permite você enviar varios contatos, você não precisa ter ele em seus contatos, basta preencher os atributos do metodo com informações do contato e enviar.
 
-![image](../../img/send-message-contact.jpeg)
+![image](../../img/send-message-contacts.jpeg)
 
 ---
 
@@ -26,9 +26,15 @@ Simples e objetivo este método permite você enviar varios contatos, você não
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| contacts | array | Array dos contatos que serão enviados |
-| name | string | Nome do contato |
-| phones | string | Número do contato |
+| contacts | array&#60;Contact&#62; | Array dos contatos que serão enviados |
+
+#### Atributos do Contato
+
+| Atributos           |  Tipo  | Descrição                                  |
+| :------------------ | :----: | :----------------------------------------- |
+| name                | string | Nome do contato                            |
+| phones              | array  | Números dos contatos                       |
+| businessDescription | string | Breve descrição sobre o contato (opcional) |
 
 ### Opcionais
 
@@ -36,7 +42,6 @@ Simples e objetivo este método permite você enviar varios contatos, você não
 | :-- | :-: | :-- |
 | messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
-| businessDescription | string | Brever descrição sobre o contato (não é exibido no whatsapp web) |
 
 ---
 
@@ -44,22 +49,22 @@ Simples e objetivo este método permite você enviar varios contatos, você não
 
 ```json
 {
-	"phone": "5544999999999",
-	"contacts": [
-		{
-			"name": "Nome do contato",
-			"phones": ["5544999999999", "5544999999999"]
-		},
-		{
-			"name": "Nome do contato",
-			"phones": ["5544999999999"]
-		},
-		{
-			"name": "Nome do contato",
-      "businessDescription": "Descrição do contato",
-			"phones": ["5544999999999"]
-		}
-	]
+  "phone": "5544999999999",
+  "contacts": [
+    {
+      "name": "Nome do contato",
+      "phones": ["5544999999999", "5544999999999"]
+    },
+    {
+      "name": "Nome do contato",
+      "phones": ["5544999999999"]
+    },
+    {
+      "name": "Nome do contato",
+      "businessDescription": "Uma empresa do Grupo Irrah",
+      "phones": ["5544999999999"]
+    }
+  ]
 }
 ```
 
@@ -69,9 +74,9 @@ Simples e objetivo este método permite você enviar varios contatos, você não
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
-| :-------- | :----- | :------------- |
-| zaapId    | string | id no z-api    |
+| Atributos | Tipo | Descrição |
+| :-- | :-- | :-- |
+| zaapId | string | id no z-api |
 | messageId | string | id no whatsapp |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
