@@ -649,6 +649,71 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de enquete
+
+```json
+{
+  "waitingMessage": false,
+  "isGroup": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "poll": {
+    "question": "Qual a melhor API de Whatsapp?",
+    "options": [
+      {
+        "name": "Z-API"
+      },
+      {
+        "name": "Outras"
+      }
+    ]
+  },
+  "instanceId": "instance.id"
+}
+```
+
+### Exemplo de retorno de resposta de enquete
+
+```json
+{
+  "waitingMessage": false,
+  "isGroup": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": "se for grupo esse será o participante que respondeu",
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "pollVote": {
+    "pollMessageId": "ID da mensagem de enquete que foi respondida",
+    "options": [
+      {
+        "name": "Z-API"
+      }
+    ]
+  },
+  "instanceId": "instance.id"
+}
+```
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.

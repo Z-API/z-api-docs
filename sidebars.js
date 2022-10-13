@@ -60,6 +60,8 @@ module.exports = {
       'message/delete-message',
       'message/read-message',
       'message/reply-message',
+      'message/send-poll',
+      'message/send-poll-vote',
     ],
     Contacts: [
       'contacts/introduction',
