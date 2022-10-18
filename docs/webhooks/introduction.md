@@ -29,7 +29,7 @@ Então se você está se integrando com o Z-API e precisa receber informações 
 
 #### Delivery
 
-Responsavel por avisar você que sua mensagem foi entregue ao Whatsapp, mas isso não significa necessáriamente que seu contato a recebeu, para informações de recebimento e leitura você vai precisar observar o webhook de status.
+Responsável por avisar você que sua mensagem foi entregue ao Whatsapp, mas isso não significa necessáriamente que seu contato a recebeu, para informações de recebimento e leitura você vai precisar observar o webhook de status.
 
 #### Receive
 

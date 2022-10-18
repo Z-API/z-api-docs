@@ -12,7 +12,7 @@ title: Promover admin do grupo
 
 ## Conceituação
 
-Este método é reponsavel por promover participamentes do grupo à administradores, você pode provomover um ou mais participamente à administrador.
+Este método é responsável por promover participamentes do grupo à administradores, você pode provomover um ou mais participamente à administrador.
 
 :::caution Atenção
 
@@ -84,7 +84,7 @@ Forma nova -
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

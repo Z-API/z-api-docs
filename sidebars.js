@@ -29,7 +29,7 @@ module.exports = {
       'instance/disconnect',
       'instance/status',
       'instance/device',
-      'instance/rename-instance'
+      'instance/rename-instance',
     ],
     Mensagens: [
       'message/introduction',
@@ -42,7 +42,7 @@ module.exports = {
       'message/send-message-link',
       'message/send-message-location',
       /* 'send-message/send-message-product',
-      'send-message/send-message-catalog',*/
+      'send-message/send-message-catalog', */
       'message/send-message-contact',
       'message/send-button-list',
       'message/send-option-list',
@@ -64,6 +64,7 @@ module.exports = {
       'chats/get-metadata-chat',
       'chats/archive-chat',
       'chats/delete-chat',
+      'chats/send-chat-expiration',
     ],
     Grupos: [
       'group/introduction',
@@ -108,7 +109,6 @@ module.exports = {
       'webhooks/on-whatsapp-message-status-changes',
       'webhooks/on-chat-presence',
       'webhooks/on-webhook-connected',
-
     ],
     Parceiros: [
       'partner/introduction',
@@ -116,8 +116,6 @@ module.exports = {
       'partner/sign-instance',
       'partner/unsubscribe-instance',
       'partner/list-instances',
-      
-     
     ],
 
     Integradores: ['integrators/find-my-pack'],

@@ -13,7 +13,7 @@ title: Enviar link
 
 ## Conceituação
 
-Método responsavel por enviar um link aos seus contatos, muito utilzado para compartilhar links para que os usuários sejam direcionados a um site.
+Método responsável por enviar um link aos seus contatos, muito utilzado para compartilhar links para que os usuários sejam direcionados a um site.
 
 :::tip Sobre links
 
@@ -80,7 +80,7 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

@@ -14,7 +14,7 @@ title: Status
 
 ## Conceituação
 
-O Este método é reponsavel por atualizar/adicionar o seu EndPoint para o webhook de status via API ou seja, sem a necessidade de acessar o admin Z-API.
+O Este método é responsável por atualizar/adicionar o seu EndPoint para o webhook de status via API ou seja, sem a necessidade de acessar o admin Z-API.
 
 :::caution Atenção
 
@@ -61,7 +61,7 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

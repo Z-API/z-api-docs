@@ -12,7 +12,7 @@ title: Receive
 
 ## Conceituação
 
-O Z-API oferece dentro das configurações da instância no painel admin o apontamento de webhooks para que ele possa notificar você sobre interações com seus chats/contatos. Este método é reponsavel por atualizar/adicionar esta informação via API, com ele você pode configurar os webhooks sem a necessidade de acessar o admin Z-API.
+O Z-API oferece dentro das configurações da instância no painel admin o apontamento de webhooks para que ele possa notificar você sobre interações com seus chats/contatos. Este método é responsável por atualizar/adicionar esta informação via API, com ele você pode configurar os webhooks sem a necessidade de acessar o admin Z-API.
 
 :::caution Atenção
 
@@ -59,7 +59,7 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

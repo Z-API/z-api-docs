@@ -1,19 +1,19 @@
 ---
-id: delete-chat
-title: Deletar Chats
+id: send-chat-expiration
+title: Expiração do chats
 ---
 
 ## Método
 
-#### /modify-chat
+#### POST /send-chat-expiration
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/modify-chat
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-chat-expiration
 
 ---
 
 ## Conceituação
 
-Este método é responsável por deletar seus chats.
+Este método é responsável por enviar expiração do chat.
 
 ---
 
@@ -23,8 +23,8 @@ Este método é responsável por deletar seus chats.
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | integer | Número de telefone que você deseja alterar no **SEU** chat |
-| action | string | Atributo para deletar o chat |
+| phone | integer | Número de telefone que você deseja inserir o tempo de expiração do **SEU** chat |
+| chatExpiration | string | Atributo para enviar expiração do chat |
 
 ---
 
@@ -34,10 +34,12 @@ Exemplo
 
 ```json
 {
-  "phone": "5544999999999",
-  "action": "delete"
+  "phone": "554497050785",
+  "chatExpiration": "90_days"
 }
 ```
+
+**Opcões do chatExpiration**: "24_hours", "7_days", "90_days", "off"
 
 ---
 

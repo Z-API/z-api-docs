@@ -15,22 +15,17 @@ title: Listando instâncias
 
 Método utilizado para listar todas as instâncias criadas.
 
-
-
-
 ---
 
 ## Atributos
 
 ### Obrigatórios
 
-| Atributos |  Tipo   | Descrição                      |
-| :-------- | :----:  | :----------------------------- |
-| page      | integer | Utilizado para paginação você de informar aqui a pagina de chats que quer buscar |
-| pageSize  | integer | Especifica o tamanho do retorno de chats por pagina|
-| query     | number  | Busca pelo nome e id da instancia |
-
-
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| page | integer | Utilizado para paginação você de informar aqui a pagina de chats que quer buscar |
+| pageSize | integer | Especifica o tamanho do retorno de chats por pagina |
+| query | number | Busca pelo nome e id da instancia |
 
 ---
 
@@ -44,9 +39,9 @@ Método utilizado para listar todas as instâncias criadas.
 
 ```json
 {
-    "pageSize": 1,
-    "page": 1,
-    "query": "8823XWIE982KII99012K2L",
+  "pageSize": 1,
+  "page": 1,
+  "query": "8823XWIE982KII99012K2L"
 }
 ```
 
@@ -66,37 +61,37 @@ Método utilizado para listar todas as instâncias criadas.
 
 ```json
 {
-    "total": 1,
-    "totalPage": 1,
-    "pageSize": 1,
-    "page": 1,
-    "content": [
-        {
-            "token": "",
-            "tenant": "",
-            "created": "",
-            "due": 1648565999675,
-            "paymentStatus": "",
-            "deliveryCallbackUrl": "",
-            "receivedCallbackUrl": "",
-            "disconnectedCallbackUrl": "",
-            "messageStatusCallbackUrl": "",
-            "receivedAndDeliveryCallbackUrl": "",
-            "presenceChatCallbackUrl": "",
-            "connectedCallbackUrl": "",
-            "receivedStatusCallbackUrl":"",
-            "phoneConnected": false,
-            "whatsappConnected": false,
-            "name": "",
-            "id": ""
-        }
-    ]
+  "total": 1,
+  "totalPage": 1,
+  "pageSize": 1,
+  "page": 1,
+  "content": [
+    {
+      "token": "",
+      "tenant": "",
+      "created": "",
+      "due": 1648565999675,
+      "paymentStatus": "",
+      "deliveryCallbackUrl": "",
+      "receivedCallbackUrl": "",
+      "disconnectedCallbackUrl": "",
+      "messageStatusCallbackUrl": "",
+      "receivedAndDeliveryCallbackUrl": "",
+      "presenceChatCallbackUrl": "",
+      "connectedCallbackUrl": "",
+      "receivedStatusCallbackUrl": "",
+      "phoneConnected": false,
+      "whatsappConnected": false,
+      "name": "",
+      "id": ""
+    }
+  ]
 }
 ```
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

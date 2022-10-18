@@ -13,7 +13,7 @@ title: Atualizar imagem do grupo
 
 ## Conceituação
 
-Este método é reponsavel alterar a imagem de um grupo já existente.
+Este método é responsável alterar a imagem de um grupo já existente.
 
 :::caution Atenção
 
@@ -82,7 +82,7 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

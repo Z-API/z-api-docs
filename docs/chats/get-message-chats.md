@@ -13,7 +13,7 @@ title: Pegar mensagens do chat
 
 ## Conceituação
 
-Este método é reponsavel por retornar todas conversas de um chat.
+Este método é responsável por retornar todas conversas de um chat.
 
 ---
 
@@ -187,7 +187,7 @@ Segue Json conforme sequência abaixo:
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

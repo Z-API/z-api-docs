@@ -13,7 +13,7 @@ title: Pegar metadata do contato
 
 ## Conceituação
 
-Este método é reponsavel por retornar as informações do metadata do contato.
+Este método é responsável por retornar as informações do metadata do contato.
 
 :::tip Dica sobre imagem do contato
 
@@ -76,7 +76,7 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

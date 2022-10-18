@@ -13,7 +13,7 @@ title: Enviar localização
 
 ## Conceituação
 
-Método responsavel por enviar uma localização fixa aos seus contatos, muito utilizado para enviar a localização de um endereços.
+Método responsável por enviar uma localização fixa aos seus contatos, muito utilizado para enviar a localização de um endereços.
 
 ---
 
@@ -72,7 +72,7 @@ Exemplo
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 

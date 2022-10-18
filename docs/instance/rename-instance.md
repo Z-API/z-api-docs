@@ -19,10 +19,9 @@ Método utilizado para renomear uma instância.
 
 ## Atributos
 
-| Atributos |  Tipo   | Descrição                      |
-| :-------- | :----:  | :----------------------------- |
-| value     | string  | Novo nome para a instância     |
-
+| Atributos |  Tipo  | Descrição                  |
+| :-------- | :----: | :------------------------- |
+| value     | string | Novo nome para a instância |
 
 ---
 
@@ -35,7 +34,7 @@ Método utilizado para renomear uma instância.
 **Exemplo**
 
 ```json
-Body 
+Body
 {
 "value": "novo nome"
 }
@@ -56,14 +55,13 @@ Return
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando corretamente a especificação do método, ou seja, verifique se você enviou o POST ou GET conforme especificado no início deste tópico.
 
 ### 415
 
 Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
 
 ---
-
 
 ## Code
 
