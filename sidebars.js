@@ -14,9 +14,9 @@ module.exports = {
     Tips: [
       'tips/blockednumber',
       'tips/enable-fix-number',
-      'tips/disable-screem-blocked',
-      'tips/android-active',
-      'tips/stability',
+      // 'tips/disable-screem-blocked',
+      // 'tips/android-active',
+      // 'tips/stability',
       'tips/emulators',
       'tips/Z-APIvsAPI-OFICIAL',
     ],
@@ -28,7 +28,7 @@ module.exports = {
       'instance/update-call-reject-auto',
       'instance/update-call-reject-message',
       'instance/qrcode',
-      'instance/restore-session',
+      // 'instance/restore-session',
       'instance/restart',
       'instance/disconnect',
       'instance/status',
@@ -97,6 +97,15 @@ module.exports = {
       'group/update-group-settings',
       'group/update-group-description',
     ],
+    Communities: [
+      'communities/introduction',
+      'communities/create-community',
+      'communities/list-communities',
+      'communities/link-groups',
+      'communities/unlink-groups',
+      'communities/community-metadata',
+      'communities/deactivate-community',
+    ],
     'Transmission list': ['broadcast/introduction'],
     Status: [
       'status/introduction',
@@ -140,8 +149,8 @@ module.exports = {
 
     Integradors: ['integrators/find-my-pack'],
 
-    'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
+    // 'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
 
-    Sample: ['sample/exemplos'],
+    // Sample: ['sample/exemplos'],
   },
 };

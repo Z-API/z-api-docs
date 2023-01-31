@@ -18,9 +18,9 @@ Você provavelmente já deve saber, mas vamos reafirmar!
 
 :::important Importante
 
-O Z-API utiliza o mesmo canal de comunicação utilizado pelo whatsapp web para disponibilizar as APIs. Caso você utilize a versão comum do Whatsapp, **NÃO** será possível você utilizar o whasapp web junto com Z-API.
+O Z-API reafirma que não é destinada para prática de SPAM e envio de mensagens indesejadas ou qualquer ação que viole os termos de serviço do WhatsApp.
 
-Recentemente o Whatsapp lançou a funcionalidade de múltiplos dispositivos, isso **permite** que você conecte até **4** dispositivos no seu Whatsapp. Caso essa opção **esteja ativada** em seu celular, você poderá utilizar o whatsapp web juntamente com Z-API, sem a necessidade de manter o telefone conectado a internet a todo momento.
+Utilize a API com sabedoria criando funcionalidades que gere valor aos seus clientes e aos usuários do WhatsApp.
 
 :::
 
@@ -52,7 +52,7 @@ Para exemplificar, segue os passos de envio de uma mensagem de texto simples:
 
 3. Sua instância processa a fila enviando para o WhatsApp;
 
-4. Seu Webhook de delivery é chamado quando sua mensagem for enviada;
+4. Seu Webhook de delivery é chamado quando a mensagem é processada, te avisando que foi enviada ou que houve falha.
 
 5. Assim que o destinatário receber a mensagem, o Webhook de message-status é chamado informando RECEIVED.
 
@@ -77,7 +77,3 @@ Todas as mensagens enviadas para nossa API serão encaminhadas para uma fila de 
 O Facebook tem comportamentos diferentes para cada uma das versões do Whatsapp, nossa API disponibiliza métodos compativeis com a versão WEB.
 
 :::
-
-:::caution Ponto de Atenção
-
-Muito cuidado! Não se esqueça que uma vez conectado seu número ao nosso serviço você não conseguirá mais utilizar o mesmo número no Whatsapp Web. Esta limitação é temporária, tendo em vista que o Whatsapp já está divulgando uma nova funcionalidade que permitirá mais de um Whatsapp Web conectados simultaneamente.
