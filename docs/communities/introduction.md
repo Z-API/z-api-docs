@@ -9,7 +9,8 @@ O WhatsApp agora oferece a funcionalidade de Comunidades, que permite aos usuár
 
 Para exemplificar como funciona a estrutura de comunidades, veja a imagem abaixo:
 
-![image](../../img/communities.png)
+<img src="https://raw.githubusercontent.com/Z-API/z-api-docs/main/img/communities.png" />
+
 
 **Observações:**
 
