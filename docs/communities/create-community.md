@@ -23,6 +23,12 @@ Antes de utilizar esse recurso, é importante verificar se o aplicativo do Whats
 | :-------- | :----: | :---------------------------------- |
 | name      | string | Nome da comunidade que deseja criar |
 
+### Opcionais
+
+| Atributos   |  Tipo  | Descrição               |
+| :---------- | :----: | :---------------------- |
+| description | string | Descrição da comunidade |
+
 ## Request Body
 
 **Método**
