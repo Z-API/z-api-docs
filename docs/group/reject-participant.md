@@ -1,23 +1,17 @@
 ---
-id: update-group-settings
-title: Configurações do grupo
+id: reject-participant
+title: Rejeitar Participantes
 ---
 
 ## Método
 
-#### /update-group-settings
+#### /reject-participant
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-settings
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/reject-participant
 
 ## Conceituação
 
-Este método permite você alterar as preferências do grupo.
-
-:::caution Atenção
-
-Atenção somente administradores podem alterar as preferências do grupo.
-
-:::
+Este método é reponsável por rejeitar a entrada de participantes no grupo.
 
 :::caution Atenção
 
@@ -33,33 +27,38 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | ID/Fone do grupo |
-| adminOnlyMessage | boolean | Somente administrador podem enviar mensagens no grupo |
-| adminOnlySettings | boolean | Atributo para permitir que apenas os admins façam edições no grupo |
-| requireAdminApproval | boolean | Define se vai ser necessário a aprovação de algum admin para entrar no grupo |
+| groupId | string | ID/Fone do grupo |
+| phones | array string | Array com os numero(s) do(s) participante(s) a serem rejeitados |
+
+### Opcionais
+
+| Atributos | Tipo | Descrição |
+| :-------- | :--: | :-------- |
 
 ---
 
 ## Request Body
 
+#### URL
+
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/reject-participant
+
+#### Body
+
 ```json
 
 Forma antiga -
   {
-    "phone": "5511999999999-1623281429",
-    "adminOnlyMessage": true,
-    "adminOnlySettings": true,
-    "requireAdminApproval": false
+    "groupId": "5511999999999-1623281429",
+    "phones": ["5544999999999", "5544888888888"]
   }
 
-----------------------------------------
+  -------------------------------------------------
 
 Forma nova -
   {
-    "phone": "120363019502650977-group",
-    "adminOnlyMessage": true,
-    "adminOnlySettings": true,
-    "requireAdminApproval": false
+    "groupId": "120363019502650977-group",
+    "phones": ["5544999999999", "5544888888888"]
   }
 
 ```
@@ -102,4 +101,4 @@ Link para a response do webhook (ao receber)
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/update-group-settings.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/reject-participant.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
