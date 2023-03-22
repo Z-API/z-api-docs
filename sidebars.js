@@ -14,9 +14,9 @@ module.exports = {
     Tips: [
       'tips/blockednumber',
       'tips/enable-fix-number',
-      'tips/disable-screem-blocked',
-      'tips/android-active',
-      'tips/stability',
+      // 'tips/disable-screem-blocked',
+      // 'tips/android-active',
+      // 'tips/stability',
       'tips/emulators',
       'tips/Z-APIvsAPI-OFICIAL',
     ],
@@ -28,7 +28,7 @@ module.exports = {
       'instance/update-call-reject-auto',
       'instance/update-call-reject-message',
       'instance/qrcode',
-      'instance/restore-session',
+      // 'instance/restore-session',
       'instance/restart',
       'instance/disconnect',
       'instance/status',
@@ -88,6 +88,8 @@ module.exports = {
       'group/update-group-photo',
       'group/add-participant',
       'group/remove-participant',
+      'group/approve-participant',
+      'group/reject-participant',
       'group/mention-participant',
       'group/add-admin',
       'group/remove-admin',
@@ -96,6 +98,15 @@ module.exports = {
       'group/group-invitation-metadata',
       'group/update-group-settings',
       'group/update-group-description',
+    ],
+    Communities: [
+      'communities/introduction',
+      'communities/create-community',
+      'communities/list-communities',
+      'communities/link-groups',
+      'communities/unlink-groups',
+      'communities/community-metadata',
+      'communities/deactivate-community',
     ],
     'Transmission list': ['broadcast/introduction'],
     Status: [
@@ -124,7 +135,7 @@ module.exports = {
       'webhooks/introduction',
       'webhooks/on-message-send',
       'webhooks/on-message-received',
-      'webhooks/on-message-received-notify-fromme',
+      // 'webhooks/on-message-received-notify-fromme',
       'webhooks/on-whatsapp-disconnected',
       'webhooks/on-whatsapp-message-status-changes',
       'webhooks/on-chat-presence',
@@ -140,8 +151,8 @@ module.exports = {
 
     Integradors: ['integrators/find-my-pack'],
 
-    'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
+    // 'Multi-Devices': ['multidevices/introduction', 'multidevices/beta'],
 
-    Sample: ['sample/exemplos'],
+    // Sample: ['sample/exemplos'],
   },
 };

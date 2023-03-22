@@ -1,6 +1,6 @@
 {
     "method": "POST",
-    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remove-participant",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/communities",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
     "headers": [
@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"groupId\": \"5511999999999-1623281429\", \"phones\": [\"5511999999999\"]}"
+        "text": "{\"name\": \"Minha primeira Comunidade\"}"
     }
 }

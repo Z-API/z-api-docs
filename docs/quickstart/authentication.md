@@ -7,6 +7,12 @@ title: Autenticação e Segurança
 
 Não é difícil imaginar que para comunicação entre API’s vamos precisar estabelecer um protocolo de segurança entre as partes, ou seja entre o Z-API e sua aplicação, todas as interações com nossa API precisará ser autenticada por um ID e um token.
 
+Ao obter seu ID e Token você já pode começar a enviar mensagens, para isso você precisa compor a URL com as sus informações.
+
+Por exemplo: https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-text
+
+Observe que as informações de ID e Token compem a URL de integração.
+
 ---
 
 ## Como consigo meu id e token?
@@ -15,6 +21,6 @@ Logo após você criar sua conta no Z-API você vai precisar criar uma instânci
 
 ---
 
-:::important
+:::warning
 
-Nunca compartilhe o seu ID e token com ninguém.
+Nunca compartilhe o seu ID e token com ninguém, qualquer pessoa com essa informação pode mandar mensagens em seu nome. Recomendamos também que a chamada para nossa API **NUNCA** seja feita pelo frontend e sim pelo servidor, para que não deixe suas informações expostas.

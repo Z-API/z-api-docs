@@ -13,13 +13,7 @@ title: Status da instância
 
 ## Conceituação
 
-Este método é responsável por lhe passar informações sobre a saúde da sua instância no Z-API, para uma boa qualidade de envio e recebimento é preciso tomar os seguinte cuidados:
-
-- Configure os webhooks no Z-API para receber notificações sobre mudanças no status da sua instância.
-
-- Desabilite a otimização de bateria do celular conectado mesmo que seja um emulador (exemplo para Android https://youtu.be/Z1baLLXyvTM).
-
-- Monitore os atributos deste método.
+Este método te permite descobrir se sua instância está ou não conectada a uma conta de Whatsapp.
 
 ---
 

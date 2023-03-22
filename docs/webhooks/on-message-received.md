@@ -5,7 +5,7 @@ title: Ao receber
 
 ## Conceituação
 
-Esse é o webhook de retorno de mensagens recebidas
+Esse é o webhook de retorno de mensagens recebidas, também é executada quando a sua instância está configurada para notificar também mensagens enviadas por você mesmo.
 
 :::caution Atenção
 
@@ -64,7 +64,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 | image.imageUrl | string | Url da foto. |
 | image.thumbnailUrl | string | Url da thumbnail da foto. |
 | image.mimeType | string | MimeType da imagem. |
-| isGroup  | boolean | Indica se o chat é um grupo|
+| isGroup | boolean | Indica se o chat é um grupo |
 | audio.mimeType | string | MimeType do áudio. |
 | audio.audioUrl | string | Url do áudio. |
 | video.caption | string | Legenda do vídeo. |
@@ -150,7 +150,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-  ### Exemplo de retorno de texto (Lista de Botão)
+### Exemplo de retorno de texto (Lista de Botão)
 
 ```json
 {
@@ -450,6 +450,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 ```
 
 ### Exemplo de retorno de GIF
+
 ```json
 {
   "waitingMessage": false,
@@ -733,6 +734,12 @@ As notificações são mensagens de WhatsApp que se baseiam em modelos de mensag
 Posto dessa forma, aqui estão documentadas as notificações que recebemos, caso não queira receber essas notificações é necessário ignorar a mensagem quando ela chegar com o atributo notification.
 
 ### Exemplos
+
+```json
+case 'MEMBERSHIP_APPROVAL_REQUEST':
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Participante " + valor2.notificationparameters + " solicitou participar do grupo<br><br></span>" + campohora + "</div></div>"
+break;
+```
 
 ```json
 case 'GROUP_PARTICIPANT_LEAVE':

@@ -1,5 +1,5 @@
 ---
-id:id: metadata-group
+id: metadata-group
 
 title: Metadata do Grupo
 ---
@@ -8,7 +8,7 @@ title: Metadata do Grupo
 
 #### /group-metadata
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata/{phone}
 
 ## Conceituação
 
@@ -41,7 +41,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata/{phone}
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata/{phone}
 
 ---
 
@@ -49,15 +49,15 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ### 200
 
-| Atributos      | Tipo         | Descrição                             |
-| :-----------   | :----------- | :------------------------------------ |
-| phone          | string       | ID/Fone do Grupo                      |
-| description    | string       | Descrição do grupo                    |
-| owner          | string       | Numero do criador do grupo            |
-| subject        | string       | Nome do grupo                         |
-| creation       | timestamp    | Timestamp da data de criação do grupo |
-| invitationLink | url          | Link de convite do grupo (retorna apenas para admin) |
-| participants   | array string | com dados dos participantes           |
+| Atributos | Tipo | Descrição |
+| :-- | :-- | :-- |
+| phone | string | ID/Fone do Grupo |
+| description | string | Descrição do grupo |
+| owner | string | Numero do criador do grupo |
+| subject | string | Nome do grupo |
+| creation | timestamp | Timestamp da data de criação do grupo |
+| invitationLink | url | Link de convite do grupo (retorna apenas para admin) |
+| participants | array string | com dados dos participantes |
 
 Array String (participants)
 

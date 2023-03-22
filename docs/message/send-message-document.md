@@ -45,6 +45,7 @@ Método responsavel por enviar documentos aos seus contatos ele é simples e obj
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | fileName | String | Nome do documento |
+| caption | String | Descrição do arquivo |
 | messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
 
@@ -53,6 +54,7 @@ Método responsavel por enviar documentos aos seus contatos ele é simples e obj
 ## Request Body
 
 ##### Envio por URL
+
 ```json
 {
   "phone": "5544999999999",
@@ -60,7 +62,9 @@ Método responsavel por enviar documentos aos seus contatos ele é simples e obj
   "fileName": "Meu PDF"
 }
 ```
+
 ##### Envio por Base64
+
 ```json
 {
   "phone": "5544999999999",
@@ -75,9 +79,9 @@ Método responsavel por enviar documentos aos seus contatos ele é simples e obj
 
 ### 200
 
-| Atributos | Tipo   | Descrição      |
-| :-------- | :----- | :------------- |
-| zaapId    | string | id no z-api    |
+| Atributos | Tipo | Descrição |
+| :-- | :-- | :-- |
+| zaapId | string | id no z-api |
 | messageId | string | id no whatsapp |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 

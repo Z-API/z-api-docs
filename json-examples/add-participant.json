@@ -12,6 +12,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"groupId\": \"5511999999999-1623281429\", \"phones\": [\"5511999999999\"}"
+        "text": "{\"groupId\": \"5511999999999-1623281429\", \"phones\": [\"5511999999999\"]}"
     }
 }
