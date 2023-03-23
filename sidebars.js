@@ -19,6 +19,7 @@ module.exports = {
       // 'tips/stability',
       'tips/emulators',
       'tips/Z-APIvsAPI-OFICIAL',
+      'tips/button-status'
     ],
 
     Instance: [
