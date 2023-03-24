@@ -56,7 +56,7 @@ Os possíveis retornos do webhook **on-webhook-connected** estão cadastrado log
 | connected | boolean | status da instância. |
 | phone | string | Número conectado. |
 | momment | string | Momento em que a instância foi desconectada do número. |
-| type | string | Tipo do evento da instância, nesse caso será "MessageStatusCallback". |
+| type | string | Tipo do evento da instância, nesse caso será "ConnectedCallback" . |
 
 ---
 
