@@ -23,7 +23,7 @@ Mas não se preocupe, para conectar novamente bastar ler o QRCode :)
 
 ---
 
-:::important Não se esqueça !
+:::important Não se esqueça!
 
 Uma vez desconectado todos os metodos da API ficam indisponíveis e os webhooks deixam de ser enviados.
 

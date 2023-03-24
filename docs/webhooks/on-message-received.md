@@ -569,6 +569,58 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de ligação recebida
+
+```json
+{
+    "isGroup": false,
+    "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+    "messageId": "1679655074-84",
+    "phone": "5544999999999",
+    "fromMe": false,
+    "momment": 1679661190000,
+    "status": "RECEIVED",
+    "chatName": "name",
+    "senderPhoto": "https://",
+    "senderName": "name",
+    "photo": "https://",
+    "broadcast": false,
+    "referenceMessageId": null,
+    "externalAdReply": null,
+    "forwarded": false,
+    "type": "ReceivedCallback",
+    "notification": "CALL_VOICE",
+    "notificationParameters": [],
+    "callId": "F44E0E2011E7C784BB9A4AC11749C436"
+}
+```
+
+### Exemplo de retorno de ligação perdida
+
+```json
+{
+    "isGroup": false,
+    "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+    "messageId": "1679655074-103",
+    "phone": "5544999999999",
+    "fromMe": false,
+    "momment": 1679661194000,
+    "status": "RECEIVED",
+    "chatName": "name",
+    "senderPhoto": "https://",
+    "senderName": "",
+    "photo": "https://",
+    "broadcast": false,
+    "referenceMessageId": null,
+    "externalAdReply": null,
+    "forwarded": false,
+    "type": "ReceivedCallback",
+    "notification": "CALL_MISSED_VOICE",
+    "notificationParameters": [],
+    "callId": "F44E0E2011E7C784BB9A4AC11749C436"
+}
+```
+
 ### Exemplo de retorno de produto
 
 ```json

@@ -15,7 +15,7 @@ title: Buscar etiquetas
 
 Nesse método você busca todas suas etiquetas cadastradas em seu whatsapp business.
 
-:::important
+:::important Importante
 Este método está disponível apenas para dispositivos conectados a versão Multi-Devices do whatsapp.
 :::
 
