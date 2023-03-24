@@ -19,7 +19,7 @@ module.exports = {
       // 'tips/stability',
       'tips/emulators',
       'tips/Z-APIvsAPI-OFICIAL',
-      'tips/button-status'
+      'tips/button-status',
     ],
 
     Instance: [
@@ -80,6 +80,7 @@ module.exports = {
       'chats/archive-chat',
       'chats/pin-chat',
       'chats/delete-chat',
+      'chats/send-chat-expiration',
     ],
     Calls: ['calls/introduction', 'calls/send-call'],
     Groups: [

@@ -45,18 +45,18 @@ To update the webhook route, you can do it through the API or through the admin 
 
 ---
 
-## Webhook’s returns 
+## Webhook’s returns
 
 The possible returns of the **on-webhook-connected** webhook are registered below:
 
 ## Response
 
-| Attributes| Type| Description |
+| Attributes | Type | Description |
 | :-- | :-: | :-- |
-| connected | boolean | Instance status  |
-| phone | string | Number connected  |
+| connected | boolean | Instance status |
+| phone | string | Number connected |
 | momment | string | Time when the instance was disconnected from the number. |
-| type | string | Instance event type, in this case it will be "MessageStatusCallback". |
+| type | string | Instance event type, in this case it will be "ConnectedCallback". |
 
 ---
 

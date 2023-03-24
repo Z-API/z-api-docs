@@ -1,41 +1,45 @@
 ---
 id: button-status
-title: Status dos Botões
----
-
-:::tip
-Comportamento dos botões no WhatsApp em diferentes cenários.
-:::
-
+title: Funcionamento dos Botões
 ---
 
 ## Introdução
 
-Este tópico descreve o comportamento dos botões no WhatsApp em diferentes cenários. Os botões são uma forma de interação com o usuário para permitir a execução de ações específicas.
+Nas ultimas semanas as mensagens contendo botões estão sofrendo uma instabilidade em seu funcionamento.
+
+**É importante lembrar que isso não se trata de um problema exclusivo da Z-API.**
+
+Este tópico descreve como está o comportamento dos botões no WhatsApp em diferentes cenários.
 
 ---
+
+:::danger Atenção
+
+Essa documentação está foi atualizada no dia 24/03/2023 então os fatos sobre o funcionamento dos botões estão baseados na realidade deste dia. Importante lembrar que a cada atualização do whatsapp os botões podem sofrer alterações.
+
+:::
 
 ## Fatores decisivos:
 
 #### Para o funcionamento dos botões no WhatsApp, são dois fatores decisivos:
-- Se o WhatsApp que está sendo usado é business ou normal
-- Se a mensagem está sendo enviada para chat normal ou para um grupo.
 
+- Se o WhatsApp que está disparando a mensagem é business ou normal
+- Se a mensagem está sendo enviada para chat normal ou para um grupo.
 
 ## Tipos de botões
 
 #### Existem quatro tipos de botões no WhatsApp:
 
-- Botão simples com texto
-- Botão simples com imagem
-- Lista de opções
-- Botões de ações
+- Botão simples com texto (/send-button-list)
+- Botão simples com imagem (/send-button-list-image)
+- Lista de opções (/send-option-list)
+- Botões de ações (/send-option-list)
 
 ---
 
 ## Comportamento dos botões:
 
- ### [Botão simples com texto:](https://developer.z-api.io/message/send-button-list)
+### [Botão simples com texto:](https://developer.z-api.io/message/send-button-list)
 
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
