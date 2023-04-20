@@ -621,6 +621,35 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de solicitação de entrada em grupo
+
+```json
+{
+    "isGroup": true,
+    "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+    "messageId": "464201093",
+    "phone": "5544999999999-group",
+    "fromMe": false,
+    "momment": 1682017970000,
+    "status": "RECEIVED",
+    "chatName": "name",
+    "senderPhoto": null,
+    "senderName": "name",
+    "photo": null,
+    "broadcast": false,
+    "participantPhone": "5544999999999",
+    "referenceMessageId": null,
+    "externalAdReply": null,
+    "forwarded": false,
+    "type": "ReceivedCallback",
+    "notification": "MEMBERSHIP_APPROVAL_REQUEST",
+    "notificationParameters": [
+        "5544999999999"
+    ],
+    "callId": null
+}
+```
+
 ### Exemplo de retorno de produto
 
 ```json
