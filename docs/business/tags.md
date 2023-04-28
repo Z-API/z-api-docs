@@ -11,7 +11,7 @@ title: Buscar etiquetas
 
 ---
 
-## Condeituação
+## Conceituação
 
 Nesse método você busca todas suas etiquetas cadastradas em seu whatsapp business.
 

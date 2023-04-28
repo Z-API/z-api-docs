@@ -11,7 +11,7 @@ title: Remover etiquetas de um chat
 
 ---
 
-## Condeituação
+## Conceituação
 
 Através deste método, é possível remover as etiquetas de um chat no whatsapp business
 

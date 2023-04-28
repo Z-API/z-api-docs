@@ -11,7 +11,7 @@ title: Pegar Produto (Id)
 
 ---
 
-## Condeituação
+## Conceituação
 
 Nesse método você será capaz de pegar um produto pelo seu id
 

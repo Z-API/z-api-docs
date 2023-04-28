@@ -11,7 +11,7 @@ title: Atribuir etiquetas a um chat
 
 ---
 
-## Condeituação
+## Conceituação
 
 Através deste método, é possível atribuir uma etiqueta a um chat no whatsapp business
 

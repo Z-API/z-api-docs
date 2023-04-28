@@ -11,7 +11,7 @@ title: Pegar Produtos
 
 ---
 
-## Condeituação
+## Conceituação
 
 Nesse método você será capaz de pegar os produtos de um catálogo do whatsapp Business
 
