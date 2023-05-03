@@ -21,13 +21,3 @@ Para fazer esse armazenamento ele pode implementar um sistema de armazenamento i
 
 - Amazon S3
 - Google Cloud Storage
-
-<!-- ---
-
-### Segundo passo
-
-
----
-
-### Terceiro passo
- --> -->
