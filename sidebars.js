@@ -20,6 +20,7 @@ module.exports = {
       'tips/emulators',
       'tips/Z-APIvsAPI-OFICIAL',
       'tips/button-status',
+      'tips/file-expiration',
     ],
 
     Instance: [

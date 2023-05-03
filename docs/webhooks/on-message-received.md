@@ -7,6 +7,12 @@ title: Ao receber
 
 Esse é o webhook de retorno de mensagens recebidas, também é executada quando a sua instância está configurada para notificar também mensagens enviadas por você mesmo.
 
+:::caution Qual o prazo de validade dos arquivos do z-api?
+
+Todos os arquivos de midia recebidos do z-api através do seu webhook tem o prazo de expiração de **30 dias**. Após esse período todos os arquivos, seja audio, pdf, imagem, etc, serão excluídos do storage.
+
+:::
+
 :::caution Atenção
 
 O Z-API não aceita webhooks que não sejam HTTPS
