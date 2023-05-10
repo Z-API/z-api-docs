@@ -69,4 +69,4 @@ Essa documentação foi atualizada no dia 24/03/2023 então os fatos sobre o fun
 
 ## Resumo
 
-Em resumo, se você estiver usando o WhatsApp normal, os botões simples com imagem e texto funcionam 100%, tanto para chat normal quanto para grupos, além da lista de opções para chat normal. Se você estiver usando o WhatsApp Business, a única coisa que está funcionando é a lista de opções para chat normal, com problemas para grupos.
+Em resumo, o uso dos recursos de botões simples com imagem e texto no WhatsApp está sujeito a problemas. Tanto para o WhatsApp normal quanto para o WhatsApp Business, há dificuldades no envio desses tipos de botões em chats normais e grupos. Lista de opções para chat normal funcionam. Se você estiver usando o WhatsApp Business, a única coisa que está funcionando é a lista de opções para chat normal, com problemas para grupos.
