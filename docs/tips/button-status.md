@@ -15,7 +15,7 @@ Este tópico descreve como está o comportamento dos botões no WhatsApp em dife
 
 :::danger Atenção
 
-Essa documentação foi atualizada no dia 10/05/2023 então os fatos sobre o funcionamento dos botões estão baseados na realidade deste dia. Importante lembrar que a /cada atualização do whatsapp os botões podem sofrer alterações.
+Essa documentação foi atualizada no dia 10/05/2023 então os fatos sobre o funcionamento dos botões estão baseados na realidade deste dia. Importante lembrar que a cada atualização do whatsapp os botões podem sofrer alterações.
 
 :::
 
