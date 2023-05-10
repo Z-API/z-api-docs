@@ -41,15 +41,15 @@ Essa documentação foi atualizada no dia 24/03/2023 então os fatos sobre o fun
 
 ### [Botão simples com texto:](https://developer.z-api.io/message/send-button-list)
 
-- Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
-- Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
+- Enviando de WhatsApp Normal para Grupo: **SUJEITO A PROBLEMAS**
+- Enviando de WhatsApp Normal para Chat Normal: **SUJEITO A PROBLEMAS**
 - Enviando de WhatsApp Business para Chat Normal: **SUJEITO A PROBLEMAS**
 - Enviando de WhatsApp Business para Grupo: **SUJEITO A PROBLEMAS**
 
 ### [Botão simples com imagem:](https://developer.z-api.io/message/send-button-list-image)
 
-- Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
-- Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
+- Enviando de WhatsApp Normal para Chat Normal: **SUJEITO A PROBLEMAS**
+- Enviando de WhatsApp Normal para Grupo: **SUJEITO A PROBLEMAS**
 - Enviando de WhatsApp Business para Chat Normal: **SUJEITO A PROBLEMAS**
 - Enviando de WhatsApp Business para Grupo: **SUJEITO A PROBLEMAS**
 
