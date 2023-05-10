@@ -136,7 +136,7 @@ The status **RECORDING** is only returned if using beta multi-devices
 
 ### 405
 
-In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or GET as specified at the beginning of this topic.
+In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or PUT as specified at the beginning of this topic.
 
 ### 415
 

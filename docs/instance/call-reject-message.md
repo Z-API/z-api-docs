@@ -45,7 +45,7 @@ Para a mensagem ser enviada o método anterior (Rejeitar chamadas) precisa estar
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.
 
 ### 415
 
