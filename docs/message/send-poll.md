@@ -34,6 +34,7 @@ Neste método você poderá enviar mensagens do tipo enquete.
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| pollMaxOptions | number | Número máximo de votos por pessoa na enquete |
 
 ### PollItem
 
@@ -46,9 +47,24 @@ Neste método você poderá enviar mensagens do tipo enquete.
 ## Request Body
 
 ```json
+Múltiplas escolhas
+
 {
   "phone": "5511999999999",
   "message": "Qual a melhor API para Whatsapp?",
+  "poll": [
+    {"name": "Z-API"},  
+    {"name": "Outras"}
+  ]
+}
+
+------------------------------------------------------
+
+Escolha única
+{
+  "phone": "5511999999999",
+  "message": "Qual a melhor API para Whatsapp?",
+  "pollMaxOptions": 1,
   "poll": [
     {"name": "Z-API"},  
     {"name": "Outras"}
