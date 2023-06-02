@@ -53,14 +53,24 @@ Este webhook será chamado sempre que nosso serviço identificar alguma indispon
 
 :::
 
-## Como configurar meu Webhook?
-
 :::important Importante
 
 Nunca compartilhe o seu ID e token com ninguém.
 
 :::
 
-Acesse nosso painel admin, vá em opções e escolha "editar instância".
+## Como configurar meu Webhook?
+
+É possível atualizar o webhook de uma instância por dois caminhos diferentes.
+
+
+### Via painel
+
+Acesse nosso painel admin, em Instâncias clique no olho "visualizar" na instância que deseja e nos 3 pontinhos escolha "editar".
 
 ![img](../../img/EditInstance.jpeg)
+
+
+### Via api
+
+Também é possível atualizar a rota do seu webhook chamando o endpoint de update. Esse endpoint é disponibilizado nos próximos tópicos da documentação.
