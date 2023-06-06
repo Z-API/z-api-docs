@@ -31,6 +31,16 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 `PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-received
 
+#### Ou
+
+Também é possível atualizar a rota com a opção "enviadas por mim" habilitada.
+
+#### /update-webhook-received-delivery
+
+`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-received-delivery
+
+![img](../../img/SendFromMe.jpeg)
+
 #### Request Body
 
 ```json
