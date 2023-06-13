@@ -38,7 +38,7 @@ Método utilizado para listar todas as instâncias criadas.
 
 **Método**
 
-`GET` <https://api.z-api.io/instances/>
+`GET` <https://api.z-api.io/instances?page=1&pageSize=2/>
 
 **Exemplo**
 
@@ -46,7 +46,7 @@ Método utilizado para listar todas as instâncias criadas.
 
 | key      |    value     | description |
 | :------- | :----------: | :---------- |
-| query    | 999999999999 |             |
+| query    |     15       |
 | pageSize |      1       |             |
 | page     |      1       |             |
 

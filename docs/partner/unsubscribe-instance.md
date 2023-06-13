@@ -17,7 +17,7 @@ Método utilizado para cancelar uma instância.
 
 :::caution Atenção
 
-A partir do momento que você assina uma instância a mesma ficará disponivel para utilização por 30 dias, mesmo que você a cancele antes deste periodo ou seja caso você cancelo hoje mas seu vencimento vai ser em 10 dias, a mesma ficará disponivel por mais 10 dias.
+A partir do momento em que você assina uma instância a mesma ficará disponível para utilização por 30 dias mesmo que você a cancele antes deste período finalizar, ou seja, caso você cancele hoje, mas o vencimento dela será em 10 dias, a mesma ficará disponível por mais 30 dias até finalizar o cancelamento.
 
 :::
 

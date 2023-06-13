@@ -15,12 +15,6 @@ title: Assinando uma instância
 
 Método utilizado para assinar uma instância.
 
-:::caution Atenção
-
-Você só conseguirá assinar instâncias criadas via API com este método.
-
-:::
-
 ---
 
 ## Atributos

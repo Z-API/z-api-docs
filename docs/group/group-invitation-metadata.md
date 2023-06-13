@@ -8,7 +8,7 @@ title: Metadata do Grupo por Convite
 
 #### /group-invitation-metadata
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={**URL** **DO** **CONVITE**}
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url=url-do-grupo
 
 ## Conceituação
 
@@ -29,73 +29,56 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 | Atributos    | Tipo         | Descrição                             |
 | :----------- | :----------- | :------------------------------------ |
 | phone        | string       | ID/Fone do Grupo                      |
-| owner        | string       | Numero do criador do grupo            |
+| owner        | string       | Número do criador do grupo            |
 | subject      | string       | Nome do grupo                         |
+| description  | string       | Descrição do grupo                    |
 | creation     | timestamp    | Timestamp da data de criação do grupo |
-| participants | array string | com dados dos participantes           |
+| invitationLink    | url         | Link de convite do grupo              |
+| contactsCount     | number      | Número de contatos presente no grupo  |
+| participantsCount | number      | Número de participantes no grupo      |
+| participants      | array string| com dados dos participantes           |
 
 Array String (participants)
 
 | Atributos    | Tipo   | Descrição                                         |
 | :----------- | :----- | :------------------------------------------------ |
-| phone        | string | Fone do participante                              |
+| phone        | string | Número do participante                            |
 | isAdmin      | string | Indica se o participante é administrador do grupo |
 | isSuperAdmin | string | Indica se é o criador do grupo                    |
-| short        | string | Nome curto do participante                        |
-| name         | string | Nome do participante                              |
+| subjectTime  | timestamp | Data de criação do grupo                    |
+| subjectOwner | string | Número do criador do grupo                     |
+
+
+<!-- | short        | string | Nome curto do participante                        |
+| name         | string | Nome do participante                              | -->
 
 **Exemplo**
 
 ```json
 
-Forma antiga -
   {
-    "phone": "5511999999999-1623281429",
-    "owner": "5511999999999",
+    "phone": "120363019502650977-group",
+    "owner": "5511888888888",
     "subject": "Meu grupo no Z-API",
+    "description": "descrição do grupo",
     "creation": 1588721491000,
+    "invitationLink": "https://chat.whatsapp.com/KNmcL17DqVA0sqkQ5LLA5",
+    "contactsCount": 1,
+    "participantsCount": 1,
     "participants": [
       {
         "phone": "5511888888888",
         "isAdmin": false,
-        "isSuperAdmin": false
+        "isSuperAdmin": true
       },
       {
         "phone": "5511777777777",
-        "isAdmin": true,
-        "isSuperAdmin": false,
-        "short": "ZAPIs",
-        "name": "ZAPIs Boys"
+        "isAdmin": false,
+        "isSuperAdmin": false
       }
     ],
     "subjectTime": 1617805323000,
-    "subjectOwner": "554497050785"
-  }
-
-  ------------------------------------
-
-  Forma nova -
-  {
-  "phone": "120363019502650977-group",
-  "owner": "5511999999999",
-  "subject": "Meu grupo no Z-API",
-  "creation": 1588721491000,
-  "participants": [
-    {
-      "phone": "5511888888888",
-      "isAdmin": false,
-      "isSuperAdmin": false
-    },
-    {
-      "phone": "5511777777777",
-      "isAdmin": true,
-      "isSuperAdmin": false,
-      "short": "ZAPIs",
-      "name": "ZAPIs Boys"
-    }
-  ],
-  "subjectTime": 1617805323000,
-  "subjectOwner": "554497050785"
+    "subjectOwner": "5511888888888"
 }
 
 ```
