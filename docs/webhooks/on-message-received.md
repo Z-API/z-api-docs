@@ -68,6 +68,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 | waitingMessage | boolean | Identifica se a sua mensagem está com status de "Aguardando a mensagem" |
 | isEdit | boolean | Identifica se a mensagem recebida foi editada |
 | phone | string | Número de telefone, ou do grupo que enviou a mensagem. |
+| fromMe| boolean | Indica se a mensagem enviada partiu do número conectado a API |
 | participantPhone | string | Número de telefone do membro do grupo que enviou a mensagem. |
 | messageId | string | Idetificador da mensagem na conversa. |
 | status | string | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED). |

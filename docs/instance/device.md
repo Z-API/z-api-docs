@@ -28,8 +28,9 @@ Este método é responsável por retornar informações sobre o device/celular c
         "sessionName": "Z-API",
         "device_model": "Z-API"
     },
-    "sessionId": 66,
-    "isBusiness": true
+    "originalDevice": "iphone", "smbi", "android", "smba", 
+    "sessionId": 175,
+    "isBusiness": false
 }
 ```
 
