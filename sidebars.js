@@ -48,6 +48,7 @@ module.exports = {
       'message/send-message-gif',
       'message/send-message-audio',
       'message/send-message-video',
+      'message/send-message-ptv',
       'message/send-message-document',
       'message/send-message-link',
       'message/send-message-location',
