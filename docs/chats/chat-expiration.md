@@ -35,11 +35,11 @@ Exemplo
 ```json
 {
   "phone": "554497050785",
-  "chatExpiration": "90_days"
+  "chatExpiration": "90_DAYS"
 }
 ```
 
-**Opcões do chatExpiration**: "24_hours", "7_days", "90_days", "off"
+**Opcões do chatExpiration**: "24_HOURS", "7_DAYS", "90_DAYS", "OFF"
 
 ---
 
