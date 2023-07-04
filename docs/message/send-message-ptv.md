@@ -55,7 +55,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 ```json
 {
   "phone": "5511999999999",
-  "ptv": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4"
+  "ptv": "http://techslides.com/demos/sample-videos/small.mp4"
 }
 ```
 
