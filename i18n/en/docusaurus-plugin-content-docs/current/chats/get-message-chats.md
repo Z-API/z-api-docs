@@ -79,6 +79,7 @@ JSON follows the sequence as shown below.
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "senderName": "5511999999999",
     "participantPhone": null,
+    "participantLid": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "text": {
@@ -96,6 +97,7 @@ JSON follows the sequence as shown below.
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "senderName": "Z-API Suporte",
     "participantPhone": null,
+    "participantLid": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "image": {
@@ -116,6 +118,7 @@ JSON follows the sequence as shown below.
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "senderName": "Z-API Suporte",
     "participantPhone": null,
+    "participantLid": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "document": {
@@ -137,6 +140,7 @@ JSON follows the sequence as shown below.
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "senderName": "Z-API Suporte",
     "participantPhone": null,
+    "participantLid": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "contact": {
@@ -156,6 +160,7 @@ JSON follows the sequence as shown below.
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "senderName": "Z-API Suporte",
     "participantPhone": null,
+    "participantLid": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "text": {
@@ -173,6 +178,7 @@ JSON follows the sequence as shown below.
     "senderPhoto": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "senderName": "Z-API Suporte",
     "participantPhone": null,
+    "participantLid": null,
     "photo": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
     "broadcast": false,
     "text": {

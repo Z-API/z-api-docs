@@ -21,6 +21,17 @@ Pegando QRCode - Imagem
 
 Este método retorna uma imagem do tipo base64. Você poderá renderizar em um componente do tipo imagem compatível com sua linguagem de programação.
 
+#### /phone-code/{phone}
+
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-code/{phone}
+
+Pegando QRCode - Telefone
+
+Este método retorna um código para que seja possível conectar o número a API sem a necessidade de leitura de qr-code, apenas inserindo o código gerado.
+
+Você pode inserir o código gerado através da API diretamente no whatsapp, na mesma aba onde é feita a leitura do qr-code, clicando em "Conectar com número de telefone".
+
+
 ---
 
 ## Conceituação

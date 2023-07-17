@@ -65,11 +65,16 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
+| isStatusReply | boolean | Identifica se a mensagem recebida é uma resposta de status |
+| senderLid | string | ID do contato no whatsapp |
+| connectedPhone | string | Número de telefone conectado à API |
 | waitingMessage | boolean | Identifica se a sua mensagem está com status de "Aguardando a mensagem" |
 | isEdit | boolean | Identifica se a mensagem recebida foi editada |
+| isGroup | boolean | Indica se o chat é um grupo |
 | phone | string | Número de telefone, ou do grupo que enviou a mensagem. |
 | fromMe| boolean | Indica se a mensagem enviada partiu do número conectado a API |
 | participantPhone | string | Número de telefone do membro do grupo que enviou a mensagem. |
+| participantLid | string | ID do contado no whatsapp, do participante que enviou a mensagem dentro de um grupo|
 | messageId | string | Idetificador da mensagem na conversa. |
 | status | string | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED). |
 | referenceMessageId | string | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
@@ -82,7 +87,6 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 | image.imageUrl | string | Url da foto. |
 | image.thumbnailUrl | string | Url da thumbnail da foto. |
 | image.mimeType | string | MimeType da imagem. |
-| isGroup | boolean | Indica se o chat é um grupo |
 | audio.mimeType | string | MimeType do áudio. |
 | audio.audioUrl | string | Url do áudio. |
 | video.caption | string | Legenda do vídeo. |
@@ -113,9 +117,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -126,6 +133,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -139,9 +147,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -152,6 +163,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -172,9 +184,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -185,6 +200,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "Nome",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "referenceMessageId": "A20DA9C0183A2D35A260F53F5D2B9244",
@@ -201,9 +217,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -214,6 +233,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "Nome",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "referenceMessageId": "A20DA9C0183A2D35A260F53F5D2B9244",
@@ -231,6 +251,9 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+    "isStatusReply": false,
+    "senderLid": "81896604192873@lid",
+    "connectedPhone": "554499999999",
     "waitingMessage": false,
     "isGroup": false,
     "isEdit": false,
@@ -274,9 +297,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -287,6 +313,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -303,9 +330,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -316,6 +346,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -330,9 +361,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -343,6 +377,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -358,6 +393,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
   "connectedPhone": "554499999999",
   "waitingMessage": false,
   "isEdit": false,
@@ -389,9 +426,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -402,6 +442,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -417,9 +458,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -430,6 +474,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -447,9 +492,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -460,6 +508,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -476,9 +525,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -489,6 +541,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -503,9 +556,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -516,6 +572,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -531,9 +588,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -544,6 +604,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -567,9 +628,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -591,9 +655,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -604,6 +671,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -622,7 +690,11 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 ### Exemplo de retorno de ligação recebida
 
 ```json
-{
+{  
+    "isStatusReply": false,
+    "senderLid": "81896604192873@lid",
+    "connectedPhone": "554499999999",
+    "waitingMessage": false,
     "isGroup": false,
     "isEdit": false,
     "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
@@ -650,8 +722,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
-  "isGroup": false,
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "1679655074-103",
   "phone": "5544999999999",
@@ -677,7 +753,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
-  "isGroup": true,
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "464201093",
   "phone": "5544999999999-group",
@@ -706,9 +787,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -718,6 +802,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "5544999999999",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -743,9 +828,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -788,9 +876,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
@@ -801,6 +892,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "senderPhoto": "https://",
   "senderName": "name",
   "participantPhone": null,
+  "participantLid": null,
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
@@ -823,9 +915,12 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
-  "isGroup": false,
   "isEdit": false,
+  "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999",
