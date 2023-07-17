@@ -3,7 +3,21 @@ id: qrcode
 title: Pegar QRCode
 ---
 
-## Método
+
+## Conceituação
+
+Sim! Como no Whatsapp Web você vai precisar ler um QRCode ou usar um número de telefone para conectar-se ao Z-API.
+
+Existem 2 formas que você pode utilizar para realizar esta conexão. São elas:
+
+- Se conectar através do nosso painel de administrador ou
+- Disponibilizar a experiência dentro da sua própria aplicação através dos métodos descritos nesta sessão.
+
+Você pode optar por um dos métodos disponíveis para ler o QRCode do Whatsapp, conforme exemplo abaixo:
+
+---
+
+## Métodos
 
 #### /qr-code
 
@@ -34,18 +48,7 @@ Você pode inserir o código gerado através da API diretamente no whatsapp, na 
 
 ---
 
-## Conceituação
 
-Sim! Como no Whatsapp Web você vai precisar ler um QRCode para conectar-se ao Z-API.
-
-Existem 2 formas que você pode utilizar para realizar esta leitura. São elas:
-
-- Se conectar através do nosso painel de administrador ou
-- Disponibilizar a experiência dentro da sua própria aplicação através dos métodos descritos nesta sessão.
-
-Você pode optar por um dos métodos disponíveis para ler o QRCode do Whatsapp, conforme exemplo abaixo:
-
----
 
 ## Atributos
 
