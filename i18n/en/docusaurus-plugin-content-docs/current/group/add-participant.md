@@ -19,6 +19,12 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 :::
 
+:::tip Novo atributo
+
+WhatsApp has recently implemented a validation process to check if the phone number connected to the API has the client's contact saved. However, Z-API has developed a solution to bypass this validation by introducing a new attribute called "autoInvite." Now, when a request is made to add 10 clients to a group and only 5 of them are successfully added, the API sends private invitations to the remaining five clients who were not added. These invitations allow them to join the group even if their phone numbers are not saved as contacts.
+
+:::
+
 ---
 
 ## Attributes
@@ -27,8 +33,9 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 | Attributes| Type|  Description |
 | :-- | :-: | :-- |
-| groupId | string | Group ID/phone |
-| phones | array string | Array with the number(s) of the participant(s) to be added |
+| autoInvite|   boolean    | true ou false (Send the group invitation link privately.)  |  
+| groupId   |   string     | Group ID/phone |
+| phones    | array string | Array with the number(s) of the participant(s) to be added |
 
 ### Optionals
 
@@ -49,6 +56,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 Old way -
   {
+    "autoInvite": true,
     "groupId": "5511999999999-1623281429",
     "phones": ["5544999999999", "5544888888888"]
   }
@@ -57,6 +65,7 @@ Old way -
 
 New way -
   {
+    "autoInvite": true,
     "groupId": "120363019502650977-group",
     "phones": ["5544999999999", "5544888888888"]
   }

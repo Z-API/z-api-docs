@@ -21,28 +21,28 @@ Just like WhatsApp you will need to add at least one contact to be able to creat
 
 :::
 
-:::caution Attention
-
-On November 4, 2021 whatsapp changed the format of creating new groups. before: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
-
-:::
-
 :::warning Warning 
 
 You should never let anyone have or know the number that's connected to Z-API and is  responsible for creating the group in the array of numbers that the group will be composed of.
 
 :::
 
+:::tip Novo atributo
+
+WhatsApp has recently implemented a validation process to check if the phone number connected to the API has the client's contact saved. However, Z-API has developed a solution to bypass this validation by introducing a new attribute called "autoInvite." Now, when a request is made to add 10 clients to a group and only 5 of them are successfully added, the API sends private invitations to the remaining five clients who were not added. These invitations allow them to join the group even if their phone numbers are not saved as contacts.
+
+:::
 ---
 
 ## Attributes
 
 ### Mandatory 
 
-| Attributes |     Type     | Description                                         |
+| Attributes |     Type     | Description                                      |
 | :-------- | :----------: | :------------------------------------------------ |
+| autoInvite|   boolean    | true ou false (Send the group invitation link privately.)   |  
 | groupName |    string    | Name of group to be created                       |
-| phones    | array string | Array with the numbers to be added to the group |
+| phones    | array string | Array with the numbers to be added to the group   |
 
 ### Optionals 
 
@@ -62,8 +62,9 @@ You should never let anyone have or know the number that's connected to Z-API an
 
 ```json
 {
-  "groupName": "My group on Z-API",
-  "phones": ["5511999999999", "5511888888888"]
+  "autoInvite": true,
+  "groupId": "120363019502650977-group",
+  "phones": ["5544999999999", "5544888888888"]
 }
 ```
 

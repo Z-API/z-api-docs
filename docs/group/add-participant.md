@@ -19,6 +19,12 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 :::
 
+:::tip Novo atributo
+
+Recentemente, o WhatsApp implementou uma validação para verificar se o número de telefone conectado à API possui o contato do cliente salvo. No entanto, a Z-API desenvolveu uma solução para contornar essa validação, introduzindo um novo recurso chamado **"autoInvite"**. Agora, quando uma solicitação é enviada para adicionar 10 clientes a um grupo e apenas 5 deles são adicionados com sucesso, a API envia convites privados para os cinco clientes que não foram adicionados. Esses convites permitem que eles entrem no grupo, mesmo que seus números de telefone não estejam salvos como contatos.
+
+:::
+
 ---
 
 ## Atributos
@@ -27,6 +33,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
+| autoInvite | boolean | Envia link de convite do grupo no privado |
 | groupId | string | ID/Fone do grupo |
 | phones | array string | Array com os numero(s) do(s) participante(s) a serem adicionados |
 
@@ -49,6 +56,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 Forma antiga -
   {
+    "autoInvite": true,
     "groupId": "5511999999999-1623281429",
     "phones": ["5544999999999", "5544888888888"]
   }
@@ -57,8 +65,9 @@ Forma antiga -
 
 Forma nova -
   {
-    "groupId": "120363019502650977-group",
-    "phones": ["5544999999999", "5544888888888"]
+  "autoInvite": true,
+  "groupId": "120363019502650977-group",
+  "phones": ["5544999999999", "5544888888888"]
   }
 
 ```

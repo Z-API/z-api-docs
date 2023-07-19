@@ -21,14 +21,14 @@ Assim como no Whatsapp Web você vai precisar adicionar ao menos um contato para
 
 :::
 
-:::caution Atenção
-
-No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+:::warning
+ Você não deve passar o número conectado ao Z-API que é responsável pela criação do grupo no array de números que vão compor o grupo.
 
 :::
 
-:::warning
- Você não deve passar o número conectado ao Z-API que é responsável pela criação do grupo no array de números que vão compor o grupo.
+:::tip Novo atributo
+
+Recentemente, o WhatsApp implementou uma validação para verificar se o número de telefone conectado à API possui o contato do cliente salvo. No entanto, a Z-API desenvolveu uma solução para contornar essa validação, introduzindo um novo recurso chamado **"autoInvite"**. Agora, quando uma solicitação é enviada para adicionar 10 clientes a um grupo e apenas 5 deles são adicionados com sucesso, a API envia convites privados para os cinco clientes que não foram adicionados. Esses convites permitem que eles entrem no grupo, mesmo que seus números de telefone não estejam salvos como contatos.
 
 :::
 ---
@@ -39,6 +39,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 | Atributos |     Tipo     | Descrição                                         |
 | :-------- | :----------: | :------------------------------------------------ |
+| autoInvite|   boolean    | true ou false (Envia link de convite do grupo no privado) |  
 | groupName |    string    | Nome do grupo a ser criado                        |
 | phones    | array string | Array com os numeros a serem adicionados no grupo |
 
@@ -60,8 +61,9 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ```json
 {
-  "groupName": "Meu grupo no Z-API",
-  "phones": ["5511999999999", "5511888888888"]
+  "autoInvite": true,
+  "groupId": "120363019502650977-group",
+  "phones": ["5544999999999", "5544888888888"]
 }
 ```
 
