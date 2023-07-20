@@ -25,9 +25,9 @@ Este método é responsável por fazer a menção dos participantes em um grupo.
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| Atributos | Tipo   | Descrição |
+| :--       | :-:    | :-- |
+| phone     | string | ID do grupo onde os participantes serão mencionados|
 | message | string | Texto a ser enviado. Deve conter o @ com o numero |
 | mentioned | string | Numero a ser mencionado |
 

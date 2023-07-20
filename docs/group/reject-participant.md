@@ -25,10 +25,10 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| groupId | string | ID/Fone do grupo |
-| phones | array string | Array com os numero(s) do(s) participante(s) a serem rejeitados |
+| Atributos | Tipo         | Descrição        |
+| :--       | :------:     | :-----           |
+| groupId   | string       | ID/Fone do grupo |
+| phones    | array string | Array com os numero(s) do(s) participante(s) a serem rejeitados |
 
 ### Opcionais
 

@@ -21,7 +21,7 @@ Method used to delete a text sent in a chat. You will be able to delete a messag
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

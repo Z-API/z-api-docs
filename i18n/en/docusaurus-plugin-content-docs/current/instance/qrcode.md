@@ -21,6 +21,17 @@ Getting QRCode - Image
 
 This method returns an image of the type base64. You can render this in a component of the type image that is compatible with the language that you use to program.
 
+#### /phone-code/{phone}
+
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-code/{phone}
+
+Getting QRCode - Phone
+
+This method returns a code that allows you to connect the phone number to the API without the need to scan a QR code, simply by entering the generated code.
+
+You can enter the code generated through the API directly in WhatsApp, on the same tab where you scan the QR code, by clicking on 'Connect with a phone number'."
+
+
 ---
 
 ## Concept

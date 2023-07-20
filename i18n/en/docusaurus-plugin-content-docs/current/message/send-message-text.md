@@ -78,10 +78,10 @@ To test this, just copy an emoji and paste into your text! You can use this one 
 
 ### 200
 
-| Attributes | Type   | Description      |
+| Attributes| Type   | Description   |
 | :-------- | :----- | :------------- |
-| zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| zaapId    | string | id on z-api    |
+| messageId | string | id on whatsapp |
 
 Example
 
