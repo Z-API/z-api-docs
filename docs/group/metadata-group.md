@@ -61,7 +61,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 | adminOnlyMessage    | boolean      | Indica se apenas Admin pode mandar mensagens                |  
 | adminOnlySettings   | boolean      | Indica se apenas Admin pode mudar as configurações          |  
 | requireAdminApproval| boolean      | Indica se necessita aprovação de admin para entrar no grupo |  
-| isGroupAnnouncement | boolean      | Indica se é um grupo de anúncio       |
+| isGroupAnnouncement | boolean      | Indica se é um grupo de aviso         |
 | participants        | array string | com dados dos participantes           |
 
 Array String (participants)
@@ -113,6 +113,11 @@ Forma antiga -
   "subject": "Meu grupo no Z-API",
   "creation": 1588721491000,
   "invitationLink": "https://chat.whatsapp.com/40Aasd6af1",
+  "communityId": null,
+  "adminOnlyMessage": false,
+  "adminOnlySettings": false,
+  "requireAdminApproval": false,
+  "isGroupAnnouncement": false,
   "participants": [
     {
       "phone": "5511888888888",

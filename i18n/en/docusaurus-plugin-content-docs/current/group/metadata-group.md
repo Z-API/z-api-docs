@@ -107,11 +107,18 @@ Old way -
   ------------------------------------
 
   New way -
-  {
+{
   "phone": "120363019502650977-group",
+  "description": "Z-API group",
   "owner": "5511999999999",
-  "subject": "My group on Whatsapp",
+  "subject": "My group in Z-API",
   "creation": 1588721491000,
+  "invitationLink": "https://chat.whatsapp.com/40Aasd6af1",
+  "communityId": null,
+  "adminOnlyMessage": false,
+  "adminOnlySettings": false,
+  "requireAdminApproval": false,
+  "isGroupAnnouncement": false,
   "participants": [
     {
       "phone": "5511888888888",
