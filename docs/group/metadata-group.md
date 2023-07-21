@@ -49,15 +49,20 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 ### 200
 
-| Atributos | Tipo | Descrição |
-| :-- | :-- | :-- |
-| phone | string | ID/Fone do Grupo |
-| description | string | Descrição do grupo |
-| owner | string | Numero do criador do grupo |
-| subject | string | Nome do grupo |
-| creation | timestamp | Timestamp da data de criação do grupo |
-| invitationLink | url | Link de convite do grupo (retorna apenas para admin) |
-| participants | array string | com dados dos participantes |
+| Atributos           | Tipo         | Descrição                             |
+| :--------------     | :------      | :----------------                     |
+| phone               | string       | ID/Fone do Grupo                      |
+| description         | string       | Descrição do grupo                    |
+| owner               | string       | Numero do criador do grupo            |
+| subject             | string       | Nome do grupo                         |
+| creation            | timestamp    | Timestamp da data de criação do grupo |
+| invitationLink      | url          | Link de convite do grupo (retorna apenas para admin)|
+| communityId         | string       | ID da comunidade                      |  
+| adminOnlyMessage    | boolean      | Indica se apenas Admin pode mandar mensagens                |  
+| adminOnlySettings   | boolean      | Indica se apenas Admin pode mudar as configurações          |  
+| requireAdminApproval| boolean      | Indica se necessita aprovação de admin para entrar no grupo |  
+| isGroupAnnouncement | boolean      | Indica se é um grupo de anúncio       |
+| participants        | array string | com dados dos participantes           |
 
 Array String (participants)
 
@@ -66,8 +71,9 @@ Array String (participants)
 | phone        | string | Fone do participante                              |
 | isAdmin      | string | Indica se o participante é administrador do grupo |
 | isSuperAdmin | string | Indica se é o criador do grupo                    |
-| short        | string | Nome curto do participante                        |
-| name         | string | Nome do participante                              |
+
+<!-- | short        | string | Nome curto do participante                        |
+| name         | string | Nome do participante                              | -->
 
 **Exemplo**
 

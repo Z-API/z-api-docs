@@ -13,7 +13,7 @@ title: Send GIF
 
 ## Concept
 
-Método responsavel por enviar GIFs para os seus chats através da api (O arquivo a ser enviado precisa ser um MP4)
+Method responsible for sending GIFs to your chats through the API (The file to be sent must be an MP4).
 
 ### Size and formats
 

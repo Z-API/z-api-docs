@@ -49,13 +49,20 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 ### 200
 
-| Attributes   | Type         | Description                           |
-| :----------- | :----------- | :------------------------------------ |
-| phone        | string       | Group ID/phone                        |
-| owner        | string       | Group creators number                 |
-| subject      | string       | Group’s name                          |
-| creation     | timestamp    | Group creation date timestamp         |  
-| participants | array string | with participant data                 |
+| Attributes          | Type         | Description                           |
+| :----------------   | :----------- | :------------------------------------ |
+| phone               | string       | Group ID/phone                        |
+| description         | string       | Group description                     |
+| owner               | string       | Group creators number                 |
+| subject             | string       | Group’s name                          |
+| creation            | timestamp    | Group creation date timestamp         |  
+| invitationLink      | url          | Group invitation link                 |  
+| communityId         | string       | Community ID                          |  
+| adminOnlyMessage    | boolean      | Only admins can send messages         |  
+| adminOnlySettings   | boolean      | Only admins can change settings       |  
+| requireAdminApproval| boolean      | Admin approval required               |  
+| isGroupAnnouncement | boolean      | Community announcement group          |  
+| participants        | array string | with participant data                 |
 
 Array String (participants)
 
@@ -64,8 +71,10 @@ Array String (participants)
 | phone        | string | Participants phone                                |
 | isAdmin      | string | Indicates if the participant is the group’s admin |
 | isSuperAdmin | string | Indicates whether you are the creator of the group|
-| short        | string | Participant’s short name                          |
-| name         | string | Participant’s name                                |
+
+<!-- | short        | string | Participant’s short name                          |
+| name         | string | Participant’s name                                | -->
+
 
 **Example**
 
