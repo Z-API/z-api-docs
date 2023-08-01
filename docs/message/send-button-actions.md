@@ -11,10 +11,6 @@ title: Enviar texto com botões de ação
 
 ---
 
-:::caution Atenção!
-Este método está em versão Beta
-:::
-
 ## Conceituação
 
 Neste método você poderá enviar mensagens de texto com botões de ação, você conseguirá redirecionar para links, fazer chamadas, e também dar respostas padrões.

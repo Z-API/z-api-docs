@@ -51,7 +51,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 | connectedCallbackUrl    | string | EndPoint do webhook de conexão - connected |
 | messageStatusCallbackUrl| string | EndPoint do webhook de Status |
 | callRejectAuto          | boolean | true ou false - Rejeitar chamadas automático |
-| callRejectMessage       | string  | Mensage após rejeitar uma chamada automáticamente|
+| callRejectMessage       | string  | Mensagem após rejeitar uma chamada automáticamente|
 | autoReadMessage         | boolean | true ou false - Leitura automática |
 
 

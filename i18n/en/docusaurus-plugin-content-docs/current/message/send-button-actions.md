@@ -11,10 +11,6 @@ title: Send text with action buttons
 
 ---
 
-:::caution Attention!
-This method is in Beta version
-:::
-
 ## Concept
 
 In this method, you will be able to send text messages with action buttons. You can redirect to links, make calls, and also provide standard responses
