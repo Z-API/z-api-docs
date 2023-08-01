@@ -41,15 +41,19 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| sessionName | string | Atributo para alterar o nome da sessão no whatsapp (em aparelhos conectados) |
-| deliveryCallbackUrl | string | EndPoint do webhook de mensagens entregues - delivery |
-| receivedCallbackUrl | string | EndPoint do webhook de mensagens recebidas - receive |
+| Atributos               |  Tipo  | Descrição                      |
+| :--------               | :----: | :----------------------------- |
+| sessionName             | string | Atributo para alterar o nome da sessão no whatsapp (em aparelhos conectados) |
+| deliveryCallbackUrl     | string | EndPoint do webhook de mensagens entregues - delivery |
+| receivedCallbackUrl     | string | EndPoint do webhook de mensagens recebidas - receive |
 | receivedAndDeliveryCallbackUrl | string | EndPoint do webhook de mensagens recebidas e enviadas por mim - receive |
 | disconnectedCallbackUrl | string | EndPoint do webhook de desconexão ou perca de comunicação - disconnected |
-| connectedCallbackUrl | string | EndPoint do webhook de conexão - connected |
-| messageStatusCallbackUrl | string | EndPoint do webhook de Status |
+| connectedCallbackUrl    | string | EndPoint do webhook de conexão - connected |
+| messageStatusCallbackUrl| string | EndPoint do webhook de Status |
+| callRejectAuto          | boolean | true ou false - Rejeitar chamadas automático |
+| callRejectMessage       | string  | Mensage após rejeitar uma chamada automáticamente|
+| autoReadMessage         | boolean | true ou false - Leitura automática |
+
 
 ---
 

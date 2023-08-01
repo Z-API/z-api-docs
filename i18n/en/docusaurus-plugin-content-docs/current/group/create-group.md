@@ -63,7 +63,7 @@ WhatsApp has recently implemented a validation process to check if the phone num
 ```json
 {
   "autoInvite": true,
-  "groupId": "120363019502650977-group",
+  "groupName": "Z-API group",
   "phones": ["5544999999999", "5544888888888"]
 }
 ```
