@@ -30,12 +30,18 @@ module.exports = {
   favicon: 'https://www.z-api.io/wp-content/themes/z-api/favicon.png',
   organizationName: 'Z-API',
   projectName: 'z-api-docs',
+  scripts: [
+    {
+      src: 'https://app.gptmaker.ai/widget/3C0A35594CF700467B23BA6C8F512DC3/float.js',
+      async: true,
+      defer: true,
+    },
+  ],
   themeConfig: {
     navbar: {
       logo: {
         alt: 'Z-API Logo',
-        src:
-          'https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg',
+        src: 'https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg',
       },
       items: [
         {
