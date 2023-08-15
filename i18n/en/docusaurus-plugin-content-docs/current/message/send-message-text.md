@@ -60,6 +60,10 @@ To test this, just copy an emoji and paste into your text! You can use this one 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |
 | delayMessage | number |In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs|
+| delayTyping  | number | In this attribute, a delay is added to the message. You can choose from a range of 1 to 15 seconds, which indicates how many seconds it will remain in the "Typing..." status. (For example, "delayTyping": 5). The default delay if not specified is 0.|
+| editMessageId | string | This attribute allows you to edit previously sent messages on WhatsApp. Use the message ID and the new content in the JSON to make changes. |
+
+
 
 ---
 
