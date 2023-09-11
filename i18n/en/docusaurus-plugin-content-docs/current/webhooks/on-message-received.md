@@ -93,7 +93,11 @@ The possible returns of the **on-message-received** webhook are registered below
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
+  "isEdit": false,
   "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
@@ -112,7 +116,6 @@ The possible returns of the **on-message-received** webhook are registered below
   "text": {
     "message": "test"
   },
-  "instanceId": "instance.id"
 }
 ```
 
@@ -120,7 +123,11 @@ The possible returns of the **on-message-received** webhook are registered below
 
 ```json
 {
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
   "waitingMessage": false,
+  "isEdit": false,
   "isGroup": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
@@ -139,6 +146,7 @@ The possible returns of the **on-message-received** webhook are registered below
   "reaction": {
     "value": "❤️",
     "time": 1651878681150,
+    "reactionBy": "554499999999",
     "referencedMessage": {
       "messageId": "3EB0796DC6B777C0C7CD",
       "fromMe": true,
@@ -146,7 +154,6 @@ The possible returns of the **on-message-received** webhook are registered below
       "participant": null
     }
   },
-  "instanceId": "instance.id"
 }
 ```
 

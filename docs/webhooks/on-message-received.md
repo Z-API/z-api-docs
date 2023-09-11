@@ -170,6 +170,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "reaction": {
     "value": "❤️",
     "time": 1651878681150,
+    "reactionBy": "554499999999",
     "referencedMessage": {
       "messageId": "3EB0796DC6B777C0C7CD",
       "fromMe": true,

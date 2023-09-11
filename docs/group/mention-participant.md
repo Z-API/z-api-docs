@@ -28,8 +28,8 @@ Este método é responsável por fazer a menção dos participantes em um grupo.
 | Atributos | Tipo   | Descrição |
 | :--       | :-:    | :-- |
 | phone     | string | ID do grupo onde os participantes serão mencionados|
-| message | string | Texto a ser enviado. Deve conter o @ com o numero |
-| mentioned | string | Numero a ser mencionado |
+| message   | string | Texto a ser enviado. Deve conter o @ com o numero |
+| mentioned | array  | Numeros a ser mencionado |
 
 ### Opcionais
 

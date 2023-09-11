@@ -27,7 +27,7 @@ This method is responsible for mentioning participants in a group.
 | :--       | :-:    | :-------  |
 | phone     | string | The group ID where the participants will be mentioned. |
 | message   | string | Text to be sent. It should include the @ symbol with the number. |
-| mentioned | string | The number to be mentioned. |
+| mentioned | array  | Numbers to be mentioned. |
 
 ### Opcionais
 
