@@ -28,8 +28,8 @@ Este método é responsável por fazer a menção dos participantes em um grupo.
 | Atributos | Tipo   | Descrição |
 | :--       | :-:    | :-- |
 | phone     | string | ID do grupo onde os participantes serão mencionados|
-| message   | string | Texto a ser enviado. Deve conter o @ com o numero |
-| mentioned | array  | Numeros a ser mencionado |
+| message   | string | Texto a ser enviado. Deve conter o @ com o número |
+| mentioned | array  | números a ser mencionado |
 
 ### Opcionais
 
@@ -43,12 +43,25 @@ Este método é responsável por fazer a menção dos participantes em um grupo.
 
 ```json
 {
-  "phone": "5511999999999",
-  "message": "Welcome to *Z-API group* @numero",
-  "mentioned": [numero]
+  "phone": "5511999999999-group",
+  "message": "Welcome to *Z-API group* @número",
+  "mentioned": [número]
 }
 ```
 
+---
+
+## Marcar todos no grupo
+
+Este método permite mencionar vários membros de um grupo no WhatsApp sem a necessidade de incluir explicitamente o "@" antes dos números. Isso é útil para marcar vários membros de uma só vez.
+
+```json
+{
+  "phone": "5511999999999-group",
+  "message": "Welcome to *Z-API group*",
+  "mentioned": [número,número,número,número,número,número]
+}
+```
 ---
 
 ## Response

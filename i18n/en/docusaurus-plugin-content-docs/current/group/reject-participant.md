@@ -27,8 +27,8 @@ On November 4, 2021, WhatsApp changed the format for creating new groups. Previo
 
 | Attributes |    Type      | Description |
 | :--------  |    :--:      | :---------- |
-| groupId    |    string    | ID/Fone do grupo |
-| phones     | array string | Array com os numero(s) do(s) participante(s) a serem aceitos |
+| groupId    |    string    | Group ID/phone |
+| phones     | array string | Array with the number(s) of the participant(s) to be accepted. |
 
 ### Optionals
 

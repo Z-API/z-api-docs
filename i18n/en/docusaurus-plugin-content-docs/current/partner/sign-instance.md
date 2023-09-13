@@ -25,7 +25,7 @@ You will only be able to subscribe to instances created via API with this method
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes| Type | Description|
 | :-------- | :--: | :-------- |

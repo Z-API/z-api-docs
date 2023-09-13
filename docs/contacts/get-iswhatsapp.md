@@ -30,7 +30,7 @@ Z-API não foi desenvolvido para dissiminação de spam para contatos que você 
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 
 ### Opcionais
 

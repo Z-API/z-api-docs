@@ -27,7 +27,7 @@ It is important for you to know that the link is only clickable if the recipient
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

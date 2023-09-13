@@ -19,7 +19,7 @@ This method is responsible for returning the metadata of a chat.
 
 ## Attributes
 
-### Mandatory
+### Required
 
 
 | Attributes | Type | Description |

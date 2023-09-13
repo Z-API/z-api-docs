@@ -25,7 +25,7 @@ In this method you will be able to react to messages that were sent or recieved 
 
 [link]: https://fsymbols.com/pt/emoji/
 
-### mandatory
+### Required
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

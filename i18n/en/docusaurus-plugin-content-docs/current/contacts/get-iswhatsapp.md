@@ -23,7 +23,7 @@ This method returns whether or not the number has Whatsapp.
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

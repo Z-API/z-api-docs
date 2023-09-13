@@ -17,7 +17,7 @@ This method is responsible for deleting a single message inside of the queue wai
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes| Type | Description |
 | :-------- | :--: | :-------- |

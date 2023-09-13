@@ -41,7 +41,7 @@ Recentemente, o WhatsApp implementou uma validação para verificar se o número
 | :-------- | :----------: | :------------------------------------------------ |
 | autoInvite|   boolean    | true ou false (Envia link de convite do grupo no privado) |  
 | groupName |    string    | Nome do grupo a ser criado                        |
-| phones    | array string | Array com os numeros a serem adicionados no grupo |
+| phones    | array string | Array com os números a serem adicionados no grupo |
 
 ### Opcionais
 

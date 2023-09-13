@@ -34,7 +34,7 @@ Method responsible for sending documents to your contacts. It is simple and obje
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

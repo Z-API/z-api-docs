@@ -21,7 +21,7 @@ In this method you will be able to send text messages with a list of options whe
 
 ## Atributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

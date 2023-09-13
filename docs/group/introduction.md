@@ -13,7 +13,7 @@ Neste tópico você também vai encontrar também metódos para criação e admi
 
 :::tip ID/Fone de Grupos
 
-Para melhor frisar, pense que o id/fone do grupo é o numero de quem criou concatenado com um timestamp, algo parecido com isso 5511999999999 - 1623275280
+Para melhor frisar, pense que o id/fone do grupo é o número de quem criou concatenado com um timestamp, algo parecido com isso 5511999999999 - 1623275280
 
 :::
 

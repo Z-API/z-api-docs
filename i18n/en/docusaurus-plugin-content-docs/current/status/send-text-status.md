@@ -19,7 +19,7 @@ You can post texts in your status and this method is responsible for that, remem
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes |  Type | Description                              |
 | :-------- | :----: | :------------------------------------- |

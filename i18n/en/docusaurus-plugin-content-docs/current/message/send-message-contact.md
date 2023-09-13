@@ -22,7 +22,7 @@ Simple and object, this method allows you to send a contact. You don't need to h
 
 ## Attributes 
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

@@ -25,7 +25,7 @@ From the moment you subscribe to an instance, it will be available for use for 3
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes| Type | Description |
 | :-------- | :--: | :-------- |

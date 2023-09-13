@@ -27,7 +27,7 @@ Neste método você removerá a reação das mensagens enviadas ou recebidas. Vo
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | messageId | string | Id da mensagem que será removida a reação |
 
 ### Opcionais

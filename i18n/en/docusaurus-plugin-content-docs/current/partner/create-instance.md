@@ -32,7 +32,7 @@ If you do not subscribe within 2 days, our devops will automatically delete the 
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes|  Type  | Description                    |
 | :-------- | :----: | :----------------------------- |

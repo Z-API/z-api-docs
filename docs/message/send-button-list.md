@@ -25,7 +25,7 @@ Neste método você poderá enviar mensagens de texto com botões de ação, o c
 
 | Atributos  | Tipo       | Descrição |
 | :-------   | :-------:  | :------   |
-| phone      | string     | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone      | string     | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | message    | string     | Texto a ser enviado  |
 | buttonList | buttonList | Objeto do tipo botão |
 

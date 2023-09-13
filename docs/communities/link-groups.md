@@ -28,7 +28,7 @@ Com essa API você consegue adicionar outros grupos a uma comunidade, para isso 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | communityId | string | ID da comunidade que será adicionado os grupos |
-| groupsPhones | array string | Array com os numero(s) dos grupos a serem vinculados |
+| groupsPhones | array string | Array com os número(s) dos grupos a serem vinculados |
 
 ### Opcionais
 

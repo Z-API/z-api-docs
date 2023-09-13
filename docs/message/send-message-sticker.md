@@ -50,7 +50,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | sticker | string | Link do sticker ou seu Base64 |
 
 ### Opcionais

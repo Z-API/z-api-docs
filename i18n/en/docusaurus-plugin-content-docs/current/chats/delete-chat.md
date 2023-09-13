@@ -19,7 +19,7 @@ This method is responsible for deleting chats
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

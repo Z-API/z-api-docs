@@ -27,7 +27,7 @@ Se você pretente armazenar a imagem do seu contato observe que sempre retornamo
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 
 ### Opcionais
 

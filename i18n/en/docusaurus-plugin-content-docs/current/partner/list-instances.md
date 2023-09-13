@@ -18,7 +18,7 @@ This method is used to list every instance created
 ---
 
 ## Attributes
-### Mandatory 
+### Required 
 
 | Attributes| Type | Description |
 | :-- | :-: | :-- |

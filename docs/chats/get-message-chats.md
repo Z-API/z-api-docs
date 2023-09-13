@@ -27,7 +27,7 @@ Este método é reponsavel por retornar todas conversas de um chat.
 
 | Atributos | Tipo   | Descrição |
 | :--       | :-:    | :--       |
-| phone     | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone     | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | amount    | integer | Quantidade de mensagens que deseja buscar, é recomendado que você busque de 10 em 10 mensagens para que sua aplicação não fique muito lenta. |
 | lastMessageId | string | messageId da ultima mensagem que você buscou |
 

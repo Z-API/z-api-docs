@@ -19,7 +19,7 @@ Method responsible for sending an image to your status, remember that statuses d
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes |  Type | Description                    |
 | :-------- | :----: | :--------------------------- |

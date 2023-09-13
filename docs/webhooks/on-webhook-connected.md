@@ -69,7 +69,7 @@ Os possíveis retornos do webhook **on-webhook-connected** estão cadastrado log
   "connected": true,
   "momment": 26151515154,
   "instanceId": instance.id,
-  "phone": "numero",,
+  "phone": "número",,
   "instanceId": "instance.id"
 
 }

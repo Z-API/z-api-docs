@@ -13,7 +13,7 @@ title: Pegar contatos
 
 ## Conceituação
 
-Este método é reponsavel por retornar todos os contatos do Whatsapp. Lembre-se do que foi dito na introdução sobre numero de contatos, caso tenho pulado esta parte, sugiro que você volte um passo e leia a nossa introdução sobre contatos.
+Este método é reponsavel por retornar todos os contatos do Whatsapp. Lembre-se do que foi dito na introdução sobre número de contatos, caso tenho pulado esta parte, sugiro que você volte um passo e leia a nossa introdução sobre contatos.
 
 ---
 

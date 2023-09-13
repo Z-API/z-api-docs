@@ -28,7 +28,7 @@ Uma comunidade deve ter no mínimo 1 grupo vinculado a ela, isso sem contar com 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | communityId | string | ID da comunidade que será desvinculado os grupos |
-| groupsPhones | array string | Array com os numero(s) dos grupos a serem desvinculados |
+| groupsPhones | array string | Array com os número(s) dos grupos a serem desvinculados |
 
 ### Opcionais
 

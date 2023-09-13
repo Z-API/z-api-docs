@@ -25,7 +25,7 @@ Neste método você poderá votar em uma determinada enquete.
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | pollMessageId | string | ID da mensagem da enquete. **IMPORTANTE** Esse é o messageId recebido ao enviar uma enquete ou ao receber de outro contato. |
 | pollVote | pollVote | Lista de opções que compõem. **IMPORTANTE** Você pode votar em mais de uma opção. |
 

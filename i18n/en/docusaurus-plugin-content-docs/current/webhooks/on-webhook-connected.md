@@ -69,7 +69,7 @@ The possible returns of the **on-webhook-connected** webhook are registered belo
   "connected": true,
   "momment": 26151515154,
   "instanceId": instance.id,
-  "phone": "numero",,
+  "phone": "número",,
   "instanceId": "instance.id"
 
 }

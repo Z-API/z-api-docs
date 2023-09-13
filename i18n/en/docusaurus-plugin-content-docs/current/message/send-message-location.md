@@ -21,7 +21,7 @@ Method responsible for sending a fixed location to your contacts, it is mostly u
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

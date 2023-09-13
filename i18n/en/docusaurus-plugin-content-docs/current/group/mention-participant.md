@@ -49,6 +49,19 @@ This method is responsible for mentioning participants in a group.
 
 ---
 
+## Marcar todos no grupo
+
+This method allows you to mention multiple members of a WhatsApp group without the need to explicitly include the '@' before the numbers. This is useful for tagging multiple members at once.
+
+```json
+{
+  "phone": "5511999999999-group",
+  "message": "Welcome to *Z-API group*",
+  "mentioned": [number,number,number,number,number,number]
+}
+```
+---
+
 ## Response
 
 ### 200

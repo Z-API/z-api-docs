@@ -28,7 +28,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | groupId | string | id/fone do grupo |
-| phones | array string | Array com os numero(s) a ser(em) removido(s) da administração do grupo |
+| phones | array string | Array com os número(s) a ser(em) removido(s) da administração do grupo |
 
 ### Opcionais
 

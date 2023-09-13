@@ -23,7 +23,7 @@ Este método é reponsavel por retornar as informações do metadata de um chat.
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| phone | string | Telefone do destinatário no formato DDI DDD NUMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| phone | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 
 ### Opcionais
 
@@ -50,7 +50,7 @@ Método
 | Atributos | Tipo | Descrição |
 | :-- | :-- | :-- |
 | phone | string | Phone do contato |
-| unread | string | indica o numero de mensagens não lidas em um chat |
+| unread | string | indica o número de mensagens não lidas em um chat |
 | lastMessageTime | string | Timestamp com a data e hora da ultima ingeração com o chat |
 | isMuted | string | 0 ou 1 indica se você silênciou ou não este chat |
 | isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |

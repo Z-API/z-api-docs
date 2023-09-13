@@ -19,7 +19,7 @@ This method is responsible for returning all conversations in a chat.
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

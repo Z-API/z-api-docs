@@ -23,7 +23,7 @@ In this method you will remove the reaction from sent or received messages. You 
 
 [link]: https://fsymbols.com/pt/emoji/
 
-### mandatory
+### Required
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

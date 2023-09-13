@@ -19,7 +19,7 @@ This method is responsible for archiving or unarchiving chats
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Descriptions |
 | :-- | :-: | :-- |

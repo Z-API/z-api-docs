@@ -36,7 +36,7 @@ WhatsApp has recently implemented a validation process to check if the phone num
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes |     Type     | Description                                      |
 | :-------- | :----------: | :------------------------------------------------ |

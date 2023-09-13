@@ -19,7 +19,7 @@ This method is responsible for returning all of your Whatsapp contacts. Remember
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

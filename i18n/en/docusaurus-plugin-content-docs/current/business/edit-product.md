@@ -19,7 +19,7 @@ In this method you will be able to register and update a product in your catalog
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes   |  Type   | Description                                     |
 | :---------- | :-----: | :--------------------------------------------- |

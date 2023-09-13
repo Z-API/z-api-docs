@@ -21,7 +21,7 @@ In this method you will be able to send text messages with action buttons. Butto
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

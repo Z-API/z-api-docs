@@ -17,7 +17,7 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 
 1 - Ser cliente com ao menos 1 instância ativa.
 
-2 - Ter um numero com a versão que permite habilitar mult-devices
+2 - Ter um número com a versão que permite habilitar mult-devices
 
 3 - Estar disposto a contribuir com a evolução do Z-API.
 

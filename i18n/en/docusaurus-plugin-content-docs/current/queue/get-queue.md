@@ -17,7 +17,7 @@ This method is responsible for returning all messages that are in your queue wai
 
 ## Attributes 
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Descrition |
 | :-------- | :--: | :-------- |

@@ -48,7 +48,7 @@ To test this, just copy an emoji and paste into your text! You can use this one 
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

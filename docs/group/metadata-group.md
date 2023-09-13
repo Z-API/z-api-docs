@@ -53,7 +53,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 | :--------------     | :------      | :----------------                     |
 | phone               | string       | ID/Fone do Grupo                      |
 | description         | string       | Descrição do grupo                    |
-| owner               | string       | Numero do criador do grupo            |
+| owner               | string       | Número do criador do grupo            |
 | subject             | string       | Nome do grupo                         |
 | creation            | timestamp    | Timestamp da data de criação do grupo |
 | invitationLink      | url          | Link de convite do grupo (retorna apenas para admin)|

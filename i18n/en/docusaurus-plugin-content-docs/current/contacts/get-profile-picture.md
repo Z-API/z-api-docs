@@ -24,7 +24,7 @@ If you intend to store your contact's image, please note that we always return i
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

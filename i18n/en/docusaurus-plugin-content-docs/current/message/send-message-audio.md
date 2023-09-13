@@ -33,7 +33,7 @@ In this [link]  you can find everything that you need to know about formatting a
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes | Type | Description |
 | :-- | :-: | :-- |

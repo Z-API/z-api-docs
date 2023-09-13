@@ -29,7 +29,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 ## Attributes
 
-### Mandatory
+### Required
 
 | Attributes| Type | Description |
 | :-- | :-: | :-- |

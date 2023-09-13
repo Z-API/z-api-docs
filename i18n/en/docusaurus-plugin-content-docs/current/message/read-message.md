@@ -21,7 +21,7 @@ Method used to mark a text message as read
 
 ## Attributes
 
-### Mandatory 
+### Required 
 
 | Attributes | Type | Description  |
 | :-- | :-: | :-- |

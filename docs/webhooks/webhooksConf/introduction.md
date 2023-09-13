@@ -19,7 +19,7 @@ Responsavel por avisar você que sua mensagem foi entregue ao Whatsapp, mas isso
 
 #### Receive
 
-Este webhook será chamado toda vez que alguem interagir com seu numero no whatsapp.
+Este webhook será chamado toda vez que alguem interagir com seu número no whatsapp.
 
 #### Status
 

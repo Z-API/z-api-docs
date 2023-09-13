@@ -33,7 +33,7 @@ Essa documentação foi atualizada no dia 10/05/2023 então os fatos sobre o fun
 - Botão simples com texto (/send-button-list)
 - Botão simples com imagem (/send-button-list-image)
 - Lista de opções (/send-option-list)
-- Botões de ações (/send-option-list)
+- Botões de ações (/send-button-actions)
 
 ---
 
