@@ -49,7 +49,7 @@ This method is responsible for mentioning participants in a group.
 
 ---
 
-## Marcar todos no grupo
+## Mention everyone in the group.
 
 This method allows you to mention multiple members of a WhatsApp group without the need to explicitly include the '@' before the numbers. This is useful for tagging multiple members at once.
 
