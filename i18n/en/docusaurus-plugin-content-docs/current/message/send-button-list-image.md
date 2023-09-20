@@ -11,6 +11,11 @@ title: Send buttons with images
 
 ---
 
+:::danger Attention
+"Button shipments are currently unavailable. For more details, please access the topic [Button Functionality](https://developer.z-api.io/en/tips/button-status)
+:::
+
+
 ## Concept
 
 In this method, you can send images with options for action buttons. The button content, for example, 'YES / NO,' can be chosen by the user and will be used as a response to the message sent along with the buttons.

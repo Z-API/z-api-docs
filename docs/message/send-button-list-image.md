@@ -11,6 +11,10 @@ title: Enviar botões com imagem
 
 ---
 
+:::danger Atenção
+Envios de botões atualmente se encontram indisponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
+:::
+
 ## Conceituação
 
 Neste método você poderá enviar imagens com opções de botões de ação, o conteudo do botão ex: SIM / Não, poderão ser escolhidos pelo usuário e será utilizado como resposta da mensagem enviada junto com os botões.

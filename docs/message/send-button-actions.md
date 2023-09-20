@@ -11,6 +11,10 @@ title: Enviar texto com botões de ação
 
 ---
 
+:::danger Atenção
+Envios de botões atualmente se encontram indisponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
+:::
+
 ## Conceituação
 
 Neste método você poderá enviar mensagens de texto com botões de ação, você conseguirá redirecionar para links, fazer chamadas, e também dar respostas padrões.

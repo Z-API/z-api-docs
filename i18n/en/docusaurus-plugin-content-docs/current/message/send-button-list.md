@@ -11,6 +11,11 @@ title: Send texts with buttons
 
 ---
 
+:::danger Attention
+"Button shipments are currently unavailable. For more details, please access the topic [Button Functionality](https://developer.z-api.io/en/tips/button-status)
+:::
+
+
 ## Concept 
 
 In this method you will be able to send text messages with action buttons. Buttons content ex: YES / NO, they will be able to be chosen by the user and it will be used as an answer to the text that was sent.

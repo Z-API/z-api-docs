@@ -11,6 +11,12 @@ title: Send text with action buttons
 
 ---
 
+:::danger Attention
+
+"Button shipments are currently unavailable. For more details, please access the topic [Button Functionality](https://developer.z-api.io/en/tips/button-status)
+
+:::
+
 ## Concept
 
 In this method, you will be able to send text messages with action buttons. You can redirect to links, make calls, and also provide standard responses
