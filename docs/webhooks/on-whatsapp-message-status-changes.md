@@ -62,7 +62,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
 
 ```json
 {
-  "instanceId": "instance.id"
+  "instanceId": "instance.id",
   "status": "SENT",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
@@ -72,7 +72,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
   "isGroup": false
 }
 {
-  "instanceId": "instance.id"
+  "instanceId": "instance.id",
   "status": "RECEIVED",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
@@ -82,7 +82,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
   "isGroup": false
 }
 {
-  "instanceId": "instance.id"
+  "instanceId": "instance.id",
   "status": "READ",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
@@ -92,7 +92,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
   "isGroup": false
 }
 {
-  "instanceId": "instance.id"
+  "instanceId": "instance.id",
   "status": "READ-SELF",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
@@ -102,7 +102,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
   "isGroup": false
 }
 {
-  "instanceId": "instance.id"
+  "instanceId": "instance.id",
   "status": "PLAYED",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
