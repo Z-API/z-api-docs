@@ -3,7 +3,6 @@ id: qrcode
 title: Pegar QRCode
 ---
 
-
 ## Conceituação
 
 Sim! Como no Whatsapp Web você vai precisar ler um QRCode ou usar um número de telefone para conectar-se ao Z-API.
@@ -45,16 +44,11 @@ Este método retorna um código para que seja possível conectar o número a API
 
 Você pode inserir o código gerado através da API diretamente no whatsapp, na mesma aba onde é feita a leitura do qr-code, clicando em "Conectar com número de telefone".
 
+### Header
 
----
-
-
-
-## Atributos
-
-| Atributos     | Tipo | Descrição |
-| :------------ | :--: | :-------- |
-| Sem Atributos |      |           |
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
 
 ---
 

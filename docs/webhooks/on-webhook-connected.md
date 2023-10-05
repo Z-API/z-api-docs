@@ -27,6 +27,13 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 `PUT` <https://api.z-api.io/instances/id/{id}/token/{token}/update-webhook-connected>
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
+---
+
 #### Request Body
 
 ```json

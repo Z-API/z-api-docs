@@ -9,6 +9,11 @@ title: Pegar Produtos
 
 `GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/catalogs
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
 ---
 
 ## Conceituação

@@ -14,6 +14,11 @@ Esse método ativa a opção de Rejeitar chamadas automático na sua API, com el
 
 `PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-call-reject-auto
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
 
 #### Request Body
 

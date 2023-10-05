@@ -2,19 +2,23 @@
 id: profile-picture
 title: Atualizar imagem de perfil
 ---
+## Conceituação
 
-## Método
+Este método é reponsavel alterar a sua imagem de perfil no Whatsapp
+
+---
+
+### Método
 
 #### /profile-picture
 
 `PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/profile-picture
 
----
+### Header
 
-## Conceituação
-
-Este método é reponsavel alterar a sua imagem de perfil no Whatsapp
-
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
 
 ---
 
@@ -34,8 +38,6 @@ Este método é reponsavel alterar a sua imagem de perfil no Whatsapp
 ---
 
 ## Request Body
-
-#### Body
 
 ```json
 {

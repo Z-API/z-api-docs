@@ -13,7 +13,7 @@ You can write content using [GitHub-flavored Markdown syntax](https://github.git
 
 To serve as an example page when styling markdown based Docusaurus sites.
 
-## Headers
+### Headers
 
 # H1 - Create the best documentation
 
