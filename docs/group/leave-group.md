@@ -14,7 +14,7 @@ title: Sair do grupo
 
 |      Key       |            Value            |
 | :------------: |     :-----------------:     |
-|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 ---
 
 ## Conceituação

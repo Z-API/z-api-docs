@@ -21,7 +21,7 @@ Para a mensagem ser enviada o método anterior (Rejeitar chamadas) precisa estar
 
 |      Key       |            Value            |
 | :------------: |     :-----------------:     |
-|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 
 #### Request Body
 

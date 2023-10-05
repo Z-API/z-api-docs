@@ -13,7 +13,7 @@ title: Enviar texto com botões
 
 |      Key       |            Value            |
 | :------------: |     :-----------------:     |
-|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 ---
 :::danger Atenção
 Envios de botões atualmente se encontram indisponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)

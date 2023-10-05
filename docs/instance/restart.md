@@ -23,7 +23,7 @@ Este método basicamente é o botão "Reiniciar" do seu sistema operacional ou s
 
 |      Key       |            Value            |
 | :------------: |     :-----------------:     |
-|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 
 
 ---

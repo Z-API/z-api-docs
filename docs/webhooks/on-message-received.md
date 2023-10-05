@@ -45,7 +45,7 @@ Também é possível atualizar a rota com a opção "enviadas por mim" habilitad
 
 |      Key       |            Value            |
 | :------------: |     :-----------------:     |
-|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](https://developer.z-api.io/security/client-token)** |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 ---
 
 #### Request Body
