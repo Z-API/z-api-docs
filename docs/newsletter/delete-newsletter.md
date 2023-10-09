@@ -9,6 +9,11 @@ title: Deletar canal
 
 `DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/delete-newsletter
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 ---
 
 ## Conceituação

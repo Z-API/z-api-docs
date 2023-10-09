@@ -9,6 +9,11 @@ title: Criando canais
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-newsletter
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 ---
 
 ## Conceituação
