@@ -10,6 +10,13 @@ title: Promover admin do grupo
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-admin
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+---
+
 ## Conceituação
 
 Este método é reponsavel por promover participamentes do grupo à administradores, você pode provomover um ou mais participamente à administrador.

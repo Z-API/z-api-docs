@@ -17,6 +17,12 @@ Para a mensagem ser enviada o método anterior (Rejeitar chamadas) precisa estar
 
 `PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-call-reject-message
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+
 #### Request Body
 
 ```json

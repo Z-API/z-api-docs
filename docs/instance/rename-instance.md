@@ -3,21 +3,29 @@ id: rename-instance
 title: Renomear instância
 ---
 
-## Método
-
-#### /update-name
-
-`PUT` <https://api.z-api.io/instances/ID_INSTANCE/token/TOKEN_INSTANCE/update-name>
-
----
-
 ## Conceituação
 
 Método utilizado para renomear uma instância.
 
 ---
 
+## Método
+
+#### /update-name
+
+`PUT` <https://api.z-api.io/instances/ID_INSTANCE/token/TOKEN_INSTANCE/update-name>
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+
+---
+
 ## Atributos
+
+### Obrigatórios
 
 | Atributos |  Tipo   | Descrição                      |
 | :-------- | :----:  | :----------------------------- |
@@ -28,14 +36,7 @@ Método utilizado para renomear uma instância.
 
 ## Request Body
 
-**Método**
-
-`PUT` <https://api.z-api.io/instances/ID_INSTANCE/token/TOKEN_INSTANCE/update-name>
-
-**Exemplo**
-
 ```json
-Body 
 {
   "value": "novo nome"
 }

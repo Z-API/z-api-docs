@@ -9,6 +9,13 @@ title: Apagando mensagem fila
 
 `DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue/{zaapid}
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+---
+
 ## Conceituação
 
 Este método é reponsavel por deletar uma mensagem dentro de fila aguardando para ser processada.

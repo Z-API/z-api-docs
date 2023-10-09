@@ -9,6 +9,13 @@ title: Metadata da comunidade
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/communities-metadata/{idDaComunidade}
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+---
+
 ## Conceituação
 
 Este método retorna o metadata da comunidade, como nome, descrição e grupos que estão vinculados a ela.

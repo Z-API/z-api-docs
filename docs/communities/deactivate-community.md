@@ -9,6 +9,13 @@ title: Desativar comunidade
 
 `DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/communities/{idDaComunidade}
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+---
+
 ## Conceituação
 
 Este método é reponsavel por desativar uma comunidade.

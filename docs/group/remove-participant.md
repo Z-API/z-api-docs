@@ -9,6 +9,13 @@ title: Remover Participantes
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remove-participant
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+---
+
 ## Conceituação
 
 Este método é reponsável por remover participantes do grupo.

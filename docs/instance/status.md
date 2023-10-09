@@ -2,6 +2,11 @@
 id: status
 title: Status da instância
 ---
+## Conceituação
+
+Este método te permite descobrir se sua instância está ou não conectada a uma conta de Whatsapp.
+
+---
 
 ## Método
 
@@ -9,13 +14,14 @@ title: Status da instância
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/status
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+
 ---
 
-## Conceituação
-
-Este método te permite descobrir se sua instância está ou não conectada a uma conta de Whatsapp.
-
----
 
 ## Atributos
 

@@ -41,6 +41,13 @@ Também é possível atualizar a rota com a opção "enviadas por mim" habilitad
 
 ![img](../../img/SendFromMe.jpeg)
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+---
+
 #### Request Body
 
 ```json

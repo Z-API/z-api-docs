@@ -15,7 +15,15 @@ Esse método ativa a leitura automática de todas as mensagens recebidas pela AP
 
 `PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-auto-read-message
 
-#### Request Body
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+
+---
+
+### Request Body
 
 ```json
 {

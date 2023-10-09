@@ -9,15 +9,21 @@ title: Enviar texto com botões
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-button-list
 
----
+### Header
 
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+---
 :::danger Atenção
 Envios de botões atualmente se encontram indisponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
 :::
 
+
 ## Conceituação
 
 Neste método você poderá enviar mensagens de texto com botões de ação, o conteudo do botão ex: SIM / Não, poderão ser escolhidos pelo usuário e será utilizado como resposta da mensagem enviada junto com os botões.
+
 
 ![image](../../img/send-button-list.jpeg)
 

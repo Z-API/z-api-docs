@@ -9,6 +9,11 @@ title: Buscar etiquetas
 
 `GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/tags
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 ---
 
 ## Conceituação

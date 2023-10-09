@@ -9,7 +9,8 @@
 
 module.exports = {
   tutorialSidebar: {
-    'Quick Start': ['quickstart/introduction', 'quickstart/authentication'],
+    'Quick Start': ['quickstart/introduction', //'quickstart/authentication'
+  ],
 
     Tips: [
       'tips/blockednumber',
@@ -21,6 +22,13 @@ module.exports = {
       'tips/Z-APIvsAPI-OFICIAL',
       'tips/button-status',
       'tips/file-expiration',
+    ],
+
+    Security:[
+      'security/introduction',
+      'security/ip-block',
+      'security/twofactor',
+      'security/client-token'
     ],
 
     Instance: [
