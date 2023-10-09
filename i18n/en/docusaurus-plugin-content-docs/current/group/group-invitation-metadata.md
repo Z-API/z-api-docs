@@ -8,7 +8,15 @@ title: Group Metadata by invite
 
 #### /group-invitation-metadata
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-metadata?url={ URL }
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/group-invitation-metadata?url={ URL }
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
 
 ## Concept
 

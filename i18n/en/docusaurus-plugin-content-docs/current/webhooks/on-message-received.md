@@ -23,7 +23,23 @@ To update the webhook route, you can do it through the API or through the admin 
 
 #### /update-webhook-received
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-received
+`PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-webhook-received
+
+#### Or
+
+You can also update the route with the "sent by me" option enabled.
+
+#### /update-webhook-received-delivery
+
+`PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-webhook-received-delivery
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
 
 #### Request Body
 
@@ -552,8 +568,6 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-##
-
 ### Cart return example 
 
 ```json
@@ -595,6 +609,79 @@ The possible returns of the **on-message-received** webhook are registered below
       }
     ]
   }
+}
+```
+
+### Example of Poll Response
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "moment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "poll": {
+    "question": "What is the best WhatsApp API?",
+    "options": [
+      {
+        "name": "Z-API"
+      },
+      {
+        "name": "Others"
+      }
+    ]
+  },
+ 
+}
+```
+
+### Example of Poll Response Message
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "moment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": "If it's a group, this will be the participant who responded",
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "pollVote": {
+    "pollMessageId": "ID of the poll message that was responded to",
+    "options": [
+      {
+        "name": "Z-API"
+      }
+    ]
+  },
 }
 ```
 

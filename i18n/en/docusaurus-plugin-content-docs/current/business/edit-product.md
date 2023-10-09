@@ -9,6 +9,12 @@ title: Create/edit product
 
 `POST` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/products
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

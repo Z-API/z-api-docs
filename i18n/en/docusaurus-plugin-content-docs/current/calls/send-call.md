@@ -7,7 +7,13 @@ title: Make a call
 
 #### /send-call
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-call
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-call
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -50,8 +56,8 @@ In this method you send a call to a number that has whatsapp, whether it is your
 
 | Attributes | Type   | Description    |
 | :--------- | :----- | :------------- |
-| zaapId     | string | id no z-api    |
-| messageId  | string | id no whatsapp |
+| zaapId     | string | id on z-api    |
+| messageId  | string | id on whatsapp |
 
 Exemplo
 
@@ -75,9 +81,8 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 ## Webhook Response
 
-Link para a response do webhook (ao receber)
-
-Link to webhook response (on receipt)
+Link for webhooks response (upon receiving)
+[Webhook](../webhooks/on-message-received)
 
 ---
 

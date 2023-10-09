@@ -9,6 +9,12 @@ title: Renaming the instance
 
 `PUT` <https://api.z-api.io/instances/ID_INSTANCE/token/TOKEN_INSTANCE/update-name>
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept
@@ -27,12 +33,6 @@ Method used to rename an instance.
 ---
 
 ## Request Body
-
-**Method**
-
-`PUT` <https://api.z-api.io/instances/ID_INSTANCE/token/TOKEN_INSTANCE/update-name>
-
-**Example**
 
 ```json
 Body 

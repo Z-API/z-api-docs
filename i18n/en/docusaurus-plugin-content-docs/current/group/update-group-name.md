@@ -7,7 +7,13 @@ title: Updating group name
 
 #### /update-group-name
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-name
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-group-name
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -43,7 +49,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-name
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-group-name
 
 #### Body
 
@@ -52,7 +58,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 Old way -
   {
     "groupId": "5511999999999-1623281429",
-    "groupName": "Mudou o nome Meu grupo no Z-API"
+    "groupName": "Changed the name of My group in Z-API"
   }
 
 -----------------------------------------------
@@ -60,7 +66,7 @@ Old way -
 New way -
   {
     "groupId": "120363019502650977-group",
-    "groupName": "Mudou o nome Meu grupo no Z-API"
+    "groupName": "Changed the name of My group in Z-API"
   }
 
 ```

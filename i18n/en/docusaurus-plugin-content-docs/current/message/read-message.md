@@ -7,9 +7,15 @@ title: Read texts
 
 #### /read-message
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/read-message
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/read-message
 
----
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+
 
 ## Concept 
 

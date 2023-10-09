@@ -7,7 +7,13 @@ title: Delete chats
 
 #### /modify-chat
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/modify-chat
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/modify-chat
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -45,9 +51,9 @@ Example
 
 ### 200
 
-| Attributes | Type    | Description                       |
-| :-------- | :------ | :------------------------------ |
-| value     | boolean | Action confirmation attribute  |
+| Attributes | Type    | Description                    |
+| :--------  | :------ | :----------------------------- |
+|  value     | boolean | Action confirmation attribute  |
 
 Example 
 

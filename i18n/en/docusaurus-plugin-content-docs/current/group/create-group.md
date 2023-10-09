@@ -7,7 +7,13 @@ title: Creating groups
 
 #### /create-group
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/create-group
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -56,7 +62,7 @@ WhatsApp has recently implemented a validation process to check if the phone num
 
 **Method**
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/create-group
 
 **Example**
 

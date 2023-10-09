@@ -10,12 +10,22 @@ Through this method, you define the message that will be sent after rejecting a 
 :::important Importante
 That's correct. In order for the message to be sent, the previous method (Rejecting calls) needs to be active or enabled. When a voice call is rejected through the API, the defined message will be automatically sent as a response.
 :::
+
 ---
+
 ### Method
 
 #### /update-call-reject-message
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-call-reject-message
+`PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-call-reject-message
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
 
 #### Request Body
 

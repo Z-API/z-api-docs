@@ -8,7 +8,7 @@ title: Disconnected
 
 #### /update-webhook-disconnected
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-disconnected
+`PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-webhook-disconnected
 
 ## Conceituação
 
@@ -41,7 +41,7 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 #### URL
 
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-webhook-disconnected
+`PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-webhook-disconnected
 
 #### Body
 

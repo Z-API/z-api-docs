@@ -7,7 +7,13 @@ title: Cell phone data
 
 #### /Status
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/device
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/device
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 

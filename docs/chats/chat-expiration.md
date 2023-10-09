@@ -1,6 +1,6 @@
 ---
 id: send-chat-expiration
-title: Expiração do chats
+title: Expiração dos chats
 ---
 
 ## Método
