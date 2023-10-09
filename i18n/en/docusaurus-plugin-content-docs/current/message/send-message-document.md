@@ -7,7 +7,7 @@ title: Send documents
 
 #### /send-document/{extension}
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-document/ **{extension}**
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-document/ **{extension}**
 
 
 > **Don’t forget!** You need to inform the **{extension}** parameter with the extension of the file you want to send! Theoretically this method should support all types of documents, as long as they are within WhatsApp's own file size policies (to know more about these limits [click here]).
@@ -16,11 +16,16 @@ title: Send documents
 
 ### Size and formats 
 
-O Whatsapp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio Whatsapp.
-
-Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
+WhatsApp limits the size of files, and its policy changes frequently. That's why we always recommend checking directly on the WhatsApp website for the latest information.
+In this [link], you'll find everything you need to know about file formats and sizes.
 
 [link]: https://developers.facebook.com/docs/whatsapp/api/media
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 

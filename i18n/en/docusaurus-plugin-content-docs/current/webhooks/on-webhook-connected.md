@@ -27,6 +27,14 @@ To update the webhook route, you can do it through the API or through the admin 
 
 `PUT` <https://api.z-api.io/instances/id/{id}/token/{token}/update-webhook-connected>
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
+
 #### Request Body
 
 ```json

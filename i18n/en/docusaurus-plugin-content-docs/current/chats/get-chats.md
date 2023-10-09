@@ -7,7 +7,13 @@ title: Get chats
 
 #### /chats
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chats
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -40,7 +46,7 @@ This method is responsible for returning all of your chats
 
 Method 
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chats
 
 ---
 

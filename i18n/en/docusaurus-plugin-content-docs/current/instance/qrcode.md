@@ -7,7 +7,7 @@ title: Get QRCode
 
 #### /qr-code
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/qr-code
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/qr-code
 
 Getting QRCode - bytes
 
@@ -15,7 +15,7 @@ This method returns the bytes of the QR code. You can render this in a component
 
 #### /qr-code/image
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/qr-code/image
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/qr-code/image
 
 Getting QRCode - Image
 
@@ -23,7 +23,7 @@ This method returns an image of the type base64. You can render this in a compon
 
 #### /phone-code/{phone}
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-code/{phone}
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/phone-code/{phone}
 
 Getting QRCode - Phone
 
@@ -31,6 +31,11 @@ This method returns a code that allows you to connect the phone number to the AP
 
 You can enter the code generated through the API directly in WhatsApp, on the same tab where you scan the QR code, by clicking on 'Connect with a phone number'."
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 

@@ -7,7 +7,15 @@ title: Edit description
 
 #### /update-group-description
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-group-description
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-group-description
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
 
 ## Concept
 

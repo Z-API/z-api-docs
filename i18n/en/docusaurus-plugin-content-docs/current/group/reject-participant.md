@@ -7,7 +7,15 @@ title: Reject Participant
 
 #### /reject-participant
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/reject-participant
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/reject-participant
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
 
 ## Concept
 
@@ -41,7 +49,7 @@ On November 4, 2021, WhatsApp changed the format for creating new groups. Previo
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/reject-participant
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/reject-participant
 
 #### Body
 

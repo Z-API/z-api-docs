@@ -8,7 +8,15 @@ title: Group metadata
 
 #### /group-metadata
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/group-metadata
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
 
 ## Concept
 
@@ -41,7 +49,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 
 #### URL
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-metadata/{phone}
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/group-metadata/{phone}
 
 ---
 

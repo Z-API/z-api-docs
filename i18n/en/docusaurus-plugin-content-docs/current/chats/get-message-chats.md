@@ -7,7 +7,13 @@ title: Get messages from chat
 
 #### /chat-messages/{phone}
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat-messages/{phone}
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chat-messages/{phone}
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -41,7 +47,7 @@ This method is responsible for returning all conversations in a chat.
 
 Method
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chat-messages/{phone}
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/chat-messages/{phone}
 
 ---
 

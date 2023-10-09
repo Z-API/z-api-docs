@@ -7,7 +7,15 @@ title: Deleting a text queue
 
 #### /queue/{zaapid}
 
-`DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue/{zaapid}
+`DELETE` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue/{zaapid}
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
 
 ## Concept
 
@@ -37,7 +45,7 @@ This method is responsible for deleting a single message inside of the queue wai
 
 Method
 
-`DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue/{zaapid}
+`DELETE` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue/{zaapid}
 
 ---
 

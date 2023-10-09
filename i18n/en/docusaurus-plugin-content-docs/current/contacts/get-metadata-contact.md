@@ -1,13 +1,19 @@
 ---
 id: get-metadata-contact
-title: Pegar metadata do contato
+title: Get contact metadata
 ---
 
 ## Método
 
 #### /contacts/{phone}
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/{phone}
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts/{phone}
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -45,7 +51,7 @@ If you intend to store your contact's image, please note that we always return i
 
 Method
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/5511999999999
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts/5511999999999
 
 ---
 

@@ -3,6 +3,20 @@ id: reply-message
 title: Answer Messages 
 ---
 
+## Method
+
+#### /send-text
+
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-text
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
+---
+
 ## Concept 
 
 In this topic we will talk a little about how to respond to a text directly. 

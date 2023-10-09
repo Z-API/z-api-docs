@@ -8,7 +8,13 @@ title: Forward message
 #### /forward-message
 
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/forward-message
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/forward-message
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 

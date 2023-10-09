@@ -9,6 +9,12 @@ title: Get products
 
 `GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/catalogs
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

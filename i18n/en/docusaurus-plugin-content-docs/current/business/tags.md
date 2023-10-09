@@ -9,6 +9,12 @@ title: Search for labels.
 
 `GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/tags
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

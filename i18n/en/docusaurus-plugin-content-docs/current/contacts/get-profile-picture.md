@@ -7,7 +7,13 @@ title: Get contact image
 
 #### /profile-picture
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/profile-picture
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/profile-picture
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -44,7 +50,7 @@ If you intend to store your contact's image, please note that we always return i
 
 Method
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/profile-picture?phone=551199999999
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/profile-picture?phone=551199999999
 
 ---
 
