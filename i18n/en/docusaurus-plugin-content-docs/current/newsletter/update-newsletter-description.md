@@ -9,6 +9,12 @@ title: Update Newsletter Description
 
 `POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-newsletter-description
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

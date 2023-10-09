@@ -9,6 +9,12 @@ title: Follow Newsletter
 
 `PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/follow-newsletter
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

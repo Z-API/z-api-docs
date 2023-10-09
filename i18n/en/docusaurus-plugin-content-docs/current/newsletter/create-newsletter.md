@@ -9,6 +9,12 @@ title: Creating Newsletter
 
 `POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/create-newsletter
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept
@@ -23,7 +29,7 @@ This method is responsible for creating a newsletter. Unfortunately, it's not po
 | :--------- | :-----: | :------------- |
 | name       | string  | Newsletter name    |
 
-### Optionalchannel
+### Optional
 
 | Attributes   | Type   | Description       |
 | :----------- | :----: | :---------------- |

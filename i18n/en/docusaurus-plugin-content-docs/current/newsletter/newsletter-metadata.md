@@ -9,6 +9,12 @@ title: Newsletter Metadata
 
 `GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/newsletter/metadata/{newsletterId}
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

@@ -9,6 +9,12 @@ title: Delete Newsletter
 
 `DELETE` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/delete-newsletter
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

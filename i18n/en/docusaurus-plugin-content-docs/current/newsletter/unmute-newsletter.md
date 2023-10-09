@@ -9,6 +9,12 @@ title: Unmute Newsletter
 
 `PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/unmute-newsletter
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

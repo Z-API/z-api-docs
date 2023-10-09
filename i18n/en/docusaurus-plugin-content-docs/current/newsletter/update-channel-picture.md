@@ -9,6 +9,12 @@ title: Update Newsletter Image
 
 `POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-newsletter-picture
 
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept

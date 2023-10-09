@@ -63,7 +63,6 @@ Este método é responsável por criar um canal. Infelizmente não é possivel c
 | Atributos      | Tipo   | Descrição                 |
 | :------------- | :----- | :------------------------ |
 | id             | string | ID do canal          |
-<!-- | invitationLink | string | link para entrar no grupo | -->
 
 **Exemplo**
 
