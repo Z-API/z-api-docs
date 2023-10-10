@@ -7,6 +7,10 @@
             "name": "phone",
             "value": "5511999999999",
             "comment": ""
+        },
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
         }
     ],
     "headers": [],

@@ -49,7 +49,7 @@ Este método é responsável por criar um canal. Infelizmente não é possivel c
 ```json
 {
   "name": "Nome do canal",
-  "description": "Descrição do canal",
+  "description": "Descrição do canal"
 }
 ```
 

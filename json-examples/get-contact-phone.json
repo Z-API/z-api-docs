@@ -6,7 +6,10 @@
      
     ],
     "headers": [
-
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
     ],
     "cookies": [],
     "postData": {}
