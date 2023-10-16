@@ -1,52 +1,79 @@
 ---
 id: company-description
-title: Assigning labels to a chat.
+title: Change Company Description
 ---
 
 ## Method
 
-#### /chats/{phone}/tags/{tag}/add
+#### /business/company-description
 
-`PUT` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/chats/{phone}/tags/{tag}/add
+`POST` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/business/company-description
 
 ### Header
 
 |      Key       |            Value            |
 | :------------: |     :-----------------:     |
 |  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
-
 ---
 
 ## Concept
 
-Through this method, it is possible to assign a label to a chat in WhatsApp Business.
+Through this method, it is possible to change the company's description.
 
-:::important Importante
-This method is only available for devices connected to the Multi-Devices version of WhatsApp.
+:::important Important
+This method is only available for Business WhatsApp accounts.
 :::
 
-## Response
+---
 
-### 200
+## Attributes
 
-| Attributes| Type    | Description                                         |
-| :-------- | :------ | :-------------------------------------------------- |
-| value     | boolean | true if successful, and false if there is a failure |
+### Optional
 
-Exemplo
+| Attributes  |  Type   | Description                                |
+| :---------- | :-----: | :----------------------------------------- |
+| value       | string  | Company description                        |
+
+## Request Body
 
 ```json
 {
-  "value": true
+  "value": "Description text"
+}
+```
+
+:::tip Tip
+To remove the description, simply send the "value" attribute as empty.
+:::
+
+---
+
+## Response
+
+### 201
+
+| Attributes | Type    | Description                                      |
+| :-------- | :------ | :----------------------------------------------- |
+| success   | boolean | true if successful, false in case of failure   |
+
+Example
+
+```json
+{
+  "success": true
 }
 ```
 
 ### 405
 
-In this case certify that you are sending the correct specification of the method. This means, verify if you sent a PUT or POST as specified at the beginning of this topic.
+In this case, ensure that you are sending the method specification correctly, i.e., check if you sent the POST or PUT as specified at the beginning of this topic.
 
 ### 415
 
-In case you receive 415 error, make sure to add the “Content-Type” of the object you are sending in the request headers, mostly “application/json”
+If you receive a 415 error, make sure to add the "Content-Type" of the object you are sending in the request headers, in most cases, it should be "application/json".
 
 ---
+
+## Code
+
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/company-description.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
