@@ -20,21 +20,42 @@ title: Pegar Produtos (Telefone)
 
 Nesse método você será capaz de pegar os produtos de um catálogo do whatsapp Business de qualquer número, sendo o seu catáçogo ou de outra pessoa
 
+## Atributos
+
+### Opcional
+
+| Atributos   |  Tipo   | Descrição                                    |
+| :---------- | :-----: | :------------------------------------------- |
+| nextCursor  | string  | Token utilizado para paginação dos registros |
+
+---
+
+## Request Params
+
+#### URL exemplo
+
+Method
+
+`GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/catalogs/{{Numero-de-telefone}}?nextCursor=VALOR_DO_CURSOR
+
+---
+
 ## Response
 
 ### 200
 
-| Atributos    | Tipo    | Descrição                                        |
-| :----------- | :------ | :----------------------------------------------- |
-| cartEnabled  | boolean | Atributo para saber se o carrinho está ativo     |
-| availability | string  | Atributo para saber a disponibilidade do produto |
-| id           | string  | Id do produto                                    |
-| retailerId   | boolean | ID do varejista                                  |
-| price        | string  | Preço do produto                                 |
-| currency     | string  | Tipo da moeda                                    |
-| name         | string  | Nome do produto                                  |
-| quantity     | boolean | Atributo de quantidade de produto                |
-| images       | string  | Link da imagem do produto                        |
+| Atributos    | Tipo    | Descrição                                            |
+| :----------- | :------ | :--------------------------------------------------- |
+| cartEnabled  | boolean | Atributo para saber se o carrinho está ativo         |
+| nextCursor   | string  | Token que define os registros da próxima requisição  |
+| availability | string  | Atributo para saber a disponibilidade do produto     |
+| id           | string  | Id do produto                                        |
+| retailerId   | boolean | ID do varejista                                      |
+| price        | string  | Preço do produto                                     |
+| currency     | string  | Tipo da moeda                                        |
+| name         | string  | Nome do produto                                      |
+| quantity     | boolean | Atributo de quantidade de produto                    |
+| images       | string  | Link da imagem do produto                            |
 
 Exemplo
 

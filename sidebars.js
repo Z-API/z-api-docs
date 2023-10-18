@@ -159,6 +159,13 @@ module.exports = {
       'business/tags',
       'business/tags-add',
       'business/tags-remove',
+      'business/company-description',
+      'business/company-email',
+      'business/company-address',
+      'business/company-websites',
+      'business/business-hours',
+      'business/available-categories',
+      'business/company-categories'
     ],
     Webhooks: [
       'webhooks/introduction',
