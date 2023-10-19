@@ -76,6 +76,17 @@ module.exports = {
       'message/send-poll',
       'message/send-poll-vote',
     ],
+    Privacy: [
+      'privacy/introduction',
+      'privacy/get-disallowed-contacts',
+      'privacy/set-last-seen',
+      'privacy/set-photo-visualization',
+      'privacy/set-privacy-description',
+      'privacy/set-group-add-permission',
+      'privacy/set-privacy-online',
+      'privacy/set-read-receipts',
+      'privacy/set-messages-duration'
+    ],
     Contacts: [
       'contacts/introduction',
       'contacts/get-contacts',

@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/privacy/description",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"visualizationType\": \"CONTACT_BLACKLIST\", \"contactsBlacklist\": [{\"action\": \"add\", \"phone\": \"554411111111\"}, {\"action\": \"remove\", \"phone\": \"554422222222\"}]}"
+    }
+}
