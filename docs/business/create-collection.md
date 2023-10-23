@@ -35,8 +35,8 @@ Utilizando esse método você será capaz de criar uma coleção de produtos no 
 
 ```json
 {
-    "name": "Nome da coleção",
-    "productIds": ["121212121212", "232323232323"]
+  "name": "Nome da coleção",
+  "productIds": ["121212121212", "232323232323"]
 }
 ```
 
@@ -44,7 +44,7 @@ Utilizando esse método você será capaz de criar uma coleção de produtos no 
 
 ## Response
 
-### 201
+### 200
 
 | Atributos      | Tipo   | Descrição     |
 | :------------- | :----- | :------------ |

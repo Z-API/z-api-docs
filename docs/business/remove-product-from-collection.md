@@ -20,6 +20,10 @@ title: Remover produtos da coleção
 
 Utilizando esse método você será capaz de remover produtos de uma coleção do seu catálogo.
 
+:::warning Atenção
+Ao adicionar ou remover produtos de uma **coleção**, o id da mesma é alterado pelo whatsapp. Isso quer dizer que, ao cadastrar um produto na coleção e tentar fazer qualquer outra operação utilizando o **id** "antigo" resultará em um não funcionamento da rota. Lembre-se então de utilizar o id retornado por essa mesma rota, o qual já é o id atualizado para as operações seguintes.
+:::
+
 ---
 
 ## Atributos
@@ -44,17 +48,19 @@ Utilizando esse método você será capaz de remover produtos de uma coleção d
 
 ## Response
 
-### 201
+### 200
 
 | Atributos      | Tipo    | Descrição                                           |
 | :------------- | :------ | :-------------------------------------------------- |
 | success        | boolean | true caso tenha dado certo e false em caso de falha |
+| collectionId   | string  | Id atualizado da coleção                            |
 
 Exemplo
 
 ```json
 {
-  "success": true
+  "success": true,
+  "collectionId": "1798362193933497"
 }
 ```
 
