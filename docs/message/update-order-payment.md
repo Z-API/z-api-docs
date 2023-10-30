@@ -59,6 +59,10 @@ Object (products)
 
 ### Opcionais
 
+| Atributos | Tipo         | Descrição         |
+| :------   | :----------: | :---------------  |
+| message   | string       | Texto da mensagem |
+
 Object (order)
 
 | Atributos | Tipo         | Descrição         |
@@ -79,6 +83,7 @@ Object (order)
 {
     "phone": "554499999999",
     "messageId": "3EB0F91BBA791BB0A787FC",
+    "message": "Mensagem de texto da atualização do pedido",
     "referenceId": "4N8FCTW1WM6",
     "orderRequestId": "4N8FCTW22W4",
     "orderStatus": "processing",

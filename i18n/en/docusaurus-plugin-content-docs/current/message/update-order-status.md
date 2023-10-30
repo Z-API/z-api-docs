@@ -59,6 +59,10 @@ Object (products)
 
 ### Optional
 
+| Atributos | Tipo         | Descrição         |
+| :------   | :----------: | :---------------  |
+| message   | string       | Text message      |
+
 Object (order)
 
 | Attributes | Type         | Description         |
@@ -79,6 +83,7 @@ In the request, you must include all the data previously provided when sending t
 {
     "phone": "554499999999",
     "messageId": "3EB0F91BBA791BB0A787FC",
+    "message": "Order update text message",
     "referenceId": "4N8FCTW1WM6",
     "orderRequestId": "4N8FCTW22W4",
     "orderStatus": "processing",
