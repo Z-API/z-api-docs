@@ -978,6 +978,67 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de pedido
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228925000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "orders": [
+    {
+      "name": "review_order",
+      "order": {
+        "currency": "BRL",
+        "referenceId": "4N8FCTW1WM6",
+        "orderRequestId": "4N8FCTW22W4",
+        "orderStatus": "processing",
+        "paymentStatus": "paid",
+        "total": 605,
+        "subTotal": 600,
+        "discount": 10,
+        "shipping": 5,
+        "tax": 10,
+        "products": [
+          {
+            "name": "order 1",
+            "quantity": 2,
+            "isCustomItem": true,
+            "productId": "custom-item-4N8FCTW23N7",
+            "value": 150
+          },
+          {
+            "name": "order 2",
+            "quantity": 2,
+            "isCustomItem": false,
+            "productId": "23940797548900636",
+            "value": 150
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.
