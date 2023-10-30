@@ -111,7 +111,7 @@ Object (products)
 ```
 
 :::tip Dica
-Ao enviar um produto na lista "products" sem o atributo "productId", isso é caracterizado como um produto "customizado". Ele recebe um id para ser utilizado no contexto desse pedido, o qual é retornado no webhook de **[ReceivedCallback](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)** e deve ser utilizado para as atualizações de status do pedido.
+Ao enviar um produto na lista "products" sem o atributo "productId", isso é caracterizado como um produto "customizado". Ele recebe um id para ser utilizado no contexto desse pedido, o qual é retornado no webhook de **[ReceivedCallback](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)** e deve ser utilizado para as atualizações de status do pedido.
 :::
 
 ## Response
@@ -149,7 +149,7 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 Link para a response do webhook (ao receber)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)
+[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)
 
 ---
 

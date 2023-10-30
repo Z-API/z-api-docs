@@ -685,8 +685,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-
-### Order return example
+### Send order return example
 
 ```json
 {
@@ -711,39 +710,91 @@ The possible returns of the **on-message-received** webhook are registered below
   "photo": "https://",
   "broadcast": false,
   "type": "ReceivedCallback",
-  "orders": [
-    {
-      "name": "review_order",
-      "order": {
-        "currency": "BRL",
-        "referenceId": "4N8FCTW1WM6",
-        "orderRequestId": "4N8FCTW22W4",
-        "orderStatus": "processing",
-        "paymentStatus": "paid",
-        "total": 605,
-        "subTotal": 600,
-        "discount": 10,
-        "shipping": 5,
-        "tax": 10,
-        "products": [
-          {
-            "name": "order 1",
-            "quantity": 2,
-            "isCustomItem": true,
-            "productId": "custom-item-4N8FCTW23N7",
-            "value": 150
-          },
-          {
-            "name": "order 2",
-            "quantity": 2,
-            "isCustomItem": false,
-            "productId": "23940797548900636",
-            "value": 150
-          }
-        ]
+  "reviewAndPay": {
+    "type": "physical-goods",
+    "currency": "BRL",
+    "referenceId": "4N9AVI38VOB",
+    "orderRequestId": "4N9AVI38VYZ",
+    "orderStatus": "pending",
+    "paymentStatus": "pending",
+    "total": 605,
+    "subTotal": 600,
+    "discount": 10,
+    "shipping": 5,
+    "tax": 10,
+    "products": [
+      {
+        "name": "order 1",
+        "quantity": 2,
+        "isCustomItem": true,
+        "productId": "custom-item-4N9AVI38WI1",
+        "value": 150
+      },
+      {
+        "name": "order 2",
+        "quantity": 2,
+        "isCustomItem": false,
+        "productId": "23940797548900636",
+        "value": 150
       }
-    }
-  ]
+    ]
+  }
+}
+```
+
+### Update order return example
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228925000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "reviewOrder": {
+    "currency": "BRL",
+    "referenceId": "4N9AVI38VOB",
+    "orderRequestId": "4N9AVI38VYZ",
+    "orderStatus": "processing",
+    "paymentStatus": "pending",
+    "total": 605,
+    "subTotal": 600,
+    "discount": 10,
+    "shipping": 5,
+    "tax": 10,
+    "products": [
+      {
+        "name": "order 1",
+        "quantity": 2,
+        "isCustomItem": true,
+        "productId": "custom-item-4N9AVI38WI1",
+        "value": 150
+      },
+      {
+        "name": "order 2",
+        "quantity": 2,
+        "isCustomItem": false,
+        "productId": "23940797548900636",
+        "value": 150
+      }
+    ]
+  }
 }
 ```
 

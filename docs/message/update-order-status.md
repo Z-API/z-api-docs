@@ -34,10 +34,10 @@ Este método está disponível apenas para contas Business do whatsapp.
 | :-------------- | :----: | :-------- |
 | phone           | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | messageId       | string | Id do whatsapp da mensagem original do pedido                                                                         |
-| referenceId     | string | Id de referência do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)**) |
-| orderRequestId  | string | Id de referência da requisição do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)**) |
+| referenceId     | string | Id de referência do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-atualização-de-pedido)**) |
+| orderRequestId  | string | Id de referência da requisição do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-atualização-de-pedido)**) |
 | orderStatus     | string | Novo status do pedido (pending, processing, shipped, completed, canceled) |
-| paymentStatus   | string | Status atual do pagamento (pending, paid) (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)**) |
+| paymentStatus   | string | Status atual do pagamento (pending, paid) (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-atualização-de-pedido)**) |
 | order           | object | Informações do pedido a ser enviado |
 
 Object (order)
@@ -51,11 +51,11 @@ Object (products)
 
 | Atributos     | Tipo         | Descrição                 |
 | :------------ | :----------: | :------------------------ |
-| productId     | string       | Id do produto (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)**) |
+| productId     | string       | Id do produto (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)**) |
 | name          | string       | Nome do produto           |
 | value         | number       | Valor do produto          |
 | quantity      | number       | Quantidade                |
-| isCustomItem  | boolean      | Informa se é um produto customizado na hora do envio (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)**) |
+| isCustomItem  | boolean      | Informa se é um produto customizado na hora do envio (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)**) |
 
 ### Opcionais
 
@@ -72,7 +72,7 @@ Object (order)
 ## Request Body
 
 :::caution Atenção
-É necessário enviar na requisição todos os dados previamente informados no envio do pedido, com a inclusão de alguns parâmetros adicionais obrigatórios, os quais são retornados no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)**
+É necessário enviar na requisição todos os dados previamente informados no envio do pedido, com a inclusão de alguns parâmetros adicionais obrigatórios, os quais são retornados no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)**
 :::
 
 ```json
@@ -109,7 +109,7 @@ Object (order)
 ```
 
 :::tip Dica
-É possível notar que o produto com o atributo "isCustomItem" com o valor true, tem um id com o prefixo "custom-item". Isso ocorre quando ao enviar um pedido não é informado nenhum id de produto, ou seja, o whatsapp assume que é um produto customizado. Esse id é retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)** e é um parâmetro obrigatório, juntamente com o "isCustomItem", para atualizações do pedido.
+É possível notar que o produto com o atributo "isCustomItem" com o valor true, tem um id com o prefixo "custom-item". Isso ocorre quando ao enviar um pedido não é informado nenhum id de produto, ou seja, o whatsapp assume que é um produto customizado. Esse id é retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)** e é um parâmetro obrigatório, juntamente com o "isCustomItem", para atualizações do pedido.
 :::
 
 ## Response
@@ -147,7 +147,7 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 Link para a response do webhook (ao receber)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-pedido)
+[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-atualização-de-pedido)
 
 ---
 

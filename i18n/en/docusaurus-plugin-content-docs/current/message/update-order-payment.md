@@ -34,9 +34,9 @@ This method is available only for WhatsApp Business accounts.
 | :-------------- | :----: | :-------- |
 | phone           | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks |
 | messageId       | string | ID of the original WhatsApp message of the order |
-| referenceId     | string | Reference ID of the order (returned in the **[webhook](../webhooks/on-message-received#order-return-example)**) |
-| orderRequestId  | string | Order request reference ID (returned in the **[webhook](../webhooks/on-message-received#order-return-example)**) |
-| orderStatus     | string | Current order status (pending, processing, shipped, completed, canceled) (returned in the **[webhook](../webhooks/on-message-received#order-return-example)**) |
+| referenceId     | string | Reference ID of the order (returned in the **[webhook](../webhooks/on-message-received#update-order-return-example)**) |
+| orderRequestId  | string | Order request reference ID (returned in the **[webhook](../webhooks/on-message-received#update-order-return-example)**) |
+| orderStatus     | string | Current order status (pending, processing, shipped, completed, canceled) (returned in the **[webhook](../webhooks/on-message-received#update-order-return-example)**) |
 | paymentStatus   | string | New payment status (pending, paid) |
 | order           | object | Information about the order to be sent |
 
@@ -51,11 +51,11 @@ Object (products)
 
 | Attributes     | Type         | Description                 |
 | :------------ | :----------: | :------------------------  |
-| productId     | string       | Product ID (returned in the **[webhook](../webhooks/on-message-received#order-return-example)**) |
+| productId     | string       | Product ID (returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**) |
 | name          | string       | Product name           |
 | value         | number       | Product value          |
 | quantity      | number       | Quantity                |
-| isCustomItem  | boolean      | Indicates if it's a custom product at the time of sending (returned in the **[webhook](../webhooks/on-message-received#order-return-example)**) |
+| isCustomItem  | boolean      | Indicates if it's a custom product at the time of sending (returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**) |
 
 ### Optional
 
@@ -72,7 +72,7 @@ Object (order)
 ## Request Body
 
 :::caution Caution
-In the request, you must include all the data previously provided when sending the order, with the addition of some mandatory additional parameters, which are returned in the **[webhook](../webhooks/on-message-received#order-return-example)**.
+In the request, you must include all the data previously provided when sending the order, with the addition of some mandatory additional parameters, which are returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**.
 :::
 
 ```json
@@ -109,7 +109,7 @@ In the request, you must include all the data previously provided when sending t
 ```
 
 :::tip Tip
-You can notice that the product with the "isCustomItem" attribute set to true has an ID with the "custom-item" prefix. This occurs when no product ID is provided when sending an order, meaning WhatsApp assumes it's a custom product. This ID is returned in the **[webhook](../webhooks/on-message-received#order-return-example)** and is a mandatory parameter, along with "isCustomItem," for order updates.
+You can notice that the product with the "isCustomItem" attribute set to true has an ID with the "custom-item" prefix. This occurs when no product ID is provided when sending an order, meaning WhatsApp assumes it's a custom product. This ID is returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)** and is a mandatory parameter, along with "isCustomItem," for order updates.
 :::
 
 ## Response
@@ -146,7 +146,7 @@ If you receive a 415 error, make sure to add the "Content-Type" of the object yo
 
 Link to the webhook response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#order-return-example)
+[Webhook](../webhooks/on-message-received#update-order-return-example)
 
 ---
 

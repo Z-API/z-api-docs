@@ -111,7 +111,7 @@ Object (products)
 ```
 
 :::tip Tip
-When sending a product in the "products" list without the "productId" attribute, it is considered a "custom product." It receives an ID to be used in the context of this order, which is returned in the webhook of **[ReceivedCallback](../webhooks/on-message-received#order-return-example)** and should be used for order status updates.
+When sending a product in the "products" list without the "productId" attribute, it is considered a "custom product." It receives an ID to be used in the context of this order, which is returned in the webhook of **[ReceivedCallback](../webhooks/on-message-received#send-order-return-example)** and should be used for order status updates.
 :::
 
 ## Response
@@ -148,7 +148,7 @@ If you receive a 415 error, make sure to add the "Content-Type" of the object yo
 
 Link to the webhook response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#order-return-example)
+[Webhook](../webhooks/on-message-received#send-order-return-example)
 
 ---
 
