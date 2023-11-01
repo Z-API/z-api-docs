@@ -1,0 +1,16 @@
+{
+  "method": "POST",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/5544999999999/report",
+  "httpVersion": "HTTP/1.1",
+  "headers": [
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "name": "Client-Token",
+      "value": "{{security-token}}"
+    }
+  ],
+  "postData": {}
+}
