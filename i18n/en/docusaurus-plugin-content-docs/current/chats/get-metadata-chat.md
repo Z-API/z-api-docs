@@ -63,6 +63,7 @@ Method
 | isMarkedSpam | boolean | True or false indicates if you have marked a chat as spam |
 | profileThumbnail | string | Chat photo URL that **Whatsapp deletes after 48h**|
 | messagesUnread | integer | **discontinued** |
+| about          | string  | Profile about    |
 
 Example 
 
@@ -74,7 +75,8 @@ Example
   "isMuted": "0",
   "isMarkedSpam": "false",
   "profileThumbnail": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-  "messagesUnread": 0
+  "messagesUnread": 0,
+  "about": "Profile about"
 }
 ```
 

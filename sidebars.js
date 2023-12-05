@@ -82,6 +82,8 @@ module.exports = {
       'contacts/get-metadata-contact',
       'contacts/get-profile-picture',
       'contacts/get-iswhatsapp',
+      'contacts/block-contact',
+      'contacts/report-contact'
     ],
     Chats: [
       'chats/introduction',
@@ -91,6 +93,8 @@ module.exports = {
       'chats/read-chat',
       'chats/archive-chat',
       'chats/pin-chat',
+      'chats/mute-chat',
+      'chats/clear-chat',
       'chats/delete-chat',
       'chats/send-chat-expiration',
     ],

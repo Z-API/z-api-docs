@@ -61,6 +61,7 @@ Método
 | isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |
 | profileThumbnail | string | URL da foto do chat **o Whatsapp apaga após 48h** |
 | messagesUnread | integer | **descontinuado** |
+| about          | string  | Recado do perfil  |
 
 Exemplo
 
@@ -72,7 +73,8 @@ Exemplo
   "isMuted": "0",
   "isMarkedSpam": "false",
   "profileThumbnail": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-  "messagesUnread": 0
+  "messagesUnread": 0,
+  "about": "Recado do perfil"
 }
 ```
 
