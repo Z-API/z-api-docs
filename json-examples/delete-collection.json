@@ -1,0 +1,18 @@
+{
+    "method": "DELETE",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalogs/collection/123123123123",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
+    ],
+    "cookies": [],
+    "postData": {}
+}

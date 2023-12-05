@@ -28,8 +28,6 @@ Nesse método você será capaz de pegar os produtos de um catálogo do whatsapp
 | :---------- | :-----: | :------------------------------------------- |
 | nextCursor  | string  | Token utilizado para paginação dos registros |
 
----
-
 ## Request Params
 
 #### URL exemplo
