@@ -1,0 +1,20 @@
+{
+    "method": "GET",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/privacy/disallowed-contacts",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [
+        {
+            "name": "type",
+            "value": "lastSeen",
+            "comment": ""
+        }
+    ],
+    "headers": [
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
+    ],
+    "cookies": [],
+    "postData": {}
+}

@@ -1,0 +1,24 @@
+{
+    "method": "POST",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/privacy/read-receipts",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [
+        {
+            "name": "value",
+            "value": "enable",
+            "comment": ""
+        }
+    ],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
+    ],
+    "cookies": [],
+    "postData": {}
+}
