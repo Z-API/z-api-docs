@@ -75,6 +75,9 @@ module.exports = {
       'message/reply-message',
       'message/send-poll',
       'message/send-poll-vote',
+      'message/send-message-order',
+      'message/send-order-status-update',
+      'message/send-order-payment-update'
     ],
     Contacts: [
       'contacts/introduction',

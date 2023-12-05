@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/order-status-update",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"phone\": \"554498161272\",\"messageId\": \"3EB0F91BBA791BB0A787FC\",\"referenceId\": \"4N8FCTW1WM6\",\"orderRequestId\": \"4N8FCTW22W4\",\"orderStatus\": \"processing\",\"paymentStatus\": \"pending\",\"order\": {\"currency\": \"BRL\",\"discount\": 10,\"tax\": 10,\"shipping\": 5,\"products\": [{\"value\": 150,\"quantity\": 2,\"name\": \"order 1\",\"isCustomItem\": true,\"productId\": \"custom-item-4N8FCTW23N7\"},{\"productId\": \"23940797548900636\",\"value\": 150,\"quantity\": 2,\"name\": \"order 2\",\"isCustomItem\": false}]}}"
+    }
+}

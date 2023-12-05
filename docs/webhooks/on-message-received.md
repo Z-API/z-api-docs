@@ -978,6 +978,119 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de envio de pedido
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228925000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "reviewAndPay": {
+    "type": "physical-goods",
+    "currency": "BRL",
+    "referenceId": "4N9AVI38VOB",
+    "orderRequestId": "4N9AVI38VYZ",
+    "orderStatus": "pending",
+    "paymentStatus": "pending",
+    "total": 605,
+    "subTotal": 600,
+    "discount": 10,
+    "shipping": 5,
+    "tax": 10,
+    "products": [
+      {
+        "name": "order 1",
+        "quantity": 2,
+        "isCustomItem": true,
+        "productId": "custom-item-4N9AVI38WI1",
+        "value": 150
+      },
+      {
+        "name": "order 2",
+        "quantity": 2,
+        "isCustomItem": false,
+        "productId": "23940797548900636",
+        "value": 150
+      }
+    ]
+  }
+}
+```
+
+### Exemplo de retorno de atualização de pedido
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228925000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "reviewOrder": {
+    "currency": "BRL",
+    "referenceId": "4N9AVI38VOB",
+    "orderRequestId": "4N9AVI38VYZ",
+    "orderStatus": "processing",
+    "paymentStatus": "pending",
+    "total": 605,
+    "subTotal": 600,
+    "discount": 10,
+    "shipping": 5,
+    "tax": 10,
+    "products": [
+      {
+        "name": "order 1",
+        "quantity": 2,
+        "isCustomItem": true,
+        "productId": "custom-item-4N9AVI38WI1",
+        "value": 150
+      },
+      {
+        "name": "order 2",
+        "quantity": 2,
+        "isCustomItem": false,
+        "productId": "23940797548900636",
+        "value": 150
+      }
+    ]
+  }
+}
+```
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.
