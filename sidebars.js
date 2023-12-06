@@ -96,13 +96,14 @@ module.exports = {
       'contacts/get-metadata-contact',
       'contacts/get-profile-picture',
       'contacts/get-iswhatsapp',
+      'contacts/get-iswhatsapp-batch',
       'contacts/block-contact',
       'contacts/report-contact'
     ],
     Chats: [
       'chats/introduction',
       'chats/get-chats',
-      'chats/get-message-chats',
+      /*'chats/get-message-chats',*/
       'chats/get-metadata-chat',
       'chats/read-chat',
       'chats/archive-chat',

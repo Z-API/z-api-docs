@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-exists-batch",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"phones\": [\"5511999999999\", \"554499999999\"]}}"
+    }
+}
