@@ -26,9 +26,10 @@ Este método é reponsavel por retornar todas mensagens que estão em sua fila a
 
 ### Obrigatórios
 
-| Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| Atributos | Tipo    | Descrição |
+| :-------- | :---:   | :-------- |
+| page      | integer | Utilizado para paginação você de informar aqui a pagina de mensagens que quer buscar |
+| pageSize  | integer | Especifica o tamanho do retorno de mensagens por pagina |
 
 ### Opcionais
 
@@ -44,7 +45,7 @@ Este método é reponsavel por retornar todas mensagens que estão em sua fila a
 
 Método
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue?page=1&pageSize=100
 
  ou
 
