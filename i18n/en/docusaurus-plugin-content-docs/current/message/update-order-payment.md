@@ -20,6 +20,10 @@ title: Send order payment update
 
 In this method, you can send messages to update the payment status of previously sent orders.
 
+![image](../../../../../img/order-payment-update.jpeg)
+
+---
+
 :::important Important
 This method is available only for WhatsApp Business accounts.
 :::
@@ -34,9 +38,9 @@ This method is available only for WhatsApp Business accounts.
 | :-------------- | :----: | :-------- |
 | phone           | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks |
 | messageId       | string | ID of the original WhatsApp message of the order |
-| referenceId     | string | Reference ID of the order (returned in the **[webhook](../webhooks/on-message-received#update-order-return-example)**) |
-| orderRequestId  | string | Order request reference ID (returned in the **[webhook](../webhooks/on-message-received#update-order-return-example)**) |
-| orderStatus     | string | Current order status (pending, processing, shipped, completed, canceled) (returned in the **[webhook](../webhooks/on-message-received#update-order-return-example)**) |
+| referenceId     | string | Reference ID of the order (returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**) |
+| orderRequestId  | string | Order request reference ID (returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**) |
+| orderStatus     | string | Current order status (pending, processing, shipped, completed, canceled) (returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**) |
 | paymentStatus   | string | New payment status (pending, paid) |
 | order           | object | Information about the order to be sent |
 

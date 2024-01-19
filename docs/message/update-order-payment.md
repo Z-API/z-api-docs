@@ -20,6 +20,10 @@ title: Enviar atualização de pagamento do pedido
 
 Neste método você poderá enviar mensagens de atualização do pagamento dos pedidos enviados.
 
+![image](../../img/order-payment-update.jpeg)
+
+---
+
 :::important Importante
 Este método está disponível apenas para contas Business do whatsapp.
 :::
@@ -34,9 +38,9 @@ Este método está disponível apenas para contas Business do whatsapp.
 | :-------------- | :----: | :-------- |
 | phone           | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | messageId       | string | Id do whatsapp da mensagem original do pedido                                                                         |
-| referenceId     | string | Id de referência do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-atualização-de-pedido)**) |
-| orderRequestId  | string | Id de referência da requisição do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-atualização-de-pedido)**) |
-| orderStatus     | string | Status atual do pedido (pending, processing, shipped, completed, canceled) (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-atualização-de-pedido)**) |
+| referenceId     | string | Id de referência do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)**) |
+| orderRequestId  | string | Id de referência da requisição do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)**) |
+| orderStatus     | string | Status atual do pedido (pending, processing, shipped, completed, canceled) (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)**) |
 | paymentStatus   | string | Novo status do pagamento (pending, paid) |
 | order           | object | Informações do pedido a ser enviado |
 
