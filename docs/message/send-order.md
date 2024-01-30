@@ -30,10 +30,11 @@ Este método está disponível apenas para contas Business do whatsapp.
 
 ### Obrigatórios
 
-| Atributos | Tipo   | Descrição |
-| :------   | :----: | :------   |
-| phone     | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| order     | object | Informações do pedido a ser enviado |
+| Atributos         | Tipo   | Descrição |
+| :---------------  | :----: | :------   |
+| phone             | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
+| order             | object | Informações do pedido a ser enviado |
+| paymentSettings   | object | Configurações de pagamento (somente PIX disponível até o momento) |
 
 Object (order)
 
@@ -66,6 +67,20 @@ Object (products)
 | :------   | :----------: | :--------------------------- |
 | productId | string       | Id do produto do catálogo    |
 
+Object (paymentSettings)
+
+| Atributos | Tipo         | Descrição                 |
+| :------   | :----------: | :-----------------------  |
+| pix       | object       | Informações da chave PIX  |
+
+Object (pix)
+
+| Atributos | Tipo         | Descrição         |
+| :------   | :----------: | :---------------  |
+| key       | string       | Chave PIX         |
+| keyType   | string       | Tipo da chave (cpf, cnpj, phone, email, randomKey) |
+| name      | string       | Nome da chave     |
+
 ---
 
 ## Request Body
@@ -88,6 +103,13 @@ Object (products)
                 "quantity": 2
             }
         ]
+    },
+    "paymentSettings": {
+        "pix": {
+            "key": "Chave PIX",
+            "keyType": "Tipo da chave (cpf | cnpj | phone | email | randomKey)",
+            "name": "Nome da chave"
+        }
     }
 }
 ```

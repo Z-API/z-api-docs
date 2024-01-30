@@ -34,37 +34,52 @@ This method is available only for WhatsApp Business accounts.
 | :------   | :----: | :------   |
 | phone     | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks. |
 | order     | object | Information about the order to be sent |
+| paymentSettings   | object | Payment settings (only PIX available so far) |
 
 Object (order)
 
-| Attribute | Type         | Description       |
+| Attribute | Type         | Description     |
 | :------   | :----------: | :-------------  |
-| currency  | string       | Currency code |
+| currency  | string       | Currency code   |
 | products  | array object | Information about products related to the order |
 
 Object (products)
 
-| Attribute | Type         | Description        |
-| :------   | :----------: | :-------------   |
+| Attribute | Type         | Description   |
+| :------   | :----------: | :------------ |
 | name      | string       | Product name  |
 | value     | number       | Product value |
-| quantity  | number       | Quantity       |
+| quantity  | number       | Quantity      |
 
 ### Optional
 
 Object (order)
 
-| Attribute | Type         | Description         |
+| Attribute | Type         | Description       |
 | :------   | :----------: | :---------------  |
-| discount  | number       | Discount amount |
-| tax       | number       | Tax amount  |
-| shipping  | number       | Shipping cost    |
+| discount  | number       | Discount amount   |
+| tax       | number       | Tax amount        |
+| shipping  | number       | Shipping cost     |
 
 Object (products)
 
 | Attribute | Type         | Description                    |
 | :------   | :----------: | :--------------------------- |
 | productId | string       | Catalog product ID    |
+
+Object (paymentSettings)
+
+| Atributos | Tipo         | Descrição                 |
+| :------   | :----------: | :-----------------------  |
+| pix       | object       | Information about PIX key |
+
+Object (pix)
+
+| Atributos | Tipo         | Descrição       |
+| :------   | :----------: | :-------------- |
+| key       | string       | PIX Key         |
+| keyType   | string       | Key type (cpf, cnpj, phone, email, randomKey) |
+| name      | string       | Key name        |
 
 ---
 
@@ -88,6 +103,13 @@ Object (products)
                 "quantity": 2
             }
         ]
+    },
+    "paymentSettings": {
+        "pix": {
+            "key": "PIX Key",
+            "keyType": "Key type (cpf | cnpj | phone | email | randomKey)",
+            "name": "Key name"
+        }
     }
 }
 ```
