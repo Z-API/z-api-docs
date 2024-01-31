@@ -44,6 +44,8 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 | phone | string | Group ID/phone |
 | adminOnlyMessage | boolean | Only the groups admin can send messages to the group  |
 | adminOnlySettings | boolean | Attribute that allows only admins to edit the group |
+| requireAdminApproval | boolean | Defines whether approval from an admin will be required to join the group |
+| adminOnlyAddMember | boolean | Only administrators can add people to the group |
 
 ---
 
@@ -54,7 +56,10 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 Old way -
   {
     "phone": "5511999999999-1623281429",
-    "adminOnlyMessage": true
+    "adminOnlyMessage": true,
+    "adminOnlySettings": true,
+    "requireAdminApproval": false,
+    "adminOnlyAddMember": true
   }
 
 ----------------------------------------
@@ -62,7 +67,10 @@ Old way -
 New way -
   {
     "phone": "120363019502650977-group",
-    "adminOnlyMessage": true
+    "adminOnlyMessage": true,
+    "adminOnlySettings": true,
+    "requireAdminApproval": false,
+    "adminOnlyAddMember": true
   }
 
 ```
