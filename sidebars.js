@@ -77,7 +77,8 @@ module.exports = {
       'message/send-poll-vote',
       'message/send-message-order',
       'message/send-order-status-update',
-      'message/send-order-payment-update'
+      'message/send-order-payment-update',
+      'message/send-pin-message'
     ],
     Privacy: [
       'privacy/introduction',
