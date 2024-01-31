@@ -1,6 +1,6 @@
 ---
 id: send-message-order
-title: Enviar pedido
+title: Enviar aprovação de pedido
 ---
 
 ## Método
@@ -18,7 +18,12 @@ title: Enviar pedido
 
 ## Conceituação
 
-Neste método você poderá enviar mensagens de pedidos, contendo produtos do seu catálogo ou customizados no momento do envio.
+Neste método você poderá enviar mensagens de pedidos, contendo produtos do seu catálogo ou customizados no momento do envio. Lembrando que esta mensagem é a mesma que é enviada quando você clica no botão "Aceitar pedido" - ou "Enviar cobrança" - no pedido do cliente. Tal mensagem, retorna no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)** informações sobre o pedido, bem como os dados necessários para atualizações de **[status](./update-order-status.md)** e **[pagamento](./update-order-payment.md)**, que, por sua vez, também são mensagens, que referenciam a mensagem principal do pedido, isto é, a mensagem enviada a partir desta rota.
+
+![image](../../img/send-order2.jpeg)
+
+
+---
 
 :::important Importante
 Este método está disponível apenas para contas Business do whatsapp. 
