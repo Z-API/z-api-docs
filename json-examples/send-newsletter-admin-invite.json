@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-newsletter-admin-invite",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Accept",
+            "value": "application/json"
+        },
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"phone\": \"5511999998888\", \"adminInviteMessage\": {\"newsletterId\": \"120363166555745933@newsletter\", \"caption\": \"Message text\"}}"
+    }
+}
