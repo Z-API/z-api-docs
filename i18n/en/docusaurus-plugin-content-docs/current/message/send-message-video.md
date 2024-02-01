@@ -52,7 +52,7 @@ In this [link] you can find everything that you need to know about formatting an
 | messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
 | caption | String | Message that you wish to send along with the video|
-
+| viewOnce | string | Defines wether it will be a view once message or not |
 
 
 ---
@@ -63,7 +63,8 @@ In this [link] you can find everything that you need to know about formatting an
 {
   "phone": "5511999999999",
   "video": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4",
-  "caption": "Test"
+  "caption": "Test",
+  "viewOnce": true
 }
 ```
 
@@ -101,7 +102,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-vídeo)
+[Webhook](../webhooks/on-message-received#video-feedback-example)
 
 ---
 

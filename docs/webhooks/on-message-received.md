@@ -307,7 +307,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de foto
+### Exemplo de retorno de imagem
 
 ```json
 {
@@ -336,7 +336,11 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "mimeType": "image/jpeg",
     "imageUrl": "https://",
     "thumbnailUrl": "https://",
-    "caption": ""
+    "caption": "",
+    "thumbnailUrl": "https://",
+    "width": 600,
+    "height": 315,
+    "viewOnce": true
   },
 }
 ```
@@ -367,8 +371,11 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "broadcast": false,
   "type": "ReceivedCallback",
   "audio": {
+    "ptt": true,
+    "seconds": 10,
     "audioUrl": "https://",
-    "mimeType": "audio/ogg; codecs=opus"
+    "mimeType": "audio/ogg; codecs=opus",
+    "viewOnce": true
   },
 }
 ```
@@ -401,7 +408,9 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "video": {
     "videoUrl": "https://",
     "caption": "",
-    "mimeType": "video/mp4"
+    "mimeType": "video/mp4",
+    "seconds": 13,
+    "viewOnce": true
   },
 }
 ```

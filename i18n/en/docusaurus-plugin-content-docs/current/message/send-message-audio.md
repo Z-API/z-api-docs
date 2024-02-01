@@ -52,6 +52,7 @@ In this [link]  you can find everything that you need to know about formatting a
 | :-- | :-: | :-- |
 | messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
+| viewOnce | string | Defines wether it will be a view once message or not |
 
 ---
 
@@ -60,7 +61,8 @@ In this [link]  you can find everything that you need to know about formatting a
 ```json
 {
   "phone": "5511999999999",
-  "audio": "https://tuningmania.com.br/autosom/mp3/75%20~%2079%20Hz.MP3"
+  "audio": "https://tuningmania.com.br/autosom/mp3/75%20~%2079%20Hz.MP3",
+  "viewOnce": true
 }
 ```
 
@@ -98,7 +100,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-áudio)
+[Webhook](../webhooks/on-message-received#audio-feedback-example)
 
 ---
 
