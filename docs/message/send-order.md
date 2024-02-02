@@ -34,7 +34,7 @@ Este método está disponível apenas para contas Business do whatsapp.
 | :---------------  | :----: | :------   |
 | phone             | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | order             | object | Informações do pedido a ser enviado |
-| paymentSettings   | object | Configurações de pagamento (somente PIX disponível até o momento) |
+| paymentSettings   | object | Configurações de pagamento (para o funcionamento de cartões, é necessário que seja configurado na conta do WhatsApp pelo celular) |
 
 Object (order)
 
@@ -72,6 +72,7 @@ Object (paymentSettings)
 | Atributos | Tipo         | Descrição                 |
 | :------   | :----------: | :-----------------------  |
 | pix       | object       | Informações da chave PIX  |
+| card      | object       | Habilitar o pagamento via cartão  |
 
 Object (pix)
 
@@ -80,6 +81,12 @@ Object (pix)
 | key       | string       | Chave PIX         |
 | keyType   | string       | Tipo da chave (cpf, cnpj, phone, email, randomKey) |
 | name      | string       | Nome da chave     |
+
+Object (card)
+
+| Atributos | Tipo         | Descrição         |
+| :------   | :----------: | :---------------  |
+| enabled   | boolean      | Habilitar o pagamento via cartão |
 
 ---
 
@@ -109,6 +116,9 @@ Object (pix)
             "key": "Chave PIX",
             "keyType": "Tipo da chave (cpf | cnpj | phone | email | randomKey)",
             "name": "Nome da chave"
+        },
+        "card": {
+            "enabled": true
         }
     }
 }

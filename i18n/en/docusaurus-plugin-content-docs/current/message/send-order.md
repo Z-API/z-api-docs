@@ -30,11 +30,11 @@ This method is available only for WhatsApp Business accounts.
 
 ### Required
 
-| Attribute | Type   | Description |
-| :------   | :----: | :------   |
-| phone     | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks. |
-| order     | object | Information about the order to be sent |
-| paymentSettings   | object | Payment settings (only PIX available so far) |
+| Attribute        | Type   | Description |
+| :------          | :----: | :------   |
+| phone            | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks. |
+| order            | object | Information about the order to be sent |
+| paymentSettings  | object | Payment settings (for cards to work, it must be configured in the WhatsApp account on the cell phone) |
 
 Object (order)
 
@@ -72,6 +72,7 @@ Object (paymentSettings)
 | Atributos | Tipo         | Descrição                 |
 | :------   | :----------: | :-----------------------  |
 | pix       | object       | Information about PIX key |
+| card      | object       | Enable card payment       |
 
 Object (pix)
 
@@ -80,6 +81,12 @@ Object (pix)
 | key       | string       | PIX Key         |
 | keyType   | string       | Key type (cpf, cnpj, phone, email, randomKey) |
 | name      | string       | Key name        |
+
+Object (card)
+
+| Atributos | Tipo         | Descrição         |
+| :------   | :----------: | :---------------  |
+| enabled   | boolean      | Enable card payment |
 
 ---
 
@@ -109,6 +116,9 @@ Object (pix)
             "key": "PIX Key",
             "keyType": "Key type (cpf | cnpj | phone | email | randomKey)",
             "name": "Key name"
+        },
+        "card": {
+            "enabled": true
         }
     }
 }
