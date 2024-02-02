@@ -1,6 +1,6 @@
 ---
 id: send-message-order
-title: Send order message
+title: Send approve order message
 ---
 
 ## Method
@@ -18,7 +18,11 @@ title: Send order message
 
 ## Concept
 
-With this method, you can send order messages containing products from your catalog or custom products created at the time of sending.
+With this method, you can send order messages containing products from your catalog or custom products created at the time of sending. Remembering that this message is the same one that is sent when you click on the "Accept order" - or "Send billing" - button on the customer's order. Such a message returns in the **[webhook](../webhooks/on-message-received#send-order-return-example)** information about the order as well as the data required for **[status updates](./update-order-status.md)** and **[payment](./update-order-payment.md)**, which in turn, are also messages, which reference the main message of the order, that is, the message sent from this route.
+
+![image](../../../../../img/send-order2.jpeg)
+
+---
 
 :::important Important
 This method is available only for WhatsApp Business accounts.

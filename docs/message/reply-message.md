@@ -40,6 +40,7 @@ Caso tenha qualquer dúvida sobre como enviar uma mensagem de texto, você pode 
 | :-- | :-: | :-- |
 | messageId | string | id original da mensagem, no caso de mensagem enviada por você é o código que vem no seu reponse, caso seja uma mensagem enviada por um contato você vai receber este messageId pelo seu webhook de receive |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| privateAnswer | boolean | No caso de uma mensagem de grupo, define se a resposta será enviada para o grupo ou no particular do remetente (não pode ser você mesmo). Se o remetente for você mesmo, o atributo "privateAnswer" será ignorado, enviando a resposta no próprio grupo. |
 
 ---
 
@@ -50,6 +51,15 @@ Caso tenha qualquer dúvida sobre como enviar uma mensagem de texto, você pode 
   "phone": "5511999999999",
   "message": "Welcome to *Z-API*",
   "messageId": "3999984263738042930CD6ECDE9VDWSA"
+}
+```
+
+```json
+{
+  "phone": "342532456234453-group",
+  "message": "Welcome to *Z-API*",
+  "messageId": "3999984263738042930CD6ECDE9VDWSA",
+  "privateAnswer": true
 }
 ```
 

@@ -41,9 +41,10 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | ID/Fone do grupo |
-| adminOnlyMessage | boolean | Somente administrador podem enviar mensagens no grupo |
+| adminOnlyMessage | boolean | Somente administradores podem enviar mensagens no grupo |
 | adminOnlySettings | boolean | Atributo para permitir que apenas os admins façam edições no grupo |
 | requireAdminApproval | boolean | Define se vai ser necessário a aprovação de algum admin para entrar no grupo |
+| adminOnlyAddMember | boolean | Somente administradores podem adicionar pessoas no grupo |
 
 ---
 
@@ -56,7 +57,8 @@ Forma antiga -
     "phone": "5511999999999-1623281429",
     "adminOnlyMessage": true,
     "adminOnlySettings": true,
-    "requireAdminApproval": false
+    "requireAdminApproval": false,
+    "adminOnlyAddMember": true
   }
 
 ----------------------------------------
@@ -66,7 +68,8 @@ Forma nova -
     "phone": "120363019502650977-group",
     "adminOnlyMessage": true,
     "adminOnlySettings": true,
-    "requireAdminApproval": false
+    "requireAdminApproval": false,
+    "adminOnlyAddMember": true
   }
 
 ```
