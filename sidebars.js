@@ -156,6 +156,7 @@ module.exports = {
       'newsletter/newsletter-metadata',
       'newsletter/newsletter-list',
       'newsletter/search-newsletter',
+      'newsletter/update-newsletter-config',
       'newsletter/accept-newsletter-admin-invite',
       'newsletter/newsletter-remove-admin',
       'newsletter/newsletter-revoke-admin-invite'
