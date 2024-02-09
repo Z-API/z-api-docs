@@ -32,7 +32,7 @@ In this method, you can send messages of your products. The product feature is o
 | :------   | :----: | :------   |
 | phone     | string | Recipient's phone number (or group ID for group messages) in the format DDI DDD NUMBER E.g., 551199999999. **IMPORTANT** Send only numbers, without formatting or mask |
 | catalogPhone   | string | Phone number of the business account to which the product belongs. |
-| productId   | string | Product ID. Can be obtained from the API of **[listing products](../business/get-products.md)**. |
+| productId   | string | Product ID. Can be obtained from the API of **[listing products](../business/get-products.md)** or via **[webhook](../webhooks/on-message-received#product-return-example)**. |
 
 ---
 
