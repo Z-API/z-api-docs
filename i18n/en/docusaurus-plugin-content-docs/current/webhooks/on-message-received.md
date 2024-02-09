@@ -130,7 +130,10 @@ The possible returns of the **on-message-received** webhook are registered below
   "broadcast": false,
   "type": "ReceivedCallback",
   "text": {
-    "message": "test"
+    "message": "test",
+    "descritpion": "(optional) if the message has a description inserted by WhatsApp",
+    "title": "(optional) if the message has a title inserted by WhatsApp",
+    "url": "(optional) if the message has a url linked to it. Example: catalog message has a button 'See catalog'"
   },
 }
 ```

@@ -62,8 +62,8 @@ module.exports = {
       'message/send-message-document',
       'message/send-message-link',
       'message/send-message-location',
-      /* 'send-message/send-message-product',
-       'send-message/send-message-catalog', */
+      'message/send-message-product',
+      'message/send-message-catalog',
       'message/send-message-contact',
       'message/send-message-multiple-contacts',
       'message/send-button-actions',
