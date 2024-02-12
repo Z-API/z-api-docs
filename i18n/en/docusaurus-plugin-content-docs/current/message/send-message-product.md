@@ -7,7 +7,7 @@ title: Send product
 
 #### /send-product
 
-`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-product
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-product
 
 ### Header
 
