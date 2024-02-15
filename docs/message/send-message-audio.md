@@ -51,6 +51,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 | :---------   | :----: | :-------- |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
 | delayTyping  | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai ficar com o status "Gravando áudio...". (Ex "delayTyping": 5, ). O delay default caso não seja informado é de 0|
+| viewOnce | string | Define se será uma mensagem de visualização única ou não |
 
 ---
 
@@ -59,7 +60,8 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 ```json
 {
   "phone": "5511999999999",
-  "audio": "https://tuningmania.com.br/autosom/mp3/75%20~%2079%20Hz.MP3"
+  "audio": "https://tuningmania.com.br/autosom/mp3/75%20~%2079%20Hz.MP3",
+  "viewOnce": false
 }
 ```
 

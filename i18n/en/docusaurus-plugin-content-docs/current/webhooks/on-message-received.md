@@ -233,7 +233,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Photo return example
+### Image return example
 
 ```json
 {
@@ -257,7 +257,11 @@ The possible returns of the **on-message-received** webhook are registered below
     "mimeType": "image/jpeg",
     "imageUrl": "https://",
     "thumbnailUrl": "https://",
-    "caption": ""
+    "caption": "",
+    "thumbnailUrl": "https://",
+    "width": 600,
+    "height": 315,
+    "viewOnce": true
   },
   "instanceId": "instance.id"
 }
@@ -284,8 +288,11 @@ The possible returns of the **on-message-received** webhook are registered below
   "broadcast": false,
   "type": "ReceivedCallback",
   "audio": {
+    "ptt": true,
+    "seconds": 10,
     "audioUrl": "https://",
-    "mimeType": "audio/ogg; codecs=opus"
+    "mimeType": "audio/ogg; codecs=opus",
+    "viewOnce": true
   },
   "instanceId": "instance.id"
 }
@@ -313,8 +320,10 @@ The possible returns of the **on-message-received** webhook are registered below
   "type": "ReceivedCallback",
   "video": {
     "videoUrl": "https://",
+    "caption": "",
     "mimeType": "video/mp4",
-    "caption": ""
+    "seconds": 13,
+    "viewOnce": true
   },
   "instanceId": "instance.id"
 }
