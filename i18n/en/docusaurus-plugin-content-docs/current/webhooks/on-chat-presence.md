@@ -57,7 +57,7 @@ The possible returns of the **on-chat-presence** webhook are registered below:
 
 | Attributes| Type| Description |
 | :-- | :-: | :-- |
-| type | string | Instance event type, in this case it will be "DeliveryCallback". |
+| type | string | Instance event type, in this case it will be "PresenceChatCallback". |
 | phone | string | Message destination phone number.|
 | status | string | Chat status identifier eg (typing...) status can contain ( UNAVAILABLE, AVAILABLE, COMPOSING, RECORDING) |
 | lastSeen | timestamp | User's last present time identifier. |

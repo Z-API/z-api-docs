@@ -44,6 +44,7 @@ If you have any questions about how to send a text message, you can read about i
 | :-- | :-: | :-- |
 | messageId | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask  |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
+| privateAnswer | boolean | In the case of a group message, define whether the response will be sent to the group or to the sender's private address (it cannot be yourself). If the sender is yourself, the "privateAnswer" attribute will be ignored, sending the response in the group itself. |
 
 ---
 
@@ -54,6 +55,15 @@ If you have any questions about how to send a text message, you can read about i
   "phone": "5511999999999",
   "message": "Welcome to *Z-API*",
   "messageId": "3999984263738042930CD6ECDE9VDWSA"
+}
+```
+
+```json
+{
+  "phone": "342532456234453-group",
+  "message": "Welcome to *Z-API*",
+  "messageId": "3999984263738042930CD6ECDE9VDWSA",
+  "privateAnswer": true
 }
 ```
 

@@ -233,7 +233,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Photo return example
+### Image return example
 
 ```json
 {
@@ -257,7 +257,11 @@ The possible returns of the **on-message-received** webhook are registered below
     "mimeType": "image/jpeg",
     "imageUrl": "https://",
     "thumbnailUrl": "https://",
-    "caption": ""
+    "caption": "",
+    "thumbnailUrl": "https://",
+    "width": 600,
+    "height": 315,
+    "viewOnce": true
   },
   "instanceId": "instance.id"
 }
@@ -284,8 +288,11 @@ The possible returns of the **on-message-received** webhook are registered below
   "broadcast": false,
   "type": "ReceivedCallback",
   "audio": {
+    "ptt": true,
+    "seconds": 10,
     "audioUrl": "https://",
-    "mimeType": "audio/ogg; codecs=opus"
+    "mimeType": "audio/ogg; codecs=opus",
+    "viewOnce": true
   },
   "instanceId": "instance.id"
 }
@@ -313,8 +320,10 @@ The possible returns of the **on-message-received** webhook are registered below
   "type": "ReceivedCallback",
   "video": {
     "videoUrl": "https://",
+    "caption": "",
     "mimeType": "video/mp4",
-    "caption": ""
+    "seconds": 13,
+    "viewOnce": true
   },
   "instanceId": "instance.id"
 }
@@ -798,6 +807,40 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Newsletter admin invitation return example
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228925000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "newsletterAdminInvite": {
+    "newsletterId": "120363166555745933@newsletter",
+    "newsletterName": "Teste",
+    "text": "I want to invite you to be an admin of my channel on WhatsApp.",
+    "inviteExpiration": 1706809668
+  }
+}
+```
+
 ### Pin message return example
 
 ```json
@@ -832,7 +875,7 @@ The possible returns of the **on-message-received** webhook are registered below
       "phone": "554499999999",
       "participant": null
     }
-  },
+  }
 }
 ```
 

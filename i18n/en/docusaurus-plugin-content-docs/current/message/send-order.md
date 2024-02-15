@@ -1,6 +1,6 @@
 ---
 id: send-message-order
-title: Send order message
+title: Send approve order message
 ---
 
 ## Method
@@ -18,7 +18,11 @@ title: Send order message
 
 ## Concept
 
-With this method, you can send order messages containing products from your catalog or custom products created at the time of sending.
+With this method, you can send order messages containing products from your catalog or custom products created at the time of sending. Remembering that this message is the same one that is sent when you click on the "Accept order" - or "Send billing" - button on the customer's order. Such a message returns in the **[webhook](../webhooks/on-message-received#send-order-return-example)** information about the order as well as the data required for **[status updates](./update-order-status.md)** and **[payment](./update-order-payment.md)**, which in turn, are also messages, which reference the main message of the order, that is, the message sent from this route.
+
+![image](../../../../../img/send-order2.jpeg)
+
+---
 
 :::important Important
 This method is available only for WhatsApp Business accounts.
@@ -30,41 +34,63 @@ This method is available only for WhatsApp Business accounts.
 
 ### Required
 
-| Attribute | Type   | Description |
-| :------   | :----: | :------   |
-| phone     | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks. |
-| order     | object | Information about the order to be sent |
+| Attribute        | Type   | Description |
+| :------          | :----: | :------   |
+| phone            | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks. |
+| order            | object | Information about the order to be sent |
+| paymentSettings  | object | Payment settings (for cards to work, it must be configured in the WhatsApp account on the cell phone) |
 
 Object (order)
 
-| Attribute | Type         | Description       |
+| Attribute | Type         | Description     |
 | :------   | :----------: | :-------------  |
-| currency  | string       | Currency code |
+| currency  | string       | Currency code   |
 | products  | array object | Information about products related to the order |
 
 Object (products)
 
-| Attribute | Type         | Description        |
-| :------   | :----------: | :-------------   |
+| Attribute | Type         | Description   |
+| :------   | :----------: | :------------ |
 | name      | string       | Product name  |
 | value     | number       | Product value |
-| quantity  | number       | Quantity       |
+| quantity  | number       | Quantity      |
 
 ### Optional
 
 Object (order)
 
-| Attribute | Type         | Description         |
+| Attribute | Type         | Description       |
 | :------   | :----------: | :---------------  |
-| discount  | number       | Discount amount |
-| tax       | number       | Tax amount  |
-| shipping  | number       | Shipping cost    |
+| discount  | number       | Discount amount   |
+| tax       | number       | Tax amount        |
+| shipping  | number       | Shipping cost     |
 
 Object (products)
 
 | Attribute | Type         | Description                    |
 | :------   | :----------: | :--------------------------- |
 | productId | string       | Catalog product ID    |
+
+Object (paymentSettings)
+
+| Atributos | Tipo         | Descrição                 |
+| :------   | :----------: | :-----------------------  |
+| pix       | object       | Information about PIX key |
+| card      | object       | Enable card payment       |
+
+Object (pix)
+
+| Atributos | Tipo         | Descrição       |
+| :------   | :----------: | :-------------- |
+| key       | string       | PIX Key         |
+| keyType   | string       | Key type (cpf, cnpj, phone, email, randomKey) |
+| name      | string       | Key name        |
+
+Object (card)
+
+| Atributos | Tipo         | Descrição         |
+| :------   | :----------: | :---------------  |
+| enabled   | boolean      | Enable card payment |
 
 ---
 
@@ -88,6 +114,16 @@ Object (products)
                 "quantity": 2
             }
         ]
+    },
+    "paymentSettings": {
+        "pix": {
+            "key": "PIX Key",
+            "keyType": "Key type (cpf | cnpj | phone | email | randomKey)",
+            "name": "Key name"
+        },
+        "card": {
+            "enabled": true
+        }
     }
 }
 ```

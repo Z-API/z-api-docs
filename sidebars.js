@@ -78,7 +78,8 @@ module.exports = {
       'message/send-message-order',
       'message/send-order-status-update',
       'message/send-order-payment-update',
-      'message/send-pin-message'
+      'message/send-pin-message',
+      'message/send-newsletter-admin-invite'
     ],
     Privacy: [
       'privacy/introduction',
@@ -155,7 +156,10 @@ module.exports = {
       'newsletter/delete-newsletter',
       'newsletter/newsletter-metadata',
       'newsletter/newsletter-list',
-      'newsletter/search-newsletter'
+      'newsletter/search-newsletter',
+      'newsletter/accept-newsletter-admin-invite',
+      'newsletter/newsletter-remove-admin',
+      'newsletter/newsletter-revoke-admin-invite'
     ],
     'Transmission list': ['broadcast/introduction'],
     Status: [
