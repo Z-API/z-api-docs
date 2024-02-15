@@ -27,9 +27,11 @@ This method is responsible for returning all messages that are in your queue wai
 
 ### Required 
 
-| Attributes | Type | Descrition |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| Attributes | Type    | Description |
+| :--------  | :---:   | :-------- |
+| page       | integer | Used for pagination, you need to inform here the message page you want to retrieve |
+| pageSize   | integer | Specify the size of the message return per page |
+
 
 ### Optionals 
 
@@ -45,7 +47,11 @@ This method is responsible for returning all messages that are in your queue wai
 
 Method 
 
-`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue?page=1&pageSize=100
+
+ or
+
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/queue/count
 
 ---
 

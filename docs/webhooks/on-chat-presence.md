@@ -11,6 +11,7 @@ Esse é o webhook de retorno status do chat
 
 O Z-API não aceita webhooks que não sejam HTTPS
 
+
 :::
 
 ---
