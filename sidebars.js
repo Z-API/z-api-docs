@@ -78,6 +78,7 @@ module.exports = {
       'message/send-message-order',
       'message/send-order-status-update',
       'message/send-order-payment-update',
+      'message/send-pin-message',
       'message/send-newsletter-admin-invite'
     ],
     Privacy: [

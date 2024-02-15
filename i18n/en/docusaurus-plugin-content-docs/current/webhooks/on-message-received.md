@@ -807,7 +807,6 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-
 ### Newsletter admin invitation return example
 
 ```json
@@ -838,6 +837,44 @@ The possible returns of the **on-message-received** webhook are registered below
     "newsletterName": "Teste",
     "text": "I want to invite you to be an admin of my channel on WhatsApp.",
     "inviteExpiration": 1706809668
+  }
+}
+```
+
+### Pin message return example
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": true,
+  "momment": 1632228955000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "pinMessage": {
+    "action": "pin",
+    "pinDurationInSecs": 604800,
+    "referencedMessage": {
+      "messageId": "3EB0796DC6B777C0C7CD",
+      "fromMe": true,
+      "phone": "554499999999",
+      "participant": null
+    }
   }
 }
 ```
