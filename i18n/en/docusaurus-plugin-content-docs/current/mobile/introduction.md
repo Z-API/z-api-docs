@@ -18,21 +18,23 @@ Now that you understand and have seen the advantages of the mobile instance, **l
 
 Start by checking the availability of your number for registration on a new primary device. From this API, you can check if the number is banned, if it is possible to request the confirmation code via SMS, voice call, or through the currently connected cell phone. For more details, access the section below:
 
-- [Check registration availability](./registration-available)
+- [Registration is available](./registration-available)
 
 If the number is not banned and any of the confirmation code methods are available (SMS, voice call, or cell phone app), just use the following endpoint to request its sending:
 
-- [Request confirmation code](./request-code)
+- [Request registration code](./request-code)
 
 In some cases, after requesting the code, it is required to respond to a **captcha** to proceed with the code confirmation. In this case, the base64 of the captcha image is returned in the API before this one - **Request confirmation code**. Use the following API to confirm this captcha.
 
-- [Captcha verification](./captcha-confirm)
+- [Respond captcha](./captcha-confirm)
 
 After verifying the captcha - if that was your case - we can proceed to confirm the code that was sent to you by the chosen method.
 
 - [Confirm code](./confirm-code)
 
-Phew! If you followed this step-by-step, you should already be connected to a mobile instance! Now, just let your imagination soar!
+
+
+Phew! If you followed this step-by-step, you should already be connected to a mobile instance! Now, just give **Wings to your imagination!**
 
 :::tip Tip
 Remember that other APIs related to WhatsApp - such as sending messages and interactions on the account - work in the same way of web instances. In other words, the methods are fully compatible between instances.

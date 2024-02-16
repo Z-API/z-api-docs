@@ -53,7 +53,9 @@ module.exports = {
       'mobile/request-code',
       'mobile/captcha-confirm',
       'mobile/confirm-code',
-      'mobile/request-unbanning'
+      'mobile/request-unbanning',
+      'mobile/confirm-security-code',
+      'mobile/forgot-security-code'
     ],
     Messages: [
       'message/introduction',
