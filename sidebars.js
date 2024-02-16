@@ -47,6 +47,14 @@ module.exports = {
       'instance/device',
       'instance/rename-instance',
     ],
+    Mobile: [
+      'mobile/introduction',
+      'mobile/registration-available',
+      'mobile/request-code',
+      'mobile/captcha-confirm',
+      'mobile/confirm-code',
+      'mobile/request-unbanning'
+    ],
     Messages: [
       'message/introduction',
       'message/send-message-text',
