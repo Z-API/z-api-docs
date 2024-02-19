@@ -7,7 +7,7 @@ title: Confirmar código PIN
 
 #### /mobile/confirm-security-code
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/mobile/confirm-security-code
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/mobile/confirm-pin-code
 
 ### Header
 

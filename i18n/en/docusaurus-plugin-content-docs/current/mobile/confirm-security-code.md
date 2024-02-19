@@ -5,9 +5,9 @@ title: Confirm PIN code
 
 ## Method
 
-#### /mobile/confirm-security-code
+#### /mobile/confirm-pin-code
 
-`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/mobile/confirm-security-code
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/mobile/confirm-pin-code
 
 ### Header
 

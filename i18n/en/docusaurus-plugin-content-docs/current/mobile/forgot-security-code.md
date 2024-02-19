@@ -5,9 +5,9 @@ title: Request recovery security code email
 
 ## Method
 
-#### /mobile/recovery-security-code
+#### /mobile/recovery-pin-code
 
-`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/mobile/recovery-security-code
+`POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/mobile/recovery-pin-code
 
 ### Header
 

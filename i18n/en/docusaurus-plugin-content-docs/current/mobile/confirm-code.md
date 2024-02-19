@@ -49,7 +49,7 @@ Method used to confirm the code you received. To use this method, you need to co
 | Attributes           | Type     | Description |
 | :------------------- | :------  | :---------- |
 | success              | boolean  | Returns true if the code was confirmed correctly. Once done, the instance will be connected |
-| confirmSecurityCode  | boolean  | Returns true if require a confirmation of two-step verification code, if it is configured in your WhatsApp account |
+| confirmSecurityCode  | boolean  | Returns true if require a confirmation of two-step verification code |
 
 
 ### Example

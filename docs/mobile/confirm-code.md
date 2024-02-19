@@ -46,9 +46,10 @@ Método utilizado para confirmar o código que você recebeu. Para utilizar esse
 
 ### 200
 
-| Atributos   | Tipo     | Descrição |
-| :--------   | :------  | :-------- |
-| success     | boolean  | Retorna true caso o código tenha sido confirmado corretamente. Feito isso, a instância estará conectada |
+| Atributos            | Tipo     | Descrição |
+| :------------------- | :------  | :-------- |
+| success              | boolean  | Retorna true caso o código tenha sido confirmado corretamente. Feito isso, a instância estará conectada |
+| confirmSecurityCode  | boolean  | Retorna true se for necessário a confirmação do código de verificação em duas etapas |
 
 
 ### Exemplo

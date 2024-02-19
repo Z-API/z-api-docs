@@ -5,9 +5,9 @@ title: Solicitar email de recuperação de PIN
 
 ## Método
 
-#### /mobile/recovery-security-code
+#### /mobile/recovery-pin-code
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/mobile/recovery-security-code
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/mobile/recovery-pin-code
 
 ### Header
 
@@ -19,6 +19,7 @@ title: Solicitar email de recuperação de PIN
 ## Conceituação
 
 Método utilizado para solicitar email para recuperação do código PIN da sua conta. Esse método somente é necessário caso você tenha configurado a verificação em duas etapas no WhatsApp e não se lembre mais desse código. Se esse for o seu caso, é necessário que esse código PIN seja confirmado, caso contrário, não será possível conectar o número em uma instância mobile.
+
 ---
 
 ## Atributos
