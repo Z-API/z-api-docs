@@ -60,6 +60,13 @@ Método utilizado para confirmar o código que você recebeu. Para utilizar esse
 }
 ```
 
+```json
+{
+    "success": false,
+    "confirmSecurityCode": true
+}
+```
+
 ### 400
 
 Requisição inválida. Verifique se os dados que você está enviando estão de acordo com o documentado acima.

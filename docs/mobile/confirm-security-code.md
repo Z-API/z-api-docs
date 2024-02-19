@@ -5,7 +5,7 @@ title: Confirmar código PIN
 
 ## Método
 
-#### /mobile/confirm-security-code
+#### /mobile/confirm-pin-code
 
 `POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/mobile/confirm-pin-code
 

@@ -60,6 +60,13 @@ Method used to confirm the code you received. To use this method, you need to co
 }
 ```
 
+```json
+{
+    "success": false,
+    "confirmSecurityCode": true
+}
+```
+
 ### 400
 
 Invalid request. Check if the data you are sending is in accordance with the documentation above.

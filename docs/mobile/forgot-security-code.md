@@ -1,6 +1,6 @@
 ---
 id: forgot-security-code
-title: Solicitar email de recuperação de PIN
+title: Recuperação de código PIN
 ---
 
 ## Método
@@ -18,17 +18,7 @@ title: Solicitar email de recuperação de PIN
 
 ## Conceituação
 
-Método utilizado para solicitar email para recuperação do código PIN da sua conta. Esse método somente é necessário caso você tenha configurado a verificação em duas etapas no WhatsApp e não se lembre mais desse código. Se esse for o seu caso, é necessário que esse código PIN seja confirmado, caso contrário, não será possível conectar o número em uma instância mobile.
-
----
-
-## Atributos
-
-### Obrigatórios
-
-| Atributos | Tipo | Descrição |
-| :-------- | :--: | :-- |
-| code      | string | Código de PIN da verificação em duas etapas |
+Método utilizado para solicitar email para recuperação do código PIN da sua conta. Esse será útil caso você tenha configurado a verificação em duas etapas no WhatsApp e não se lembre mais desse código. Dessa forma, o WhatsApp enviará um link para redefinição de código PIN no email que você vinculou à sua conta do WhatsApp.
 
 ---
 

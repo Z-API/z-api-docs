@@ -1,6 +1,6 @@
 ---
 id: forgot-security-code
-title: Request recovery security code email
+title: Recovery PIN code
 ---
 
 ## Method
@@ -18,17 +18,7 @@ title: Request recovery security code email
 
 ## Concept
 
-Method used to request an email for recovery of your account's PIN code. This method is only necessary if you have set up two-step verification on WhatsApp and no longer remember this code. If this is your case, you need to confirm this PIN code, otherwise, it will not be possible to connect the number to a mobile instance.
-
----
-
-## Attributes
-
-### Obrigatórios
-
-| Attributes | Type | Descrição |
-| :-------- | :--: | :-- |
-| code      | string | Two-step verification PIN code |
+Method used to request an email for recovery of your account's PIN code. This method is only necessary if you have set up two-step verification on WhatsApp and no longer remember this code. This way, WhatsApp will send a link to reset the PIN code in the email that you linked to your WhatsApp account.
 
 ---
 
@@ -36,7 +26,7 @@ Method used to request an email for recovery of your account's PIN code. This me
 
 ### 200
 
-| Attributes   | Type     | Description |
+| Attributes   | Type    | Description |
 | :--------   | :------  | :-------- |
 | success     | boolean  | Returns true if the email for recovery has been sent |
 

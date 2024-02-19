@@ -32,7 +32,13 @@ After verifying the captcha - if that was your case - we can proceed to confirm 
 
 - [Confirm code](./confirm-code)
 
+If you set up a security PIN code on your WhatsApp account, after confirming the registration code (previous step) you will be asked to confirm your PIN code. 
 
+- [Confirm PIN code](./confirm-security-code.md)
+
+In case you have forgotten your two-step PIN code, you can request an email to recovery it using API below:
+
+- [Recovery PIN code](./forgot-security-code.md)
 
 Phew! If you followed this step-by-step, you should already be connected to a mobile instance! Now, just give **Wings to your imagination!**
 
