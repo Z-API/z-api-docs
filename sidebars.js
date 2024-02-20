@@ -55,7 +55,14 @@ module.exports = {
       'mobile/confirm-code',
       'mobile/request-unbanning',
       'mobile/confirm-security-code',
-      'mobile/forgot-security-code'
+      'mobile/forgot-security-code',
+      'mobile/get-account-email',
+      'mobile/set-account-email',
+      'mobile/verify-account-email',
+      'mobile/get-has-security-code',
+      'mobile/set-security-code',
+      'mobile/remove-account-email',
+      'mobile/remove-security-code'
     ],
     Messages: [
       'message/introduction',
