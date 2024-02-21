@@ -52,13 +52,13 @@ On November 4, 2021, WhatsApp changed the format for creating new groups, previo
 
 | Attributes | Type    | Description                                           |
 | :-------- | :------ | :-------------------------------------------------- |
-| value     | boolean | true if successful, false if failed |
+| invitationLink     | string | New invite link |
 
 **Example**
 
 ```json
 {
-  "value": true
+  "invitationLink": "https://chat.whatsapp.com/C1adgkdEGki7554BWDdMkd"
 }
 ```
 

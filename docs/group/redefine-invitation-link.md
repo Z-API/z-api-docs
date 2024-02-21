@@ -52,13 +52,13 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 
 | Atributos | Tipo    | Descrição                                           |
 | :-------- | :------ | :-------------------------------------------------- |
-| value     | boolean | true caso tenha dado certo e false em caso de falha |
+| invitationLink     | string | Novo link de convite |
 
 **Exemplo**
 
 ```json
 {
-  "value": true
+  "invitationLink": "https://chat.whatsapp.com/C1adgkdEGki7554BWDdMkd"
 }
 ```
 

@@ -46,13 +46,13 @@ Este método permite que você redefina o link de convite de uma comunidade.
 
 | Atributos | Tipo    | Descrição                                           |
 | :-------- | :------ | :-------------------------------------------------- |
-| value     | boolean | true caso tenha dado certo e false em caso de falha |
+| invitationLink     | string | Novo link de convite |
 
 **Exemplo**
 
 ```json
 {
-  "value": true
+  "invitationLink": "https://chat.whatsapp.com/C1adgkdEGki7554BWDdMkd"
 }
 ```
 
