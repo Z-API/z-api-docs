@@ -133,6 +133,7 @@ module.exports = {
       'group/group-invitation-metadata',
       'group/update-group-settings',
       'group/update-group-description',
+      'group/redefine-invitation-link'
     ],
     Communities: [
       'communities/introduction',
@@ -141,6 +142,7 @@ module.exports = {
       'communities/link-groups',
       'communities/unlink-groups',
       'communities/community-metadata',
+      'communities/redefine-invitation-link',
       'communities/deactivate-community',
     ],
     Newsletter: [
