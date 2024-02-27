@@ -135,6 +135,43 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Template text return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "702CC5F7E0A6BF4421",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1708457193876,
+  "status": "RECEIVED",
+  "chatName": "Test Number",
+  "senderPhoto": null,
+  "senderName": "5544999999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {},
+    "message": "message text",
+    "footer": "message footer",
+    "title": "message title",
+    "templateId": "790118069824606",
+    "hydratedButtons": []
+  }
+}
+```
+
 ### Reaction return example
 
 ```json
@@ -267,6 +304,53 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Template image return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "885FF934BF100D579E",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708454725028,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {
+      "image": {
+        "imageUrl": "https://example.jpeg",
+        "thumbnailUrl": "https://example.jpeg",
+        "caption": "",
+        "mimeType": "image/jpeg",
+        "viewOnce": false,
+        "width": 1600,
+        "height": 926
+      }
+    },
+    "message": "message text",
+    "footer": "message footer",
+    "title": "message title",
+    "templateId": "674504507982622",
+    "hydratedButtons": []
+  }
+}
+```
+
 ### Audio feedback example 
 
 ```json
@@ -298,7 +382,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Video feedback example
+### Video return example
 
 ```json
 {
@@ -326,6 +410,53 @@ The possible returns of the **on-message-received** webhook are registered below
     "viewOnce": true
   },
   "instanceId": "instance.id"
+}
+```
+
+### Template video return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "0E4AD761B62E3D5EF9",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1708456287181,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "5544999999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {
+      "video": {
+        "videoUrl": "https://example.mp4",
+        "caption": "",
+        "mimeType": "video/mp4",
+        "width": 0,
+        "height": 0,
+        "seconds": 0,
+        "viewOnce": false
+      }
+    },
+    "message": "message text",
+    "footer": "message footer",
+    "title": "message title",
+    "templateId": "938481574354947",
+    "hydratedButtons": []
+  }
 }
 ```
 
@@ -358,7 +489,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Document feedback example 
+### Document return example 
 
 ```json
 {
@@ -389,6 +520,52 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Template document return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "9D968A5FA2880508C4",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708455444850,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {
+      "document": {
+        "caption": null,
+        "documentUrl": "https://example.pdf",
+        "mimeType": "application/pdf",
+        "title": "",
+        "pageCount": 0,
+        "fileName": ""
+      }
+    },
+    "message": "message text",
+    "footer": "message footer",
+    "title": "message title",
+    "templateId": "811492407484976",
+    "hydratedButtons": []
+  }
+}
+```
+
 ### Localization’s feedback example 
 
 ```json
@@ -416,6 +593,51 @@ The possible returns of the **on-message-received** webhook are registered below
     "url": ""
   },
   "instanceId": "instance.id"
+}
+```
+
+### Template localization return example 
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "199016268742711@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "27BBF23E0185D363D9",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708456969808,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {
+      "location": {
+        "longitude": -46.6388,
+        "latitude": -23.5489,
+        "name": "somewhere",
+        "address": "somewhere",
+        "url": ""
+      }
+    },
+    "message": "message text",
+    "footer": "message footer",
+    "title": "message title",
+    "templateId": "1143940003434066",
+    "hydratedButtons": []
+  }
 }
 ```
 

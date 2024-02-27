@@ -152,6 +152,43 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de template de texto
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "702CC5F7E0A6BF4421",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1708457193876,
+  "status": "RECEIVED",
+  "chatName": "Test Number",
+  "senderPhoto": null,
+  "senderName": "5544999999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {},
+    "message": "texto da mensagem",
+    "footer": "rodapé da mensagem",
+    "title": "título da mensagem",
+    "templateId": "790118069824606",
+    "hydratedButtons": []
+  }
+}
+```
+
 ### Exemplo de retorno de reação
 
 ```json
@@ -345,6 +382,53 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de template de imagem
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "885FF934BF100D579E",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708454725028,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {
+      "image": {
+        "imageUrl": "https://example.jpeg",
+        "thumbnailUrl": "https://example.jpeg",
+        "caption": "",
+        "mimeType": "image/jpeg",
+        "viewOnce": false,
+        "width": 1600,
+        "height": 926
+      }
+    },
+    "message": "texto da mensagem",
+    "footer": "rodapé da mensagem",
+    "title": "título da mensagem",
+    "templateId": "674504507982622",
+    "hydratedButtons": []
+  }
+}
+```
+
 ### Exemplo de retorno de áudio
 
 ```json
@@ -412,6 +496,53 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "seconds": 13,
     "viewOnce": true
   },
+}
+```
+
+### Exemplo de retorno de template de vídeo
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "0E4AD761B62E3D5EF9",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1708456287181,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "5544999999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {
+      "video": {
+        "videoUrl": "https://example.mp4",
+        "caption": "",
+        "mimeType": "video/mp4",
+        "width": 0,
+        "height": 0,
+        "seconds": 0,
+        "viewOnce": false
+      }
+    },
+    "message": "texto da mensagem",
+    "footer": "rodapé da mensagem",
+    "title": "título da mensagem",
+    "templateId": "938481574354947",
+    "hydratedButtons": []
+  }
 }
 ```
 
@@ -517,6 +648,52 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de template de documento
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "9D968A5FA2880508C4",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708455444850,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {
+      "document": {
+        "caption": null,
+        "documentUrl": "https://example.pdf",
+        "mimeType": "application/pdf",
+        "title": "",
+        "pageCount": 0,
+        "fileName": ""
+      }
+    },
+    "message": "texto da mensagem",
+    "footer": "rodapé da mensagem",
+    "title": "título da mensagem",
+    "templateId": "811492407484976",
+    "hydratedButtons": []
+  }
+}
+```
+
 ### Exemplo de retorno de localização
 
 ```json
@@ -548,6 +725,51 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "address": "",
     "url": ""
   },
+}
+```
+
+### Exemplo de retorno de template de localização
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "27BBF23E0185D363D9",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708456969808,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {
+      "location": {
+        "longitude": -46.6388,
+        "latitude": -23.5489,
+        "name": "nome do lugar",
+        "address": "nome do enderço",
+        "url": ""
+      }
+    },
+    "message": "texto da mensagem",
+    "footer": "rodapé da mensagem",
+    "title": "título da mensagem",
+    "templateId": "1143940003434066",
+    "hydratedButtons": []
+  }
 }
 ```
 
