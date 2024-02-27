@@ -9,9 +9,7 @@ Neste tópico você vai conhecer todos os métodos disponiveis para registrar um
 
 **O que são instâncias mobile?** As instâncias mobile são basicamente como se fossem o seu celular! Ao invés de ser conectada como um dispositivo secundário - como o caso da instância web - elas são o dispositivo primário. Isso quer dizer que, além de você conectar um número a essa instância, poderá também conectar outros dispositivos - como web e desktop - a partir dela! Incrível né?!
 
-Além disso, existem diversas **vantagens** em conectar seu número a uma instância mobile. Uma delas é que as chances de **banimento** são consideravelmente reduzidas, pois estamos tratando de um dispositivo primário. Isso não quer dizer necessáriamente que não existam banimentos para esse tipo de conexão. Eles podem sim ocorrer, porém a **probabilidade é muito menor** comparado a uma instância web.
-
-Outro recurso disponível para instâncias mobile são as configurações de segurança da sua conta do WhatsApp, como por exemplo: [configurar um email](./set-account-email.md), [configurar código PIN](./set-security-code.md), [remover email](./remove-account-email.md), [remover código PIN](./remove-security-code.md), [buscar email cadastrado na conta](./get-account-email.md), [verificar se possui um código PIN configurado](./get-has-security-code.md), entre outras.
+Além disso, existem diversas **vantagens** em conectar seu número a uma instância mobile. Uma delas seria as configurações de segurança da sua conta do WhatsApp, como por exemplo: [configurar um email](./set-account-email.md), [configurar código PIN](./set-security-code.md), [remover email](./remove-account-email.md), [remover código PIN](./remove-security-code.md), [buscar email cadastrado na conta](./get-account-email.md), [verificar se possui um código PIN configurado](./get-has-security-code.md), entre outras.
 
 Agora que você já entendeu e viu as vantagens da instância mobile, **bora codar**!
 
