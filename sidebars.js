@@ -143,6 +143,10 @@ module.exports = {
       'communities/unlink-groups',
       'communities/community-metadata',
       'communities/redefine-invitation-link',
+      'communities/add-community-participant',
+      'communities/remove-community-participant',
+      'communities/add-community-admin',
+      'communities/remove-community-admin',
       'communities/deactivate-community',
     ],
     Newsletter: [

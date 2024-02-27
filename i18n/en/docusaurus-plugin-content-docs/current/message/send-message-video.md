@@ -102,7 +102,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#video-feedback-example)
+[Webhook](../webhooks/on-message-received#video-return-example)
 
 ---
 
