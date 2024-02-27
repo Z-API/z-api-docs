@@ -9,9 +9,7 @@ In this topic, you will get to know all the methods available to register a numb
 
 **What are mobile instances?** Mobile instances are basically like your cell phone! Instead of being connected as a secondary "device" - as is the case with the web instance - they are the primary device. This means that, in addition to connecting a number to this instance, you can also connect other devices - such as web and desktop - through it! Amazing, right?!
 
-Moreover, there are several **advantages** to connecting your number to a mobile instance. One of them would be that the chances of **banning** are considerably reduced because we are dealing with a primary device. This does not necessarily mean that there are no bans for this type of connection. They can indeed occur, but the **probability is much lower** compared to a web instance.
-
-Another resource available to mobile instances is the WhatsApp account security configurations, for example: [set an email](./set-account-email.md), [set a PIN code](./set-security-code.md), [remove email](./remove-account-email.md), [remove PIN code](./remove-security-code.md), [get account email](./get-account-email.md), [verify if has PIN code](./get-has-security-code.md) e etc...
+Moreover, there are several **advantages** to connecting your number to a mobile instance. One of them would be the WhatsApp account security configurations, for example: [set an email](./set-account-email.md), [set a PIN code](./set-security-code.md), [remove email](./remove-account-email.md), [remove PIN code](./remove-security-code.md), [get account email](./get-account-email.md), [verify if has PIN code](./get-has-security-code.md) e etc...
 
 Now that you understand and have seen the advantages of the mobile instance, **let's code**!
 
