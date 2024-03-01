@@ -1,0 +1,93 @@
+---
+id: transfer-newsletter-ownership
+title: Transferir propriedade do canal
+---
+
+## Método
+
+#### /newsletter/transfer-ownership/{newsletterId}
+
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/newsletter/transfer-ownership/{newsletterId}
+
+### Header
+
+|      Key       |            Value            |
+| :------------: |     :-----------------:     |
+|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+---
+
+## Conceituação
+
+Este método é responsável por transferir a propriedade de um canal a outro usuário, o qual seja administrador desse canal.
+
+## Atributos
+
+### Obrigatórios
+
+| Atributos | Tipo      | Descrição      |
+| :-------- | :-------: | :------------- |
+|  phone    |  string   | Telefone do usuário que será promovido a dono do canal |
+
+### Opcionais
+
+| Atributos   | Tipo      | Descrição      |
+| :---------- | :-------: | :------------- |
+|  quitAdmin  |  boolean  | Define se você deixará de ser administrador do canal após transferir a propriedade |
+
+---
+
+## Request Body
+
+```json
+{
+  "phone": "5511999999999"
+}
+```
+
+```json
+{
+  "phone": "5511999999999",
+  "quitAdmin": true
+}
+```
+
+---
+
+## Response
+
+### 200
+
+| Atributos          | Tipo        | Descrição                                                    |
+| :----------------- | :---------- | :----------------------------------------------------------- |
+| value   | string     | Retorna true em caso de sucesso e false em caso de falha  |
+| message | string     | Em caso de erro, pode retornar uma mensagem com informações sobre o erro  |
+
+**Exemplo**
+
+```json
+  {
+    "value": true
+  }
+```
+
+### 405
+
+Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.
+
+### 415
+
+Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+
+---
+
+## Webhook Response
+
+Link para a response do webhook (ao receber)
+
+[Webhook](../webhooks/on-message-received#response)
+
+---
+
+## Code
+
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/transfer-newsletter-ownership.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
