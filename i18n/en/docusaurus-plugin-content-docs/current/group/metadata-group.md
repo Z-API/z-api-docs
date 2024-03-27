@@ -136,9 +136,7 @@ Old way -
     {
       "phone": "5511777777777",
       "isAdmin": true,
-      "isSuperAdmin": false,
-      "short": "ZAPIs",
-      "name": "ZAPIs Boys"
+      "isSuperAdmin": false
     }
   ],
   "subjectTime": 1617805323000,

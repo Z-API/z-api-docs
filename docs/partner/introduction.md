@@ -65,13 +65,7 @@ Isso quer dizer que quando você receber a fatura do mês 07, estas 10 instânci
 
 Este processo acontece porque ao cancelar, ela ainda permanece 30 dias disponíveis para que o cliente utilize. 
 
-
 - Todas as instâncias tem data de expiração no dia 10 que será o prazo máximo para o funcionamento do serviço em casos de não pagamento, no dia 15 nosso DevOps excluirá todas instâncias da conta.
-
-:::caution Migrar instâncias
-Durante a adesão do plano a empresa integradora pode optar pela migração de todas as instâncias ativas no modelo pré-pago para o novo modelo pós-pago, porém este desejo precisa ser manifestado no ato da adesão.
-
-:::
 
 :::tip Como cobrar de seu cliente
 

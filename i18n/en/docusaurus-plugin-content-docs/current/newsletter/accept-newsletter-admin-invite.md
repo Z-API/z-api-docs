@@ -18,7 +18,7 @@ title: Accept newsletter admin invitation
 
 ## Concept
 
-This method is responsible for accepting an invitation to become an administrator of a newsletter. This invitation is a message that you can both **[send](../message/send-newsletter-admin-invite.md)** and receive through the **[received message webhook](../webhooks/on-message-received#newsletter-admin-invitation-return-example)**.
+This method is responsible for accepting an invitation to become an administrator of a newsletter. This invitation is a message that you can both **[send](../newsletter/send-newsletter-admin-invite.md)** and receive through the **[received message webhook](../webhooks/on-message-received#newsletter-admin-invitation-return-example)**.
 
 ## Attributes
 

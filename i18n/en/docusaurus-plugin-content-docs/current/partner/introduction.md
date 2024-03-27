@@ -58,8 +58,6 @@ Our billing cycle works as follows:
 
 - All instances have an expiration date on the 10th, which will be the maximum term for the service to function in cases of non-payment, on the 15th our DevOps will delete all instances from the account.
 
-When joining the plan, the integrator company can choose to migrate all active instances in the prepaid model to the new postpaid model, but this desire must be manifested in the act of joining. You are unable to migrate later :(
-
 :::tip How to charge your clients 
 
 We recommend our customers to use the prepaid model in their solutions as we do not work on a pro rata basis.
