@@ -730,6 +730,78 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Example of an admin promoted to newsletter
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "464201093",
+  "phone": "5544999999999@newsletter",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "status": "RECEIVED",
+  "chatName": "newsletter name",
+  "senderPhoto": null,
+  "senderName": "",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "NEWSLETTER_ADMIN_PROMOTE",
+  "notificationParameters": [
+    "5544999999999",
+    "ADMIN"
+  ],
+  "callId": null
+}
+```
+
+### Example of an admin demoted of newsletter
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "464201093",
+  "phone": "5544999999999@newsletter",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "status": "RECEIVED",
+  "chatName": "newsletter name",
+  "senderPhoto": null,
+  "senderName": "",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "NEWSLETTER_ADMIN_DEMOTE",
+  "notificationParameters": [
+    "5544999999999",
+    "SUBSCRIBER"
+  ],
+  "callId": null
+}
+```
+
 ### Example of payment receipt return
 
 ```json
