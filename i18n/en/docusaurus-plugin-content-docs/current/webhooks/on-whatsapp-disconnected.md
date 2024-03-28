@@ -68,12 +68,25 @@ The possible returns of the **on-whatsapp-disconnected** webhook are registered 
 
 ```json
 {
-  "momment": 1580163342,
-  "error": "Device has been disconnected",
-  "disconnected": true,
-  "type": "DisconnectedCallback",
-  "instanceId": "instance.id"
+    "type": "DisconnectedCallback",
+    "instanceId": "39ECB202B157D11E37905AE607963117",
+    "phone": "5544999999999",
+    "momment": 1698691825296,
+    "disconnected": true,
+    "error": "It was not possible to restore a session with the current token, please login again"
 }
+
+---------
+
+{
+    "type": "DisconnectedCallback",
+    "instanceId": "39ECB202B157D11E37905AE607963117",
+    "phone": "5544999999999",
+    "momment": 1698691825296,
+    "disconnected": true,
+    "error": "The number was disconnected by a possible whatsapp number blocking"
+}
+
 ```
 
 ### 405

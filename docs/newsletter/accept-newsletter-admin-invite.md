@@ -18,7 +18,7 @@ title: Aceitar convite de admin do canal
 
 ## Conceituação
 
-Este método é responsável por aceitar um convite para ser administrador de um canal. Esse convite, é uma mensagem que você tanto pode **[enviar](../message/send-newsletter-admin-invite.md)** quanto receber através do **[webhook de mensagem recebida](../webhooks/on-message-received#exemplo-de-retorno-de-convite-admin-de-canal)**.
+Este método é responsável por aceitar um convite para ser administrador de um canal. Esse convite, é uma mensagem que você tanto pode **[enviar](../newsletter/send-newsletter-admin-invite.md)** quanto receber através do **[webhook de mensagem recebida](../webhooks/on-message-received#exemplo-de-retorno-de-convite-admin-de-canal)**.
 
 
 ## Atributos
