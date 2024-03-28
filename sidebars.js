@@ -185,7 +185,7 @@ module.exports = {
       'newsletter/newsletter-revoke-admin-invite',
       'newsletter/send-newsletter-admin-invite'
     ],
-    'Transmission list': ['broadcast/introduction'],
+    // 'Transmission list': ['broadcast/introduction'],
     Status: [
       'status/introduction',
       'status/send-text-status',
