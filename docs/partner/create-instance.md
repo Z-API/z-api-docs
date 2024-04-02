@@ -53,7 +53,8 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 | callRejectAuto          | boolean | true ou false - Rejeitar chamadas automático |
 | callRejectMessage       | string  | Mensagem após rejeitar uma chamada automáticamente|
 | autoReadMessage         | boolean | true ou false - Leitura automática |
-
+| isDevice       | boolean | Define se a instância será mobile ou web |
+| businessDevice | boolean | Escolha entre a versão empresarial ou normal do WhatsApp |
 
 ---
 
@@ -73,7 +74,9 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
   "receivedCallbackUrl": "https://meuwebhook.com.br/receive",
   "disconnectedCallbackUrl": "https://meuwebhook.com.br/disconnected",
   "connectedCallbackUrl": "https://meuwebhook.com.br/connected",
-  "messageStatusCallbackUrl": "https://meuwebhook.com.br/status"
+  "messageStatusCallbackUrl": "https://meuwebhook.com.br/status",
+  "isDevice": true,
+  "businessDevice": true
 }
 ```
 
