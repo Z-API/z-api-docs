@@ -183,7 +183,8 @@ module.exports = {
       'newsletter/update-newsletter-config',
       'newsletter/accept-newsletter-admin-invite',
       'newsletter/newsletter-remove-admin',
-      'newsletter/newsletter-revoke-admin-invite'
+      'newsletter/newsletter-revoke-admin-invite',
+      'newsletter/transfer-newsletter-ownership'
     ],
     'Transmission list': ['broadcast/introduction'],
     Status: [
