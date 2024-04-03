@@ -48,6 +48,8 @@ If you do not subscribe within 2 days, our devops will automatically delete the 
 | disconnectedCallbackUrl | string | Webhook EndPoint disconnected or lost communication - disconnected |
 | connectedCallbackUrl | string | Connection webhook endpoint - connected |
 | messageStatusCallbackUrl | string | Status webhook endpoint |
+| isDevice       | boolean | Defines wether the instance will be mobile or web |
+| businessDevice | boolean | Choose between business or normal whatsapp version |
 
 ---
 
@@ -67,7 +69,9 @@ If you do not subscribe within 2 days, our devops will automatically delete the 
   "receivedCallbackUrl": "https://meuwebhook.com.br/receive",
   "disconnectedCallbackUrl": "https://meuwebhook.com.br/disconnected",
   "connectedCallbackUrl": "https://meuwebhook.com.br/connected",
-  "messageStatusCallbackUrl": "https://meuwebhook.com.br/status"
+  "messageStatusCallbackUrl": "https://meuwebhook.com.br/status",
+  "isDevice": true,
+  "businessDevice": true
 }
 ```
 
