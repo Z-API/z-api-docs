@@ -1043,6 +1043,78 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de admin promovido a um canal
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "464201093",
+  "phone": "5544999999999@newsletter",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "status": "RECEIVED",
+  "chatName": "nome do canal",
+  "senderPhoto": null,
+  "senderName": "",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "NEWSLETTER_ADMIN_PROMOTE",
+  "notificationParameters": [
+    "5544999999999",
+    "ADMIN"
+  ],
+  "callId": null
+}
+```
+
+### Exemplo de admin removido de um canal
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "464201093",
+  "phone": "5544999999999@newsletter",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "status": "RECEIVED",
+  "chatName": "nome do canal",
+  "senderPhoto": null,
+  "senderName": "",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "NEWSLETTER_ADMIN_DEMOTE",
+  "notificationParameters": [
+    "5544999999999",
+    "SUBSCRIBER"
+  ],
+  "callId": null
+}
+```
+
 ### Exemplo de retorno de produto
 
 ```json

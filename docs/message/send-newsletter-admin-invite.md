@@ -92,6 +92,10 @@ Link para a response do webhook (ao receber)
 
 [Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-convite-admin-de-canal)
 
+[Webhook](../webhooks/on-message-received#exemplo-de-admin-promovido-a-um-canal)
+
+[Webhook](../webhooks/on-message-received#exemplo-de-admin-removido-de-um-canal)
+
 ---
 
 ## Code

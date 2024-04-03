@@ -91,6 +91,10 @@ Link to the webhook response (upon receipt)
 
 [Webhook](../webhooks/on-message-received#newsletter-admin-invitation-return-example)
 
+[Webhook](../webhooks/on-message-received#example-of-an-admin-promoted-to-newsletter)
+
+[Webhook](../webhooks/on-message-received#example-of-an-admin-demoted-of-newsletter)
+
 ---
 
 ## Code
