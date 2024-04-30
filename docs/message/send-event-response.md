@@ -21,7 +21,7 @@ title: Responder evento
 Neste método você poderá enviar mensagens de resposta a um evento.
 
 :::tip
-Não é possível responder a um evento que você mesmo criou. Nesse caso, sua resposta sempre fica como presença confirmada
+Não é possível responder a um evento que você mesmo criou. Nesse caso, sua resposta sempre fica como "presença confirmada"
 :::
 
 ![image](../../img/SendingEventResponse.jpeg)
