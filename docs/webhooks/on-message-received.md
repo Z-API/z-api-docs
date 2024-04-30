@@ -1466,6 +1466,81 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de evento
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "120363019502650977-group",
+  "fromMe": false,
+  "momment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "event": {
+    "name": "Nome do evento",
+    "description": "Descrição do evento",
+    "canceled": false,
+    "joinLink": "",
+    "scheduleTime": 1716915653,
+    "location": {}
+  }
+}
+```
+
+### Exemplo de retorno de resposta de evento
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "120363019502650977-group",
+  "fromMe": false,
+  "momment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "eventResponse": {
+    "response": "GOING",
+    "responseFrom": "554499999999",
+    "time": 1714423417000,
+    "referencedMessage": {
+      "messageId": "D2D612289D9E8F62307D72409A8D9DC3",
+      "fromMe": false,
+      "phone": "120363239161320697-group",
+      "participant": "554499999988"
+    }
+  }
+}
+```
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.

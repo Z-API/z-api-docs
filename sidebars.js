@@ -96,7 +96,10 @@ module.exports = {
       'message/send-order-status-update',
       'message/send-order-payment-update',
       'message/send-pin-message',
-      'message/send-newsletter-admin-invite'
+      'message/send-newsletter-admin-invite',
+      'message/send-event',
+      'message/send-edit-event',
+      'message/send-event-response'
     ],
     Privacy: [
       'privacy/introduction',

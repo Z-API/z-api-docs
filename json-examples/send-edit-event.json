@@ -1,0 +1,21 @@
+{
+    "method": "POST",
+    "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-edit-event",
+    "httpVersion": "HTTP/1.1",
+    "queryString": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "name": "Client-Token",
+            "value": "{{security-token}}"
+        }
+    ],
+    "cookies": [],
+    "postData": {
+        "mimeType": "application/json",
+        "text": "{\"phone\": \"5511999998888\", \"eventMessageId\": \"3EB05669C7C3B9B27A6595\", \"event\": { \"name\": \"Example event\", \"description\": \"Example description\", \"dateTime\": \"2024-04-29T08:30:53.309Z\", \"location\": { \"name\": \"Location name\" }, \"canceled\": false } }"
+    }
+}
