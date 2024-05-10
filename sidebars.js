@@ -46,6 +46,7 @@ module.exports = {
       'instance/status',
       'instance/device',
       'instance/rename-instance',
+      'instance/me'
     ],
     Mobile: [
       'mobile/introduction',
@@ -150,7 +151,8 @@ module.exports = {
       'group/group-invitation-metadata',
       'group/update-group-settings',
       'group/update-group-description',
-      'group/redefine-invitation-link'
+      'group/redefine-invitation-link',
+      'group/accept-group-invite'
     ],
     Communities: [
       'communities/introduction',
