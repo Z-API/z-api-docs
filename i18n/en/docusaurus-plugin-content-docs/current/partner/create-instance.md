@@ -70,7 +70,7 @@ If you do not subscribe within 2 days, our devops will automatically delete the 
   "disconnectedCallbackUrl": "https://meuwebhook.com.br/disconnected",
   "connectedCallbackUrl": "https://meuwebhook.com.br/connected",
   "messageStatusCallbackUrl": "https://meuwebhook.com.br/status",
-  "isDevice": true,
+  "isDevice": false,
   "businessDevice": true
 }
 ```

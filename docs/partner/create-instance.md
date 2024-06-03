@@ -75,7 +75,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
   "disconnectedCallbackUrl": "https://meuwebhook.com.br/disconnected",
   "connectedCallbackUrl": "https://meuwebhook.com.br/connected",
   "messageStatusCallbackUrl": "https://meuwebhook.com.br/status",
-  "isDevice": true,
+  "isDevice": false,
   "businessDevice": true
 }
 ```
