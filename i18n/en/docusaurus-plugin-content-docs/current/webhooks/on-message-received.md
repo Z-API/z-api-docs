@@ -133,7 +133,8 @@ The possible returns of the **on-message-received** webhook are registered below
     "message": "test",
     "descritpion": "(optional) if the message has a description inserted by WhatsApp",
     "title": "(optional) if the message has a title inserted by WhatsApp",
-    "url": "(optional) if the message has a url linked to it. Example: catalog message has a button 'See catalog'"
+    "url": "(optional) if the message has a url linked to it. Example: catalog message has a button 'See catalog'",
+    "thumbnailUrl": "(optional) if the message has a image thumbnail linked to it. Example: group invitation message has the image of group"
   },
 }
 ```
