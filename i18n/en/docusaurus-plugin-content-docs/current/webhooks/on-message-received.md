@@ -1177,6 +1177,81 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Event return example
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "120363019502650977-group",
+  "fromMe": false,
+  "momment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "event": {
+    "name": "Event name",
+    "description": "Event description",
+    "canceled": false,
+    "joinLink": "",
+    "scheduleTime": 1716915653,
+    "location": {}
+  }
+}
+```
+
+### Event response return example
+
+```json
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "120363019502650977-group",
+  "fromMe": false,
+  "momment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "participantPhone": null,
+  "participantLid": null,
+  "photo": "https://",
+  "broadcast": false,
+  "type": "ReceivedCallback",
+  "eventResponse": {
+    "response": "GOING",
+    "responseFrom": "554499999999",
+    "time": 1714423417000,
+    "referencedMessage": {
+      "messageId": "D2D612289D9E8F62307D72409A8D9DC3",
+      "fromMe": false,
+      "phone": "120363239161320697-group",
+      "participant": "554499999988"
+    }
+  }
+}
+```
+
 ### 405
 
 In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or PUT as specified at the beginning of this topic.
