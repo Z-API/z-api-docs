@@ -5,7 +5,7 @@ title: Listar categorias
 
 ## Método
 
-#### /business/available-categories
+#### /business/available-categories?query={{STRING_DE_BUSCA (opcional)}}
 
 `GET` https://api.z-api.io/instances/{{instanceId}}/token/{{instanceToken}}/business/available-categories
 
@@ -26,14 +26,33 @@ Este método está disponível apenas para contas Business do whatsapp.
 
 ---
 
+## Atributos
+
+### Opcionais
+
+| Atributos | Tipo   | Descrição |
+| :-------- | :----: | :-------- |
+| query     | string | Parâmetro de pesquisa de categorias. Exemplo: "tecnologia" |
+
+---
+
+## Request Params
+
+#### URL exemplo
+
+Método
+
+`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/business/available-categories?query=tecnologia
+
 ## Response
 
 ### 200
 
 | Atributos   | Tipo    | Descrição                                                                 |
-| :--------   | :------ | :--------------------------------------------------                       |
+| :--------   | :------ | :------------------------------------------------------------------------ |
 | displayName | string  | Nome da categorias a ser exibido                                          |
-| label       | string  | Valor que deve ser enviado na requisição de atribuir categorias a empresa |
+| id          | string  | Identificador da categoria. Deve ser enviado na requisição de atribuir categorias a empresa |
+| label       | (Opcional) string  | Também pode ser informado na requisição de atribuir categorias a empresa  |
 
 Exemplo
 
@@ -41,11 +60,12 @@ Exemplo
 [
   {
     "displayName": "Outras empresas",
-    "label": "OTHER_COMPANIES"
+    "label": "OTHER_COMPANIES",
+    "id": "629412378414563"
   },
   {
     "displayName": "Serviço automotivo",
-    "label": "AUTOMOTIVE_SERVICE"
+    "id": "1223524174334504"
   }
 ]
 ```

@@ -36,18 +36,18 @@ Este método está disponível apenas para contas Business do whatsapp.
 
 | Atributos   | Tipo          | Descrição                           |
 | :--------   | :------------ | :---------------------------------- |
-| categories  | array string  | Label da categoria a ser atribuída  |
+| categories  | array string  | Id ou label da categoria a ser atribuída. Pode ser obtido na API de [Listar categorias](./available-categories) |
 
 ## Request Body
 
 ```json
 {
-  "categories": ["RESTAURANT", "FINANCE", "EDUCATION"]
+  "categories": ["RESTAURANT", "FINANCE", "629412378414563"]
 }
 ```
 
 :::important Importante
-Os valores enviados no atributo "categories" devem ser **iguais** aos retornados na requisição de "[Listar categorias](./available-categories)", na propriedade "label". Somente dessa forma é possível identificar a categoria desejada para ser atribuída.
+Os valores enviados no atributo "categories" devem ser **iguais** aos retornados na requisição de "[Listar categorias](./available-categories)", na propriedade "id" ou "label". A propriedade "id" é útil quando a "label" não for retornada. Somente dessa forma é possível identificar a categoria desejada para ser atribuída.
 :::
 
 ## Response
