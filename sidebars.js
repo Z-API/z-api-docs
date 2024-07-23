@@ -9,8 +9,9 @@
 
 module.exports = {
   tutorialSidebar: {
-    'Quick Start': ['quickstart/introduction', //'quickstart/authentication'
-  ],
+    'Quick Start': [
+      'quickstart/introduction', //'quickstart/authentication'
+    ],
 
     Tips: [
       'tips/blockednumber',
@@ -24,11 +25,11 @@ module.exports = {
       'tips/file-expiration',
     ],
 
-    Security:[
+    Security: [
       'security/introduction',
       'security/ip-block',
       'security/twofactor',
-      'security/client-token'
+      'security/client-token',
     ],
 
     Instance: [
@@ -46,7 +47,7 @@ module.exports = {
       'instance/status',
       'instance/device',
       'instance/rename-instance',
-      'instance/me'
+      'instance/me',
     ],
     Mobile: [
       'mobile/introduction',
@@ -63,7 +64,7 @@ module.exports = {
       'mobile/get-has-security-code',
       'mobile/set-security-code',
       'mobile/remove-account-email',
-      'mobile/remove-security-code'
+      'mobile/remove-security-code',
     ],
     Messages: [
       'message/introduction',
@@ -100,7 +101,7 @@ module.exports = {
       'message/send-newsletter-admin-invite',
       'message/send-event',
       'message/send-edit-event',
-      'message/send-event-response'
+      'message/send-event-response',
     ],
     Privacy: [
       'privacy/introduction',
@@ -111,7 +112,7 @@ module.exports = {
       'privacy/set-group-add-permission',
       'privacy/set-privacy-online',
       'privacy/set-read-receipts',
-      'privacy/set-messages-duration'
+      'privacy/set-messages-duration',
     ],
     Contacts: [
       'contacts/introduction',
@@ -121,7 +122,7 @@ module.exports = {
       'contacts/get-iswhatsapp',
       'contacts/get-iswhatsapp-batch',
       'contacts/block-contact',
-      'contacts/report-contact'
+      'contacts/report-contact',
     ],
     Chats: [
       'chats/introduction',
@@ -155,7 +156,7 @@ module.exports = {
       'group/update-group-settings',
       'group/update-group-description',
       'group/redefine-invitation-link',
-      'group/accept-group-invite'
+      'group/accept-group-invite',
     ],
     Communities: [
       'communities/introduction',
@@ -189,7 +190,7 @@ module.exports = {
       'newsletter/accept-newsletter-admin-invite',
       'newsletter/newsletter-remove-admin',
       'newsletter/newsletter-revoke-admin-invite',
-      'newsletter/transfer-newsletter-ownership'
+      'newsletter/transfer-newsletter-ownership',
     ],
     'Transmission list': ['broadcast/introduction'],
     Status: [
@@ -211,6 +212,10 @@ module.exports = {
       'business/get-product-id',
       'business/delete-product',
       'business/tags',
+      'business/tags-colors',
+      'business/create-tag',
+      'business/edit-tag',
+      'business/delete-tag',
       'business/tags-add',
       'business/tags-remove',
       'business/save-catalog-config',
@@ -227,7 +232,7 @@ module.exports = {
       'business/company-websites',
       'business/business-hours',
       'business/available-categories',
-      'business/company-categories'
+      'business/company-categories',
     ],
     Webhooks: [
       'webhooks/introduction',
