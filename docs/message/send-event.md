@@ -11,22 +11,15 @@ title: Enviar evento
 
 ### Header
 
-|      Key       |            Value            |
-| :------------: |     :-----------------:     |
-|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+|     Key      |                            Value                            |
+| :----------: | :---------------------------------------------------------: |
+| Client-Token | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+
 ---
 
 ## Conceituação
 
 Neste método você poderá enviar mensagens do tipo Evento.
-
-:::warning
-Até o momento, não temos suporte a geração de link para chamadas.
-:::
-
-:::tip
-As mensagens de evento podem ser enviadas somente para grupos de comunidades
-:::
 
 ![image](../../img/SendingEvent.jpeg)
 
@@ -39,17 +32,18 @@ As mensagens de evento podem ser enviadas somente para grupos de comunidades
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| event   | Event | Dados do evento |
+| event | Event | Dados do evento |
 
 ### Event
 
-| Atributos |  Tipo  | Descrição     |
-| :-------- | :----: | :------------ |
-| name      | string | Nome do event |
-| description   | string (opcional) | Descrição do evento |
-| dateTime      | string | Data e hora do evento (sem timezone) |
-| location      | Location (opcional) | Localização do evento |
-| canceled      | boolean | Define se o evento está cancelado |
+| Atributos | Tipo | Descrição |
+| :-- | :-: | :-- |
+| name | string | Nome do event |
+| description | string (opcional) | Descrição do evento |
+| dateTime | string | Data e hora do evento (sem timezone) |
+| location | Location (opcional) | Localização do evento |
+| callLinkType | string (voice/video) (opcional) | Tipo de chamada do evento (voz ou video) |
+| canceled | boolean | Define se o evento está cancelado |
 
 ---
 
@@ -65,6 +59,7 @@ As mensagens de evento podem ser enviadas somente para grupos de comunidades
     "location": {
       "name": "Nome do lugar"
     },
+    "callLinkType": "voice | video",
     "canceled": false
   }
 }

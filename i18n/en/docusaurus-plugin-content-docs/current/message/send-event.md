@@ -11,22 +11,15 @@ title: Send Event
 
 ### Header
 
-|      Key       |            Value            |
-| :------------: |     :-----------------:     |
-|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+|     Key      |                         Value                          |
+| :----------: | :----------------------------------------------------: |
+| Client-Token | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+
 ---
 
 ## Concept
 
 In this method, you can send messages of type Event.
-
-:::warning
-At the moment, we do not support generating links for calls.
-:::
-
-:::tip
-Event messages can only be sent to community groups.
-:::
 
 ![image](../../../../../img/SendingEvent.jpeg)
 
@@ -39,17 +32,18 @@ Event messages can only be sent to community groups.
 | Attributes | Type | Description |
 | :-- | :-: | :-- |
 | phone | string | Recipient's phone number (or group ID for group messages) in the format CC DDD NUMBER. **IMPORTANT** Send only numbers, without formatting or masks. |
-| event   | Event | Event data |
+| event | Event | Event data |
 
 ### Event
 
-| Attributes |  Type  | Description     |
-| :-------- | :----: | :------------ |
-| name      | string | Event name |
-| description   | string (optional) | Event description |
-| dateTime      | string | Event date and time (without timezone) |
-| location      | Location (optional) | Event location |
-| canceled      | boolean | Defines if the event is canceled |
+| Attributes | Type | Description |
+| :-- | :-: | :-- |
+| name | string | Event name |
+| description | string (optional) | Event description |
+| dateTime | string | Event date and time (without timezone) |
+| location | Location (optional) | Event location |
+| callLinkType | string (voice/video) (optional) | Event call type (voice or video) |
+| canceled | boolean | Defines if the event is canceled |
 
 ---
 
@@ -65,6 +59,7 @@ Event messages can only be sent to community groups.
     "location": {
       "name": "Location Name"
     },
+    "callLinkType": "voice | video",
     "canceled": false
   }
 }

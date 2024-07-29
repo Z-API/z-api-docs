@@ -1,13 +1,13 @@
 ---
 id: on-message-received
-title: Upon receiving 
+title: Upon receiving
 ---
 
 ## Concept
 
 This is the incoming message return webhook
 
-:::caution Attention 
+:::caution Attention
 
 Z-API does not accept webhooks that aren’t HTTPS
 
@@ -35,9 +35,9 @@ You can also update the route with the "sent by me" option enabled.
 
 ### Header
 
-|      Key       |            Value            |
-| :------------: |     :-----------------:     |
-|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
+|     Key      |                         Value                          |
+| :----------: | :----------------------------------------------------: |
+| Client-Token | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 
 ---
 
@@ -51,19 +51,19 @@ You can also update the route with the "sent by me" option enabled.
 
 ---
 
-### Administrative panel 
+### Administrative panel
 
 ![img](../../../../../img/received.png)
 
 ---
 
-## Returns from webhooks 
+## Returns from webhooks
 
 The possible returns of the **on-message-received** webhook are registered below:
 
 ## Response
 
-| Attributos| Type| Description |
+| Attributos | Type | Description |
 | :-- | :-: | :-- |
 | waitingMessage | boolean | Identifies if your message is in "Waiting for message" status |
 | phone | string | Phone number, or number of the group that sent the message. |
@@ -75,37 +75,37 @@ The possible returns of the **on-message-received** webhook are registered below
 | type | string | Instance event type, in this case it will be "ReceivedCallBack". |
 | photo | string | Photo url of the user who sent the message. |
 | text.message | string | Message text. |
-| image.caption | string | Photo’s caption  |
+| image.caption | string | Photo’s caption |
 | image.imageUrl | string | Photo’s URL |
-| image.thumbnailUrl | string | Photo’s URL thumbnail  |
+| image.thumbnailUrl | string | Photo’s URL thumbnail |
 | image.mimeType | string | Image’s Mime Type |
 | audio.mimeType | string | Audio’s MimeType |
 | audio.audioUrl | string | Audio’s URL |
 | video.caption | string | Video’s caption |
-| video.videoUrl | string | Video’s URL  |
+| video.videoUrl | string | Video’s URL |
 | video.mimeType | string | Video’s MimeType |
-| contact.displayName | string | Contact’s name  |
+| contact.displayName | string | Contact’s name |
 | contact.vCard | string | VCard containing the contact information. |
 | document.mimeType | string | Document’s MimeType |
 | document.fileName | string | Document’s name |
-| document.title | string | Document’s Title  |
-| document.pageCount | string | Number of pages in the document  |
+| document.title | string | Document’s Title |
+| document.pageCount | string | Number of pages in the document |
 | document.thumbnailUrl | string | URL of the document's thumbnail. |
 | document.documentUrl | string | Document’s URL |
 | location.thumbnailUrl | string | Location thumbnail url. |
-| location.longitude | float | Location’s longitude  |
+| location.longitude | float | Location’s longitude |
 | location.latitude | float | Location's latitude |
 | location.url | string | Localization’s URL |
 | location.name | string | Localization’s name |
-| location.address | string | Localizations’s address  |
+| location.address | string | Localizations’s address |
 | sticker.mimeType | string | Sticker’s MimeType |
-| sticker.stickerUrl | string | Stickers URL  |
+| sticker.stickerUrl | string | Stickers URL |
 
 ---
 
 ### 200
 
-### Text return example 
+### Text return example
 
 ```json
 {
@@ -135,7 +135,7 @@ The possible returns of the **on-message-received** webhook are registered below
     "title": "(optional) if the message has a title inserted by WhatsApp",
     "url": "(optional) if the message has a url linked to it. Example: catalog message has a button 'See catalog'",
     "thumbnailUrl": "(optional) if the message has a image thumbnail linked to it. Example: group invitation message has the image of group"
-  },
+  }
 }
 ```
 
@@ -210,11 +210,12 @@ The possible returns of the **on-message-received** webhook are registered below
       "phone": "5544999999999",
       "participant": null
     }
-  },
+  }
 }
 ```
 
 ### Example return text (Button List)
+
 ```json
 {
   "waitingMessage": false,
@@ -355,7 +356,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Audio feedback example 
+### Audio feedback example
 
 ```json
 {
@@ -464,7 +465,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Contact feedback example 
+### Contact feedback example
 
 ```json
 {
@@ -493,7 +494,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Document return example 
+### Document return example
 
 ```json
 {
@@ -570,7 +571,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Localization’s feedback example 
+### Localization’s feedback example
 
 ```json
 {
@@ -600,7 +601,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Template localization return example 
+### Template localization return example
 
 ```json
 {
@@ -645,7 +646,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Sticker feedback example 
+### Sticker feedback example
 
 ```json
 {
@@ -762,10 +763,7 @@ The possible returns of the **on-message-received** webhook are registered below
   "forwarded": false,
   "type": "ReceivedCallback",
   "notification": "NEWSLETTER_ADMIN_PROMOTE",
-  "notificationParameters": [
-    "5544999999999",
-    "ADMIN"
-  ],
+  "notificationParameters": ["5544999999999", "ADMIN"],
   "callId": null
 }
 ```
@@ -798,10 +796,7 @@ The possible returns of the **on-message-received** webhook are registered below
   "forwarded": false,
   "type": "ReceivedCallback",
   "notification": "NEWSLETTER_ADMIN_DEMOTE",
-  "notificationParameters": [
-    "5544999999999",
-    "SUBSCRIBER"
-  ],
+  "notificationParameters": ["5544999999999", "SUBSCRIBER"],
   "callId": null
 }
 ```
@@ -875,7 +870,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Cart return example 
+### Cart return example
 
 ```json
 {
@@ -953,8 +948,7 @@ The possible returns of the **on-message-received** webhook are registered below
         "name": "Others"
       }
     ]
-  },
- 
+  }
 }
 ```
 
@@ -988,7 +982,7 @@ The possible returns of the **on-message-received** webhook are registered below
         "name": "Z-API"
       }
     ]
-  },
+  }
 }
 ```
 
@@ -1206,7 +1200,7 @@ The possible returns of the **on-message-received** webhook are registered below
     "name": "Event name",
     "description": "Event description",
     "canceled": false,
-    "joinLink": "",
+    "joinLink": "https://call.whatsapp.com/video/v9123XNFG50L6iO78ndXNvKQr6b45a",
     "scheduleTime": 1716915653,
     "location": {}
   }
@@ -1270,7 +1264,7 @@ Notifications are WhatsApp messages that are based on WhatsApp preview message t
 
 This way, the notifications we receive are documented here, if you do not want to receive these notifications, you must ignore the message when it arrives with the notification attribute.
 
-### Examples 
+### Examples
 
 ```json
 case 'GROUP_PARTICIPANT_LEAVE':

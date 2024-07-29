@@ -20,10 +20,6 @@ title: Send Edit Event
 
 In this method, you can send edit messages for an Event.
 
-:::warning
-At the moment, we do not support generating links for calls.
-:::
-
 :::tip
 To edit the event, you need to resend the data that is already configured in the event, even if there are no changes. If this data is not sent, it may end up being removed from the event.
 :::
@@ -50,6 +46,7 @@ To edit the event, you need to resend the data that is already configured in the
 | description   | string (optional) | Event description |
 | dateTime      | string | Event date and time |
 | location      | Location (optional) | Event location |
+| callLinkType | string (voice/video) (optional) | Event call type (voice or video) |
 | canceled      | boolean | Defines if the event is canceled |
 
 ---
@@ -67,6 +64,7 @@ To edit the event, you need to resend the data that is already configured in the
     "location": {
       "name": "Location name"
     },
+    "callLinkType": "voice | video",
     "canceled": false
   }
 }

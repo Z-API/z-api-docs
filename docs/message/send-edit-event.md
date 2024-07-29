@@ -20,10 +20,6 @@ title: Editar evento
 
 Neste método você poderá enviar mensagens de edição de Evento.
 
-:::warning
-Até o momento, não temos suporte a geração de link para chamadas.
-:::
-
 :::tip
 Para editar o evento, é necessário reenviar os dados que já estão configurados no evento, mesmo que eles não possuam alteração. Caso esses dados não sejam enviados, eles podem acabar sendo removidos do evento.
 :::
@@ -50,6 +46,7 @@ Para editar o evento, é necessário reenviar os dados que já estão configurad
 | description   | string (opcional) | Descrição do evento |
 | dateTime      | string | Data e hora do evento |
 | location      | Location (opcional) | Localização do evento |
+| callLinkType | string (voice/video) (opcional) | Tipo de chamada do evento (voz ou video) |
 | canceled      | boolean | Define se o evento está cancelado |
 
 ---
@@ -67,6 +64,7 @@ Para editar o evento, é necessário reenviar os dados que já estão configurad
     "location": {
       "name": "Nome do lugar"
     },
+    "callLinkType": "voice | video",
     "canceled": false
   }
 }
