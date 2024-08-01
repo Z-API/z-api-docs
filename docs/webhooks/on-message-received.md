@@ -43,9 +43,10 @@ Também é possível atualizar a rota com a opção "enviadas por mim" habilitad
 
 ### Header
 
-|      Key       |            Value            |
-| :------------: |     :-----------------:     |
-|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+|     Key      |                            Value                            |
+| :----------: | :---------------------------------------------------------: |
+| Client-Token | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+
 ---
 
 #### Request Body
@@ -80,9 +81,9 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 | isGroup | boolean | Indica se o chat é um grupo |
 | isNewsletter | boolean | Indica se o chat é um canal |
 | phone | string | Número de telefone, ou do grupo que enviou a mensagem. |
-| fromMe| boolean | Indica se a mensagem enviada partiu do número conectado a API |
+| fromMe | boolean | Indica se a mensagem enviada partiu do número conectado a API |
 | participantPhone | string | Número de telefone do membro do grupo que enviou a mensagem. |
-| participantLid | string | ID do contado no whatsapp, do participante que enviou a mensagem dentro de um grupo|
+| participantLid | string | ID do contado no whatsapp, do participante que enviou a mensagem dentro de um grupo |
 | messageId | string | Idetificador da mensagem na conversa. |
 | status | string | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED). |
 | referenceMessageId | string | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
@@ -152,7 +153,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "title": "(opcional) em caso da mensagem possuir um título inserido pelo WhatsApp",
     "url": "(opcional) caso a mensagem possua um link ligado a ela. Exemplo: mensagem de catálogo possui um botão 'Ver catálogo'",
     "thumbnailUrl": "(opcional) caso a mensagem possua uma imagem de thumbnail ligada a ela. Exemplo: mensagem de convite de grupo possui a imagem do grupo"
-  },
+  }
 }
 ```
 
@@ -228,7 +229,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
       "phone": "5544999999999",
       "participant": null
     }
-  },
+  }
 }
 ```
 
@@ -262,7 +263,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "buttonsResponseMessage": {
     "buttonId": "1",
     "message": "Ótimo"
-  },
+  }
 }
 ```
 
@@ -297,7 +298,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "message": "Z-API Asas para sua imaginação",
     "title": "Z-API",
     "selectedRowId": "1"
-  },
+  }
 }
 ```
 
@@ -382,7 +383,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "width": 600,
     "height": 315,
     "viewOnce": true
-  },
+  }
 }
 ```
 
@@ -464,7 +465,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "audioUrl": "https://",
     "mimeType": "audio/ogg; codecs=opus",
     "viewOnce": true
-  },
+  }
 }
 ```
 
@@ -499,7 +500,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "mimeType": "video/mp4",
     "seconds": 13,
     "viewOnce": true
-  },
+  }
 }
 ```
 
@@ -613,7 +614,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "displayName": "Cesar Baleco",
     "vCard": "BEGIN:VCARD\nVERSION:3.0\nN:;nome;;;\nFN:nome\nTEL;type=CELL;type=VOICE;waid=5544999999999:+55 44 9999-9999\nEND:VCARD",
     "phones": ["5544999999999"]
-  },
+  }
 }
 ```
 
@@ -648,7 +649,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "title": "nome",
     "pageCount": 1,
     "fileName": "nome.pdf"
-  },
+  }
 }
 ```
 
@@ -728,7 +729,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "latitude": -99.9999999999999999,
     "address": "",
     "url": ""
-  },
+  }
 }
 ```
 
@@ -805,7 +806,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "sticker": {
     "stickerUrl": "https://",
     "mimeType": "image/webp"
-  },
+  }
 }
 ```
 
@@ -838,7 +839,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "videoUrl": "https://",
     "caption": "",
     "mimeType": "video/mp4"
-  },
+  }
 }
 ```
 
@@ -879,7 +880,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
       "status": "WAITING",
       "transactionStatus": "COLLECT_SUCCESS"
     }
-  },
+  }
 }
 ```
 
@@ -944,39 +945,39 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
       "status": "COMPLETE",
       "transactionStatus": "SUCCESS"
     }
-  },
+  }
 }
 ```
 
 ### Exemplo de retorno de ligação recebida
 
 ```json
-{  
-    "isStatusReply": false,
-    "senderLid": "81896604192873@lid",
-    "connectedPhone": "554499999999",
-    "waitingMessage": false,
-    "isGroup": false,
-    "isNewsletter": false,
-    "isEdit": false,
-    "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
-    "messageId": "1679655074-84",
-    "phone": "5544999999999",
-    "fromMe": false,
-    "momment": 1679661190000,
-    "status": "RECEIVED",
-    "chatName": "name",
-    "senderPhoto": "https://",
-    "senderName": "name",
-    "photo": "https://",
-    "broadcast": false,
-    "referenceMessageId": null,
-    "externalAdReply": null,
-    "forwarded": false,
-    "type": "ReceivedCallback",
-    "notification": "CALL_VOICE",
-    "notificationParameters": [],
-    "callId": "F44E0E2011E7C784BB9A4AC11749C436"
+{
+  "isStatusReply": false,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "isEdit": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "1679655074-84",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1679661190000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "CALL_VOICE",
+  "notificationParameters": [],
+  "callId": "F44E0E2011E7C784BB9A4AC11749C436"
 }
 ```
 
@@ -1040,9 +1041,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "forwarded": false,
   "type": "ReceivedCallback",
   "notification": "MEMBERSHIP_APPROVAL_REQUEST",
-  "notificationParameters": [
-    "5544999999999"
-  ],
+  "notificationParameters": ["5544999999999"],
   "callId": null
 }
 ```
@@ -1075,10 +1074,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "forwarded": false,
   "type": "ReceivedCallback",
   "notification": "NEWSLETTER_ADMIN_PROMOTE",
-  "notificationParameters": [
-    "5544999999999",
-    "ADMIN"
-  ],
+  "notificationParameters": ["5544999999999", "ADMIN"],
   "callId": null
 }
 ```
@@ -1111,10 +1107,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "forwarded": false,
   "type": "ReceivedCallback",
   "notification": "NEWSLETTER_ADMIN_DEMOTE",
-  "notificationParameters": [
-    "5544999999999",
-    "SUBSCRIBER"
-  ],
+  "notificationParameters": ["5544999999999", "SUBSCRIBER"],
   "callId": null
 }
 ```
@@ -1155,7 +1148,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "retailerId": "",
     "firstImageId": "",
     "title": "name"
-  },
+  }
 }
 ```
 
@@ -1245,8 +1238,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
         "name": "Outras"
       }
     ]
-  },
- 
+  }
 }
 ```
 
@@ -1281,7 +1273,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
         "name": "Z-API"
       }
     ]
-  },
+  }
 }
 ```
 
@@ -1499,7 +1491,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
     "name": "Nome do evento",
     "description": "Descrição do evento",
     "canceled": false,
-    "joinLink": "",
+    "joinLink": "https://call.whatsapp.com/video/v9123XNFG50L6iO79NddXNvKQr6bb3",
     "scheduleTime": 1716915653,
     "location": {}
   }
