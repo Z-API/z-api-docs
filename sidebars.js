@@ -170,6 +170,7 @@ module.exports = {
       'communities/remove-community-participant',
       'communities/add-community-admin',
       'communities/remove-community-admin',
+      'communities/community-settings',
       'communities/deactivate-community',
     ],
     Newsletter: [
