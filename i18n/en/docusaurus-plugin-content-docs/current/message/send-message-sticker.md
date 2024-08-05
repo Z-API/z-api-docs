@@ -65,6 +65,7 @@ In this [link] you can find everything that you need to know about formatting an
 | :-- | :-: | :-- |
 | messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
+| stickerAuthor | string | Sticker author name |
 
 ---
 
@@ -75,7 +76,8 @@ URL
 ```json
 {
   "phone": "5511999999999",
-  "sticker": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg"
+  "sticker": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg",
+  "stickerAuthor": ""
 }
 ```
 
