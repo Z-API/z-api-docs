@@ -64,6 +64,10 @@ Neste método você poderá enviar mensagens de texto com botões de ação, voc
 
 ---
 
+:::tip Observação
+Atualmente, ao enviar os três tipos de botões simultaneamente, o WhatsApp Web gera um erro, o que também ocorre ao utilizar a própria API da Meta. Uma alternativa é enviar apenas os botões do tipo CALL e URL juntos, e sempre enviar o botão do tipo REPLY separadamente.
+:::
+
 ## Request Body
 
 ```json
@@ -84,7 +88,18 @@ Neste método você poderá enviar mensagens de texto com botões de ação, voc
             "type": "URL",
             "url": "https://z-api.io",
             "label": "Visite nosso site"
-        },
+        }
+    ]
+}
+```
+
+```json
+{
+    "phone": "551199999999",
+    "message": "uma mensagem",
+    "title": "se quiser vincular um titulo",
+    "footer": "se quiser vincular um rodape top",
+    "buttonActions": [
         {
             "id": "3",
             "type": "REPLY",
@@ -137,5 +152,3 @@ Link para a response do webhook (ao receber)
 ## Code
 
 <iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-button-actions.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
-
-
