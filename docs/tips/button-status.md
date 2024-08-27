@@ -25,6 +25,13 @@ Essa documentação foi atualizada no dia 27/08/2024 então os fatos sobre o fun
 
 - Se o WhatsApp que está disparando a mensagem é business ou normal
 - Se a mensagem está sendo enviada para chat normal ou para um grupo.
+- Aceitar os termos de uso dos botões
+
+## Aceite dos termos de uso dos botões
+
+Para utilizar a funcionalidade dos botões, é necessário que você aceite os termos de uso, reconhecendo que está ciente de que futuras atualizações do WhatsApp podem causar instabilidades nessa funcionalidade.
+
+![img](../../img/buttons-terms.jpeg)
 
 ## Tipos de botões
 

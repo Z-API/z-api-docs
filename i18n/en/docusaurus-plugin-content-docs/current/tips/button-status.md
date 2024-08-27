@@ -23,6 +23,13 @@ This documentation was updated on August 27, 2024, so the facts about button fun
 
 - Whether the WhatsApp sending the message is business or regular.
 - Whether the message is being sent to an individual chat or a group.
+- Accept the terms of use of the buttons
+
+## Accept the terms of use of the buttons
+
+To use the button functionality, you must accept the terms of use, acknowledging that you are aware that future WhatsApp updates may cause instabilities in this functionality.
+
+![img](../../../../../img/buttons-terms.jpeg)
 
 ## Types of buttons
 
