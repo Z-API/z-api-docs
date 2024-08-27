@@ -1,6 +1,6 @@
 ---
-id: send-button-list
-title: Enviar texto com botões
+id: send-button-list-video
+title: Enviar botões com video
 ---
 
 ## Método
@@ -20,13 +20,11 @@ title: Enviar texto com botões
 Envios de botões atualmente se encontram disponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
 :::
 
-
 ## Conceituação
 
-Neste método você poderá enviar mensagens de texto com botões de ação, o conteudo do botão ex: SIM / Não, poderão ser escolhidos pelo usuário e será utilizado como resposta da mensagem enviada junto com os botões.
+Neste método você poderá enviar imagens com opções de botões de ação, o conteudo do botão ex: SIM / Não, poderão ser escolhidos pelo usuário e será utilizado como resposta da mensagem enviada junto com os botões.
 
-
-![image](../../img/send-button-list.jpeg)
+![image](../../img/SendButtonWithVideo.jpeg)
 
 ---
 
@@ -41,7 +39,6 @@ Neste método você poderá enviar mensagens de texto com botões de ação, o c
 | buttonList | buttonList | Objeto do tipo botão |
 
 :::important
-
  O atributo "message" não pode ser enviado vazio!
 :::
 
@@ -54,9 +51,10 @@ Neste método você poderá enviar mensagens de texto com botões de ação, o c
 
 ### Button List
 
-| Atributos |  Tipo  | Descrição                     |
-| :-------- | :----: | :---------------------------- |
-| buttons   | button | lista de botões a ser enviado |
+| Atributos |  Tipo  | Descrição                                |
+| :-------- | :----: | :-----------------------------------     |
+| video     | string | URL ou Base64 do video que será enviada  |
+| buttons   | button | lista de botões a ser enviado            |
 
 ### Button
 
@@ -79,6 +77,7 @@ Neste método você poderá enviar mensagens de texto com botões de ação, o c
   "phone": "5511999999999",
   "message": "Z-API é Bom ?",
   "buttonList": {
+    "video": "url do video",
     "buttons": [
       {
         "id": "1",
@@ -129,10 +128,10 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 Link para a response do webhook (ao receber)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto-lista-de-botão)
+[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-botão-com-video)
 
 ---
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-button-list.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-button-list-video.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>

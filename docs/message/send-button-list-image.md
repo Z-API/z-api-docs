@@ -16,8 +16,8 @@ title: Enviar botões com imagem
 |  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 ---
 
-:::danger Atenção
-Envios de botões atualmente se encontram indisponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
+:::caution Atenção
+Envios de botões atualmente se encontram disponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
 :::
 
 ## Conceituação
@@ -129,7 +129,7 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 Link para a response do webhook (ao receber)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto-lista-de-botão)
+[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-botão-com-imagem)
 
 ---
 

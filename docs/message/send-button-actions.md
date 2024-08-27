@@ -16,8 +16,8 @@ title: Enviar texto com botões de ação
 |  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
 ---
 
-:::danger Atenção
-Envios de botões atualmente se encontram indisponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
+:::caution Atenção
+Envios de botões atualmente se encontram disponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
 :::
 
 ## Conceituação
