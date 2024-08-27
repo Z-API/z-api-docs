@@ -17,8 +17,8 @@ title: Send buttons with images
 
 ---
 
-:::danger Attention
-Button shipments are currently unavailable. For more details, please access the topic [Button Functionality](https://developer.z-api.io/en/tips/button-status)
+:::caution Warning
+Button sending is currently available. For more details, visit the [Button Status](https://developer.z-api.io/en/tips/button-status) topic.
 :::
 
 
@@ -132,7 +132,7 @@ In case you receive 415 error, make sure to add the “Content-Type” of the ob
 
 Link for webhooks response (upon receiving)
 
-[Webhook](../webhooks/on-message-received#exemplo-de-retorno-de-texto-lista-de-botão)
+[Webhook](../webhooks/on-message-received#button-with-image-return-example)
 
 ---
 

@@ -17,8 +17,8 @@ title: Send text with action buttons
 
 ---
 
-:::danger Attention
-Button shipments are currently unavailable. For more details, please access the topic [Button Functionality](https://developer.z-api.io/en/tips/button-status)
+:::caution Warning
+Button sending is currently available. For more details, visit the [Button Status](https://developer.z-api.io/en/tips/button-status) topic.
 :::
 
 ## Concept
@@ -65,6 +65,10 @@ The WhatsApp has a specific link for copying texts. By using this link in the 'u
 
 ---
 
+:::tip Observation:
+Currently, when sending the three types of buttons simultaneously, WhatsApp Web generates an error, which also occurs when using Meta's own API. An alternative is to send only the CALL and URL buttons together, and always send the REPLY button separately.
+:::
+
 ## Request Body
 
 ```json
@@ -85,7 +89,18 @@ The WhatsApp has a specific link for copying texts. By using this link in the 'u
             "type": "URL",
             "url": "https://z-api.io",
             "label": "Visit our website"
-        },
+        }
+    ]
+}
+```
+
+```json
+{
+    "phone": "551199999999",
+    "message": "A message",
+    "title": "If you want to link a title",
+    "footer": "If you want to link a top footer",
+    "buttonActions": [
         {
             "id": "3",
             "type": "REPLY",

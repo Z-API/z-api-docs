@@ -17,8 +17,8 @@ title: Send texts with buttons
 
 ---
 
-:::danger Attention
-Button shipments are currently unavailable. For more details, please access the topic [Button Functionality](https://developer.z-api.io/en/tips/button-status)
+:::caution Warning
+Button sending is currently available. For more details, visit the [Button Status](https://developer.z-api.io/en/tips/button-status) topic.
 :::
 
 

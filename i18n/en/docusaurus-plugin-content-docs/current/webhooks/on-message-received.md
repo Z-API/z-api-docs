@@ -646,6 +646,151 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Template OTP button return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "9D968A5FA2880508C4",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708455444850,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "hydratedTemplate": {
+    "header": {},
+    "message": "Message text",
+    "footer": "",
+    "title": "",
+    "templateId": "",
+    "hydratedButtons": [
+      {
+        "urlButton": {
+          "displayText": "Copy code",
+          "url": "https://www.whatsapp.com/otp/code/?otp_type=COPY_CODE&code=otp123"
+        },
+        "index": 0
+      }
+    ]
+  }
+}
+```
+
+### Button with image return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "9D968A5FA2880508C4",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708455444850,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "buttonsMessage": {
+    "imageUrl": "Image URL",
+    "videoUrl": null,
+    "message": "Message text",
+    "buttons": [
+      {
+        "buttonId": "1",
+        "type": 1,
+        "buttonText": {
+          "displayText": "Button text 1"
+        }
+      },
+      {
+        "buttonId": "2",
+        "type": 1,
+        "buttonText": {
+          "displayText": "Button text 2"
+        }
+      }
+    ]
+  }
+}
+```
+
+### Button with video return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "9D968A5FA2880508C4",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708455444850,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "buttonsMessage": {
+    "imageUrl": null,
+    "videoUrl": "Video URL",
+    "message": "Message text",
+    "buttons": [
+      {
+        "buttonId": "1",
+        "type": 1,
+        "buttonText": {
+          "displayText": "Button text 1"
+        }
+      },
+      {
+        "buttonId": "2",
+        "type": 1,
+        "buttonText": {
+          "displayText": "Button text 2"
+        }
+      }
+    ]
+  }
+}
+```
+
 ### Sticker feedback example
 
 ```json
