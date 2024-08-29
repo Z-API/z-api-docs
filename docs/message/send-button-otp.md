@@ -38,15 +38,27 @@ Neste método você poderá enviar mensagens de texto com botão para copiar um 
 | message       | string        | Texto a ser enviado  |
 | code          | string        | Valor que será copiado quando o botão for clicado  |
 
+### Opcionais
+| Atributos   | Tipo          | Descrição |
+| :----------:| :-----------: | :-------- |
+| image       | string        | URL ou Base64 da imagem que irá acompanhar o botão |
+
 ---
 
 ## Request Body
 
 ```json
 {
-    "phone": "551199999999",
-    "message": "Texto da mensagem",
-    "code": "Valor a ser copiado"
+  "phone": "551199999999",
+  "message": "Texto da mensagem",
+  "code": "Valor a ser copiado"
+}
+
+{
+  "phone": "551199999999",
+  "message": "Texto da mensagem",
+  "code": "Valor a ser copiado",
+  "image": "URL da imagem"
 }
 ```
 

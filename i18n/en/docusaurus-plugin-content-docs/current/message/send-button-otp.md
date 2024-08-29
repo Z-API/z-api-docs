@@ -38,6 +38,12 @@ This method allows you to send text messages with a button to copy a value.
 | message       | string        | Text to be sent  |
 | code          | string        | Value to be copied when the button is clicked  |
 
+
+### Optional
+| Attributes  | Type          | Description |
+| :----------:| :-----------: | :-------- |
+| image       | string        | URL or Base64 of the image that will be sent with button |
+
 ---
 
 ## Request Body
@@ -47,6 +53,13 @@ This method allows you to send text messages with a button to copy a value.
   "phone": "551199999999",
   "message": "Message text",
   "code": "Value to be copied"
+}
+
+{
+  "phone": "551199999999",
+  "message": "Message text",
+  "code": "Value to be copied",
+  "image": "Image URL"
 }
 ```
 
