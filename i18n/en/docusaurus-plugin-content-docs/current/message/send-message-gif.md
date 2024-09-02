@@ -48,6 +48,8 @@ In this [link], you will find everything you need to know about file formats and
 | :-- | :-: | :-- |
 | messageId | String | Attribute used to reply to a message in the chat. Simply add the messageId of the message you want to reply to in this attribute |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs |
+| caption | String | Message that will be sent with the gif |
+
 ---
 
 ## Request Body
@@ -55,7 +57,8 @@ In this [link], you will find everything you need to know about file formats and
 ```json
 {
   "phone": "",
-  "gif": "https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/04/file_example_MP4_480_1_5MG.mp4"
+  "gif": "https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/04/file_example_MP4_480_1_5MG.mp4",
+  "caption": ""
 }
 ```
 
