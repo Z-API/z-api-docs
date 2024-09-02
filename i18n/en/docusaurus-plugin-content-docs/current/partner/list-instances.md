@@ -30,6 +30,7 @@ This method is used to list every instance created
 | Attributes|  Type  | Description                         |
 | :-------- | :----: | :--------------------------------   |
 | query     | number | Search by instance name and id      |
+| middleware   | string (web, mobile) | Search instance by type: web or mobile. Empty will bring all types |
 
 ---
 
@@ -43,11 +44,12 @@ This method is used to list every instance created
 
 #### Query params
 
-| key      |    value     | description |
-| :------- | :----------: | :---------- |
-| query    | 999999999999 |             |
-| pageSize |      1       |             |
-| page     |      1       |             |
+| key         |    value     | description |
+| :---------- | :----------: | :---------- |
+| query       | 999999999999 |             |
+| middleware  |     web      |             |
+| pageSize    |      1       |             |
+| page        |      1       |             |
 
 ---
 
@@ -86,6 +88,7 @@ This method is used to list every instance created
       "receivedStatusCallbackUrl": "",
       "phoneConnected": false,
       "whatsappConnected": false,
+      "middleware": "web",
       "name": "",
       "id": ""
     }

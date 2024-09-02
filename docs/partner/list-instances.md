@@ -28,9 +28,10 @@ Método utilizado para listar todas as instâncias criadas.
 
 ### Opcionais
 
-| Atributos |  Tipo  | Descrição                         |
-| :-------- | :----: | :-------------------------------- |
-| query     | number | Busca pelo nome e id da instancia |
+| Atributos    |  Tipo  | Descrição                         |
+| :----------- | :----: | :-------------------------------- |
+| query        | number | Busca pelo nome e id da instancia |
+| middleware   | string (web, mobile) | Busca pelo tipo da instancia: web ou mobile. Ao não enviar esse parametro, todas as instancias são retornadas |
 
 ---
 
@@ -44,11 +45,12 @@ Método utilizado para listar todas as instâncias criadas.
 
 #### Query params
 
-| key      |    value     | description |
-| :------- | :----------: | :---------- |
-| query    |     15       |
-| pageSize |      1       |             |
-| page     |      1       |             |
+| key         |    value     | description |
+| :---------- | :----------: | :---------- |
+| query       |     15       |             |
+| middleware  |     web      |             |
+| pageSize    |      1       |             |
+| page        |      1       |             |
 
 ---
 
@@ -87,6 +89,7 @@ Método utilizado para listar todas as instâncias criadas.
       "receivedStatusCallbackUrl": "",
       "phoneConnected": false,
       "whatsappConnected": false,
+      "middleware": "web",
       "name": "",
       "id": ""
     }
