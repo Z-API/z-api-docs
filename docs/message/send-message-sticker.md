@@ -64,6 +64,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 | :-- | :-: | :-- |
 | messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
+| stickerAuthor | string | Nome do autor do sticker |
 
 ---
 
@@ -74,7 +75,8 @@ URL
 ```json
 {
   "phone": "5511999999999",
-  "sticker": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg"
+  "sticker": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg",
+  "stickerAuthor": ""
 }
 ```
 
