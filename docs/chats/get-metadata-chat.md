@@ -46,8 +46,6 @@ Método
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/chats/5511999999999
 
-
-
 ## Response
 
 ### 200
@@ -60,8 +58,20 @@ Método
 | isMuted | string | 0 ou 1 indica se você silênciou ou não este chat |
 | isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |
 | profileThumbnail | string | URL da foto do chat **o Whatsapp apaga após 48h** |
+| isGroupAnnouncement   | boolean | true ou false indica se o chat é um grupo de avisos   |
+| isGroup   | boolean | true ou false indica se o chat é um grupo   |
+| notes        | object (Note) | Anotações atribuidas ao chat **(somente whatsapp business)** |
 | messagesUnread | integer | **descontinuado** |
 | about          | string  | Recado do perfil  |
+
+Object (Note)
+
+| Atributos       |  Tipo     | Descrição                                         |
+| :-------------- | :-----:   | :------------------------------------------------ |
+| id              | string    | Id da anotação                                    |
+| content         | string    | Texto da anotação                                 |
+| createdAt       | number    | Timestamp da criação da anotação                  |
+| lastUpdateAt    | number    | Timestamp da ultima atualização da anotação       |
 
 Exemplo
 
@@ -74,7 +84,15 @@ Exemplo
   "isMarkedSpam": "false",
   "profileThumbnail": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
   "messagesUnread": 0,
-  "about": "Recado do perfil"
+  "about": "Recado do perfil",
+  "isGroupAnnouncement": false,
+  "isGroup": false,
+  "notes": {
+    "id": "KlesU6f4f/Qd5d6VuAbvOMi31rg/F92owVe/xDYad1C=",
+    "content": "texto da anotação",
+    "createdAt": 1655953774000,
+    "lastUpdateAt": 1655953774000
+  }
 }
 ```
 

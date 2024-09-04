@@ -221,6 +221,7 @@ module.exports = {
       'business/delete-tag',
       'business/tags-add',
       'business/tags-remove',
+      'business/chats-notes',
       'business/save-catalog-config',
       'business/create-collection',
       'business/list-collections',
