@@ -691,6 +691,42 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Pix key button return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "9D968A5FA2880508C4",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708455444850,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "pixKeyMessage": {
+    "currency": "BRL",
+    "referenceId": "4PXRAHSIRDA",
+    "key": "pixkey",
+    "keyType": "EVP",
+    "merchantName": "Pix"
+  }
+}
+```
+
 ### Button with image return example
 
 ```json
