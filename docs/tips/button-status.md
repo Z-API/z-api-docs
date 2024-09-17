@@ -90,6 +90,13 @@ Para utilizar a funcionalidade dos botões, é necessário que você aceite os t
 - Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Grupo: **FUNCIONA**
 
+### [Botão de chave pix:](https://developer.z-api.io/message/send-button-pix)
+
+- Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
+- Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
+- Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
+- Enviando de WhatsApp Business para Grupo: **FUNCIONA**
+
 ## Resumo
 
 Em resumo, o uso dos recursos de botões no WhatsApp está sujeito a problemas. tffTanto para o WhatsApp normal quanto para o WhatsApp Business, há dificuldades no envio desses tipos de botões em chats normais e grupos. Lista de opções para chat normal funcionam. Se você estiver usando o WhatsApp Business, a única coisa que está funcionando é a lista de opções para chat normal, com problemas para grupos.

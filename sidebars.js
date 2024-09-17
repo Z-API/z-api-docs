@@ -91,6 +91,7 @@ module.exports = {
       'message/send-button-list-video',
       'message/send-option-list',
       'message/send-button-otp',
+      'message/send-button-pix',
       'message/delete-message',
       'message/read-message',
       'message/reply-message',
