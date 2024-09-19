@@ -34,8 +34,8 @@ Method responsible for sending an image to your status, remember that statuses d
 ### Opcionais
 
 | Attributes | Type | Description |
-| :-------- | :--: | :-------- |
-|           |      |           |
+| :-------- | :----: | :-------- |
+| caption   | string | Caption that will be sent along with the image in the status |
 
 ---
 
@@ -52,6 +52,11 @@ Method
 ```json
 {
   "image": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg"
+}
+
+{
+  "image": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg",
+  "caption": "Caption text"
 }
 ```
 

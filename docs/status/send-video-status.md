@@ -1,13 +1,13 @@
 ---
-id: send-image-status
-title: Enviando imagem status
+id: send-video-status
+title: Enviando video status
 ---
 
 ## Método
 
-#### /send-image-status
+#### /send-video-status
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-image-status
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-video-status
 
 ### Header
 
@@ -18,7 +18,11 @@ title: Enviando imagem status
 
 ## Conceituação
 
-Método responsavel por enviar uma imagem para seu status, lembre-se que os status somem após 24 horas.
+Método responsável por enviar um video para seu status, lembre-se que os status somem após 24 horas.
+
+:::caution
+O tamanho máximo para videos nos status é de 10mb
+:::
 
 ---
 
@@ -28,13 +32,13 @@ Método responsavel por enviar uma imagem para seu status, lembre-se que os stat
 
 | Atributos |  Tipo  | Descrição                    |
 | :-------- | :----: | :--------------------------- |
-| image     | String | Link da imagem ou seu Base64 |
+| video     | String | Link do video ou seu Base64 |
 
 ### Opcionais
 
 | Atributos | Tipo | Descrição |
 | :-------- | :--: | :-------- |
-| caption   | string  | Legenda que irá junto com a imagem para o status |
+|  caption  | string | Legenda que irá junto com o vídeo para o status |
 
 ---
 
@@ -44,26 +48,20 @@ Método responsavel por enviar uma imagem para seu status, lembre-se que os stat
 
 Método
 
-`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-image-status
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-video-status
 
 #### Body
 
 ```json
 {
-  "image": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg"
+  "video": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4"
 }
 
 {
-  "image": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg",
+  "video": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4",
   "caption": "texto da legenda"
 }
 ```
-
-:::tip Enviar imagem Base64
-
-Se você tem duvidas em como enviar uma imagem Base64 acesse o tópico mensagens "Enviar Imagem", lá você vai encontrar tudo que precisa saber sobre envio neste formato.
-
-:::
 
 ---
 
@@ -95,4 +93,4 @@ Neste caso certifique que esteja enviando o corretamente a especificação do m�
 
 ## Code
 
-<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-image-status.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
+<iframe src="//api.apiembed.com/?source=https://raw.githubusercontent.com/Z-API/z-api-docs/main/json-examples/send-video-status.json&targets=all" frameborder="0" scrolling="no" width="100%" height="500px" seamless></iframe>
