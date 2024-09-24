@@ -63,7 +63,19 @@ Method
 | isMuted | string | 0 or 1 indicates if you have silenced or not a certain chat |
 | isMarkedSpam | boolean | True or false indicates if you have marked a chat as spam |
 | profileThumbnail | string | Chat photo URL that **Whatsapp deletes after 48h** |
+| isGroupAnnouncement   | boolean | true or false indicates if the chat is an announcement group |
+| isGroup   | boolean | true or false indicates if the chat is a group  |
+| notes        | object (Note) | Chat notes **(only whatsapp business)** |
 | messagesUnread | integer | **discontinued** |
+
+Object (Note)
+
+| Atributos       |  Tipo     | Descrição                                         |
+| :-------------- | :-----:   | :------------------------------------------------ |
+| id              | string    | Note id                                    |
+| content         | string    | Note text                                 |
+| createdAt       | number    | Note creation timestamp                  |
+| lastUpdateAt    | number    | Note last update timestamp       |
 
 Example
 
@@ -77,7 +89,9 @@ Example
     "isMuted": "0",
     "isMarkedSpam": "false",
     "profileThumbnail": null,
-    "messagesUnread": 0
+    "messagesUnread": 0,
+    "isGroupAnnouncement": false,
+    "isGroup": false,
   },
   {
     "name": "Z-api - Team",
@@ -87,7 +101,15 @@ Example
     "isMuted": "0",
     "isMarkedSpam": "false",
     "profileThumbnail": "https://pps.whatsapp.net/v/t61.24694-24/170931400_212202650511993_3423338295209291992_n.jpg?ccb=11-4&oh=4b96b3bf7114122667f80d021b194f2c&oe=60C179E2",
-    "messagesUnread": 0
+    "messagesUnread": 0,
+    "isGroupAnnouncement": false,
+    "isGroup": false,
+    "notes": {
+      "id": "KlesU6f4f/Qd5d6VuAbvOMi31rg/F92owVe/xDYad1C=",
+      "content": "note text",
+      "createdAt": 1655953774000,
+      "lastUpdateAt": 1655953774000
+    }
   }
 ]
 ```
