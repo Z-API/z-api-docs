@@ -201,6 +201,9 @@ module.exports = {
       'status/introduction',
       'status/send-text-status',
       'status/send-image-status',
+      'status/reply-status-text',
+      'status/reply-status-gif',
+      'status/reply-status-sticker',
     ],
     'Message queue': [
       'queue/introduction',
