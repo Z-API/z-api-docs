@@ -49,7 +49,7 @@ Este webhook será chamado sempre que nosso serviço identificar alguma indispon
 
 - Não deixe de ler nossa sessão dicas, lá você vai encontrar alguns tópicos de como melhorar sua conexão com Z-API e ter mais qualidade no serviço.
 
-- Você não precisa configurar todos webhookds, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com Z-API
+- Você não precisa configurar todos webhooks, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com Z-API
 
 :::
 
