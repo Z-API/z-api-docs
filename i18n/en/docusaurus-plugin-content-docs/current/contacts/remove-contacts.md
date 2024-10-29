@@ -7,7 +7,7 @@ title: Remove Contacts
 
 #### /contacts/remove
 
-`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contac/remove
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts/remove
 
 ### Header
 

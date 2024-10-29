@@ -7,7 +7,7 @@ title: Add Contatos
 
 #### /contacts/add
 
-`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contac/add
+`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts/add
 
 ### Header
 
