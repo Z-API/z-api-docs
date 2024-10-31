@@ -1,13 +1,13 @@
 ---
 id: add-contacts
-title: Add Contatos
+title: Add Contacts
 ---
 
 ## Method
 
 #### /contacts/add
 
-`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts/add
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/add
 
 ### Header
 
@@ -23,17 +23,35 @@ This method is responsible for saving WhatsApp contacts to your phone's contact 
 ---
 
 :::caution About This Feature
-The method for adding contacts to the WhatsApp list will only work for accounts that have already received the necessary update. Ensure that your **WhatsApp** account has received this update before using this feature. Otherwise, the operation will not be completed successfully.
+
+The method for adding contacts to the WhatsApp list will only work for accounts that have already received the necessary update. Make sure your WhatsApp account has received the update before using this feature; otherwise, the operation will not be completed successfully.
+
+Additionally, you must allow WhatsApp to add contacts directly on your device. To do this, go to your app’s privacy settings and adjust the permissions so that WhatsApp can access and modify your contacts.
+
+See the example in the images below: 
 :::
+
+<details>
+ <summary>Click here to display the images.</summary>
+
+![img](../../../../../img/add-contacts1.jpeg) 
+![img](../../../../../img/add-contacts2.jpeg)
+</details>
 
 ## Attributes
 
 ### Required
 
+| Attributes | Type   | Description                                             |
+| :--------- | :----: | :------------------------------------------------------ |
+| firstName  | string | First name of the contact to be added to the address book |
+| phone      | string | Phone number of the contact to be added to the address book | 
+
+### Optionals 
+
 | Attributes | Type   | Description |
-| :--        | :-:    | :--         |
-| firstName  | string | Name of the contact to be added to the address book |
-| phone      | string | Number of the contact to be added to the address book |
+| :--------  | :----: | :-------- |
+| lastName   | string | Last name of the contact to be added to the address book  |
 
 ---
 
@@ -43,10 +61,12 @@ The method for adding contacts to the WhatsApp list will only work for accounts 
 [
   {
     "firstName": "contact 1",
+    "lastName": "name 2",
     "phone": "554499999999"
   },
   {
     "firstName": "contact 2",
+    "lastName": "name 2",
     "phone": "554499998888"
   }
 ]
@@ -60,7 +80,6 @@ The method for adding contacts to the WhatsApp list will only work for accounts 
 | :-- | :-- | :--   |
 | success | boolean |  |
 | errors  | array   |  |
-
 
 Exemplo
 

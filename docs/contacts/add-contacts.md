@@ -7,7 +7,7 @@ title: Adicionar Contatos
 
 #### /contacts/add
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/add
+`POST` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/add
 
 ### Header
 
@@ -24,16 +24,33 @@ Este método é reponsavel por salvar os contatos do Whatsapp em sua lista de co
 
 :::caution Sobre Esse recurso
 O método para adicionar contatos à lista do WhatsApp só funcionará para contas que já receberam a atualização necessária. Certifique-se de que sua conta **do Whatsapp** tenha recebido a atualização antes de utilizar este recurso. Caso contrário, a operação não será concluída com sucesso.
+
+Além disso, é necessário permitir que o WhatsApp adicione contatos diretamente no celular. Para isso, vá até as configurações de privacidade do seu aplicativo e ajuste as permissões de forma que o WhatsApp possa acessar e modificar seus contatos.
+
+**Veja o exemplo nas imagens abaixo:**
 :::
+
+<details>
+ <summary>Clique aqui para exibir as imagens</summary>
+
+![img](../../img/add-contacts1.jpeg) 
+![img](../../img/add-contacts2.jpeg)
+</details>
 
 ## Atributos
 
 ### Obrigatórios
 
+| Atributos | Tipo   | Descrição                                            |
+| :-------- | :----: | :--------------------------------------------------- |
+| firstName | string | Nome do contato que vai ser adicionado na agenda     |
+| phone     | string | Número do contato que vai ser adicionado na agenda   |
+
+### Opcionais
+
 | Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| firstName | string | Nome do contato que vai ser adicionado na agenda |
-| phone     | string | Número do contato que vai ser adicionado na agenda |
+| :-------- | :--: | :-------- |
+| lastName  | string | Sobrenome do contato que vai ser adicionado na agenda |
 
 ---
 
@@ -43,10 +60,12 @@ O método para adicionar contatos à lista do WhatsApp só funcionará para cont
 [
   {
     "firstName": "Contato 1",
+    "lastName": "Sobrenome 1",
     "phone": "554499999999"
   },
   {
     "firstName": "Contato 2",
+    "lastName": "Sobrenome 2",
     "phone": "554499998888"
   }
 ]

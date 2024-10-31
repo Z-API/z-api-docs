@@ -7,7 +7,7 @@ title: Remover Contatos
 
 #### /contacts/remove
 
-`GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/remove
+`DELETE` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/remove
 
 ### Header
 

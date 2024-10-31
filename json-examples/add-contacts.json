@@ -16,6 +16,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "[{\"firstName\": \"Contato 1\", \"phone\": \"554499999999\"}, {\"firstName\": \"Contato 2\", \"phone\": \"554499998888\"}]"
+        "text": "[{\"firstName\": \"Contato 1\", \"lastName\": \"Sobrenome 1\", \"phone\": \"554499999999\"}, {\"firstName\": \"Contato 2\", \"lastName\": \"Sobrenome 2\", \"phone\": \"554499998888\"}]"
     }
 }

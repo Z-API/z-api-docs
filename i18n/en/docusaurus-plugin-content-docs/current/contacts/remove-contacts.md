@@ -7,7 +7,7 @@ title: Remove Contacts
 
 #### /contacts/remove
 
-`GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts/remove
+`DELETE` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/contacts/remove
 
 ### Header
 
@@ -45,7 +45,6 @@ The method for removing contacts from the WhatsApp list will only work for accou
 | :-- | :-- | :--   |
 | success | boolean |  |
 | errors  | array   |  |
-
 
 Example
 
