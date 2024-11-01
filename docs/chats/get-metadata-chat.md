@@ -18,7 +18,7 @@ title: Pegar metadata do Chat
 
 ## Conceituação
 
-Este método é reponsavel por retornar as informações do metadata de um chat.
+Este método é responsável por retornar as informações do metadata de um chat.
 
 ---
 
@@ -59,7 +59,7 @@ Método
 | lastMessageTime | string | Timestamp com a data e hora da ultima ingeração com o chat |
 | isMuted | string | 0 ou 1 indica se você silênciou ou não este chat |
 | isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |
-| profileThumbnail | string | URL da foto do chat **o Whatsapp apaga após 48h** |
+| profileThumbnail | string | URL da foto do chat **o WhatsApp apaga após 48h** |
 | messagesUnread | integer | **descontinuado** |
 | about          | string  | Recado do perfil  |
 

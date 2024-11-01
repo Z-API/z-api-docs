@@ -19,7 +19,7 @@ title: Send Event
 
 ## Concept
 
-In this method, you can send messages of type Event.
+In this method, you can send messages of type Event. You can only send this type to a group.
 
 ![image](../../../../../img/SendingEvent.jpeg)
 

@@ -19,7 +19,7 @@ title: Get products
 
 ## Concept
 
-With this method you will be able to get the products from a Whatsapp Business catalag 
+With this method you will be able to get the products from a WhatsApp Business catalag 
 
 
 

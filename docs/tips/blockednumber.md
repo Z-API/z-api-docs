@@ -3,7 +3,7 @@ id: blockednumber
 title: Bloqueios e Banimentos
 ---
 
-:::caution Existe alguma possibilidade do Whatsapp bloquear meu número?
+:::caution Existe alguma possibilidade do WhatsApp bloquear meu número?
 
 **SIM, A POSSIBILIDADE EXISTE, E É REAL.**
 
@@ -15,14 +15,14 @@ title: Bloqueios e Banimentos
 
 ### Boas práticas!
 
-Criamos este tópico para compartilhar um pouco de tudo que aprendemos sobre boas práticas afim de evitar aborrecimentos com bloqueios e banimentos no Whatsapp.
+Criamos este tópico para compartilhar um pouco de tudo que aprendemos sobre boas práticas afim de evitar aborrecimentos com bloqueios e banimentos no WhatsApp.
 
 Gostaríamos de iniciar fazendo a seguinte reflexão com você: É bem provável que você receba diariamente vários SMS com publicidades de lojas, promoções, operadoras de telefonia e por aí vai.
-Agora pense, e pelo Whatsapp quantas mensagens deste tipo você recebe? Provavelmente nenhuma ou pouquíssimas não é mesmo? Mesmo assim caso você receba o WhatsApp permite você marcar como spam e até mesmo bloquear o contato.
+Agora pense, e pelo WhatsApp quantas mensagens deste tipo você recebe? Provavelmente nenhuma ou pouquíssimas não é mesmo? Mesmo assim caso você receba o WhatsApp permite você marcar como spam e até mesmo bloquear o contato.
 
 # O WHATSAPP NÃO PERMITE SPAM!
 
-O Whatsapp é muito rigoroso quando o assunto é envio de spam e por isso damos mais atenção para ele do que para o SMS. Por que deixamos vários SMS acumularem e não conseguimos deixar de olhar para o celular imediatamente ao receber um Whatsapp? Pois sabemos que recebemos um Whatsapp de algum contato conhecido e raramente recebemos promoções pelo mesmo.
+O WhatsApp é muito rigoroso quando o assunto é envio de spam e por isso damos mais atenção para ele do que para o SMS. Por que deixamos vários SMS acumularem e não conseguimos deixar de olhar para o celular imediatamente ao receber um WhatsApp? Pois sabemos que recebemos um WhatsApp de algum contato conhecido e raramente recebemos promoções pelo mesmo.
 
 ---
 
@@ -30,7 +30,7 @@ O Whatsapp é muito rigoroso quando o assunto é envio de spam e por isso damos 
 
 Quantidade é algo importante sim, mas não é só sobre a quantidade enviada, o fator _PARA QUEM_ muitas vezes é o ponto chave.
 
-Sempre em nossas conversas utilizamos o case de um dos nossos clientes mais antigos, que hoje envia mensagens promocionais pelo Whatsapp para mais de 80 mil pessoas diariamente e nunca teve seu número bloqueado. Quando o procuramos e indagamos sobre como ele conseguia tal façanha, ele gentilmente compartilhou a seguinte técnica:
+Sempre em nossas conversas utilizamos o case de um dos nossos clientes mais antigos, que hoje envia mensagens promocionais pelo WhatsApp para mais de 80 mil pessoas diariamente e nunca teve seu número bloqueado. Quando o procuramos e indagamos sobre como ele conseguia tal façanha, ele gentilmente compartilhou a seguinte técnica:
 
 1.	Fazer maturação do chip: Isso significa usar o número de telefone no WhatsApp de maneira normal antes de começar a enviar muitas mensagens através do Z-API.
 2.	Interagir pelo celular ou WhatsApp Web antes de conectar na Z-API: Isso ajuda a mostrar para o WhatsApp que você é um usuário real e não um bot.

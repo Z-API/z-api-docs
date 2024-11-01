@@ -92,7 +92,7 @@ Old way -
   {
     "phone": "5511999999999-1623281429",
     "owner": "5511999999999",
-    "subject": "My group on Whatsapp",
+    "subject": "My group on WhatsApp",
     "creation": 1588721491000,
     "participants": [
       {

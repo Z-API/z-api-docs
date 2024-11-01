@@ -13,7 +13,7 @@ title: Atualizar descrição do perfil
 
 ## Conceituação
 
-Este método é reponsavel alterar a sua descrição de perfil no Whatsapp
+Este método é responsável por alterar a sua descrição de perfil no WhatsApp
 
 
 ---

@@ -75,11 +75,9 @@ After analyzing the main points, you can go straight to what is the most interes
 | Permission is not required | Subscriber permission is required for incoming messages |
 | You can start immediately  | To connect you will need to go through a bureaucratic process, which might take at least a month |
 | You can use any amount of cellphone numbers | Only one phone number per company |
-| Support 24/7 via e-mail and chat | Limited support (support is paid through partners of the solution) |
+| Support 24/7 via e-mail and chat with chatbot + our team | Limited support (support is paid through partners of the solution) |
 | Possible to make any modification or integration | Incapable of influencing or adding functionality to the service  |
 | You can have any name in your account | Can’t change the name of your account (it goes by business name) |
 | It can work anywhere around the world | It is not possible to work with WhatsApp’s API, for example Crimea,iran and several other countries |
 | Payment is in REAL | Payments are in Dollars |
-| Support until 10pm in at up to 2 hours | Official support can take up to 48 hours to respond. |
-| A tool that is totally Brazilian, 5+ million messages a day | Suporte em até 48 horas para resposta por e-mail
-| Support in Portuguese | 
+| A tool that is totally Brazilian, 5+ million messages a day | Support within 48 hours for email response

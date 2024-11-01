@@ -21,7 +21,7 @@ These endpoints are for changing the URL that the instance will call when the ev
 
 According to Google, a Webhook is a resource used on the internet for one application to communicate with another, providing real-time data whenever an event happens. This way, the two systems exchange information without any external action being necessary.
 
-If you are integrating with Z-API and need to receive information via Whatsapp, it is necessary to provide these endpoints in your application so that we can notify you about everything that happens on your WhatsApp. That is, every time the connected number receives an interaction, we will make a request with the POST method to the previously configured URL. (For each request there is a specific JSON body)
+If you are integrating with Z-API and need to receive information via WhatsApp, it is necessary to provide these endpoints in your application so that we can notify you about everything that happens on your WhatsApp. That is, every time the connected number receives an interaction, we will make a request with the POST method to the previously configured URL. (For each request there is a specific JSON body)
 
 ---
 
@@ -29,7 +29,7 @@ If you are integrating with Z-API and need to receive information via Whatsapp, 
 
 #### Delivery 
 
-Responsible for notifying you that your message has been delivered to Whatsapp. However this does not necessarily mean that your contact has received it. For reading and receiving information you will need to look at the webhook’s status.
+Responsible for notifying you that your message has been delivered to WhatsApp. However this does not necessarily mean that your contact has received it. For reading and receiving information you will need to look at the webhook’s status.
 
 #### Receive
 

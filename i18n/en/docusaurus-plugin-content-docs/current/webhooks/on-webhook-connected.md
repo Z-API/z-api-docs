@@ -7,7 +7,7 @@ title: When connecting
 
 This is the mobile connection return webhook with Z-api
 
-This webhook is triggered when the Z-API is connected to Whatsapp, this can happen when reading the qr-code, when restarting the instance, etc.
+This webhook is triggered when the Z-API is connected to WhatsApp, this can happen when reading the qr-code, when restarting the instance, etc.
 
 :::caution Attention
 

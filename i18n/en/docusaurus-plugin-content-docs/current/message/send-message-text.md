@@ -46,7 +46,7 @@ What you need to know is that it is a normal ASCII character. Just like there ar
 
 To test this, just copy an emoji and paste into your text! You can use this one 🤪  if you’d like
 
-::: Exemplo no Whatsapp
+::: Exemplo no WhatsApp
 
 ![image](../../../../../img/Plaintext.jpeg)
 
@@ -67,7 +67,7 @@ To test this, just copy an emoji and paste into your text! You can use this one 
 | :-- | :-: | :-- |
 | delayMessage | number |In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs|
 | delayTyping  | number | In this attribute, a delay is added to the message. You can choose from a range of 1 to 15 seconds, which indicates how many seconds it will remain in the "Typing..." status. (For example, "delayTyping": 5). The default delay if not specified is 0.|
-| editMessageId | string | This attribute allows you to edit previously sent messages on WhatsApp. Use the message ID and the new content in the JSON to make changes. |
+| editMessageId | string | This attribute allows you to edit previously sent messages on WhatsApp. Use the message ID and the new content in the JSON to make changes. It's necessary to configure the webhook before edit. |
 
 ---
 

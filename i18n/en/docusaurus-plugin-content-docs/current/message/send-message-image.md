@@ -68,7 +68,7 @@ In this [link] you can find everything that you need to know about formatting an
 | caption | string | Image's title |
 | messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
-| viewOnce | string | Defines wether it will be a view once message or not |
+| viewOnce | boolean | Defines wether it will be a view once message or not |
 
 ---
 

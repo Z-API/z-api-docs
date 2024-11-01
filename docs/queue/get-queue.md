@@ -18,7 +18,7 @@ title: Fila
 
 ## Conceituação
 
-Este método é reponsavel por retornar todas mensagens que estão em sua fila aguardando para ser processada.
+Este método é responsável por retornar todas mensagens que estão em sua fila aguardando para ser processada.
 
 ---
 

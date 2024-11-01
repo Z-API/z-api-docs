@@ -208,7 +208,7 @@ module.exports = {
       'queue/delete-queue',
       'queue/delete-queue-id',
     ],
-    'Whatsapp Business': [
+    'WhatsApp Business': [
       'business/introduction',
       'business/edit-product',
       'business/get-products',

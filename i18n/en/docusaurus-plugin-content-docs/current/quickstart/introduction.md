@@ -70,7 +70,7 @@ For an example, follow the steps of sending simple text:
 
 ## Limits
 
-Start with this topic because it is very common for people to ask about what the limits of delivery are with Z-API. we **DON'T HAVE LIMITS** for number of messages sent! However, it is important that you understand you are using a WhatsApp web session. Therefore, the pattern of usage needs to be compatible. Furthermore, we always recommend that you intently read the politics established by Whatsapp web on their official website https://www.whatsapp.com/legal. 
+Start with this topic because it is very common for people to ask about what the limits of delivery are with Z-API. we **DON'T HAVE LIMITS** for number of messages sent! However, it is important that you understand you are using a WhatsApp web session. Therefore, the pattern of usage needs to be compatible. Furthermore, we always recommend that you intently read the politics established by WhatsApp web on their official website https://www.whatsapp.com/legal. 
 
 
 ---

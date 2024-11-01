@@ -13,7 +13,7 @@ title: Atualizar nome do perfil
 
 ## Conceituação
 
-Este método é reponsavel alterar o seu nome de perfil no Whatsapp
+Este método é responsável por alterar o seu nome de perfil no WhatsApp
 
 
 ---

@@ -18,7 +18,7 @@ title: Criar comunidade
 
 ## Conceituação
 
-Antes de utilizar esse recurso, é importante verificar se o aplicativo do Whatsapp no seu celular já possui compatibilidade com as comunidades, caso já esteja disponível você pode utilizar essa API para criar novas comunidades.
+Antes de utilizar esse recurso, é importante verificar se o aplicativo do WhatsApp no seu celular já possui compatibilidade com as comunidades, caso já esteja disponível você pode utilizar essa API para criar novas comunidades.
 
 ## Atributos
 

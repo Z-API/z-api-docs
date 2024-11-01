@@ -18,7 +18,7 @@ title: Send catalog
 
 ## Concept
 
-In this method, you can send messages with a link to your catalog. The catalog feature is only available for **business** WhatsApp accounts. It is also necessary for the account to have products and a configured catalog. Operations related to products and collections can be found in the **[Whatsapp Business](../business/edit-product.md)** section of our documentation.
+In this method, you can send messages with a link to your catalog. The catalog feature is only available for **business** WhatsApp accounts. It is also necessary for the account to have products and a configured catalog. Operations related to products and collections can be found in the **[WhatsApp Business](../business/edit-product.md)** section of our documentation.
 
 ![image](../../../../../img/catalog-message.jpeg)
 

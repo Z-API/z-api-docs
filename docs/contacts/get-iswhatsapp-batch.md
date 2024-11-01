@@ -18,14 +18,14 @@ title: Validar números em lote
 
 ## Conceituação
 
-Diferente do método anterior que valida individualmente se um número possui Whatsapp através de uma requisição GET, essa API oferece uma verificação em lote.
+Diferente do método anterior que valida individualmente se um número possui WhatsApp através de uma requisição GET, essa API oferece uma verificação em lote.
 
 :::caution Atenção
 Limite por Requisição: O número máximo de validações em lote por requisição é de 50 mil números.
 :::
 
 :::important Importante
-Este método continua a ser a escolha ideal quando você precisa verificar se um número possui Whatsapp, especialmente útil para a validação de formulários. No entanto, é crucial observar que não é recomendado utilizar esta API para verificar a existência do número antes de enviar uma mensagem. O Z-API já realiza essa validação automaticamente a cada mensagem enviada, e o uso duplicado deste método pode resultar em problemas. 
+Este método continua a ser a escolha ideal quando você precisa verificar se um número possui WhatsApp, especialmente útil para a validação de formulários. No entanto, é crucial observar que não é recomendado utilizar esta API para verificar a existência do número antes de enviar uma mensagem. O Z-API já realiza essa validação automaticamente a cada mensagem enviada, e o uso duplicado deste método pode resultar em problemas. 
 :::
 
 ---
@@ -63,7 +63,7 @@ Método
 
 | Atributos   | Tipo    | Descrição |
 | :------     | :----   | :------   |
-| exists      | boolean | true para caso exista e false para casos onde o número não tenha Whatsapp |
+| exists      | boolean | true para caso exista e false para casos onde o número não tenha WhatsApp |
 | inputPhone  | string  | Número enviado na requisição, podendo conter ou não o nono dígito.|
 | outputPhone | string  | Número formatado de acordo com a resposta do WhatsApp, refletindo o cadastro no WhatsApp e incluindo o nono dígito, se houver. |
  

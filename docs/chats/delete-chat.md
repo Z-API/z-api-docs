@@ -18,7 +18,7 @@ title: Deletar Chats
 
 ## Conceituação
 
-Este método é reponsavel por deletar seus chats.
+Este método é responsável por deletar seus chats.
 
 ---
 

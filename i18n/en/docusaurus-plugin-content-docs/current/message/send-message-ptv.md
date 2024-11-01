@@ -19,6 +19,8 @@ title: Send PTV
 
 ## Concept
 
+The acronym PTV comes from "Pre-Recorded Transfer Video".
+
 Method responsible for sending PTV to your chats. You can work with PTV in 2 ways:
 
 By Link: Where you have a video hosted somewhere on the internet and send only the link to it.

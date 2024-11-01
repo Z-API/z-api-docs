@@ -4,7 +4,7 @@ title: Atualizar imagem de perfil
 ---
 ## Conceituação
 
-Este método é reponsavel alterar a sua imagem de perfil no Whatsapp
+Este método é responsável por alterar a sua imagem de perfil no WhatsApp
 
 ---
 

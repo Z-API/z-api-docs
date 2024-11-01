@@ -18,7 +18,7 @@ title: Mutar chats
 
 ## Conceituação
 
-Este método é reponsavel por mutar e desmutar seus chats.
+Este método é responsável por mutar e desmutar seus chats.
 
 ---
 

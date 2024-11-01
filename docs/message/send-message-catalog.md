@@ -18,7 +18,7 @@ title: Enviar catálogo
 
 ## Conceituação
 
-Neste método você poderá enviar mensagens com o link para o seu catálogo. O recurso de catálogos está disponível apenas para contas **business** do WhatsApp. É necessário também, que a conta possua produtos e um catálogo configurado. Operações realacionadas a produtos e coleções podem ser encontradas na sessão **[Whatsapp Business](../business/edit-product.md)** da nossa documentação.
+Neste método você poderá enviar mensagens com o link para o seu catálogo. O recurso de catálogos está disponível apenas para contas **business** do WhatsApp. É necessário também, que a conta possua produtos e um catálogo configurado. Operações realacionadas a produtos e coleções podem ser encontradas na sessão **[WhatsApp Business](../business/edit-product.md)** da nossa documentação.
 
 ![image](../../img/catalog-message.jpeg)
 

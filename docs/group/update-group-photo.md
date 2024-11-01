@@ -18,7 +18,7 @@ title: Atualizar imagem do grupo
 
 ## Conceituação
 
-Este método é reponsavel alterar a imagem de um grupo já existente.
+Este método é responsável alterar a imagem de um grupo já existente.
 
 :::caution Atenção
 

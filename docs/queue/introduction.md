@@ -5,7 +5,7 @@ title: Introdução
 
 ## Fila
 
-O Z-API disponibiliza a seus usuários um sistema de fila que funciona unicamente para as mensagens envidas através da nossa API. Esta fila exerce um importante papel em nossa arquitetura que é o de organizar e ordenar as mensagens até que as mesmas sejam entregues ao Whatsapp. Este recurso também é muito útil para aquelas situaçoes onde o celular conectado ao Z-API passa por algumas instabilidade ou fique fora da internet. Caso isso ocorra, ou seja, se o celular fica por um periodo fora ar, assim que você voltar a conectar as mensagens serão enviadas ao destinatário normalmente.
+O Z-API disponibiliza a seus usuários um sistema de fila que funciona unicamente para as mensagens envidas através da nossa API. Esta fila exerce um importante papel em nossa arquitetura que é o de organizar e ordenar as mensagens até que as mesmas sejam entregues ao WhatsApp. Este recurso também é muito útil para aquelas situaçoes onde o celular conectado ao Z-API passa por algumas instabilidade ou fique fora da internet. Caso isso ocorra, ou seja, se o celular fica por um periodo fora ar, assim que você voltar a conectar as mensagens serão enviadas ao destinatário normalmente.
 
 :::tip Tempo de envio
 

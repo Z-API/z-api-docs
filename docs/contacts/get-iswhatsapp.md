@@ -1,6 +1,6 @@
 ---
 id: get-iswhatsapp
-title: Número com Whatsapp ?
+title: Número com WhatsApp ?
 ---
 
 ## Método
@@ -18,11 +18,11 @@ title: Número com Whatsapp ?
 
 ## Conceituação
 
-Este método retorna se o número tem ou não Whatsapp.
+Este método retorna se o número tem ou não WhatsApp.
 
 :::important Importante
 
-Utilize essa API sempre que quiser verificar se um número possui Whatsapp, geralmente para validação de formulários.
+Utilize essa API sempre que quiser verificar se um número possui WhatsApp, geralmente para validação de formulários.
 Não utilize essa API caso queira fazer uma verificação antes de enviar uma mensagem, pois o Z-API já valida a existência do número a cada mensagem enviada.
 A utilização desse método para esse fim, pode gerar problemas, visto que a verificação ficaria duplicada. 
 Z-API não foi desenvolvido para dissiminação de spam para contatos que você não conhece, utilize com sabedoria!
@@ -63,7 +63,7 @@ Método
 
 | Atributos | Tipo | Descrição |
 | :-- | :-- | :-- |
-| exists | boolean | true para caso exista e false para casos onde o número não tenha Whatsapp |
+| exists | boolean | true para caso exista e false para casos onde o número não tenha WhatsApp |
 
 Exemplo
 

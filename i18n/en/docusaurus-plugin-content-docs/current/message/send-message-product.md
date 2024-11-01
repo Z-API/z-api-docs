@@ -18,7 +18,7 @@ title: Send product
 
 ## Concept
 
-In this method, you can send messages of your products. The product feature is only available for **business** WhatsApp accounts. It is also necessary for the account to have registered products. Operations related to products can be found in the **[Whatsapp Business](../business/get-products.md)** section of our documentation.
+In this method, you can send messages of your products. The product feature is only available for **business** WhatsApp accounts. It is also necessary for the account to have registered products. Operations related to products can be found in the **[WhatsApp Business](../business/get-products.md)** section of our documentation.
 
 ![image](../../../../../img/product-message.jpeg)
 
