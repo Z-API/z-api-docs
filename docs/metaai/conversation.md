@@ -25,6 +25,8 @@ Para começar a usar a Meta AI com a Z-API basta enviar uma mensagem de texto ao
 
 :::warning Atenção
 Atualmente, a Meta AI na Z-API suporta apenas mensagens em texto. Isso significa que áudio, documentos, imagens e outros arquivos multimídia não são compatíveis nesta integração. Portanto, é necessário que apenas mensagens de texto sejam enviadas para garantir o funcionamento correto.
+
+Além disso, esse recurso está disponível apenas para contas pessoais do WhatsApp, ou seja, não é acessível para contas business.
 :::
 
 ## Atributos
