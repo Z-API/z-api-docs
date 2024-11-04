@@ -1,5 +1,5 @@
 {
-    "method": "POST",
+    "method": "DELETE",
     "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/remove",
     "httpVersion": "HTTP/1.1",
     "queryString": [],
@@ -16,6 +16,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"554499999999\"},\"554499998888\"}]"
+        "text": "[\"554499999999\",\"554499998888\"]"
     }
 }
