@@ -20,7 +20,7 @@ title: Enviar texto simples
 
 Neste método você poderá enviar textos simples, mas você pode incrementá-los utilizando a formatação de texto e emojis, por exemplo. Caso você ainda não saiba como fazer isso, clique nos links abaixo e siga as instruções:
 
-- Para saber como formatar fontes no Whatsapp [clique aqui]
+- Para saber como formatar fontes no WhatsApp [clique aqui]
 
 - Você também pode utilizar **quebra de linhas** em suas mensagens, porém isso pode ser feito de formas diferentes, isso muda por fatores como a plataforma que sua aplicação está rodando e linguagem de programação utilizada. Até o momento, indentificamos as seguintes formas:
 
@@ -44,7 +44,7 @@ Um emoji é um caracter ASCII normal, assim como existe a fonte Times New Roman 
 
 Para fazer o teste, basta copiar um emoji e colar em seu texto! Você pode utilizar este aqui 🤪 se quiser.
 
-::: Exemplo no Whatsapp
+::: Exemplo no WhatsApp
 
 ![image](../../img/send-message-text.jpeg)
 
@@ -65,7 +65,7 @@ Para fazer o teste, basta copiar um emoji e colar em seu texto! Você pode utili
 | :---------   | :----: | :-------- |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 seg, que significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex.: "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
 | delayTyping  | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai ficar com o status "Digitando...". (Ex "delayTyping": 5, ). O delay default caso não seja informado é de 0|
-| editMessageId | string | Esse atributo permite editar mensagens enviadas anteriormente no WhatsApp. Use o ID da mensagem e o novo conteúdo no JSON para fazer alterações. |
+| editMessageId | string | Esse atributo permite editar mensagens enviadas anteriormente no WhatsApp. Use o ID da mensagem e o novo conteúdo no JSON para fazer alterações. É necessário configurar o webhook antes de editar. |
 
 ---
 

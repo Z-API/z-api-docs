@@ -41,7 +41,7 @@ Este método retorna o metadata do canal com todas as informações do canal e d
 
 :::warning
 
-O id do canal sempre deve conter o sufixo "@newsletter", pois esse é o padrão utilizado pelo próprio Whatsapp.
+O id do canal sempre deve conter o sufixo "@newsletter", pois esse é o padrão utilizado pelo próprio WhatsApp.
 
 :::
 

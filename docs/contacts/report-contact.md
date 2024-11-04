@@ -19,7 +19,7 @@ title: Denunciar contato
 
 ## Conceituação
 
-Este método é reponsavel por denunciar um contato.
+Este método é responsável por denunciar um contato.
 
 ---
 

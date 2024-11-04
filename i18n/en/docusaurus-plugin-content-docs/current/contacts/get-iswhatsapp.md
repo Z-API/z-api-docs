@@ -1,6 +1,6 @@
 ---
 id: get-iswhatsapp
-title: Number with Whatsapp ? 
+title: Number with WhatsApp ? 
 ---
 
 ## Method
@@ -19,11 +19,11 @@ title: Number with Whatsapp ?
 
 ## Concept
 
-This method returns whether or not the number has Whatsapp.
+This method returns whether or not the number has WhatsApp.
 
 :::important Important
 
- Z-API is not designed to spread spam to contacts you don't know, however we recommend that if you are not sure whether the number you are going to send messages to has Whatsapp you can and should use this method to make sure.
+ Z-API is not designed to spread spam to contacts you don't know, however we recommend that if you are not sure whether the number you are going to send messages to has WhatsApp you can and should use this method to make sure.
 
 :::
 
@@ -61,7 +61,7 @@ Method
 
 | Attributes | Type | Description |
 | :-- | :-- | :-- |
-| exists | boolean | True for if it exists and false for cases where the number does not have Whatsapp |
+| exists | boolean | True for if it exists and false for cases where the number does not have WhatsApp |
 
 Example
 

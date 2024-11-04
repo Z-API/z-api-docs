@@ -18,7 +18,7 @@ title: Atualizar nome do grupo
 
 ## Conceituação
 
-Este método é reponsavel alterar o nome de um grupo já existente.
+Este método é responsável alterar o nome de um grupo já existente.
 
 :::caution Atenção
 

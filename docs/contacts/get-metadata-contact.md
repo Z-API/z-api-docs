@@ -18,11 +18,11 @@ title: Pegar metadata do contato
 
 ## Conceituação
 
-Este método é reponsavel por retornar as informações do metadata do contato.
+Este método é responsável por retornar as informações do metadata do contato.
 
 :::tip Dica sobre imagem do contato
 
-Se você pretente armazenar a imagem do seu contato observe que sempre retornamos no get-contacts o atribucom imgUrl com ela para você, porém é importante lembrar que esta fica disponivel por apenas **48 horas**, após este periodo o link da imagem é excluido pelo próprio Whatsapp. Sugerimos que caso precise atualizar a imagem do seu contato você utilize o proximo método desta documentação, o **get-profile-picture**.
+Se você pretente armazenar a imagem do seu contato observe que sempre retornamos no get-contacts o atribucom imgUrl com ela para você, porém é importante lembrar que esta fica disponivel por apenas **48 horas**, após este periodo o link da imagem é excluido pelo próprio WhatsApp. Sugerimos que caso precise atualizar a imagem do seu contato você utilize o proximo método desta documentação, o **get-profile-picture**.
 
 :::
 
@@ -64,8 +64,8 @@ Método
 | name | string | **Nome e sobrenome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
 | short | string | **Nome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
 | vname | string | Nome do Vcard do contato, caso ele tenha |
-| notify | string | Nome informado nas configurações de nome do Whatsapp |
-| imgUrl | string | URL da foto do contato **o Whatsapp apaga após 48h** |
+| notify | string | Nome informado nas configurações de nome do WhatsApp |
+| imgUrl | string | URL da foto do contato **o WhatsApp apaga após 48h** |
 
 Exemplo
 
@@ -73,7 +73,7 @@ Exemplo
 {
   "name": "Nome e sobrenome do contato",
   "phone": "551199999999",
-  "notify": "Nome do contado no Whatsapp",
+  "notify": "Nome do contado no WhatsApp",
   "short": "Nome do contato",
   "imgUrl": "url da foto do contato "
 }

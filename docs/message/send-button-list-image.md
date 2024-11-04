@@ -17,7 +17,7 @@ title: Enviar botões com imagem
 ---
 
 :::caution Atenção
-Envios de botões atualmente se encontram disponíveis, para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
+Envios de botões atualmente se encontram disponíveis, porém possui alguns fatores decisivos para o funcionamento. Para mais detalhes acesse o tópico [Funcionamento dos Botões](https://developer.z-api.io/tips/button-status)
 :::
 
 ## Conceituação

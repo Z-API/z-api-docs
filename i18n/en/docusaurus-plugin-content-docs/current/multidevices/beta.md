@@ -54,7 +54,7 @@ During this process our team worked hard to deliver the same experience as befor
 - Reply message (100% compatible) ✅
 - Forward message (100% compatible) ✅
 - Delete messages (100% compatible) ✅
-- Send messages to the transmission list(Limited by Whatsapp/ [Whatsapp link](https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=en) ) ⚠️
+- Send messages to the transmission list(Limited by WhatsApp/ [WhatsApp link](https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=en) ) ⚠️
 
 
 

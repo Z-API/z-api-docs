@@ -18,7 +18,7 @@ title: Enviar produto
 
 ## Conceituação
 
-Neste método você poderá enviar mensagens de seus produtos. O recurso de produtos está disponível apenas para contas **business** do WhatsApp. É necessário também, que a conta possua produtos cadastrados. Operações realacionadas a produtos podem ser encontradas na sessão **[Whatsapp Business](../business/get-products.md)** da nossa documentação.
+Neste método você poderá enviar mensagens de seus produtos. O recurso de produtos está disponível apenas para contas **business** do WhatsApp. É necessário também, que a conta possua produtos cadastrados. Operações realacionadas a produtos podem ser encontradas na sessão **[WhatsApp Business](../business/get-products.md)** da nossa documentação.
 
 ![image](../../img/product-message.jpeg)
 

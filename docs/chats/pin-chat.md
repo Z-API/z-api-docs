@@ -18,7 +18,7 @@ title: Fixar chats
 
 ## Conceituação
 
-Este método é reponsavel por fixar e desafixar seus chats.
+Este método é responsável por fixar e desafixar seus chats.
 
 ---
 

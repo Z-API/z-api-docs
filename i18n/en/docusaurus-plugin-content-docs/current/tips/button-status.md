@@ -7,7 +7,7 @@ title: Button status
 
 In recent weeks, messages containing buttons have been experiencing instability in their operation.
 
-**It's important to remember that this is not an issue exclusive to Z-API..**
+**It's important to remember that this is not an issue exclusive to Z-API.**
 
 This topic describes the behavior of buttons on WhatsApp in different scenarios.
 
@@ -33,14 +33,15 @@ To use the button functionality, you must accept the terms of use, acknowledging
 
 ## Types of buttons
 
-#### There are four types of buttons on WhatsApp:
+#### There are seven types of buttons on WhatsApp:
 
 - Simple text button (/send-button-list)
 - Simple image button (/send-button-list-image)
 - Simple video button (/send-button-list-video)
 - List of options (/send-option-list)
 - Action buttons (/send-button-actions)
-- Button OTP (/send-button-otp)
+- OTP button (/send-button-otp)
+- PIX button (/send-button-pix)
 
 ---
 
@@ -88,7 +89,7 @@ To use the button functionality, you must accept the terms of use, acknowledging
 - Sending from WhatsApp Business to Individual Chat: **WORKS**
 - Sending from WhatsApp Business to Group: **WORKS**
 
-### [Pix key button:](https://developer.z-api.io/en/message/send-button-pix)
+### [PIX key button:](https://developer.z-api.io/en/message/send-button-pix)
 
 - Sending from Normal WhatsApp to Individual Chat: **WORKS**
 - Sending from Normal WhatsApp to Group: **WORKS**

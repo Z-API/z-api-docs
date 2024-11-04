@@ -22,6 +22,12 @@ title: Reencaminhar mensagem
 
 Simples e objetivo, neste método você poderá reencaminhar as mensagens através da api precisando apenas do messageId da mensagem que deseja encaminhar, e o phone do chat onde esse messageId se encontra.
 
+:::caution Atenção
+
+Para utilizar esse método é necessário configurar o webhook, caso ainda não tenha configurado, a mensagem não será reencaminhada.
+
+:::
+
 
 ![image](../../img/reencaminhar.jpeg)
 

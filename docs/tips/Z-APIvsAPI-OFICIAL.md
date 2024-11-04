@@ -7,7 +7,7 @@ title: Z-API vs API Oficial
 
 Qual é a melhor alternativa para você?
 
-Exemplificando o uso da API do Whatsapp: O WhatsApp no início da ferramenta como uma das suas decisões estratégicas optou por manter sua API fechada, bem diferente do que aconteceu com outros players mundiais do segmento. Ou seja, os desenvolvedores não tinham a oportunidade de integrar suas soluções e tecnologias de softwares ao WhatsApp.
+Exemplificando o uso da API do WhatsApp: O WhatsApp no início da ferramenta como uma das suas decisões estratégicas optou por manter sua API fechada, bem diferente do que aconteceu com outros players mundiais do segmento. Ou seja, os desenvolvedores não tinham a oportunidade de integrar suas soluções e tecnologias de softwares ao WhatsApp.
 
 Principalmente nesse cenário estamos falando de empresas com soluções diversas no mercado, como por exemplo: Sistemas CRM e ERP, criação de bots de chat populares e até empresas de e-commerce ou do varejo para o serviço de notificação em tempo real do status de compras de um cliente. Nesse período também muitos DEV’S criavam ou procuravam gateways personalizados que poderiam fornecer esse acesso ao WhatsApp API. Essas soluções ainda podem ser encontradas no github. O problema com o uso dessas bibliotecas é que WhatsApp faz atualizações no qual torna as soluções desatualizadas e, como regra, ao usar essas bibliotecas os números eram imediatamente banidos.
 
@@ -49,9 +49,9 @@ dependendo de com qual programa o app é integrado, é possível extrair dados r
 
 Segundo algumas estatísticas do WhatsApp, o messenger bloqueia cerca de 2.000.000 de usuários por mês que violam os termos da política do WhatsApp.
 
-Mas isso não significa que API’s não oficiais sejam irresponsáveis com seus clientes. Por exemplo, o Z-API para segurança do usuário fornece clientes IP individuais, executa autorização segura e insere um sistema de protetores artificiais, como uma fila para enviar mensagens para evitar envios em massa e protegê-los de banimento.
+Mas isso não significa que API’s não oficiais sejam irresponsáveis com seus clientes. Por exemplo, o Z-API para segurança do usuário fornece aos clientes IPs individuais, executa autorização segura e insere um sistema de protetores artificiais, como uma fila para enviar mensagens para evitar envios em massa e protegê-los de banimento.
 
-Também existem sistemas para emular um telefone em um computador para que o trabalho não dependa de um dispositivo físico. Claro, esses métodos não ajudarão se o usuário negligenciar as regras para trabalhar com clientes de WhatsApp e spam. Mesmo com a API oficial, é possível ser banido por violar as políticas do WhatsApp. Mas se você combinar as ferramentas de segurança da Z-API com o uso dentro das recomendações do Whatsapp.
+Também existem sistemas para emular um telefone em um computador para que o trabalho não dependa de um dispositivo físico. Claro, esses métodos não ajudarão se o usuário negligenciar as regras para trabalhar com clientes de WhatsApp e spam. Mesmo com a API oficial, é possível ser banido por violar as políticas do WhatsApp. Mas se você combinar as ferramentas de segurança da Z-API com o uso dentro das recomendações do WhatsApp.
 
 Depois de analisar os pontos principais, você pode ir direto ao mais interessante, ou seja, a análise, e comparar qual a solução te atende melhor com o WhatsApp. Vamos começar com os benefícios do Z-API:
 
@@ -69,11 +69,9 @@ Depois de analisar os pontos principais, você pode ir direto ao mais interessan
 | A permissão não é necessária, você pode escrever primeiro | A permissão do assinante é necessária para Recebimento de mensagens |
 | Você pode começar imediatamente | Para se conectar, você terá que passar por um processo burocrático, que pode demorar pelo menos um mês |
 | Você pode usar números em qualquer quantidade | Apenas um número por empresa verificada |
-| Suporte direto 24 horas por dia, 7 dias por semana, via e-mail e chats | Suporte limitado (suporte pago por meio de parceiros de solução) |
+| Suporte direto 24 horas por dia, 7 dias por semana, via e-mail e chats com chatbot + nossa equipe | Suporte limitado (suporte pago por meio de parceiros de solução) |
 | Possibilidade de fazer qualquer modificação e integração | Incapacidade de influenciar e adicionar funcionalidade ao serviço |
 | Qualquer nome da sua conta | Nome imutável de sua conta (por nome comercial) |
 | Pode trabalhar em todo o mundo | Não é possível trabalhar com a API do WhatsApp, por exemplo, na Crimeia, no Irã e em vários outros países |
 | Pagamento em Reais | Pagamento em dólar |
-| Suporte até às 22h em até 2h | Suporte somente ofical, até 48 horas para resposta. |
 | Ferramenta totalmente Brasileira +5 milhões de mensagens diárias | Ferramenta Americana, comunicação em inglês |
-| Suporte em português | Suporte em até 48 horas para resposta por e-mail |

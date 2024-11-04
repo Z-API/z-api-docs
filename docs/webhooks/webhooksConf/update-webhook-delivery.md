@@ -12,7 +12,7 @@ title: Delivery
 
 ## Conceituação
 
-O Este método é reponsavel por atualizar/adicionar o seu EndPoint para o webhook de **delivery** via API, ou seja, sem a necessidade de acessar o admin Z-API.
+Este método é responsável por atualizar/adicionar o seu EndPoint para o webhook de **delivery** via API, ou seja, sem a necessidade de acessar o admin Z-API.
 
 :::caution Atenção
 

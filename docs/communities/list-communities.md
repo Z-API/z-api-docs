@@ -18,7 +18,7 @@ title: Listar comunidades
 
 ## Conceituação
 
-Este método é reponsavel por retornar todas as comunidades que você faz parte.
+Este método é responsável por retornar todas as comunidades que você faz parte.
 
 ---
 

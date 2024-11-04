@@ -151,7 +151,7 @@ JSON follows the sequence as shown below.
     "broadcast": false,
     "contact": {
       "displayName": "Z-api - Atendimento",
-      "vCard": "BEGIN:VCARD\nVERSION:3.0\nN:;Z-api - Atendimento;;;\nFN:Z-api - Atendimento\nTEL;type=CELL;waid=554498398733:+55 44 9839-8733\nX-WA-BIZ-NAME:Z-api - Atendimento\nX-WA-BIZ-DESCRIPTION:Whatsapp para programadores!\nEND:VCARD",
+      "vCard": "BEGIN:VCARD\nVERSION:3.0\nN:;Z-api - Atendimento;;;\nFN:Z-api - Atendimento\nTEL;type=CELL;waid=554498398733:+55 44 9839-8733\nX-WA-BIZ-NAME:Z-api - Atendimento\nX-WA-BIZ-DESCRIPTION:WhatsApp para programadores!\nEND:VCARD",
       "phones": ["5511999999999"]
     }
   },
@@ -191,7 +191,7 @@ JSON follows the sequence as shown below.
       "message": "https://www.z-api.io/",
       "url": "https://www.z-api.io/",
       "urlDescription": null,
-      "urlTitle": "Whatsapp API: Integre sua empresa | Z-API",
+      "urlTitle": "WhatsApp API: Integre sua empresa | Z-API",
       "isCatalog": false
     }
   }

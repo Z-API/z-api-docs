@@ -7,7 +7,7 @@ title: Introduction
 
 In this topic you will get to know all of the methods available for manipulating groups.
 
-As I said before for Whatsapp everything's a chat, knowing that the group is nothing more than a chat and basically everything you send/receive in chat you can send/receive with the groups. The group has an ID/Phone that is nothing more than the phone of the person who created it concatenated with a timestamp something similar to "5511999999999-162327528", and it is this ID/Phone that you will use as a phone to send to your groups . To get this ID/Phone use the get/chats method.
+As I said before for WhatsApp everything's a chat, knowing that the group is nothing more than a chat and basically everything you send/receive in chat you can send/receive with the groups. The group has an ID/Phone that is nothing more than the phone of the person who created it concatenated with a timestamp something similar to "5511999999999-162327528", and it is this ID/Phone that you will use as a phone to send to your groups . To get this ID/Phone use the get/chats method.
 
 In this topic you will also find methods for creating and managing groups.
 

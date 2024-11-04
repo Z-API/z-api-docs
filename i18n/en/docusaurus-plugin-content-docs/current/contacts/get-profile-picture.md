@@ -23,7 +23,7 @@ This method is responsible for returning a url with your contacts picture update
 
 As already stated in the previous topic please **Remember**    
 
-If you intend to store your contact's image, please note that we always return in get-contacts the attribute with imgUrl with it for you, but it is important to remember that it is only available for 48 hours, after this period the image link is deleted by Whatsapp itself . We suggest that if you need to update your contact's image, you use the next method in this documentation, **get-profile-picture**.
+If you intend to store your contact's image, please note that we always return in get-contacts the attribute with imgUrl with it for you, but it is important to remember that it is only available for 48 hours, after this period the image link is deleted by WhatsApp itself . We suggest that if you need to update your contact's image, you use the next method in this documentation, **get-profile-picture**.
 
 
 ---

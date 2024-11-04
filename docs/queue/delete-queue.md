@@ -18,7 +18,7 @@ title: Apagando uma Fila
 
 ## Conceituação
 
-Este método é reponsavel por DELETAR todas mensagens que estão em sua fila aguardando para ser processada.
+Este método é responsável por DELETAR todas mensagens que estão em sua fila aguardando para ser processada.
 
 ---
 

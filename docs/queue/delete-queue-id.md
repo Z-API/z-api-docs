@@ -18,7 +18,7 @@ title: Apagando mensagem fila
 
 ## Conceituação
 
-Este método é reponsavel por deletar uma mensagem dentro de fila aguardando para ser processada.
+Este método é responsável por deletar uma mensagem dentro de fila aguardando para ser processada.
 
 ---
 
