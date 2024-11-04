@@ -34,8 +34,8 @@ See the example in the images below:
 <details>
  <summary>Click here to display the images.</summary>
 
-![img](../../../../../img/add-contacts1.jpeg) 
-![img](../../../../../img/add-contacts2.jpeg)
+![image](../../../../../img/add-contacts1.jpeg) 
+![image](../../../../../img/add-contacts2.jpeg)
 </details>
 
 ## Attributes

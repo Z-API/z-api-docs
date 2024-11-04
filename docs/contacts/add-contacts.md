@@ -33,8 +33,8 @@ Além disso, é necessário permitir que o WhatsApp adicione contatos diretament
 <details>
  <summary>Clique aqui para exibir as imagens</summary>
 
-![img](../../img/add-contacts1.jpeg) 
-![img](../../img/add-contacts2.jpeg)
+![image](../../img/add-contacts1.jpeg) 
+![image](../../img/add-contacts2.jpeg)
 </details>
 
 ## Atributos
