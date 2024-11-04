@@ -13,3 +13,6 @@ Um dos recursos  é a funcionalidade "Imagine," que permite a criação de image
 
 Agora, a Z-API permite que empresas e desenvolvedores automatizem conversas, respondam com inteligência e melhorem significativamente a experiência de seus clientes. Essa conectividade permite que as interações com o usuário sejam mais dinâmicas, intuitivas e eficazes, agregando valor tanto ao suporte quanto ao engajamento geral com os clientes.
 
+:::warning
+Esse recurso está disponível apenas para contas pessoais do WhatsApp, ou seja, não é acessível para contas business.
+:::
