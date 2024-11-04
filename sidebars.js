@@ -120,6 +120,8 @@ module.exports = {
     Contacts: [
       'contacts/introduction',
       'contacts/get-contacts',
+      'contacts/add-contacts',
+      'contacts/remove-contacts',
       'contacts/get-metadata-contact',
       'contacts/get-profile-picture',
       'contacts/get-iswhatsapp',
@@ -175,6 +177,10 @@ module.exports = {
       'communities/remove-community-admin',
       'communities/community-settings',
       'communities/deactivate-community',
+    ],
+    'Meta AI': [
+      'metaai/introduction',
+      'metaai/conversation'
     ],
     Newsletter: [
       'newsletter/introduction',
