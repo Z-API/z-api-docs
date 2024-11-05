@@ -63,43 +63,54 @@ The possible returns of the **on-message-received** webhook are registered below
 
 ## Response
 
-| Attributos | Type | Description |
-| :-- | :-: | :-- |
-| waitingMessage | boolean | Identifies if your message is in "Waiting for message" status |
-| phone | string | Phone number, or number of the group that sent the message. |
-| participantPhone | string | Phone number of the group member who sent the message. |
-| messageId | string | Message identifier in the conversation. |
-| status | string | Status the message is in at the time of sending (PENDING, SENT, RECEIVED, READ or PLAYED). |
-| referenceMessageId | string | Reference the message that was replied to in case the message received is a reply to a message in the conversation. |
-| momment | integer | Time when the message was received or from the error. |
-| type | string | Instance event type, in this case it will be "ReceivedCallBack". |
-| photo | string | Photo url of the user who sent the message. |
-| text.message | string | Message text. |
-| image.caption | string | Photo’s caption |
-| image.imageUrl | string | Photo’s URL |
-| image.thumbnailUrl | string | Photo’s URL thumbnail |
-| image.mimeType | string | Image’s Mime Type |
-| audio.mimeType | string | Audio’s MimeType |
-| audio.audioUrl | string | Audio’s URL |
-| video.caption | string | Video’s caption |
-| video.videoUrl | string | Video’s URL |
-| video.mimeType | string | Video’s MimeType |
-| contact.displayName | string | Contact’s name |
-| contact.vCard | string | VCard containing the contact information. |
-| document.mimeType | string | Document’s MimeType |
-| document.fileName | string | Document’s name |
-| document.title | string | Document’s Title |
-| document.pageCount | string | Number of pages in the document |
-| document.thumbnailUrl | string | URL of the document's thumbnail. |
-| document.documentUrl | string | Document’s URL |
-| location.thumbnailUrl | string | Location thumbnail url. |
-| location.longitude | float | Location’s longitude |
-| location.latitude | float | Location's latitude |
-| location.url | string | Localization’s URL |
-| location.name | string | Localization’s name |
-| location.address | string | Localizations’s address |
-| sticker.mimeType | string | Sticker’s MimeType |
-| sticker.stickerUrl | string | Stickers URL |
+| Attributes                   |   Type    | Description                                                                                           |
+| :----------------------------| :-------: | :---------------------------------------------------------------------------------------------------- |
+| isStatusReply                | boolean   | Identifies if the received message is a status reply                                                  |
+| senderLid                    | string    | WhatsApp contact ID                                                                                   |
+| connectedPhone               | string    | Phone number connected to the API                                                                     |
+| waitingMessage               | boolean   | Identifies if your message is in the "Waiting for message" status                                     |
+| isEdit                       | boolean   | Identifies if the received message was edited                                                         |
+| isGroup                      | boolean   | Indicates if the chat is a group                                                                      |
+| isNewsletter                 | boolean   | Indicates if the chat is a channel                                                                    |
+| phone                        | string    | Phone number or group that sent the message                                                           |
+| fromMe                       | boolean   | Indicates if the message was sent from the number connected to the API                                |
+| participantPhone             | string    | Phone number of the group member who sent the message                                                 |
+| participantLid               | string    | WhatsApp contact ID of the group participant who sent the message                                     |
+| messageId                    | string    | Message identifier in the conversation                                                                |
+| status                       | string    | Status of the message at the time of sending (PENDING, SENT, RECEIVED, READ, or PLAYED)               |
+| referenceMessageId           | string    | References the message if the received message is a reply to a previous message in the conversation   |
+| momment                      | integer   | Moment when the message was received or the error occurred                                            |
+| messageExpirationSeconds     | integer   | Time for temporary messages                                                                           |
+| requestMethod                | string    | Identifier for the incoming request method (`invite_link` OR `non_admin_add`)                             |
+| type                         | string    | Type of instance event, in this case "ReceivedCallBack"                                               |
+| photo                        | string    | URL of the user's photo who sent the message                                                          |
+| text.message                 | string    | Message text                                                                                          |
+| image.caption                | string    | Photo caption                                                                                        |
+| image.imageUrl               | string    | URL of the photo                                                                                      |
+| image.thumbnailUrl           | string    | URL of the photo thumbnail                                                                            |
+| image.mimeType               | string    | MimeType of the image                                                                                 |
+| audio.mimeType               | string    | MimeType of the audio                                                                                 |
+| audio.audioUrl               | string    | URL of the audio                                                                                      |
+| video.caption                | string    | Video caption                                                                                        |
+| video.videoUrl               | string    | URL of the video                                                                                      |
+| video.mimeType               | string    | MimeType of the video                                                                                 |
+| contact.displayName          | string    | Contact name                                                                                          |
+| contact.vCard                | string    | VCard containing contact information                                                                  |
+| document.mimeType            | string    | MimeType of the document                                                                              |
+| document.fileName            | string    | Document name                                                                                        |
+| document.title               | string    | Document title                                                                                        |
+| document.pageCount           | string    | Number of pages in the document                                                                       |
+| document.thumbnailUrl        | string    | URL of the document thumbnail                                                                         |
+| document.documentUrl         | string    | URL of the document                                                                                   |
+| location.thumbnailUrl        | string    | URL of the location thumbnail                                                                         |
+| location.longitude           | float     | Longitude of the location                                                                             |
+| location.latitude            | float     | Latitude of the location                                                                              |
+| location.url                 | string    | URL of the location                                                                                   |
+| location.name                | string    | Location name                                                                                         |
+| location.address             | string    | Location address                                                                                      |
+| sticker.mimeType             | string    | MimeType of the sticker                                                                               |
+| sticker.stickerUrl           | string    | URL of the sticker                                                                                    |
+
 
 ---
 
@@ -568,6 +579,75 @@ The possible returns of the **on-message-received** webhook are registered below
     "templateId": "811492407484976",
     "hydratedButtons": []
   }
+}
+```
+
+### Example of a group join request via an invitation link
+
+```json
+{
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999-group",
+  "connectedPhone": "5544999999999",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "MEMBERSHIP_APPROVAL_REQUEST",
+  "notificationParameters": [
+      "5544999999999"
+  ],
+  "callId": null,
+  "code": null,
+  "requestMethod": "invite_link"
+}
+```
+
+### Example of a group join request added by a participant
+
+```json
+{
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999-group",
+  "connectedPhone": "5544999999999",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "MEMBERSHIP_APPROVAL_REQUEST",
+  "notificationParameters": [
+      "5544999999999",
+      "5544888888888"
+  ],
+  "callId": null,
+  "code": null,
+  "requestMethod": "non_admin_add"
 }
 ```
 
