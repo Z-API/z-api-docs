@@ -23,6 +23,7 @@ module.exports = {
       'tips/Z-APIvsAPI-OFICIAL',
       'tips/button-status',
       'tips/file-expiration',
+      'tips/postman-collection',
     ],
 
     Security: [
