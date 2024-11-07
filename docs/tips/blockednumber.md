@@ -58,9 +58,6 @@ Forma de envio:
 
 - Ofereça a opção do destinatário não receber mais mensagens e monitore os webhooks para tratar essas interações.
 
-Clicando [AQUI](https://z-api.crisp.help/pt-br/article/como-o-z-api-se-comporta-quanto-aos-banimentos-de-numeros-16een60/) você encontra um artigo com vários passo-a-passo sobre o Z-API, e fica sabendo o que fazemos do nosso lado quando seu número é banido:
-
-
 :::warning Cuidado
 
 Se 3% dos destinatários marcarem sua mensagem como spam seu número será banido!
