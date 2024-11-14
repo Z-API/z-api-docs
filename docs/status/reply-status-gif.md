@@ -18,7 +18,7 @@ title: Responder status com gif
 
 ## Conceituação
 
-Método responsavel por enviar uma resposta em texto a um status.
+Método responsavel por enviar uma resposta com gif a um status.
 
 ---
 
