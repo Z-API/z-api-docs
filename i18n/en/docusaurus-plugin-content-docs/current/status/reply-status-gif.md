@@ -19,7 +19,7 @@ title: Respond to Status with GIF
 
 ## Concept
 
-Method responsible for sending a text response to a status.
+Method responsible for sending a gif response to a status.
 
 ---
 
