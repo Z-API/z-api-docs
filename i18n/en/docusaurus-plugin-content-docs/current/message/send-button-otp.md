@@ -43,6 +43,7 @@ This method allows you to send text messages with a button to copy a value.
 | Attributes  | Type          | Description |
 | :----------:| :-----------: | :-------- |
 | image       | string        | URL or Base64 of the image that will be sent with button |
+| buttonText  | string        | Button text (example: "Click here to copy"). The default value is "Copiar código". |
 
 ---
 
@@ -59,7 +60,8 @@ This method allows you to send text messages with a button to copy a value.
   "phone": "551199999999",
   "message": "Message text",
   "code": "Value to be copied",
-  "image": "Image URL"
+  "image": "Image URL",
+  "buttonText": "Button text"
 }
 ```
 

@@ -42,6 +42,7 @@ Neste método você poderá enviar mensagens de texto com botão para copiar um 
 | Atributos   | Tipo          | Descrição |
 | :----------:| :-----------: | :-------- |
 | image       | string        | URL ou Base64 da imagem que irá acompanhar o botão |
+| buttonText  | string        | Texto do botão (exemplo: "Clique aqui para copiar"). O valor padrão é "Copiar código". |
 
 ---
 
@@ -58,7 +59,8 @@ Neste método você poderá enviar mensagens de texto com botão para copiar um 
   "phone": "551199999999",
   "message": "Texto da mensagem",
   "code": "Valor a ser copiado",
-  "image": "URL da imagem"
+  "image": "URL da imagem",
+  "buttonText": "Texto do botão"
 }
 ```
 
