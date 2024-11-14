@@ -19,7 +19,7 @@ title: Respond to Status with Sticker
 
 ## Concept
 
-Method responsible for sending a text response to a status.
+Method responsible for sending a sticker response to a status.
 
 ---
 
