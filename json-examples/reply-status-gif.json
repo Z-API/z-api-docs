@@ -1,0 +1,21 @@
+{
+  "method": "POST",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/reply-status-gif",
+  "httpVersion": "HTTP/1.1",
+  "queryString": [],
+  "headers": [
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "name": "Client-Token",
+      "value": "{{security-token}}"
+    }
+  ],
+  "cookies": [],
+  "postData": {
+    "mimeType": "application/json",
+    "text": "{\"phone\":\"5544999999999\",\"gif\":\"https://file-examples.com/storage/fe88505b6162b2538a045ce/2017/04/file_example_MP4_480_1_5MG.mp4\",\"statusMessageId\":\"1F606398F2ECAA4846269F659B6003A9\"}"
+  }
+}
