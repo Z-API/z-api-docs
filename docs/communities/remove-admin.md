@@ -18,7 +18,7 @@ title: Remover admin da comunidade
 
 ## Conceituação
 
-Este método é reponsavel remover um ou mais admistradores de uma comunidade.
+Este método é responsável remover um ou mais admistradores de uma comunidade.
 
 ---
 

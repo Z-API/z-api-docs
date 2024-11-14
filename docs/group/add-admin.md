@@ -19,7 +19,7 @@ title: Promover admin do grupo
 
 ## Conceituação
 
-Este método é reponsavel por promover participamentes do grupo à administradores, você pode provomover um ou mais participamente à administrador.
+Este método é responsável por promover participamentes do grupo à administradores, você pode provomover um ou mais participamente à administrador.
 
 :::caution Atenção
 

@@ -76,7 +76,7 @@ Este método é responsável por criar um canal. Infelizmente não é possivel c
 
 :::tip
 
-O id retornado sempre conterá o sufixo "@newsletter", padrão utilizado pelo próprio Whatsapp. Ele deve ser utilizado no mesmo formato nas requisições que recebem o id como parâmetro.
+O id retornado sempre conterá o sufixo "@newsletter", padrão utilizado pelo próprio WhatsApp. Ele deve ser utilizado no mesmo formato nas requisições que recebem o id como parâmetro.
 
 :::
 

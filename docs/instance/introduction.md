@@ -11,7 +11,7 @@ Tecnicamente falando uma instância nada mais é do que uma máquina virtual (ou
 
 Cada instância só possui um número, caso precise conectar mais números será necessário criar mais instâncias. Mas uma instância não é presa a um único número, ou seja, você pode desconectar um número e conectar outro na mesma instância.
 
-Para ajudar você a entender o funcionamento do Z-API, nosso serviço roda com base em um Whatsapp Web, e abstraímos os métodos permitindo que você manipule via API RestFul.
+Para ajudar você a entender o funcionamento do Z-API, nosso serviço roda com base em um WhatsApp Web, e abstraímos os métodos permitindo que você manipule via API RestFul.
 
 Para melhor tangibilizar, nos próximos tópicos vamos de forma ordenada te ajudar nos primeiros passos.
 

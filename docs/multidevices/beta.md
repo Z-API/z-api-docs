@@ -52,7 +52,7 @@ Durante este processo nosso time se empenhou para entregar a mesma experiência 
 - Responder mensagem (100% compatível) ✅
 - Encaminhar mensagem (100% compatível) ✅
 - Deletar mensagens (100% compatível) ✅
-- Enviar mensagens para lista de transmissão (Limitado pello Whatsapp / [Whatsapp link](https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=en) ) ⚠️
+- Enviar mensagens para lista de transmissão (Limitado pello WhatsApp / [WhatsApp link](https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=en) ) ⚠️
 
 ### Contatos
 

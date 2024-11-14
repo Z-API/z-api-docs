@@ -19,7 +19,7 @@ title: Bloquear contato
 
 ## Conceituação
 
-Este método é reponsavel por bloquear ou desbloquear um contato.
+Este método é responsável por bloquear ou desbloquear um contato.
 
 ---
 

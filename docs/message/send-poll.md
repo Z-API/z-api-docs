@@ -56,7 +56,7 @@ Múltiplas escolhas
 
 {
   "phone": "5511999999999",
-  "message": "Qual a melhor API para Whatsapp?",
+  "message": "Qual a melhor API para WhatsApp?",
   "poll": [
     {"name": "Z-API"},  
     {"name": "Outras"}
@@ -69,7 +69,7 @@ Escolha única
 
 {
   "phone": "5511999999999",
-  "message": "Qual a melhor API para Whatsapp?",
+  "message": "Qual a melhor API para WhatsApp?",
   "pollMaxOptions": 1,
   "poll": [
     {"name": "Z-API"},  

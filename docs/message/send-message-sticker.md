@@ -39,7 +39,7 @@ Exemplos:
 
 ### Tamanho e formatos
 
-O Whatsapp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio Whatsapp.
+O WhatsApp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio WhatsApp.
 
 Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
 

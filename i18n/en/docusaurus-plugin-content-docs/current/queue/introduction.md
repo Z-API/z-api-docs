@@ -5,7 +5,7 @@ title: Introduction
 
 ## Queue 
 
-Z-API provides its users with a queuing system that works only for messages sent through our API. This queue plays an important role in our architecture, which is to organize and order messages until they are delivered to Whatsapp. This feature is also very useful for those situations where the cell phone connected to the Z-API goes through some instability or has no internet connection. If this occurs, that is, if the cell phone is offline for a period, as soon as you reconnect the messages will be sent to the recipient normally.
+Z-API provides its users with a queuing system that works only for messages sent through our API. This queue plays an important role in our architecture, which is to organize and order messages until they are delivered to WhatsApp. This feature is also very useful for those situations where the cell phone connected to the Z-API goes through some instability or has no internet connection. If this occurs, that is, if the cell phone is offline for a period, as soon as you reconnect the messages will be sent to the recipient normally.
 
 :::tip Sending time 
 

@@ -17,7 +17,7 @@ title: Send OTP Button
 ---
 
 :::caution Warning
-Button sending is currently available. For more details, visit the [Button Status](https://developer.z-api.io/en/tips/button-status) topic.
+Button sending is currently available, but there are some decisive factors for operation. For more details visit the [Button Status](https://developer.z-api.io/en/tips/button-status) topic.
 :::
 
 ## Concept

@@ -4,7 +4,7 @@ title: Status da instância
 ---
 ## Conceituação
 
-Este método te permite descobrir se sua instância está ou não conectada a uma conta de Whatsapp.
+Este método te permite descobrir se sua instância está ou não conectada a uma conta de WhatsApp.
 
 ---
 

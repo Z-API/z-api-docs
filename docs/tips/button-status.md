@@ -35,7 +35,7 @@ Para utilizar a funcionalidade dos botões, é necessário que você aceite os t
 
 ## Tipos de botões
 
-#### Existem quatro tipos de botões no WhatsApp:
+#### Existem sete tipos de botões no WhatsApp:
 
 - Botão simples com texto (/send-button-list)
 - Botão simples com imagem (/send-button-list-image)
@@ -43,6 +43,7 @@ Para utilizar a funcionalidade dos botões, é necessário que você aceite os t
 - Lista de opções (/send-option-list)
 - Botões de ações (/send-button-actions)
 - Botão de cópia (/send-button-otp)
+- Botão PIX (/send-button-pix)
 
 ---
 
@@ -90,7 +91,7 @@ Para utilizar a funcionalidade dos botões, é necessário que você aceite os t
 - Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Grupo: **FUNCIONA**
 
-### [Botão de chave pix:](https://developer.z-api.io/message/send-button-pix)
+### [Botão de chave PIX:](https://developer.z-api.io/message/send-button-pix)
 
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**

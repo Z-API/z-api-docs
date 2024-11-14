@@ -7,7 +7,7 @@ title: Introdução
 
 Primeiramente, o que você precisa entender sobre as mensagens é que elas podem ser enviadas para um contato, um grupo ou lista de transmissão.
 
-No tópico "contatos" vou voltar a relatar sobre isso, mas é importante você também saber que para o Whatsapp tudo é um chat, seja um contato, grupo ou uma lista de transmissão.
+No tópico "contatos" vou voltar a relatar sobre isso, mas é importante você também saber que para o WhatsApp tudo é um chat, seja um contato, grupo ou uma lista de transmissão.
 
 Para enviar qualquer mensagem ele precisa de ID do chat, sendo eles:
 

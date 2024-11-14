@@ -11,7 +11,7 @@ title: Enviar documentos
 
 
 
-> **Não se esqueça!** Você precisa informar o parâmetro **{extension}** com a extensão do aquivo que deseja enviar ! Teóricamente este método deve suportar todos tipos de documentos, desde que eles estejam dentro das politícas de tamanho de aquivos do proprio Whatsaspp (para saber mais sobre estes limites [clique aqui]).
+> **Não se esqueça!** Você precisa informar o parâmetro **{extension}** com a extensão do aquivo que deseja enviar! Teoricamente este método deve suportar todos tipos de documentos, desde que eles estejam dentro das politícas de tamanho de aquivos do proprio WhatsApp (para saber mais sobre estes limites [clique aqui]).
 
 [clique aqui]: https://developers.facebook.com/docs/whatsapp/api/media/#post-processing
 
@@ -24,7 +24,7 @@ title: Enviar documentos
 
 ### Tamanho e formatos
 
-O Whatsapp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio Whatsapp.
+O WhatsApp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio WhatsApp.
 
 Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
 

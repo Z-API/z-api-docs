@@ -18,7 +18,7 @@ title: Limpar chat
 
 ## Conceituação
 
-Este método é reponsavel por limpar as mensagens dos seus chats.
+Este método é responsável por limpar as mensagens dos seus chats.
 
 ---
 

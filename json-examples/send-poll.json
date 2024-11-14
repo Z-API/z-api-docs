@@ -16,6 +16,6 @@
     "cookies": [],
     "postData": {
         "mimeType": "application/json",
-        "text": "{\"phone\": \"5511999998888\", \"message\": \"Qual a melhor API para Whatsapp?\", \"poll\": [ {  \"name\": \"Z-API\" }, { \"name\": \"Outros\" } ] }"
+        "text": "{\"phone\": \"5511999998888\", \"message\": \"Qual a melhor API para WhatsApp?\", \"poll\": [ {  \"name\": \"Z-API\" }, { \"name\": \"Outros\" } ] }"
     }
 }

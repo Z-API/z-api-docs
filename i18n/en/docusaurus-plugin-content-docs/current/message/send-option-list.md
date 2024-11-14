@@ -46,8 +46,8 @@ In this method you will be able to send text messages with a list of options whe
 | Attributes   |  Type  | Description                       |
 | :---------- | :----: | :------------------------------ |
 | title       | string | Listing title               |
-| buttonLabel | string | Button text that opens the list|
 | options     | option | Options list                |
+| buttonLabel | string | Button text that opens the list |
 
 ### Option
 

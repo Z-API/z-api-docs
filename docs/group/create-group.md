@@ -18,11 +18,11 @@ title: Criando grupos
 
 ## Conceituação
 
-Este método é reponsavel por criar um grupo com seus respectivos participantes. Infelizmente não é possivel criar o grupo com imagem, mas você pode logo após a criação utilizar-se do método Update-group-photo que esta nesta mesma sessão.
+Este método é responsável por criar um grupo com seus respectivos participantes. Infelizmente não é possivel criar o grupo com imagem, mas você pode logo após a criação utilizar-se do método Update-group-photo que esta nesta mesma sessão.
 
 :::tip Dica
 
-Assim como no Whatsapp Web você vai precisar adicionar ao menos um contato para conseguir criar um grupo.
+Assim como no WhatsApp Web você vai precisar adicionar ao menos um contato para conseguir criar um grupo.
 
 :::
 

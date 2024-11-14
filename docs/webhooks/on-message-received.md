@@ -71,52 +71,53 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ## Response
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| isStatusReply | boolean | Identifica se a mensagem recebida é uma resposta de status |
-| senderLid | string | ID do contato no whatsapp |
-| connectedPhone | string | Número de telefone conectado à API |
-| waitingMessage | boolean | Identifica se a sua mensagem está com status de "Aguardando a mensagem" |
-| isEdit | boolean | Identifica se a mensagem recebida foi editada |
-| isGroup | boolean | Indica se o chat é um grupo |
-| isNewsletter | boolean | Indica se o chat é um canal |
-| phone | string | Número de telefone, ou do grupo que enviou a mensagem. |
-| fromMe | boolean | Indica se a mensagem enviada partiu do número conectado a API |
-| participantPhone | string | Número de telefone do membro do grupo que enviou a mensagem. |
-| participantLid | string | ID do contado no whatsapp, do participante que enviou a mensagem dentro de um grupo |
-| messageId | string | Idetificador da mensagem na conversa. |
-| status | string | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED). |
-| referenceMessageId | string | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
-| momment | integer | Momento em que a mensagem foi recebida ou do erro. |
-| messageExpirationSeconds | integer | Tempo das mensagens temporárias |
-| type | string | Tipo do evento da instância, nesse caso será "ReceivedCallBack". |
-| photo | string | Url da foto do usuário que enviou a mensagem. |
-| text.message | string | Texto da mensagem. |
-| image.caption | string | Leganda da foto. |
-| image.imageUrl | string | Url da foto. |
-| image.thumbnailUrl | string | Url da thumbnail da foto. |
-| image.mimeType | string | MimeType da imagem. |
-| audio.mimeType | string | MimeType do áudio. |
-| audio.audioUrl | string | Url do áudio. |
-| video.caption | string | Legenda do vídeo. |
-| video.videoUrl | string | Url do vídeo. |
-| video.mimeType | string | MimeType do vídeo. |
-| contact.displayName | string | Nome do contato. |
-| contact.vCard | string | VCard contendo as informações do contato. |
-| document.mimeType | string | MimeType do documento. |
-| document.fileName | string | Nome do documento. |
-| document.title | string | Título do documento. |
-| document.pageCount | string | Número de páginas do documento. |
-| document.thumbnailUrl | string | Url da thumbnail do documento. |
-| document.documentUrl | string | Url do documento. |
-| location.thumbnailUrl | string | Url da thumbnail da localização. |
-| location.longitude | float | Longitude da localização. |
-| location.latitude | float | Latitude da localização. |
-| location.url | string | Url da localização. |
-| location.name | string | Nome da localização. |
-| location.address | string | Endereço da localização. |
-| sticker.mimeType | string | MimeType do sticker. |
-| sticker.stickerUrl | string | Url do sticker. |
+| Atributos                   |   Tipo    | Descrição                                                                                           |
+| :-------------------------  | :-------: | :-------------------------------------------------------------------------------------------------- |
+| isStatusReply               | boolean   | Identifica se a mensagem recebida é uma resposta de status                                          |
+| senderLid                   | string    | ID do contato no whatsapp                                                                           |                                     
+| connectedPhone              | string    | Número de telefone conectado à API                                                                  |
+| waitingMessage              | boolean   | Identifica se a sua mensagem está com status de "Aguardando a mensagem"                             |
+| isEdit                      | boolean   | Identifica se a mensagem recebida foi editada                                                       |
+| isGroup                     | boolean   | Indica se o chat é um grupo                                                                         |
+| isNewsletter                | boolean   | Indica se o chat é um canal                                                                         |
+| phone                       | string    | Número de telefone, ou do grupo que enviou a mensagem.                                              |
+| fromMe                      | boolean   | Indica se a mensagem enviada partiu do número conectado a API                                       |
+| participantPhone            | string    | Número de telefone do membro do grupo que enviou a mensagem.                                        |
+| participantLid              | string    | ID do contado no whatsapp, do participante que enviou a mensagem dentro de um grupo                 |
+| messageId                   | string    | Idetificador da mensagem na conversa.                                                               |
+| status                      | string    | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED).    |
+| referenceMessageId          | string    | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
+| momment                     | integer   | Momento em que a mensagem foi recebida ou do erro.                                                  |
+| messageExpirationSeconds    | integer   | Tempo das mensagens temporárias                                                                     |
+| requestMethod               | string    | Identificador do método de solicitação de entrada   (`invite_link` ou `non_admin_add`)                  |
+| type                        | string    | Tipo do evento da instância, nesse caso será "ReceivedCallBack".                                    |
+| photo                       | string    | Url da foto do usuário que enviou a mensagem.                                                       |
+| text.message                | string    | Texto da mensagem.                                                                                  |
+| image.caption               | string    | Leganda da foto.                                                                                    |
+| image.imageUrl              | string    | Url da foto.                                                                                        |
+| image.thumbnailUrl          | string    | Url da thumbnail da foto.                                                                           |
+| image.mimeType              | string    | MimeType da imagem.                                                                                 |
+| audio.mimeType              | string    | MimeType do áudio.                                                                                  |
+| audio.audioUrl              | string    | Url do áudio.                                                                                       |
+| video.caption               | string    | Legenda do vídeo.                                                                                   |
+| video.videoUrl              | string    | Url do vídeo.                                                                                       |
+| video.mimeType              | string    | MimeType do vídeo.                                                                                  |
+| contact.displayName         | string    | Nome do contato.                                                                                    |
+| contact.vCard               | string    | VCard contendo as informações do contato.                                                           |
+| document.mimeType           | string    | MimeType do documento.                                                                              |
+| document.fileName           | string    | Nome do documento.                                                                                  |
+| document.title              | string    | Título do documento.                                                                                |
+| document.pageCount          | string    | Número de páginas do documento.                                                                     |
+| document.thumbnailUrl       | string    | Url da thumbnail do documento.                                                                      |
+| document.documentUrl        | string    | Url do documento.                                                                                   |
+| location.thumbnailUrl       | string    | Url da thumbnail da localização.                                                                    |
+| location.longitude          | float     | Longitude da localização.                                                                           |
+| location.latitude           | float     | Latitude da localização.                                                                            |
+| location.url                | string    | Url da localização.                                                                                 |
+| location.name               | string    | Nome da localização.                                                                                |
+| location.address            | string    | Endereço da localização.                                                                            |
+| sticker.mimeType            | string    | MimeType do sticker.                                                                                |
+| sticker.stickerUrl          | string    | Url do sticker.                                                                                     |
 
 ---
 
@@ -1194,25 +1195,22 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de solicitação de entrada em grupo
+### Exemplo de solicitação de entrada em grupo através de um link de convite
 
 ```json
 {
-  "isStatusReply": false,
-  "senderLid": "81896604192873@lid",
-  "connectedPhone": "554499999999",
-  "waitingMessage": false,
-  "isEdit": false,
-  "isGroup": false,
+  "isGroup": true,
   "isNewsletter": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
-  "messageId": "464201093",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999-group",
+  "connectedPhone": "5544999999999",
   "fromMe": false,
   "momment": 1682017970000,
+  "expiresAt": null,
   "status": "RECEIVED",
   "chatName": "name",
-  "senderPhoto": null,
+  "senderPhoto": "https://",
   "senderName": "name",
   "photo": null,
   "broadcast": false,
@@ -1222,8 +1220,47 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "forwarded": false,
   "type": "ReceivedCallback",
   "notification": "MEMBERSHIP_APPROVAL_REQUEST",
-  "notificationParameters": ["5544999999999"],
-  "callId": null
+  "notificationParameters": [
+      "5544999999999"
+  ],
+  "callId": null,
+  "code": null,
+  "requestMethod": "invite_link"
+}
+```
+
+### Exemplo de solicitação de entrada em grupo adicionado por um participante
+
+```json
+{
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999-group",
+  "connectedPhone": "5544999999999",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "MEMBERSHIP_APPROVAL_REQUEST",
+  "notificationParameters": [
+      "5544999999999",
+      "5544888888888"
+  ],
+  "callId": null,
+  "code": null,
+  "requestMethod": "non_admin_add"
 }
 ```
 
@@ -1410,7 +1447,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "broadcast": false,
   "type": "ReceivedCallback",
   "poll": {
-    "question": "Qual a melhor API de Whatsapp?",
+    "question": "Qual a melhor API de WhatsApp?",
     "options": [
       {
         "name": "Z-API"

@@ -19,7 +19,7 @@ title: Get contacts
 
 ## Concept
 
-This method is responsible for returning all of your Whatsapp contacts. Remember what was said in the introduction about contact numbers. In case you skipped this part, I suggest that you take a step back and read our introduction.
+This method is responsible for returning all of your WhatsApp contacts. Remember what was said in the introduction about contact numbers. In case you skipped this part, I suggest that you take a step back and read our introduction.
 
 ---
 
@@ -60,7 +60,7 @@ Method
 | name | string | **First and last name** of the contact, it will only return filled in if you have the number in your contacts |
 | short | string | Contact **name**, it will only return filled in if you have the number in your contacts |
 | vname | string | Contact name if you have him as a contact |
-| notify | string | Name entered in Whatsapp name settings |
+| notify | string | Name entered in WhatsApp name settings |
 
 Example 
 
@@ -69,7 +69,7 @@ Example
   {
     "name": "Nome e sobrenome do contato 1",
     "short": "Nome do contato 1",
-    "notify": "Nome no Whatsapp 1",
+    "notify": "Nome no WhatsApp 1",
     "vname": "Nome no vcard",
     "phone": "559999999999"
   }

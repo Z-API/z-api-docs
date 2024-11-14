@@ -18,7 +18,7 @@ title: Send text with action buttons
 ---
 
 :::caution Warning
-Button sending is currently available. For more details, visit the [Button Status](https://developer.z-api.io/en/tips/button-status) topic.
+Button sending is currently available, but there are some decisive factors for operation. For more details visit the [Button Status](https://developer.z-api.io/en/tips/button-status) topic.
 :::
 
 ## Concept
@@ -35,9 +35,9 @@ In this method, you will be able to send text messages with action buttons. You 
 | :-------     | :-:    | :-------    |
 | phone        | string | Recipient (or group ID in case you want to send it to a group) telephone number in the format DDI DDD NUMERS Ex: 551199999999. IMPORTANT  only send numbers without formatting or a mask |
 | message       | string | Text to be sent|
-| buttonActions | buttonActions | Type button object |
+| buttonActions | buttonActions[] | Type array of buttonActions |
 
-### button Actions
+### buttonActions
 
 | Attributes   | Type   | Description |
 | :-------- | :----: | :---------------------------- |
@@ -47,7 +47,7 @@ In this method, you will be able to send text messages with action buttons. You 
 | label     | string | Text for the button |
 
 :::tip Dica:
-The WhatsApp has a specific link for copying texts. By using this link in the 'url' attribute, your button becomes a copy button (https://www.whatsapp.com/otp/copy/yourtext)
+The WhatsApp has a specific link for copying texts. By using this link in the 'url' attribute, your button becomes a copy button (https://www.whatsapp.com/otp/code/?otp_type=COPY_CODE&code=otpyourcode)
 :::
 
 ### Optional buttons
@@ -55,13 +55,13 @@ The WhatsApp has a specific link for copying texts. By using this link in the 'u
 | Attributes| Type   | Description |
 | :-------- | :----: | :---------------------       |
 | id        | string | Button identifier            |
-| title     | string | If you want to send a title  |
-| footer    | string | If you want to send a footer |
 
 ### Optional
 | Attributes   | Type   | Description |
 | :---------   | :----: | :--------   |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs |
+| title     | string | If you want to send a title  |
+| footer    | string | If you want to send a footer |
 
 ---
 

@@ -18,7 +18,7 @@ title: Promover admin da comunidade
 
 ## Conceituação
 
-Este método é reponsavel por promover participamentes da comunidade à administradores, você pode provomover um ou mais participamente à administrador.
+Este método é responsável por promover participamentes da comunidade à administradores, você pode provomover um ou mais participamente à administrador.
 
 ---
 

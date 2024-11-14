@@ -23,6 +23,7 @@ module.exports = {
       'tips/Z-APIvsAPI-OFICIAL',
       'tips/button-status',
       'tips/file-expiration',
+      'tips/postman-collection',
     ],
 
     Security: [
@@ -120,6 +121,8 @@ module.exports = {
     Contacts: [
       'contacts/introduction',
       'contacts/get-contacts',
+      'contacts/add-contacts',
+      'contacts/remove-contacts',
       'contacts/get-metadata-contact',
       'contacts/get-profile-picture',
       'contacts/get-iswhatsapp',
@@ -176,6 +179,10 @@ module.exports = {
       'communities/community-settings',
       'communities/deactivate-community',
     ],
+    'Meta AI': [
+      'metaai/introduction',
+      'metaai/conversation'
+    ],
     Newsletter: [
       'newsletter/introduction',
       'newsletter/create-newsletter',
@@ -204,6 +211,7 @@ module.exports = {
       'status/reply-status-text',
       'status/reply-status-gif',
       'status/reply-status-sticker',
+      'status/send-video-status',
     ],
     'Message queue': [
       'queue/introduction',
@@ -211,7 +219,7 @@ module.exports = {
       'queue/delete-queue',
       'queue/delete-queue-id',
     ],
-    'Whatsapp Business': [
+    'WhatsApp Business': [
       'business/introduction',
       'business/edit-product',
       'business/get-products',

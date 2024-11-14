@@ -22,6 +22,12 @@ title: Forward message
 
 Simple and straightforward, in this method, you can forward messages through the API by providing the messageId of the message you want to forward and the phone number of the chat where this messageId is located.
 
+:::caution Attention
+
+To use this method it is necessary to configure the webhook, if it has not yet been configured, the message will not be forwarded.
+
+:::
+
 ![image](../../../../../img/reencaminhar.jpeg)
 
 ---
