@@ -67,3 +67,22 @@ Acesse nosso painel admin, vá em opções e escolha "editar instância".
 Access our admin panel, go to options and choose "edit instance"
 
 ![img](../../../../../img/EditInstance.jpeg)
+
+
+### API
+
+You can also update your webhook's rotation by calling the update endpoint. This endpoint is available in the detailed documentation details.
+
+---
+
+## Gzip format
+
+Gzip compression can greatly decrease the size of the response body and thus increase the speed of a web application.
+
+Therefore, in November 2024 an update to the Z-API was released in which webhooks can be received in Gzip format.
+
+To do this, you will need to decompress the webhook data that will arrive in Gzip format. But don't worry, we'll help you below.
+
+### How unzip Gzip
+
+To assist you in this process, we created a repository with several applications that decompress Gzip using different languages ​​and frameworks. To learn more, visit [repository link](https://github.com/Z-API/z-api-gzip-decompress).
