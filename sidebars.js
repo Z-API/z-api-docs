@@ -258,6 +258,7 @@ module.exports = {
       'webhooks/on-whatsapp-message-status-changes',
       'webhooks/on-chat-presence',
       'webhooks/on-webhook-connected',
+      'webhooks/update-every-webhooks',
     ],
     Partners: [
       'partner/introduction',

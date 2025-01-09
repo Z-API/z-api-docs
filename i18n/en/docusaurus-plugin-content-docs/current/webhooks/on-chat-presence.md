@@ -21,9 +21,7 @@ To update the webhook route, you can do it through the API or through the admin 
 
 :::tip Tip
 
-You can change all webhooks at once to the same value using the following route:
-
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-every-webhooks
+You can change all webhooks at once to the same value using [this endpoint](./update-every-webhooks.md).
 
 :::
 

@@ -22,9 +22,7 @@ Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel
 
 :::tip Dica
 
-É possível alterar todos os webhooks de uma vez para o mesmo valor utilizando a seguinte rota:
-
-`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-every-webhooks
+É possível alterar todos os webhooks de uma vez para a mesma URL. [Ver endpoint](./update-every-webhooks.md).
 
 :::
 
