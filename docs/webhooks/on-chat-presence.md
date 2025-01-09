@@ -20,6 +20,14 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
 
+:::tip Dica
+
+É possível alterar todos os webhooks de uma vez para o mesmo valor utilizando a seguinte rota:
+
+`PUT` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/update-every-webhooks
+
+:::
+
 ### API
 
 #### /update-webhook-chat-presence
