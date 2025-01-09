@@ -32,6 +32,7 @@ This method allows you to obtain the data of your instance.
 | id                        | string    | Instance ID                                                                    |
 | token                     | string    | Instance token                                                                 |
 | name                      | string    | Instance name                                                                  |
+| due                       | number    | Timestamp with the expiration date of the instance (unix timestamp)            |
 | connected                 | boolean   | Defines if the instance is connected                                           |
 | paymentStatus             | string    | Defines the payment status of the instance                                      |
 | created                   | Date      | Creation date of the instance                                                   |
