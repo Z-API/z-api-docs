@@ -30,12 +30,24 @@ Z-API does not accept webhooks that aren’t HTTPS
 |  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 ---
 
-#### Request Body
+### Request Body
+
+#### Required
+
+| Atributos |  Tipo  | Descrição                      |
+| :-------- | :----: | :----------------------------- |
+| value      | string | Webhook endpoint |
+
+#### Optionals
+
+| Atributos               |  Tipo  | Descrição                      |
+| :--------               | :----: | :----------------------------- |
+| notifySentByMe | boolean | Activate webhook for messages received and sent by me |
 
 ```json
 {
   "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/status",
-  "receivedAndDeliveryCallback": true
+  "notifySentByMe": true
 }
 ```
 
