@@ -19,6 +19,12 @@ Z-API does not accept webhooks that aren’t HTTPS
 
 To update the webhook route, you can do it through the API or through the admin panel.
 
+:::tip Tip
+
+You can change all webhooks at once to the same value using [this endpoint](./update-every-webhooks.md).
+
+:::
+
 ### API
 
 #### /update-webhook-received
