@@ -1755,6 +1755,30 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de "aguardando mensagem"
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "momment": 1736797729000,
+  "status": "RECEIVED",
+  "fromMe": true,
+  "phone": "5544999999999",
+  "chatName": "chat",
+  "senderName": "name",
+  "senderPhoto": null,
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "type": "ReceivedCallback",
+  "waitingMessage": true,
+  "viewOnce": true
+}
+```
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.

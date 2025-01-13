@@ -1507,6 +1507,30 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Waiting message return example
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "momment": 1736797729000,
+  "status": "RECEIVED",
+  "fromMe": true,
+  "phone": "5544999999999",
+  "chatName": "chat",
+  "senderName": "name",
+  "senderPhoto": null,
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "type": "ReceivedCallback",
+  "waitingMessage": true,
+  "viewOnce": true
+}
+```
+
 ### 405
 
 In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or PUT as specified at the beginning of this topic.
