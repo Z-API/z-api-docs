@@ -60,10 +60,21 @@ In this [link] you can find everything that you need to know about formatting an
 
 ## Request Body
 
+**Sending using URL**
 ```json
 {
   "phone": "5511999999999",
   "video": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4",
+  "caption": "Test",
+  "viewOnce": true
+}
+```
+
+**Sending using Base64**
+```json
+{
+  "phone": "5511999999999",
+  "video": "data:video/mp4;base64,AAYXJ0eHJlZgIGZ0eXBtc0eHDQyAAg3NDINCiUlRUAAAG1wNDJtcD",
   "caption": "Test",
   "viewOnce": true
 }

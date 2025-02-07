@@ -59,10 +59,21 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 ## Request Body
 
+**Envio por URL**
 ```json
 {
   "phone": "5511999999999",
   "audio": "https://tuningmania.com.br/autosom/mp3/75%20~%2079%20Hz.MP3",
+  "viewOnce": false,
+  "waveform": true
+}
+```
+
+**Envio por Base64**
+```json
+{
+  "phone": "5511999999999",
+  "audio": "data:audio/mpeg;base64,SUQzAwAAAAAAbVRYWFgAAAAgAAAARW5jb2RlZCBieQBMQU1FIGluIEZMIFN0dWRpbyAyMFRYWFgAAAAbAAAAQlBN",
   "viewOnce": false,
   "waveform": true
 }

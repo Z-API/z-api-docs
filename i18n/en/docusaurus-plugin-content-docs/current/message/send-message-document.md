@@ -58,11 +58,21 @@ Method responsible for sending documents to your contacts. It is simple and obje
 
 ## Request Body
 
+**Sending using URL**
 ```json
 {
   "phone": "5544999999999",
   "document": "https://expoforest.com.br/wp-content/uploads/2017/05/exemplo.pdf",
-  "fileName": "Meu PDF"
+  "fileName": "My PDF"
+}
+```
+
+**Sending using Base64**
+```json
+{
+  "phone": "5544999999999",
+  "document": "data:application/pdf;base64,JVBERiN0YXJ0eHJlZg0KMjg3NDINCiUlRU9G0xLj",
+  "fileName": "My PDF"
 }
 ```
 

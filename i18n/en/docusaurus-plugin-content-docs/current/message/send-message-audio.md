@@ -60,10 +60,21 @@ In this [link]  you can find everything that you need to know about formatting a
 
 ## Request Body
 
+**Sending using URL**
 ```json
 {
   "phone": "5511999999999",
   "audio": "https://tuningmania.com.br/autosom/mp3/75%20~%2079%20Hz.MP3",
+  "viewOnce": false,
+  "waveform": true
+}
+```
+
+**Sending using Base64**
+```json
+{
+  "phone": "5511999999999",
+  "audio": "data:audio/mpeg;base64,SUQzAwAAAAAAbVRYWFgAAAAgAAAARW5jb2RlZCBieQBMQU1FIGluIEZMIFN0dWRpblZCBieQBMQU1yAyMFRYWFgAAAAbAAAAQlBN",
   "viewOnce": false,
   "waveform": true
 }

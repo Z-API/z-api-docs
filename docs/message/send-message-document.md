@@ -62,8 +62,7 @@ Método responsavel por enviar documentos aos seus contatos ele é simples e obj
 
 ## Request Body
 
-##### Envio por URL
-
+**Envio por URL**
 ```json
 {
   "phone": "5544999999999",
@@ -72,8 +71,7 @@ Método responsavel por enviar documentos aos seus contatos ele é simples e obj
 }
 ```
 
-##### Envio por Base64
-
+**Envio por Base64**
 ```json
 {
   "phone": "5544999999999",
