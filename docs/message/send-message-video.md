@@ -59,22 +59,23 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 
 ## Request Body
 
-##### Envio por URL
+**Envio por URL**
 ```json
 {
   "phone": "5511999999999",
   "video": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4",
-  "caption": "Test"
+  "caption": "Test",
+  "viewOnce": false
 }
 ```
 
-##### Envio por Base64
+**Envio por Base64**
 ```json
 {
   "phone": "5544999999999",
   "video": "data:video/mp4;base64,AAYXJ0eHJlZgIGZ0eXBtc0eHDQyAAg3NDINCiUlRUAAAG1wNDJtcD",
   "caption": "Test",
-  "viewOnce": true
+  "viewOnce": false
 }
 ```
 
