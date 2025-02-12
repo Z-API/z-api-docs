@@ -124,11 +124,11 @@ Neste método você poderá enviar mensagens de carrosel com imagens, texto e co
     "carousel": [
         {
             "text": "Texto do cartão",
-            "image": "https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media",
+            "image": "https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media"
         },
         {
             "text": "Texto do cartão",
-            "image": "https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media",
+            "image": "https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media"
         }
     ]
 }
