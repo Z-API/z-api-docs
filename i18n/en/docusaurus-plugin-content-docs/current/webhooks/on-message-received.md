@@ -913,6 +913,98 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Carousel return example
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": null,
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "554499999999",
+  "fromMe": true,
+  "momment": 1739368022130,
+  "status": "SENT",
+  "chatName": "Nome",
+  "senderPhoto": null,
+  "senderName": "Nome",
+  "photo": "https://",
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": true,
+  "carouselMessage": {
+    "text": "Message text",
+    "cards": [
+      {
+        "header": {
+          "image": {
+            "imageUrl": "https://",
+            "thumbnailUrl": "https://",
+            "caption": "",
+            "mimeType": "image/jpeg",
+            "viewOnce": false,
+            "width": 0,
+            "height": 0
+          }
+        },
+        "message": "Carousel card message",
+        "footer": "",
+        "title": "",
+        "hydratedButtons": [
+          {
+            "index": 0,
+            "urlButton": {
+              "displayText": "Button text",
+              "url": "https://"
+            }
+          },
+          {
+            "index": 1,
+            "quickReplyButton": { "displayText": "Button text", "id": "2" }
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": {
+            "imageUrl": "https://",
+            "thumbnailUrl": "https://",
+            "caption": "",
+            "mimeType": "image/jpeg",
+            "viewOnce": false,
+            "width": 0,
+            "height": 0
+          }
+        },
+        "message": "Carousel card message",
+        "footer": "",
+        "title": "",
+        "hydratedButtons": [
+          {
+            "index": 0,
+            "urlButton": {
+              "displayText": "Button text",
+              "url": "https://"
+            }
+          },
+          {
+            "index": 1,
+            "quickReplyButton": { "displayText": "Button text", "id": "2" }
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
 ### Sticker feedback example
 
 ```json
