@@ -94,6 +94,7 @@ module.exports = {
       'message/send-option-list',
       'message/send-button-otp',
       'message/send-button-pix',
+      'message/send-carousel',
       'message/delete-message',
       'message/read-message',
       'message/reply-message',
@@ -180,10 +181,7 @@ module.exports = {
       'communities/community-settings',
       'communities/deactivate-community',
     ],
-    'Meta AI': [
-      'metaai/introduction',
-      'metaai/conversation'
-    ],
+    'Meta AI': ['metaai/introduction', 'metaai/conversation'],
     Newsletter: [
       'newsletter/introduction',
       'newsletter/create-newsletter',

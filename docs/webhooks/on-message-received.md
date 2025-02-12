@@ -490,6 +490,98 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de carrosel
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": null,
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "554499999999",
+  "fromMe": true,
+  "momment": 1739368022130,
+  "status": "SENT",
+  "chatName": "Nome",
+  "senderPhoto": null,
+  "senderName": "Nome",
+  "photo": "https://",
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": true,
+  "carouselMessage": {
+    "text": "Texto da mensagem",
+    "cards": [
+      {
+        "header": {
+          "image": {
+            "imageUrl": "https://",
+            "thumbnailUrl": "https://",
+            "caption": "",
+            "mimeType": "image/jpeg",
+            "viewOnce": false,
+            "width": 0,
+            "height": 0
+          }
+        },
+        "message": "Mensagem do cartão do carrosel",
+        "footer": "",
+        "title": "",
+        "hydratedButtons": [
+          {
+            "index": 0,
+            "urlButton": {
+              "displayText": "Texto do botão",
+              "url": "https://"
+            }
+          },
+          {
+            "index": 1,
+            "quickReplyButton": { "displayText": "Texto do botão", "id": "2" }
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": {
+            "imageUrl": "https://",
+            "thumbnailUrl": "https://",
+            "caption": "",
+            "mimeType": "image/jpeg",
+            "viewOnce": false,
+            "width": 0,
+            "height": 0
+          }
+        },
+        "message": "Mensagem do cartão do carrosel",
+        "footer": "",
+        "title": "",
+        "hydratedButtons": [
+          {
+            "index": 0,
+            "urlButton": {
+              "displayText": "Texto do botão",
+              "url": "https://"
+            }
+          },
+          {
+            "index": 1,
+            "quickReplyButton": { "displayText": "Texto do botão", "id": "2" }
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
 ### Exemplo de retorno de texto vindos de anúncio
 
 ```json

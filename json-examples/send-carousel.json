@@ -1,0 +1,21 @@
+{
+  "method": "POST",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-carousel",
+  "httpVersion": "HTTP/1.1",
+  "queryString": [],
+  "headers": [
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "name": "Client-Token",
+      "value": "{{security-token}}"
+    }
+  ],
+  "cookies": [],
+  "postData": {
+    "mimeType": "application/json",
+    "text": "{\"phone\":\"551199999999\",\"message\":\"Texto da mensagem\",\"carousel\":[{\"text\":\"Texto do cartão\",\"image\":\"https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media\",\"buttons\":[{\"id\":\"1\",\"label\":\"Nome do botão\",\"url\":\"https://z-api.io\",\"type\":\"URL\"},{\"id\":\"2\",\"label\":\"Nome do botão\",\"type\":\"REPLY\"}]},{\"text\":\"Texto do cartão\",\"image\":\"https://firebasestorage.googleapis.com/v0/b/zaap-messenger-web.appspot.com/o/logo.png?alt=media\",\"buttons\":[{\"id\":\"1\",\"label\":\"Nome do botão\",\"url\":\"https://z-api.io\",\"type\":\"URL\"},{\"id\":\"2\",\"label\":\"Nome do botão\",\"type\":\"REPLY\"}]}]}"
+  }
+}
