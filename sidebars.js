@@ -155,6 +155,7 @@ module.exports = {
       'group/approve-participant',
       'group/reject-participant',
       'group/mention-participant',
+      'group/mention-group',
       'group/add-admin',
       'group/remove-admin',
       'group/leave-group',
@@ -180,10 +181,7 @@ module.exports = {
       'communities/community-settings',
       'communities/deactivate-community',
     ],
-    'Meta AI': [
-      'metaai/introduction',
-      'metaai/conversation'
-    ],
+    'Meta AI': ['metaai/introduction', 'metaai/conversation'],
     Newsletter: [
       'newsletter/introduction',
       'newsletter/create-newsletter',
