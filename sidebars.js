@@ -156,6 +156,7 @@ module.exports = {
       'group/approve-participant',
       'group/reject-participant',
       'group/mention-participant',
+      'group/mention-group',
       'group/add-admin',
       'group/remove-admin',
       'group/leave-group',
