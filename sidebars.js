@@ -148,6 +148,7 @@ module.exports = {
     Calls: ['calls/introduction', 'calls/send-call'],
     Groups: [
       'group/introduction',
+      'group/get-groups',
       'group/create-group',
       'group/update-group-name',
       'group/update-group-photo',
@@ -161,10 +162,12 @@ module.exports = {
       'group/remove-admin',
       'group/leave-group',
       'group/metadata-group',
+      'group/light-group-metadata',
       'group/group-invitation-metadata',
       'group/update-group-settings',
       'group/update-group-description',
       'group/redefine-invitation-link',
+      'group/get-invitation-link',
       'group/accept-group-invite',
     ],
     Communities: [
