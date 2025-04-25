@@ -3,6 +3,11 @@ id: introduction
 title: Introduction
 ---
 
+:::warning WhatsApp Web Limitation
+Since this feature is **not available on WhatsApp Web**, **Z-API currently does not support sending messages via broadcast lists**. This is a limitation imposed by the WhatsApp Web platform itself.
+:::
+
+
 ## Transmission list 
 
 As I said before, for WhatsApp everything is a chat and in the case of the broadcast list it is no different, just like in the case of groups you can easily get your broadcast lists through the get/chats method, the broadcast lists come with an ID/Phone concatenating with the word "-broadcast" which would look something like "1624901640-broadcast".
