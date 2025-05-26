@@ -31,7 +31,9 @@ In this method you will be able to get any product by its ID
 | availability | string  | Attribute to know product availability           |
 | id           | string  | Product ID                                       |
 | retailerId   | boolean | Retailer ID                                      |
+| description  | string  | Product description                              |
 | price        | string  | Product price                                    |
+| salePrice    | string  | Sale price                                       |
 | currency     | string  | Currency type                                    |
 | name         | string  | Product type                                     |
 | quantity     | boolean | Product quantity attribute                       |
@@ -47,7 +49,9 @@ Example
     "availability": "in stock",
     "id": "99999999999999",
     "retailerId": null,
+    "description": "A product description",
     "price": "20000",
+    "salePrice": "18000",
     "currency": "BRL",
     "name": "My first product",
     "images": ["https://"]
