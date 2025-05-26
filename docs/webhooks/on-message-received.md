@@ -1327,6 +1327,39 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de solicitação de entrada em grupo revogada pelo usuário
+
+```json
+{
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999-group",
+  "connectedPhone": "5544999999999",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "REVOKED_MEMBERSHIP_REQUESTS",
+  "notificationParameters": [
+      "5544999999999"
+  ],
+  "callId": null,
+  "code": null
+}
+```
+
 ### Exemplo de solicitação de entrada em grupo adicionado por um participante
 
 ```json
