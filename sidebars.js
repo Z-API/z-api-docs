@@ -262,6 +262,7 @@ module.exports = {
       'webhooks/on-chat-presence',
       'webhooks/on-webhook-connected',
       'webhooks/update-every-webhooks',
+      'webhooks/update-notify-sent-by-me',
     ],
     Partners: [
       'partner/introduction',
