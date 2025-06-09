@@ -44,18 +44,20 @@ Method
 
 ### 200
 
-| Attributes    | Type    | Description                                            |
-| :----------- | :------ | :---------------------------------------------------   |
-| cartEnabled  | boolean | Attribute to know if the cart is active               |
-| nextCursor   | string  | Token that defines the records of the next request    |
-| availability | string  | Attribute to know the product's availability           |
-| id           | string  | Product ID                                             |
-| retailerId   | boolean | Retailer ID                                           |
-| price        | string  | Product price                                         |
-| currency     | string  | Currency type                                         |
-| name         | string  | Product name                                         |
-| quantity     | boolean | Product quantity attribute                             |
-| images       | string  | Product image link                                    |
+| Attributes    | Type    | Description                                           |
+| :-----------  | :------ | :---------------------------------------------------- |
+| cartEnabled   | boolean | Attribute to know if the cart is active               |
+| nextCursor    | string  | Token that defines the records of the next request    |
+| availability  | string  | Attribute to know the product's availability          |
+| id            | string  | Product ID                                            |
+| retailerId    | boolean | Retailer ID                                           |
+| description   | string  | Product description                                   |
+| price         | string  | Product price                                         |
+| salePrice     | string  | Sale price                                            |
+| currency      | string  | Currency type                                         |
+| name          | string  | Product name                                          |
+| quantity      | boolean | Product quantity attribute                            |
+| images        | string  | Product image link                                    |
 
 Example
 
@@ -67,7 +69,9 @@ Example
       "availability": "in stock",
       "id": "99999999999999999",
       "retailerId": null,
+      "description": "mouse description",
       "price": "100000",
+      "salePrice": "90000",
       "currency": "BRL",
       "name": "Mouse",
       "quantity": null,

@@ -27,27 +27,29 @@ In this method you will be able to register and update a product in your catalog
 
 ### Required 
 
-| Attributes   |  Type   | Description                                     |
+| Attributes  |  Type   | Description                                    |
 | :---------- | :-----: | :--------------------------------------------- |
-| currency    | string  | Currency type                                 |
+| currency    | string  | Currency type                                  |
 | description | string  | Product description                            |
-| images      | string  | Product’s image Url                       |
-| isHidden    | boolean | Attribute to “hide” the product in the catalog|
-| name        | string  | Product name                                |
-| price       | integer | Product price                               |
-| retailerId  | string  | Product ID                                  |
-| url         | string  | Z-APIs Url route                           |
+| images      | string  | Product’s image Url                            |
+| isHidden    | boolean | Attribute to “hide” the product in the catalog |
+| name        | string  | Product name                                   |
+| price       | integer | Product price                                  |
+| salePrice   | integer | Sale price                                     |
+| retailerId  | string  | Product ID                                     |
+| url         | string  | Z-APIs Url route                               |
 
 ## Request Body
 
 ```json
 {
   "currency": "BRL",
-  "description": "Uma descricao do produto",
+  "description": "A product description",
   "images": ["https://avatars.githubusercontent.com/u/60630101?s=200&v=4"],
   "isHidden": false,
   "name": "My first product",
   "price": 20,
+  "salePrice":18,
   "retailerId": "002",
   "url": "https://z-api.io"
 }
