@@ -1629,6 +1629,64 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Example of return for changing the connected WhatsApp name
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "PROFILE_NAME_UPDATED",
+  "callId": null,
+  "code": null,
+  "profileName": "updated name"
+}
+```
+
+### Example of return for changing the connected WhatsApp photo
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "PROFILE_PICTURE_UPDATED",
+  "callId": null,
+  "code": null,
+  "updatedPhoto": "https://"
+}
+```
+
 ### 405
 
 In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or PUT as specified at the beginning of this topic.
