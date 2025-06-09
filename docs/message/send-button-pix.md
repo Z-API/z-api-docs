@@ -38,6 +38,12 @@ Neste método você poderá enviar mensagens de chave pix com botão para copiar
 | pixKey        | string        | Chave pix  |
 | type          | string        | Tipo da chave pix (CPF, CNPJ, PHONE, EMAIL, EVP)  |
 
+### Opcionais
+
+| Atributos   | Tipo          | Descrição |
+| :----------:| :-----------: | :-------- |
+| merchantName         | string        | Título a ser exibido no botão (caso seja enviado vazio o título padrão será 'Pix') |
+
 ---
 
 ## Request Body
