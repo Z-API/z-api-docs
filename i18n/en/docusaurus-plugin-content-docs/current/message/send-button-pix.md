@@ -38,6 +38,12 @@ With this method, you can send PIX key messages with a button to copy.
 | pixKey      | string | PIX key      |
 | type        | string | Type of PIX key (CPF, CNPJ, PHONE, EMAIL, EVP)  |
 
+### Optional
+
+| Atributos   | Tipo          | Descrição |
+| :----------:| :-----------: | :-------- |
+| merchantName         | string        | Title to be shown on the button (If left empty the default title will be 'Pix') |
+
 ---
 
 ## Request Body
