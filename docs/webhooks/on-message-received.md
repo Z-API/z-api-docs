@@ -1877,6 +1877,64 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de alteração do Nome do Whatsapp conectado
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": "https://",
+  "senderName": "nome",
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "PROFILE_NAME_UPDATED",
+  "callId": null,
+  "code": null,
+  "profileName": "nome atualizado"
+}
+```
+
+### Exemplo de retorno de alteração da foto do Whatsapp conectado
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": "https://",
+  "senderName": "nome",
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "PROFILE_PICTURE_UPDATED",
+  "callId": null,
+  "code": null,
+  "updatedPhoto": "https://"
+}
+```
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.
