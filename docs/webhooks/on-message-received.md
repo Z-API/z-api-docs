@@ -611,6 +611,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
         "thumbnailUrl": "https://",
         "sourceType": "ad",
         "sourceId": "23722824350495506",
+        "ctwaClid": "Aff-niaAw7V94N8LGd79Vjr43TlJD4UnoBdpZJQ3LzABitbbG6wgKBSVOth4EN0IDr9glsKWjm2LBaFrJG3Nb0ILxP49ZtossVBNzlS8cFXBvv2ow7gNw",
         "sourceUrl": "https://",
         "containsAutoReply": false,
         "renderLargerThumbnail": true,
