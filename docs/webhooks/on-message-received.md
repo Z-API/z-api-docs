@@ -1968,6 +1968,46 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de alteração de etiquetas de um chat
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": null,
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "CHAT_LABEL_ASSOCIATION",
+  "notificationParameters": [
+    {
+      "phone": "5544977777777",
+      "label": "1",
+      "assigned": true
+    },
+    {
+      "phone": "5544988888888",
+      "label": "2",
+      "assigned": false
+    }
+  ],
+  "callId": null,
+  "code": null
+}
+```
+
 ### 405
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.
