@@ -1719,6 +1719,46 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
+### Chat tag update return example
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": null,
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "CHAT_LABEL_ASSOCIATION",
+  "notificationParameters": [
+    {
+      "phone": "5544977777777",
+      "label": "1",
+      "assigned": true
+    },
+    {
+      "phone": "5544988888888",
+      "label": "2",
+      "assigned": false
+    }
+  ],
+  "callId": null,
+  "code": null
+}
+```
+
 ### 405
 
 In this case certify that you are sending the correct specification of the method. This means, verify if you sent a POST or PUT as specified at the beginning of this topic.
