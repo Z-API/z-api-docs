@@ -7,6 +7,12 @@ title: Auto-reading status
 
 This method activates the automatic reading of all status posts received through the API.
 
+:::caution Caution
+
+In order for it to work you will need to have [Auto reading](./auto-read.md) enabled.
+
+:::
+
 ### Header
 
 |      Key       |            Value            |

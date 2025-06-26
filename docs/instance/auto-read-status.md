@@ -7,6 +7,12 @@ title: Leitura automática de status
 
 Esse método ativa a leitura automática de todas as publicações de status recebidas pela API.
 
+:::caution Atenção
+
+Para que funcione você deve ter a [Leitura automática](./auto-read.md) habilitada.
+
+:::
+
 ---
 
 ### Método
