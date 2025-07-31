@@ -28,17 +28,16 @@ This method is responsible for returning the information about the device/cell p
 ```json
 {
   "phone": "",
-  "imgUrl": null,
+  "imgUrl": "",
+  "about": "Olá! Eu estou usando o WhatsApp.",
+  "name": "",
   "device": {
-    "wa_version": "2.21.10.16",
-    "mcc": "724",
-    "mnc": "039",
-    "os_version": "7.1.2",
-    "device_manufacturer": "samsung",
-    "device_model": "SM-N975F",
-    "osbuildnumber": "samsung-user 7.1.2 20171130.276299 release-keys",
-    "platform": "smba"
-  }
+      "sessionName": "Z-API",
+      "device_model": "Z-API"
+  },
+  "originalDevice": "iphone", "smbi", "android", "smba", 
+  "sessionId": 175,
+  "isBusiness": false
 }
 ```
 
