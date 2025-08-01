@@ -50,10 +50,10 @@ Neste método você poderá enviar mensagens com o link para o seu catálogo. O 
 {
   "phone": "5511999999999",
   "catalogPhone": "5511999999999",
-  "translation": "EN",
-  "message": "Access this link to view our catalog on WhatsApp:",
-  "title": "See the product catalog on WhatsApp.",
-  "catalogDescription": "Learn more about this company's products and services."
+  "translation": "PT",
+  "message": "Acesse esse link para visualizar nosso catálogo no Whatsapp:",
+  "title": "Veja o catálogo de produtos no Whatsapp.",
+  "catalogDescription": "Saiba mais sobre os produtos e serviços dessa empresa.."
 }
 ```
 
