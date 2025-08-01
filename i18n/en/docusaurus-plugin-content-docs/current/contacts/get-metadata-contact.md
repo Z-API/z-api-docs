@@ -78,7 +78,7 @@ Example
   "notify": "Contact's name on WhatsApp",
   "short": "Contact's name",
   "imgUrl": "Contact's photo URL  ",
-  "about": "Olá! Eu estou usando o WhatsApp."
+  "about": "Contact's about status"
 }
 ```
 

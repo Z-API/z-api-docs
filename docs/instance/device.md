@@ -29,7 +29,7 @@ Este método é responsável por retornar informações sobre o device/celular c
 {
   "phone": "",
   "imgUrl": "",
-  "about": "Olá! Eu estou usando o WhatsApp.",
+  "about": "Recado do perfil do contato",
   "name": "",
   "device": {
       "sessionName": "Z-API",

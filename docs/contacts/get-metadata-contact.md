@@ -77,7 +77,7 @@ Exemplo
   "notify": "Nome do contado no WhatsApp",
   "short": "Nome do contato",
   "imgUrl": "url da foto do contato ",
-  "about": "Olá! Eu estou usando o WhatsApp."
+  "about": "Recado do perfil do contato"
 }
 ```
 

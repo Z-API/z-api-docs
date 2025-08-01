@@ -29,7 +29,7 @@ This method is responsible for returning the information about the device/cell p
 {
   "phone": "",
   "imgUrl": "",
-  "about": "Olá! Eu estou usando o WhatsApp.",
+  "about": "Contact's about status",
   "name": "",
   "device": {
       "sessionName": "Z-API",
