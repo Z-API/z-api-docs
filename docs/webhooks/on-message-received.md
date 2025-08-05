@@ -1580,6 +1580,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "type": "ReceivedCallback",
   "poll": {
     "question": "Qual a melhor API de WhatsApp?",
+    "pollMaxOptions": 0,
     "options": [
       {
         "name": "Z-API"
