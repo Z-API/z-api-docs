@@ -37,6 +37,7 @@ module.exports = {
     Instance: [
       'instance/introduction',
       'instance/update-auto-read-message',
+      'instance/update-auto-read-status',
       'instance/profile-picture',
       'instance/profile-name',
       'instance/profile-description',
