@@ -1331,6 +1331,7 @@ The possible returns of the **on-message-received** webhook are registered below
   "type": "ReceivedCallback",
   "poll": {
     "question": "What is the best WhatsApp API?",
+    "pollMaxOptions": 0,
     "options": [
       {
         "name": "Z-API"

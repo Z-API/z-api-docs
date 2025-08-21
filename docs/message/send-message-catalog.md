@@ -33,6 +33,15 @@ Neste método você poderá enviar mensagens com o link para o seu catálogo. O 
 | phone     | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | catalogPhone   | string | Telefone da conta business a qual pertence o catálogo. |
 
+### Opcionais
+
+| Atributos    | Tipo   | Descrição |
+| :---------- | :----: | :------- |
+| translation | string | Idioma da mensagem padrão do card do catálogo (EN/PT). |
+| message | string | Mensagem enviada com o card do catálogo. |
+| title | string | Título do card do catálogo. |
+| catalogDescription | string | Descrição enviada no card do catálogo. |
+
 ---
 
 ## Request Body
@@ -40,7 +49,11 @@ Neste método você poderá enviar mensagens com o link para o seu catálogo. O 
 ```json
 {
   "phone": "5511999999999",
-  "catalogPhone": "5511999999999"
+  "catalogPhone": "5511999999999",
+  "translation": "PT",
+  "message": "Acesse esse link para visualizar nosso catálogo no Whatsapp:",
+  "title": "Veja o catálogo de produtos no Whatsapp.",
+  "catalogDescription": "Saiba mais sobre os produtos e serviços dessa empresa.."
 }
 ```
 
