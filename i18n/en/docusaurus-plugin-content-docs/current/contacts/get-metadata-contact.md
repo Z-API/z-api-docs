@@ -67,6 +67,7 @@ Method
 | vname | string | Contact name if you have him as a contact |
 | notify | string | Name entered in WhatsApp name settings |
 | imgUrl | string | Contact photo URL **WhatsApp deletes after 48h** |
+| about | string | Contact profile about status |
 
 Example 
 
@@ -76,7 +77,8 @@ Example
   "phone": "551199999999",
   "notify": "Contact's name on WhatsApp",
   "short": "Contact's name",
-  "imgUrl": "Contact's photo URL  "
+  "imgUrl": "Contact's photo URL  ",
+  "about": "Contact's about status"
 }
 ```
 
