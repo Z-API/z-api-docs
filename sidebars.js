@@ -185,6 +185,7 @@ module.exports = {
       'communities/remove-community-admin',
       'communities/community-settings',
       'communities/deactivate-community',
+      'communities/update-community-description',
     ],
     'Meta AI': ['metaai/introduction', 'metaai/conversation'],
     Newsletter: [
