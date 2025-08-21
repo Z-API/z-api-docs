@@ -63,7 +63,7 @@ The possible returns of the **on-whatsapp-message-status-changes**  webhook are 
 
 | Attributes| Type| Description |
 | :-- | :-: | :-- |
-| status | string | Message status (SENT - if sent, RECEIVED - if received, READ - if read, PLAYED - if heard) |
+| status | string | Message status (SENT - if sent, RECEIVED - if received, READ - if read, READ-SELF - read confirmation inactive, READ_BY_ME - if read by you (number conected on your instance) ,  PLAYED - if heard) |
 | id | string | Identifier’s of the message |
 | phone | string | Message destination phone number. |
 | momment | string | Time when the instance was disconnected from the number. |
@@ -97,6 +97,24 @@ The possible returns of the **on-whatsapp-message-status-changes**  webhook are 
   "phone": "5544999999999",
   "type": "MessageStatusCallback",
   "instanceId": "instance.id"
+}
+{
+  "status": "READ-SELF",
+  "ids": ["999999999999999999999"],
+  "momment": 1632234645000,
+  "phone": "5544999999999",
+  "type": "MessageStatusCallback",
+  "instanceId": "instance.id"
+}
+{
+  "instanceId": "instance.id",
+  "status": "READ_BY_ME",
+  "ids": ["999999999999999999999"],
+  "momment": 1632234645000,
+  "phoneDevice": 0,
+  "phone": "5544999999999",
+  "type": "MessageStatusCallback",
+  "isGroup": false
 }
 {
   "status": "PLAYED",
