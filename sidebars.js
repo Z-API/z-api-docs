@@ -252,6 +252,7 @@ module.exports = {
       'business/business-hours',
       'business/available-categories',
       'business/company-categories',
+      'business/profile',
     ],
     Webhooks: [
       'webhooks/introduction',
