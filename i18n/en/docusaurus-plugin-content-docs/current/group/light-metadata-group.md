@@ -90,6 +90,7 @@ Array String (participants)
   "subject": "My group on Z-API",
   "creation": 1588721491000,
   "invitationLink": null,
+  "invitationLinkError": null,
   "communityId": null,
   "adminOnlyMessage": false,
   "adminOnlySettings": false,
