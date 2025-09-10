@@ -64,6 +64,7 @@ No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos 
 | subject             | string       | Nome do grupo                         |
 | creation            | timestamp    | Timestamp da data de criação do grupo |
 | invitationLink      | url          | Link de convite do grupo (retorna apenas para admin)|
+| invitationLinkError | string       | Mensagem de erro caso invitationLink seja nulo (forbidden, not-authorized, too many requests) |
 | communityId         | string       | ID da comunidade                      |  
 | adminOnlyMessage    | boolean      | Indica se apenas Admin pode mandar mensagens                |  
 | adminOnlySettings   | boolean      | Indica se apenas Admin pode mudar as configurações          |  
@@ -120,6 +121,7 @@ Forma antiga -
   "subject": "Meu grupo no Z-API",
   "creation": 1588721491000,
   "invitationLink": "https://chat.whatsapp.com/40Aasd6af1",
+  "invitationLinkError": null,
   "communityId": null,
   "adminOnlyMessage": false,
   "adminOnlySettings": false,
