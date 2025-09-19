@@ -53,7 +53,7 @@ Method responsible for sending documents to your contacts. It is simple and obje
 | fileName | String | Documents name |
 | messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
-| editMessageId | string | This attribute allows you to edit the caption of previously sent documents on WhatsApp. Use the message ID and the new caption in the JSON to make changes. It's necessary to configure the webhook before edit (Only the caption of the message can be edited). |
+| editDocumentMessageId | string | This attribute allows you to edit the caption of previously sent documents on WhatsApp. Use the message ID and the new caption in the JSON to make changes. It's necessary to configure the webhook before edit (Only the caption of the message can be edited). |
 
 ---
 
