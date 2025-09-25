@@ -27,7 +27,7 @@ In order for it to work you will need to have a webhook for the event [Upon rece
 
 |      Key       |            Value            |
 | :------------: |     :-----------------:     |
-|  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+|  Client-Token  | **[ACCOUNT SECURITY TOKEN](../security/client-token)** |
 ---
 
 ### Request Body
