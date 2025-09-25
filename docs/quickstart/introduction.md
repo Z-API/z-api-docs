@@ -14,7 +14,7 @@ slug: /
 
 Você provavelmente já deve saber, mas vamos reafirmar!
 
-**Z-API** é um serviço RestFul que provê uma API que permite que você interaja com seu WhatsApp através uma API simples e intuitiva, além de webhooks para te avisar sobre interações com seu número.
+**Z-API** é um serviço RestFul que provê uma API que permite que você interaja com seu WhatsApp através de uma API simples e intuitiva, além de webhooks para te avisar sobre interações com seu número.
 
 :::important Importante
 
