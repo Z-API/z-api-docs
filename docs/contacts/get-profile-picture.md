@@ -18,11 +18,11 @@ title: Pegar imagem do contato
 
 ## Conceituação
 
-Este método é reponsavel por retornar a url com a imagem do contato atualizada.
+Este método é responsável por retornar a url com a imagem do contato atualizada.
 
 Como já dito no tópico anterior **Lembre-se**
 
-Se você pretente armazenar a imagem do seu contato observe que sempre retornamos no get-contacts o atribucom imgUrl com ela para você, porém é importante lembrar que esta fica disponivel por apenas **48 horas**, após este periodo o link da imagem é excluido pelo próprio Whatsapp. Sugerimos que caso precise atualizar a imagem do seu contato você utilize o proximo método desta documentação, o **profile-picture**.
+Se você pretente armazenar a imagem do seu contato observe que sempre retornamos no get-contacts o atribucom imgUrl com ela para você, porém é importante lembrar que esta fica disponivel por apenas **48 horas**, após este periodo o link da imagem é excluido pelo próprio WhatsApp. Sugerimos que caso precise atualizar a imagem do seu contato você utilize o proximo método desta documentação, o **profile-picture**.
 
 ---
 

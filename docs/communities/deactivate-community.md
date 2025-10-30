@@ -18,7 +18,7 @@ title: Desativar comunidade
 
 ## Conceituação
 
-Este método é reponsavel por desativar uma comunidade.
+Este método é responsável por desativar uma comunidade.
 
 Quando uma comunidade é desativada resultará na desconexão de todos os grupos relacionados a ela. É importante ressaltar que desativar a Comunidade não excluirá seus grupos, mas sim os removerá da Comunidade em questão.
 

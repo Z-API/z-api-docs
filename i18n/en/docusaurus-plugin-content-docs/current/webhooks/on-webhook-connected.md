@@ -7,7 +7,7 @@ title: When connecting
 
 This is the mobile connection return webhook with Z-api
 
-This webhook is triggered when the Z-API is connected to Whatsapp, this can happen when reading the qr-code, when restarting the instance, etc.
+This webhook is triggered when the Z-API is connected to WhatsApp, this can happen when reading the qr-code, when restarting the instance, etc.
 
 :::caution Attention
 
@@ -20,6 +20,12 @@ Z-API does not accept webhooks that aren’t HTTPS
 ## Updating the Webhook
 
 To update the webhook route, you can do it through the API or through the admin panel.
+
+:::tip Tip
+
+You can change all webhooks at once to the same value using [this endpoint](./update-every-webhooks.md).
+
+:::
 
 ### API
 

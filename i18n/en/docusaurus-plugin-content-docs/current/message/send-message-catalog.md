@@ -18,7 +18,7 @@ title: Send catalog
 
 ## Concept
 
-In this method, you can send messages with a link to your catalog. The catalog feature is only available for **business** WhatsApp accounts. It is also necessary for the account to have products and a configured catalog. Operations related to products and collections can be found in the **[Whatsapp Business](../business/edit-product.md)** section of our documentation.
+In this method, you can send messages with a link to your catalog. The catalog feature is only available for **business** WhatsApp accounts. It is also necessary for the account to have products and a configured catalog. Operations related to products and collections can be found in the **[WhatsApp Business](../business/edit-product.md)** section of our documentation.
 
 ![image](../../../../../img/catalog-message.jpeg)
 
@@ -33,6 +33,15 @@ In this method, you can send messages with a link to your catalog. The catalog f
 | phone     | string | Recipient's phone number (or group ID for group messages) in the format DDI DDD NUMBER E.g., 551199999999. **IMPORTANT** Send only numbers, without formatting or mask |
 | catalogPhone   | string | Phone number of the business account to which the catalog belongs. |
 
+### Optional
+
+| Attribute    | Type   | Description |
+| :---------- | :----: | :------- |
+| translation | string | Language of the default message of the catalog card (EN/PT). |
+| message | string | Message sent with the catalog card. |
+| title | string | Title of the catalog card. |
+| catalogDescription | string | Description sent with the card catalog. |
+
 ---
 
 ## Request Body
@@ -40,7 +49,11 @@ In this method, you can send messages with a link to your catalog. The catalog f
 ```json
 {
   "phone": "5511999999999",
-  "catalogPhone": "5511999999999"
+  "catalogPhone": "5511999999999",
+  "translation": "EN",
+  "message": "Access this link to view our catalog on WhatsApp:",
+  "title": "See the product catalog on WhatsApp.",
+  "catalogDescription": "Learn more about this company's products and services."
 }
 ```
 

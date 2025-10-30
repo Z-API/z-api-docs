@@ -7,7 +7,7 @@ title: Ao conectar
 
 Esse é o webhook de retorno de conexão do Celular com o Z-api
 
-Esse é webhook é disparado quando o Z-API se conectada ao Whatsapp, isso pode acontecer quando le o qr-code, quando reiniciar a instancia e etc
+Esse é webhook é disparado quando o Z-API se conectada ao WhatsApp, isso pode acontecer quando le o qr-code, quando reiniciar a instancia e etc
 
 :::caution Atenção
 
@@ -20,6 +20,12 @@ O Z-API não aceita webhooks que não sejam HTTPS
 ## Atualizando Webhook
 
 Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
+
+:::tip Dica
+
+É possível alterar todos os webhooks de uma vez para a mesma URL. [Ver endpoint](./update-every-webhooks.md).
+
+:::
 
 ### API
 

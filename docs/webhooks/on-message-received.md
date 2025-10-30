@@ -25,6 +25,12 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
 
+:::tip Dica
+
+É possível alterar todos os webhooks de uma vez para a mesma URL. [Ver endpoint](./update-every-webhooks.md).
+
+:::
+
 ### API
 
 #### /update-webhook-received
@@ -71,52 +77,53 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 
 ## Response
 
-| Atributos | Tipo | Descrição |
-| :-- | :-: | :-- |
-| isStatusReply | boolean | Identifica se a mensagem recebida é uma resposta de status |
-| senderLid | string | ID do contato no whatsapp |
-| connectedPhone | string | Número de telefone conectado à API |
-| waitingMessage | boolean | Identifica se a sua mensagem está com status de "Aguardando a mensagem" |
-| isEdit | boolean | Identifica se a mensagem recebida foi editada |
-| isGroup | boolean | Indica se o chat é um grupo |
-| isNewsletter | boolean | Indica se o chat é um canal |
-| phone | string | Número de telefone, ou do grupo que enviou a mensagem. |
-| fromMe | boolean | Indica se a mensagem enviada partiu do número conectado a API |
-| participantPhone | string | Número de telefone do membro do grupo que enviou a mensagem. |
-| participantLid | string | ID do contado no whatsapp, do participante que enviou a mensagem dentro de um grupo |
-| messageId | string | Idetificador da mensagem na conversa. |
-| status | string | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED). |
-| referenceMessageId | string | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
-| momment | integer | Momento em que a mensagem foi recebida ou do erro. |
-| messageExpirationSeconds | integer | Tempo das mensagens temporárias |
-| type | string | Tipo do evento da instância, nesse caso será "ReceivedCallBack". |
-| photo | string | Url da foto do usuário que enviou a mensagem. |
-| text.message | string | Texto da mensagem. |
-| image.caption | string | Leganda da foto. |
-| image.imageUrl | string | Url da foto. |
-| image.thumbnailUrl | string | Url da thumbnail da foto. |
-| image.mimeType | string | MimeType da imagem. |
-| audio.mimeType | string | MimeType do áudio. |
-| audio.audioUrl | string | Url do áudio. |
-| video.caption | string | Legenda do vídeo. |
-| video.videoUrl | string | Url do vídeo. |
-| video.mimeType | string | MimeType do vídeo. |
-| contact.displayName | string | Nome do contato. |
-| contact.vCard | string | VCard contendo as informações do contato. |
-| document.mimeType | string | MimeType do documento. |
-| document.fileName | string | Nome do documento. |
-| document.title | string | Título do documento. |
-| document.pageCount | string | Número de páginas do documento. |
-| document.thumbnailUrl | string | Url da thumbnail do documento. |
-| document.documentUrl | string | Url do documento. |
-| location.thumbnailUrl | string | Url da thumbnail da localização. |
-| location.longitude | float | Longitude da localização. |
-| location.latitude | float | Latitude da localização. |
-| location.url | string | Url da localização. |
-| location.name | string | Nome da localização. |
-| location.address | string | Endereço da localização. |
-| sticker.mimeType | string | MimeType do sticker. |
-| sticker.stickerUrl | string | Url do sticker. |
+| Atributos                   |   Tipo    | Descrição                                                                                           |
+| :-------------------------  | :-------: | :-------------------------------------------------------------------------------------------------- |
+| isStatusReply               | boolean   | Identifica se a mensagem recebida é uma resposta de status                                          |
+| senderLid                   | string    | ID do contato no whatsapp                                                                           |                                     
+| connectedPhone              | string    | Número de telefone conectado à API                                                                  |
+| waitingMessage              | boolean   | Identifica se a sua mensagem está com status de "Aguardando a mensagem"                             |
+| isEdit                      | boolean   | Identifica se a mensagem recebida foi editada                                                       |
+| isGroup                     | boolean   | Indica se o chat é um grupo                                                                         |
+| isNewsletter                | boolean   | Indica se o chat é um canal                                                                         |
+| phone                       | string    | Número de telefone, ou do grupo que enviou a mensagem.                                              |
+| fromMe                      | boolean   | Indica se a mensagem enviada partiu do número conectado a API                                       |
+| participantPhone            | string    | Número de telefone do membro do grupo que enviou a mensagem.                                        |
+| participantLid              | string    | ID do contado no whatsapp, do participante que enviou a mensagem dentro de um grupo                 |
+| messageId                   | string    | Idetificador da mensagem na conversa.                                                               |
+| status                      | string    | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED).    |
+| referenceMessageId          | string    | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
+| momment                     | integer   | Momento em que a mensagem foi recebida ou do erro.                                                  |
+| messageExpirationSeconds    | integer   | Tempo das mensagens temporárias                                                                     |
+| requestMethod               | string    | Identificador do método de solicitação de entrada   (`invite_link` ou `non_admin_add`)                  |
+| type                        | string    | Tipo do evento da instância, nesse caso será "ReceivedCallBack".                                    |
+| photo                       | string    | Url da foto do usuário que enviou a mensagem.                                                       |
+| text.message                | string    | Texto da mensagem.                                                                                  |
+| image.caption               | string    | Leganda da foto.                                                                                    |
+| image.imageUrl              | string    | Url da foto.                                                                                        |
+| image.thumbnailUrl          | string    | Url da thumbnail da foto.                                                                           |
+| image.mimeType              | string    | MimeType da imagem.                                                                                 |
+| audio.mimeType              | string    | MimeType do áudio.                                                                                  |
+| audio.audioUrl              | string    | Url do áudio.                                                                                       |
+| video.caption               | string    | Legenda do vídeo.                                                                                   |
+| video.videoUrl              | string    | Url do vídeo.                                                                                       |
+| video.mimeType              | string    | MimeType do vídeo.                                                                                  |
+| contact.displayName         | string    | Nome do contato.                                                                                    |
+| contact.vCard               | string    | VCard contendo as informações do contato.                                                           |
+| document.mimeType           | string    | MimeType do documento.                                                                              |
+| document.fileName           | string    | Nome do documento.                                                                                  |
+| document.title              | string    | Título do documento.                                                                                |
+| document.pageCount          | string    | Número de páginas do documento.                                                                     |
+| document.thumbnailUrl       | string    | Url da thumbnail do documento.                                                                      |
+| document.documentUrl        | string    | Url do documento.                                                                                   |
+| location.thumbnailUrl       | string    | Url da thumbnail da localização.                                                                    |
+| location.longitude          | float     | Longitude da localização.                                                                           |
+| location.latitude           | float     | Latitude da localização.                                                                            |
+| location.url                | string    | Url da localização.                                                                                 |
+| location.name               | string    | Nome da localização.                                                                                |
+| location.address            | string    | Endereço da localização.                                                                            |
+| sticker.mimeType            | string    | MimeType do sticker.                                                                                |
+| sticker.stickerUrl          | string    | Url do sticker.                                                                                     |
 
 ---
 
@@ -312,6 +319,42 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de botão de chave pix
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "3C67AB641C8AA0412F6A2242B4E23AC7",
+  "messageId": "9D968A5FA2880508C4",
+  "phone": "554499999999",
+  "fromMe": false,
+  "momment": 1708455444850,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": null,
+  "senderName": "554499999999",
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "pixKeyMessage": {
+    "currency": "BRL",
+    "referenceId": "4PXRAHSIRDA",
+    "key": "pixkey",
+    "keyType": "EVP",
+    "merchantName": "Pix"
+  }
+}
+```
+
 ### Exemplo de retorno de botão com imagem
 
 ```json
@@ -447,6 +490,98 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
+### Exemplo de retorno de carrosel
+
+```json
+{
+  "isStatusReply": false,
+  "chatLid": null,
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "554499999999",
+  "fromMe": true,
+  "momment": 1739368022130,
+  "status": "SENT",
+  "chatName": "Nome",
+  "senderPhoto": null,
+  "senderName": "Nome",
+  "photo": "https://",
+  "broadcast": false,
+  "participantLid": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": true,
+  "carouselMessage": {
+    "text": "Texto da mensagem",
+    "cards": [
+      {
+        "header": {
+          "image": {
+            "imageUrl": "https://",
+            "thumbnailUrl": "https://",
+            "caption": "",
+            "mimeType": "image/jpeg",
+            "viewOnce": false,
+            "width": 0,
+            "height": 0
+          }
+        },
+        "message": "Mensagem do cartão do carrosel",
+        "footer": "",
+        "title": "",
+        "hydratedButtons": [
+          {
+            "index": 0,
+            "urlButton": {
+              "displayText": "Texto do botão",
+              "url": "https://"
+            }
+          },
+          {
+            "index": 1,
+            "quickReplyButton": { "displayText": "Texto do botão", "id": "2" }
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": {
+            "imageUrl": "https://",
+            "thumbnailUrl": "https://",
+            "caption": "",
+            "mimeType": "image/jpeg",
+            "viewOnce": false,
+            "width": 0,
+            "height": 0
+          }
+        },
+        "message": "Mensagem do cartão do carrosel",
+        "footer": "",
+        "title": "",
+        "hydratedButtons": [
+          {
+            "index": 0,
+            "urlButton": {
+              "displayText": "Texto do botão",
+              "url": "https://"
+            }
+          },
+          {
+            "index": 1,
+            "quickReplyButton": { "displayText": "Texto do botão", "id": "2" }
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
 ### Exemplo de retorno de texto vindos de anúncio
 
 ```json
@@ -476,6 +611,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
         "thumbnailUrl": "https://",
         "sourceType": "ad",
         "sourceId": "23722824350495506",
+        "ctwaClid": "Aff-niaAw7V94N8LGd79Vjr43TlJD4UnoBdpZJQ3LzABitbbG6wgKBSVOth4EN0IDr9glsKWjm2LBaFrJG3Nb0ILxP49ZtossVBNzlS8cFXBvv2ow7gNw",
         "sourceUrl": "https://",
         "containsAutoReply": false,
         "renderLargerThumbnail": true,
@@ -1158,25 +1294,22 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de solicitação de entrada em grupo
+### Exemplo de solicitação de entrada em grupo através de um link de convite
 
 ```json
 {
-  "isStatusReply": false,
-  "senderLid": "81896604192873@lid",
-  "connectedPhone": "554499999999",
-  "waitingMessage": false,
-  "isEdit": false,
-  "isGroup": false,
+  "isGroup": true,
   "isNewsletter": false,
   "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
-  "messageId": "464201093",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
   "phone": "5544999999999-group",
+  "connectedPhone": "5544999999999",
   "fromMe": false,
   "momment": 1682017970000,
+  "expiresAt": null,
   "status": "RECEIVED",
   "chatName": "name",
-  "senderPhoto": null,
+  "senderPhoto": "https://",
   "senderName": "name",
   "photo": null,
   "broadcast": false,
@@ -1186,8 +1319,80 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "forwarded": false,
   "type": "ReceivedCallback",
   "notification": "MEMBERSHIP_APPROVAL_REQUEST",
-  "notificationParameters": ["5544999999999"],
-  "callId": null
+  "notificationParameters": [
+      "5544999999999"
+  ],
+  "callId": null,
+  "code": null,
+  "requestMethod": "invite_link"
+}
+```
+
+### Exemplo de solicitação de entrada em grupo revogada pelo usuário
+
+```json
+{
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999-group",
+  "connectedPhone": "5544999999999",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "REVOKED_MEMBERSHIP_REQUESTS",
+  "notificationParameters": [
+      "5544999999999"
+  ],
+  "callId": null,
+  "code": null
+}
+```
+
+### Exemplo de solicitação de entrada em grupo adicionado por um participante
+
+```json
+{
+  "isGroup": true,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999-group",
+  "connectedPhone": "5544999999999",
+  "fromMe": false,
+  "momment": 1682017970000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "participantPhone": "5544999999999",
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "MEMBERSHIP_APPROVAL_REQUEST",
+  "notificationParameters": [
+      "5544999999999",
+      "5544888888888"
+  ],
+  "callId": null,
+  "code": null,
+  "requestMethod": "non_admin_add"
 }
 ```
 
@@ -1374,7 +1579,8 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
   "broadcast": false,
   "type": "ReceivedCallback",
   "poll": {
-    "question": "Qual a melhor API de Whatsapp?",
+    "question": "Qual a melhor API de WhatsApp?",
+    "pollMaxOptions": 0,
     "options": [
       {
         "name": "Z-API"
@@ -1678,6 +1884,170 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
       "phone": "120363239161320697-group",
       "participant": "554499999988"
     }
+  }
+}
+```
+
+### Exemplo de retorno de "aguardando mensagem"
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "momment": 1736797729000,
+  "status": "RECEIVED",
+  "fromMe": true,
+  "phone": "5544999999999",
+  "chatName": "chat",
+  "senderName": "name",
+  "senderPhoto": null,
+  "photo": null,
+  "broadcast": false,
+  "participantLid": null,
+  "type": "ReceivedCallback",
+  "waitingMessage": true,
+  "viewOnce": true
+}
+```
+
+### Exemplo de retorno de alteração do Nome do Whatsapp conectado
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": "https://",
+  "senderName": "nome",
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "PROFILE_NAME_UPDATED",
+  "callId": null,
+  "code": null,
+  "profileName": "nome atualizado"
+}
+```
+
+### Exemplo de retorno de alteração da foto do Whatsapp conectado
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": "https://",
+  "senderName": "nome",
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "PROFILE_PICTURE_UPDATED",
+  "callId": null,
+  "code": null,
+  "updatedPhoto": "https://"
+}
+```
+
+### Exemplo de retorno de alteração de etiquetas de um chat
+
+```json
+{
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "connectedPhone": "5544999999999",
+  "fromMe": true,
+  "momment": 1736797729000,
+  "expiresAt": null,
+  "status": "RECEIVED",
+  "chatName": null,
+  "senderPhoto": null,
+  "senderName": "name",
+  "photo": null,
+  "broadcast": false,
+  "referenceMessageId": null,
+  "externalAdReply": null,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "notification": "CHAT_LABEL_ASSOCIATION",
+  "notificationParameters": [
+    {
+      "phone": "5544977777777",
+      "label": "1",
+      "assigned": true
+    },
+    {
+      "phone": "5544988888888",
+      "label": "2",
+      "assigned": false
+    }
+  ],
+  "callId": null,
+  "code": null
+}
+```
+
+### Exemplo de retorno de resposta de status
+
+```json
+{
+  "isStatusReply": true,
+  "senderLid": "81896604192873@lid",
+  "connectedPhone": "554499999999",
+  "waitingMessage": false,
+  "isEdit": false,
+  "isGroup": false,
+  "isNewsletter": false,
+  "instanceId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "messageId": "A20DA9C0183A2D35A260F53F5D2B9244",
+  "phone": "5544999999999",
+  "fromMe": false,
+  "momment": 1632228638000,
+  "status": "RECEIVED",
+  "chatName": "name",
+  "senderPhoto": "https://",
+  "senderName": "name",
+  "photo": "https://",
+  "broadcast": false,
+  "referenceMessageId": "3EB054C12BAAC70228AAB6",
+  "messageExpirationSeconds": 0,
+  "forwarded": false,
+  "type": "ReceivedCallback",
+  "fromApi": false,
+  "text": {
+    "message": "teste"
+  },
+  "statusImage": {
+    "imageUrl": "https://",
+    "thumbnailUrl": "https://",
+    "caption": "",
+    "mimetype": "image/jpeg",
+    "viewOnce": false,
+    "width": 1080,
+    "height": 1920
   }
 }
 ```

@@ -26,13 +26,13 @@ Por Base64, se você optar por esta opção precisará ter em sua aplicação um
 
 ### Tamanho e formatos
 
-O Whatsapp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio Whatsapp.
+O WhatsApp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio WhatsApp.
 
 Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
 
 [link]: https://developers.facebook.com/docs/whatsapp/api/media
 
-![image](../../img/send-message-audio.jpeg)
+![image](../../img/send-audio-waveform.jpeg)
 
 ---
 
@@ -51,17 +51,31 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 | :---------   | :----: | :-------- |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
 | delayTyping  | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai ficar com o status "Gravando áudio...". (Ex "delayTyping": 5, ). O delay default caso não seja informado é de 0|
-| viewOnce | string | Define se será uma mensagem de visualização única ou não |
+| viewOnce | boolean | Define se será uma mensagem de visualização única ou não |
+| async | boolean | Se ativo, a request responderá imediatamente com sucesso e o processamento do arquivo será realizado em segundo plano. O envio pode ser verificado através do [webhook de envio](/webhooks/on-message-send). |
+| waveform | boolean | Define se o áudio será enviado com ondas sonoras ou não |
 
 ---
 
 ## Request Body
 
+**Envio por URL**
 ```json
 {
   "phone": "5511999999999",
   "audio": "https://tuningmania.com.br/autosom/mp3/75%20~%2079%20Hz.MP3",
-  "viewOnce": false
+  "viewOnce": false,
+  "waveform": true
+}
+```
+
+**Envio por Base64**
+```json
+{
+  "phone": "5511999999999",
+  "audio": "data:audio/mpeg;base64,SUQzAwAAAAAAbVRYWFgAAAAgAAAARW5jb2RlZCBieQBMQU1FIGluIEZMIFN0dWRpbyAyMFRYWFgAAAAbAAAAQlBN",
+  "viewOnce": false,
+  "waveform": true
 }
 ```
 

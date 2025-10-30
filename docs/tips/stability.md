@@ -21,4 +21,4 @@ Mantenha seu celular conectado a um wi-fi com boa velocidade de conexão e evite
 
 ## WhatsApp sempre aberto
 
-Manter o aplicativo do Whatsapp sempre aberto ajuda a manter a conexão entre nosso serviço e seu celular, assim como no Whatsweb precisamos nos comunicar com seu celular, quando você travar ou bloquear o celular o whatsapp pode parar de rodar em segundo plano e ocasionar em perda de conexão com a internet, isso vai causar indisponibilidade do nosso serviço. Por fim, caso consiga, recomendamos instalar o aplicativo Keep Phone On, ele ajuda a manter seu telefone sempre ligado.
+Manter o aplicativo do WhatsApp sempre aberto ajuda a manter a conexão entre nosso serviço e seu celular, assim como no Whatsweb precisamos nos comunicar com seu celular, quando você travar ou bloquear o celular o whatsapp pode parar de rodar em segundo plano e ocasionar em perda de conexão com a internet, isso vai causar indisponibilidade do nosso serviço. Por fim, caso consiga, recomendamos instalar o aplicativo Keep Phone On, ele ajuda a manter seu telefone sempre ligado.

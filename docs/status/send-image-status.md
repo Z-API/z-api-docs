@@ -34,7 +34,7 @@ Método responsavel por enviar uma imagem para seu status, lembre-se que os stat
 
 | Atributos | Tipo | Descrição |
 | :-------- | :--: | :-------- |
-|           |      |           |
+| caption   | string  | Legenda que irá junto com a imagem para o status |
 
 ---
 
@@ -51,6 +51,11 @@ Método
 ```json
 {
   "image": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg"
+}
+
+{
+  "image": "https://www.z-api.io/wp-content/themes/z-api/dist/images/logo.svg",
+  "caption": "texto da legenda"
 }
 ```
 

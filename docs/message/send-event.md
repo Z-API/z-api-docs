@@ -19,7 +19,7 @@ title: Enviar evento
 
 ## Conceituação
 
-Neste método você poderá enviar mensagens do tipo Evento.
+Neste método você poderá enviar mensagens do tipo Evento. Só é possível enviar esse tipo para um grupo.
 
 ![image](../../img/SendingEvent.jpeg)
 

@@ -19,6 +19,12 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 Para atualizar a rota do webhook é possível fazer isso pela API ou pelo painel administrativo.
 
+:::tip Dica
+
+É possível alterar todos os webhooks de uma vez para a mesma URL. [Ver endpoint](./update-every-webhooks.md).
+
+:::
+
 ### API
 
 #### /update-webhook-status
@@ -56,7 +62,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
 
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
-| status | string | Status da mensagem (SENT - se foi enviada, RECEIVED - se foi recebida, READ - se foi lida, READ-SELF - confirmação de leitura inativa, PLAYED - se foi ouvida ) |
+| status | string | Status da mensagem (SENT - se foi enviada, RECEIVED - se foi recebida, READ - se foi lida, READ_BY_ME - se foi lida por você (número conectado na sua instância), PLAYED - se foi ouvida ) |
 | id | string | Identificador(es) da(s) mensagem(ns). |
 | momment | integer | Momento em que a instância foi desconectada do número. |
 | phoneDevice | integer | Indica o dispositivo que ocorreu o evento (0 - Celular)|
@@ -100,7 +106,7 @@ Os possíveis retornos do webhook **on-whatsapp-message-status-changes** estão 
 }
 {
   "instanceId": "instance.id",
-  "status": "READ-SELF",
+  "status": "READ_BY_ME",
   "ids": ["999999999999999999999"],
   "momment": 1632234645000,
   "phoneDevice": 0,

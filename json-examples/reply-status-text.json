@@ -1,0 +1,21 @@
+{
+  "method": "POST",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/reply-status-text",
+  "httpVersion": "HTTP/1.1",
+  "queryString": [],
+  "headers": [
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "name": "Client-Token",
+      "value": "{{security-token}}"
+    }
+  ],
+  "cookies": [],
+  "postData": {
+    "mimeType": "application/json",
+    "text": "{\"phone\":\"5544999999999\",\"message\":\"texto da mensagem\",\"statusMessageId\":\"1F606398F2ECAA4846269F659B6003A9\"}"
+  }
+}

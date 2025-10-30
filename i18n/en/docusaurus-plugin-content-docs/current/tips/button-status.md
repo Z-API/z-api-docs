@@ -7,7 +7,7 @@ title: Button status
 
 In recent weeks, messages containing buttons have been experiencing instability in their operation.
 
-**It's important to remember that this is not an issue exclusive to Z-API..**
+**It's important to remember that this is not an issue exclusive to Z-API.**
 
 This topic describes the behavior of buttons on WhatsApp in different scenarios.
 
@@ -33,55 +33,63 @@ To use the button functionality, you must accept the terms of use, acknowledging
 
 ## Types of buttons
 
-#### There are four types of buttons on WhatsApp:
+#### There are seven types of buttons on WhatsApp:
 
 - Simple text button (/send-button-list)
 - Simple image button (/send-button-list-image)
 - Simple video button (/send-button-list-video)
 - List of options (/send-option-list)
 - Action buttons (/send-button-actions)
-- Button OTP (/send-button-otp)
+- OTP button (/send-button-otp)
+- PIX button (/send-button-pix)
 
 ---
 
 ## Comportamento dos botões:
 
-### [Simple text button:](https://developer.z-api.io/message/send-button-list)
+### [Simple text button:](https://developer.z-api.io/en/message/send-button-list)
 
 - Sending from Normal WhatsApp to Group: **WORKS**
 - Sending from Normal WhatsApp to Individual Chat: **WORKS**
 - Sending from WhatsApp Business to Individual Chat: **WORKS**
 - Sending from WhatsApp Business to Group: **WORKS**
 
-### [Simple image button:](https://developer.z-api.io/message/send-button-list-image)
+### [Simple image button:](https://developer.z-api.io/en/message/send-button-list-image)
 
 - Sending from Normal WhatsApp to Individual Chat: **WORKS**
 - Sending from Normal WhatsApp to Group: **WORKS**
 - Sending from WhatsApp Business to Individual Chat: **WORKS**
 - Sending from WhatsApp Business to Group: **WORKS**
 
-### [Simple video button:](https://developer.z-api.io/message/send-button-list-video)
+### [Simple video button:](https://developer.z-api.io/en/message/send-button-list-video)
 
 - Sending from Normal WhatsApp to Individual Chat: **WORKS**
 - Sending from Normal WhatsApp to Group: **WORKS**
 - Sending from WhatsApp Business to Individual Chat: **WORKS**
 - Sending from WhatsApp Business to Group: **WORKS**
 
-### [List of options:](https://developer.z-api.io/message/send-option-list)
+### [List of options:](https://developer.z-api.io/en/message/send-option-list)
 
 - Sending from Normal WhatsApp to Individual Chat: **WORKS**
 - Sending from Normal WhatsApp to Group: **WORKS**
 - Sending from WhatsApp Business to Individual Chat: **WORKS**
 - Sending from WhatsApp Business to Group: **WORKS**
 
-### [Action buttons:](https://developer.z-api.io/message/send-option-list)
+### [Action buttons:](https://developer.z-api.io/en/message/send-option-list)
 
 - Sending from Normal WhatsApp to Individual Chat: **WORKS**
 - Sending from Normal WhatsApp to Group: **WORKS**
 - Sending from WhatsApp Business to Individual Chat: **WORKS**
 - Sending from WhatsApp Business to Group: **WORKS**
 
-### [Buttons OTP:](https://developer.z-api.io/message/send-button-otp)
+### [Buttons OTP:](https://developer.z-api.io/en/message/send-button-otp)
+
+- Sending from Normal WhatsApp to Individual Chat: **WORKS**
+- Sending from Normal WhatsApp to Group: **WORKS**
+- Sending from WhatsApp Business to Individual Chat: **WORKS**
+- Sending from WhatsApp Business to Group: **WORKS**
+
+### [PIX key button:](https://developer.z-api.io/en/message/send-button-pix)
 
 - Sending from Normal WhatsApp to Individual Chat: **WORKS**
 - Sending from Normal WhatsApp to Group: **WORKS**

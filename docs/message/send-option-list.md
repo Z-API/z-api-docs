@@ -33,7 +33,6 @@ Neste método você poderá enviar mensagens de texto com uma lista de opções,
 | phone | string | Telefone (ou ID do grupo para casos de envio para grupos) do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | message | string | Texto a ser enviado |
 | optionList | optionList | Configuração da lista |
-| buttonLabel | string | Texto do botao que abre a lista |
 
 ### Opcionais
 
@@ -47,6 +46,7 @@ Neste método você poderá enviar mensagens de texto com uma lista de opções,
 | :---------- | :----: | :------------------------------ |
 | title       | string | Titulo da listagem              |
 | options     | option | Litas de opções                 |
+| buttonLabel | string | Texto do botão que abre a lista |
 
 ### Option
 

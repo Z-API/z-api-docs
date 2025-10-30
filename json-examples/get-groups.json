@@ -1,0 +1,25 @@
+{
+  "method": "GET",
+  "url": "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/groups",
+  "httpVersion": "HTTP/1.1",
+  "queryString": [
+    {
+      "name": "page",
+      "value": "1",
+      "comment": ""
+    },
+    {
+      "name": "pageSize",
+      "value": "2",
+      "comment": ""
+    }
+  ],
+  "headers": [
+    {
+      "name": "Client-Token",
+      "value": "{{security-token}}"
+    }
+  ],
+  "cookies": [],
+  "postData": {}
+}

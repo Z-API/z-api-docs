@@ -19,7 +19,7 @@ title: Get products
 
 ## Concept
 
-With this method you will be able to get the products from a Whatsapp Business catalag 
+With this method you will be able to get the products from a WhatsApp Business catalag 
 
 
 
@@ -27,17 +27,19 @@ With this method you will be able to get the products from a Whatsapp Business c
 
 ### 200
 
-| Attributes    | Type    | Description                                        |
+| Attributes   | Type    | Description                                      |
 | :----------- | :------ | :----------------------------------------------- |
-| cartEnabled  | boolean | Attribute to know if your cart is active     |
-| availability | string  | Attribute to know product availability  |
-| id           | string  | Product ID                                    |
-| retailerId   | boolean | Retailer ID                                  |
-| price        | string  | Product price                                |
+| cartEnabled  | boolean | Attribute to know if your cart is active         |
+| availability | string  | Attribute to know product availability           |
+| id           | string  | Product ID                                       |
+| retailerId   | boolean | Retailer ID                                      |
+| description  | string  | Product description                              |
+| price        | string  | Product price                                    |
+| salePrice    | string  | Sale price                                       |
 | currency     | string  | Currency type                                    |
-| name         | string  | Product type                                  |
-| quantity     | boolean | Product quantity attribute                 |
-| images       | string  | Product image link                         |
+| name         | string  | Product type                                     |
+| quantity     | boolean | Product quantity attribute                       |
+| images       | string  | Product image link                               |
 
 Example 
 
@@ -49,7 +51,9 @@ Example
       "availability": "in stock",
       "id": "999999999999999",
       "retailerId": null,
+      "description": "mouse description",
       "price": "100000",
+      "salePrice": "90000",
       "currency": "BRL",
       "name": "Mouse",
       "quantity": null,

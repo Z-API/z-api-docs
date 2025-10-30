@@ -18,7 +18,7 @@ title: Pegar chats
 
 ## Conceituação
 
-Este método é reponsavel por retornar todos os chats.
+Este método é responsável por retornar todos os chats.
 
 ---
 

@@ -65,6 +65,7 @@ On November 4, 2021 whatsapp changed the format of creating new groups. before: 
 | subject             | string       | Group’s name                          |
 | creation            | timestamp    | Group creation date timestamp         |  
 | invitationLink      | url          | Group invitation link                 |  
+| invitationLinkError | string       | Mensagem de erro caso invitationLink seja nulo (forbidden, not-authorized, too many requests) |
 | communityId         | string       | Community ID                          |  
 | adminOnlyMessage    | boolean      | Only admins can send messages         |  
 | adminOnlySettings   | boolean      | Only admins can change settings       |  
@@ -92,7 +93,7 @@ Old way -
   {
     "phone": "5511999999999-1623281429",
     "owner": "5511999999999",
-    "subject": "My group on Whatsapp",
+    "subject": "My group on WhatsApp",
     "creation": 1588721491000,
     "participants": [
       {
@@ -122,6 +123,7 @@ Old way -
   "subject": "My group in Z-API",
   "creation": 1588721491000,
   "invitationLink": "https://chat.whatsapp.com/40Aasd6af1",
+  "invitationLinkError": null,
   "communityId": null,
   "adminOnlyMessage": false,
   "adminOnlySettings": false,

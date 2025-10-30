@@ -18,7 +18,7 @@ title: Ler chats
 
 ## Conceituação
 
-Este método é reponsavel por realizar a ação de ler um chat como um todo, ou também marcar um chat como não lido
+Este método é responsável por realizar a ação de ler um chat como um todo, ou também marcar um chat como não lido
 
 ---
 

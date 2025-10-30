@@ -15,6 +15,7 @@ module.exports = {
 
     Tips: [
       'tips/blockednumber',
+      'tips/blockednumbernew',
       'tips/enable-fix-number',
       // 'tips/disable-screem-blocked',
       // 'tips/android-active',
@@ -23,6 +24,7 @@ module.exports = {
       'tips/Z-APIvsAPI-OFICIAL',
       'tips/button-status',
       'tips/file-expiration',
+      'tips/postman-collection',
     ],
 
     Security: [
@@ -35,6 +37,7 @@ module.exports = {
     Instance: [
       'instance/introduction',
       'instance/update-auto-read-message',
+      'instance/update-auto-read-status',
       'instance/profile-picture',
       'instance/profile-name',
       'instance/profile-description',
@@ -91,6 +94,8 @@ module.exports = {
       'message/send-button-list-video',
       'message/send-option-list',
       'message/send-button-otp',
+      'message/send-button-pix',
+      'message/send-carousel',
       'message/delete-message',
       'message/read-message',
       'message/reply-message',
@@ -119,6 +124,8 @@ module.exports = {
     Contacts: [
       'contacts/introduction',
       'contacts/get-contacts',
+      'contacts/add-contacts',
+      'contacts/remove-contacts',
       'contacts/get-metadata-contact',
       'contacts/get-profile-picture',
       'contacts/get-iswhatsapp',
@@ -142,6 +149,7 @@ module.exports = {
     Calls: ['calls/introduction', 'calls/send-call'],
     Groups: [
       'group/introduction',
+      'group/get-groups',
       'group/create-group',
       'group/update-group-name',
       'group/update-group-photo',
@@ -150,14 +158,17 @@ module.exports = {
       'group/approve-participant',
       'group/reject-participant',
       'group/mention-participant',
+      'group/mention-group',
       'group/add-admin',
       'group/remove-admin',
       'group/leave-group',
       'group/metadata-group',
+      'group/light-group-metadata',
       'group/group-invitation-metadata',
       'group/update-group-settings',
       'group/update-group-description',
       'group/redefine-invitation-link',
+      'group/get-invitation-link',
       'group/accept-group-invite',
     ],
     Communities: [
@@ -174,7 +185,9 @@ module.exports = {
       'communities/remove-community-admin',
       'communities/community-settings',
       'communities/deactivate-community',
+      'communities/update-community-description',
     ],
+    'Meta AI': ['metaai/introduction', 'metaai/conversation'],
     Newsletter: [
       'newsletter/introduction',
       'newsletter/create-newsletter',
@@ -200,6 +213,10 @@ module.exports = {
       'status/introduction',
       'status/send-text-status',
       'status/send-image-status',
+      'status/reply-status-text',
+      'status/reply-status-gif',
+      'status/reply-status-sticker',
+      'status/send-video-status',
     ],
     'Message queue': [
       'queue/introduction',
@@ -207,7 +224,7 @@ module.exports = {
       'queue/delete-queue',
       'queue/delete-queue-id',
     ],
-    'Whatsapp Business': [
+    'WhatsApp Business': [
       'business/introduction',
       'business/edit-product',
       'business/get-products',
@@ -237,6 +254,7 @@ module.exports = {
       'business/business-hours',
       'business/available-categories',
       'business/company-categories',
+      'business/profile',
     ],
     Webhooks: [
       'webhooks/introduction',
@@ -247,6 +265,8 @@ module.exports = {
       'webhooks/on-whatsapp-message-status-changes',
       'webhooks/on-chat-presence',
       'webhooks/on-webhook-connected',
+      'webhooks/update-every-webhooks',
+      'webhooks/update-notify-sent-by-me',
     ],
     Partners: [
       'partner/introduction',

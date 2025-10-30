@@ -18,7 +18,7 @@ title: Arquivar chats
 
 ## Conceituação
 
-Este método é reponsavel por arquivar e desarquivar seus chats.
+Este método é responsável por arquivar e desarquivar seus chats.
 
 ---
 

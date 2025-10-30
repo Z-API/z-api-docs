@@ -9,9 +9,9 @@ Vamos falar sobre Multi-Devices ?
 
 O que é ? onde vive ? do que se alimenta ?
 
-Brincadeiras à parte, hoje estamos aqui para falar um pouquinho da nova versão do Whatsapp e suas principais características, vamos separar alguns tópicos a seguir para tentar te contextualizar da melhor forma.
+Brincadeiras à parte, hoje estamos aqui para falar um pouquinho da nova versão do WhatsApp e suas principais características, vamos separar alguns tópicos a seguir para tentar te contextualizar da melhor forma.
 
-Mas antes disso ccredito que ninguem melhor que o proprio Whatsapp para falar desta nova feature por isso vamos deixar aqui o link para acompanhar direto da fonte :)
+Mas antes disso ccredito que ninguem melhor que o proprio WhatsApp para falar desta nova feature por isso vamos deixar aqui o link para acompanhar direto da fonte :)
 
 https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=pt_br
 
@@ -27,7 +27,7 @@ Você pode ter até quatro dispositivos conectados de uma só vez, porém só é
 
 - **Envia e recebe mensagem sem a necessidade do celular estar ligado**
 
-Você não precisa mais ter o celular conectado para enviar e receber mensagens pelo Whatsapp web ou desktop. Porém seus dispositivos adicionais serão desconectados caso você não use o WhatsApp no seu celular por mais de 14 dias.
+Você não precisa mais ter o celular conectado para enviar e receber mensagens pelo WhatsApp web ou desktop. Porém seus dispositivos adicionais serão desconectados caso você não use o WhatsApp no seu celular por mais de 14 dias.
 
 ---
 

@@ -30,7 +30,9 @@ Nesse método você será capaz de pegar um produto pelo seu id
 | availability | string  | Atributo para saber a disponibilidade do produto |
 | id           | string  | Id do produto                                    |
 | retailerId   | boolean | ID do varejista                                  |
+| description  | string  | Descricao do produto                             |
 | price        | string  | Preço do produto                                 |
+| salePrice    | string  | Preço promocional                                |
 | currency     | string  | Tipo da moeda                                    |
 | name         | string  | Nome do produto                                  |
 | quantity     | boolean | Atributo de quantidade de produto                |
@@ -46,7 +48,9 @@ Exemplo
     "availability": "in stock",
     "id": "99999999999999",
     "retailerId": null,
+    "description": "Descriçao do mouse",
     "price": "20000",
+    "salePrice": "90000",
     "currency": "BRL",
     "name": "Meu primeiro produto",
     "images": ["https://"]

@@ -5,7 +5,7 @@ title: Cell phone data
 
 ## Method
 
-#### /Status
+#### /device
 
 `GET` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/device
 

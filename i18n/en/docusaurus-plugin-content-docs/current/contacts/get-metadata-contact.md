@@ -23,7 +23,7 @@ This method is responsible for returning all of you contact’s metadata
 :::tip Tip about contact's image 
 
 
-If you intend to store your contact's image, please note that we always return in get-contacts the attribute with imgUrl with it for you, but it is important to remember that it is only available for 48 hours. After this period the image link is deleted by Whatsapp itself . We suggest that if you need to update your contact's image, you use the next method in this documentation, **get-profile-picture**.
+If you intend to store your contact's image, please note that we always return in get-contacts the attribute with imgUrl with it for you, but it is important to remember that it is only available for 48 hours. After this period the image link is deleted by WhatsApp itself . We suggest that if you need to update your contact's image, you use the next method in this documentation, **get-profile-picture**.
 
 :::
 
@@ -65,8 +65,8 @@ Method
 | name | string | **First and last name** of the contact, it will only return filled in if you have the number in your contacts |
 | short | string | Contact **name**, it will only return filled in if you have the number in your contacts |
 | vname | string | Contact name if you have him as a contact |
-| notify | string | Name entered in Whatsapp name settings |
-| imgUrl | string | Contact photo URL **Whatsapp deletes after 48h** |
+| notify | string | Name entered in WhatsApp name settings |
+| imgUrl | string | Contact photo URL **WhatsApp deletes after 48h** |
 
 Example 
 
@@ -74,7 +74,7 @@ Example
 {
   "name": "Contact's first and last name",
   "phone": "551199999999",
-  "notify": "Contact's name on Whatsapp",
+  "notify": "Contact's name on WhatsApp",
   "short": "Contact's name",
   "imgUrl": "Contact's photo URL  "
 }

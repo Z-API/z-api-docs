@@ -31,6 +31,7 @@ Este método te permite obter os dados da sua instância.
 | id                        | string    | Id da instância                                                              |
 | token                     | string    | Token da instância                                                           |
 | name                      | string    | Nome da instância                                                            |
+| due                       | number    | Timestamp com a data de vencimento da instância (unix timestamp)             |
 | connected                 | boolean   | Define se a instância está conectada                                         |
 | paymentStatus             | string    | Define o status de pagamento da instância                                    |
 | created                   | Date      | Data de criação da instância                                                 |

@@ -19,6 +19,8 @@ title: Send PTV
 
 ## Concept
 
+The acronym PTV comes from "Pre-Recorded Transfer Video".
+
 Method responsible for sending PTV to your chats. You can work with PTV in 2 ways:
 
 By Link: Where you have a video hosted somewhere on the internet and send only the link to it.
@@ -56,7 +58,7 @@ In this [link], you will find everything you need to know about file formats and
 
 ## Request Body
 
-##### Send via URL
+**Sending using URL**
 ```json
 {
   "phone": "5511999999999",
@@ -64,7 +66,7 @@ In this [link], you will find everything you need to know about file formats and
 }
 ```
 
-##### Send via Base64
+**Sending using Base64**
 ```json
 {
   "phone": "5544999999999",

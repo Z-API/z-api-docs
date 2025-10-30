@@ -18,7 +18,7 @@ title: Remover admin do grupo
 
 ## Conceituação
 
-Este método é reponsavel remover um ou mais admistradores de um grupo.
+Este método é responsável remover um ou mais admistradores de um grupo.
 
 :::caution Atenção
 
