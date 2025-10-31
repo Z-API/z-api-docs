@@ -27,16 +27,17 @@ Este método é responsável por retornar informações sobre o device/celular c
 
 ```json
 {
-    "phone": "",
-    "imgUrl": "",
-    "name": "",
-    "device": {
-        "sessionName": "Z-API",
-        "device_model": "Z-API"
-    },
-    "originalDevice": "iphone", "smbi", "android", "smba", 
-    "sessionId": 175,
-    "isBusiness": false
+  "phone": "",
+  "imgUrl": "",
+  "about": "Recado do perfil do contato",
+  "name": "",
+  "device": {
+      "sessionName": "Z-API",
+      "device_model": "Z-API"
+  },
+  "originalDevice": "iphone", "smbi", "android", "smba", 
+  "sessionId": 175,
+  "isBusiness": false
 }
 ```
 

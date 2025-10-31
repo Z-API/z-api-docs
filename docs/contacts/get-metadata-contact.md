@@ -66,6 +66,7 @@ Método
 | vname | string | Nome do Vcard do contato, caso ele tenha |
 | notify | string | Nome informado nas configurações de nome do WhatsApp |
 | imgUrl | string | URL da foto do contato **o WhatsApp apaga após 48h** |
+| about | string | Recado do perfil do contato |
 
 Exemplo
 
@@ -75,7 +76,8 @@ Exemplo
   "phone": "551199999999",
   "notify": "Nome do contado no WhatsApp",
   "short": "Nome do contato",
-  "imgUrl": "url da foto do contato "
+  "imgUrl": "url da foto do contato ",
+  "about": "Recado do perfil do contato"
 }
 ```
 
