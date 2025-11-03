@@ -16,6 +16,7 @@ module.exports = {
     Tips: [
       'tips/blockednumber',
       'tips/blockednumbernew',
+      'tips/lid',
       'tips/enable-fix-number',
       // 'tips/disable-screem-blocked',
       // 'tips/android-active',
