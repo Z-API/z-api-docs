@@ -16,7 +16,7 @@ Em alguns casos, o WhatsApp está enviando o `@lid` como identificação primár
 
 O WhatsApp pode retornar os identificadores de contato de diferentes formas, dependendo do tipo de conversa, grupo ou configuração de privacidade:
 
-* `phone`: Pode conter o número real (`"554499999999"`) ou o próprio `@lid` (`"81896604192873@lid"`).
+* `phone`: Pode conter o número real (`"554499999999"`) ou o próprio `@lid` (`"999999999999999@lid"`).
 
 * `chatLid`: É o identificador único mais estável, mas pode vir como `null`.
 
@@ -34,7 +34,7 @@ Nos webhooks da Z-API, o WhatsApp pode retornar o identificador do contato de di
 
 ```json
 {
-  "chatLid": "81896604192873@lid",
+  "chatLid": "999999999999999@lid",
   "phone": "554499999999"
 }
 ```
@@ -59,7 +59,7 @@ Essa variação ocorre porque, por vezes, a Z-API não possui o telefone de quem
 
 ```json
 {
-  "phone": "81896604192873@lid",
+  "phone": "999999999999999@lid",
   "message": "Olá! Essa mensagem foi enviada usando o identificador @lid."
 }
 ```
