@@ -41,6 +41,7 @@ In this method, you can send messages of type Event. You can only send this type
 | name | string | Event name |
 | description | string (optional) | Event description |
 | dateTime | string | Event date and time (without timezone) |
+| timeZone | string (optional) | UTC timezone of the event |
 | location | Location (optional) | Event location |
 | callLinkType | string (voice/video) (optional) | Event call type (voice or video) |
 | canceled | boolean | Defines if the event is canceled |
@@ -56,6 +57,7 @@ In this method, you can send messages of type Event. You can only send this type
     "name": "Event Name",
     "description": "Event Description",
     "dateTime": "2024-04-29T09:30:53.309Z",
+    "timeZone": "UTC-3",
     "location": {
       "name": "Location Name"
     },
