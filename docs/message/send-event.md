@@ -41,6 +41,7 @@ Neste método você poderá enviar mensagens do tipo Evento. Só é possível en
 | name | string | Nome do event |
 | description | string (opcional) | Descrição do evento |
 | dateTime | string | Data e hora do evento (sem timezone) |
+| timeZone | string (opcional) | Fuso horário UTC do evento |
 | location | Location (opcional) | Localização do evento |
 | callLinkType | string (voice/video) (opcional) | Tipo de chamada do evento (voz ou video) |
 | canceled | boolean | Define se o evento está cancelado |
@@ -56,6 +57,7 @@ Neste método você poderá enviar mensagens do tipo Evento. Só é possível en
     "name": "Nome do evento",
     "description": "Descrição do evento",
     "dateTime": "2024-04-29T09:30:53.309Z",
+    "timeZone": "UTC-3",
     "location": {
       "name": "Nome do lugar"
     },
