@@ -83,7 +83,6 @@ Exemplo
         "inputPhone": "554488888888",
         "outputPhone": "554488888888",
         "lid": null
-
     }
 ]
 ```
