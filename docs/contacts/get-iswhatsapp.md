@@ -64,13 +64,17 @@ Método
 | Atributos | Tipo | Descrição |
 | :-- | :-- | :-- |
 | exists | boolean | true para caso exista e false para casos onde o número não tenha WhatsApp |
+| phone  | string  | Número formatado de acordo com a resposta do WhatsApp|
+| lid | string  | Identificador único e privado criado pelo WhatsApp para representar contatos sem expor diretamente o número de telefone |
 
 Exemplo
 
 ```json
 [
   {
-    "exists": "true ou false"
+    "exists": "true ou false",
+    "phone": "5544999999999",
+    "lid": "999999999@lid" // Vai ser null se "exists" for false
   }
 ]
 ```
