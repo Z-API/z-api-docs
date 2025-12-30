@@ -66,6 +66,7 @@ Method
 | exists      | boolean | true if it exists, false for cases where the number doesn't have WhatsApp |
 | inputPhone  | string  | Number sent in the request, may or may not include the ninth digit.|
 | outputPhone | string  | Formatted number according to the WhatsApp response, reflecting the WhatsApp registration and including the ninth digit if applicable. |
+| lid | string  | A unique and private identifier created by WhatsApp to represent contacts without directly exposing their phone number |
  
 Example
 
@@ -74,12 +75,14 @@ Example
     {
         "exists": true,
         "inputPhone": "554499999999",
-        "outputPhone": "554499999999"
+        "outputPhone": "554499999999",
+        "lid": "999999999999999@lid"
     },
     {
         "exists": false,
         "inputPhone": "554488888888",
-        "outputPhone": "554488888888"
+        "outputPhone": "554488888888",
+        "lid": null
     }
 ]
 ```
