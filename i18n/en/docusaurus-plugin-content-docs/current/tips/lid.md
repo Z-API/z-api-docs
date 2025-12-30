@@ -18,11 +18,7 @@ WhatsApp can return contact identifiers in different ways, depending on the type
 
 * `phone`: Can contain the actual number (`"554499999999"`) or the `@lid` itself (`"999999999999999@lid"`).
 
-* `chatLid`: Is the most stable unique identifier, but may come as `null`.
-
-When `chatLid` is `null`, the `phone` field may contain the `@lid` instead of the number.
-
-The return behavior is defined exclusively by WhatsApp and may change at any time.
+* `chatLid`: Is the most stable unique identifier.
 
 ---
 
@@ -43,13 +39,10 @@ In Z-API webhooks, WhatsApp can return the contact identifier in different ways,
 
 ```json
 {
-  "chatLid": null,
+  "chatLid": "65998849469@lid",
   "phone": "65998849469@lid"
 }
 ```
-
-In some cases, `"chatLid"` may come as `null`, and the `"phone"` field may contain the `@lid` itself.
-This variation occurs because sometimes Z-API does not have the phone number of the message sender, as only the `@lid` is provided by WhatsApp.
 
 ---
 
