@@ -74,3 +74,17 @@ Acesse nosso painel admin, em Instâncias clique no olho "visualizar" na instân
 ### Via api
 
 Também é possível atualizar a rota do seu webhook chamando o endpoint de update. Esse endpoint é disponibilizado nos próximos tópicos da documentação.
+
+---
+
+## Formato Gzip
+
+A compactação Gzip pode diminuir bastante o tamanho do corpo de resposta e assim aumentar a velocidade de um aplicativo da web.
+
+Diante disso, em novembro de 2024 foi lançada uma atualização do Z-API em que os webhooks poderão ser recebidos no formato Gzip.
+
+Para isso, você vai precisar descomprimir os dados do webhook que chegarão no formato Gzip. Mas não se preocupe, vamos te auxiliar abaixo.
+
+### Como descompactar Gzip
+
+Para auxiliá-los nesse processo, criamos um repositório com diversas aplicações que descompactam o Gzip utilizando diferentes linguagens e frameworks. Para saber mais, acesse o [link do repositório](https://github.com/Z-API/z-api-gzip-decompress).
