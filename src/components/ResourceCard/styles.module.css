@@ -1,0 +1,277 @@
+/* ============================================
+   RESOURCE CARD - Design Minimalista
+   Inspirado no WhatsApp Business Developer Hub
+   ============================================ */
+
+.card {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  /* Visual - Minimalista */
+  background-color: var(--background-white);
+  border-radius: 12px; /* Mais suave */
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  
+  /* Sombras sutis */
+  box-shadow: var(--shadow-sm);
+  
+  /* Transições suaves */
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hover sutil - apenas mudança de borda */
+.card:hover {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--shadow-md);
+}
+
+/* Dark Mode - Card */
+html[data-theme='dark'] .card,
+[data-theme='dark'] .card {
+  background-color: #0A0E27;
+  border-color: var(--official-border-light);
+  box-shadow: var(--shadow-sm-dark);
+}
+
+html[data-theme='dark'] .card:hover,
+[data-theme='dark'] .card:hover {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-md);
+}
+
+/* ============================================
+   IMAGE AREA - Menor e mais discreta
+   ============================================ */
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 160px; /* Menor que antes (208px) */
+  overflow: hidden;
+  flex-shrink: 0;
+  background-image: linear-gradient(to bottom right, var(--color-secondary-50), var(--color-secondary-100));
+  border-radius: 8px 8px 0 0;
+}
+
+html[data-theme='dark'] .imageWrapper,
+[data-theme='dark'] .imageWrapper {
+  background-image: linear-gradient(to bottom right, var(--color-secondary-900), var(--color-primary-900));
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.card:hover .image {
+  transform: scale(1.02); /* Zoom mais sutil */
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  transition: background 300ms ease;
+  pointer-events: none;
+}
+
+.card:hover .imageOverlay {
+  background: var(--background-black-alpha-10);
+}
+
+html[data-theme='dark'] .card:hover .imageOverlay,
+[data-theme='dark'] .card:hover .imageOverlay {
+  background: var(--background-black-alpha-20);
+}
+
+/* ============================================
+   CARD CONTENT - Padding generoso
+   ============================================ */
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xl); /* 32px */
+  flex-grow: 1;
+  gap: var(--spacing-md); /* 16px */
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+
+.badgesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm); /* 8px */
+  margin-bottom: 0;
+}
+
+/* ============================================
+   TITLE (h3)
+   ============================================ */
+
+.title {
+  font-size: var(--font-size-xl); /* 20px */
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: #091E42;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  transition: color 200ms ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Dark Mode - Title */
+html[data-theme='dark'] .title,
+[data-theme='dark'] .title {
+  color: #FFFFFF;
+}
+
+/* ============================================
+   DESCRIPTION (p)
+   ============================================ */
+
+.description {
+  font-size: var(--font-size-base); /* 16px */
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+  color: #677483;
+  margin: 0;
+  text-align: left;
+  flex-grow: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Dark Mode - Description */
+html[data-theme='dark'] .description,
+[data-theme='dark'] .description {
+  color: #B3BAC5;
+}
+
+/* ============================================
+   BUTTON CTA - Link style mais minimalista
+   ============================================ */
+
+.cta {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+  margin-top: auto;
+}
+
+.cta strong {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm); /* 8px */
+  padding: 0;
+  font-size: var(--font-size-base); /* 16px */
+  font-weight: var(--font-weight-medium);
+  color: var(--official-accent-green);
+  text-decoration: none;
+  transition: color 200ms ease, gap 200ms ease;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.cta strong:hover {
+  color: var(--official-accent-green-dark);
+  gap: var(--spacing-md); /* 12px no hover */
+}
+
+/* Dark Mode - CTA */
+html[data-theme='dark'] .cta strong,
+[data-theme='dark'] .cta strong {
+  color: var(--official-accent-green);
+}
+
+html[data-theme='dark'] .cta strong:hover,
+[data-theme='dark'] .cta strong:hover {
+  color: var(--official-accent-green-light);
+}
+
+/* ============================================
+   RIPPLE EFFECT (removido para design minimalista)
+   ============================================ */
+
+.ripple {
+  display: none;
+}
+
+/* ============================================
+   RESPONSIVE - Mobile
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+  .imageWrapper {
+    height: 140px;
+  }
+  
+  .cardContent {
+    padding: var(--spacing-lg); /* 24px */
+  }
+  
+  .title {
+    font-size: var(--font-size-lg); /* 20px */
+  }
+
+  .description {
+    font-size: var(--font-size-sm); /* 14px */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .imageWrapper {
+    height: 120px;
+  }
+  
+  .cardContent {
+    padding: var(--spacing-md); /* 16px */
+  }
+  
+  .title {
+    font-size: var(--font-size-base); /* 16px */
+  }
+
+  .description {
+    font-size: var(--font-size-sm); /* 14px */
+  }
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .image,
+  .imageOverlay,
+  .title,
+  .cta strong {
+    transition: none;
+  }
+  
+  .card:hover .image {
+    transform: none;
+  }
+}

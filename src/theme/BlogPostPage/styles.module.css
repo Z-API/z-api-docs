@@ -1,0 +1,510 @@
+/* ============================================
+   BLOG POST PAGE - Design Figma
+   Layout: Hero (categoria → título → meta com avatar → feature image) + 
+           Conteúdo principal + Popular Posts Sidebar + Related Articles
+   ============================================ */
+
+/* Hero Section */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) var(--spacing-md) var(--spacing-2xl);
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: var(--spacing-2xl);
+  font-family: var(--font-family-base);
+}
+
+.heroContent {
+  max-width: 843px; /* Figma: 843px de largura para o hero content */
+  margin: 0;
+}
+
+/* Categoria - Azul, uppercase, pequeno */
+.category {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--ifm-color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.72px;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Título - Grande, negrito (52px conforme Figma) */
+.title {
+  font-size: 52px; /* Figma: 52px - usando valor específico pois não há variável 52px no design system */
+  font-weight: var(--font-weight-bold);
+  font-family: var(--zapi-font-family-heading);
+  margin: 0 0 var(--spacing-xl);
+  color: var(--text-primary);
+  line-height: 1.15; /* Figma: 59.8px / 52px ≈ 1.15 */
+  letter-spacing: -0.02em;
+}
+
+/* Meta Section - Com avatar do autor */
+.metaSection {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.authorAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  flex-wrap: wrap;
+}
+
+.metaLabel {
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+}
+
+.authorName {
+  color: var(--text-primary);
+  font-size: 15px; /* Figma: 15px */
+  font-weight: var(--font-weight-normal);
+}
+
+.metaSeparator {
+  color: var(--text-primary);
+  opacity: 0.6;
+  margin: 0 var(--spacing-xs);
+}
+
+.date {
+  color: var(--text-primary);
+  font-size: 15px; /* Figma: 15px */
+  white-space: nowrap;
+}
+
+.readingTime {
+  color: var(--text-primary);
+  font-size: 15px; /* Figma: 15px (não 16px) */
+  white-space: nowrap;
+}
+
+/* Feature Image - Grande, abaixo do meta */
+.cover {
+  width: 100%;
+  max-width: 1188px;
+  height: 594px;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-light);
+  display: block;
+  margin: var(--spacing-xl) auto 0;
+  padding: 0;
+}
+
+/* Page Layout - Duas colunas: conteúdo + sidebar */
+.pageLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 317px;
+  gap: var(--spacing-3xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-3xl);
+}
+
+.postContent {
+  min-width: 0;
+  max-width: 843px; /* Figma: 843px de largura para o conteúdo principal */
+  margin: 0;
+}
+
+/* Sidebar - Popular Posts + TOC */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+/* Popular Posts Section */
+.popularPosts {
+  display: flex;
+  flex-direction: column;
+}
+
+.popularPostsTitle {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.84px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.popularPostsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.popularPostItem {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 200ms ease;
+}
+
+.popularPostItem:hover {
+  opacity: 0.8;
+}
+
+.popularPostThumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--border-radius-sm);
+  flex-shrink: 0;
+}
+
+.popularPostContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1;
+  min-width: 0;
+}
+
+.popularPostCategory {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.72px;
+}
+
+.popularPostTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-primary);
+  line-height: var(--line-height-normal);
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.popularPostSeparator {
+  height: 1px;
+  background: var(--border-light);
+  margin: 0;
+}
+
+/* TOC Section */
+.postToc {
+  display: none;
+}
+
+.tocTitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* Related Posts Section - Layout horizontal com imagens à esquerda */
+.relatedPosts {
+  margin-top: var(--spacing-3xl);
+  padding-top: var(--spacing-2xl);
+  border-top: 1px solid var(--border-light);
+}
+
+.relatedPostsTitle {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.72px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.relatedPostsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.relatedPostCard {
+  display: flex;
+  gap: var(--spacing-xl);
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 200ms ease;
+}
+
+.relatedPostCard:hover {
+  opacity: 0.8;
+}
+
+.relatedPostImage {
+  width: 270px;
+  height: 203px;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  flex-shrink: 0;
+}
+
+.relatedPostContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  flex: 1;
+  min-width: 0;
+}
+
+.relatedPostMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.72px;
+}
+
+.relatedPostCategory {
+  color: var(--text-secondary);
+}
+
+.relatedPostMetaSeparator {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.relatedPostReadingTime {
+  color: var(--text-secondary);
+}
+
+.relatedPostTitle {
+  font-size: 24px; /* Figma: 24px (var(--font-size-2xl) é 24px, mas especificando para clareza) */
+  font-weight: var(--font-weight-normal);
+  color: var(--text-primary);
+  line-height: 1.33; /* Figma: 31.992px / 24px ≈ 1.33 */
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.relatedPostDescription {
+  font-size: var(--font-size-base); /* Figma: 16px ou 15px - usando base (16px) */
+  color: var(--text-primary);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Responsividade - Desktop (997px+) */
+@media (min-width: 997px) {
+  .pageLayout {
+    gap: var(--spacing-3xl);
+  }
+
+  .postToc {
+    display: block;
+    position: sticky;
+    top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+    max-height: calc(100vh - var(--ifm-navbar-height) - var(--spacing-md));
+    overflow-y: auto;
+    padding-left: var(--spacing-lg);
+    border-left: 1px solid var(--border-light);
+  }
+
+  /* Custom scrollbar */
+  .postToc::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .postToc::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .postToc::-webkit-scrollbar-thumb {
+    background: var(--border-medium);
+    border-radius: var(--border-radius-full);
+  }
+
+  .postToc::-webkit-scrollbar-thumb:hover {
+    background: var(--ifm-color-primary);
+  }
+}
+
+/* Responsividade - Tablet (768px - 996px) */
+@media (max-width: 996px) {
+  .pageLayout {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .sidebar {
+    order: -1;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .relatedPostImage {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+/* Estilos para conteúdo do blog (22px conforme Figma) */
+.postContent :global(.theme-doc-markdown),
+.postContent :global(.markdown),
+.postContent :global(article) {
+  font-size: 22px; /* Figma: 22px para texto do blog body */
+  line-height: 1.5; /* Figma: 33px / 22px ≈ 1.5 */
+  color: var(--text-primary);
+}
+
+.postContent :global(.theme-doc-markdown p),
+.postContent :global(.markdown p),
+.postContent :global(article p) {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Headings grandes no meio do conteúdo (52px conforme Figma) */
+.postContent :global(.theme-doc-markdown h2),
+.postContent :global(.markdown h2),
+.postContent :global(article h2) {
+  font-size: 52px;
+  line-height: 1.15;
+  margin-top: var(--spacing-3xl);
+  margin-bottom: var(--spacing-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+/* Responsividade - Mobile (< 768px) */
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .title {
+    font-size: var(--font-size-3xl);
+    letter-spacing: -0.01em;
+  }
+  
+  /* Ajustar tamanho do texto do blog em mobile */
+  .postContent :global(.theme-doc-markdown),
+  .postContent :global(.markdown),
+  .postContent :global(article) {
+    font-size: var(--font-size-base); /* 16px em mobile */
+  }
+  
+  .postContent :global(.theme-doc-markdown h2),
+  .postContent :global(.markdown h2),
+  .postContent :global(article h2) {
+    font-size: var(--font-size-3xl); /* 32px em mobile */
+  }
+
+  .cover {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+  }
+
+  .metaSection {
+    flex-wrap: wrap;
+  }
+
+  .authorAvatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .meta {
+    font-size: var(--font-size-sm);
+  }
+
+  .relatedPosts {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-xl);
+  }
+
+  .relatedPostsTitle {
+    font-size: var(--font-size-xs);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .relatedPostCard {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .relatedPostImage {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .relatedPostTitle {
+    font-size: var(--font-size-xl);
+  }
+
+  .popularPostItem {
+    flex-direction: column;
+  }
+
+  .popularPostThumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+/* Dark Mode */
+[data-theme='dark'] .title,
+[data-theme='dark'] .meta,
+[data-theme='dark'] .metaLabel,
+[data-theme='dark'] .authorName,
+[data-theme='dark'] .date,
+[data-theme='dark'] .readingTime,
+[data-theme='dark'] .popularPostTitle,
+[data-theme='dark'] .relatedPostTitle,
+[data-theme='dark'] .relatedPostDescription {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+
+[data-theme='dark'] .popularPostsTitle,
+[data-theme='dark'] .popularPostCategory,
+[data-theme='dark'] .relatedPostsTitle,
+[data-theme='dark'] .relatedPostMeta,
+[data-theme='dark'] .relatedPostCategory,
+[data-theme='dark'] .relatedPostReadingTime {
+  color: #B3BAC5 !important;
+  background-color: #1A1D29 !important;
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .popularPostItem,
+  .relatedPostCard {
+    transition: none;
+  }
+}

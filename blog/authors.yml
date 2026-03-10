@@ -1,0 +1,16 @@
+zapi-central:
+  name: Z-API Central
+  title: Equipe Z-API Central
+  url: https://github.com/CJBiohacker/Z-API-Central-Dev
+  image_url: https://github.com/CJBiohacker.png
+  page: true
+  socials:
+    github: CJBiohacker
+
+z-api-team:
+  name: Z-API Team
+  title: Equipe Z-API
+  url: https://developer.z-api.io/
+  image_url: https://github.com/CJBiohacker.png
+  page: false
+  socials: {}

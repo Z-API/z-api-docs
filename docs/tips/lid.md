@@ -18,13 +18,17 @@ O WhatsApp pode retornar os identificadores de contato de diferentes formas, dep
 
 * `phone`: Pode conter o número real (`"554499999999"`) ou o próprio `@lid` (`"999999999999999@lid"`).
 
-* `chatLid`: É o identificador único mais estável.
+* `chatLid`: É o identificador único mais estável, mas pode vir como `null`.
+
+Quando `chatLid` é `null`, o campo `phone` pode conter o `@lid` em vez do número.
+
+O comportamento de retorno é definido exclusivamente pelo WhatsApp e pode mudar a qualquer momento.
 
 ---
 
 ### Exemplo de Webhook
 
-Nos webhooks da Z-API, o WhatsApp pode retornar o identificador do contato de diferentes formas, dependendo do tipo de interação e das configurações de privacidade do usuário.
+Nos webhooks do Z-API, o WhatsApp pode retornar o identificador do contato de diferentes formas, dependendo do tipo de interação e das configurações de privacidade do usuário.
 
 #### Exemplo – Retorno completo com número e `@lid`:
 
@@ -39,10 +43,13 @@ Nos webhooks da Z-API, o WhatsApp pode retornar o identificador do contato de di
 
 ```json
 {
-  "chatLid": "65998849469@lid",
+  "chatLid": null,
   "phone": "65998849469@lid"
 }
 ```
+
+Em alguns casos, o `"chatLid"` pode vir como `null`, e o campo `"phone"` pode conter o próprio `@lid`.
+Essa variação ocorre porque, por vezes, o Z-API não possui o telefone de quem está enviando a mensagem, pois apenas o `@lid` é informado pelo WhatsApp.
 
 ---
 
@@ -57,7 +64,7 @@ Nos webhooks da Z-API, o WhatsApp pode retornar o identificador do contato de di
 }
 ```
 
-O envio funciona normalmente, pois o `@lid` _já é suportado_ pela API da Z-API na maioria dos endpoints.
+O envio funciona normalmente, pois o `@lid` _já é suportado_ pela API do Z-API na maioria dos endpoints.
 
 ---
 
@@ -81,7 +88,7 @@ O mapeamento direto entre `@lid` e `phone` _não é disponibilizado pelo WhatsAp
 
 ### Conversão de número (`phone`) para `@lid`
 
-Por outro lado, é possível obter o `@lid` correspondente a um número de telefone utilizando o método ["Número com Whatsapp ?"](https://developer.z-api.io/contacts/get-iswhatsapp).
+Por outro lado, é possível obter o `@lid` correspondente a um número de telefone utilizando o método [**Verificar Número WhatsApp**](/docs/contacts/numero-whatsapp).
 
 Esse endpoint permite verificar se um número possui conta no WhatsApp e, quando aplicável, retorna também o _identificador `@lid`_ associado a esse número.
 
@@ -89,7 +96,7 @@ Esse endpoint permite verificar se um número possui conta no WhatsApp e, quando
 
 ### Importante
 
-* Essa mudança é _nativa do WhatsApp_, e a Z-API apenas repassa as informações conforme recebidas.
+* Essa mudança é _nativa do WhatsApp_, e o Z-API apenas repassa as informações conforme recebidas.
 * O comportamento de retorno (`@lid` ou `phone`) pode variar.
-* O atributo `chatLid` já está implementado nos webhooks da Z-API e pode ser usado tanto para identificar quanto para enviar mensagens normalmente.
+* O atributo `chatLid` já está implementado nos webhooks do Z-API e pode ser usado tanto para identificar quanto para enviar mensagens normalmente.
 * O `@lid` é uma medida que está sendo implementada pelo próprio WhatsApp; as mudanças estão sendo aplicadas gradualmente e ele ainda não está completamente implementado, por isso o comportamento pode ser inconsistente.

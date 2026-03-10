@@ -1,0 +1,146 @@
+/* ============================================
+   CARD SECTION BASE
+   ============================================ */
+
+.cardSection {
+  padding: 80px var(--spacing-lg); /* 80px vertical, 24px horizontal - consistente com outras seções */
+  position: relative;
+  /* Light Mode - Background claro usando --official-bg-light */
+  background: #F8F9FA;
+  /* Separação visual */
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+/* Dark Mode - Background escuro para card section */
+html[data-theme='dark'] .cardSection,
+[data-theme='dark'] .cardSection {
+  background: #1A1D29 !important;
+  border-top-color: var(--background-white-alpha-05);
+  border-bottom-color: var(--background-white-alpha-05);
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-slow) var(--ease-out),
+              transform var(--transition-slow) var(--ease-out);
+}
+
+/* Dark Mode - Removido background escuro do header */
+/* Mantém apenas o texto claro para visibilidade */
+
+.header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  color: var(--ifm-heading-color);
+}
+
+/* Dark Mode - garantir visibilidade dos títulos com texto claro */
+[data-theme='dark'] .title {
+  color: #FFFFFF !important;
+}
+
+/* Dark Mode + Tema Official - garantir visibilidade mesmo com data-section="light" */
+[data-theme='dark'] [data-theme="official"] .title,
+[data-theme='dark'] [data-theme="official"][data-section="light"] .title {
+  color: #FFFFFF !important;
+}
+
+.titleOnly {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-slow) var(--ease-out),
+              transform var(--transition-slow) var(--ease-out);
+}
+
+.titleOnly.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode - Removido background escuro do título */
+/* Mantém apenas o texto claro para visibilidade */
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--ifm-color-content-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Dark Mode - Texto claro para subtítulo */
+[data-theme='dark'] .subtitle,
+[data-theme='dark'] .header .subtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* ============================================
+   CARDS GRID
+   ============================================ */
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+  align-items: stretch;
+}
+
+/* Garantir que grid items ocupem altura total */
+.cardsGrid > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+/* Responsive - Tablet */
+@media screen and (max-width: 996px) {
+  .cardSection {
+    padding: 64px var(--spacing-md); /* 64px vertical, 16px horizontal */
+  }
+
+  .title {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+/* Responsive - Mobile */
+@media screen and (max-width: 768px) {
+  .cardSection {
+    padding: 48px var(--spacing-sm); /* 48px vertical, 8px horizontal */
+  }
+
+  .title {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .titleOnly {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+

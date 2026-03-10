@@ -1,0 +1,19 @@
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: var(--official-bg-neutral, var(--background-light-gray));
+  transition: transform var(--transition-normal, 200ms ease);
+
+  /* Prevenir layout shift: garantir que imagem tenha dimensões definidas */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Aspect ratio já definido via inline style quando fornecido */
+.image[style*="aspect-ratio"] {
+  height: auto;
+}
+
+

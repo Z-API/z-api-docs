@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: var(--diagram-container-padding, var(--space-6));
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--diagram-container-min-height-sm, 280px);
+  max-height: var(--diagram-container-max-height-lg, 600px);
+  width: 100%;
+}
+
+.container[data-direction='vertical'] {
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: var(--diagram-container-min-height-md, 400px);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  min-width: 150px;
+  min-height: 160px;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--step-color, var(--diagram-line-primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-inverse);
+  box-shadow: var(--shadow-component-lg, var(--shadow-lg));
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.step:hover .iconWrapper {
+  transform: scale(1.1);
+}
+
+.content {
+  text-align: center;
+}
+
+.label {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+.description {
+  margin: 0.5rem 0 0 0;
+  font-size: var(--font-size-sm);
+
+  /* 14px - equivalente a 0.875rem */
+  color: var(--ifm-color-content-secondary);
+}
+
+.connector {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 60px;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+}
+
+.container[data-direction='vertical'] .connector {
+  width: 2px;
+  height: 60px;
+  min-height: 60px;
+  min-width: 2px;
+  flex-direction: column;
+}
+
+.connectorLine {
+  width: 100%;
+  height: 100%;
+  background: var(--step-color, var(--diagram-line-primary));
+  transform-origin: left center;
+  border-radius: 2px;
+}
+
+.container[data-direction='vertical'] .connectorLine {
+  transform-origin: top center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    min-height: 300px;
+  }
+
+  .container[data-direction='horizontal'] .connector {
+    width: 2px;
+    height: 40px;
+    min-height: 40px;
+    min-width: 2px;
+  }
+
+  .step {
+    min-width: 120px;
+    min-height: 140px;
+  }
+
+  .iconWrapper {
+    width: 48px;
+    height: 48px;
+  }
+
+  .label {
+    font-size: var(--font-size-sm);
+
+    /* 14px - equivalente a 0.875rem */
+  }
+
+  .description {
+    font-size: var(--font-size-xs);
+
+    /* 12px - equivalente a 0.75rem */
+  }
+}
+

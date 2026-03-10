@@ -1,0 +1,74 @@
+.resourceLink {
+  color: var(--resource-link-color, var(--ifm-color-content-secondary));
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  display: inline-block;
+  transition: all var(--transition-normal) var(--ease-out);
+  position: relative;
+  padding: var(--spacing-xs) 0;
+}
+
+.resourceLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--resource-link-underline, var(--ifm-color-primary));
+  transition: width var(--transition-normal) var(--ease-out);
+}
+
+.resourceLink:hover {
+  color: var(--resource-link-hover-color, var(--ifm-color-primary));
+  text-decoration: none;
+  transform: translateX(4px);
+}
+
+.resourceLink:hover::after {
+  width: 100%;
+}
+
+.resourceLink:focus-visible {
+  outline: 2px solid var(--resource-link-underline, var(--ifm-color-primary));
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+.linkContent {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.linkIcon {
+  opacity: 0.7;
+  transition: opacity var(--transition-normal) var(--ease-out);
+}
+
+.resourceLink:hover .linkIcon {
+  opacity: 1;
+}
+
+/* Tema Official - Links em seções com background verde escuro */
+[data-theme="official"] .resourceLink {
+  --resource-link-color: var(--text-inverse, rgba(255, 255, 255, 0.9));
+  --resource-link-hover-color: var(--official-text-white);
+  --resource-link-underline: var(--official-accent-green);
+}
+
+/* Touch Targets Mínimo 44x44px para Mobile (WCAG 2.5.5) */
+@media screen and (max-width: 768px) {
+  .resourceLink {
+    /* Garantir touch target mínimo de 44x44px em mobile */
+    min-height: 44px;
+    min-width: 44px;
+
+    /* Ajustar padding para garantir área clicável adequada */
+    padding: calc((44px - var(--spacing-xs) * 2) / 2) var(--spacing-sm);
+    display: inline-flex;
+    align-items: center;
+  }
+}
+

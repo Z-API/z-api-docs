@@ -1,38 +1,37 @@
 ---
 id:id: update-webhook-receive
-
 title: Receive
 ---
 
-## Método
+## Method
 
 #### /update-webhook-received
 
 `PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-webhook-received
 
-## Conceituação
+## Concept
 
-O Z-API oferece dentro das configurações da instância no painel admin o apontamento de webhooks para que ele possa notificar você sobre interações com seus chats/contatos. Este método é responsável por atualizar/adicionar esta informação via API, com ele você pode configurar os webhooks sem a necessidade de acessar o admin Z-API.
+Z-API offers, within the instance settings in the admin panel, the configuration of webhooks so that it can notify you about interactions with your chats/contacts. This method is responsible for updating/adding this information via API; with it, you can configure the webhooks without needing to access the Z-API admin panel.
 
-:::caution Atenção
+:::caution Attention
 
-O Z-API não aceita webhooks que não sejam HTTPS
+Z-API does not accept webhooks that are not HTTPS
 
 :::
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Required
 
-| Atributos |  Tipo  | Descrição                         |
+| Attributes |  Type  | Description                         |
 | :-------- | :----: | :-------------------------------- |
-| value     | string | Webhook/EndPoint da sua aplicação |
+| value     | string | Webhook/Endpoint of your application |
 
-### Opcionais
+### Optional
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 
 ---
@@ -47,7 +46,7 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ```json
 {
-  "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/receive"
+  "value": "https://address-of-your-system.com.br/instance/YOUR_INSTANCE/receive"
 }
 ```
 
@@ -59,11 +58,11 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.
+In this case, make sure you are sending the method specification correctly, i.e., check if you sent POST or PUT as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+If you receive a 415 error, make sure to add the "Content-Type" header of the object you are sending, in most cases "application/json"
 
 ---
 

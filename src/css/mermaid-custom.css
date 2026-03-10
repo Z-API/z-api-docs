@@ -1,0 +1,682 @@
+/**
+ * Estilos Customizados para Diagramas Mermaid
+ * Tema Z-API com cores da marca e animações suaves
+ */
+
+/* Tema customizado para Mermaid
+ * Baseado em: https://mermaid.js.org/syntax/styling.html
+ * Padrão responsivo: SVG com viewBox + width: 100%, height: auto
+ */
+.mermaid {
+  font-family: var(--ifm-font-family-base);
+  background: transparent;
+  padding: 0;
+  margin: var(--space-6) 0;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center; /* Centralizar diagrama */
+}
+
+/* Container SVG - Responsivo segundo documentação Mermaid.js
+ * Padrão: width: 100%, height: auto mantém aspect ratio do viewBox
+ */
+.mermaid svg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  box-sizing: border-box;
+
+  /* preserveAspectRatio será definido via JavaScript */
+}
+
+/* Quando Mermaid está dentro do ScrollRevealDiagram
+ * O container controla as dimensões, SVG deve preencher 100%
+ */
+[class*="ScrollRevealDiagram"] .mermaid {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+[class*="ScrollRevealDiagram"] .mermaid svg {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Nota: preserveAspectRatio é um atributo SVG, não propriedade CSS */
+/* É definido via JavaScript no componente ScrollRevealDiagram */
+
+/* Aplicar transform para escalar o conteúdo interno se necessário */
+.mermaid svg > g {
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+/* Garantir que labels e elementos sejam escaláveis */
+.mermaid svg .node,
+.mermaid svg .edgePath,
+.mermaid svg .nodeLabel,
+.mermaid svg .edgeLabel {
+  transform-box: fill-box;
+}
+
+/* Animações para diagramas Mermaid */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mermaid .node:hover rect,
+.mermaid .node:hover circle,
+.mermaid .node:hover ellipse {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: var(--official-shadow-md);
+}
+
+/* Estilos para edges animados - Usando cor primária */
+.mermaid .edgePath .path {
+  stroke: var(--diagram-line-primary);
+  stroke-dasharray: 5, 5;
+  animation: mermaid-dash 1s linear infinite;
+  transition: stroke-width 0.3s ease, stroke 0.3s ease;
+}
+
+.mermaid .edgePath:hover .path {
+  stroke-width: 3;
+  stroke-dasharray: none;
+  stroke: var(--diagram-line-primary-light);
+}
+
+@keyframes mermaid-dash {
+  to {
+    stroke-dashoffset: -10;
+  }
+}
+
+/* Melhorias visuais para labels */
+.mermaid .nodeLabel,
+.mermaid .edgeLabel {
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+
+  /* 14px */
+}
+
+.mermaid .nodeLabel {
+  color: var(--text-primary);
+  fill: var(--text-primary);
+  /* Usa variável CSS do design system para adaptação ao tema */
+}
+
+/* Elementos <p> dentro dos labels do Mermaid (foreignobject) */
+.mermaid .nodeLabel p,
+.mermaid foreignobject .nodeLabel p,
+.mermaid foreignobject p,
+.mermaid svg foreignobject p,
+.mermaid svg foreignobject .nodeLabel p {
+  color: var(--text-primary) !important;
+  fill: var(--text-primary) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* Garante que parágrafos dentro dos labels tenham cor correta */
+}
+
+/* Elementos <span> dentro dos labels */
+.mermaid .nodeLabel span,
+.mermaid foreignobject .nodeLabel span,
+.mermaid svg foreignobject .nodeLabel span {
+  color: var(--text-primary) !important;
+  fill: var(--text-primary) !important;
+}
+
+/* Foreignobject em geral - garantir herança de cor */
+.mermaid foreignobject,
+.mermaid svg foreignobject {
+  color: var(--text-primary) !important;
+}
+
+.mermaid foreignobject *,
+.mermaid svg foreignobject * {
+  color: var(--text-primary) !important;
+}
+
+/* Garantir que divs dentro de foreignobject também herdem cor */
+.mermaid foreignobject div,
+.mermaid svg foreignobject div {
+  color: var(--text-primary) !important;
+}
+
+/* Estilos para sequence diagrams */
+.mermaid .actor {
+  fill: var(--ifm-color-primary-lightest);
+  stroke: var(--diagram-line-primary);
+  stroke-width: 2;
+}
+
+.mermaid .messageLine0,
+.mermaid .messageLine1 {
+  stroke: var(--diagram-line-primary);
+  stroke-width: 2;
+}
+
+.mermaid .messageText {
+  fill: var(--text-primary);
+  color: var(--text-primary);
+  font-weight: 500;
+  /* Usa variável CSS do design system para adaptação ao tema */
+}
+
+/* Estilos para flowchart - Usando cores semânticas */
+.mermaid .flowchart-link {
+  stroke: var(--diagram-line-primary);
+  stroke-width: 2;
+}
+
+/* Classes semânticas para linhas de diagramas Mermaid */
+/* Permite usar classes como .line-success, .line-warning, etc. */
+.mermaid .edgePath .path[class*="line-success"],
+.mermaid .flowchart-link[class*="line-success"],
+.mermaid .messageLine0[class*="line-success"],
+.mermaid .messageLine1[class*="line-success"] {
+  stroke: var(--diagram-line-success);
+}
+
+.mermaid .edgePath .path[class*="line-warning"],
+.mermaid .flowchart-link[class*="line-warning"],
+.mermaid .messageLine0[class*="line-warning"],
+.mermaid .messageLine1[class*="line-warning"] {
+  stroke: var(--diagram-line-warning);
+}
+
+.mermaid .edgePath .path[class*="line-error"],
+.mermaid .flowchart-link[class*="line-error"],
+.mermaid .messageLine0[class*="line-error"],
+.mermaid .messageLine1[class*="line-error"] {
+  stroke: var(--diagram-line-error);
+}
+
+.mermaid .edgePath .path[class*="line-info"],
+.mermaid .flowchart-link[class*="line-info"],
+.mermaid .messageLine0[class*="line-info"],
+.mermaid .messageLine1[class*="line-info"] {
+  stroke: var(--diagram-line-info);
+}
+
+.mermaid .edgePath .path[class*="line-neutral"],
+.mermaid .flowchart-link[class*="line-neutral"],
+.mermaid .messageLine0[class*="line-neutral"],
+.mermaid .messageLine1[class*="line-neutral"] {
+  stroke: var(--diagram-line-neutral);
+}
+
+.mermaid .edgePath .path[class*="line-secondary"],
+.mermaid .flowchart-link[class*="line-secondary"],
+.mermaid .messageLine0[class*="line-secondary"],
+.mermaid .messageLine1[class*="line-secondary"] {
+  stroke: var(--diagram-line-secondary);
+}
+
+.mermaid .flowchart-label {
+  fill: var(--text-primary);
+  color: var(--text-primary);
+  /* Usa variável CSS do design system para adaptação ao tema */
+}
+
+/* Melhor espaçamento para nós do flowchart */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node polygon {
+  rx: 8px;
+  ry: 8px;
+  stroke-width: 2px;
+  min-width: 120px;
+  min-height: 60px;
+  padding: var(--space-2);
+}
+
+/* Espaçamento entre nós e labels */
+.mermaid .nodeLabel {
+  padding: var(--space-2);
+  font-size: var(--font-size-base);
+
+  /* 16px - usando base em vez de 15px fora da escala */
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Melhor espaçamento para edges - Cor padrão primária */
+.mermaid .edgePath {
+  stroke-width: 2px;
+}
+
+.mermaid .edgePath .path {
+  stroke: var(--diagram-line-primary);
+}
+
+.mermaid .edgeLabel {
+  background-color: var(--background-white-alpha-90);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 4px;
+  font-size: var(--font-size-sm);
+
+  /* 14px - usando sm em vez de 13px fora da escala */
+}
+
+/* Estilos para state diagrams */
+.mermaid .state-note {
+  fill: var(--color-warning-light);
+  stroke: var(--color-warning);
+  stroke-width: 1;
+  opacity: 0.15;
+}
+
+.mermaid .state-note-text {
+  fill: var(--text-primary);
+  color: var(--text-primary);
+  /* Usa variável CSS do design system para adaptação ao tema */
+}
+
+/* Responsividade Mobile - Mantém proporção 700/500 */
+@media (max-width: 768px) {
+  .mermaid {
+    font-size: var(--font-size-xs);
+
+    /* 12px */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    aspect-ratio: 700 / 500;
+    padding: 0;
+    margin: var(--space-4) 0;
+  }
+
+  .mermaid svg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 700 / 500;
+    padding: 0;
+  }
+
+  .mermaid .nodeLabel,
+  .mermaid .edgeLabel {
+    font-size: var(--font-size-xs);
+
+    /* 12px - usando xs em vez de 11px fora da escala */
+  }
+
+  /* Ajustar tamanho mínimo dos nós em mobile */
+  .mermaid .node rect,
+  .mermaid .node circle,
+  .mermaid .node polygon {
+    min-width: 100px;
+    min-height: 50px;
+  }
+
+  /* Simplificar animações em mobile para melhor performance */
+  .mermaid .edgePath .path {
+    animation: none;
+    stroke-dasharray: none;
+  }
+
+  .mermaid .node:hover rect,
+  .mermaid .node:hover circle,
+  .mermaid .node:hover ellipse {
+    transform: none; /* Desabilitar scale em mobile */
+  }
+}
+
+/* Tablet - Ocupa mais espaço */
+@media (min-width: 769px) and (max-width: 996px) {
+  .mermaid {
+    font-size: var(--font-size-sm);
+
+    /* 14px - usando sm em vez de 13px fora da escala */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 500px;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    margin: var(--space-6) auto;
+  }
+
+  .mermaid svg {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+  }
+}
+
+/* Desktop - Ocupa melhor o espaço disponível */
+@media (min-width: 997px) {
+  .mermaid {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    margin: var(--space-8) auto;
+  }
+
+  .mermaid svg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+  }
+
+  /* Melhor espaçamento para nós em desktop */
+  .mermaid .node rect,
+  .mermaid .node circle,
+  .mermaid .node polygon {
+    min-width: 140px;
+    min-height: 70px;
+  }
+
+  .mermaid .nodeLabel {
+    font-size: var(--font-size-base);
+
+    /* 16px */
+    padding: var(--space-3);
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .mermaid {
+  background: var(--background-white-alpha-03);
+}
+
+/* Dark mode - Cards sempre escuros com fundo escuro */
+/* IMPORTANTE: Sobrescreve estilos inline do Mermaid (incluindo classDef com fill customizado) */
+/* Baseado em: https://github.com/orgs/community/discussions/35733 */
+/* Problema: Quando Mermaid define cores via classDef (ex: fill:#e1f5ff), o texto não se adapta ao dark mode */
+/* Solução: Forçar cards escuros e texto branco no dark mode, sobrescrevendo qualquer cor customizada */
+/* Dark mode - Cards sempre escuros com fundo escuro */
+/* IMPORTANTE: Sobrescreve estilos inline do Mermaid (incluindo classDef com fill customizado) */
+/* Baseado em: https://github.com/orgs/community/discussions/35733 */
+/* Problema: Quando Mermaid define cores via classDef (ex: fill:#e1f5ff), o texto não se adapta ao dark mode */
+/* Solução: Forçar cards escuros e texto branco no dark mode, sobrescrevendo qualquer cor customizada */
+[data-theme='dark'] .mermaid .node rect,
+[data-theme='dark'] .mermaid .node circle,
+[data-theme='dark'] .mermaid .node polygon,
+[data-theme='dark'] .mermaid .node rect[style*="fill"],
+[data-theme='dark'] .mermaid .node circle[style*="fill"],
+[data-theme='dark'] .mermaid .node polygon[style*="fill"],
+[data-theme='dark'] .mermaid .node rect.label-container,
+[data-theme='dark'] .mermaid .node circle.label-container,
+[data-theme='dark'] .mermaid .node polygon.label-container,
+[data-theme='dark'] .mermaid .node rect.basic,
+[data-theme='dark'] .mermaid .node circle.basic,
+[data-theme='dark'] .mermaid .node polygon.basic,
+[data-theme='dark'] .mermaid .node rect.basic.label-container,
+[data-theme='dark'] .mermaid .node circle.basic.label-container,
+[data-theme='dark'] .mermaid .node polygon.basic.label-container {
+  fill: #2D2D2D !important;
+  /* Fundo escuro para cards no dark mode - sobrescreve cores customizadas do Mermaid */
+  stroke: var(--diagram-line-primary-dark-mode) !important;
+  /* Garante contraste adequado mesmo quando classDef define cores customizadas */
+  /* Usa !important para sobrescrever estilos inline do Mermaid (ex: style="fill:#e1f5ff !important;") */
+}
+
+/* Dark mode - Labels com texto branco sobre fundo escuro */
+[data-theme='dark'] .mermaid .nodeLabel,
+[data-theme='dark'] .mermaid .edgeLabel {
+  /* Cards têm fundo escuro no dark mode, então texto deve ser branco */
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+}
+
+/* Dark mode - Elementos <p> dentro dos labels */
+[data-theme='dark'] .mermaid .nodeLabel p,
+[data-theme='dark'] .mermaid foreignobject .nodeLabel p,
+[data-theme='dark'] .mermaid foreignobject p,
+[data-theme='dark'] .mermaid svg foreignobject p,
+[data-theme='dark'] .mermaid svg foreignobject .nodeLabel p {
+  /* Cards têm fundo escuro no dark mode, então texto deve ser branco */
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+}
+
+/* Dark mode - Elementos <span> dentro dos labels */
+[data-theme='dark'] .mermaid .nodeLabel span,
+[data-theme='dark'] .mermaid foreignobject .nodeLabel span,
+[data-theme='dark'] .mermaid svg foreignobject .nodeLabel span {
+  /* Cards têm fundo escuro no dark mode, então texto deve ser branco */
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+}
+
+/* Dark mode - Foreignobject */
+[data-theme='dark'] .mermaid foreignobject,
+[data-theme='dark'] .mermaid svg foreignobject {
+  /* Cards têm fundo escuro no dark mode, então texto deve ser branco */
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .mermaid foreignobject *,
+[data-theme='dark'] .mermaid svg foreignobject * {
+  /* Cards têm fundo escuro no dark mode, então texto deve ser branco */
+  color: #FFFFFF !important;
+}
+
+/* Dark mode - Garantir que divs dentro de foreignobject também herdem cor */
+[data-theme='dark'] .mermaid foreignobject div,
+[data-theme='dark'] .mermaid svg foreignobject div {
+  /* Cards têm fundo escuro no dark mode, então texto deve ser branco */
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .mermaid .edgeLabel {
+  background-color: var(--background-black-alpha-60);
+  /* Texto já está definido como branco nas regras acima */
+}
+
+[data-theme='dark'] .mermaid .messageText {
+  fill: #FFFFFF !important;
+  color: #FFFFFF !important;
+  /* Texto branco para contraste sobre fundo escuro no dark mode */
+}
+
+/* Dark mode - Flowchart labels e state notes também com texto branco */
+[data-theme='dark'] .mermaid .flowchart-label {
+  fill: #FFFFFF !important;
+  color: #FFFFFF !important;
+  /* Texto branco para contraste sobre fundo escuro no dark mode */
+}
+
+[data-theme='dark'] .mermaid .state-note-text {
+  fill: #FFFFFF !important;
+  color: #FFFFFF !important;
+  /* Texto branco para contraste sobre fundo escuro no dark mode */
+}
+
+/* Dark mode - Ajustar cores das linhas para melhor contraste */
+[data-theme='dark'] .mermaid .edgePath .path {
+  stroke: var(--diagram-line-primary-dark-mode);
+}
+
+[data-theme='dark'] .mermaid .flowchart-link {
+  stroke: var(--diagram-line-primary-dark-mode);
+}
+
+[data-theme='dark'] .mermaid .messageLine0,
+[data-theme='dark'] .mermaid .messageLine1 {
+  stroke: var(--diagram-line-primary-dark-mode);
+}
+
+[data-theme='dark'] .mermaid .edgePath:hover .path {
+  stroke: var(--diagram-line-primary-light);
+}
+
+/* Dark mode - Classes semânticas */
+[data-theme='dark'] .mermaid .edgePath .path[class*="line-success"],
+[data-theme='dark'] .mermaid .flowchart-link[class*="line-success"] {
+  stroke: var(--diagram-line-success-dark-mode);
+}
+
+[data-theme='dark'] .mermaid .edgePath .path[class*="line-warning"],
+[data-theme='dark'] .mermaid .flowchart-link[class*="line-warning"] {
+  stroke: var(--diagram-line-warning-dark-mode);
+}
+
+[data-theme='dark'] .mermaid .edgePath .path[class*="line-error"],
+[data-theme='dark'] .mermaid .flowchart-link[class*="line-error"] {
+  stroke: var(--diagram-line-error-dark-mode);
+}
+
+[data-theme='dark'] .mermaid .edgePath .path[class*="line-info"],
+[data-theme='dark'] .mermaid .flowchart-link[class*="line-info"] {
+  stroke: var(--diagram-line-info-dark-mode);
+}
+
+[data-theme='dark'] .mermaid .edgePath .path[class*="line-neutral"],
+[data-theme='dark'] .mermaid .flowchart-link[class*="line-neutral"] {
+  stroke: var(--diagram-line-neutral-dark-mode);
+}
+
+[data-theme='dark'] .mermaid .edgePath .path[class*="line-secondary"],
+[data-theme='dark'] .mermaid .flowchart-link[class*="line-secondary"] {
+  stroke: var(--diagram-line-secondary-dark-mode);
+}
+
+/* Ajustes específicos para light mode */
+[data-theme='light'] .mermaid {
+  background: var(--background-white-alpha-20);
+}
+
+[data-theme='light'] .mermaid .edgeLabel {
+  background-color: var(--background-white);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Controles de zoom para diagramas Mermaid diretos */
+.mermaid-zoom-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: var(--space-6) 0;
+}
+
+.mermaid-zoom-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: var(--space-3);
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+[data-theme='dark'] .mermaid-zoom-controls {
+  background: var(--background-black-alpha-60);
+  border-color: var(--ifm-color-emphasis-200);
+  box-shadow: var(--shadow-lg);
+}
+
+.mermaid-zoom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--ifm-color-content);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mermaid-zoom-btn:hover {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-primary);
+}
+
+.mermaid-zoom-btn:active {
+  transform: scale(0.95);
+}
+
+.mermaid-zoom-btn:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.mermaid-zoom-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.mermaid-zoom-level {
+  min-width: 48px;
+  text-align: center;
+  font-size: var(--font-size-sm);
+
+  /* 14px (0.875rem) */
+  font-weight: 600;
+  color: var(--ifm-color-content);
+  padding: 0 4px;
+}
+
+/* Permitir overflow para zoom */
+.mermaid-zoom-wrapper .mermaid {
+  overflow: visible;
+}
+
+.mermaid-zoom-wrapper .mermaid svg {
+  transition: transform 0.2s ease;
+  overflow: visible;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .mermaid-zoom-controls {
+    top: 8px;
+    right: 8px;
+    padding: var(--space-1);
+    gap: var(--space-1);
+  }
+
+  .mermaid-zoom-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mermaid-zoom-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .mermaid-zoom-level {
+    min-width: 40px;
+    font-size: var(--font-size-xs);
+
+    /* 12px (0.75rem) */
+    padding: 0 2px;
+  }
+}
+

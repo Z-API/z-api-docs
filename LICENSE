@@ -1,0 +1,235 @@
+ovidas regras desnecessárias (como .storybook/**/*.js que não existe)LICENÇA PROPRIETÁRIA
+
+Copyright (c) 2024-2026 FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA
+Todos os direitos reservados.
+
+AVISO DE DIREITOS PROPRIETÁRIOS
+
+Este software e arquivos de documentação associados (o "Software") são
+propriedade proprietária e confidencial da FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA
+("Proprietário" ou "Empresa").
+
+O Software foi desenvolvido sob acordo de prestação de serviços e é protegido
+pelas leis de direitos autorais e tratados internacionais de direitos autorais,
+bem como outras leis e tratados de propriedade intelectual.
+
+DIREITOS PROPRIETÁRIOS
+
+Todos os direitos, títulos e interesses sobre o Software, incluindo, mas não
+limitado a:
+
+- Código-fonte, código objeto e código executável
+- Documentação, especificações técnicas e guias do usuário
+- Conteúdo, artigos, tutoriais e materiais educacionais
+- Elementos de design, interfaces de usuário e componentes visuais
+- Algoritmos, metodologias e processos técnicos
+- Quaisquer modificações, melhorias ou obras derivadas
+
+são e permanecerão como propriedade exclusiva da FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA.
+
+RESTRIÇÕES
+
+Você NÃO PODE:
+
+1. Copiar, reproduzir ou duplicar o Software, no todo ou em parte, exceto
+   conforme expressamente autorizado pelo Proprietário por escrito.
+
+2. Modificar, adaptar, alterar, traduzir ou criar obras derivadas baseadas
+   no Software sem consentimento prévio por escrito do Proprietário.
+
+3. Distribuir, sublicenciar, arrendar, alugar, emprestar ou de outra forma
+   transferir o Software para qualquer terceiro.
+
+4. Fazer engenharia reversa, desmontar, descompilar ou de outra forma
+   tentar derivar o código-fonte do Software.
+
+5. Remover, alterar ou obscurecer quaisquer avisos, rótulos ou marcas
+   proprietárias no Software.
+
+6. Usar o Software para qualquer finalidade que não seja expressamente
+   autorizada pelo Proprietário.
+
+7. Divulgar, publicar ou disponibilizar o Software ou qualquer parte dele
+   para qualquer terceiro sem o consentimento prévio por escrito do Proprietário.
+
+USO AUTORIZADO
+
+O uso deste Software é restrito a pessoal e entidades autorizadas
+expressamente permitidas pela FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA.
+Qualquer uso além do escopo da autorização explícita constitui violação desta
+licença e das leis aplicáveis de propriedade intelectual.
+
+TRANSFERÊNCIA DE DIREITOS
+
+Este Software foi desenvolvido sob acordo de prestação de serviços onde todos
+os direitos de propriedade intelectual, incluindo direitos autorais, patentes,
+segredos comerciais e quaisquer outros direitos proprietários, foram
+transferidos para e são de propriedade da FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA.
+
+PRESTAÇÃO DE SERVIÇOS
+
+O desenvolvimento deste Software foi realizado pela empresa prestadora de
+serviços Polipotena Tech, inscrita no CNPJ 62.587.656/0001-00, mediante contrato
+de prestação de serviços.
+
+A referida empresa atuou exclusivamente como prestadora de serviços contratuais,
+não possuindo qualquer responsabilidade, autoria ou direitos de propriedade
+intelectual sobre o Software. Toda a responsabilidade, autoria e propriedade
+intelectual pertencem exclusivamente ao contratante, FOUR PIXEL TECNOLOGIA DA
+INFORMAÇÃO LTDA.
+
+SEM GARANTIA
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
+IMPLÍCITA, INCLUINDO, MAS NÃO LIMITADO ÀS GARANTIAS DE COMERCIALIZAÇÃO,
+ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO VIOLAÇÃO. EM NENHUM CASO OS
+AUTORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER
+REIVINDICAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO,
+DELITO OU OUTRA FORMA, DECORRENTE DE, FORA DE OU EM CONEXÃO COM O SOFTWARE OU
+O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
+
+APLICAÇÃO
+
+A violação desta licença pode resultar em penalidades civis e criminais graves.
+A FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA reserva todos os direitos de buscar
+recursos legais disponíveis sob as leis aplicáveis de propriedade intelectual.
+
+LEI APLICÁVEL
+
+Esta licença será regida e interpretada de acordo com as leis do Brasil,
+especificamente as leis do Estado do Paraná, sem levar em consideração suas
+disposições de conflito de leis.
+
+CONTATO
+
+Para consultas sobre licenciamento, permissões ou uso autorizado deste
+Software, entre em contato:
+
+FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA
+CNPJ: 33.269.419/0001-00
+Endereço: Avenida Governador Bento Munhoz da Rocha Netto, 632, sala 201-204,
+Torre Norte, Zona Industrial, Maringá, Paraná, Brasil
+
+---
+
+Esta licença é efetiva a partir da data de entrega do Software e permanecerá
+em vigor até ser rescindida ou substituída por acordo escrito subsequente.
+
+================================================================================
+
+PROPRIETARY LICENSE
+
+Copyright (c) 2024-2026 FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA
+All rights reserved.
+
+NOTICE OF PROPRIETARY RIGHTS
+
+This software and associated documentation files (the "Software") are the
+proprietary and confidential property of FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA
+("Owner" or "Company").
+
+The Software was developed under a service agreement and is protected by
+copyright laws and international copyright treaties, as well as other
+intellectual property laws and treaties.
+
+PROPRIETARY RIGHTS
+
+All rights, title, and interest in and to the Software, including but not
+limited to:
+
+- Source code, object code, and executable code
+- Documentation, technical specifications, and user guides
+- Content, articles, tutorials, and educational materials
+- Design elements, user interfaces, and visual components
+- Algorithms, methodologies, and technical processes
+- Any modifications, enhancements, or derivative works
+
+are and shall remain the exclusive property of FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA.
+
+RESTRICTIONS
+
+You may NOT:
+
+1. Copy, reproduce, or duplicate the Software, in whole or in part, except
+   as expressly authorized by the Owner in writing.
+
+2. Modify, adapt, alter, translate, or create derivative works based upon
+   the Software without prior written consent from the Owner.
+
+3. Distribute, sublicense, lease, rent, loan, or otherwise transfer the
+   Software to any third party.
+
+4. Reverse engineer, disassemble, decompile, or otherwise attempt to derive
+   the source code of the Software.
+
+5. Remove, alter, or obscure any proprietary notices, labels, or marks on
+   the Software.
+
+6. Use the Software for any purpose other than as expressly authorized by
+   the Owner.
+
+7. Disclose, publish, or make available the Software or any portion thereof
+   to any third party without the prior written consent of the Owner.
+
+AUTHORIZED USE
+
+Use of this Software is restricted to authorized personnel and entities
+expressly permitted by FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA. Any use
+beyond the scope of explicit authorization constitutes a violation of this
+license and applicable intellectual property laws.
+
+TRANSFER OF RIGHTS
+
+This Software was developed under a service agreement where all intellectual
+property rights, including copyrights, patents, trade secrets, and any other
+proprietary rights, have been transferred to and are owned by FOUR PIXEL
+TECNOLOGIA DA INFORMAÇÃO LTDA.
+
+SERVICE PROVISION
+
+The development of this Software was performed by the service provider
+Polipotena Tech, registered under CNPJ 62.587.656/0001-00, under a service
+agreement contract.
+
+The aforementioned company acted exclusively as a contractual service provider,
+without any responsibility, authorship, or intellectual property rights over
+the Software. All responsibility, authorship, and intellectual property belong
+exclusively to the contracting party, FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA.
+
+NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+ENFORCEMENT
+
+Violation of this license may result in severe civil and criminal penalties.
+FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA reserves all rights to pursue legal
+remedies available under applicable intellectual property laws.
+
+GOVERNING LAW
+
+This license shall be governed by and construed in accordance with the laws
+of Brazil, specifically the laws of the State of Paraná, without regard to
+its conflict of law provisions.
+
+CONTACT
+
+For inquiries regarding licensing, permissions, or authorized use of this
+Software, please contact:
+
+FOUR PIXEL TECNOLOGIA DA INFORMAÇÃO LTDA
+CNPJ: 33.269.419/0001-00
+Address: Avenida Governador Bento Munhoz da Rocha Netto, 632, sala 201-204,
+Torre Norte, Zona Industrial, Maringá, Paraná, Brazil
+
+---
+
+This license is effective as of the date of delivery of the Software and
+shall remain in effect until terminated or superseded by a subsequent
+written agreement.

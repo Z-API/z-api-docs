@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  min-height: var(--diagram-container-min-height-lg, 500px);
+  max-height: var(--diagram-container-max-height-xl, 700px);
+  padding: var(--diagram-container-padding, var(--space-6));
+  margin: var(--diagram-container-margin, var(--space-8) 0);
+  position: relative;
+
+  /* Usar CSS Grid para melhor controle do layout */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: stretch;
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-component-sm, var(--shadow-sm));
+  overflow: hidden;
+
+  /* Permitir overflow para zoom */
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* Dark mode para container */
+[data-theme='dark'] .container {
+  background: var(--background-white-alpha-03);
+  box-shadow: var(--shadow-component-dark-sm, var(--shadow-sm-dark));
+}
+
+[data-theme='light'] .container {
+  background: var(--ifm-background-surface-color);
+  box-shadow: var(--shadow-component-sm, var(--shadow-sm));
+}
+
+/* Container interno para diagramas Mermaid - Ocupa 100% da largura e altura do container */
+/* O container tem altura definida via grid (grid-template-rows: 1fr), então height: 100% funciona */
+/* Estilos aplicados globalmente para evitar duplicação em media queries */
+.container :global(.mermaid) {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  grid-column: 1;
+  grid-row: 1;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  /* Garantir que o Mermaid ocupe todo o espaço disponível do container */
+  align-self: stretch;
+  justify-self: stretch;
+
+  /* Remover aspect-ratio quando dentro do ScrollRevealDiagram para ocupar todo espaço */
+  aspect-ratio: unset !important;
+
+  /* O padding é controlado pelo container pai, não pelo Mermaid */
+}
+
+/* SVG dentro do container - deve preencher 100% da altura porque container tem height definida */
+.container :global(.mermaid svg) {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  box-sizing: border-box;
+  aspect-ratio: unset !important;
+}
+
+/* Responsividade */
+/* Nota: Estilos de .mermaid e .mermaid svg são aplicados globalmente acima */
+/* para evitar duplicação - eles se aplicam a todos os breakpoints */
+@media (max-width: 768px) {
+  .container {
+    /* Garantir altura mínima explícita para que height: 100% funcione no .mermaid */
+    min-height: var(--diagram-container-min-height-md, 400px);
+    max-height: var(--diagram-container-max-height-sm, 400px);
+    padding: var(--space-4);
+    margin: var(--space-6) 0;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 996px) {
+  .container {
+    min-height: var(--diagram-container-min-height-lg, 500px);
+    max-height: var(--diagram-container-max-height-md, 500px);
+    padding: var(--diagram-container-padding, var(--space-6));
+  }
+}
+
+@media (min-width: 997px) {
+  .container {
+    min-height: var(--diagram-container-min-height-xl, 600px);
+    max-height: var(--diagram-container-max-height-lg, 600px);
+    padding: var(--space-8);
+    margin: var(--space-12) 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    min-height: var(--diagram-container-min-height-xl, 600px);
+    max-height: var(--diagram-container-max-height-xl, 700px);
+    padding: var(--space-12);
+  }
+}
+

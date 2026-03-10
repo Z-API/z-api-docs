@@ -1,0 +1,207 @@
+/* ============================================
+   TOOLTIP CONTAINER
+   ============================================ */
+
+.tooltipContainer {
+  position: relative;
+  display: inline-block;
+}
+
+/* ============================================
+   TOOLTIP BASE
+   ============================================ */
+
+.tooltip {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  animation: fadeInScale var(--transition-fast) var(--ease-out) forwards;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.tooltip.noAnimation {
+  animation: none;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tooltipContent {
+  background: var(--ifm-background-surface-color);
+  color: var(--text-primary);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  white-space: nowrap;
+  box-shadow: var(--shadow-lg);
+  max-width: 250px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+[data-theme='dark'] .tooltipContent {
+  background: var(--ifm-background-surface-color);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   TOOLTIP ARROW
+   ============================================ */
+
+.tooltipArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.arrowTop {
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-color: var(--ifm-background-surface-color) transparent transparent transparent;
+}
+
+[data-theme='dark'] .arrowTop {
+  border-color: var(--ifm-background-surface-color) transparent transparent transparent;
+}
+
+.arrowBottom {
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent var(--ifm-background-surface-color) transparent;
+}
+
+[data-theme='dark'] .arrowBottom {
+  border-color: transparent transparent var(--ifm-background-surface-color) transparent;
+}
+
+.arrowLeft {
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent var(--ifm-background-surface-color);
+}
+
+[data-theme='dark'] .arrowLeft {
+  border-color: transparent transparent transparent var(--ifm-background-surface-color);
+}
+
+.arrowRight {
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 6px 6px 0;
+  border-color: transparent var(--ifm-background-surface-color) transparent transparent;
+}
+
+[data-theme='dark'] .arrowRight {
+  border-color: transparent var(--ifm-background-surface-color) transparent transparent;
+}
+
+/* ============================================
+   POSITIONS
+   ============================================ */
+
+.top {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+}
+
+.top.noAnimation {
+  transform: translateX(-50%) scale(1);
+}
+
+.bottom {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+}
+
+.bottom.noAnimation {
+  transform: translateX(-50%) scale(1);
+}
+
+.left {
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%) scale(0.95);
+}
+
+.left.noAnimation {
+  transform: translateY(-50%) scale(1);
+}
+
+.right {
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%) scale(0.95);
+}
+
+.right.noAnimation {
+  transform: translateY(-50%) scale(1);
+}
+
+/* ============================================
+   ANIMATION
+   ============================================ */
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================================
+   ACESSIBILIDADE
+   ============================================ */
+
+.tooltip[aria-hidden='false'] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+  .tooltipContent {
+    max-width: 200px;
+    font-size: var(--font-size-xs);
+    padding: var(--space-2) var(--space-3);
+  }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .tooltip {
+    animation: none;
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .top,
+  .bottom,
+  .left,
+  .right {
+    transform: translate(0) scale(1);
+  }
+}
+

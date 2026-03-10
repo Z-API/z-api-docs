@@ -1,0 +1,96 @@
+/* No Code Page Styles */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background-white);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .main {
+  background: var(--official-bg-dark);
+  color: var(--official-text-white);
+}
+
+/* ============================================
+   REMOVER TERMINAL DO HERO - Página No Code
+   ============================================ */
+
+/* Ocultar terminal em qualquer lugar da página no-code */
+.main .terminalWrapper,
+.main [class*="terminalWrapper"],
+.main [class*="terminal-container"],
+.main .terminalContainer,
+.main [role="region"][aria-label*="Terminal"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Ocultar terminal especificamente no hero section */
+.main section[aria-label="Hero No Code"] .terminalWrapper,
+.main section[aria-label="Hero No Code"] [class*="terminalWrapper"],
+.main section[aria-label="Hero No Code"] .terminalContainer,
+.main section[aria-label="Hero No Code"] [class*="terminal-container"],
+.main section[aria-label="Hero No Code"] [role="region"][aria-label*="Terminal"],
+.main .hero .terminalWrapper,
+.main .hero [class*="terminalWrapper"],
+.main .hero .terminalContainer,
+.main .hero [class*="terminal-container"],
+.main .hero [role="region"][aria-label*="Terminal"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Scroll margin para seção #exemplos (renderizada diretamente na página) */
+#exemplos {
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+@media (max-width: 996px) {
+  #exemplos {
+    scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-sm));
+  }
+}
+
+.fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-3xl);
+  min-height: 400px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border-light);
+  border-top-color: var(--official-accent-green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+    border-top-color: var(--border-light);
+  }
+}
+

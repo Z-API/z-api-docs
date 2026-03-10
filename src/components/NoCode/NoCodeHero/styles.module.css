@@ -1,0 +1,130 @@
+/* Hero Section - No Code */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  overflow: hidden;
+}
+
+.hero[data-theme='official'] {
+  background: linear-gradient(
+    135deg,
+    var(--official-bg-dark) 0%,
+    var(--official-bg-hero-solid) 100%
+  );
+  color: var(--official-text-white);
+}
+
+/* Garantir que elementos filhos não herdem cor branca para outras seções */
+.hero[data-theme='official'] * {
+  color: inherit; /* Herdar cor do hero apenas dentro do hero */
+}
+
+/* ============================================
+   REMOVER TERMINAL DO HERO - No Code Hero
+   ============================================ */
+
+/* Ocultar terminal no hero section do No Code */
+.hero .terminalWrapper,
+.hero [class*="terminalWrapper"],
+.hero .terminalContainer,
+.hero [class*="terminal-container"],
+.hero [role="region"][aria-label*="Terminal"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heroContent {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.heroLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--official-accent-green);
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heroTitle {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--spacing-md);
+  color: var(--official-text-white);
+  letter-spacing: -0.02em;
+}
+
+.heroSubtitle {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  margin: 0 0 var(--spacing-xl);
+  color: var(--background-white-alpha-90);
+  max-width: 720px;
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.ctaLink {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Touch Targets Mínimo 44x44px para Mobile (WCAG 2.5.5) */
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 46vh;
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .heroTitle {
+    font-size: var(--font-size-3xl);
+    letter-spacing: -0.01em;
+  }
+
+  .heroSubtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heroButtons > * {
+    width: 100%;
+  }
+}

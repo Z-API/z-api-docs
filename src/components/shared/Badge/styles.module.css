@@ -1,0 +1,228 @@
+/* ============================================
+   BADGE BASE
+   ============================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-full);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  white-space: nowrap;
+  transition: all var(--transition-fast) var(--ease-out);
+  border: 1px solid transparent;
+  position: relative;
+  user-select: none;
+}
+
+/* ============================================
+   VARIANTS
+   ============================================ */
+
+.primary {
+  background: var(--ifm-color-primary);
+  color: var(--text-inverse);
+  border-color: var(--ifm-color-primary);
+}
+
+.secondary {
+  background: var(--ifm-color-content-secondary);
+  color: var(--text-inverse);
+  border-color: var(--ifm-color-content-secondary);
+}
+
+.success {
+  background: var(--color-success);
+  color: var(--text-inverse);
+  border-color: var(--color-success);
+}
+
+.warning {
+  background: var(--color-warning);
+  color: var(--text-inverse);
+  border-color: var(--color-warning);
+}
+
+.error {
+  background: var(--color-error);
+  color: var(--text-inverse);
+  border-color: var(--color-error);
+}
+
+.info {
+  background: var(--zapi-accent-blue);
+  color: var(--text-inverse);
+  border-color: var(--zapi-accent-blue);
+}
+
+/* Variantes outline */
+.primary.outline {
+  background: transparent;
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.secondary.outline {
+  background: transparent;
+  color: var(--ifm-color-content-secondary);
+  border-color: var(--ifm-color-content-secondary);
+}
+
+.success.outline {
+  background: transparent;
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.warning.outline {
+  background: transparent;
+  color: var(--color-warning);
+  border-color: var(--color-warning);
+}
+
+.error.outline {
+  background: transparent;
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.info.outline {
+  background: transparent;
+  color: var(--zapi-accent-blue);
+  border-color: var(--zapi-accent-blue);
+}
+
+/* ============================================
+   SIZES
+   ============================================ */
+
+.sizeSm {
+  font-size: var(--font-size-xs);
+  padding: var(--space-1) var(--space-2);
+  gap: var(--space-1);
+}
+
+.sizeMd {
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.sizeLg {
+  font-size: var(--font-size-base);
+  padding: var(--space-2) var(--space-4);
+  gap: var(--spacing-xs);
+}
+
+/* ============================================
+   BADGE CONTENT
+   ============================================ */
+
+.badgeIcon {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.badgeText {
+  display: inline-block;
+}
+
+/* ============================================
+   REMOVABLE
+   ============================================ */
+
+.removable {
+  padding-right: var(--spacing-xs);
+}
+
+.removeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: var(--spacing-xs);
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all var(--transition-fast) var(--ease-out);
+  line-height: 1;
+  font-size: var(--font-size-body-large);
+
+  /* 18px */
+  opacity: 0.7;
+}
+
+.removeButton:hover:not(:disabled) {
+  opacity: 1;
+  background: var(--background-black-alpha-10);
+  transform: scale(1.1);
+}
+
+.removeButton:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.removeButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+[data-theme='dark'] .removeButton:hover:not(:disabled) {
+  background: var(--background-white-alpha-10);
+}
+
+/* ============================================
+   DISABLED STATE
+   ============================================ */
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ============================================
+   HOVER EFFECTS
+   ============================================ */
+
+.badge:not(.disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.badge:not(.disabled):active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   FOCUS STATES
+   ============================================ */
+
+.badge:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.removeButton:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+
+[data-theme='dark'] .badge {
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme='dark'] .badge:hover:not(.disabled) {
+  box-shadow: var(--shadow-md);
+}
+

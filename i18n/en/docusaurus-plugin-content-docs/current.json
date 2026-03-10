@@ -1,0 +1,166 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.zapiSidebar.category.Início Rápido": {
+    "message": "Quick Start",
+    "description": "The label for category 'Início Rápido' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Gerenciando a Instância": {
+    "message": "Managing the Instance",
+    "description": "The label for category 'Gerenciando a Instância' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Configurações do Perfil": {
+    "message": "Profile Settings",
+    "description": "The label for category 'Configurações do Perfil' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Dados da Instância": {
+    "message": "Instance Data",
+    "description": "The label for category 'Dados da Instância' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Mensagens": {
+    "message": "Messages",
+    "description": "The label for category 'Mensagens' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Interativas": {
+    "message": "Interactives",
+    "description": "The label for category 'Interativas' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Webhooks": {
+    "message": "Webhooks",
+    "description": "The label for category 'Webhooks' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Segurança": {
+    "message": "Security",
+    "description": "The label for category 'Segurança' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Contatos": {
+    "message": "Contacts",
+    "description": "The label for category 'Contatos' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Grupos": {
+    "message": "Groups",
+    "description": "The label for category 'Grupos' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.groups/manage-participants": {
+    "message": "Manage Participants",
+    "description": "The label for category 'Gerenciar Participantes' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Configurações do Grupo": {
+    "message": "Group Settings",
+    "description": "The label for category 'Configurações do Grupo' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Convites": {
+    "message": "Invitations",
+    "description": "The label for category 'Convites' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.WhatsApp Business": {
+    "message": "WhatsApp Business",
+    "description": "The label for category 'WhatsApp Business' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Produtos e Catálogo": {
+    "message": "Products and Catalog",
+    "description": "The label for category 'Produtos e Catálogo' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Coleções": {
+    "message": "Collections",
+    "description": "The label for category 'Coleções' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Etiquetas (Labels)": {
+    "message": "Labels",
+    "description": "The label for category 'Etiquetas (Labels)' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Perfil Comercial": {
+    "message": "Commercial Profile",
+    "description": "The label for category 'Perfil Comercial' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Chats": {
+    "message": "Chats",
+    "description": "The label for category 'Chats' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Status": {
+    "message": "Status",
+    "description": "The label for category 'Status' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Privacidade": {
+    "message": "Privacy",
+    "description": "The label for category 'Privacidade' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Fila de Mensagens": {
+    "message": "Message Queue",
+    "description": "The label for category 'Fila de Mensagens' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Dicas e Troubleshooting": {
+    "message": "Tips and Troubleshooting",
+    "description": "The label for category 'Dicas e Troubleshooting' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Multi-Devices": {
+    "message": "Multi-Devices",
+    "description": "The label for category 'Multi-Devices' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Comunidades": {
+    "message": "Communities",
+    "description": "The label for category 'Comunidades' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.communities/manage-participants": {
+    "message": "Manage Participants",
+    "description": "The label for category 'Gerenciar Participantes' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Gerenciar Grupos": {
+    "message": "Manage Groups",
+    "description": "The label for category 'Gerenciar Grupos' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Configurações": {
+    "message": "Settings",
+    "description": "The label for category 'Configurações' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Newsletter": {
+    "message": "Newsletter",
+    "description": "The label for category 'Newsletter' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Lista de Transmissão": {
+    "message": "Transmission List",
+    "description": "The label for category 'Lista de Transmissão' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Chamadas": {
+    "message": "Calls",
+    "description": "The label for category 'Chamadas' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Mobile": {
+    "message": "Mobile",
+    "description": "The label for category 'Mobile' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Gerenciar Email": {
+    "message": "Manage Email",
+    "description": "The label for category 'Gerenciar Email' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Gerenciar Código PIN": {
+    "message": "Manage PIN Code",
+    "description": "The label for category 'Gerenciar Código PIN' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Outros": {
+    "message": "Others",
+    "description": "The label for category 'Outros' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Meta AI": {
+    "message": "Meta AI",
+    "description": "The label for category 'Meta AI' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Partner API": {
+    "message": "Partner API",
+    "description": "The label for category 'Partner API' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Integradores": {
+    "message": "Integrators",
+    "description": "The label for category 'Integradores' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.category.Arquitetura": {
+    "message": "Architecture",
+    "description": "The label for category 'Arquitetura' in sidebar 'zapiSidebar'"
+  },
+  "sidebar.zapiSidebar.doc.Comece Aqui": {
+    "message": "Start Here",
+    "description": "The label for the doc item 'Comece Aqui' in sidebar 'zapiSidebar', linking to the doc intro"
+  }
+}

@@ -1,0 +1,812 @@
+/* ============================================
+   HERO SECTION - Base Styles
+   Baseado em melhores práticas de UI/UX 2025
+   ============================================ */
+
+.heroSection {
+  background: var(--official-bg-hero-solid, #1A1D29);
+  color: var(--text-inverse);
+  position: relative;
+  width: 100%;
+
+  /* Flexbox para centralizar conteúdo verticalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 56vh;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+
+  /* Mudado para visible para não cortar o terminal */
+  overflow: visible;
+  animation: fadeIn var(--transition-slow) var(--ease-out);
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Overlay removido - não necessário com background azul sólido */
+
+.heroSection > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tamanhos responsivos */
+.heroSection[data-breakpoint="tablet"] {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  min-height: 46vh;
+}
+
+.heroSection[data-breakpoint="mobile"] {
+  padding: var(--spacing-2xl) var(--spacing-md);
+  min-height: 40vh;
+}
+
+.heroSection.sizeCompact {
+  min-height: 42vh;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.heroSection.sizeDefault {
+  min-height: 52vh;
+}
+
+.heroSection.sizeExpanded {
+  min-height: 68vh;
+  padding: var(--spacing-4xl) var(--spacing-3xl);
+}
+
+/* Layouts */
+.heroSection.layoutCenter {
+  text-align: center;
+}
+
+.heroSection.layoutCenter .heroContainer {
+  text-align: center;
+}
+
+.heroSection.layoutCenter .heroLabel,
+.heroSection.layoutCenter .heroTitle,
+.heroSection.layoutCenter .heroSubtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroSection.layoutSplit .heroContainer {
+  max-width: 640px;
+}
+
+/* Temas */
+.heroSection[data-theme="zapi"] {
+  background: var(--zapi-gradient-hero);
+}
+
+.heroSection[data-theme="hybrid"] {
+  background: var(--hybrid-gradient-hero);
+}
+
+.heroSection[data-theme="official"] {
+  background: var(--official-bg-hero-solid, #1A1D29);
+  position: relative;
+}
+
+/* Efeito parallax removido - camadas de background deletadas */
+
+/* ============================================
+   CONTAINER - Layout principal
+   ============================================ */
+
+/* Container - sobrescreve .container global do Docusaurus */
+.heroContainer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+
+  /* Mobile/Tablet: layout em coluna por padrão */
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--spacing-2xl);
+  flex-wrap: nowrap;
+}
+
+/* ============================================
+   CONTENT WRAPPER - Coluna de texto
+   ============================================ */
+
+.heroContentWrapper {
+  flex: 1 1 0; /* Unificado com desktop para consistência */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  min-width: 0;
+  max-width: 100%;
+
+  /* Garantir largura mínima para evitar colapso */
+  flex-basis: 50%;
+}
+
+/* ============================================
+   LABEL - Texto acima do título
+   ============================================ */
+
+.heroLabel {
+  margin-bottom: var(--spacing-md);
+  text-align: left;
+}
+
+.heroLabelText {
+  font-size: clamp(0.875rem, 1vw + 0.25rem, 1rem);
+  font-weight: 300;
+  color: var(--official-accent-green-alpha-70);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 2;
+}
+
+/* Dark Mode - Manter cores verdes no tema official */
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroLabelText,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroLabelText {
+  color: var(--official-accent-green-alpha-70) !important;
+}
+
+/* ============================================
+   TITLE - Título principal
+   ============================================ */
+
+.heroTitle {
+  font-size: clamp(2.125rem, 3.8vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--official-button-green-hover);
+  letter-spacing: -0.03em;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Dark Mode - Manter cores verdes no tema official */
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroTitle,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroTitle {
+  color: var(--official-button-green-hover) !important;
+}
+
+/* ============================================
+   SUBTITLE - Subtítulo
+   ============================================ */
+
+.heroSubtitleWrapper {
+  margin-bottom: var(--spacing-lg);
+}
+
+.heroSubtitle {
+  font-size: clamp(1rem, 0.6vw + 0.75rem, 1.125rem);
+  line-height: 1.6;
+  color: var(--background-white-alpha-90);
+  font-weight: 400;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* ============================================
+   BUTTONS - CTAs
+   ============================================ */
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-xl);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.layoutButtonsCenter {
+  justify-content: center;
+}
+
+.layoutButtonsLeft,
+.layoutButtonsSplit {
+  justify-content: flex-start;
+}
+
+.buttonsStacked {
+  flex-direction: column;
+  width: 100%;
+}
+
+.buttonsStacked .ctaButton {
+  width: 100%;
+  max-width: none;
+}
+
+/* ============================================
+   STATS - Estatísticas
+   ============================================ */
+
+.heroStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  align-items: flex-start;
+}
+
+.heroStatItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  align-items: flex-start;
+  padding: var(--spacing-sm);
+  min-width: 120px;
+  margin: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.heroStatItem:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.heroStatIcon {
+  color: var(--official-button-green-alpha-90);
+  margin-bottom: var(--spacing-xs);
+  transition: color 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.heroStatItem:hover .heroStatIcon {
+  color: var(--official-button-green-hover);
+  transform: scale(1.05);
+}
+
+/* Dark Mode - Manter cores verdes no tema official */
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroStatIcon,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroStatIcon {
+  color: var(--official-button-green-alpha-90) !important;
+}
+
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroStatItem:hover .heroStatIcon,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroStatItem:hover .heroStatIcon {
+  color: var(--official-button-green-hover) !important;
+}
+
+.heroStatValue {
+  font-size: clamp(var(--font-size-2xl), 2vw, var(--font-size-3xl));
+  font-weight: 700;
+  color: var(--official-button-green-hover);
+  line-height: 1.2;
+  font-family: var(--font-family-base);
+  margin-bottom: var(--spacing-xs);
+  letter-spacing: -0.02em;
+  transition: color 0.2s ease;
+  margin: 0;
+  text-align: left;
+}
+
+.heroStatItem:hover .heroStatValue {
+  color: var(--official-button-green-hover-light);
+}
+
+/* Dark Mode - Manter cores verdes no tema official */
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroStatValue,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroStatValue {
+  color: var(--official-button-green-hover) !important;
+}
+
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroStatItem:hover .heroStatValue,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroStatItem:hover .heroStatValue {
+  color: var(--official-button-green-hover-light) !important;
+}
+
+.heroStatLabel {
+  font-size: clamp(var(--font-size-sm), 0.8vw, var(--font-size-base));
+  color: var(--background-white-alpha-85);
+  font-weight: 400;
+  text-transform: lowercase;
+  font-family: var(--font-family-base);
+  line-height: 1.4;
+  transition: color 0.2s ease;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.heroStatItem:hover .heroStatLabel {
+  color: var(--background-white-alpha-95);
+}
+
+/* ============================================
+   TERMINAL CONTAINER - Coluna do terminal
+   Container para DraculaTerminal (não CodeAnimation)
+   ============================================ */
+
+.terminalContainer {
+  flex: 0 0 auto; /* Unificado com desktop - tamanho fixo baseado no conteúdo */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o terminal dentro do container */
+  justify-content: center;
+
+  /* Mobile/Tablet: largura controlada por flex-basis e max-width */
+  width: auto; /* Ao invés de 100% para evitar expansão indesejada */
+  max-width: 100%; /* Limita em mobile/tablet */
+  flex-basis: 400px; /* Largura base consistente */
+  min-width: 0;
+  position: relative;
+  min-height: 400px;
+  visibility: visible;
+  opacity: 1;
+
+  /* z-index alto para garantir visibilidade */
+  z-index: 10;
+
+  /* CRÍTICO: isolation: isolate cria um stacking context isolado,
+     permitindo que o z-index funcione mesmo dentro de elementos pais
+     com stacking contexts (como .heroContainer com z-index: 2) */
+  isolation: isolate;
+
+  /* Garantir que não seja cortado pelo overflow do parent */
+  overflow: visible;
+
+  /* Garantir que não tenha transformações indesejadas do Framer Motion */
+  transform: none;
+
+  /* Prevenir qualquer transformação inline do Framer Motion */
+  will-change: auto;
+}
+
+/* ============================================
+   CTA BUTTONS - Estilos específicos
+   ============================================ */
+
+.ctaLink {
+  text-decoration: none;
+  display: inline-block;
+  min-width: 160px;
+}
+
+.ctaButton {
+  width: 100%;
+  min-height: 56px;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.ctaStylePill {
+  border-radius: var(--border-radius-full) !important;
+}
+
+.ctaStyleRounded {
+  border-radius: var(--border-radius-xl) !important;
+}
+
+.ctaStyleSquare {
+  border-radius: var(--border-radius-md) !important;
+}
+
+.ctaButton.heroButtonPrimary {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--spacing-md) var(--zapi-spacing-10) !important;
+  font-size: var(--font-size-base) !important;
+  font-weight: 600 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  border: none !important;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--official-button-green) !important;
+  color: var(--official-text-white) !important;
+  min-width: 180px;
+  min-height: 52px;
+  transition: background-color 0.2s ease !important;
+  box-shadow: none !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  text-align: left;
+}
+
+.ctaButton.heroButtonPrimary:hover {
+  background: var(--official-button-green-hover) !important;
+  transform: translateZ(0) !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.ctaButton.heroButtonPrimary:active {
+  transform: translateZ(0) !important;
+  box-shadow: none !important;
+  background: var(--official-button-green-active) !important;
+}
+
+.ctaButton.heroButtonPrimary:focus-visible {
+  outline: 2px solid var(--official-button-green-alpha-60) !important;
+  outline-offset: 3px;
+  box-shadow: none !important;
+}
+
+.ctaButton.heroButtonSecondary {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--spacing-md) var(--zapi-spacing-10) !important;
+  font-size: var(--font-size-base) !important;
+  font-weight: 600 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  border: 2px solid var(--official-button-outline) !important;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent !important;
+  color: var(--official-text-white) !important;
+  min-width: 180px;
+  min-height: 52px;
+  transition: border-color 0.2s ease, background-color 0.2s ease !important;
+  box-shadow: none !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  text-align: left;
+}
+
+.ctaButton.heroButtonSecondary:hover {
+  background: transparent !important;
+  color: var(--official-text-white) !important;
+  border-color: var(--official-button-outline) !important;
+  transform: translateZ(0) !important;
+  box-shadow: none !important;
+}
+
+.ctaButton.heroButtonSecondary:active {
+  transform: translateZ(0) !important;
+  box-shadow: none !important;
+  border-color: var(--official-button-green-active) !important;
+}
+
+.ctaButton.heroButtonSecondary:focus-visible {
+  outline: 2px solid var(--official-button-green-alpha-60) !important;
+  outline-offset: 3px;
+  box-shadow: none !important;
+}
+
+/* ============================================
+   DESKTOP - Layout lado a lado (min-width: 996px)
+   Docusaurus usa 996px como breakpoint desktop
+   ============================================ */
+
+@media screen and (min-width: 996px) {
+  .heroContainer {
+    flex-direction: row !important;
+    align-items: center; /* Centraliza verticalmente os filhos */
+    justify-content: flex-start; /* Usa gap ao invés de space-between para controle melhor */
+    gap: var(--spacing-2xl);
+  }
+
+  .terminalContainer {
+    width: auto;
+    max-width: 400px;
+    min-width: 0;
+    flex: 0 0 auto;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    order: 2;
+    align-self: center; /* Centraliza verticalmente este item específico */
+    transform: none;
+    position: relative;
+    will-change: auto;
+
+    /* z-index alto para garantir visibilidade */
+    z-index: 10;
+
+    /* CRÍTICO: isolation: isolate cria um stacking context isolado,
+       permitindo que o z-index funcione mesmo dentro de elementos pais
+       com stacking contexts (como .heroContainer com z-index: 2) */
+    isolation: isolate;
+
+    /* Centraliza verticalmente o terminal dentro do container */
+    align-items: center;
+  }
+
+  .heroContentWrapper {
+    flex: 1 1 0;
+    order: 1;
+    min-width: 0;
+
+    /* Garantir que o conteúdo tenha espaço adequado */
+    flex-basis: 50%;
+    min-width: 400px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE - Tablet (max-width: 995px)
+   Entre 768px e 995px = Tablet
+   ============================================ */
+
+@media screen and (min-width: 769px) and (max-width: 995px) {
+  .heroSection {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    min-height: 44vh;
+  }
+
+  .heroContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-xl);
+  }
+
+  .terminalContainer {
+    max-width: 100%;
+    min-width: 0;
+    width: auto; /* Consistente com base */
+    flex-basis: 400px; /* Largura base consistente */
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  .heroLabel {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .heroTitle {
+    font-size: clamp(2rem, 4vw + 1rem, 3rem);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .heroSubtitle {
+    font-size: clamp(1rem, 1.2vw + 0.5rem, 1.25rem);
+  }
+
+  .heroSubtitleWrapper {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .buttons {
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+
+  .heroStats {
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+
+  .heroStatItem {
+    min-width: 110px;
+    padding: var(--spacing-xs);
+  }
+
+  .heroStatValue {
+    font-size: clamp(var(--font-size-xl), 2.5vw, var(--font-size-2xl));
+  }
+
+  .heroStatLabel {
+    font-size: clamp(var(--font-size-xs), 1vw, var(--font-size-sm));
+  }
+}
+
+/* ============================================
+   RESPONSIVE - Mobile (max-width: 768px)
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+  .heroSection {
+    padding: var(--spacing-xl) var(--spacing-md);
+    min-height: 40vh;
+  }
+
+  .heroContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-lg);
+  }
+
+  .terminalContainer {
+    max-width: 100%;
+    min-width: 0;
+    width: auto; /* Consistente com base */
+    flex-basis: 400px; /* Largura base consistente */
+    display: flex;
+    margin-top: var(--spacing-lg);
+    order: 3;
+    min-height: 320px;
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  .heroStats {
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    justify-content: flex-start;
+    order: 2;
+  }
+
+  .heroStatItem {
+    min-width: 100px;
+    padding: var(--spacing-xs);
+  }
+
+  .heroStatItem:hover {
+    transform: none;
+    opacity: 1;
+  }
+
+  .heroStatValue {
+    font-size: clamp(var(--font-size-lg), 3vw, var(--font-size-xl));
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .heroStatLabel {
+    font-size: clamp(var(--font-size-xs), 1.2vw, var(--font-size-sm));
+  }
+
+  .heroStatIcon {
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .buttons {
+    order: 1;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+  }
+
+  .heroLabel {
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .heroTitle {
+    font-size: clamp(1.75rem, 3vw + 1rem, 2.5rem);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .heroSubtitle {
+    font-size: clamp(0.9375rem, 1vw + 0.5rem, 1.125rem);
+    line-height: var(--line-height-normal);
+  }
+
+  .heroSubtitleWrapper {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .buttonsStacked {
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+  }
+
+  .buttonsStacked .ctaButton {
+    min-height: 44px;
+    min-width: 44px;
+    font-size: var(--font-size-base) !important;
+    padding: var(--spacing-sm) var(--spacing-lg) !important;
+  }
+
+  .ctaLink {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .heroStatItem,
+  .heroStatIcon,
+  .heroStatValue,
+  .heroStatLabel {
+    transition: none;
+  }
+
+  .heroStatItem:hover {
+    transform: none;
+  }
+
+  .heroStatItem:hover .heroStatIcon {
+    transform: none;
+  }
+
+  .ctaButton.heroButtonPrimary,
+  .ctaButton.heroButtonSecondary {
+    transition: background-color 0.2s ease, border-color 0.2s ease !important;
+    will-change: auto;
+    transform: none !important;
+  }
+
+  .ctaButton.heroButtonPrimary:hover,
+  .ctaButton.heroButtonSecondary:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .ctaButton.heroButtonPrimary:active,
+  .ctaButton.heroButtonSecondary:active {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* ============================================
+   COMPATIBILITY - Botões legados
+   ============================================ */
+
+.whatsappButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  font-size: var(--font-size-base);
+
+  /* 16px - body base */
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-width: 160px;
+  min-height: 48px;
+}
+
+.whatsappButtonPrimary {
+  background: var(--zapi-green);
+  color: var(--official-text-white);
+}
+
+.whatsappButtonPrimary:hover {
+  background: var(--zapi-teal);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--zapi-primary-alpha-30);
+}
+
+.whatsappButtonSecondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--text-primary);
+}
+
+.whatsappButtonSecondary:hover {
+  background: var(--text-primary);
+  color: var(--official-text-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--text-primary-alpha-20);
+}

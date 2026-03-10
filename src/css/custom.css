@@ -1,48 +1,6649 @@
 /**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-
-/**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
+ * 
+ * Design System Z-API
+ * Atualizado com paleta de cores refinada, tipografia moderna,
+ * espaçamentos consistentes e animações suaves.
  */
 
-/* You can override the default Infima variables here. */
+/* Importar animações avançadas */
+@import './animations.css';
+
+/* Importar estilos customizados do Mermaid */
+@import './mermaid-custom.css';
+
+/* Importar melhorias de acessibilidade */
+@import './accessibility.css';
+
+/* ============================================
+   PALETA DE CORES Z-API
+   ============================================ */
+/* stylelint-disable color-no-hex */
+/* NOTA: Cores hexadecimais em definições de variáveis CSS são aceitáveis e necessárias.
+ * Estas são as fontes de verdade do design system e devem usar valores hexadecimais.
+ * Ver: design-system/development/STYLELINT_ACCEPTABLE_ERRORS.md
+ */
 :root {
-  --ifm-color-primary: #00ad5b;
-  --ifm-color-primary-dark: #00ad5b;
-  --ifm-color-primary-darker: #00ad5b;
-  --ifm-color-primary-darkest: #00ad5b;
-  --ifm-color-primary-light: #00ad5b;
-  --ifm-color-primary-lighter: #00ad5b;
-  --ifm-color-primary-lightest: #00ad5b;
-  --ifm-navbar-background-color: #222a47;
-  --ifm-navbar-link-color: #fff;
-  --ifm-code-font-size: 95%;
+  /* ============================================
+     BASE COLORS - Untitled UI Scale (50-950)
+     Fonte única para todas as cores do sistema
+     ============================================ */
+
+  /* Gray Scale - Baseado em Untitled UI */
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E5E7EB;
+  --color-gray-300: #D1D5DB;
+  --color-gray-400: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1F2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+
+  /* Primary Scale - Baseado em verde Z-API oficial (#00A685) */
+  --color-primary-50: #F0FDF4;
+  --color-primary-100: #DCFCE7;
+  --color-primary-200: #BBF7D0;
+  --color-primary-300: #86EFAC;
+  --color-primary-400: #4ADE80;
+  --color-primary-500: #00A685; /* COR OFICIAL Z-API - Fonte única (corrigido de #10B981) */
+  --color-primary-600: #008B73;
+  --color-primary-700: #00705D;
+  --color-primary-800: #005547;
+  --color-primary-900: #003A31;
+  --color-primary-950: #001F1A;
+
+  /* Secondary Scale - Baseado em azul Z-API */
+  --color-secondary-50: #EFF6FF;
+  --color-secondary-100: #DBEAFE;
+  --color-secondary-200: #BFDBFE;
+  --color-secondary-300: #93C5FD;
+  --color-secondary-400: #60A5FA;
+  --color-secondary-500: #3B82F6;
+  --color-secondary-600: #2563EB;
+  --color-secondary-700: #1D4ED8;
+  --color-secondary-800: #1E40AF;
+  --color-secondary-900: #1E3A8A;
+  --color-secondary-950: #172554;
+
+  /* Success Scale - Baseado em verde sucesso */
+  --color-success-50: #F0FDF4;
+  --color-success-100: #DCFCE7;
+  --color-success-200: #BBF7D0;
+  --color-success-300: #86EFAC;
+  --color-success-400: #4ADE80;
+  --color-success-500: #10B981;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+  --color-success-800: #065F46;
+  --color-success-900: #064E3B;
+  --color-success-950: #022C22;
+
+  /* Warning Scale - Baseado em laranja aviso */
+  --color-warning-50: #FFFBEB;
+  --color-warning-100: #FEF3C7;
+  --color-warning-200: #FDE68A;
+  --color-warning-300: #FCD34D;
+  --color-warning-400: #FBBF24;
+  --color-warning-500: #F59E0B;
+  --color-warning-600: #D97706;
+  --color-warning-700: #B45309;
+  --color-warning-800: #92400E;
+  --color-warning-900: #78350F;
+  --color-warning-950: #451A03;
+
+  /* Error Scale - Baseado em vermelho erro */
+  --color-error-50: #FEF2F2;
+  --color-error-100: #FEE2E2;
+  --color-error-200: #FECACA;
+  --color-error-300: #FCA5A5;
+  --color-error-400: #F87171;
+  --color-error-500: #EF4444;
+  --color-error-600: #DC2626;
+  --color-error-700: #B91C1C;
+  --color-error-800: #991B1B;
+  --color-error-900: #7F1D1D;
+  --color-error-950: #450A0A;
+
+  /* Info Scale - Baseado em azul informação */
+  --color-info-50: #EFF6FF;
+  --color-info-100: #DBEAFE;
+  --color-info-200: #BFDBFE;
+  --color-info-300: #93C5FD;
+  --color-info-400: #60A5FA;
+  --color-info-500: #3B82F6;
+  --color-info-600: #2563EB;
+  --color-info-700: #1D4ED8;
+  --color-info-800: #1E40AF;
+  --color-info-900: #1E3A8A;
+  --color-info-950: #172554;
+
+  /* ============================================
+     BRAND COLORS - Cores da Marca Z-API
+     Cores específicas da identidade visual
+     ============================================ */
+
+  /* Cores Primárias Z-API - Legadas (compatibilidade) */
+  --zapi-green: #0D7366; /* Cor legada - mantida para compatibilidade (próxima de --color-primary-700) */
+
+  /* Verde ajustado para WCAG AA (contraste 4.5:1+) - anteriormente #128C7E */
+  --zapi-teal: #075E54; /* Cor legada - mantida para compatibilidade (próxima de --color-primary-800) */
+  --zapi-dark-teal: #054D47; /* Cor legada - mantida para compatibilidade (próxima de --color-primary-900) */
+  --zapi-darkest-teal: #033D35; /* Cor legada - mantida para compatibilidade (próxima de --color-primary-950) */
+  --zapi-light-green: var(--color-primary-100); /* #DCFCE7 - Alias para escala primary-100 (muito próximo de #DCF8C6) */
+  --zapi-accent-blue: #34B7F1; /* Cor legada - mantida para compatibilidade (azul específico Z-API) */
+
+  /* Cores Infima (compatibilidade) */
+  --ifm-color-primary: var(--zapi-green);
+  --ifm-color-primary-dark: var(--zapi-teal);
+  --ifm-color-primary-darker: var(--zapi-dark-teal);
+  --ifm-color-primary-darkest: var(--zapi-darkest-teal);
+  --ifm-color-primary-light: var(--zapi-accent-blue);
+  --ifm-color-primary-lighter: #81D4FA;
+  --ifm-color-primary-lightest: #B3E5FC;
+
+  /* Cores de Background - Aliases para Gray Scale */
+  --background-white: #FFFFFF; /* Branco puro - mantido como valor específico */
+  --background-off-white: var(--color-gray-50); /* #F9FAFB - Alias para gray-50 (muito próximo de #FAFBFC) */
+  --background-light-gray: var(--color-gray-100); /* #F3F4F6 - Alias para gray-100 (muito próximo de #F5F6F6) */
+  --ifm-background-color: var(--background-white);
+  --ifm-background-surface-color: var(--background-off-white);
+
+  /* Cores de Texto - Aliases para Gray Scale */
+  --text-primary: #091E42; /* Cor legada - mantida para compatibilidade (próxima de --color-gray-900) */
+  --text-secondary: #677483; /* Cor legada - mantida para compatibilidade (próxima de --color-gray-600) */
+
+  /* Ajustado para WCAG AA (4.5:1+) sobre off-white - anteriormente #6B778C */
+  --text-tertiary: var(--color-gray-500); /* #6B7280 - Alias para gray-500 (correspondência exata) */
+
+  /* Ajustado para WCAG AA (4.5:1+) sobre branco - anteriormente #8993A4 (3.2:1) */
+  --text-inverse: #FFFFFF;
+  --ifm-color-content: var(--text-primary);
+  --ifm-color-content-secondary: var(--text-secondary);
+
+  /* Cores Official Theme - Padronizadas WCAG AA */
+  --official-text-muted: var(--text-secondary); /* #677483 - Alias para text-secondary (correspondência exata) */
+
+  /* Contraste: 4.5:1+ WCAG AA - Ajustado para compliance */
+
+  /* Cores de Borda - Aliases para Gray Scale */
+  --border-light: var(--color-gray-200); /* #E5E7EB - Alias para gray-200 (muito próximo de #E4E6EB) */
+  --border-medium: var(--color-gray-300); /* #D1D5DB - Alias para gray-300 (correspondência exata) */
+
+  /* ============================================
+     ESPAÇAMENTO - Design System Especificações
+     ============================================ */
+  --space-1: 4px;
+
+  /* Micro spacing */
+  --space-2: 8px;
+
+  /* XS spacing */
+  --space-3: 12px;
+
+  /* Small spacing */
+  --space-4: 16px;
+
+  /* Base spacing */
+  --space-6: 24px;
+
+  /* Medium spacing */
+  --space-8: 32px;
+
+  /* Large spacing */
+  --space-12: 48px;
+
+  /* XL spacing */
+  --space-16: 64px;
+
+  /* XXL spacing */
+  --space-24: 96px;
+
+  /* Section spacing */
+
+  /* Aliases para compatibilidade */
+  --spacing-xs: var(--space-1);
+  --spacing-sm: var(--space-2);
+  --spacing-md: var(--space-4);
+  --spacing-lg: var(--space-6);
+  --spacing-xl: var(--space-8);
+  --spacing-2xl: var(--space-12);
+  --spacing-3xl: var(--space-24);
+  --spacing-4xl: 128px;
+
+  /* Mantido para compatibilidade */
+
+  /* Padding padrões */
+  --padding-small: var(--space-4);
+
+  /* p-4 = 16px */
+  --padding-medium: var(--space-6);
+
+  /* p-6 = 24px */
+  --padding-large: var(--space-8);
+
+  /* p-8 = 32px */
+
+  /* Espaçamentos Customizados */
+  --ifm-spacing-section-vertical: var(--spacing-2xl);
+  --ifm-spacing-section-horizontal: var(--spacing-lg);
+  --ifm-spacing-card-padding: var(--spacing-md);
+
+  /* ============================================
+     BREAKPOINTS - Design System Especificações
+     Centralizado em src/config/breakpoints.ts
+     ============================================ */
+  --breakpoint-sm: 640px;
+
+  /* Small devices */
+  --breakpoint-md: 768px;
+
+  /* Medium devices (tablet) */
+  --breakpoint-lg: 1024px;
+
+  /* Large devices (desktop) */
+  --breakpoint-xl: 1280px;
+
+  /* Extra large devices */
+  --breakpoint-2xl: 1440px;
+
+  /* 2X large devices */
+
+  /* Aliases para compatibilidade */
+  --breakpoint-mobile: var(--breakpoint-md);
+  --breakpoint-tablet: var(--breakpoint-lg);
+  --breakpoint-desktop: var(--breakpoint-xl);
+  --breakpoint-large-desktop: var(--breakpoint-2xl);
+
+  /* ============================================
+     SISTEMA DE TIPOGRAFIA
+     ============================================ */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-font-family-base: var(--font-family-base);
+
+  /* ============================================
+     ESCALA TIPOGRÁFICA CONSISTENTE
+     Design System Z-API - Baseado em melhores práticas UI/UX
+     Escala: 12/14/16/20/24/32/40/48/64px
+     ============================================ */
+
+  /* 
+   * ESCALA BASE (valores em px convertidos para rem)
+   * Base: 16px = 1rem (padrão do navegador)
+   * Escala: 12/14/16/20/24/32/40/48/64px
+   */
+
+  /* Tamanhos Base - Valores Exatos em px */
+  --font-size-12px: 0.75rem;
+
+  /* 12px - Caption, labels, metadata */
+  --font-size-14px: 0.875rem;
+
+  /* 14px - Body small, secondary text */
+  --font-size-16px: 1rem;
+
+  /* 16px - Body base (mobile min) */
+  --font-size-18px: 1.125rem;
+
+  /* 18px - Body large, important text */
+  --font-size-20px: 1.25rem;
+
+  /* 20px - H5, small headings */
+  --font-size-24px: 1.5rem;
+
+  /* 24px - H4, card titles */
+  --font-size-32px: 2rem;
+
+  /* 32px - H3, sub-sections */
+  --font-size-40px: 2.5rem;
+
+  /* 40px - H2, section titles */
+  --font-size-48px: 3rem;
+
+  /* 48px - H1, page titles */
+  --font-size-64px: 4rem;
+
+  /* 64px - Display, hero titles */
+
+  /* Aliases Semânticos - Headings */
+  --font-size-h1: var(--font-size-48px);
+
+  /* 48px / 700 - Page titles */
+  --font-size-h2: var(--font-size-40px);
+
+  /* 40px / 600 - Section titles */
+  --font-size-h3: var(--font-size-32px);
+
+  /* 32px / 600 - Sub-sections */
+  --font-size-h4: var(--font-size-24px);
+
+  /* 24px / 600 - Card titles */
+  --font-size-h5: var(--font-size-20px);
+
+  /* 20px / 500 - Small headings */
+  --font-size-h6: var(--font-size-16px);
+
+  /* 16px / 500 - Smallest headings */
+
+  /* Display - Hero titles */
+  --font-size-display: var(--font-size-64px);
+
+  /* 64px / 700 */
+  --font-weight-display: 700;
+
+  /* Display Extra-Large - Para páginas especiais (404, hero sections grandes) */
+  --font-size-display-xl: 5rem;
+
+  /* 80px - Para hero sections grandes */
+  --font-size-display-2xl: 8rem;
+
+  /* 128px - Para páginas 404 e displays muito grandes */
+
+  /* Body Text - Semânticos */
+  --font-size-caption: var(--font-size-12px);
+
+  /* 12px / 400 - Labels, metadata */
+  --font-size-body-small: var(--font-size-14px);
+
+  /* 14px / 400 - Secondary text */
+  --font-size-body: var(--font-size-16px);
+
+  /* 16px / 400 - Default (mobile min) */
+  --font-size-body-large: var(--font-size-18px);
+
+  /* 18px / 400 - Important text */
+
+  /* Aliases Numéricos para Compatibilidade */
+  --font-size-xs: var(--font-size-12px);
+
+  /* 12px */
+  --font-size-sm: var(--font-size-14px);
+
+  /* 14px */
+  --font-size-base: var(--font-size-16px);
+
+  /* 16px */
+  --font-size-lg: var(--font-size-20px);
+
+  /* 20px (usa H5) */
+  --font-size-xl: var(--font-size-20px);
+
+  /* 20px (H5) */
+  --font-size-2xl: var(--font-size-24px);
+
+  /* 24px (H4) */
+  --font-size-3xl: var(--font-size-32px);
+
+  /* 32px (H3) */
+  --font-size-4xl: var(--font-size-40px);
+
+  /* 40px (H2) */
+  --font-size-5xl: var(--font-size-48px);
+
+  /* 48px (H1) */
+  --font-size-6xl: var(--font-size-64px);
+
+  /* 64px (Display) */
+
+  /* Pesos de Fonte */
+  --font-weight-normal: 400;
+
+  /* Regular - body text */
+  --font-weight-medium: 500;
+
+  /* Medium - small headings */
+  --font-weight-semibold: 600;
+
+  /* Semibold - section titles */
+  --font-weight-bold: 700;
+
+  /* Bold - page titles, hero */
+  --ifm-heading-font-weight: var(--font-weight-semibold);
+
+  /* ============================================
+     LINE HEIGHTS - Design System Guidelines
+     Headings: 1.2-1.3 | Body: 1.5-1.7
+     ============================================ */
+  --line-height-tight: 1.2;
+
+  /* H1, H2 - Headings grandes */
+  --line-height-snug: 1.3;
+
+  /* H3, H4 - Headings médios */
+  --line-height-normal: 1.5;
+
+  /* H5, H6, Body mínimo */
+  --line-height-relaxed: 1.6;
+
+  /* Body text confortável (padrão) */
+  --line-height-loose: 1.7;
+
+  /* Textos longos, parágrafos */
+
+  /* Tamanhos de Heading - Valores Exatos do Design System */
+  --ifm-h1-font-size: var(--font-size-h1);
+
+  /* 48px / 700 */
+  --ifm-h2-font-size: var(--font-size-h2);
+
+  /* 40px / 600 */
+  --ifm-h3-font-size: var(--font-size-h3);
+
+  /* 32px / 600 */
+  --ifm-h4-font-size: var(--font-size-h4);
+
+  /* 24px / 600 */
+  --ifm-h5-font-size: var(--font-size-h5);
+
+  /* 20px / 500 */
+  --ifm-h6-font-size: var(--font-size-h6);
+
+  /* 16px / 500 */
+
+  /* Line Heights para Headings - Aplicando 1.2-1.3 */
+  --ifm-h1-line-height: var(--line-height-tight);
+
+  /* 1.2 - H1 grande */
+  --ifm-h2-line-height: var(--line-height-tight);
+
+  /* 1.2 - H2 grande */
+  --ifm-h3-line-height: var(--line-height-snug);
+
+  /* 1.3 - H3 médio */
+  --ifm-h4-line-height: var(--line-height-snug);
+
+  /* 1.3 - H4 médio */
+  --ifm-h5-line-height: var(--line-height-normal);
+
+  /* 1.5 - H5 pequeno */
+  --ifm-h6-line-height: var(--line-height-normal);
+
+  /* 1.5 - H6 pequeno */
+
+  /* Line Height para Body Text - Aplicando 1.5-1.7 */
+  --ifm-line-height-base: var(--line-height-relaxed);
+
+  /* 1.6 - confortável para leitura */
+  --ifm-line-height-body: var(--line-height-relaxed);
+
+  /* 1.6 - body padrão */
+  --ifm-line-height-body-small: var(--line-height-normal);
+
+  /* 1.5 - body small */
+  --ifm-line-height-body-large: var(--line-height-loose);
+
+  /* 1.7 - body large */
+
+  --ifm-code-font-size: 100%;
+
+  /* Aumentado de 95% para 100% para melhor legibilidade */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Aplicar line-heights aos headings globalmente */
+  --ifm-heading-line-height: var(--line-height-tight);
+
+  /* ============================================
+     BORDAS E SOMBRAS
+     ============================================ */
+  --border-radius-xs: 4px;
+  --border-radius-sm: 6px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-full: 9999px;
+  --ifm-border-radius-card: var(--border-radius-lg);
+
+  /* Border Radius para Cards - Mantém 20px para ProductCard/ResourceCard */
+  --card-border-radius: 20px;
+
+  /* Border radius específico para cards da homepage */
+
+  /* Cores Alpha - Para backgrounds com opacidade */
+  --official-accent-green-alpha-15: rgba(0, 166, 133, 0.15);
+
+  /* Para iconBadge ProductCard */
+  --official-accent-green-alpha-20: rgba(0, 166, 133, 0.2);
+
+  /* Para borders cards */
+  --official-accent-green-alpha-30: rgba(0, 166, 133, 0.3);
+
+  /* Para borders destacados */
+  --official-accent-green-alpha-60: rgba(0, 166, 133, 0.6);
+
+  /* Para animações glow */
+  --official-border-light-alpha: rgba(15, 118, 110, 0.12);
+
+  /* Border light cards */
+
+  /* Backgrounds com opacidade - Preto/Branco Alpha */
+  --background-black-alpha-03: rgba(0, 0, 0, 0.03);
+
+  /* Background sutil dark mode */
+  --background-black-alpha-06: rgba(0, 0, 0, 0.06);
+
+  /* Background semi-transparente */
+  --background-black-alpha-10: rgba(0, 0, 0, 0.1);
+
+  /* Background com opacidade leve */
+  --background-black-alpha-15: rgba(0, 0, 0, 0.15);
+
+  /* Background com opacidade média */
+  --background-black-alpha-20: rgba(0, 0, 0, 0.2);
+
+  /* Background com opacidade média-alta */
+  --background-black-alpha-30: rgba(0, 0, 0, 0.3);
+
+  /* Background com opacidade alta */
+  --background-black-alpha-60: rgba(0, 0, 0, 0.6);
+
+  /* Background escuro semi-opaco */
+
+  --background-white-alpha-03: rgba(255, 255, 255, 0.03);
+
+  /* Background sutil light mode */
+  --background-white-alpha-05: rgba(255, 255, 255, 0.05); /* Para bordas sutis em dark mode */
+
+  /* Background semi-transparente claro */
+  --background-white-alpha-08: rgba(255, 255, 255, 0.08);
+
+  /* Background semi-transparente para hover states */
+  --background-white-alpha-10: rgba(255, 255, 255, 0.1);
+
+  /* Background semi-transparente para textos com opacidade */
+  --background-white-alpha-60: rgba(255, 255, 255, 0.6);
+
+  /* Background semi-transparente claro */
+  --background-white-alpha-10: rgba(255, 255, 255, 0.1);
+
+  /* Background com opacidade leve */
+  --background-white-alpha-15: rgba(255, 255, 255, 0.15);
+
+  /* Background com opacidade média */
+  --background-white-alpha-20: rgba(255, 255, 255, 0.2);
+
+  /* Background com opacidade média-alta */
+  --background-white-alpha-60: rgba(255, 255, 255, 0.6);
+
+  /* Background com opacidade alta (para ripple effects) */
+  --background-white-alpha-85: rgba(255, 255, 255, 0.85);
+
+  /* Background quase opaco (para textos) */
+  --background-white-alpha-90: rgba(255, 255, 255, 0.9);
+
+  /* Background quase opaco */
+  --background-white-alpha-95: rgba(255, 255, 255, 0.95);
+
+  /* Background quase opaco (para hover states) */
+
+  /* Cores primárias com opacidade - Verde Z-API (#128C7E = rgb(18, 140, 126)) */
+  --zapi-primary-alpha-10: rgba(18, 140, 126, 0.1);
+
+  /* Opacidade leve */
+  --zapi-primary-alpha-20: rgba(18, 140, 126, 0.2);
+
+  /* Opacidade média */
+  --zapi-primary-alpha-30: rgba(18, 140, 126, 0.3);
+
+  /* Opacidade alta */
+  --zapi-primary-alpha-40: rgba(18, 140, 126, 0.4);
+
+  /* Opacidade alta (para animações híbridas) */
+  --zapi-primary-alpha-50: rgba(18, 140, 126, 0.5);
+
+  /* Opacidade média-alta (para animações) */
+  --zapi-primary-alpha-60: rgba(18, 140, 126, 0.6);
+
+  /* Opacidade alta (para animações) */
+  --zapi-primary-alpha-70: rgba(18, 140, 126, 0.7);
+
+  /* Opacidade muito alta (para animações) */
+  --zapi-primary-alpha-80: rgba(18, 140, 126, 0.8);
+
+  /* Opacidade muito alta (para animações) */
+
+  /* Cores azuis com opacidade - Azul (#0066FF = rgb(0, 102, 255)) */
+  --zapi-blue-alpha-10: rgba(0, 102, 255, 0.1);
+
+  /* Opacidade leve (para animações) */
+  --zapi-blue-alpha-30: rgba(0, 102, 255, 0.3);
+
+  /* Opacidade alta para sombras */
+  --zapi-blue-alpha-40: rgba(0, 102, 255, 0.4);
+
+  /* Opacidade alta (para animações) */
+  --zapi-blue-alpha-50: rgba(0, 102, 255, 0.5);
+
+  /* Opacidade média-alta (para animações) */
+  --zapi-blue-alpha-60: rgba(0, 102, 255, 0.6);
+
+  /* Opacidade alta (para animações) */
+  --zapi-blue-alpha-70: rgba(0, 102, 255, 0.7);
+
+  /* Opacidade muito alta (para animações) */
+  --zapi-blue-alpha-80: rgba(0, 102, 255, 0.8);
+
+  /* Opacidade muito alta (para animações) */
+
+  /* Sombras específicas para componentes */
+  --shadow-component-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  /* Sombra pequena para componentes */
+  --shadow-component-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* Sombra média para componentes */
+  --shadow-component-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  /* Sombra grande para componentes */
+  --shadow-component-dark-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  /* Sombra pequena dark mode */
+  --shadow-component-dark-md: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* Sombra média dark mode */
+
+  /* Sombras de Cards - Elevação aumentada para melhor hierarquia */
+  --card-shadow-default: 0 4px 12px rgba(5, 77, 66, 0.08);
+
+  /* Shadow padrão - mais pronunciada */
+  --card-shadow-hover: 0 12px 32px rgba(5, 77, 66, 0.16);
+
+  /* Shadow hover - elevação significativa */
+  --card-shadow-resource-default: 0 6px 16px rgba(5, 77, 66, 0.1);
+
+  /* Shadow padrão ResourceCard */
+  --card-shadow-resource-hover: 0 16px 40px rgba(5, 77, 66, 0.18);
+
+  /* Shadow hover ResourceCard */
+
+  /* ============================================
+     SOMBRAS - Design System Especificações
+     ============================================ */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+  /* Subtle */
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Cards */
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Elevated cards */
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+
+  /* Modals */
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+  /* Highest */
+
+  /* Sombras para dark mode */
+  --shadow-sm-dark: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md-dark: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg-dark: 0 10px 15px rgba(0, 0, 0, 0.5);
+  --shadow-xl-dark: 0 20px 25px rgba(0, 0, 0, 0.6);
+  --shadow-2xl-dark: 0 25px 50px rgba(0, 0, 0, 0.8);
+
+  /* ============================================
+     SOMBRAS E PROFUNDIDADE - Cards Premium
+     Design System Z-API - Melhora percepção de qualidade
+     ============================================ */
+
+  /* Sombras Slate para Cards - shadow-lg shadow-slate-900/50 */
+  --shadow-slate-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.5),
+    0 4px 6px -2px rgba(15, 23, 42, 0.5);
+
+  /* shadow-lg shadow-slate-900/50 */
+
+  /* Sombra Hover Emerald - shadow-2xl shadow-emerald-500/10 */
+  --shadow-emerald-2xl: 0 25px 50px -12px rgba(16, 185, 129, 0.1);
+
+  /* shadow-2xl shadow-emerald-500/10 */
+
+  /* Gradiente de Fundo Sutil - from-slate-800 to-slate-900 */
+  --gradient-slate-subtle: linear-gradient(to bottom,
+      rgb(30, 41, 59) 0%,
+      /* slate-800 */
+      rgb(15, 23, 42) 100%
+      /* slate-900 */
+    );
+
+  /* Sombras para Dark Mode - Versões mais pronunciadas */
+  --shadow-slate-lg-dark: 0 10px 15px -3px rgba(0, 0, 0, 0.7),
+    0 4px 6px -2px rgba(0, 0, 0, 0.7);
+  --shadow-emerald-2xl-dark: 0 25px 50px -12px rgba(16, 185, 129, 0.2);
+
+  --ifm-box-shadow-card: var(--shadow-md);
+  --ifm-box-shadow-card-hover: var(--shadow-lg);
+
+  /* ============================================
+     ANIMAÇÕES E TRANSIÇÕES
+     ============================================ */
+  /* Durações */
+  /* ============================================
+     INTERATIVIDADE - Design System Especificações
+     ============================================ */
+  /* Durações de Transição - Valores Exatos */
+  --motion-duration-micro: 150ms;
+
+  /* hover colors, opacity */
+  --motion-duration-fast: 200ms;
+
+  /* fast transitions - adicionado para compatibilidade */
+  --motion-duration-normal: 300ms;
+
+  /* transforms, shadows */
+  --motion-duration-slow: 500ms;
+
+  /* slow transitions - adicionado para compatibilidade */
+  --motion-duration-complex: 500ms;
+
+  /* page transitions */
+
+  --transition-micro: var(--motion-duration-micro);
+  --transition-normal: var(--motion-duration-normal);
+  --transition-complex: var(--motion-duration-complex);
+
+  /* Aliases para compatibilidade */
+  --transition-fast: var(--transition-micro);
+  --transition-slow: var(--transition-complex);
+  --ifm-transition-fast: var(--transition-fast) ease-out;
+  --ifm-transition-slow: var(--transition-slow) ease-out;
+
+  /* Easing Functions */
+  --ease-out: cubic-bezier(0.0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Transformações - Design System Especificações */
+  --transform-hover-scale: scale(1.02);
+
+  /* Cards - valor exato */
+  --transform-hover-lift-min: translateY(-2px);
+
+  /* Botões - mínimo */
+  --transform-hover-lift-max: translateY(-4px);
+
+  /* Botões - máximo */
+  --transform-hover-lift: var(--transform-hover-lift-max);
+
+  /* Default */
+  --transform-active-scale: scale(0.98);
+
+  /* Click feedback */
+
+  /* Border changes para hover */
+  --border-hover-width: 2px;
+  --border-hover-color: var(--ifm-color-primary);
+
+  /* Aliases - Z-API Primary/Secondary (apontam para escalas) */
+  --zapi-primary: var(--color-primary-500); /* #00A685 - Cor oficial Z-API */
+  --zapi-primary-dark: var(--color-primary-600); /* #008B73 - Variante escura */
+  --zapi-primary-light: var(--color-primary-400); /* #4ADE80 - Variante clara */
+  --zapi-secondary: var(--color-secondary-500); /* #3B82F6 - Azul da escala secondary */
+  --zapi-accent: #FF6B35; /* Cor legada - mantida para compatibilidade */
+
+  /* Aliases - Z-API Backgrounds (apontam para Gray Scale ou valores específicos) */
+  --zapi-bg-primary: var(--background-white); /* #FFFFFF */
+  --zapi-bg-secondary: var(--color-gray-50); /* #F9FAFB */
+  --zapi-bg-tertiary: var(--color-gray-200); /* #E5E7EB */
+  --zapi-bg-dark: #1A1D29; /* Cor legada - mantida para compatibilidade */
+
+  /* Aliases - Z-API Textos (apontam para Gray Scale ou valores legados) */
+  --zapi-text-primary: #1A1D29; /* Cor legada - mantida para compatibilidade */
+  --zapi-text-secondary: var(--color-gray-500); /* #6B7280 */
+  --zapi-text-tertiary: var(--color-gray-400); /* #9CA3AF */
+  --zapi-text-inverse: var(--text-inverse); /* #FFFFFF */
+
+  /* ============================================
+     COMPONENT COLORS - Cores Específicas de Componentes
+     Cores usadas em componentes específicos (diagramas, etc)
+     ============================================ */
+
+  /* ============================================
+     CORES SEMÂNTICAS PARA LINHAS DE DIAGRAMAS
+     Padrão de cores para melhorar entendimento
+     ============================================ */
+  /* Cores Primárias - Fluxo Principal */
+  --diagram-line-primary: #4a90e2;
+
+  /* Azul - Fluxo principal/default */
+  --diagram-line-primary-light: #6ba3f0;
+
+  /* Azul claro - Hover/ativo */
+  --diagram-line-primary-dark: #2c5aa0;
+
+  /* Azul escuro - Destacado */
+
+  /* Cores Semânticas - Estados e Tipos */
+  --diagram-line-success: #10B981;
+
+  /* Verde - Sucesso, confirmação, OK */
+  --diagram-line-success-light: #34D399;
+
+  /* Verde claro - Hover */
+  --diagram-line-success-dark: #059669;
+
+  /* Verde escuro - Destacado */
+
+  --diagram-line-warning: #F59E0B;
+
+  /* Laranja - Aviso, condição, decisão */
+  --diagram-line-warning-light: #FBBF24;
+
+  /* Laranja claro - Hover */
+  --diagram-line-warning-dark: #D97706;
+
+  /* Laranja escuro - Destacado */
+
+  --diagram-line-error: #EF4444;
+
+  /* Vermelho - Erro, falha, rejeição */
+  --diagram-line-error-light: #F87171;
+
+  /* Vermelho claro - Hover */
+  --diagram-line-error-dark: #DC2626;
+
+  /* Vermelho escuro - Destacado */
+
+  --diagram-line-info: #3B82F6;
+
+  /* Azul info - Informação, dados */
+  --diagram-line-info-light: #60A5FA;
+
+  /* Azul info claro - Hover */
+  --diagram-line-info-dark: #2563EB;
+
+  /* Azul info escuro - Destacado */
+
+  --diagram-line-neutral: #6B7280;
+
+  /* Cinza - Neutro, dados, passivo */
+  --diagram-line-neutral-light: #9CA3AF;
+
+  /* Cinza claro - Hover */
+  --diagram-line-neutral-dark: #4B5563;
+
+  /* Cinza escuro - Destacado */
+
+  /* Cores Especiais - Fluxos Secundários */
+  --diagram-line-secondary: #06B6D4;
+
+  /* Ciano - Fluxo secundário */
+  --diagram-line-secondary-light: #22D3EE;
+
+  /* Ciano claro - Hover */
+  --diagram-line-secondary-dark: #0891B2;
+
+  /* Ciano escuro - Destacado */
+
+  /* Dark Mode - Ajustes de contraste */
+  --diagram-line-primary-dark-mode: #60A5FA;
+
+  /* Azul mais claro para dark */
+  --diagram-line-success-dark-mode: #34D399;
+
+  /* Verde mais claro para dark */
+  --diagram-line-warning-dark-mode: #FBBF24;
+
+  /* Laranja mais claro para dark */
+  --diagram-line-error-dark-mode: #F87171;
+
+  /* Vermelho mais claro para dark */
+  --diagram-line-info-dark-mode: #60A5FA;
+
+  /* Azul info mais claro para dark */
+  --diagram-line-neutral-dark-mode: #9CA3AF;
+
+  /* Cinza mais claro para dark */
+  --diagram-line-secondary-dark-mode: #22D3EE;
+
+  /* Cores de Syntax Highlighting - CodeAnimation */
+  --code-token-pink: #f48fb1;
+  --code-token-yellow: #ffd54f;
+  --code-token-green: #81c784;
+  --code-token-blue: #64b5f6;
+  --code-token-purple: #ba68c8;
+  
+  /* Cores de Terminal Traffic Lights */
+  --terminal-light-red: #ff5f57;
+  --terminal-light-yellow: #ffbd2e;
+  --terminal-light-green: #28ca42;
+
+  /* Ciano mais claro para dark */
+
+  /* ============================================
+     DIMENSÕES PADRONIZADAS PARA DIAGRAMAS
+     Sistema de tamanhos consistente para containers
+     ============================================ */
+  /* Alturas Mínimas */
+  --diagram-container-min-height-sm: 280px;
+
+  /* Mobile - altura mínima pequena */
+  --diagram-container-min-height-md: 400px;
+
+  /* Tablet - altura mínima média */
+  --diagram-container-min-height-lg: 500px;
+
+  /* Desktop - altura mínima grande */
+  --diagram-container-min-height-xl: 600px;
+
+  /* Desktop grande - altura mínima extra */
+
+  /* Alturas Máximas */
+  --diagram-container-max-height-sm: 400px;
+
+  /* Mobile - altura máxima */
+  --diagram-container-max-height-md: 500px;
+
+  /* Tablet - altura máxima */
+  --diagram-container-max-height-lg: 600px;
+
+  /* Desktop - altura máxima padrão */
+  --diagram-container-max-height-xl: 700px;
+
+  /* Desktop grande - altura máxima extra */
+
+  /* Aspect Ratios */
+  --diagram-aspect-ratio-desktop: 16 / 9;
+
+  /* Proporção widescreen (desktop) */
+  --diagram-aspect-ratio-mobile: 4 / 3;
+
+  /* Proporção mais quadrada (mobile) */
+
+  /* Espaçamento Padronizado */
+  --diagram-container-padding: var(--space-6);
+
+  /* Padding interno padrão (24px) */
+  --diagram-container-margin: var(--space-8) 0;
+
+  /* Margin vertical padrão (32px) */
+
+  /* Cores Slate - Backgrounds */
+  --color-slate-50: #F8FAFC;
+
+  /* Backgrounds claros */
+  --color-slate-950: #020617;
+
+  /* Backgrounds escuros */
+
+  /* Aliases para compatibilidade */
+  --zapi-success: var(--color-success);
+  --zapi-warning: var(--color-warning);
+  --zapi-error: var(--color-error);
+  --zapi-info: var(--color-info);
+
+  /* Variantes light/dark para hover/active */
+  --color-success-light: #34D399;
+  --color-success-dark: #059669;
+  --color-warning-light: #FBBF24;
+  --color-warning-dark: #D97706;
+  --color-error-light: #F87171;
+  --color-error-dark: #DC2626;
+  --color-info-light: #60A5FA;
+  --color-info-dark: #2563EB;
+
+  /* Gradientes Z-API - Saturação reduzida 25% para visual mais profissional */
+  /* Cores originais: #0066FF (azul), #00A685 (verde) */
+  /* Cores ajustadas: #4D85CC (azul -25% sat), #0D8A6B (verde -25% sat) */
+  --zapi-gradient-primary: linear-gradient(135deg, #4D85CC 0%, #0D8A6B 100%);
+  --zapi-gradient-hero: linear-gradient(135deg, #4D85CC 0%, #3D6BA3 50%, #0D8A6B 100%);
+  --zapi-gradient-card: linear-gradient(135deg, rgba(77, 133, 204, 0.1) 0%, rgba(13, 138, 107, 0.1) 100%);
+
+  /* Gradientes Híbridos - Saturação reduzida 25% */
+  /* Cores originais: #128C7E (verde), #0066FF (azul), #00A685 (verde claro) */
+  /* Cores ajustadas: #0E6A5E (verde -25%), #4D85CC (azul -25%), #0D8A6B (verde claro -25%) */
+  --hybrid-gradient-primary: linear-gradient(135deg, #0E6A5E 0%, #4D85CC 50%, #0D8A6B 100%);
+  --hybrid-gradient-hero: linear-gradient(135deg, #0E6A5E 0%, #054D47 30%, #4D85CC 60%, #0D8A6B 100%);
+  --hybrid-gradient-card: linear-gradient(135deg, rgba(14, 106, 94, 0.1) 0%, rgba(77, 133, 204, 0.1) 50%, rgba(13, 138, 107, 0.1) 100%);
+  --hybrid-gradient-border: linear-gradient(90deg, #0E6A5E, #4D85CC);
+
+  /* ============================================
+     TIPOGRAFIA Z-API
+     ============================================ */
+  --zapi-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --zapi-font-family-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --zapi-font-family-mono: 'Fira Code', 'Courier New', monospace;
+
+  /* NOTA: Se adicionar fontes customizadas via @font-face, sempre incluir:
+   * font-display: swap;
+   * Isso melhora LCP (Largest Contentful Paint) ao exibir texto imediatamente
+   * com fonte do sistema enquanto a fonte customizada carrega.
+   */
+
+  /* Escala Tipográfica Z-API */
+  --zapi-font-size-xs: 0.75rem;
+
+  /* 12px */
+  --zapi-font-size-sm: 0.875rem;
+
+  /* 14px */
+  --zapi-font-size-base: 1rem;
+
+  /* 16px */
+  --zapi-font-size-lg: 1.125rem;
+
+  /* 18px */
+  --zapi-font-size-xl: 1.25rem;
+
+  /* 20px */
+  --zapi-font-size-2xl: 1.5rem;
+
+  /* 24px */
+  --zapi-font-size-3xl: 2rem;
+
+  /* 32px */
+  --zapi-font-size-4xl: 2.5rem;
+
+  /* 40px */
+  --zapi-font-size-5xl: 3rem;
+
+  /* 48px */
+  --zapi-font-size-6xl: 3.75rem;
+
+  /* 60px */
+
+  /* Pesos de Fonte Z-API */
+  --zapi-font-weight-light: 300;
+  --zapi-font-weight-normal: 400;
+  --zapi-font-weight-medium: 500;
+  --zapi-font-weight-semibold: 600;
+  --zapi-font-weight-bold: 700;
+  --zapi-font-weight-extrabold: 800;
+
+  /* Line Heights Z-API */
+  --zapi-line-height-tight: 1.25;
+  --zapi-line-height-normal: 1.5;
+  --zapi-line-height-relaxed: 1.75;
+  --zapi-line-height-loose: 2;
+
+  /* ============================================
+     ESPAÇAMENTOS Z-API (Unificado com base 8px)
+     ============================================ */
+  /* Usando o mesmo sistema de espaçamento Z-API (8px base) */
+  --zapi-spacing-1: var(--spacing-xs);
+
+  /* 8px */
+  --zapi-spacing-2: var(--spacing-sm);
+
+  /* 16px */
+  --zapi-spacing-3: 12px;
+  --zapi-spacing-4: var(--spacing-sm);
+
+  /* 16px */
+  --zapi-spacing-5: 20px;
+  --zapi-spacing-6: var(--spacing-md);
+
+  /* 24px */
+  --zapi-spacing-8: var(--spacing-lg);
+
+  /* 32px */
+  --zapi-spacing-10: 40px;
+  --zapi-spacing-12: var(--spacing-xl);
+
+  /* 48px */
+  --zapi-spacing-16: var(--spacing-2xl);
+
+  /* 64px */
+  --zapi-spacing-20: 80px;
+  --zapi-spacing-24: var(--spacing-3xl);
+
+  /* 96px */
+
+  /* Espaçamentos de Seção Z-API */
+  --zapi-section-padding-y: var(--spacing-2xl);
+  --zapi-section-padding-x: var(--spacing-lg);
+  --zapi-container-max-width: 1280px;
+
+  /* ============================================
+     BORDAS E SOMBRAS Z-API
+     ============================================ */
+  /* Border Radius Z-API */
+  --zapi-radius-sm: 4px;
+  --zapi-radius-md: 8px;
+  --zapi-radius-lg: 12px;
+  --zapi-radius-xl: 16px;
+  --zapi-radius-2xl: 24px;
+  --zapi-radius-full: 9999px;
+
+  /* Sombras Z-API */
+  --zapi-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --zapi-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --zapi-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --zapi-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --zapi-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.16);
+  --zapi-shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.2);
+
+  /* ============================================
+     ANIMAÇÕES E TRANSIÇÕES Z-API
+     ============================================ */
+  /* Durações Z-API */
+  --zapi-duration-fast: var(--motion-duration-fast);
+  --zapi-duration-normal: var(--motion-duration-normal);
+  --zapi-duration-slow: var(--motion-duration-slow);
+  --zapi-duration-slower: 650ms;
+
+  /* Easing Functions Z-API */
+  --zapi-ease-linear: linear;
+  --zapi-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --zapi-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --zapi-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --zapi-ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --zapi-ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ============================================
+     DURAÇÕES DE ANIMAÇÃO HERO SECTION
+     ============================================ */
+  /* Durações de animação para HeroSection */
+  --motion-duration-hero-fade: 500ms;
+
+  /* Duração padrão das animações fade up */
+  --motion-delay-hero-label: 50ms;
+
+  /* Delay do label */
+  --motion-delay-hero-title: 100ms;
+
+  /* Delay do título */
+  --motion-delay-hero-subtitle: 300ms;
+
+  /* Delay do subtítulo */
+  --motion-delay-hero-buttons: 400ms;
+
+  /* Delay dos botões (reduzido de 500ms) */
+
+  /* Easing customizado para animações Hero */
+  --motion-ease-hero-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Easing suave para Hero */
+
+  /* Transformações Z-API */
+  --zapi-transform-hover-scale: scale(1.05);
+  --zapi-transform-hover-lift: translateY(-8px);
+  --zapi-transform-active-scale: scale(0.95);
+
+  /* ============================================
+     PALETA DE CORES OFFICIAL Z-API
+     Baseada na identidade visual oficial do site
+     ============================================ */
+  /* Cores Primárias Official - Dark Blue-Purple Background */
+  --official-bg-dark: #1A1D29;
+
+  /* Background escuro principal */
+  --official-bg-dark-hero: #0A0E27;
+
+  /* Background escuro para hero section (mais escuro que bg-dark) */
+  --official-bg-dark-purple: #2D1B4E;
+
+  /* Background azul-roxo escuro */
+  --official-bg-card-dark: #21242f;
+
+  /* Background escuro para cards no dark mode (padronizado) */
+  --official-bg-gradient: linear-gradient(135deg, #1A1D29 0%, #2D1B4E 50%, #1A1D29 100%);
+
+  /* Cores de Destaque Official - Dark Green */
+  --official-accent-green: var(--color-primary-500); /* Aponta para #00A685 (cor oficial Z-API - fonte única) */
+
+  /* Verde escuro para destaques (anteriormente #00D4AA) */
+  --official-accent-green-light: var(--color-primary-400); /* #4ADE80 - Verde claro da escala */
+
+  /* Verde escuro mais claro */
+  --official-accent-green-dark: var(--color-primary-600); /* #008B73 - Verde escuro da escala */
+
+  /* Verde escuro mais escuro */
+
+  /* Verde Fluorescente para elementos code inline */
+  --code-fluorescent-green: #39FF14;
+
+  /* Neon Green - Contraste excelente no dark mode (15:1+) */
+
+  /* Verde para links de títulos (dentro de strong) */
+  --link-title-green: #65d781;
+
+  /* Verde claro para links de títulos - sempre em negrito */
+
+  /* Cores Vibrantes WhatsApp (Hero Section) - Mantidas para identidade visual */
+  --official-button-green: #00e676;
+
+  /* Verde vibrante WhatsApp (botões primários) */
+  --official-button-green-hover: #00e6b8;
+
+  /* Verde claro no hover (botões primários) */
+  --official-button-green-active: #00d4aa;
+
+  /* Verde escuro no active (botões primários) */
+  --official-button-green-hover-light: #00f5d4;
+
+  /* Verde muito claro no hover (stats) */
+  --official-button-outline: #00e6b8;
+
+  /* Verde claro para bordas (botões outline) */
+  
+  /* Cores com opacidade para Hero Section */
+  --official-accent-green-alpha-70: rgba(0, 166, 133, 0.7);
+
+  /* Opacidade alta para label text */
+  --official-button-green-alpha-60: rgba(0, 230, 184, 0.6);
+
+  /* Opacidade alta para focus-visible */
+  --official-button-green-alpha-90: rgba(0, 230, 184, 0.9);
+
+  /* Opacidade muito alta para stat icon */
+  
+  /* Cores com opacidade para textos primários */
+  --text-primary-alpha-20: rgba(9, 30, 66, 0.2);
+
+  /* Opacidade média para sombras de botões */
+
+  /* Cores de Texto Official */
+  --official-text-white: #FFFFFF;
+
+  /* Texto branco */
+  --official-text-light: #F5F5F5;
+
+  /* Texto branco suave */
+  --official-text-light-alpha-80: rgba(255, 255, 255, 0.8);
+
+  /* Texto branco com opacidade 80% - para featureDescription em cards escuros */
+  --official-text-light-alpha-90: rgba(255, 255, 255, 0.9);
+
+  /* Texto branco com opacidade 90% - melhor contraste WCAG AA */
+  --official-text-dark: #1A1D29;
+
+  /* Texto azul escuro */
+  --official-text-secondary: #6B778C;
+
+  /* Texto secundário */
+
+  /* Cores de Background Official */
+  --official-bg-white: #FFFFFF;
+
+  /* Background branco */
+  --official-bg-off-white: #FAFBFC;
+
+  /* Background off-white */
+  --official-bg-light: #F8F9FA;
+
+  /* Background claro */
+  --official-bg-dark-card: #0A0E27;
+
+  /* Background azul-marinho para cards escuros (tema official) */
+  --official-bg-button-light: #E5E5E5;
+
+  /* Background cinza claro para botões/chips */
+  --official-bg-button-hover: #D5D5D5;
+
+  /* Background cinza médio para hover de botões/chips */
+  --official-text-black: #000000;
+
+  /* Texto preto para contraste em backgrounds claros */
+
+  /* Gradientes Official - Cor sólida conforme site oficial */
+  /* Background sólido dark blue-purple - conforme identidade visual oficial */
+  --official-gradient-hero: #1A1D29;
+
+  /* Cor sólida principal */
+  --official-bg-hero-solid: #1A1D29;
+
+  /* Background sólido para hero */
+
+  /* Gradiente Hero com Accent - Versão com toques de verde escuro */
+  --official-gradient-hero-accent:
+    linear-gradient(135deg,
+      #0F1117 0%,
+      #1A1D29 12%,
+      #2D1B4E 28%,
+      rgba(0, 166, 133, 0.15) 45%,
+      #2D1B4E 62%,
+      #1A1D29 78%,
+      #0F1117 100%);
+
+  /* Gradiente Radial para Overlay - Profundidade e dimensão */
+  --official-gradient-overlay:
+    radial-gradient(ellipse 80% 50% at 50% 0%,
+      rgba(0, 166, 133, 0.12) 0%,
+      rgba(45, 27, 78, 0.08) 30%,
+      transparent 70%);
+
+  /* Gradiente Radial Inferior - Balanceamento visual */
+  --official-gradient-overlay-bottom:
+    radial-gradient(ellipse 100% 40% at 50% 100%,
+      rgba(0, 166, 133, 0.08) 0%,
+      transparent 60%);
+
+  /* Gradiente Button - Suave e profissional */
+  --official-gradient-button: linear-gradient(135deg, #00A685 0%, #00B894 100%);
+
+  /* Gradiente Text - Para destaques */
+  --official-gradient-text: linear-gradient(135deg, #00A685 0%, #00B894 100%);
+
+  /* Gradiente Card - Sutil e elegante */
+  --official-gradient-card: linear-gradient(135deg, rgba(0, 166, 133, 0.1) 0%, rgba(45, 27, 78, 0.1) 100%);
+
+  /* Sombras Official */
+  --official-shadow-sm: 0 2px 8px rgba(0, 166, 133, 0.1);
+  --official-shadow-md: 0 4px 16px rgba(0, 166, 133, 0.15);
+  --official-shadow-lg: 0 8px 32px rgba(0, 166, 133, 0.2);
+  --official-shadow-glow: 0 0 20px rgba(0, 166, 133, 0.3);
+  --official-shadow-dark: 0 8px 32px rgba(26, 29, 41, 0.4);
+
+  /* Bordas Official */
+  --official-border-light: rgba(0, 166, 133, 0.2);
+  --official-border-medium: rgba(0, 166, 133, 0.4);
+  --official-border-dark: rgba(26, 29, 41, 0.3);
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+/* ============================================
+   DARK MODE
+   ============================================ */
+[data-theme='dark'] {
+  /* ============================================
+     BASE COLORS - Dark Mode Overrides
+     Escalas ajustadas para contraste WCAG AA
+     ============================================ */
+
+  /* Gray Scale - Dark Mode (valores invertidos para contraste) */
+  --color-gray-50: #2D303E;
+  --color-gray-100: #3A3D4B;
+  --color-gray-200: #4A4D5B;
+  --color-gray-300: #5A5D6B;
+  --color-gray-400: #6A6D7B;
+  --color-gray-500: #7A7D8B;
+  --color-gray-600: #9CA3AF;
+  --color-gray-700: #D1D5DB;
+  --color-gray-800: #E5E7EB;
+  --color-gray-900: #F3F4F6;
+  --color-gray-950: #F9FAFB;
+
+  /* Primary Scale - Dark Mode (mantém cor oficial, ajusta tons claros/escuros) */
+  --color-primary-50: #001F1A;
+  --color-primary-100: #003A31;
+  --color-primary-200: #005547;
+  --color-primary-300: #00705D;
+  --color-primary-400: #008B73;
+  --color-primary-500: #00A685; /* COR OFICIAL Z-API - Mantém em dark mode */
+  --color-primary-600: #26A873;
+  --color-primary-700: #4DBA8B;
+  --color-primary-800: #80CDB3;
+  --color-primary-900: #B3E0DB;
+  --color-primary-950: #E0F2F1;
+
+  /* Secondary Scale - Dark Mode (ajustado para contraste) */
+  --color-secondary-50: #172554;
+  --color-secondary-100: #1E3A8A;
+  --color-secondary-200: #1E40AF;
+  --color-secondary-300: #1D4ED8;
+  --color-secondary-400: #2563EB;
+  --color-secondary-500: #3B82F6;
+  --color-secondary-600: #60A5FA;
+  --color-secondary-700: #93C5FD;
+  --color-secondary-800: #BFDBFE;
+  --color-secondary-900: #DBEAFE;
+  --color-secondary-950: #EFF6FF;
+
+  /* Success Scale - Dark Mode */
+  --color-success-50: #022C22;
+  --color-success-100: #064E3B;
+  --color-success-200: #065F46;
+  --color-success-300: #047857;
+  --color-success-400: #059669;
+  --color-success-500: #10B981;
+  --color-success-600: #4ADE80;
+  --color-success-700: #86EFAC;
+  --color-success-800: #BBF7D0;
+  --color-success-900: #DCFCE7;
+  --color-success-950: #F0FDF4;
+
+  /* Warning Scale - Dark Mode */
+  --color-warning-50: #451A03;
+  --color-warning-100: #78350F;
+  --color-warning-200: #92400E;
+  --color-warning-300: #B45309;
+  --color-warning-400: #D97706;
+  --color-warning-500: #F59E0B;
+  --color-warning-600: #FBBF24;
+  --color-warning-700: #FCD34D;
+  --color-warning-800: #FDE68A;
+  --color-warning-900: #FEF3C7;
+  --color-warning-950: #FFFBEB;
+
+  /* Error Scale - Dark Mode */
+  --color-error-50: #450A0A;
+  --color-error-100: #7F1D1D;
+  --color-error-200: #991B1B;
+  --color-error-300: #B91C1C;
+  --color-error-400: #DC2626;
+  --color-error-500: #EF4444;
+  --color-error-600: #F87171;
+  --color-error-700: #FCA5A5;
+  --color-error-800: #FECACA;
+  --color-error-900: #FEE2E2;
+  --color-error-950: #FEF2F2;
+
+  /* Info Scale - Dark Mode */
+  --color-info-50: #172554;
+  --color-info-100: #1E3A8A;
+  --color-info-200: #1E40AF;
+  --color-info-300: #1D4ED8;
+  --color-info-400: #2563EB;
+  --color-info-500: #3B82F6;
+  --color-info-600: #60A5FA;
+  --color-info-700: #93C5FD;
+  --color-info-800: #BFDBFE;
+  --color-info-900: #DBEAFE;
+  --color-info-950: #EFF6FF;
+
+  /* ============================================
+     CORES LEGADAS - Dark Mode Overrides
+     ============================================ */
+
+  /* Cores Primárias (mantém verde Z-API) - Ajustadas para WCAG AA */
+  /* NOTA: A cor primária muda de #0D7366 (light) para #10A594 (dark)
+   * para garantir contraste mínimo de 4.5:1 sobre fundo escuro (#1A1A1A).
+   * Isso mantém a identidade verde da marca Z-API enquanto garante acessibilidade.
+   */
+  --ifm-color-primary: #10A594;
+
+  /* Verde mais claro para dark mode (contraste 4.5:1+ sobre fundo escuro) */
+  --ifm-color-primary-dark: var(--zapi-teal);
+  --ifm-color-primary-darker: var(--zapi-dark-teal);
+  --ifm-color-primary-darkest: var(--zapi-darkest-teal);
+
+  /* Backgrounds Escuros */
+  --ifm-background-color: #1A1A1A;
+  --ifm-background-surface-color: #242526;
+  --background-off-white: #242526;
+  --background-light-gray: #2D2D2D;
+
+  /* Background para tooltips e elementos elevados no dark mode */
+  --background-elevated: #2D2D2D;
+
+  /* Textos Claros */
+  --ifm-color-content: #FFFFFF;
+  --ifm-color-content-secondary: #B3BAC5;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3BAC5;
+  --text-tertiary: #9CA3AF;
+
+  /* Ajustado para WCAG AA (4.5:1+) sobre #1A1A1A - anteriormente #8993A4 */
+
+  /* Cores Official Theme - Dark Mode */
+  --official-text-muted: var(--text-secondary); /* #B3BAC5 - Alias para text-secondary (correspondência exata) */
+
+  /* Texto muted claro para dark mode (mesmo que --text-secondary para consistência) */
+
+  /* Verde Fluorescente para elementos code inline - mantém no dark mode */
+  --code-fluorescent-green: #39FF14;
+
+  /* Neon Green - Contraste excelente no dark mode (15:1+) */
+
+  /* Verde para links de títulos (dentro de strong) - mantém no dark mode */
+  --link-title-green: #65d781;
+
+  /* Verde claro para links de títulos - sempre em negrito */
+
+  /* Bordas Escuras - Aliases para Gray Scale Dark Mode */
+  --border-light: var(--color-gray-700); /* #374151 - Alias para gray-700 (muito próximo de #3A3A3A) */
+  --border-medium: var(--color-gray-600); /* #4B5563 - Alias para gray-600 (muito próximo de #4A4A4A) */
+
+  /* Sombras Mais Pronunciadas */
+  --ifm-box-shadow-card: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --ifm-box-shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Backgrounds com opacidade - Dark Mode */
+  --background-black-alpha-03: rgba(255, 255, 255, 0.03);
+
+  /* Background sutil dark mode (branco com opacidade) */
+  --background-black-alpha-06: rgba(255, 255, 255, 0.06);
+
+  /* Background semi-transparente claro */
+  --background-black-alpha-10: rgba(0, 0, 0, 0.1);
+
+  /* Background com opacidade leve */
+  --background-black-alpha-15: rgba(0, 0, 0, 0.15);
+
+  /* Background com opacidade média */
+  --background-black-alpha-20: rgba(0, 0, 0, 0.2);
+
+  /* Background com opacidade média-alta */
+  --background-black-alpha-30: rgba(0, 0, 0, 0.3);
+
+  /* Background com opacidade alta */
+  --background-black-alpha-60: rgba(0, 0, 0, 0.6);
+
+  /* Background escuro semi-opaco */
+
+  --background-white-alpha-10: rgba(255, 255, 255, 0.1);
+
+  /* Background com opacidade leve dark mode */
+  --background-white-alpha-15: rgba(255, 255, 255, 0.15);
+
+  /* Background com opacidade média dark mode */
+  --background-white-alpha-20: rgba(255, 255, 255, 0.2);
+
+  /* Background com opacidade média-alta dark mode */
+  --background-white-alpha-90: rgba(255, 255, 255, 0.9);
+
+  /* Background quase opaco dark mode */
+
+  /* Sombras específicas para componentes - Dark Mode */
+  --shadow-component-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  /* Sombra pequena para componentes */
+  --shadow-component-md: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* Sombra média para componentes */
+  --shadow-component-lg: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  /* Sombra grande para componentes */
+
+  /* ============================================
+     Z-API DARK MODE
+     ============================================ */
+  /* Cores Primárias Z-API (ajustadas para dark) */
+  /* NOTA IMPORTANTE: As cores primárias Z-API mudam de verde para azul no dark mode
+   * para melhor contraste em elementos interativos (links, botões, ícones).
+   * 
+   * ⚠️ ATENÇÃO: TÍTULOS NÃO DEVEM USAR ESTA COR AZUL NO DARK MODE!
+   * Títulos devem sempre usar --text-primary (branco) no dark mode, conforme
+   * design system do Figma. A cor azul é apenas para elementos interativos.
+   */
+  --zapi-primary: #4A9EFF;
+
+  /* Azul para links, botões e elementos interativos - NÃO para títulos */
+  --zapi-primary-dark: #3385FF;
+  --zapi-primary-light: #66B3FF;
+  --zapi-secondary: #00E6C3;
+
+  /* Backgrounds Escuros Z-API */
+  --zapi-bg-primary: #1A1D29;
+  --zapi-bg-secondary: #242526;
+  --zapi-bg-tertiary: #2D2D2D;
+  --zapi-bg-dark: #0F1117;
+
+  /* Textos Claros Z-API */
+  --zapi-text-primary: #FFFFFF;
+  --zapi-text-secondary: #B3BAC5;
+  --zapi-text-tertiary: #9CA3AF;
+
+  /* Ajustado para WCAG AA (4.5:1+) sobre #1A1D29 - anteriormente #8993A4 */
+  --zapi-text-inverse: #1A1D29;
+
+  /* Sombras Mais Pronunciadas Z-API */
+  --zapi-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --zapi-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --zapi-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --zapi-shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.7);
+}
+/* stylelint-enable color-no-hex */
+
+/* ============================================
+   DARK MODE - GARANTIR CORES CLARAS NO TEXTO
+   ============================================ */
+/* Forçar cores claras em todos os elementos de texto no dark mode */
+/* NOTA: As variáveis CSS já estão definidas acima, estas regras garantem
+ * que todos os elementos herdem corretamente as cores claras no dark mode.
+ * IMPORTANTE: NUNCA usar --ifm-color-primary ou --zapi-primary em textos no dark mode!
+ * Sempre usar --text-primary (branco) para textos no dark mode.
+ */
+
+[data-theme='dark'] body,
+[data-theme='dark'] html {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
 }
 
-img[alt=image] {
-  width: 410px;
-  height: 830px;
+/* Homepage específica - garantir que background geral seja #1A1D29 */
+[data-theme='dark'] body:has(section[data-theme="official"][data-section="light"]),
+[data-theme='dark'] html:has(section[data-theme="official"][data-section="light"]) {
+  background-color: #1A1D29 !important;
+}
 
-  border-radius: 20px;
-  margin-top: 35px;
-  margin-bottom: 20px;
-  margin-left: 200px;
+/* Garantir que textos principais usem branco no dark mode */
+/* IMPORTANTE: Esta regra garante que textos não herdem cores azuis do tema */
+[data-theme='dark'] p,
+[data-theme='dark'] span,
+[data-theme='dark'] div:not([class*='button']):not([class*='link']):not([class*='badge']),
+[data-theme='dark'] li,
+[data-theme='dark'] td,
+[data-theme='dark'] th {
+  color: #FFFFFF !important;
+}
+
+/* Links no dark mode - usar cor primária (azul) apenas para links, não para textos */
+/* Links no dark mode - usar cor primária (azul) apenas para links fora da documentação */
+/* NOTA: Links na documentação (.theme-doc-markdown, .markdown, article) usam verde #65d781 */
+[data-theme='dark'] a:not(.navbar__brand):not(.footer__link-item):not(.theme-doc-markdown a):not(.markdown a):not(article a):not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):not(.button):not([class*='button']) {
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] a:not(.navbar__brand):not(.footer__link-item):not(.theme-doc-markdown a):not(.markdown a):not(article a):not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):not(.button):not([class*='button']):hover {
+  color: var(--ifm-color-primary-light);
+}
+
+/* Headings no dark mode - Forçar branco para sobrescrever qualquer cor verde */
+/* Headings globais no dark mode - usar hexadecimal fixo */
+/* IMPORTANTE: Títulos NUNCA devem usar cor primária azul no dark mode.
+ * Sempre usar branco (#FFFFFF) para garantir legibilidade e seguir design system.
+ */
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6,
+[data-theme='dark'] .h1,
+[data-theme='dark'] .h2,
+[data-theme='dark'] .h3,
+[data-theme='dark'] .h4,
+[data-theme='dark'] .h5,
+[data-theme='dark'] .h6 {
+  color: #FFFFFF !important;
+
+  /* Forçar branco - sobrescreve qualquer cor primária (incluindo azul do tema Z-API) */
+}
+
+/* Regra adicional para tema Z-API dark mode - garantir que headings não usem azul */
+[data-theme="zapi"][data-theme-mode="dark"] h1,
+[data-theme="zapi"][data-theme-mode="dark"] h2,
+[data-theme="zapi"][data-theme-mode="dark"] h3,
+[data-theme="zapi"][data-theme-mode="dark"] h4,
+[data-theme="zapi"][data-theme-mode="dark"] h5,
+[data-theme="zapi"][data-theme-mode="dark"] h6,
+[data-theme="zapi"][data-theme-mode="dark"] .h1,
+[data-theme="zapi"][data-theme-mode="dark"] .h2,
+[data-theme="zapi"][data-theme-mode="dark"] .h3,
+[data-theme="zapi"][data-theme-mode="dark"] .h4,
+[data-theme="zapi"][data-theme-mode="dark"] .h5,
+[data-theme="zapi"][data-theme-mode="dark"] .h6 {
+  color: #FFFFFF !important;
+
+  /* Branco - NÃO usar --zapi-primary (azul) em títulos */
+}
+
+/* Documentação - manter branco para contraste */
+[data-theme='dark'] .theme-doc-markdown h1,
+[data-theme='dark'] .theme-doc-markdown h2,
+[data-theme='dark'] .theme-doc-markdown h3,
+[data-theme='dark'] .theme-doc-markdown h4,
+[data-theme='dark'] .theme-doc-markdown h5,
+[data-theme='dark'] .theme-doc-markdown h6,
+html[data-theme='dark'] .theme-doc-markdown h1,
+html[data-theme='dark'] .theme-doc-markdown h2,
+html[data-theme='dark'] .theme-doc-markdown h3,
+html[data-theme='dark'] .theme-doc-markdown h4,
+html[data-theme='dark'] .theme-doc-markdown h5,
+html[data-theme='dark'] .theme-doc-markdown h6,
+html[data-theme='dark'] article .theme-doc-markdown h1,
+html[data-theme='dark'] article .theme-doc-markdown h2,
+html[data-theme='dark'] article .theme-doc-markdown h3 {
+  color: #FFFFFF !important; /* Branco hardcoded - sobrescreve qualquer cor azul do Infima */
+}
+
+/* Exceções: Componentes de features devem usar suas próprias regras */
+[data-theme='dark'] .featureTitle,
+[data-theme='dark'] .exclusiveFeatures .featureTitle,
+[data-theme='dark'] .features .featureTitle {
+  color: var(--ifm-color-content) !important;
+}
+
+/* Dark Mode - Header da seção de features */
+[data-theme='dark'] .featuresHeader {
+  color: #FFFFFF !important;
+}
+
+/* Dark Mode - Título e Subtítulo da seção de features */
+[data-theme='dark'] .featuresTitle,
+[data-theme='dark'] .features .featuresTitle,
+[data-theme='dark'] h2.featuresTitle,
+[data-theme='dark'] .featuresHeader .featuresTitle {
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .featuresSubtitle,
+[data-theme='dark'] .features .featuresSubtitle,
+[data-theme='dark'] p.featuresSubtitle,
+[data-theme='dark'] .featuresHeader .featuresSubtitle {
+  color: #B3BAC5 !important;
+}
+
+/* Parágrafos e texto no dark mode - FORÇAR branco */
+[data-theme='dark'] p,
+[data-theme='dark'] .text,
+[data-theme='dark'] .markdown,
+[data-theme='dark'] .markdown p,
+[data-theme='dark'] article,
+[data-theme='dark'] article p,
+[data-theme='dark'] .markdown > *:not(a):not(button):not([class*='button']):not([class*='link']) {
+  color: #FFFFFF !important;
+}
+
+/* Feature Description - garantir contraste adequado no dark mode */
+[data-theme='dark'] .featureDescription {
+  color: #B3BAC5 !important;
+}
+
+/* Dark Mode + Tema Official - Cards com background escuro e textos brancos */
+/* IMPORTANTE: Garantir visibilidade de textos em cards com data-theme="official" no dark mode */
+[data-theme='dark'] .featureCard[data-theme="official"],
+[data-theme='dark'] article.card[data-theme="official"] {
+  background: var(--official-bg-dark-card) !important;
+
+  /* Background azul-marinho para cards no dark mode */
+  border: 1px solid var(--official-border-light) !important;
+  color: var(--official-text-white) !important;
+}
+
+[data-theme='dark'] .featureCard[data-theme="official"] .featureTitle,
+[data-theme='dark'] article.card[data-theme="official"] .featureTitle,
+[data-theme='dark'] .featureCard[data-theme="official"] h3,
+[data-theme='dark'] article.card[data-theme="official"] h3 {
+  color: var(--official-text-white) !important;
+
+  /* Branco - garantir visibilidade em cards escuros */
+}
+
+[data-theme='dark'] .featureCard[data-theme="official"] .featureDescription,
+[data-theme='dark'] article.card[data-theme="official"] .featureDescription,
+[data-theme='dark'] .featureCard[data-theme="official"] p,
+[data-theme='dark'] article.card[data-theme="official"] p {
+  color: var(--official-text-light-alpha-80) !important;
+
+  /* Branco com opacidade - garantir contraste adequado */
+}
+
+/* Documentação no dark mode - Forçar branco para sobrescrever qualquer cor verde do Infima */
+[data-theme='dark'] .theme-doc-markdown,
+[data-theme='dark'] .theme-doc-markdown p,
+[data-theme='dark'] .theme-doc-markdown h1,
+[data-theme='dark'] .theme-doc-markdown h2,
+[data-theme='dark'] .theme-doc-markdown h3,
+[data-theme='dark'] .theme-doc-markdown h4,
+[data-theme='dark'] .theme-doc-markdown h5,
+[data-theme='dark'] .theme-doc-markdown h6,
+[data-theme='dark'] .theme-doc-markdown li,
+[data-theme='dark'] .theme-doc-markdown ul,
+[data-theme='dark'] .theme-doc-markdown ol,
+[data-theme='dark'] .theme-doc-markdown td,
+[data-theme='dark'] .theme-doc-markdown th,
+html[data-theme='dark'] .theme-doc-markdown,
+html[data-theme='dark'] .theme-doc-markdown p,
+html[data-theme='dark'] .theme-doc-markdown h1,
+html[data-theme='dark'] .theme-doc-markdown h2,
+html[data-theme='dark'] .theme-doc-markdown h3 {
+  color: #FFFFFF !important; /* Branco hardcoded - sobrescreve qualquer cor azul */
+  background-color: #1A1D29 !important;
+}
+
+/* Regra adicional para garantir que headings da documentação usem branco no dark mode */
+/* Sobrescreve qualquer regra do Infima que possa estar aplicando --ifm-color-primary */
+html[data-theme='dark'] .theme-doc-markdown h1,
+html[data-theme='dark'] .theme-doc-markdown h2,
+html[data-theme='dark'] .theme-doc-markdown h3,
+html[data-theme='dark'] .theme-doc-markdown h4,
+html[data-theme='dark'] .theme-doc-markdown h5,
+html[data-theme='dark'] .theme-doc-markdown h6 {
+  color: #FFFFFF !important; /* Branco hardcoded - máxima especificidade */
+}
+
+/* REGRA CRÍTICA: Headings dentro de header na documentação - FORÇAR branco no dark mode */
+/* Máxima especificidade para sobrescrever qualquer regra do Infima */
+[data-theme='dark'] .theme-doc-markdown header h1,
+[data-theme='dark'] .theme-doc-markdown header h2,
+[data-theme='dark'] .theme-doc-markdown header h3,
+[data-theme='dark'] .theme-doc-markdown header h4,
+[data-theme='dark'] .theme-doc-markdown header h5,
+[data-theme='dark'] .theme-doc-markdown header h6,
+html[data-theme='dark'] .theme-doc-markdown header h1,
+html[data-theme='dark'] .theme-doc-markdown header h2,
+html[data-theme='dark'] .theme-doc-markdown header h3,
+html[data-theme='dark'] .theme-doc-markdown header h4,
+html[data-theme='dark'] .theme-doc-markdown header h5,
+html[data-theme='dark'] .theme-doc-markdown header h6,
+html[data-theme='dark'] article .theme-doc-markdown header h1,
+html[data-theme='dark'] article .theme-doc-markdown header h2,
+html[data-theme='dark'] article .theme-doc-markdown header h3 {
+  color: #FFFFFF !important; /* Branco hardcoded - NUNCA azul */
+}
+
+/* REGRA CRÍTICA: Todos os textos na documentação - FORÇAR branco no dark mode */
+/* Garante que NADA fique azul no dark mode dentro de .theme-doc-markdown */
+/* Usa seletores específicos para maior especificidade */
+[data-theme='dark'] .theme-doc-markdown *:not(a):not(strong):not(code):not(pre):not(kbd):not(samp):not(var):not(button),
+html[data-theme='dark'] .theme-doc-markdown *:not(a):not(strong):not(code):not(pre):not(kbd):not(samp):not(var):not(button) {
+  color: #FFFFFF !important; /* Branco hardcoded para garantir que funcione */
+}
+
+/* Parágrafos dentro de header na documentação - FORÇAR branco no dark mode */
+[data-theme='dark'] .theme-doc-markdown header p,
+html[data-theme='dark'] .theme-doc-markdown header p {
+  color: #FFFFFF !important; /* Branco - NUNCA azul */
+}
+
+/* Todos os elementos de texto na documentação - FORÇAR branco no dark mode */
+/* Exceções: links (verdes), strong (verdes), code (estilos próprios), botões (estilos próprios) */
+[data-theme='dark'] .theme-doc-markdown p,
+[data-theme='dark'] .theme-doc-markdown div,
+[data-theme='dark'] .theme-doc-markdown span:not(.token):not(code),
+[data-theme='dark'] .theme-doc-markdown li,
+[data-theme='dark'] .theme-doc-markdown td,
+[data-theme='dark'] .theme-doc-markdown th,
+html[data-theme='dark'] .theme-doc-markdown p,
+html[data-theme='dark'] .theme-doc-markdown div,
+html[data-theme='dark'] .theme-doc-markdown span:not(.token):not(code),
+html[data-theme='dark'] article .theme-doc-markdown p,
+html[data-theme='dark'] article .theme-doc-markdown div {
+  color: #FFFFFF !important; /* Branco hardcoded - NUNCA azul */
+}
+
+/* Todos os elementos strong - Verde #65d781 e sempre em negrito */
+.theme-doc-markdown strong,
+.theme-doc-markdown p strong,
+.theme-doc-markdown li strong,
+.theme-doc-markdown ol strong,
+.theme-doc-markdown ul strong,
+.theme-doc-markdown td strong,
+.theme-doc-markdown th strong,
+.markdown strong,
+.markdown p strong,
+.markdown li strong,
+.markdown td strong,
+.markdown th strong,
+article strong,
+article p strong,
+article li strong,
+article td strong,
+article th strong {
+  color: var(--link-title-green) !important;
+  font-weight: var(--font-weight-bold, 700) !important;
+}
+
+/* Links de títulos (dentro de strong) - Verde #65d781 e sempre em negrito */
+.theme-doc-markdown strong a,
+.theme-doc-markdown p strong a,
+.theme-doc-markdown li strong a,
+.theme-doc-markdown ol strong a,
+.theme-doc-markdown ul strong a,
+.markdown strong a,
+.markdown p strong a,
+.markdown li strong a,
+article strong a,
+article p strong a,
+article li strong a {
+  color: var(--link-title-green) !important;
+  font-weight: var(--font-weight-bold, 700) !important;
+  text-decoration: none;
+}
+
+.theme-doc-markdown strong a:hover,
+.theme-doc-markdown p strong a:hover,
+.theme-doc-markdown li strong a:hover,
+.markdown strong a:hover,
+.markdown p strong a:hover,
+.markdown li strong a:hover,
+article strong a:hover,
+article p strong a:hover,
+article li strong a:hover {
+  color: var(--link-title-green) !important;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* Todos os links na documentação - Verde #65d781 */
+.theme-doc-markdown a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']),
+.markdown a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']),
+article a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']) {
+  color: var(--link-title-green) !important;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+}
+
+.theme-doc-markdown a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']):hover,
+.markdown a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']):hover,
+article a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']):hover {
+  color: var(--link-title-green) !important;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* Links dentro de admonitions (alertas) - Verde #65d781 */
+.theme-admonition a,
+.admonition a,
+.alert a,
+.admonition-content a,
+.alert__content a,
+.theme-doc-markdown .admonition a,
+.theme-doc-markdown .alert a,
+.theme-doc-markdown .admonition-content a,
+.theme-doc-markdown .alert__content a,
+article .admonition a,
+article .alert a,
+article .admonition-content a,
+article .alert__content a {
+  color: var(--link-title-green) !important;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+}
+
+.theme-admonition a:hover,
+.admonition a:hover,
+.alert a:hover,
+.admonition-content a:hover,
+.alert__content a:hover,
+.theme-doc-markdown .admonition a:hover,
+.theme-doc-markdown .alert a:hover,
+.theme-doc-markdown .admonition-content a:hover,
+.theme-doc-markdown .alert__content a:hover,
+article .admonition a:hover,
+article .alert a:hover,
+article .admonition-content a:hover,
+article .alert__content a:hover {
+  color: var(--link-title-green) !important;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* Todos os links na documentação no dark mode - Verde #65d781 */
+[data-theme='dark'] .theme-doc-markdown a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']),
+[data-theme='dark'] .markdown a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']),
+[data-theme='dark'] article a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']) {
+  color: var(--link-title-green) !important;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+}
+
+[data-theme='dark'] .theme-doc-markdown a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']):hover,
+[data-theme='dark'] .markdown a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']):hover,
+[data-theme='dark'] article a:not(.navbar__brand):not(.footer__link-item):not(.button):not([class*='button']):hover {
+  color: var(--link-title-green) !important;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* Links gerais no dark mode (fora da documentação) - manter cor primária */
+[data-theme='dark'] a:not(.navbar__brand):not(.footer__link-item):not(.theme-doc-markdown a):not(.markdown a):not(article a):not(.button):not([class*='button']) {
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] a:not(.navbar__brand):not(.footer__link-item):not(.theme-doc-markdown a):not(.markdown a):not(article a):not(.button):not([class*='button']):hover {
+  color: var(--ifm-color-primary-light);
+}
+
+/* Todos os elementos strong no dark mode - Verde #65d781 e sempre em negrito */
+[data-theme='dark'] .theme-doc-markdown strong,
+[data-theme='dark'] .theme-doc-markdown p strong,
+[data-theme='dark'] .theme-doc-markdown li strong,
+[data-theme='dark'] .theme-doc-markdown ol strong,
+[data-theme='dark'] .theme-doc-markdown ul strong,
+[data-theme='dark'] .theme-doc-markdown td strong,
+[data-theme='dark'] .theme-doc-markdown th strong,
+[data-theme='dark'] .markdown strong,
+[data-theme='dark'] .markdown p strong,
+[data-theme='dark'] .markdown li strong,
+[data-theme='dark'] .markdown td strong,
+[data-theme='dark'] .markdown th strong,
+[data-theme='dark'] article strong,
+[data-theme='dark'] article p strong,
+[data-theme='dark'] article li strong,
+[data-theme='dark'] article td strong,
+[data-theme='dark'] article th strong {
+  color: var(--link-title-green) !important;
+  font-weight: var(--font-weight-bold, 700) !important;
+}
+
+/* Links de títulos (dentro de strong) no dark mode - Verde #65d781 e sempre em negrito */
+[data-theme='dark'] .theme-doc-markdown strong a,
+[data-theme='dark'] .theme-doc-markdown p strong a,
+[data-theme='dark'] .theme-doc-markdown li strong a,
+[data-theme='dark'] .theme-doc-markdown ol strong a,
+[data-theme='dark'] .theme-doc-markdown ul strong a,
+[data-theme='dark'] .markdown strong a,
+[data-theme='dark'] .markdown p strong a,
+[data-theme='dark'] .markdown li strong a,
+[data-theme='dark'] article strong a,
+[data-theme='dark'] article p strong a,
+[data-theme='dark'] article li strong a {
+  color: var(--link-title-green) !important;
+  font-weight: var(--font-weight-bold, 700) !important;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .theme-doc-markdown strong a:hover,
+[data-theme='dark'] .theme-doc-markdown p strong a:hover,
+[data-theme='dark'] .theme-doc-markdown li strong a:hover,
+[data-theme='dark'] .markdown strong a:hover,
+[data-theme='dark'] .markdown p strong a:hover,
+[data-theme='dark'] .markdown li strong a:hover,
+[data-theme='dark'] article strong a:hover,
+[data-theme='dark'] article p strong a:hover,
+[data-theme='dark'] article li strong a:hover {
+  color: var(--link-title-green) !important;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* Links dentro de admonitions (alertas) no dark mode - Verde #65d781 */
+[data-theme='dark'] .theme-admonition a,
+[data-theme='dark'] .admonition a,
+[data-theme='dark'] .alert a,
+[data-theme='dark'] .admonition-content a,
+[data-theme='dark'] .alert__content a,
+[data-theme='dark'] .theme-doc-markdown .admonition a,
+[data-theme='dark'] .theme-doc-markdown .alert a,
+[data-theme='dark'] .theme-doc-markdown .admonition-content a,
+[data-theme='dark'] .theme-doc-markdown .alert__content a,
+[data-theme='dark'] article .admonition a,
+[data-theme='dark'] article .alert a,
+[data-theme='dark'] article .admonition-content a,
+[data-theme='dark'] article .alert__content a {
+  color: var(--link-title-green) !important;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+}
+
+[data-theme='dark'] .theme-admonition a:hover,
+[data-theme='dark'] .admonition a:hover,
+[data-theme='dark'] .alert a:hover,
+[data-theme='dark'] .admonition-content a:hover,
+[data-theme='dark'] .alert__content a:hover,
+[data-theme='dark'] .theme-doc-markdown .admonition a:hover,
+[data-theme='dark'] .theme-doc-markdown .alert a:hover,
+[data-theme='dark'] .theme-doc-markdown .admonition-content a:hover,
+[data-theme='dark'] .theme-doc-markdown .alert__content a:hover,
+[data-theme='dark'] article .admonition a:hover,
+[data-theme='dark'] article .alert a:hover,
+[data-theme='dark'] article .admonition-content a:hover,
+[data-theme='dark'] article .alert__content a:hover {
+  color: var(--link-title-green) !important;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* Texto secundário no dark mode */
+[data-theme='dark'] .text--secondary,
+[data-theme='dark'] small,
+[data-theme='dark'] .small {
+  color: #B3BAC5 !important;
+}
+
+/* Texto terciário no dark mode */
+[data-theme='dark'] .text--tertiary {
+  color: #9CA3AF !important;
+}
+
+/* Containers principais no dark mode - UNIFORME */
+[data-theme='dark'] .main-wrapper,
+[data-theme='dark'] .container,
+[data-theme='dark'] .docs-wrapper {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+
+/* Elementos específicos do Docusaurus que podem ter cores hardcoded */
+[data-theme='dark'] .navbar__item,
+[data-theme='dark'] .navbar__link,
+[data-theme='dark'] .menu__link,
+[data-theme='dark'] .table-of-contents__link {
+  color: #FFFFFF !important;
+}
+
+/* Cards e containers no dark mode - UNIFORME */
+[data-theme='dark'] .card,
+[data-theme='dark'] .card__body,
+[data-theme='dark'] .card__header,
+[data-theme='dark'] .card__title {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+
+/* Badges no dark mode */
+[data-theme='dark'] .badge {
+  color: var(--text-inverse);
+}
+
+/* Alerts e Admonitions no dark mode - UNIFORME */
+[data-theme='dark'] .alert,
+[data-theme='dark'] .admonition,
+[data-theme='dark'] .admonition-heading,
+[data-theme='dark'] .admonition-content {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+
+/* ============================================
+   BLOG - DARK MODE
+   Títulos, subtítulos e texto dos cards e artigos em branco
+   ============================================ */
+
+/* Blog Cards - Dark Mode - UNIFORME */
+[data-theme='dark'] .theme-blog-list-page article,
+[data-theme='dark'] .theme-blog-list-page article h1,
+[data-theme='dark'] .theme-blog-list-page article h2,
+[data-theme='dark'] .theme-blog-list-page article h3,
+[data-theme='dark'] .theme-blog-list-page article h4,
+[data-theme='dark'] .theme-blog-list-page article h5,
+[data-theme='dark'] .theme-blog-list-page article h6,
+[data-theme='dark'] .theme-blog-list-page article p,
+[data-theme='dark'] .theme-blog-list-page article .title,
+[data-theme='dark'] .theme-blog-list-page article .excerpt,
+[data-theme='dark'] .theme-blog-list-page article a {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+
+/* Blog Card Component - Dark Mode */
+[data-theme='dark'] .blogCard,
+[data-theme='dark'] [class*='blogCard'],
+[data-theme='dark'] [class*='BlogCard'] {
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .blogCard .title,
+[data-theme='dark'] [class*='blogCard'] .title,
+[data-theme='dark'] [class*='BlogCard'] .title,
+[data-theme='dark'] .blogCard h1,
+[data-theme='dark'] .blogCard h2,
+[data-theme='dark'] .blogCard h3,
+[data-theme='dark'] .blogCard h4,
+[data-theme='dark'] .blogCard h5,
+[data-theme='dark'] .blogCard h6,
+[data-theme='dark'] .blogCard p,
+[data-theme='dark'] .blogCard .excerpt {
+  color: #FFFFFF !important;
+}
+
+/* Blog Post Page - Dark Mode (artigos após clicar no card) - UNIFORME */
+[data-theme='dark'] .theme-blog-post-page .markdown,
+[data-theme='dark'] .theme-blog-post-page .markdown h1,
+[data-theme='dark'] .theme-blog-post-page .markdown h2,
+[data-theme='dark'] .theme-blog-post-page .markdown h3,
+[data-theme='dark'] .theme-blog-post-page .markdown h4,
+[data-theme='dark'] .theme-blog-post-page .markdown h5,
+[data-theme='dark'] .theme-blog-post-page .markdown h6,
+[data-theme='dark'] .theme-blog-post-page .markdown p,
+[data-theme='dark'] .theme-blog-post-page .markdown li,
+[data-theme='dark'] .theme-blog-post-page .markdown ul,
+[data-theme='dark'] .theme-blog-post-page .markdown ol,
+[data-theme='dark'] .theme-blog-post-page .markdown td,
+[data-theme='dark'] .theme-blog-post-page .markdown th,
+[data-theme='dark'] .theme-blog-post-page .markdown a:not(.button) {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+
+/* Blog Post Hero - Dark Mode */
+[data-theme='dark'] .theme-blog-post-page .hero .title,
+[data-theme='dark'] .theme-blog-post-page .hero .summary,
+[data-theme='dark'] .theme-blog-post-page .hero .meta {
+  color: #FFFFFF !important;
+}
+
+/* Blog List Page - Dark Mode - UNIFORME */
+[data-theme='dark'] .theme-blog-list-page .heroTitle,
+[data-theme='dark'] .theme-blog-list-page .heroDescription,
+[data-theme='dark'] .theme-blog-list-page .sectionTitle {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+
+/* Regra adicional para garantir que headings do blog usem branco no dark mode */
+/* Sobrescreve qualquer regra do Infima que possa estar aplicando --ifm-color-primary */
+html[data-theme='dark'] .theme-blog-list-page .heroTitle,
+html[data-theme='dark'] .theme-blog-list-page .heroDescription,
+html[data-theme='dark'] .theme-blog-list-page .sectionTitle,
+html[data-theme='dark'] .theme-blog-post-page .hero .title,
+html[data-theme='dark'] .theme-blog-post-page .hero .summary,
+html[data-theme='dark'] .theme-blog-post-page .hero .meta,
+html[data-theme='dark'] .theme-blog-post-page .markdown h1,
+html[data-theme='dark'] .theme-blog-post-page .markdown h2,
+html[data-theme='dark'] .theme-blog-post-page .markdown h3,
+html[data-theme='dark'] .theme-blog-post-page .markdown h4,
+html[data-theme='dark'] .theme-blog-post-page .markdown h5,
+html[data-theme='dark'] .theme-blog-post-page .markdown h6 {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+
+/* ============================================
+   REGRAS ESPECÍFICAS: TÍTULOS NÃO PODEM SER AZUIS NO DARK MODE
+   ============================================ */
+/* IMPORTANTE: Segundo design system do Figma, títulos no dark mode devem ser BRANCOS,
+ * nunca azuis. Mesmo quando o tema Z-API está ativo (que usa azul para cor primária),
+ * títulos devem sempre usar --text-primary (branco) para garantir legibilidade.
+ */
+
+/* Classes de título customizadas - garantir branco no dark mode */
+/* EXCEÇÃO: HeroSection com tema official mantém cores verdes (regras específicas abaixo) */
+[data-theme='dark'] .title,
+[data-theme='dark'] .sectionTitle,
+[data-theme='dark'] .pageTitle,
+[data-theme='dark'] .cardTitle {
+  color: #FFFFFF !important;
+
+  /* Branco - NÃO usar cor primária azul */
+}
+
+/* HeroTitle - Aplicar branco apenas se NÃO estiver dentro do HeroSection official */
+/* As regras específicas do HeroSection abaixo têm maior especificidade e sobrescrevem esta */
+[data-theme='dark'] .heroTitle {
+  color: #FFFFFF !important;
+}
+
+/* Tema Z-API dark mode - garantir que títulos não usem azul */
+[data-theme="zapi"][data-theme-mode="dark"] .title,
+[data-theme="zapi"][data-theme-mode="dark"] .sectionTitle,
+[data-theme="zapi"][data-theme-mode="dark"] .heroTitle,
+[data-theme="zapi"][data-theme-mode="dark"] .pageTitle,
+[data-theme="zapi"][data-theme-mode="dark"] .cardTitle {
+  color: #FFFFFF !important;
+
+  /* Branco - sobrescreve --zapi-primary (azul) */
+}
+
+/* Tema Híbrido dark mode - garantir que títulos não usem azul */
+[data-theme="hybrid"][data-theme-mode="dark"] .title,
+[data-theme="hybrid"][data-theme-mode="dark"] .sectionTitle,
+[data-theme="hybrid"][data-theme-mode="dark"] .heroTitle,
+[data-theme="hybrid"][data-theme-mode="dark"] .pageTitle,
+[data-theme="hybrid"][data-theme-mode="dark"] .cardTitle {
+  color: #FFFFFF !important;
+
+  /* Branco - garantir consistência */
+}
+
+/* Dark Mode + Tema Official - garantir títulos claros mesmo com data-section="light" */
+/* IMPORTANTE: Seções com data-section="light" no dark mode ainda devem ter títulos claros */
+[data-theme='dark'] [data-theme="official"] .sectionTitle,
+[data-theme='dark'] [data-theme="official"][data-section="light"] .sectionTitle,
+[data-theme='dark'] [data-theme="official"] .featuresTitle,
+[data-theme='dark'] [data-theme="official"][data-section="light"] .featuresTitle,
+[data-theme='dark'] [data-theme="official"] h2.featuresTitle,
+[data-theme='dark'] [data-theme="official"][data-section="light"] h2.featuresTitle {
+  color: #FFFFFF !important;
+
+  /* Branco - sobrescreve --official-text-dark quando dark mode está ativo */
+}
+
+/* HeroSection - Manter cores verdes no dark mode (tema official) */
+/* IMPORTANTE: A section inicial "Central do Desenvolvedor" deve manter as cores verdes no dark mode */
+/* Regras com máxima especificidade para sobrescrever regras gerais */
+html[data-theme='dark'] section.heroSection[data-theme="official"] .heroTitle,
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroTitle,
+[data-theme='dark'] section.heroSection[data-theme="official"] .heroTitle,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroTitle {
+  color: var(--official-button-green-hover) !important;
+}
+
+html[data-theme='dark'] section.heroSection[data-theme="official"] .heroLabelText,
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroLabelText,
+[data-theme='dark'] section.heroSection[data-theme="official"] .heroLabelText,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroLabelText {
+  color: var(--official-accent-green-alpha-70) !important;
+}
+
+html[data-theme='dark'] section.heroSection[data-theme="official"] .heroStatValue,
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroStatValue,
+[data-theme='dark'] section.heroSection[data-theme="official"] .heroStatValue,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroStatValue {
+  color: var(--official-button-green-hover) !important;
+}
+
+html[data-theme='dark'] section.heroSection[data-theme="official"] .heroStatIcon,
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroStatIcon,
+[data-theme='dark'] section.heroSection[data-theme="official"] .heroStatIcon,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroStatIcon {
+  color: var(--official-button-green-alpha-90) !important;
+}
+
+html[data-theme='dark'] section.heroSection[data-theme="official"] .heroStatItem:hover .heroStatValue,
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroStatItem:hover .heroStatValue,
+[data-theme='dark'] section.heroSection[data-theme="official"] .heroStatItem:hover .heroStatValue,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroStatItem:hover .heroStatValue {
+  color: var(--official-button-green-hover-light) !important;
+}
+
+html[data-theme='dark'] section.heroSection[data-theme="official"] .heroStatItem:hover .heroStatIcon,
+html[data-theme='dark'] .heroSection[data-theme="official"] .heroStatItem:hover .heroStatIcon,
+[data-theme='dark'] section.heroSection[data-theme="official"] .heroStatItem:hover .heroStatIcon,
+[data-theme='dark'] .heroSection[data-theme="official"] .heroStatItem:hover .heroStatIcon {
+  color: var(--official-button-green-hover) !important;
+}
+
+/* Grid System Customizado */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--ifm-spacing-horizontal);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--ifm-spacing-horizontal);
+}
+
+@media (max-width: 996px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================
+   SUCCESS (GREEN) TEXT AS BOLD
+   UI/UX + Motion Design directive:
+   Any success-green text variants should also be bold for emphasis.
+   Targets Infima/Docusaurus success utilities and components.
    
+   IMPORTANTE: Usa --official-accent-green (#00A685) para consistência
+   visual tanto no modo claro quanto no escuro.
+   ============================================ */
+.text--success,
+a.text--success,
+.badge--success,
+.badge.badge--success,
+.alert--success .alert__title,
+.alert--success strong,
+.admonition-success .admonition-heading,
+.badge--success .badge__label,
+.theme-doc-markdown .admonition-success,
+.theme-doc-markdown .admonition-success strong {
+  font-weight: var(--font-weight-bold, 700);
+
+  /* Usar verde oficial Z-API em todos os modos (claro e escuro) */
+  color: var(--official-accent-green) !important;
 }
 
+/* Keep links readable when bolded */
+a.text--success {
+  text-decoration-thickness: 0.08em;
 
+  /* Garantir que links usem o verde oficial */
+  color: var(--official-accent-green) !important;
+}
+
+a.text--success:hover,
+a.text--success:focus {
+  /* Hover usa versão mais clara do verde oficial */
+  color: var(--official-accent-green-light) !important;
+}
+
+/* Dark mode - manter mesmo verde para consistência */
+[data-theme='dark'] .text--success,
+[data-theme='dark'] a.text--success,
+[data-theme='dark'] .badge--success,
+[data-theme='dark'] .badge.badge--success {
+  color: var(--official-accent-green) !important;
+}
+
+[data-theme='dark'] a.text--success:hover,
+[data-theme='dark'] a.text--success:focus {
+  color: var(--official-accent-green-light) !important;
+}
+
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   KEYFRAMES E ANIMAÇÕES
+   ============================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Classes de Animação Utilitárias */
+.animate-fade-in {
+  animation: fadeIn var(--transition-normal) var(--ease-out) forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp var(--transition-slow) var(--ease-out) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight var(--transition-normal) var(--ease-out) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn var(--transition-normal) var(--ease-out) forwards;
+}
+
+/* Stagger Animation (para múltiplos elementos) */
+.stagger-item {
+  opacity: 0;
+  animation: fadeInUp var(--transition-slow) var(--ease-out) forwards;
+}
+
+.stagger-item:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.stagger-item:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.stagger-item:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.stagger-item:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.stagger-item:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+.stagger-item:nth-child(6) {
+  animation-delay: 500ms;
+}
+
+/* ============================================
+   CARD COMPONENT BASE
+   ============================================ */
+.card {
+  background: var(--ifm-background-surface-color);
+  border-radius: var(--ifm-border-radius-card);
+  padding: var(--ifm-spacing-card-padding);
+  box-shadow: var(--ifm-box-shadow-card);
+  transition: box-shadow var(--transition-normal) var(--ease-out),
+    transform var(--transition-normal) var(--ease-out),
+    border-color var(--transition-normal) var(--ease-out);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-light);
+  position: relative;
+  overflow: hidden;
+
+  /* CSS Containment para melhor performance */
+  contain: layout style paint;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--zapi-green), var(--zapi-teal));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-normal) var(--ease-out);
+}
+
+/* Cards - Hover states Design System */
+.card:hover {
+  box-shadow: var(--shadow-lg);
+
+  /* Elevated cards */
+  transform: var(--transform-hover-scale);
+
+  /* scale(1.02) */
+  border-color: var(--border-hover-color, var(--ifm-color-primary));
+  border-width: var(--border-hover-width, 2px);
+
+  /* Transições específicas - evitar transition-all */
+  transition: transform var(--transition-micro) var(--ease-out),
+    box-shadow var(--transition-normal) var(--ease-out),
+    border-color var(--transition-normal) var(--ease-out);
+}
+
+/* Botões - Hover states Design System */
+button:hover,
+.button:hover,
+.btn:hover {
+  transform: var(--transform-hover-lift-min);
+
+  /* translateY(-2px) */
+  transition: transform var(--transition-micro) var(--ease-out),
+    box-shadow var(--transition-normal) var(--ease-out);
+}
+
+button:active,
+.button:active,
+.btn:active {
+  transform: var(--transform-active-scale);
+
+  /* scale(0.98) */
+  transition: transform var(--transition-micro) var(--ease-out);
+}
+
+/* Botões com hover mais pronunciado (CTAs principais) */
+.button--primary:hover,
+.btn--primary:hover {
+  transform: var(--transform-hover-lift-max);
+
+  /* translateY(-4px) */
+  box-shadow: var(--shadow-lg);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card:active {
+  transform: var(--transform-active-scale);
+}
+
+/* Section Spacing - Padronizado */
+.section {
+  padding: var(--ifm-spacing-section-vertical) var(--ifm-spacing-section-horizontal);
+}
+
+/* ============================================
+   HIERARQUIA VISUAL GLOBAL
+   ============================================ */
+
+/* ============================================
+   HEADINGS GLOBAIS - Escala Tipográfica Consistente
+   Aplicando escala 12/14/16/20/24/32/40/48/64px
+   Line-heights: 1.2-1.3 para headings, 1.5-1.7 para body
+   ============================================ */
+
+/* Display - 64px / 700 / 1.2 - Hero titles */
+.display,
+.display-1 {
+  font-size: var(--font-size-display);
+
+  /* 64px */
+  font-weight: 700;
+
+  /* Bold */
+  line-height: var(--line-height-tight);
+
+  /* 1.2 */
+  margin-bottom: var(--space-6);
+
+  /* 24px */
+  letter-spacing: -0.02em;
+}
+
+/* H1 - 48px / 700 / 1.2 */
+h1,
+.h1 {
+  font-size: var(--ifm-h1-font-size);
+
+  /* 48px */
+  font-weight: var(--font-weight-bold);
+
+  /* 700 */
+  line-height: var(--ifm-h1-line-height);
+
+  /* 1.2 */
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: -0.02em;
+
+  /* Melhora legibilidade em tamanhos grandes */
+}
+
+/* H2 - 40px / 600 / 1.2 */
+h2,
+.h2 {
+  font-size: var(--ifm-h2-font-size);
+
+  /* 40px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h2-line-height);
+
+  /* 1.2 */
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.01em;
+}
+
+/* H3 - 32px / 600 / 1.3 */
+h3,
+.h3 {
+  font-size: var(--ifm-h3-font-size);
+
+  /* 32px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h3-line-height);
+
+  /* 1.3 */
+  margin-bottom: var(--spacing-sm);
+}
+
+/* H4 - 24px / 600 / 1.3 */
+h4,
+.h4 {
+  font-size: var(--ifm-h4-font-size);
+
+  /* 24px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h4-line-height);
+
+  /* 1.3 */
+  margin-bottom: var(--spacing-sm);
+}
+
+/* H5 - 20px / 500 / 1.5 */
+h5,
+.h5 {
+  font-size: var(--ifm-h5-font-size);
+
+  /* 20px */
+  font-weight: var(--font-weight-medium);
+
+  /* 500 */
+  line-height: var(--ifm-h5-line-height);
+
+  /* 1.5 */
+  margin-bottom: var(--spacing-xs);
+}
+
+/* H6 - 18px / 400 / 1.5 */
+h6,
+.h6 {
+  font-size: var(--font-size-body-large);
+
+  /* 18px */
+  font-weight: 400;
+
+  /* Normal */
+  line-height: var(--ifm-h6-line-height);
+
+  /* 1.5 */
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Body Text - 16px / 400 / 1.6 (confortável para leitura) */
+p,
+.text,
+body {
+  font-size: var(--ifm-font-size-base);
+
+  /* 16px */
+  line-height: var(--ifm-line-height-base);
+
+  /* 1.6 */
+  font-weight: var(--font-weight-normal);
+
+  /* 400 */
+}
+
+/* Body Small - 14px / 400 / 1.5 */
+.text-small,
+.body-small {
+  font-size: var(--font-size-body-small);
+
+  /* 14px */
+  line-height: var(--ifm-line-height-body-small);
+
+  /* 1.5 */
+  font-weight: var(--font-weight-normal);
+
+  /* 400 */
+}
+
+/* Body Large - 18px / 400 / 1.6 */
+.text-large,
+.body-large {
+  font-size: var(--font-size-body-large);
+
+  /* 18px */
+  line-height: var(--line-height-relaxed);
+
+  /* 1.6 */
+  font-weight: var(--font-weight-normal);
+
+  /* 400 */
+}
+
+/* Caption - 12px / 400 / 1.5 */
+.caption,
+.text-caption {
+  font-size: var(--font-size-caption);
+
+  /* 12px */
+  line-height: var(--line-height-normal);
+
+  /* 1.5 */
+  font-weight: var(--font-weight-normal);
+
+  /* 400 */
+}
+
+/* ============================================
+   UTILITÁRIOS DE LINK
+   ============================================ */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+  transition: color var(--transition-fast) var(--ease-out);
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--ifm-color-primary);
+  transition: width var(--transition-normal) var(--ease-out);
+}
+
+.link-underline:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   BOTÕES MELHORADOS
+   ============================================ */
+.button--primary,
+.button--secondary {
+  transition: transform var(--transition-normal) var(--ease-out),
+    box-shadow var(--transition-normal) var(--ease-out),
+    background-color var(--transition-normal) var(--ease-out),
+    color var(--transition-normal) var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.button--primary:hover {
+  transform: var(--transform-hover-scale);
+  box-shadow: 0 4px 12px var(--zapi-primary-alpha-30, rgba(18, 140, 126, 0.3));
+}
+
+.button--primary:active {
+  transform: var(--transform-active-scale);
+}
+
+.button--secondary:hover {
+  transform: var(--transform-hover-scale);
+  border-color: var(--ifm-color-primary);
+}
+
+/* ============================================
+   ACESSIBILIDADE - FOCUS STATES GLOBAIS
+   ============================================ */
+
+/* Focus visible padrão melhorado */
+*:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* Remover outline padrão do navegador */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Focus states para links */
+a:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-sm);
+  text-decoration: underline;
+}
+
+/* Focus states para botões */
+button:focus-visible,
+.button:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 0 0 3px var(--zapi-primary-alpha-20, rgba(18, 140, 126, 0.2));
+}
+
+/* Focus states para inputs */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px var(--zapi-primary-alpha-10, rgba(18, 140, 126, 0.1));
+}
+
+/* Focus states para cards clicáveis */
+.card:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 0 0 3px var(--zapi-primary-alpha-20, rgba(18, 140, 126, 0.2));
+}
+
+/* Focus states para elementos customizados */
+[tabindex]:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* ============================================
+   ACESSIBILIDADE - KEYBOARD NAVIGATION
+   ============================================ */
+
+/* Focus visible customizado - WCAG 2.1 AA compliant */
+/* Contraste mínimo 3:1 para elementos focáveis (WCAG 2.1 AA) */
+[tabindex="0"]:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  position: relative;
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-sm);
+
+  /* Garantir visibilidade mesmo em temas escuros */
+  box-shadow: 0 0 0 1px var(--ifm-background-color), 0 0 0 4px var(--ifm-color-primary);
+}
+
+/* Focus visible para elementos interativos customizados */
+[role="button"]:focus-visible,
+[role="link"]:focus-visible,
+[role="tab"]:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 0 0 1px var(--ifm-background-color), 0 0 0 4px var(--ifm-color-primary);
+}
+
+/* Focus visible para cards clicáveis */
+.card[role="button"]:focus-visible,
+button.card:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 4px;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 0 0 1px var(--ifm-background-color), 0 0 0 4px var(--ifm-color-primary);
+}
+
+/* ============================================
+   ACESSIBILIDADE - SKIP LINKS
+   ============================================ */
+
+/* IDs para skip links */
+#main-content {
+  scroll-margin-top: 2rem;
+}
+
+#main-navigation {
+  scroll-margin-top: 2rem;
+}
+
+#sidebar-navigation {
+  scroll-margin-top: 2rem;
+}
+
+/* Scroll margin para seções da página No Code - Navegação por âncoras */
+/* Compensa altura da navbar fixa (aprox. 60-80px) + espaçamento */
+#glossario,
+#guias,
+#exemplos,
+#ferramentas,
+#casos-uso,
+#agentes-ia,
+#tutoriais,
+#recursos,
+#faq {
+  scroll-margin-top: calc(var(--ifm-navbar-height, 60px) + var(--spacing-md, 16px));
+
+  /* Garante que ao navegar por âncoras, o conteúdo não fique escondido atrás da navbar */
+}
+
+/* Mobile: ajustar scroll-margin para navbar menor */
+@media (max-width: 996px) {
+  #glossario,
+  #guias,
+  #exemplos,
+  #ferramentas,
+  #casos-uso,
+  #agentes-ia,
+  #tutoriais,
+  #recursos,
+  #faq {
+    scroll-margin-top: calc(var(--ifm-navbar-height, 60px) + var(--spacing-sm, 8px));
+  }
+}
+
+/* ============================================
+   ACESSIBILIDADE - SCREEN READER ONLY
+   ============================================ */
+
+/* Classe para texto visível apenas para screen readers */
+.sr-only,
+[class*="sr-only"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Classe para tornar elemento visível quando focado (útil para skip links) */
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ============================================
+   ACESSIBILIDADE - REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .stagger-item {
+    animation-delay: 0ms !important;
+  }
+
+  /* Manter focus states mesmo com reduced motion */
+  *:focus-visible {
+    outline: 3px solid var(--ifm-color-primary) !important;
+    outline-offset: 2px !important;
+  }
+}
+
+/* ============================================
+   SISTEMA DE TEMAS - Z-API
+   ============================================ */
+
+/* Tema Z-API - Aplicado via data-theme="zapi" */
+/* stylelint-disable color-no-hex */
+/* NOTA: Cores hexadecimais em definições de variáveis CSS são aceitáveis e necessárias.
+ * Ver: design-system/development/STYLELINT_ACCEPTABLE_ERRORS.md
+ */
+[data-theme="zapi"] {
+  /* Cores Primárias Z-API */
+  --ifm-color-primary: var(--zapi-primary);
+  --ifm-color-primary-dark: var(--zapi-primary-dark);
+  --ifm-color-primary-darker: #0047B3;
+  --ifm-color-primary-darkest: #003D99;
+  --ifm-color-primary-light: var(--zapi-primary-light);
+  --ifm-color-primary-lighter: #66B3FF;
+  --ifm-color-primary-lightest: #99CCFF;
+
+  /* Backgrounds Z-API */
+  --ifm-background-color: var(--zapi-bg-primary);
+  --ifm-background-surface-color: var(--zapi-bg-secondary);
+  --background-white: var(--zapi-bg-primary);
+  --background-off-white: var(--zapi-bg-secondary);
+  --background-light-gray: var(--zapi-bg-tertiary);
+
+  /* Textos Z-API */
+  --ifm-color-content: var(--zapi-text-primary);
+  --ifm-color-content-secondary: var(--zapi-text-secondary);
+  --text-primary: var(--zapi-text-primary);
+  --text-secondary: var(--zapi-text-secondary);
+  --text-tertiary: var(--zapi-text-tertiary);
+  --text-inverse: var(--zapi-text-inverse);
+
+  /* Bordas Z-API */
+  --border-light: #E4E6EB;
+  --border-medium: #D1D5DB;
+
+  /* Sombras Z-API */
+  --ifm-box-shadow-card: var(--zapi-shadow-md);
+  --ifm-box-shadow-card-hover: var(--zapi-shadow-lg);
+  --shadow-md: var(--zapi-shadow-md);
+  --shadow-lg: var(--zapi-shadow-lg);
+  --shadow-xl: var(--zapi-shadow-xl);
+}
+/* stylelint-enable color-no-hex */
+
+/* Tema Híbrido - Combina Z-API Classic e Z-API */
+/* stylelint-disable color-no-hex */
+/* NOTA: Cores hexadecimais em definições de variáveis CSS são aceitáveis e necessárias.
+ * Ver: design-system/development/STYLELINT_ACCEPTABLE_ERRORS.md
+ */
+[data-theme="hybrid"] {
+  /* Cores Primárias Híbridas - Combina Classic e Z-API */
+  --ifm-color-primary: var(--zapi-green);
+  --ifm-color-primary-dark: var(--zapi-primary-dark);
+  --ifm-color-primary-darker: var(--zapi-dark-teal);
+  --ifm-color-primary-darkest: var(--zapi-darkest-teal);
+  --ifm-color-primary-light: var(--zapi-primary-light);
+  --ifm-color-primary-lighter: #81D4FA;
+  --ifm-color-primary-lightest: #B3E5FC;
+
+  /* Backgrounds compartilhados */
+  --ifm-background-color: var(--background-white);
+  --ifm-background-surface-color: var(--background-off-white);
+  --background-white: var(--background-white);
+  --background-off-white: var(--background-off-white);
+  --background-light-gray: var(--background-light-gray);
+
+  /* Textos */
+  --ifm-color-content: var(--text-primary);
+  --ifm-color-content-secondary: var(--text-secondary);
+  --text-primary: var(--text-primary);
+  --text-secondary: var(--text-secondary);
+  --text-tertiary: var(--text-tertiary);
+  --text-inverse: var(--text-inverse);
+
+  /* Bordas */
+  --border-light: var(--border-light);
+  --border-medium: var(--border-medium);
+
+  /* Sombras */
+  --ifm-box-shadow-card: var(--shadow-md);
+  --ifm-box-shadow-card-hover: var(--shadow-lg);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+}
+/* stylelint-enable color-no-hex */
+
+/* Tema Híbrido Dark Mode */
+/* stylelint-disable color-no-hex */
+/* NOTA: Cores hexadecimais em definições de variáveis CSS são aceitáveis e necessárias.
+ * Ver: design-system/development/STYLELINT_ACCEPTABLE_ERRORS.md
+ */
+[data-theme="hybrid"][data-theme-mode="dark"] {
+  --ifm-color-primary: var(--zapi-green);
+  --ifm-color-primary-dark: var(--zapi-primary-dark);
+  --ifm-color-primary-darker: var(--zapi-dark-teal);
+  --ifm-color-primary-darkest: var(--zapi-darkest-teal);
+  --ifm-color-primary-light: var(--zapi-primary-light);
+  --ifm-background-color: #1A1A1A;
+  --ifm-background-surface-color: #242526;
+  --background-white: #1A1A1A;
+  --background-off-white: #242526;
+  --background-light-gray: #2D2D2D;
+  --ifm-color-content: #FFFFFF;
+  --ifm-color-content-secondary: #B3BAC5;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3BAC5;
+  --text-tertiary: #9CA3AF;
+
+  /* Ajustado para WCAG AA (4.5:1+) sobre #1A1A1A - anteriormente #8993A4 (3.8:1) */
+  --text-inverse: #1A1A1A;
+  --border-light: #3A3A3A;
+  --border-medium: #4A4A4A;
+}
+/* stylelint-enable color-no-hex */
+
+/* Tema Z-API Dark Mode */
+/* stylelint-disable color-no-hex */
+/* NOTA: Cores hexadecimais em definições de variáveis CSS são aceitáveis e necessárias.
+ * Ver: design-system/development/STYLELINT_ACCEPTABLE_ERRORS.md
+ */
+[data-theme="zapi"][data-theme-mode="dark"] {
+  --ifm-color-primary: var(--zapi-primary);
+
+  /* NOTA: --zapi-primary é azul (#4A9EFF) no dark mode, mas NÃO deve ser usado em títulos.
+   * Títulos devem sempre usar --text-primary (branco) no dark mode.
+   * Esta cor primária azul é apenas para links, botões e elementos interativos.
+   */
+  --ifm-color-primary-dark: var(--zapi-primary-dark);
+  --ifm-background-color: var(--zapi-bg-dark);
+  --ifm-background-surface-color: var(--zapi-bg-secondary);
+  --ifm-color-content: var(--zapi-text-primary);
+
+  /* Texto primário (branco) - deve ser usado em títulos */
+  --ifm-color-content-secondary: var(--zapi-text-secondary);
+
+  /* Garantir que --text-primary também seja branco */
+  --text-primary: var(--zapi-text-primary);
+  --text-secondary: var(--zapi-text-secondary);
+  --text-tertiary: var(--zapi-text-tertiary);
+}
+/* stylelint-enable color-no-hex */
+
+/* ============================================
+   TEMA OFFICIAL Z-API
+   Baseado na identidade visual oficial do site
+   ============================================ */
+/* stylelint-disable color-no-hex */
+/* NOTA: Cores hexadecimais em definições de variáveis CSS são aceitáveis e necessárias.
+ * Ver: design-system/development/STYLELINT_ACCEPTABLE_ERRORS.md
+ */
+[data-theme="official"] {
+  /* Cores Primárias Official */
+  --ifm-color-primary: var(--official-accent-green);
+  --ifm-color-primary-dark: var(--official-accent-green-dark);
+  --ifm-color-primary-darker: #009D7A;
+  --ifm-color-primary-darkest: #008266;
+  --ifm-color-primary-light: var(--official-accent-green-light);
+  --ifm-color-primary-lighter: #1AFFD9;
+  --ifm-color-primary-lightest: #4DFFE6;
+
+  /* Backgrounds Official */
+  --ifm-background-color: var(--official-bg-dark);
+  --ifm-background-surface-color: var(--official-bg-dark-purple);
+  --background-white: var(--official-bg-white);
+  --background-off-white: var(--official-bg-off-white);
+  --background-light-gray: var(--official-bg-light);
+
+  /* Textos Official - Light Mode: texto escuro */
+  --ifm-color-content: var(--official-text-dark);
+  --ifm-color-content-secondary: var(--text-secondary);
+  --text-primary: var(--official-text-dark);
+  --text-secondary: var(--text-secondary);
+  --text-tertiary: var(--text-tertiary);
+
+  /* WCAG AA: Contraste mínimo 4.5:1 */
+  --text-inverse: var(--official-text-white);
+
+  /* Bordas Official */
+  --border-light: var(--official-border-light);
+  --border-medium: var(--official-border-medium);
+
+  /* Sombras Official */
+  --ifm-box-shadow-card: var(--official-shadow-md);
+  --ifm-box-shadow-card-hover: var(--official-shadow-lg);
+  --shadow-md: var(--official-shadow-md);
+  --shadow-lg: var(--official-shadow-lg);
+  --shadow-xl: var(--official-shadow-dark);
+}
+
+/* Dark Mode - Textos claros quando dark mode está ativo */
+html[data-theme='dark'] [data-theme="official"],
+html[data-theme='dark'][data-theme="official"] {
+  --ifm-color-content: var(--official-text-white);
+  --ifm-color-content-secondary: var(--official-text-light);
+  --text-primary: var(--official-text-white);
+  --text-secondary: var(--official-text-light);
+  --text-tertiary: rgba(255, 255, 255, 0.9);
+}
+/* stylelint-enable color-no-hex */
+
+/* Tema Official - Seções com Background Branco (exceto HeroSection) */
+[data-theme="official"][data-section="light"] {
+  --ifm-background-color: var(--official-bg-white);
+  --ifm-background-surface-color: var(--official-bg-white);
+  --ifm-color-content: var(--official-text-dark);
+  --ifm-color-content-secondary: var(--text-secondary);
+  --text-primary: var(--official-text-dark);
+  --text-secondary: var(--text-secondary);
+  --text-tertiary: var(--text-tertiary);
+  --text-inverse: var(--official-text-white);
+}
+
+/* Dark Mode + Tema Official + data-section="light" - Sobrescrever variáveis para dark mode */
+/* IMPORTANTE: Mesmo com data-section="light", no dark mode os textos devem ser claros */
+html[data-theme='dark'] [data-theme="official"][data-section="light"],
+[data-theme='dark'] [data-theme="official"][data-section="light"] {
+  --ifm-color-content: var(--official-text-white);
+  --ifm-color-content-secondary: var(--official-text-light);
+  --text-primary: var(--official-text-white);
+  --text-secondary: var(--official-text-light);
+  --text-tertiary: rgba(255, 255, 255, 0.9);
+}
+
+/* Seções com tema Official - Background branco (exceto HeroSection que mantém cor sólida) */
+section[data-theme="official"][data-section="light"] {
+  background-color: var(--official-bg-white) !important;
+  color: var(--official-text-dark);
+}
+
+/* HomepageFeatures - Background branco (apenas light mode) */
+section[data-theme="official"][data-section="light"] .features,
+.features[data-theme="official"] {
+  background-color: var(--official-bg-white) !important;
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode - Background azul marinho (mesma cor dos cards) apenas no header */
+[data-theme='dark'] .featuresHeader[data-theme="official"],
+[data-theme='dark'] .features[data-theme="official"] .featuresHeader,
+[data-theme='dark'] section[data-theme="official"] .featuresHeader {
+  background-color: #1A1D29 !important;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  color: #FFFFFF !important;
+}
+
+/* LearningResources - Background branco */
+section[data-theme="official"][data-section="light"] .learningResources,
+.learningResources[data-theme="official"] {
+  background-color: var(--official-bg-white) !important;
+  color: var(--official-text-dark);
+}
+
+/* DeveloperResources - Background branco */
+section[data-theme="official"][data-section="light"] .developerResources,
+.developerResources[data-theme="official"] {
+  background-color: var(--official-bg-white) !important;
+  color: var(--official-text-dark);
+}
+
+/* ============================================
+   CLASSES UTILITÁRIAS Z-API
+   ============================================ */
+
+/* Botões Z-API */
+.zapi-button--primary {
+  background: var(--zapi-primary);
+  color: var(--zapi-text-inverse);
+  border: none;
+  transition: background-color var(--zapi-duration-normal) var(--zapi-ease-out),
+    transform var(--zapi-duration-normal) var(--zapi-ease-out),
+    box-shadow var(--zapi-duration-normal) var(--zapi-ease-out);
+}
+
+.zapi-button--primary:hover {
+  background: var(--zapi-primary-dark);
+  transform: var(--zapi-transform-hover-scale);
+  box-shadow: 0 4px 12px var(--zapi-blue-alpha-30, rgba(0, 102, 255, 0.3));
+}
+
+.zapi-button--secondary {
+  background: transparent;
+  color: var(--zapi-primary);
+  border: 2px solid var(--zapi-primary);
+  transition: background-color var(--zapi-duration-normal) var(--zapi-ease-out),
+    color var(--zapi-duration-normal) var(--zapi-ease-out),
+    transform var(--zapi-duration-normal) var(--zapi-ease-out),
+    border-color var(--zapi-duration-normal) var(--zapi-ease-out);
+}
+
+.zapi-button--secondary:hover {
+  background: var(--zapi-primary);
+  color: var(--zapi-text-inverse);
+  transform: var(--zapi-transform-hover-scale);
+}
+
+/* Cards Z-API */
+.zapi-card {
+  background: var(--zapi-bg-primary);
+  border-radius: var(--zapi-radius-lg);
+  padding: var(--zapi-spacing-8);
+  box-shadow: var(--zapi-shadow-md);
+  transition: box-shadow var(--zapi-duration-normal) var(--zapi-ease-out),
+    transform var(--zapi-duration-normal) var(--zapi-ease-out),
+    border-color var(--zapi-duration-normal) var(--zapi-ease-out);
+  border: 1px solid var(--border-light);
+}
+
+.zapi-card:hover {
+  box-shadow: var(--zapi-shadow-lg);
+  transform: var(--zapi-transform-hover-lift);
+  border-color: var(--zapi-primary);
+}
+
+.zapi-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--zapi-gradient-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--zapi-duration-normal) var(--zapi-ease-out);
+}
+
+.zapi-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Cards Híbridos */
+.hybrid-card {
+  background: var(--ifm-background-surface-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--ifm-spacing-card-padding);
+  box-shadow: var(--ifm-box-shadow-card);
+  transition: box-shadow var(--transition-normal) var(--ease-out),
+    transform var(--transition-normal) var(--ease-out),
+    border-color var(--transition-normal) var(--ease-out);
+  border: 1px solid var(--border-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.hybrid-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--hybrid-gradient-border);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-normal) var(--ease-out);
+  z-index: 1;
+}
+
+.hybrid-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: transparent;
+}
+
+.hybrid-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Cards com tema híbrido aplicado via data-theme */
+[data-theme="hybrid"] .card,
+[data-theme="hybrid"] .zapi-card {
+  position: relative;
+}
+
+[data-theme="hybrid"] .card::after,
+[data-theme="hybrid"] .zapi-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--hybrid-gradient-border);
+  opacity: 0;
+  transition: opacity var(--transition-normal) var(--ease-out);
+  z-index: 1;
+}
+
+[data-theme="hybrid"] .card:hover::after,
+[data-theme="hybrid"] .zapi-card:hover::after {
+  opacity: 1;
+}
+
+/* ============================================
+   CLASSES UTILITÁRIAS OFFICIAL Z-API
+   ============================================ */
+
+/* Botões Official */
+.official-button--primary {
+  background: var(--official-gradient-button);
+  color: var(--official-text-white);
+  border: none;
+  border-radius: var(--zapi-radius-lg);
+  padding: var(--zapi-spacing-4) var(--zapi-spacing-8);
+  font-weight: var(--zapi-font-weight-semibold);
+  transition: transform var(--zapi-duration-normal) var(--zapi-ease-out),
+    box-shadow var(--zapi-duration-normal) var(--zapi-ease-out),
+    background-color var(--zapi-duration-normal) var(--zapi-ease-out);
+  box-shadow: var(--official-shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.official-button--primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--background-white-alpha-20, rgba(255, 255, 255, 0.2)), transparent);
+  transition: left var(--zapi-duration-slow) var(--zapi-ease-out);
+}
+
+.official-button--primary:hover {
+  transform: var(--zapi-transform-hover-scale);
+  box-shadow: var(--official-shadow-glow);
+}
+
+.official-button--primary:hover::before {
+  left: 100%;
+}
+
+.official-button--primary:active {
+  transform: var(--zapi-transform-active-scale);
+}
+
+.official-button--secondary {
+  background: transparent;
+  color: var(--official-accent-green);
+  border: 2px solid var(--official-accent-green);
+  border-radius: var(--zapi-radius-lg);
+  padding: var(--zapi-spacing-4) var(--zapi-spacing-8);
+  font-weight: var(--zapi-font-weight-semibold);
+  transition: background-color var(--zapi-duration-normal) var(--zapi-ease-out),
+    color var(--zapi-duration-normal) var(--zapi-ease-out),
+    transform var(--zapi-duration-normal) var(--zapi-ease-out),
+    box-shadow var(--zapi-duration-normal) var(--zapi-ease-out),
+    border-color var(--zapi-duration-normal) var(--zapi-ease-out);
+}
+
+.official-button--secondary:hover {
+  background: var(--official-accent-green);
+  color: var(--official-text-white);
+  transform: var(--zapi-transform-hover-scale);
+  box-shadow: var(--official-shadow-md);
+}
+
+/* Cards Official */
+.official-card {
+  background: var(--official-bg-dark);
+  border-radius: var(--zapi-radius-lg);
+  padding: var(--zapi-spacing-8);
+  box-shadow: var(--official-shadow-md);
+  transition: box-shadow var(--zapi-duration-normal) var(--zapi-ease-out),
+    transform var(--zapi-duration-normal) var(--zapi-ease-out),
+    border-color var(--zapi-duration-normal) var(--zapi-ease-out);
+  border: 1px solid var(--official-border-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.official-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--official-gradient-text);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--zapi-duration-normal) var(--zapi-ease-out);
+}
+
+.official-card:hover {
+  box-shadow: var(--official-shadow-lg);
+  transform: var(--zapi-transform-hover-lift);
+  border-color: var(--official-accent-green);
+}
+
+.official-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Cards Official em seções claras */
+[data-theme="official"][data-section="light"] .official-card {
+  background: var(--official-bg-white);
+  border: 1px solid var(--official-border-dark);
+}
+
+[data-theme="official"][data-section="light"] .official-card:hover {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-md);
+}
+
+/* Texto com gradiente Official */
+.official-text-gradient {
+  background: var(--official-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: var(--zapi-font-weight-bold);
+}
+
+/* Hero Section Official */
+.official-hero {
+  background: var(--official-gradient-hero);
+  color: var(--official-text-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.official-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 50%, var(--official-accent-green-alpha-15, rgba(0, 166, 133, 0.15)) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, var(--official-accent-green-alpha-15, rgba(0, 166, 133, 0.1)) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.official-hero>* {
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================================
+   NAVBAR OFFICIAL - Cor sólida conforme site oficial
+   ============================================ */
+.navbar {
+  background-color: var(--official-bg-hero-solid) !important;
+  border-bottom: 1px solid var(--official-accent-green-alpha-15, rgba(0, 166, 133, 0.1));
+  box-shadow: var(--shadow-component-md, var(--shadow-md));
+  transition: background-color var(--transition-normal) var(--ease-out);
+}
+
+.navbar__brand,
+.navbar__logo {
+  color: var(--official-text-white) !important;
+}
+
+.navbar__title {
+  color: var(--official-text-white) !important;
+}
+
+.navbar__item {
+  color: var(--official-text-white) !important;
+}
+
+.navbar__link {
+  color: var(--official-text-white) !important;
+  transition: color var(--transition-fast) var(--ease-out);
+}
+
+.navbar__link:hover {
+  color: var(--official-accent-green) !important;
+}
+
+.navbar__link--active {
+  color: var(--official-accent-green) !important;
+}
+
+.navbar__toggle {
+  color: var(--official-text-white) !important;
+}
+
+/* Search bar no navbar */
+.navbar__search-input {
+  background-color: var(--background-white-alpha-10) !important;
+  border: 1px solid var(--official-accent-green-alpha-20) !important;
+  color: var(--official-text-white) !important;
+}
+
+.navbar__search-input::placeholder {
+  color: var(--background-white-alpha-90) !important;
+
+  /* WCAG AA: Contraste mínimo 4.5:1 */
+}
+
+.navbar__search-input:focus {
+  background-color: var(--background-white-alpha-15) !important;
+  border-color: var(--official-accent-green) !important;
+  box-shadow: 0 0 0 3px var(--official-accent-green-alpha-15) !important;
+}
+
+/* Dropdown menu */
+.navbar__dropdown {
+  background-color: var(--official-bg-hero-solid) !important;
+  border: 1px solid var(--official-accent-green-alpha-20) !important;
+  box-shadow: var(--official-shadow-lg) !important;
+}
+
+.navbar__dropdown__link {
+  color: var(--official-text-white) !important;
+}
+
+.navbar__dropdown__link:hover {
+  background-color: var(--official-accent-green-alpha-15) !important;
+  color: var(--official-accent-green) !important;
+}
+
+/* Ícones do navbar */
+.navbar__icon {
+  color: var(--official-text-white) !important;
+}
+
+/* Botão de busca */
+.navbar__search-button {
+  color: var(--official-text-white) !important;
+}
+
+.navbar__search-button:hover {
+  color: var(--official-accent-green) !important;
+}
+
+/* Separador do navbar */
+.navbar__separator {
+  background-color: var(--official-accent-green-alpha-20, rgba(0, 166, 133, 0.2)) !important;
+}
+
+/* DocSearch (busca do Docusaurus) */
+.DocSearch-Button {
+  background-color: var(--background-white-alpha-10, rgba(255, 255, 255, 0.1)) !important;
+  border: 1px solid var(--official-accent-green-alpha-20, rgba(0, 166, 133, 0.2)) !important;
+  color: var(--official-text-white) !important;
+  transition: background-color var(--transition-fast) var(--ease-out),
+    border-color var(--transition-fast) var(--ease-out),
+    color var(--transition-fast) var(--ease-out);
+}
+
+.DocSearch-Button:hover {
+  background-color: var(--background-white-alpha-15, rgba(255, 255, 255, 0.15)) !important;
+  border-color: var(--official-accent-green) !important;
+}
+
+.DocSearch-Button-Placeholder {
+  color: var(--background-white-alpha-90, rgba(255, 255, 255, 0.9)) !important;
+
+  /* WCAG AA: Contraste mínimo 4.5:1 */
+}
+
+.DocSearch-Button-Keys {
+  background-color: var(--background-black-alpha-20, rgba(0, 0, 0, 0.2)) !important;
+  border: 1px solid var(--official-accent-green-alpha-30, rgba(0, 166, 133, 0.3)) !important;
+  color: var(--official-text-white) !important;
+}
+
+.DocSearch-Search-Icon {
+  color: var(--official-text-white) !important;
+}
+
+/* Modal do DocSearch */
+.DocSearch-Modal {
+  background-color: var(--official-bg-hero-solid) !important;
+}
+
+.DocSearch-Input {
+  color: var(--official-text-white) !important;
+}
+
+.DocSearch-Input::placeholder {
+  color: var(--background-white-alpha-90, rgba(255, 255, 255, 0.9)) !important;
+
+  /* WCAG AA: Contraste mínimo 4.5:1 */
+}
+
+/* Garantir font-size mínimo de 16px em mobile para inputs (WCAG 2.1 - Prevenir zoom automático iOS) */
+@media screen and (max-width: 768px) {
+  .navbar__search-input,
+  .DocSearch-Input,
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  textarea,
+  select {
+    font-size: var(--font-size-base) !important;
+
+    /* 16px - prevenir zoom automático iOS */
+  }
+}
+
+/* Dark mode - manter cor sólida */
+[data-theme='dark'] .navbar {
+  background-color: var(--official-bg-hero-solid) !important;
+}
+
+[data-theme='dark'] .navbar__link {
+  color: var(--official-text-white) !important;
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: var(--official-accent-green) !important;
+}
+
+[data-theme='dark'] .navbar__search-input {
+  background-color: var(--background-white-alpha-10) !important;
+  color: var(--official-text-white) !important;
+}
+
+/* ============================================
+   RESPONSIVIDADE GLOBAL - Escala Tipográfica
+   Ajustando escala para mobile e tablet mantendo hierarquia
+   ============================================ */
+
+/* Tablet - 996px e abaixo */
+@media screen and (max-width: 996px) {
+  :root {
+    /* Escala reduzida mantendo proporções */
+    --ifm-h1-font-size: var(--font-size-4xl);
+
+    /* 40px (era 48px) */
+    --ifm-h2-font-size: var(--font-size-3xl);
+
+    /* 32px (era 40px) */
+    --ifm-h3-font-size: var(--font-size-2xl);
+
+    /* 24px (era 32px) */
+    --ifm-h4-font-size: var(--font-size-xl);
+
+    /* 20px (era 24px) */
+    --ifm-h5-font-size: var(--font-size-base);
+
+    /* 16px (era 20px) */
+    --ifm-h6-font-size: var(--font-size-sm);
+
+    /* 14px (era 16px) */
+    --ifm-spacing-section-vertical: var(--spacing-xl);
+  }
+}
+
+/* Mobile - 768px e abaixo */
+@media screen and (max-width: 768px) {
+  :root {
+    /* Escala mobile otimizada */
+    --ifm-h1-font-size: var(--font-size-3xl);
+
+    /* 32px (era 48px) */
+    --ifm-h2-font-size: var(--font-size-2xl);
+
+    /* 24px (era 40px) */
+    --ifm-h3-font-size: var(--font-size-xl);
+
+    /* 20px (era 32px) */
+    --ifm-h4-font-size: var(--font-size-base);
+
+    /* 16px (era 24px) */
+    --ifm-h5-font-size: var(--font-size-sm);
+
+    /* 14px (era 20px) */
+    --ifm-h6-font-size: var(--font-size-xs);
+
+    /* 12px (era 16px) */
+    --ifm-spacing-section-vertical: var(--spacing-lg);
+    --ifm-spacing-section-horizontal: var(--spacing-md);
+
+    /* Garantir mínimo 16px para body text em mobile (previne zoom iOS) */
+    --ifm-font-size-base: var(--font-size-16px);
+
+    /* 16px - mínimo absoluto */
+  }
+
+  /* Garantir que todos os textos de body tenham mínimo 16px */
+  body,
+  p,
+  .text,
+  .markdown p,
+  .theme-doc-markdown p,
+  .theme-blog-post-page .markdown p {
+    font-size: var(--font-size-16px) !important;
+
+    /* 16px mínimo - previne zoom iOS */
+    line-height: var(--line-height-relaxed);
+
+    /* 1.6 para leitura confortável */
+  }
+
+  /* Ajustar line-heights em mobile para melhor legibilidade */
+  h1,
+  .h1 {
+    line-height: var(--line-height-snug);
+
+    /* 1.3 em mobile (era 1.2) */
+  }
+
+  h2,
+  .h2 {
+    line-height: var(--line-height-snug);
+
+    /* 1.3 em mobile (era 1.2) */
+  }
+
+  /* Aplicar line-heights corretos para headings em mobile */
+  h1,
+  .h1,
+  .theme-doc-markdown h1 {
+    line-height: var(--line-height-tight);
+
+    /* 1.2 */
+  }
+
+  h2,
+  .h2,
+  .theme-doc-markdown h2 {
+    line-height: var(--line-height-tight);
+
+    /* 1.2 */
+  }
+
+  h3,
+  .h3,
+  .theme-doc-markdown h3 {
+    line-height: var(--line-height-snug);
+
+    /* 1.3 */
+  }
+
+  h4,
+  .h4,
+  .theme-doc-markdown h4 {
+    line-height: var(--line-height-snug);
+
+    /* 1.3 */
+  }
+
+  h5,
+  .h5,
+  .theme-doc-markdown h5,
+  h6,
+  .h6,
+  .theme-doc-markdown h6 {
+    line-height: var(--line-height-normal);
+
+    /* 1.5 */
+  }
+
+  /* Navbar mobile */
+  .navbar-sidebar {
+    background-color: var(--official-bg-hero-solid) !important;
+  }
+
+  .navbar-sidebar__brand {
+    color: var(--official-text-white) !important;
+  }
+
+  .navbar-sidebar__item {
+    color: var(--official-text-white) !important;
+  }
+
+  .navbar-sidebar__link {
+    color: var(--official-text-white) !important;
+  }
+
+  .navbar-sidebar__link:hover,
+  .navbar-sidebar__link--active {
+    color: var(--official-accent-green) !important;
+    background-color: var(--official-accent-green-alpha-15, rgba(0, 166, 133, 0.1)) !important;
+  }
+}
+
+/* ============================================
+   FOOTER - Cor Verde Escura do WhatsApp
+   Mesma cor do HeroSection (#1A1D29)
+   ============================================ */
+.footer {
+  background-color: var(--official-bg-hero-solid) !important;
+  color: var(--official-text-white) !important;
+  border-top: 1px solid var(--official-accent-green-alpha-15, rgba(0, 166, 133, 0.1));
+}
+
+.footer__title {
+  color: var(--official-text-white) !important;
+}
+
+.footer__link-item {
+  color: var(--text-secondary, rgba(255, 255, 255, 0.8)) !important;
+  transition: color var(--transition-fast) var(--ease-out);
+}
+
+.footer__link-item:hover {
+  color: var(--official-accent-green) !important;
+}
+
+.footer__copyright {
+  color: var(--official-text-light-alpha-80) !important;
+
+  /* rgba(255, 255, 255, 0.8) - mais próximo de 0.7, garante contraste WCAG AA */
+}
+
+.footer__logo {
+  opacity: 0.9;
+  transition: opacity var(--transition-fast) var(--ease-out);
+}
+
+.footer__logo:hover {
+  opacity: 1;
+}
+
+/* Dark mode - manter cor verde escura do WhatsApp */
+[data-theme='dark'] .footer {
+  background-color: #1A1D29 !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .footer__title {
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+  color: var(--official-accent-green) !important;
+}
+
+[data-theme='dark'] .footer__copyright {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* ============================================
+   DOCS PAGE LAYOUT IMPROVEMENTS
+   ============================================ */
+
+/* Container principal da documentação - max-width legível */
+.docs-wrapper,
+.theme-doc-version-badge-wrapper,
+.theme-doc-version-dropdown {
+  max-width: 100%;
+}
+
+/* Main content area - melhor legibilidade */
+.main-wrapper {
+  max-width: 100%;
+}
+
+/* Dark Mode - Background escuro para páginas de documentação - UNIFORME */
+[data-theme='dark'] .main-wrapper,
+[data-theme='dark'] .docs-wrapper,
+[data-theme='dark'] .theme-doc-wrapper {
+  background-color: #1A1D29 !important;
+}
+
+/* Dark Mode - Cards e HeroSection na documentação - UNIFORME */
+[data-theme='dark'] .heroSection,
+[data-theme='dark'] .card {
+  background: #1A1D29 !important;
+  color: #FFFFFF !important;
+}
+
+/* Light Mode - Card Title e Description na documentação (cores escuras fixas) */
+html:not([data-theme='dark']) .cardTitle {
+  color: #091E42 !important;
+}
+
+html:not([data-theme='dark']) .cardDescription {
+  color: #677483 !important;
+}
+
+/* Dark Mode - Card Title e Description na documentação (cores claras) */
+[data-theme='dark'] .cardTitle {
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .cardDescription {
+  color: #B3BAC5 !important;
+}
+
+/* Dark Mode - Background escuro para páginas de blog - UNIFORME */
+[data-theme='dark'] .theme-blog-list-page,
+[data-theme='dark'] .theme-blog-post-page,
+[data-theme='dark'] .blog-wrapper {
+  background-color: #1A1D29 !important;
+}
+
+.theme-doc-markdown {
+  max-width: 100%;
+}
+
+/* Container do conteúdo principal - max-width legível */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+@media (min-width: 997px) {
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+/* ============================================
+   DOCUMENTAÇÃO - Aplicação da Escala Tipográfica
+   ============================================ */
+
+/* Melhorias na legibilidade do conteúdo */
+.theme-doc-markdown {
+  /* Max-width legível para texto */
+  max-width: 100%;
+  line-height: var(--line-height-relaxed);
+
+  /* 1.6 para leitura confortável */
+}
+
+/* Headings na documentação - Usando escala consistente */
+.theme-doc-markdown h1 {
+  font-size: var(--ifm-h1-font-size);
+
+  /* 48px */
+  font-weight: var(--font-weight-bold);
+
+  /* 700 */
+  line-height: var(--ifm-h1-line-height);
+
+  /* 1.2 */
+  margin-top: var(--spacing-2xl);
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: -0.02em;
+}
+
+.theme-doc-markdown h2 {
+  font-size: var(--ifm-h2-font-size);
+
+  /* 40px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h2-line-height);
+
+  /* 1.2 */
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.01em;
+}
+
+.theme-doc-markdown h3 {
+  font-size: var(--ifm-h3-font-size);
+
+  /* 32px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h3-line-height);
+
+  /* 1.3 */
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.theme-doc-markdown h4 {
+  font-size: var(--ifm-h4-font-size);
+
+  /* 24px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h4-line-height);
+
+  /* 1.3 */
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.theme-doc-markdown h5,
+.theme-doc-markdown h6 {
+  font-size: var(--ifm-h5-font-size);
+
+  /* 20px / 16px */
+  font-weight: var(--font-weight-medium);
+
+  /* 500 */
+  line-height: var(--ifm-h5-line-height);
+
+  /* 1.5 */
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.theme-doc-markdown h6 {
+  font-size: var(--ifm-h6-font-size);
+
+  /* 16px */
+  line-height: var(--ifm-h6-line-height);
+
+  /* 1.5 */
+}
+
+.theme-doc-markdown p {
+  margin-bottom: var(--spacing-md);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Headings na documentação - Consolidado com escala tipográfica */
+.theme-doc-markdown h1 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--ifm-h1-font-size);
+
+  /* 48px */
+  font-weight: var(--font-weight-bold);
+
+  /* 700 */
+  line-height: var(--ifm-h1-line-height);
+
+  /* 1.2 */
+  letter-spacing: -0.02em;
+}
+
+.theme-doc-markdown h2 {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--border-light);
+  font-size: var(--ifm-h2-font-size);
+
+  /* 40px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h2-line-height);
+
+  /* 1.2 */
+  letter-spacing: -0.01em;
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.theme-doc-markdown h3 {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--ifm-h3-font-size);
+
+  /* 32px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h3-line-height);
+
+  /* 1.3 */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.theme-doc-markdown h4 {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--ifm-h4-font-size);
+
+  /* 24px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  line-height: var(--ifm-h4-line-height);
+
+  /* 1.3 */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.theme-doc-markdown h5 {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--ifm-h5-font-size);
+
+  /* 20px */
+  font-weight: var(--font-weight-medium);
+
+  /* 500 */
+  line-height: var(--ifm-h5-line-height);
+
+  /* 1.5 */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.theme-doc-markdown h6 {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--ifm-h6-font-size);
+
+  /* 16px */
+  font-weight: var(--font-weight-medium);
+
+  /* 500 */
+  line-height: var(--ifm-h6-line-height);
+
+  /* 1.5 */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+/* Melhorias em listas */
+.theme-doc-markdown ul,
+.theme-doc-markdown ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.theme-doc-markdown li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Melhorias em tabelas */
+.theme-doc-markdown table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: var(--spacing-md);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.theme-doc-markdown table thead {
+  background-color: var(--ifm-background-surface-color);
+  border-bottom: 2px solid var(--border-medium);
+}
+
+.theme-doc-markdown table th {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+}
+
+.theme-doc-markdown table td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.theme-doc-markdown table tr:hover {
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* ============================================
+   IMAGENS NA DOCUMENTAÇÃO - Estrutura Semântica
+   ============================================ */
+
+/* 
+ * Estrutura semântica usando <figure> e <figcaption>
+ * Segue HTML5 best practices e WCAG guidelines
+ * Todas as imagens Markdown são automaticamente convertidas para <figure>
+ */
+
+/* Container semântico para imagens */
+.theme-doc-markdown figure {
+  margin: var(--spacing-lg) 0;
+  padding: 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Imagens dentro do figure - altura máxima 800px */
+.theme-doc-markdown figure img {
+  max-width: 100%;
+  max-height: 800px;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  object-fit: contain;
+}
+
+/* Legenda da imagem */
+.theme-doc-markdown figcaption {
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-body-small);
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: center;
+  line-height: var(--line-height-normal);
+}
+
+/* Fallback para imagens que não foram convertidas (compatibilidade) */
+.theme-doc-markdown img:not(figure img) {
+  max-width: 100%;
+  max-height: 800px;
+  height: auto;
+  display: block;
+  margin: var(--spacing-lg) auto;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  object-fit: contain;
+}
+
+/* Responsividade - limitar largura máxima em telas maiores */
+@media (min-width: 768px) {
+  .theme-doc-markdown figure {
+    max-width: min(100%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .theme-doc-markdown figure img {
+    max-width: 100%;
+    max-height: 800px;
+  }
+  
+  .theme-doc-markdown img:not(figure img) {
+    max-width: min(100%, 900px);
+    max-height: 800px;
+  }
+}
+
+/* Telas muito grandes - manter legibilidade */
+@media (min-width: 1200px) {
+  .theme-doc-markdown figure {
+    max-width: min(100%, 1000px);
+  }
+  
+  .theme-doc-markdown figure img {
+    max-width: 100%;
+    max-height: 800px;
+  }
+  
+  .theme-doc-markdown img:not(figure img) {
+    max-width: min(100%, 1000px);
+    max-height: 800px;
+  }
+}
+
+/* Sticky TOC - melhor posicionamento */
+.theme-doc-toc-mobile {
+  margin-bottom: var(--spacing-md);
+}
+
+@media (min-width: 997px) {
+  .theme-doc-toc-desktop {
+    position: sticky;
+    top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+    max-height: calc(100vh - var(--ifm-navbar-height) - var(--spacing-md));
+    overflow-y: auto;
+    padding-left: var(--spacing-md);
+    border-left: 1px solid var(--border-light);
+  }
+
+  /* Scrollbar customizada para TOC */
+  .theme-doc-toc-desktop::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .theme-doc-toc-desktop::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .theme-doc-toc-desktop::-webkit-scrollbar-thumb {
+    background: var(--border-medium);
+    border-radius: var(--border-radius-full);
+  }
+
+  .theme-doc-toc-desktop::-webkit-scrollbar-thumb:hover {
+    background: var(--ifm-color-primary);
+  }
+}
+
+/* Melhorias em anchor links */
+.theme-doc-markdown h2 .hash-link,
+.theme-doc-markdown h3 .hash-link,
+.theme-doc-markdown h4 .hash-link,
+.theme-doc-markdown h5 .hash-link,
+.theme-doc-markdown h6 .hash-link {
+  opacity: 0;
+  transition: opacity var(--transition-fast) var(--ease-out);
+  margin-left: var(--spacing-xs);
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.theme-doc-markdown h2:hover .hash-link,
+.theme-doc-markdown h3:hover .hash-link,
+.theme-doc-markdown h4:hover .hash-link,
+.theme-doc-markdown h5:hover .hash-link,
+.theme-doc-markdown h6:hover .hash-link {
+  opacity: 1;
+}
+
+.theme-doc-markdown h2 .hash-link:focus,
+.theme-doc-markdown h3 .hash-link:focus,
+.theme-doc-markdown h4 .hash-link:focus,
+.theme-doc-markdown h5 .hash-link:focus,
+.theme-doc-markdown h6 .hash-link:focus {
+  opacity: 1;
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* ============================================
+   CODE BLOCKS ENHANCEMENTS
+   ============================================ */
+
+/* Container de código - estilo terminal aplicado */
+.prism-code {
+  background: var(--terminal-bg) !important;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  position: relative;
+  color: var(--terminal-text) !important;
+}
+
+/* CodeBlockContainer do Docusaurus - estilo terminal */
+.codeBlockContainer,
+.codeBlock {
+  background: var(--terminal-bg) !important;
+  border: 1px solid var(--terminal-border) !important;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
+  margin: var(--spacing-lg) 0;
+  overflow: hidden;
+}
+
+.codeBlockContainer pre,
+.codeBlock pre {
+  background: var(--terminal-bg) !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.codeBlockContainer code,
+.codeBlock code {
+  background: var(--terminal-bg) !important;
+  color: var(--terminal-text) !important;
+}
+
+/* Melhorias no botão de copiar */
+.clean-btn {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-primary);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  transition: all var(--transition-fast) var(--ease-out);
+  opacity: 0.8;
+}
+
+.clean-btn:hover {
+  opacity: 1;
+  background: var(--ifm-color-primary);
+  color: var(--text-inverse);
+  border-color: var(--ifm-color-primary);
+  transform: var(--transform-hover-scale);
+}
+
+.clean-btn:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Language badge - adaptado para fundo escuro do terminal */
+.code-block-language {
+  position: absolute;
+  top: var(--spacing-xs);
+  right: var(--spacing-xs);
+  background: var(--terminal-header-bg) !important;
+  color: var(--terminal-text-secondary) !important;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--terminal-border);
+}
+
+[data-theme='dark'] .code-block-language {
+  background: var(--terminal-header-bg) !important;
+  color: var(--terminal-text-secondary) !important;
+}
+
+/* Melhorias em blocos de código inline */
+/* Verde fluorescente para borda e texto - estilo moderno e destacado */
+code {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--code-fluorescent-green);
+  border-radius: var(--border-radius-sm);
+  padding: 0.125rem 0.375rem;
+  font-size: var(--ifm-code-font-size);
+  color: var(--code-fluorescent-green);
+  font-weight: var(--font-weight-medium);
+  box-shadow: 0 0 4px rgba(57, 255, 20, 0.2);
+
+  /* Sombra sutil verde fluorescente para efeito glow */
+}
+
+/* ============================================
+   BLOCOS DE CÓDIGO ESTILO TERMINAL
+   Melhora estética e cores de sintaxe para <pre><code>
+   Aplica tema Dracula com melhorias visuais
+   ============================================ */
+
+/* Container pre com estilo terminal */
+pre {
+  background: var(--terminal-bg) !important;
+  border: 1px solid var(--terminal-border) !important;
+  border-radius: var(--border-radius-md);
+  padding: 0 !important;
+  margin: var(--spacing-lg) 0;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+
+  /* Word wrap habilitado */
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Blocos de código com aparência de terminal */
+pre code,
+pre code[class*='language-'] {
+  /* Fundo escuro estilo terminal (Dracula theme melhorado) */
+  background: var(--terminal-bg) !important;
+  color: var(--terminal-text) !important;
+  font-family: var(--zapi-font-family-mono);
+  font-size: var(--font-size-base);
+
+  /* Aumentado de sm para base (16px) para melhor legibilidade */
+  line-height: 1.6;
+
+  /* Line height aumentado para melhor espaçamento */
+  display: block;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  overflow-x: auto;
+
+  /* Word wrap habilitado */
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  position: relative;
+  font-weight: 400;
+
+  /* Peso da fonte normal para melhor legibilidade */
+  letter-spacing: 0.01em;
+
+  /* Espaçamento de letras sutil para melhor clareza */
+}
+
+/* ============================================
+   CORES DE SINTAXE UNIVERSAL - TODAS AS LINGUAGENS
+   Aplica tema Dracula FLUORESCENTE para TODOS os blocos de código
+   Seletores abrangentes para garantir aplicação em toda a documentação
+   ============================================ */
+
+/* ============================================
+   SELEÇÃO UNIVERSAL DE TOKENS - APLICA EM TODOS OS BLOCOS DE CÓDIGO
+   ============================================ */
+
+/* Seletores genéricos para TODOS os tokens em TODOS os blocos de código */
+.token,
+pre .token,
+code .token,
+.prism-code .token,
+.codeBlockContainer .token,
+.codeBlock .token,
+pre code .token,
+pre code[class*='language-'] .token,
+[class*='language-'] .token,
+.theme-doc-markdown pre code .token,
+.theme-doc-markdown .token,
+article pre code .token,
+article .token {
+  font-family: var(--zapi-font-family-mono);
+  font-weight: 400;
+
+  /* Peso normal para melhor legibilidade */
+  letter-spacing: 0.01em;
+
+  /* Espaçamento sutil para clareza */
+}
+
+/* Token plain (texto sem classificação) - Cor padrão branca clara - APLICA EM TODOS */
+.token.plain,
+pre .token.plain,
+code .token.plain,
+.prism-code .token.plain,
+.codeBlockContainer .token.plain,
+.codeBlock .token.plain,
+pre code .token.plain,
+pre code[class*='language-'] .token.plain,
+[class*='language-'] .token.plain,
+.theme-doc-markdown pre code .token.plain,
+.theme-doc-markdown .token.plain,
+article pre code .token.plain,
+article .token.plain {
+  color: var(--terminal-text) !important;
+
+  /* Cor padrão branca clara para tokens sem classificação específica */
+}
+
+/* Keywords e booleans - Rosa FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.keyword,
+.token.boolean,
+pre .token.keyword,
+pre .token.boolean,
+code .token.keyword,
+code .token.boolean,
+.prism-code .token.keyword,
+.prism-code .token.boolean,
+.codeBlockContainer .token.keyword,
+.codeBlockContainer .token.boolean,
+.codeBlock .token.keyword,
+.codeBlock .token.boolean,
+pre code .token.keyword,
+pre code .token.boolean,
+pre code[class*='language-'] .token.keyword,
+pre code[class*='language-'] .token.boolean,
+[class*='language-'] .token.keyword,
+[class*='language-'] .token.boolean,
+.theme-doc-markdown pre code .token.keyword,
+.theme-doc-markdown pre code .token.boolean,
+.theme-doc-markdown .token.keyword,
+.theme-doc-markdown .token.boolean,
+article pre code .token.keyword,
+article pre code .token.boolean,
+article .token.keyword,
+article .token.boolean {
+  color: var(--code-keyword) !important;
+}
+
+/* Strings e chars - Amarelo FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.string,
+.token.char,
+.token.template-string,
+pre .token.string,
+pre .token.char,
+pre .token.template-string,
+code .token.string,
+code .token.char,
+code .token.template-string,
+.prism-code .token.string,
+.prism-code .token.char,
+.prism-code .token.template-string,
+.codeBlockContainer .token.string,
+.codeBlockContainer .token.char,
+.codeBlockContainer .token.template-string,
+.codeBlock .token.string,
+.codeBlock .token.char,
+.codeBlock .token.template-string,
+pre code .token.string,
+pre code .token.char,
+pre code .token.template-string,
+pre code[class*='language-'] .token.string,
+pre code[class*='language-'] .token.char,
+pre code[class*='language-'] .token.template-string,
+[class*='language-'] .token.string,
+[class*='language-'] .token.char,
+[class*='language-'] .token.template-string,
+.theme-doc-markdown pre code .token.string,
+.theme-doc-markdown pre code .token.char,
+.theme-doc-markdown pre code .token.template-string,
+.theme-doc-markdown .token.string,
+.theme-doc-markdown .token.char,
+.theme-doc-markdown .token.template-string,
+article pre code .token.string,
+article pre code .token.char,
+article pre code .token.template-string,
+article .token.string,
+article .token.char,
+article .token.template-string {
+  color: var(--code-string) !important;
+}
+
+/* Interpolação em template strings - Ciano FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.interpolation,
+pre .token.interpolation,
+code .token.interpolation,
+.prism-code .token.interpolation,
+.codeBlockContainer .token.interpolation,
+.codeBlock .token.interpolation,
+pre code .token.interpolation,
+pre code[class*='language-'] .token.interpolation,
+[class*='language-'] .token.interpolation,
+.theme-doc-markdown pre code .token.interpolation,
+.theme-doc-markdown .token.interpolation,
+article pre code .token.interpolation,
+article .token.interpolation {
+  color: var(--code-variable) !important;
+}
+
+/* Numbers - Roxo - APLICA EM TODOS OS BLOCOS */
+.token.number,
+.token.constant,
+pre .token.number,
+pre .token.constant,
+code .token.number,
+code .token.constant,
+.prism-code .token.number,
+.prism-code .token.constant,
+.codeBlockContainer .token.number,
+.codeBlockContainer .token.constant,
+.codeBlock .token.number,
+.codeBlock .token.constant,
+pre code .token.number,
+pre code .token.constant,
+pre code[class*='language-'] .token.number,
+pre code[class*='language-'] .token.constant,
+[class*='language-'] .token.number,
+[class*='language-'] .token.constant,
+.theme-doc-markdown pre code .token.number,
+.theme-doc-markdown pre code .token.constant,
+.theme-doc-markdown .token.number,
+.theme-doc-markdown .token.constant,
+article pre code .token.number,
+article pre code .token.constant,
+article .token.number,
+article .token.constant {
+  color: var(--code-number) !important;
+}
+
+/* Functions - Verde FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.function,
+.token.function-name,
+.token.builtin,
+pre .token.function,
+pre .token.function-name,
+pre .token.builtin,
+code .token.function,
+code .token.function-name,
+code .token.builtin,
+.prism-code .token.function,
+.prism-code .token.function-name,
+.prism-code .token.builtin,
+.codeBlockContainer .token.function,
+.codeBlockContainer .token.function-name,
+.codeBlockContainer .token.builtin,
+.codeBlock .token.function,
+.codeBlock .token.function-name,
+.codeBlock .token.builtin,
+pre code .token.function,
+pre code .token.function-name,
+pre code .token.builtin,
+pre code[class*='language-'] .token.function,
+pre code[class*='language-'] .token.function-name,
+pre code[class*='language-'] .token.builtin,
+[class*='language-'] .token.function,
+[class*='language-'] .token.function-name,
+[class*='language-'] .token.builtin,
+.theme-doc-markdown pre code .token.function,
+.theme-doc-markdown pre code .token.function-name,
+.theme-doc-markdown pre code .token.builtin,
+.theme-doc-markdown .token.function,
+.theme-doc-markdown .token.function-name,
+.theme-doc-markdown .token.builtin,
+article pre code .token.function,
+article pre code .token.function-name,
+article pre code .token.builtin,
+article .token.function,
+article .token.function-name,
+article .token.builtin {
+  color: var(--code-function) !important;
+}
+
+/* Comments - Ciano FLUORESCENTE, itálico - APLICA EM TODOS OS BLOCOS */
+.token.comment,
+pre .token.comment,
+code .token.comment,
+.prism-code .token.comment,
+.codeBlockContainer .token.comment,
+.codeBlock .token.comment,
+pre code .token.comment,
+pre code[class*='language-'] .token.comment,
+[class*='language-'] .token.comment,
+.theme-doc-markdown pre code .token.comment,
+.theme-doc-markdown .token.comment,
+article pre code .token.comment,
+article .token.comment {
+  color: var(--code-comment) !important;
+  font-style: italic;
+  opacity: 0.9;
+
+  /* Opacidade ligeiramente reduzida para melhor contraste */
+}
+
+/* Operators - Rosa FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.operator,
+pre .token.operator,
+code .token.operator,
+.prism-code .token.operator,
+.codeBlockContainer .token.operator,
+.codeBlock .token.operator,
+pre code .token.operator,
+pre code[class*='language-'] .token.operator,
+[class*='language-'] .token.operator,
+.theme-doc-markdown pre code .token.operator,
+.theme-doc-markdown .token.operator,
+article pre code .token.operator,
+article .token.operator {
+  color: var(--code-operator) !important;
+}
+
+/* Punctuation - Branco PURO e CLARO - APLICA EM TODOS OS BLOCOS (chaves, pontos, vírgulas, etc.) */
+.token.punctuation,
+pre .token.punctuation,
+code .token.punctuation,
+.prism-code .token.punctuation,
+.codeBlockContainer .token.punctuation,
+.codeBlock .token.punctuation,
+pre code .token.punctuation,
+pre code[class*='language-'] .token.punctuation,
+[class*='language-'] .token.punctuation,
+.theme-doc-markdown pre code .token.punctuation,
+.theme-doc-markdown .token.punctuation,
+article pre code .token.punctuation,
+article .token.punctuation {
+  color: var(--code-punctuation) !important;
+
+  /* Branco puro (#ffffff) para máxima visibilidade de chaves, pontos, vírgulas, etc. */
+}
+
+/* Properties - Ciano FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.property,
+pre .token.property,
+code .token.property,
+.prism-code .token.property,
+.codeBlockContainer .token.property,
+.codeBlock .token.property,
+pre code .token.property,
+pre code[class*='language-'] .token.property,
+[class*='language-'] .token.property,
+.theme-doc-markdown pre code .token.property,
+.theme-doc-markdown .token.property,
+article pre code .token.property,
+article .token.property {
+  color: var(--code-property) !important;
+}
+
+/* Classes - Verde FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.class-name,
+pre .token.class-name,
+code .token.class-name,
+.prism-code .token.class-name,
+.codeBlockContainer .token.class-name,
+.codeBlock .token.class-name,
+pre code .token.class-name,
+pre code[class*='language-'] .token.class-name,
+[class*='language-'] .token.class-name,
+.theme-doc-markdown pre code .token.class-name,
+.theme-doc-markdown .token.class-name,
+article pre code .token.class-name,
+article .token.class-name {
+  color: var(--code-class) !important;
+}
+
+/* Variables e parameters - Ciano FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.variable,
+.token.parameter,
+pre .token.variable,
+pre .token.parameter,
+code .token.variable,
+code .token.parameter,
+.prism-code .token.variable,
+.prism-code .token.parameter,
+.codeBlockContainer .token.variable,
+.codeBlockContainer .token.parameter,
+.codeBlock .token.variable,
+.codeBlock .token.parameter,
+pre code .token.variable,
+pre code .token.parameter,
+pre code[class*='language-'] .token.variable,
+pre code[class*='language-'] .token.parameter,
+[class*='language-'] .token.variable,
+[class*='language-'] .token.parameter,
+.theme-doc-markdown pre code .token.variable,
+.theme-doc-markdown pre code .token.parameter,
+.theme-doc-markdown .token.variable,
+.theme-doc-markdown .token.parameter,
+article pre code .token.variable,
+article pre code .token.parameter,
+article .token.variable,
+article .token.parameter {
+  color: var(--code-variable) !important;
+}
+
+/* Scrollbar customizada para blocos de código terminal */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--terminal-header-bg);
+  border-radius: var(--border-radius-sm);
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--terminal-border);
+  border-radius: var(--border-radius-full);
+  transition: background var(--transition-fast) var(--ease-out);
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: var(--terminal-text-secondary);
+}
+
+/* Melhorias para código sem classe de linguagem */
+pre code:not([class*='language-']) {
+  color: var(--terminal-text) !important;
+  background: var(--terminal-bg) !important;
+}
+
+/* ============================================
+   TOKENS ESPECÍFICOS - Suporte para todas as linguagens
+   ============================================ */
+
+/* Regular expressions - Amarelo FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.regex,
+pre .token.regex,
+code .token.regex,
+.prism-code .token.regex,
+.codeBlockContainer .token.regex,
+.codeBlock .token.regex,
+pre code .token.regex,
+pre code[class*='language-'] .token.regex,
+[class*='language-'] .token.regex,
+.theme-doc-markdown pre code .token.regex,
+.theme-doc-markdown .token.regex,
+article pre code .token.regex,
+article .token.regex {
+  color: var(--code-string) !important;
+}
+
+/* Important keywords - Rosa FLUORESCENTE, negrito - APLICA EM TODOS OS BLOCOS */
+.token.important,
+pre .token.important,
+code .token.important,
+.prism-code .token.important,
+.codeBlockContainer .token.important,
+.codeBlock .token.important,
+pre code .token.important,
+pre code[class*='language-'] .token.important,
+[class*='language-'] .token.important,
+.theme-doc-markdown pre code .token.important,
+.theme-doc-markdown .token.important,
+article pre code .token.important,
+article .token.important {
+  color: var(--code-keyword) !important;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Tags HTML/XML - Vermelho FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.tag,
+pre .token.tag,
+code .token.tag,
+.prism-code .token.tag,
+.codeBlockContainer .token.tag,
+.codeBlock .token.tag,
+pre code .token.tag,
+pre code[class*='language-'] .token.tag,
+[class*='language-'] .token.tag,
+.theme-doc-markdown pre code .token.tag,
+.theme-doc-markdown .token.tag,
+article pre code .token.tag,
+article .token.tag {
+  color: var(--code-tag) !important;
+}
+
+/* Attribute names - Verde FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.attr-name,
+pre .token.attr-name,
+code .token.attr-name,
+.prism-code .token.attr-name,
+.codeBlockContainer .token.attr-name,
+.codeBlock .token.attr-name,
+pre code .token.attr-name,
+pre code[class*='language-'] .token.attr-name,
+[class*='language-'] .token.attr-name,
+.theme-doc-markdown pre code .token.attr-name,
+.theme-doc-markdown .token.attr-name,
+article pre code .token.attr-name,
+article .token.attr-name {
+  color: var(--code-attr-name) !important;
+}
+
+/* Attribute values - Amarelo FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.attr-value,
+pre .token.attr-value,
+code .token.attr-value,
+.prism-code .token.attr-value,
+.codeBlockContainer .token.attr-value,
+.codeBlock .token.attr-value,
+pre code .token.attr-value,
+pre code[class*='language-'] .token.attr-value,
+[class*='language-'] .token.attr-value,
+.theme-doc-markdown pre code .token.attr-value,
+.theme-doc-markdown .token.attr-value,
+article pre code .token.attr-value,
+article .token.attr-value {
+  color: var(--code-attr-value) !important;
+}
+
+/* Selectors e at-rules (CSS) - Rosa FLUORESCENTE - APLICA EM TODOS OS BLOCOS */
+.token.selector,
+.token.atrule,
+pre .token.selector,
+pre .token.atrule,
+code .token.selector,
+code .token.atrule,
+.prism-code .token.selector,
+.prism-code .token.atrule,
+.codeBlockContainer .token.selector,
+.codeBlockContainer .token.atrule,
+.codeBlock .token.selector,
+.codeBlock .token.atrule,
+pre code .token.selector,
+pre code .token.atrule,
+pre code[class*='language-'] .token.selector,
+pre code[class*='language-'] .token.atrule,
+[class*='language-'] .token.selector,
+[class*='language-'] .token.atrule,
+.theme-doc-markdown pre code .token.selector,
+.theme-doc-markdown pre code .token.atrule,
+.theme-doc-markdown .token.selector,
+.theme-doc-markdown .token.atrule,
+article pre code .token.selector,
+article pre code .token.atrule,
+article .token.selector,
+article .token.atrule {
+  color: var(--code-keyword) !important;
+}
+
+/* Linguagens específicas - Cores FLUORESCENTES */
+pre code[class*='language-python'] .token.decorator {
+  color: var(--code-keyword) !important;
+
+  /* Rosa fluorescente */
+}
+
+pre code[class*='language-http'] .token.attr-name {
+  color: var(--code-property) !important;
+
+  /* Ciano fluorescente */
+}
+
+/* Highlighted code lines - melhor visibilidade */
+.docusaurus-highlight-code-line {
+  background-color: rgba(255, 121, 198, 0.15) !important;
+
+  /* Rosa com opacidade para destacar linhas */
+  display: block;
+  margin: 0 calc(-1 * var(--spacing-md));
+  padding: 0 var(--spacing-md);
+  border-left: 3px solid var(--code-keyword);
+
+  /* Borda rosa para destacar */
+}
+
+/* ============================================
+   WORD WRAP - Habilitado por padrão em todos os blocos de código
+   ============================================ */
+
+/* Blocos de código do Docusaurus - word wrap habilitado */
+.codeBlockContainer pre,
+.codeBlockContainer code,
+.codeBlock pre,
+.codeBlock code,
+.prism-code,
+pre code {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* ============================================
+   ADMONITIONS (:::warning, :::info, etc.) ENHANCEMENTS
+   ============================================ */
+
+.admonition {
+  border-radius: var(--border-radius-md);
+  border-left-width: 4px;
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.admonition-heading {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.admonition-icon {
+  margin-right: var(--spacing-xs);
+}
+
+.admonition-content {
+  margin-top: var(--spacing-sm);
+}
+
+.admonition-content> :last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   NAVBAR IMPROVEMENTS
+   ============================================ */
+
+/* Indicador para links externos */
+.navbar__link--external::after {
+  content: '↗';
+  margin-left: 0.25rem;
+  font-size: 0.875em;
+
+  /* 87.5% do tamanho do elemento pai - mantido como em para proporcionalidade relativa */
+  opacity: 0.7;
+  display: inline-block;
+  transition: transform var(--transition-fast) var(--ease-out);
+}
+
+.navbar__link--external:hover::after {
+  transform: translate(2px, -2px);
+  opacity: 1;
+}
+
+/* Active link styles */
+.navbar__link--active {
+  color: var(--ifm-color-primary) !important;
+  font-weight: var(--font-weight-semibold);
+  position: relative;
+}
+
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--ifm-color-primary);
+  border-radius: var(--border-radius-sm);
+}
+
+/* Sidebar icons */
+.sidebarItemWithIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  line-height: 1.3;
+}
+
+.sidebarItemIcon {
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+  color: var(--ifm-color-content-secondary);
+  opacity: 0.9;
+  transform-origin: center;
+  transition:
+    color var(--transition-fast) var(--ease-out),
+    transform var(--transition-fast) var(--ease-out),
+    opacity var(--transition-fast) var(--ease-out);
+}
+
+.menu__link--active .sidebarItemIcon,
+.menu__link:hover .sidebarItemIcon {
+  color: var(--ifm-color-primary);
+  opacity: 1;
+  transform: translateY(-1px) scale(1.05);
+}
+
+/* ============================================
+   RESPONSIVE IMPROVEMENTS FOR DOCS
+   ============================================ */
+
+/* Responsividade para documentação - Tablet */
+@media (max-width: 996px) {
+  .theme-doc-markdown {
+    padding: 0 var(--spacing-sm);
+  }
+
+  /* Escala reduzida mantendo proporções */
+  .theme-doc-markdown h1 {
+    font-size: var(--font-size-4xl);
+
+    /* 40px (era 48px) */
+    line-height: var(--line-height-snug);
+
+    /* 1.3 em tablet */
+  }
+
+  .theme-doc-markdown h2 {
+    font-size: var(--font-size-3xl);
+
+    /* 32px (era 40px) */
+    line-height: var(--line-height-snug);
+
+    /* 1.3 em tablet */
+    margin-top: var(--spacing-lg);
+  }
+
+  .theme-doc-markdown h3 {
+    font-size: var(--font-size-2xl);
+
+    /* 24px (era 32px) */
+  }
+
+  .theme-doc-markdown h4 {
+    font-size: var(--font-size-xl);
+
+    /* 20px (era 24px) */
+  }
+
+  .theme-doc-markdown h5 {
+    font-size: var(--font-size-base);
+
+    /* 16px (era 20px) */
+  }
+
+  .theme-doc-markdown h6 {
+    font-size: var(--font-size-sm);
+
+    /* 14px (era 16px) */
+  }
+
+  .theme-doc-markdown table {
+    font-size: var(--font-size-sm);
+
+    /* 14px */
+  }
+}
+
+/* Responsividade para documentação - Mobile */
+@media (max-width: 768px) {
+  .theme-doc-markdown {
+    padding: 0 var(--spacing-xs);
+  }
+
+  /* Escala mobile otimizada */
+  .theme-doc-markdown h1 {
+    font-size: var(--font-size-3xl);
+
+    /* 32px (era 48px) */
+    line-height: var(--line-height-snug);
+
+    /* 1.3 em mobile */
+  }
+
+  .theme-doc-markdown h2 {
+    font-size: var(--font-size-2xl);
+
+    /* 24px (era 40px) */
+    line-height: var(--line-height-snug);
+
+    /* 1.3 em mobile */
+  }
+
+  .theme-doc-markdown h3 {
+    font-size: var(--font-size-xl);
+
+    /* 20px (era 32px) */
+  }
+
+  .theme-doc-markdown h4 {
+    font-size: var(--font-size-base);
+
+    /* 16px (era 24px) */
+  }
+
+  .theme-doc-markdown h5 {
+    font-size: var(--font-size-sm);
+
+    /* 14px (era 20px) */
+  }
+
+  .theme-doc-markdown h6 {
+    font-size: var(--font-size-xs);
+
+    /* 12px (era 16px) */
+  }
+
+  .theme-doc-markdown table {
+    font-size: var(--font-size-xs);
+
+    /* 12px */
+  }
+
+  .theme-doc-markdown table th,
+  .theme-doc-markdown table td {
+    padding: var(--spacing-xs);
+  }
+}
+
+/* ============================================
+   BLOG UI/UX FOUNDATION
+   Layout grid, cards, tag pills, author badges,
+   readability tweaks, and subtle motion.
+   ============================================ */
+
+/* Container width parity with docs for readability */
+.theme-blog .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  font-family: var(--font-family-base);
+
+  /* Usando variável CSS do design system */
+}
+
+/* Blog list grid */
+.theme-blog-list-page .container>.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 996px) {
+  .theme-blog-list-page .container>.row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .theme-blog-list-page .container>.row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Normalize default post cards as tiles */
+.theme-blog-list-page article {
+  height: 100%;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--ifm-box-shadow-card);
+  transition: box-shadow var(--transition-normal) var(--ease-out),
+    transform var(--transition-normal) var(--ease-out),
+    border-color var(--transition-normal) var(--ease-out);
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-blog-list-page article:hover {
+  box-shadow: var(--ifm-box-shadow-card-hover);
+  transform: translateY(-4px);
+  border-color: var(--border-medium);
+}
+
+/* Optional cover image (frontmatter image) */
+.theme-blog .post-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-md);
+  background: var(--hybrid-gradient-card);
+}
+
+/* Post meta: author, date, reading time */
+.theme-blog .post-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* Tag pills */
+.tag,
+.badge--secondary,
+.badge--primary {
+  border-radius: var(--border-radius-full);
+  padding: 0.25rem 0.6rem;
+  font-weight: var(--font-weight-medium);
+  border: 1px solid var(--border-light);
+  background: var(--ifm-background-surface-color);
+  transition: transform var(--transition-fast) var(--ease-out),
+    border-color var(--transition-fast) var(--ease-out),
+    box-shadow var(--transition-fast) var(--ease-out);
+}
+
+.tag:hover,
+.badge--secondary:hover,
+.badge--primary:hover {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Tag density list enhancements */
+.theme-blog-tags-list-page .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.theme-blog-tags-list-page .tag__count {
+  opacity: 0.7;
+  font-size: 0.85em;
+
+  /* 85% do tamanho do elemento pai - mantido como em para proporcionalidade relativa */
+}
+
+/* Author badge */
+.author-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-full);
+  border: 1px solid var(--border-light);
+  background: var(--ifm-background-surface-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.author-badge img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* Post page readability */
+.theme-blog-post-page .markdown {
+  font-family: var(--font-family-base);
+
+  /* Usando variável CSS do design system */
+  line-height: var(--line-height-relaxed);
+  max-width: 100%;
+
+  /* Garantir que não ultrapasse container */
+}
+
+/* Headings com melhor hierarquia visual */
+/* Blog post headings - Aplicando escala tipográfica */
+.theme-blog-post-page .markdown h1 {
+  font-size: var(--ifm-h1-font-size);
+
+  /* 48px */
+  font-weight: var(--font-weight-bold);
+
+  /* 700 */
+  font-family: var(--zapi-font-family-heading);
+
+  /* Inter para headings */
+  line-height: var(--ifm-h1-line-height);
+
+  /* 1.2 */
+  letter-spacing: -0.02em;
+}
+
+.theme-blog-post-page .markdown h2 {
+  margin-top: var(--spacing-2xl);
+
+  /* 48px */
+  margin-bottom: var(--spacing-md);
+
+  /* 16px */
+  padding-bottom: var(--spacing-xs);
+
+  /* 4px */
+  border-bottom: 2px solid var(--border-light);
+  font-size: var(--ifm-h2-font-size);
+
+  /* 40px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  font-family: var(--zapi-font-family-heading);
+
+  /* Inter para headings */
+  line-height: var(--ifm-h2-line-height);
+
+  /* 1.2 */
+  letter-spacing: -0.01em;
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.theme-blog-post-page .markdown h3 {
+  margin-top: var(--spacing-2xl);
+
+  /* 48px - Aumentado para melhor separação */
+  margin-bottom: var(--spacing-md);
+
+  /* 16px - Aumentado para melhor respiração */
+  font-size: var(--ifm-h3-font-size);
+
+  /* 32px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  font-family: var(--zapi-font-family-heading);
+
+  /* Inter para headings */
+  line-height: var(--ifm-h3-line-height);
+
+  /* 1.3 */
+  letter-spacing: -0.01em;
+
+  /* Melhora legibilidade em títulos médios */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.theme-blog-post-page .markdown h4 {
+  font-size: var(--ifm-h4-font-size);
+
+  /* 24px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 */
+  font-family: var(--zapi-font-family-heading);
+
+  /* Inter para headings */
+  line-height: var(--ifm-h4-line-height);
+
+  /* 1.3 */
+  margin-top: var(--spacing-xl);
+
+  /* 32px - Aumentado para melhor separação */
+  margin-bottom: var(--spacing-md);
+
+  /* 16px - Aumentado para melhor respiração */
+  letter-spacing: -0.005em;
+
+  /* Melhora legibilidade */
+}
+
+.theme-blog-post-page .markdown h5 {
+  font-size: var(--ifm-h5-font-size);
+
+  /* 20px */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 - Aumentado de medium para semibold para melhor hierarquia */
+  font-family: var(--zapi-font-family-heading);
+
+  /* Inter para headings */
+  line-height: var(--ifm-h5-line-height);
+
+  /* 1.5 */
+  margin-top: var(--spacing-lg);
+
+  /* 24px - Aumentado para melhor separação */
+  margin-bottom: var(--spacing-sm);
+
+  /* 8px - Aumentado para melhor respiração */
+  letter-spacing: -0.005em;
+
+  /* Melhora legibilidade */
+}
+
+.theme-blog-post-page .markdown h6 {
+  font-size: var(--ifm-h6-font-size);
+
+  /* 16px */
+  font-family: var(--zapi-font-family-heading);
+
+  /* Inter para headings */
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 - Aumentado de medium para semibold para melhor hierarquia */
+  line-height: var(--ifm-h6-line-height);
+
+  /* 1.5 */
+  margin-top: var(--spacing-lg);
+
+  /* 24px - Aumentado para melhor separação */
+  margin-bottom: var(--spacing-sm);
+
+  /* 8px - Aumentado para melhor respiração */
+  letter-spacing: 0;
+
+  /* Sem letter-spacing negativo em títulos pequenos */
+  text-transform: uppercase;
+
+  /* Transformação para melhor diferenciação visual */
+  font-size: var(--font-size-sm);
+
+  /* 14px - Ligeiramente menor que o padrão para hierarquia */
+  letter-spacing: 0.05em;
+
+  /* Letter-spacing positivo para títulos uppercase */
+}
+
+/* Parágrafos e listas com melhor espaçamento - Otimizado para legibilidade */
+/* Melhorias aplicadas: espaçamento aumentado, line-height otimizado, hierarquia visual melhorada */
+.theme-blog-post-page .markdown p {
+  margin-bottom: var(--spacing-lg);
+
+  /* 24px - Aumentado de 16px para melhor respiração e legibilidade */
+  line-height: var(--line-height-relaxed);
+
+  /* 1.6 - Line-height confortável para leitura longa */
+  font-size: var(--font-size-base);
+
+  /* 16px - Tamanho base confortável */
+  color: var(--text-primary);
+
+  /* Cor primária para melhor contraste */
+}
+
+/* Primeiro parágrafo após heading - Espaçamento reduzido */
+.theme-blog-post-page .markdown h2 + p,
+.theme-blog-post-page .markdown h3 + p,
+.theme-blog-post-page .markdown h4 + p,
+.theme-blog-post-page .markdown h5 + p,
+.theme-blog-post-page .markdown h6 + p {
+  margin-top: 0;
+
+  /* Remove margem superior quando parágrafo segue heading */
+}
+
+.theme-blog-post-page .markdown ul,
+.theme-blog-post-page .markdown ol {
+  margin-top: var(--spacing-md);
+
+  /* 16px - Espaçamento superior */
+  margin-bottom: var(--spacing-lg);
+
+  /* 24px - Aumentado de 16px para melhor separação */
+  padding-left: var(--spacing-lg);
+
+  /* 24px - Padding para indentação das listas */
+  line-height: var(--line-height-relaxed);
+
+  /* 1.6 - Line-height confortável */
+}
+
+.theme-blog-post-page .markdown li {
+  margin-bottom: var(--spacing-md);
+
+  /* 16px - Aumentado de 8px para melhor separação entre itens */
+  line-height: var(--line-height-relaxed);
+
+  /* 1.6 - Line-height confortável */
+}
+
+/* Listas aninhadas - Espaçamento reduzido */
+.theme-blog-post-page .markdown li ul,
+.theme-blog-post-page .markdown li ol {
+  margin-top: var(--spacing-sm);
+
+  /* 8px - Espaçamento reduzido para listas aninhadas */
+  margin-bottom: var(--spacing-md);
+
+  /* 16px - Espaçamento reduzido para listas aninhadas */
+}
+
+/* Diagramas Mermaid - Container estilizado com melhor espaçamento */
+.theme-blog-post-page .markdown .mermaid {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+}
+
+/* Dark Mode - Mermaid diagrams - UNIFORME */
+[data-theme='dark'] .mermaid,
+[data-theme='dark'] .mermaid foreignobject,
+[data-theme='dark'] .mermaid foreignobject *,
+[data-theme='dark'] .mermaid foreignobject div,
+[data-theme='dark'] .mermaid svg foreignobject,
+[data-theme='dark'] .mermaid svg foreignobject *,
+[data-theme='dark'] .mermaid svg foreignobject div {
+  background: #1A1D29 !important;
+  color: #FFFFFF !important;
+
+  /* 32px - Padding aumentado para melhor respiração */
+  margin: var(--spacing-xl) 0;
+
+  /* 32px - Margin aumentado de 24px para melhor separação */
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Blocos de código - Melhorias de espaçamento */
+.theme-blog-post-page .markdown pre {
+  margin: var(--spacing-xl) 0;
+
+  /* 32px - Aumentado de 24px para melhor separação visual */
+  border-radius: var(--border-radius-lg);
+  overflow-x: auto;
+
+  /* Scroll horizontal para código longo */
+}
+
+.theme-blog-post-page .markdown pre code {
+  display: block;
+  padding: var(--spacing-lg);
+
+  /* 24px - Padding interno confortável */
+  line-height: var(--line-height-normal);
+
+  /* 1.5 - Line-height adequado para código */
+}
+
+/* Inline code - Estilo diferenciado */
+.theme-blog-post-page .markdown code:not(pre code) {
+  padding: 0.125rem 0.375rem;
+
+  /* Padding pequeno para inline code */
+  border-radius: var(--border-radius-sm);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-light);
+  font-size: 0.9375em;
+
+  /* 15px - Ligeiramente menor que o texto base */
+  font-family: var(--ifm-font-family-monospace);
+}
+
+/* Admonitions - Melhor espaçamento */
+.theme-blog-post-page .markdown .admonition {
+  margin-top: var(--spacing-lg);
+
+  /* 24px - Espaçamento superior */
+  margin-bottom: var(--spacing-xl);
+
+  /* 32px - Aumentado de 24px para melhor separação */
+  border-radius: var(--border-radius-md);
+}
+
+/* Imagens - Espaçamento adequado */
+.theme-blog-post-page .markdown img {
+  margin: var(--spacing-xl) 0;
+
+  /* 32px - Espaçamento vertical confortável */
+  border-radius: var(--border-radius-md);
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tabelas - Melhor espaçamento e legibilidade */
+.theme-blog-post-page .markdown table {
+  margin: var(--spacing-xl) 0;
+
+  /* 32px - Espaçamento vertical */
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.theme-blog-post-page .markdown table th,
+.theme-blog-post-page .markdown table td {
+  padding: var(--spacing-md) var(--spacing-lg);
+
+  /* 16px vertical, 24px horizontal */
+  border-bottom: 1px solid var(--border-light);
+  line-height: var(--line-height-relaxed);
+
+  /* 1.6 - Line-height confortável */
+}
+
+.theme-blog-post-page .markdown table th {
+  background: var(--ifm-background-surface-color);
+  font-weight: var(--font-weight-semibold);
+
+  /* 600 - Peso semibold para headers */
+  text-align: left;
+}
+
+/* Blockquotes - Espaçamento e estilo */
+.theme-blog-post-page .markdown blockquote {
+  margin: var(--spacing-xl) 0;
+
+  /* 32px - Espaçamento vertical */
+  padding: var(--spacing-lg);
+
+  /* 24px - Padding interno */
+  border-left: 4px solid var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color);
+  border-radius: var(--border-radius-md);
+  font-style: italic;
+  line-height: var(--line-height-relaxed);
+
+  /* 1.6 - Line-height confortável */
+}
+
+/* HR (separadores) - Espaçamento adequado */
+.theme-blog-post-page .markdown hr {
+  margin: var(--spacing-2xl) 0;
+
+  /* 48px - Espaçamento generoso para separadores */
+  border: none;
+  border-top: 2px solid var(--border-light);
+}
+
+/* Pagination keyboard navigation */
+.pagination-nav__link:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-md);
+}
+
+/* ============================================
+   TERMINAL STYLES - Terminal Padrão para Documentação
+   Estilo de terminal com cores de código para exibição de comandos
+   ============================================ */
+
+/* Container do Terminal */
+.terminal-container,
+.terminal {
+  background: var(--terminal-bg);
+  border: 1px solid var(--terminal-border);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  font-family: var(--zapi-font-family-mono);
+
+  /* Fira Code, Courier New, monospace */
+  font-size: var(--font-size-sm);
+
+  /* 14px */
+  line-height: var(--line-height-normal);
+
+  /* 1.5 */
+  color: var(--terminal-text);
+  margin: var(--spacing-lg) 0;
+}
+
+/* Header do Terminal (com botões macOS-style) */
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--terminal-header-bg);
+  border-bottom: 1px solid var(--terminal-border);
+}
+
+.terminal-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.terminal-controls {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.terminal-control-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: opacity var(--transition-fast) var(--ease-out);
+}
+
+.terminal-control-dot:hover {
+  opacity: 0.8;
+}
+
+.terminal-control-close {
+  background: var(--terminal-control-close);
+
+  /* Vermelho - fechar */
+}
+
+.terminal-control-minimize {
+  background: var(--terminal-control-minimize);
+
+  /* Amarelo - minimizar */
+}
+
+.terminal-control-maximize {
+  background: var(--terminal-control-maximize);
+
+  /* Verde - maximizar */
+}
+
+.terminal-title {
+  font-size: var(--font-size-xs);
+  color: var(--terminal-text-secondary);
+  font-weight: var(--font-weight-medium);
+  margin-left: var(--spacing-sm);
+}
+
+/* Corpo do Terminal */
+.terminal-body {
+  padding: var(--spacing-md);
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 600px;
+  background: var(--terminal-bg);
+}
+
+/* Scrollbar customizada para terminal */
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: var(--terminal-header-bg);
+  border-radius: var(--border-radius-sm);
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: var(--terminal-border);
+  border-radius: var(--border-radius-full);
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: var(--terminal-text-secondary);
+}
+
+/* Prompt do Terminal */
+.terminal-prompt {
+  color: var(--terminal-prompt);
+  font-weight: var(--font-weight-medium);
+}
+
+.terminal-prompt-symbol {
+  color: var(--terminal-prompt-symbol);
+
+  /* Ciano para ~ ou $ */
+}
+
+.terminal-prompt-arrow {
+  color: var(--terminal-prompt-arrow);
+
+  /* Verde para > ou → */
+}
+
+/* Linha de Comando */
+.terminal-command {
+  color: var(--terminal-command);
+  margin: var(--spacing-xs) 0;
+}
+
+.terminal-command-line {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Cursor piscante */
+.terminal-cursor {
+  display: inline-block;
+  width: 0.6ch;
+  height: 1em;
+  background: var(--terminal-cursor);
+  animation: terminal-blink 1s infinite;
+  vertical-align: baseline;
+}
+
+@keyframes terminal-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .terminal-cursor {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Output/Resposta do Terminal */
+.terminal-output {
+  color: var(--terminal-output);
+  margin: var(--spacing-sm) 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.terminal-output-label {
+  color: var(--terminal-output-label);
+  font-style: italic;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Erros no Terminal */
+.terminal-error {
+  color: var(--terminal-error);
+}
+
+/* Sucesso no Terminal */
+.terminal-success {
+  color: var(--terminal-success);
+}
+
+/* Avisos no Terminal */
+.terminal-warning {
+  color: var(--terminal-warning);
+}
+
+/* Informações no Terminal */
+.terminal-info {
+  color: var(--terminal-info);
+}
+
+/* ============================================
+   CORES DE CÓDIGO - Syntax Highlighting para Terminal
+   Compatível com Prism.js e temas populares
+   ============================================ */
+
+/* Variáveis de Cores do Terminal - Light Mode */
+/* stylelint-disable color-no-hex */
+/* NOTA: Cores hexadecimais em definições de variáveis CSS são aceitáveis e necessárias.
+ * Estas são as fontes de verdade do design system e devem usar valores hexadecimais.
+ * Ver: design-system/development/STYLELINT_ACCEPTABLE_ERRORS.md
+ */
+:root {
+  /* Backgrounds - Ajustado para melhor contraste e legibilidade */
+  --terminal-bg: #282a36;
+
+  /* Fundo escuro melhorado (mais claro que #1e1e1e para melhor contraste) */
+  --terminal-header-bg: #343746;
+
+  /* Header mais claro para melhor visibilidade */
+  --terminal-border: #44475a;
+
+  /* Borda */
+
+  /* Textos - Melhorado para maior clareza e legibilidade */
+  --terminal-text: #f8f8f2;
+
+  /* Texto principal - branco claro para máximo contraste */
+  --terminal-text-secondary: #8be9fd;
+
+  /* Texto secundário - ciano mais claro para melhor legibilidade */
+
+  /* Prompt */
+  --terminal-prompt: #8be9fd;
+
+  /* Ciano */
+  --terminal-prompt-symbol: #8be9fd;
+
+  /* Ciano para ~ */
+  --terminal-prompt-arrow: #50fa7b;
+
+  /* Verde para > */
+
+  /* Comando */
+  --terminal-command: #f8f8f2;
+
+  /* Branco */
+
+  /* Cursor */
+  --terminal-cursor: #f8f8f2;
+
+  /* Branco */
+
+  /* Output */
+  --terminal-output: #ff79c6;
+
+  /* Rosa */
+  --terminal-output-label: #6272a4;
+
+  /* Azul acinzentado */
+
+  /* Estados */
+  --terminal-error: #ff5555;
+
+  /* Vermelho */
+  --terminal-success: #50fa7b;
+
+  /* Verde */
+  --terminal-warning: #f1fa8c;
+
+  /* Amarelo */
+  --terminal-info: #8be9fd;
+
+  /* Ciano */
+
+  /* Controles do Terminal (macOS-style) */
+  --terminal-control-close: #ff5f56;
+
+  /* Vermelho - fechar */
+  --terminal-control-minimize: #ffbd2e;
+
+  /* Amarelo - minimizar */
+  --terminal-control-maximize: #27c93f;
+
+  /* Verde - maximizar */
+
+  /* Cores de Sintaxe (Prism-compatible) - Cores FLUORESCENTES e MUITO CLARAS */
+  --code-keyword: #ff6ec7;
+
+  /* Rosa fluorescente brilhante - keywords (if, else, function, etc.) */
+  --code-string: #ffff00;
+
+  /* Amarelo fluorescente puro - strings (máxima visibilidade) */
+  --code-number: #bd93f9;
+
+  /* Roxo vibrante - números */
+  --code-function: #00ff88;
+
+  /* Verde fluorescente brilhante - funções */
+  --code-variable: #00ffff;
+
+  /* Ciano fluorescente puro - variáveis (máxima visibilidade) */
+  --code-comment: #00ffff;
+
+  /* Ciano fluorescente - comentários (muito claro) */
+  --code-operator: #ff6ec7;
+
+  /* Rosa fluorescente - operadores */
+  --code-punctuation: #ffffff;
+
+  /* Branco puro - pontuação (máximo contraste) */
+  --code-property: #00ffff;
+
+  /* Ciano fluorescente puro - propriedades */
+  --code-class: #00ff88;
+
+  /* Verde fluorescente brilhante - classes */
+  --code-tag: #ff5555;
+
+  /* Vermelho fluorescente - tags HTML/XML */
+  --code-attr-name: #00ff88;
+
+  /* Verde fluorescente brilhante - atributos */
+  --code-attr-value: #ffff00;
+
+  /* Amarelo fluorescente puro - valores de atributos */
+}
+
+/* Dark Mode - Terminal mantém tema escuro melhorado com cores FLUORESCENTES */
+[data-theme='dark'] {
+  /* Terminal mantém cores escuras mas com melhor contraste */
+  --terminal-bg: #282a36;
+
+  /* Fundo mais claro para melhor legibilidade */
+  --terminal-header-bg: #343746;
+
+  /* Header mais claro */
+  --terminal-border: #44475a;
+  --terminal-text: #f8f8f2;
+
+  /* Texto principal - branco claro */
+  --terminal-text-secondary: #00ffff;
+
+  /* Texto secundário - ciano fluorescente */
+  --terminal-prompt: #00ffff;
+
+  /* Ciano fluorescente */
+  --terminal-prompt-symbol: #00ffff;
+
+  /* Ciano fluorescente para ~ */
+  --terminal-prompt-arrow: #00ff88;
+
+  /* Verde fluorescente para > */
+  --terminal-command: #f8f8f2;
+  --terminal-cursor: #f8f8f2;
+  --terminal-output: #ff6ec7;
+
+  /* Rosa fluorescente */
+  --terminal-output-label: #00ffff;
+
+  /* Ciano fluorescente */
+  --terminal-error: #ff5555;
+
+  /* Vermelho fluorescente */
+  --terminal-success: #00ff88;
+
+  /* Verde fluorescente */
+  --terminal-warning: #ffff00;
+
+  /* Amarelo fluorescente */
+  --terminal-info: #00ffff;
+
+  /* Ciano fluorescente */
+  /* Controles do Terminal (mantém cores macOS) */
+  --terminal-control-close: #ff5f56;
+  --terminal-control-minimize: #ffbd2e;
+  --terminal-control-maximize: #27c93f;
+  
+  /* Cores de Sintaxe FLUORESCENTES no Dark Mode */
+  --code-keyword: #ff6ec7;
+
+  /* Rosa fluorescente brilhante */
+  --code-string: #ffff00;
+
+  /* Amarelo fluorescente puro */
+  --code-number: #bd93f9;
+
+  /* Roxo vibrante */
+  --code-function: #00ff88;
+
+  /* Verde fluorescente brilhante */
+  --code-variable: #00ffff;
+
+  /* Ciano fluorescente puro */
+  --code-comment: #00ffff;
+
+  /* Ciano fluorescente */
+  --code-operator: #ff6ec7;
+
+  /* Rosa fluorescente */
+  --code-punctuation: #ffffff;
+
+  /* Branco puro */
+  --code-property: #00ffff;
+
+  /* Ciano fluorescente puro */
+  --code-class: #00ff88;
+
+  /* Verde fluorescente brilhante */
+  --code-tag: #ff5555;
+
+  /* Vermelho fluorescente */
+  --code-attr-name: #00ff88;
+
+  /* Verde fluorescente brilhante */
+  --code-attr-value: #ffff00;
+
+  /* Amarelo fluorescente puro */
+}
+
+/* Aplicar cores de sintaxe em código dentro do terminal */
+.terminal-body code,
+.terminal-body .token {
+  font-family: var(--zapi-font-family-mono);
+  font-size: inherit;
+}
+
+/* Keywords - Cores FLUORESCENTES */
+.terminal-body .token.keyword,
+.terminal-body .token.boolean,
+.terminal-body .token.operator {
+  color: var(--code-keyword) !important;
+}
+
+/* Strings - Amarelo FLUORESCENTE */
+.terminal-body .token.string,
+.terminal-body .token.char {
+  color: var(--code-string) !important;
+}
+
+/* Numbers */
+.terminal-body .token.number {
+  color: var(--code-number) !important;
+}
+
+/* Functions - Verde FLUORESCENTE */
+.terminal-body .token.function,
+.terminal-body .token.function-name {
+  color: var(--code-function) !important;
+}
+
+/* Variables - Ciano FLUORESCENTE */
+.terminal-body .token.variable,
+.terminal-body .token.parameter {
+  color: var(--code-variable) !important;
+}
+
+/* Comments - Ciano FLUORESCENTE */
+.terminal-body .token.comment {
+  color: var(--code-comment) !important;
+  font-style: italic;
+}
+
+/* Operators - Rosa FLUORESCENTE */
+.terminal-body .token.operator {
+  color: var(--code-operator) !important;
+}
+
+/* Punctuation - Branco puro */
+.terminal-body .token.punctuation {
+  color: var(--code-punctuation) !important;
+}
+
+/* Properties - Ciano FLUORESCENTE */
+.terminal-body .token.property {
+  color: var(--code-property) !important;
+}
+
+/* Classes - Verde FLUORESCENTE */
+.terminal-body .token.class-name {
+  color: var(--code-class) !important;
+}
+
+/* Tags (HTML/XML) - Vermelho FLUORESCENTE */
+.terminal-body .token.tag {
+  color: var(--code-tag) !important;
+}
+
+/* Attributes - Verde FLUORESCENTE */
+.terminal-body .token.attr-name {
+  color: var(--code-attr-name) !important;
+}
+
+/* Attribute values - Amarelo FLUORESCENTE */
+.terminal-body .token.attr-value {
+  color: var(--code-attr-value) !important;
+}
+
+/* Token plain - Branco claro */
+.terminal-body .token.plain {
+  color: var(--terminal-text) !important;
+}
+
+/* JSON específico */
+/* JSON específico - Cores FLUORESCENTES */
+.terminal-body .token.json .token.property {
+  color: var(--code-property) !important;
+
+  /* Ciano fluorescente */
+}
+
+.terminal-body .token.json .token.string {
+  color: var(--code-string) !important;
+
+  /* Amarelo fluorescente */
+}
+
+.terminal-body .token.json .token.number {
+  color: var(--code-number) !important;
+
+  /* Roxo vibrante */
+}
+
+/* Bash/Shell específico - Cores FLUORESCENTES */
+.terminal-body .token.shell .token.function {
+  color: var(--code-function) !important;
+
+  /* Verde fluorescente */
+}
+
+.terminal-body .token.shell .token.string {
+  color: var(--code-string) !important;
+
+  /* Amarelo fluorescente */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .terminal-container,
+  .terminal {
+    font-size: var(--font-size-xs);
+
+    /* 12px em mobile */
+    margin: var(--spacing-md) 0;
+  }
+
+  .terminal-body {
+    padding: var(--spacing-sm);
+    max-height: 400px;
+  }
+
+  .terminal-control-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Reduced motion friendly entrances */
+.theme-blog-list-page article {
+  opacity: 0;
+  animation: fadeInUp var(--transition-slow) var(--ease-out) forwards;
+}
+
+.theme-blog-list-page article:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.theme-blog-list-page article:nth-child(2) {
+  animation-delay: 60ms;
+}
+
+.theme-blog-list-page article:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+.theme-blog-list-page article:nth-child(4) {
+  animation-delay: 180ms;
+}
+
+.theme-blog-list-page article:nth-child(5) {
+  animation-delay: 240ms;
+}
+
+.theme-blog-list-page article:nth-child(6) {
+  animation-delay: 300ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-blog-list-page article {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ============================================
+   HOVER EFFECTS EM LINKS INTERNOS
+   Melhora feedback visual e UX
+   ============================================ */
+a[href^="/docs/"] {
+  transition: color 0.2s var(--ease-smooth-in-out), transform 0.2s var(--ease-smooth-in-out);
+  position: relative;
+}
+
+a[href^="/docs/"]:hover {
+  color: var(--ifm-color-primary);
+  transform: translateX(2px);
+}
+
+a[href^="/docs/"]:active {
+  transform: translateX(1px);
+}
+
+/* ============================================
+   ANIMAÇÕES SUTIS EM CALLOUTS
+   Melhora percepção visual sem ser intrusivo
+   ============================================ */
+.admonition {
+  animation: fadeInScale 0.3s var(--ease-smooth-in-out);
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  a[href^="/docs/"] {
+    transition: none;
+  }
+  
+  .admonition {
+    animation: none;
+  }
+}
+
+/* ============================================
+   DOCUSAURUS TABS - Largura fixa para labels
+   Análise: Maior label = "JavaScript (Fetch)" (18 caracteres)
+   Menor label = "C" (1 caractere)
+   Cálculo: 18 chars × 8px + 32px padding = ~180px
+   ============================================ */
+.tabs-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.tabs__item {
+  width: 200px !important;
+  text-align: center !important;
+  box-sizing: border-box;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs__item>* {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .tabs__item {
+    width: 140px !important;
+  }
+}
+
+/* ============================================
+   REMOVER TERMINAL DA PÁGINA NO-CODE
+   Ocultar terminal no hero e em toda a página no-code
+   ============================================ */
+
+/* Ocultar terminal na página no-code usando seletor de atributo data-path */
+[data-path*="no-code"] .terminalWrapper,
+[data-path*="no-code"] [class*="terminalWrapper"],
+[data-path*="no-code"] .terminalContainer,
+[data-path*="no-code"] [class*="terminal-container"],
+[data-path*="no-code"] [role="region"][aria-label*="Terminal"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Ocultar terminal no hero da página no-code */
+[data-path*="no-code"] section[aria-label="Hero No Code"] .terminalWrapper,
+[data-path*="no-code"] section[aria-label="Hero No Code"] [class*="terminalWrapper"],
+[data-path*="no-code"] section[aria-label="Hero No Code"] .terminalContainer,
+[data-path*="no-code"] section[aria-label="Hero No Code"] [class*="terminal-container"],
+[data-path*="no-code"] section[aria-label="Hero No Code"] [role="region"][aria-label*="Terminal"],
+[data-path*="no-code"] .hero .terminalWrapper,
+[data-path*="no-code"] .hero [class*="terminalWrapper"],
+[data-path*="no-code"] .hero .terminalContainer,
+[data-path*="no-code"] .hero [class*="terminal-container"],
+[data-path*="no-code"] .hero [role="region"][aria-label*="Terminal"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* ============================================
+   REACT FLOW - Estilos Globais para Diagramas
+   Correção de cores de texto no dark mode
+   ============================================ */
+
+/* Labels de edges do React Flow - Light Mode */
+.react-flow__edge-text,
+.react-flow__edge-textbg,
+.react-flow__edge-label {
+  fill: var(--text-primary);
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+/* Labels de edges do React Flow - Dark Mode */
+[data-theme='dark'] .react-flow__edge-text,
+[data-theme='dark'] .react-flow__edge-textbg,
+[data-theme='dark'] .react-flow__edge-label {
+  fill: var(--text-primary);
+  color: var(--text-primary);
+}
+
+/* Texto dentro dos nós do React Flow - Light Mode */
+.react-flow__node .react-flow__node-label,
+.react-flow__node .react-flow__node-text,
+.react-flow__node-text {
+  color: var(--text-primary);
+  fill: var(--text-primary);
+}
+
+/* Texto dentro dos nós do React Flow - Dark Mode */
+[data-theme='dark'] .react-flow__node .react-flow__node-label,
+[data-theme='dark'] .react-flow__node .react-flow__node-text,
+[data-theme='dark'] .react-flow__node-text {
+  color: var(--text-primary);
+  fill: var(--text-primary);
+}
+
+/* Background do React Flow - Adaptação ao tema */
+.react-flow {
+  background: var(--ifm-background-color);
+}
+
+[data-theme='dark'] .react-flow {
+  background: var(--ifm-background-color);
+}
+
+/* Controls do React Flow - Adaptação ao tema */
+.react-flow__controls button {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--border-light);
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .react-flow__controls button {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--border-light);
+  color: var(--text-primary);
+}
+
+.react-flow__controls button:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .react-flow__controls button:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* MiniMap do React Flow - Adaptação ao tema */
+.react-flow__minimap {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-light);
+}
+
+[data-theme='dark'] .react-flow__minimap {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--border-light);
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-label="Capa ilustrativa de Webhooks">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#128C7E"/>
+      <stop offset="100%" stop-color="#075E54"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="810" fill="url(#g)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2">
+    <circle cx="240" cy="200" r="120"/>
+    <circle cx="1200" cy="300" r="160"/>
+    <circle cx="720" cy="540" r="200"/>
+  </g>
+  <text x="72" y="120" fill="#FFFFFF" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="48">Webhooks</text>
+  <text x="72" y="168" fill="#E5FFFA" font-family="Segoe UI, Roboto, Arial" font-size="20" opacity="0.9">Z-API • Notificações em tempo real</text>
+</svg>
+

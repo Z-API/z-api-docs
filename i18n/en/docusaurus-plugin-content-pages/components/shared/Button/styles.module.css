@@ -1,0 +1,358 @@
+/* Botão base */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent; /* Bordas mais espessas por padrão */
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  /* Otimização: usar propriedades específicas ao invés de 'all' */
+  transition: background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out,
+              border-width 0.2s ease-in-out,
+              color 0.2s ease-in-out,
+              transform 0.2s ease-in-out;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+
+  /* GPU acceleration para animações Framer Motion */
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Variantes - Todas com estilo outline (apenas bordas) */
+.primary {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  border-width: 2px;
+}
+
+.primary:hover:not(:disabled) {
+  background-color: transparent;
+  color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  border-width: 2px;
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--ifm-color-secondary);
+  border-color: var(--ifm-color-secondary);
+  border-width: 2px;
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: transparent;
+  color: var(--ifm-color-secondary-dark);
+  border-color: var(--ifm-color-secondary-dark);
+  border-width: 2px;
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  border-width: 2px;
+}
+
+.outline:hover:not(:disabled) {
+  background-color: transparent;
+  color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  border-width: 2px;
+}
+
+/* Variante Ghost - Estilo moderno com border dashed e refinado */
+/* Baseado em design moderno adaptado para design system Z-API */
+.ghost {
+  /* Layout automático - flexbox */
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* Padding reduzido e elegante - usando variáveis CSS */
+  padding: var(--space-1) var(--space-3);
+  gap: var(--spacing-xs);
+
+  /* Tamanho compacto e elegante */
+  min-height: 28px;
+  box-sizing: border-box;
+
+  /* Border solid fino e elegante - usando design token oficial */
+  border: 1px solid var(--official-accent-green);
+  border-radius: var(--border-radius-md);
+
+  /* Background transparente */
+  background-color: transparent;
+
+  /* Tipografia refinada - usando variáveis CSS */
+  font-family: var(--zapi-font-family-heading);
+  font-style: normal;
+  font-weight: var(--zapi-font-weight-medium);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+
+  /* Cor usando design token oficial */
+  color: var(--official-accent-green); /* #00A685 - verde oficial */
+
+  /* Opacidade inicial mais suave */
+  opacity: 0.9;
+
+  /* Transições suaves */
+  transition: border-color var(--motion-duration-fast) var(--zapi-ease-in-out),
+              color var(--motion-duration-fast) var(--zapi-ease-in-out),
+              opacity var(--motion-duration-fast) var(--zapi-ease-in-out);
+}
+
+/* Estado Hover - Cor mais escura para feedback visual claro */
+.ghost:hover:not(:disabled) {
+  /* Border e texto mudam para verde escuro no hover */
+  border-color: var(--official-accent-green-dark); /* #008B73 - verde escuro */
+  color: var(--official-accent-green-dark); /* #008B73 - verde escuro */
+
+  /* Opacidade total no hover */
+  opacity: 1;
+
+  /* Background permanece transparente */
+  background-color: transparent;
+}
+
+/* Estado Active/Pressed - Feedback tátil */
+.ghost:active:not(:disabled) {
+  /* Mantém cor escura no active */
+  border-color: var(--official-accent-green-dark); /* #008B73 */
+  color: var(--official-accent-green-dark); /* #008B73 */
+
+  /* Opacidade total */
+  opacity: 1;
+
+  /* Background permanece transparente */
+  background-color: transparent;
+}
+
+/* Estado Disabled/Inactive - Visual desabilitado */
+.ghost:disabled,
+.ghost.disabled {
+  /* Border e texto com opacidade reduzida */
+  border-color: var(--official-border-light); /* rgba(0, 166, 133, 0.2) - border light */
+  color: var(--official-border-light); /* rgba(0, 166, 133, 0.2) - texto light */
+
+  /* Opacidade reduzida para estado inactive */
+  opacity: 0.5;
+
+  /* Cursor não permitido */
+  cursor: not-allowed;
+
+  /* Background permanece transparente */
+  background-color: transparent;
+
+  /* Desabilitar pointer events */
+  pointer-events: none;
+}
+
+.danger {
+  background-color: transparent;
+  color: var(--ifm-color-danger);
+  border-color: var(--ifm-color-danger);
+  border-width: 2px;
+}
+
+.danger:hover:not(:disabled) {
+  background-color: transparent;
+  color: var(--ifm-color-danger-dark);
+  border-color: var(--ifm-color-danger-dark);
+  border-width: 2px;
+}
+
+/* Tamanhos */
+.sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+.md {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-base);
+}
+
+.lg {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--font-size-lg);
+}
+
+/* Touch Targets Mínimo 44x44px para Mobile (WCAG 2.5.5) */
+/* Font-size Mínimo 16px para Mobile (WCAG 2.1 - Prevenir zoom automático iOS) */
+@media screen and (max-width: 768px) {
+  .button:not(.ghost) {
+    /* Garantir touch target mínimo de 44x44px em mobile */
+    min-height: 44px;
+    min-width: 44px;
+
+    /* Garantir font-size mínimo de 16px para prevenir zoom automático iOS */
+    font-size: var(--font-size-base) !important;
+  }
+  
+  /* Botões ghost também precisam de 44px e 16px em mobile */
+  .ghost {
+    min-height: 44px;
+    min-width: 44px;
+
+    /* Garantir font-size mínimo de 16px para prevenir zoom automático iOS */
+    font-size: var(--font-size-base) !important;
+  }
+  
+  /* Tamanhos específicos para mobile - todos com 16px mínimo */
+  .ghost.sm,
+  .ghost.md,
+  .ghost.lg {
+    font-size: var(--font-size-base) !important;
+  }
+  
+  .sm,
+  .md,
+  .lg {
+    font-size: var(--font-size-base) !important;
+  }
+}
+
+/* Tamanhos específicos para variante Ghost - mantém estilo compacto e refinado */
+.ghost.sm {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+  min-height: 24px;
+}
+
+.ghost.md {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  min-height: 28px;
+}
+
+.ghost.lg {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  min-height: 32px;
+}
+
+/* Estados */
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.loading {
+  cursor: wait;
+  pointer-events: none;
+}
+
+/* Largura total */
+.fullWidth {
+  width: 100%;
+}
+
+/* Conteúdo do botão */
+.content {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+/* Ícones */
+.icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ícones: usar gap do flexbox ao invés de margin hardcoded */
+.icon-left {
+  order: -1;
+
+  /* margin removido - gap do .button já fornece espaçamento */
+}
+
+.icon-right {
+  order: 1;
+
+  /* margin removido - gap do .button já fornece espaçamento */
+}
+
+/* Loading spinner */
+.loadingSpinner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Focus visible para acessibilidade */
+.button:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 0 0 3px rgba(18, 140, 126, 0.2);
+}
+
+/* Focus visible específico para Ghost - usando cor oficial */
+.ghost:focus-visible {
+  outline: 2px solid var(--official-accent-green);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-md);
+
+  /* Box shadow com cor oficial para melhor visibilidade */
+  box-shadow: 0 0 0 3px var(--official-border-light, rgba(0, 166, 133, 0.2));
+}
+
+/* Respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    will-change: auto;
+    transform: none;
+    transition: none;
+  }
+
+  .spinner {
+    animation: none;
+  }
+  
+  /* Manter focus states mesmo com reduced motion */
+  .button:focus-visible {
+    outline: 3px solid var(--ifm-color-primary) !important;
+    outline-offset: 2px !important;
+  }
+}
+

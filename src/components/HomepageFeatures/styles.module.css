@@ -1,0 +1,416 @@
+.features {
+  width: 100%;
+  padding: 80px var(--spacing-lg); /* 80px vertical, 24px horizontal - consistente com outras seções */
+  /* Light Mode - Background claro usando --official-bg-light */
+  background: #F8F9FA;
+  /* Separação visual */
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+/* Dark Mode - Background escuro para features section */
+html[data-theme='dark'] .features,
+[data-theme='dark'] .features {
+  background: #1A1D29 !important;
+  border-top-color: var(--background-white-alpha-05);
+  border-bottom-color: var(--background-white-alpha-05);
+}
+
+/* Responsive - Tablet */
+.features[data-breakpoint="tablet"] {
+  padding: 64px var(--spacing-md); /* 64px vertical, 16px horizontal */
+}
+
+/* Responsive - Mobile */
+.features[data-breakpoint="mobile"] {
+  padding: 48px var(--spacing-sm); /* 48px vertical, 8px horizontal */
+}
+
+.featuresGrid {
+  display: grid;
+  width: 100%;
+  gap: var(--spacing-lg);
+  align-items: stretch;
+}
+
+.featuresHeader {
+  max-width: 720px;
+  margin: 0 auto var(--spacing-2xl);
+  text-align: center;
+}
+
+/* Dark Mode - Removido background escuro do header */
+/* Mantém apenas o texto claro para visibilidade */
+[data-theme='dark'] .featuresHeader {
+  color: #FFFFFF !important;
+}
+
+.featuresTitle {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  color: #091E42;
+}
+
+/* Dark Mode - garantir visibilidade do título com maior especificidade */
+[data-theme='dark'] .featuresTitle,
+[data-theme='dark'] .featuresHeader .featuresTitle,
+[data-theme='dark'] .features .featuresTitle,
+[data-theme='dark'] h2.featuresTitle {
+  color: #FFFFFF !important;
+}
+
+/* Dark Mode + Tema Official - garantir visibilidade mesmo com data-section="light" */
+[data-theme='dark'] .features[data-theme="official"] .featuresTitle,
+[data-theme='dark'] [data-theme="official"][data-section="light"] .featuresTitle,
+[data-theme='dark'] [data-theme="official"] .featuresHeader .featuresTitle,
+[data-theme='dark'] [data-theme="official"] h2.featuresTitle {
+  color: #FFFFFF !important;
+}
+
+.featuresSubtitle {
+  font-size: var(--font-size-lg);
+  color: #677483;
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+/* Dark Mode - garantir visibilidade do subtítulo com maior especificidade */
+[data-theme='dark'] .featuresSubtitle,
+[data-theme='dark'] .featuresHeader .featuresSubtitle,
+[data-theme='dark'] .features .featuresSubtitle,
+[data-theme='dark'] p.featuresSubtitle {
+  color: #B3BAC5 !important;
+}
+
+/* Dark Mode + Tema Official - garantir visibilidade mesmo com data-section="light" */
+[data-theme='dark'] .features[data-theme="official"] .featuresSubtitle,
+[data-theme='dark'] [data-theme="official"][data-section="light"] .featuresSubtitle,
+[data-theme='dark'] [data-theme="official"] .featuresHeader .featuresSubtitle {
+  color: #B3BAC5 !important;
+}
+
+.featureCard {
+  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-md);
+  
+  /* Light Mode - Background claro */
+  background: #F8F9FA;
+  border: 1px solid var(--border-light);
+
+  /* Altura consistente: garantir que todos os cards tenham mesma altura */
+  min-height: auto;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  /* Otimização: usar propriedades específicas ao invés de 'all' */
+  transition:
+    transform var(--transition-normal) var(--ease-out),
+    box-shadow var(--transition-normal) var(--ease-out),
+    border-color var(--transition-normal) var(--ease-out);
+  position: relative;
+
+  /* GPU acceleration para animações */
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Dark Mode - Background escuro (hero) para cards */
+html[data-theme='dark'] .featureCard,
+[data-theme='dark'] .featureCard {
+  background: #0A0E27 !important;
+  border: 1px solid var(--official-border-light) !important;
+}
+
+.featureCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+
+  /* Gradiente Classic padrão */
+  background: linear-gradient(90deg, var(--zapi-green), var(--zapi-teal));
+  border-radius: var(--border-radius-full);
+  opacity: 0;
+  transition:
+    opacity var(--transition-normal) var(--ease-out),
+    background var(--transition-normal) var(--ease-out);
+}
+
+/* Tema Z-API */
+[data-theme="zapi"] .featureCard::before {
+  background: linear-gradient(90deg,
+      var(--zapi-primary),
+      var(--zapi-secondary));
+}
+
+/* Tema Híbrido */
+[data-theme="hybrid"] .featureCard::before {
+  background: var(--hybrid-gradient-border);
+  width: 80px;
+}
+
+/* Tema Official */
+[data-theme="official"] .featureCard::before {
+  background: var(--official-gradient-text);
+  width: 80px;
+}
+
+[data-theme="official"] .featureCard:hover {
+  box-shadow: var(--official-shadow-md);
+  border-color: var(--official-accent-green);
+}
+
+/* Tema Official - Background branco em light mode */
+[data-theme="official"][data-section="light"] .features {
+  background: var(--official-bg-white);
+}
+
+/* Dark Mode - Background escuro mesmo com data-section="light" */
+[data-theme='dark'] [data-theme="official"][data-section="light"] .features {
+  background: #1A1D29 !important;
+}
+
+[data-theme="official"][data-section="light"] .featureCard {
+  background: #F8F9FA;
+  border: 1px solid var(--border-light);
+  color: #091E42;
+}
+
+/* Dark Mode - Cards com background escuro (hero) e texto claro */
+html[data-theme='dark'] [data-theme="official"][data-section="light"] .featureCard,
+[data-theme='dark'] [data-theme="official"][data-section="light"] .featureCard {
+  background: #0A0E27 !important;
+  border: 1px solid var(--official-border-light) !important;
+  color: var(--text-inverse) !important;
+}
+
+[data-theme="official"][data-section="light"] .featureCard:hover {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-md);
+}
+
+/* Textos escuros para tema Official em seções claras */
+[data-theme="official"][data-section="light"] .featureTitle {
+  color: #091E42;
+}
+
+[data-theme="official"][data-section="light"] .featureDescription {
+  color: #677483;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+}
+
+.featureCard:hover::before {
+  opacity: 1;
+}
+
+.featureIcon {
+  margin-bottom: var(--spacing-lg);
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-primary);
+  transition: color var(--transition-normal) var(--ease-smooth-in-out);
+  flex-shrink: 0;
+  height: 48px;
+  width: 100%;
+}
+
+.featureCard:hover .featureIcon {
+  color: var(--ifm-color-primary-dark);
+}
+
+.featureTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  margin-bottom: var(--spacing-md);
+  padding: 0;
+  color: var(--ifm-color-content);
+  line-height: var(--line-height-tight);
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Garantir que o Heading do Docusaurus não adicione estilos extras */
+.featureTitle h3,
+.featureTitle * {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+/* Dark Mode - garantir adaptação correta com maior especificidade */
+[data-theme='dark'] .features .featureTitle,
+[data-theme='dark'] .featureCard .featureTitle {
+  color: var(--ifm-color-content) !important;
+}
+
+/* Dark Mode + Tema Official - garantir textos brancos em cards escuros */
+/* IMPORTANTE: Cards com data-theme="official" no dark mode devem ter background escuro (hero) e textos brancos */
+[data-theme='dark'] .featureCard[data-theme="official"],
+[data-theme='dark'] article.card[data-theme="official"] {
+  background: #0A0E27 !important;
+
+  /* Background hero para cards no dark mode (contraste com fundo da section) */
+  border: 1px solid var(--official-border-light) !important;
+  color: var(--official-text-white) !important;
+}
+
+[data-theme='dark'] .featureCard[data-theme="official"] .featureTitle,
+[data-theme='dark'] article.card[data-theme="official"] .featureTitle {
+  color: var(--official-text-white) !important;
+
+  /* Branco - garantir visibilidade em cards escuros */
+}
+
+[data-theme='dark'] .featureCard[data-theme="official"] .featureDescription,
+[data-theme='dark'] article.card[data-theme="official"] .featureDescription {
+  color: var(--official-text-light-alpha-80) !important;
+
+  /* Branco com opacidade - garantir contraste adequado */
+}
+
+[data-theme='dark'] .featureCard[data-theme="official"] .featureIcon,
+[data-theme='dark'] article.card[data-theme="official"] .featureIcon {
+  color: var(--official-accent-green) !important;
+
+  /* Verde oficial para ícones em cards escuros */
+}
+
+.featureContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  gap: 0;
+  flex: 1 1 auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* Garantir que padding-horiz--md não quebre alinhamento */
+.featureContent.padding-horiz--md {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.featureDescription {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #677483;
+  text-align: center;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Dark Mode - garantir contraste adequado */
+[data-theme='dark'] .featureDescription {
+  color: #677483;
+}
+
+.featureItem {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.featureItem>article {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 996px) {
+  .featureCard {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    min-height: auto;
+  }
+
+  .featureIcon {
+    margin-bottom: var(--spacing-md);
+    height: 40px;
+  }
+
+  .featureTitle {
+    margin-bottom: var(--spacing-sm);
+    min-height: 3em;
+  }
+
+  .featuresTitle {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+/* Acessibilidade: Respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .featureCard {
+    will-change: auto;
+    transform: none;
+    transition: none;
+  }
+
+  .featureCard:hover {
+    transform: none;
+  }
+
+  .featureCard::before {
+    transition: none;
+  }
+
+  .featureIcon {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featureTitle {
+    font-size: var(--font-size-lg);
+    min-height: 2.5em;
+  }
+
+  .featureDescription {
+    font-size: var(--font-size-base) !important;
+    font-family: var(--font-family-base) !important;
+  }
+
+  .featureIcon {
+    height: 36px;
+  }
+
+  .featuresTitle {
+    font-size: var(--font-size-xl);
+  }
+}

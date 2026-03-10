@@ -1,0 +1,31 @@
+ .cardLink {
+   display: block;
+   text-decoration: none;
+   color: inherit;
+   background: var(--ifm-background-surface-color);
+   border: 1px solid var(--border-light);
+   border-radius: var(--border-radius-lg);
+   padding: var(--spacing-md);
+   box-shadow: var(--ifm-box-shadow-card);
+   transition: box-shadow var(--transition-normal) var(--ease-out),
+               transform var(--transition-normal) var(--ease-out),
+               border-color var(--transition-normal) var(--ease-out);
+ }
+ 
+ .cardLink:hover {
+   box-shadow: var(--ifm-box-shadow-card-hover);
+   transform: translateY(-4px);
+   border-color: var(--border-medium);
+ }
+ 
+ .title {
+   font-weight: var(--font-weight-semibold);
+   margin-bottom: var(--spacing-xs);
+   font-size: var(--font-size-lg);
+ }
+ 
+ .description {
+   color: var(--text-secondary);
+ }
+
+

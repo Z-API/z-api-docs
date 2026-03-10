@@ -1,0 +1,402 @@
+/**
+ * CodeAnimation Component Styles
+ * 
+ * Estilos para componente de animação de código no HeroSection.
+ * Segue design system Z-API Central com design tokens, acessibilidade
+ * e otimizações de performance.
+ * 
+ * Design System:
+ * - Cores: --official-accent-green, --official-bg-dark
+ * - Espaçamentos: --spacing-md, --spacing-lg, etc.
+ * - Tipografia: --font-family-base, --font-size-*
+ * - Animações: 300ms, EASE_IN_AND_OUT (AGENTS.MD padrão)
+ * - Acessibilidade: prefers-reduced-motion support
+ */
+
+/* ============================================
+   WRAPPER
+   ============================================ */
+.codeAnimationWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+/* ============================================
+   GLOW EFFECT
+   ============================================ */
+.glowEffect {
+  position: absolute;
+  inset: -16px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 166, 133, 0.2) 0%,
+    rgba(0, 166, 133, 0.05) 50%,
+    rgba(147, 51, 234, 0.1) 100%
+  );
+  border-radius: var(--border-radius-lg);
+  filter: blur(24px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* Respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .glowEffect {
+    animation: none;
+    filter: blur(12px);
+    opacity: 0.3;
+  }
+}
+
+/* ============================================
+   EDITOR WINDOW
+   ============================================ */
+.editorWindow {
+  position: relative;
+  background: rgba(30, 30, 46, 0.8); /* --official-bg-dark com opacidade */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  z-index: 1;
+  
+  /* GPU acceleration */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  contain: layout style paint;
+}
+
+/* ============================================
+   EDITOR HEADER
+   ============================================ */
+.editorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  background: rgba(24, 24, 37, 0.9); /* Header mais escuro */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: var(--spacing-md);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex: 1;
+  min-width: 0; /* Permite truncate */
+}
+
+/* Traffic lights (macOS style) */
+.trafficLights {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-shrink: 0;
+}
+
+.trafficLight {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--border-radius-full);
+  flex-shrink: 0;
+}
+
+.trafficLightRed {
+  background: var(--terminal-light-red);
+}
+
+.trafficLightYellow {
+  background: var(--terminal-light-yellow);
+}
+
+.trafficLightGreen {
+  background: var(--terminal-light-green);
+}
+
+.filename {
+  color: rgba(255, 255, 255, 0.9); /* WCAG AA: Contraste mínimo 4.5:1 */
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-normal);
+  margin-left: var(--spacing-sm);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Progress indicators */
+.progressIndicators {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-shrink: 0;
+}
+
+.progressDot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--border-radius-full);
+  background: rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-normal) var(--ease-in-out);
+  flex-shrink: 0;
+}
+
+.progressDotActive {
+  width: 24px;
+  background: var(--official-accent-green);
+  box-shadow: 0 0 8px var(--official-accent-green-alpha-30, rgba(0, 166, 133, 0.4));
+}
+
+/* ============================================
+   CODE CONTENT
+   ============================================ */
+.codeContent {
+  padding: var(--spacing-lg);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  font-size: var(--font-size-xs);
+  line-height: 1.6;
+  min-height: 280px;
+  position: relative;
+}
+
+.codeLine {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  min-height: 1.6em;
+}
+
+.lineNumber {
+  color: rgba(255, 255, 255, 0.9); /* WCAG AA: Contraste mínimo 4.5:1 */
+  user-select: none;
+  width: 24px;
+  text-align: right;
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+}
+
+.codeTokens {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+/* Code token colors */
+.token {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  font-size: var(--font-size-xs);
+  line-height: 1.6;
+}
+
+.tokenPink {
+  color: var(--code-token-pink); /* Pink para const/await */
+}
+
+.tokenGray {
+  color: rgba(255, 255, 255, 0.9); /* WCAG AA: Contraste mínimo 4.5:1 - Gray para texto padrão */
+}
+
+.tokenYellow {
+  color: var(--code-token-yellow); /* Yellow para funções */
+}
+
+.tokenGreen {
+  color: var(--code-token-green); /* Green para strings */
+}
+
+.tokenBlue {
+  color: var(--code-token-blue); /* Blue para propriedades */
+}
+
+.tokenPurple {
+  color: var(--code-token-purple); /* Purple para booleanos */
+}
+
+/* Cursor blink */
+.cursor {
+  display: inline-block;
+  width: 6px;
+  height: 14px;
+  background: var(--official-accent-green);
+  margin-left: var(--spacing-xs);
+  vertical-align: middle;
+  border-radius: 1px;
+}
+
+/* ============================================
+   SUCCESS INDICATOR
+   ============================================ */
+.successIndicator {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  padding-top: 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  font-size: var(--font-size-xs);
+}
+
+.successIcon {
+  width: 8px;
+  height: 8px;
+  background: var(--official-accent-green);
+  border-radius: var(--border-radius-full);
+  flex-shrink: 0;
+  animation: pulse 2s var(--ease-in-out) infinite;
+}
+
+.successText {
+  color: var(--official-accent-green);
+  font-weight: var(--font-weight-medium);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+}
+
+/* Pulse animation para success icon */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+
+/* ============================================
+   FLOATING PARTICLES
+   ============================================ */
+.particlesContainer {
+  position: absolute;
+  inset: -16px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--official-accent-green);
+  border-radius: var(--border-radius-full);
+  opacity: 0.6;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet */
+@media screen and (max-width: 996px) {
+  .codeAnimationWrapper {
+    max-width: 560px;
+  }
+
+  .codeContent {
+    padding: var(--spacing-md);
+    min-height: 240px;
+    font-size: var(--font-size-xs);
+
+    /* 12px - menor tamanho disponível na escala (11px mapeado para xs) */
+  }
+
+  .editorHeader {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .filename {
+    font-size: var(--font-size-xs);
+
+    /* 12px - menor tamanho disponível na escala (11px mapeado para xs) */
+  }
+}
+
+/* Mobile - Ocultar componente */
+@media screen and (max-width: 768px) {
+  .codeAnimationWrapper {
+    display: none;
+  }
+}
+
+/* Telas muito pequenas */
+@media screen and (max-width: 480px) {
+  .codeAnimationWrapper {
+    display: none;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - prefers-reduced-motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .codeLine {
+    transition: none;
+  }
+
+  .successIcon {
+    animation: none;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .progressDot {
+    transition: background-color var(--transition-fast) ease;
+  }
+
+  .particlesContainer {
+    display: none;
+  }
+
+  .glowEffect {
+    animation: none;
+    filter: blur(8px);
+  }
+}
+
+/* ============================================
+   DARK MODE SUPPORT (se aplicável)
+   ============================================ */
+[data-theme='dark'] .editorWindow {
+  background: rgba(18, 18, 30, 0.95);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme='dark'] .editorHeader {
+  background: rgba(12, 12, 20, 0.95);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* GPU acceleration para elementos animados */
+.codeLine,
+.cursor,
+.successIcon,
+.progressDot,
+.particle {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+/* CSS Containment para isolamento de layout */
+.editorWindow {
+  contain: layout style paint;
+}
+
+.codeContent {
+  contain: layout style;
+}
+

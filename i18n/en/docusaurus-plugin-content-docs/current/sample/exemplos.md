@@ -3,9 +3,9 @@ id: exemplos
 title: Style Guide
 ---
 
-TEMPO DE ENVIO de msg
+MESSAGE SENDING TIME
 
-NOS WEBHOOKD LEMBRAR DO REFERENCEDID webhook de contatos catalos etc
+IN WEBHOOKS, REMEMBER THE REFERENCEDID (webhook for contacts, catalogs, etc.)
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
@@ -72,7 +72,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com/ or <http://www.example.com/> and sometimes example.com (but not on GitHub, for example).
+URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com/ or [http://www.example.com/](http://www.example.com/) and sometimes example.com (but not on GitHub, for example).
 
 Some text to show that the reference links can follow later.
 
@@ -94,7 +94,7 @@ Reference-style: ![alt text][logo]
 
 Images from any folder can be used by providing path to file. Path should be relative to the original markdown file or absolute to the `/static` folder.
 
-![img](/img/logo.svg)
+![img](/img/z-api-logo.webp)
 
 ---
 

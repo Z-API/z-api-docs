@@ -1,0 +1,100 @@
+.comparisonContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--ifm-background-color);
+}
+
+.colorPalette,
+.gradientShowcase {
+  padding: 1.5rem;
+  border-radius: var(--border-radius-lg);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-light);
+}
+
+.paletteTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-content);
+}
+
+.colorGrid,
+.gradientGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.colorItem,
+.gradientItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.colorSwatch {
+  width: 100%;
+  height: 80px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.gradientSwatch {
+  width: 100%;
+  height: 80px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.colorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.colorName {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--ifm-color-content);
+}
+
+.colorValue {
+  font-size: var(--font-size-xs);
+  font-family: var(--ifm-font-family-mono);
+  color: var(--ifm-color-content-secondary);
+  background: var(--ifm-background-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  display: inline-block;
+  width: fit-content;
+}
+
+.colorDescription {
+  font-size: var(--font-size-xs);
+  color: var(--ifm-color-content-secondary);
+}
+
+/* Tema Classic */
+[data-theme="classic"] .colorPalette,
+[data-theme="classic"] .gradientShowcase {
+  border-top: 3px solid var(--zapi-green);
+}
+
+/* Tema Z-API */
+[data-theme="zapi"] .colorPalette,
+[data-theme="zapi"] .gradientShowcase {
+  border-top: 3px solid var(--zapi-primary);
+}
+
+/* Tema Híbrido */
+[data-theme="hybrid"] .colorPalette,
+[data-theme="hybrid"] .gradientShowcase {
+  border-top: 3px solid;
+  border-image: linear-gradient(90deg, var(--zapi-green), var(--zapi-primary)) 1;
+}
+

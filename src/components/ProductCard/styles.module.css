@@ -1,0 +1,271 @@
+/* ============================================
+   PRODUCT CARD - Design Minimalista
+   Inspirado no WhatsApp Business Developer Hub
+   ============================================ */
+
+.card {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  /* Visual - Minimalista */
+  background-color: var(--background-white);
+  border-radius: 12px; /* Mais suave */
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  
+  /* Sombras sutis */
+  box-shadow: var(--shadow-sm);
+  
+  /* Spacing generoso */
+  padding: var(--spacing-xl); /* 32px */
+  
+  /* Transições suaves */
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+  position: relative;
+}
+
+/* Hover sutil - apenas mudança de borda */
+.card:hover {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--shadow-md);
+}
+
+/* Dark Mode - Card */
+html[data-theme='dark'] .card,
+[data-theme='dark'] .card {
+  background-color: #0A0E27;
+  border-color: var(--official-border-light);
+  box-shadow: var(--shadow-sm-dark);
+}
+
+html[data-theme='dark'] .card:hover,
+[data-theme='dark'] .card:hover {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-md);
+}
+
+/* ============================================
+   HEADER (Ícone + Título)
+   ============================================ */
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md); /* 16px */
+  margin-bottom: var(--spacing-lg); /* 24px */
+  width: 100%;
+}
+
+.iconBadge {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--official-accent-green-alpha-15);
+  color: var(--official-accent-green);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 200ms ease;
+}
+
+.card:hover .iconBadge {
+  background: var(--official-accent-green-alpha-20);
+}
+
+/* Dark Mode - Icon Badge */
+html[data-theme='dark'] .iconBadge,
+[data-theme='dark'] .iconBadge {
+  background: var(--official-accent-green-alpha-20);
+  color: var(--official-accent-green);
+}
+
+/* ============================================
+   TITLE (h3)
+   ============================================ */
+
+.title {
+  font-size: var(--font-size-xl); /* 20px */
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: #091E42;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  text-align: left;
+  transition: color 200ms ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Dark Mode - Title */
+html[data-theme='dark'] .title,
+[data-theme='dark'] .title {
+  color: #FFFFFF;
+}
+
+/* ============================================
+   DESCRIPTION (p)
+   ============================================ */
+
+.description {
+  font-size: var(--font-size-base); /* 16px */
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+  color: #677483;
+  margin: 0 0 var(--spacing-xl) 0; /* 32px */
+  flex-grow: 1;
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Dark Mode - Description */
+html[data-theme='dark'] .description,
+[data-theme='dark'] .description {
+  color: #B3BAC5;
+}
+
+/* ============================================
+   BUTTON CTA - Link style mais minimalista
+   ============================================ */
+
+.cta {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+  margin-top: auto;
+}
+
+.cta strong {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm); /* 8px */
+  padding: 0;
+  font-size: var(--font-size-base); /* 16px */
+  font-weight: var(--font-weight-medium);
+  color: var(--official-accent-green);
+  text-decoration: none;
+  transition: color 200ms ease, gap 200ms ease;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.cta strong:hover {
+  color: var(--official-accent-green-dark);
+  gap: var(--spacing-md); /* 12px no hover */
+}
+
+/* Dark Mode - CTA */
+html[data-theme='dark'] .cta strong,
+[data-theme='dark'] .cta strong {
+  color: var(--official-accent-green);
+}
+
+html[data-theme='dark'] .cta strong:hover,
+[data-theme='dark'] .cta strong:hover {
+  color: var(--official-accent-green-light);
+}
+
+/* Ícones no botão */
+.cta strong svg,
+.cta strong .lucide {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  transition: transform 200ms ease;
+}
+
+.cta strong:hover svg,
+.cta strong:hover .lucide {
+  transform: translateX(4px);
+}
+
+/* ============================================
+   RIPPLE EFFECT (removido para design minimalista)
+   ============================================ */
+
+.ripple {
+  display: none;
+}
+
+/* ============================================
+   RESPONSIVE - Mobile
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: var(--spacing-lg); /* 24px */
+  }
+  
+  .header {
+    gap: var(--spacing-sm); /* 8px */
+    margin-bottom: var(--spacing-md); /* 16px */
+  }
+  
+  .iconBadge {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .title {
+    font-size: var(--font-size-lg); /* 20px */
+  }
+
+  .description {
+    font-size: var(--font-size-sm); /* 14px */
+    margin-bottom: var(--spacing-lg); /* 24px */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    padding: var(--spacing-md); /* 16px */
+  }
+  
+  .header {
+    margin-bottom: var(--spacing-sm); /* 8px */
+  }
+  
+  .iconBadge {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .title {
+    font-size: var(--font-size-base); /* 16px */
+  }
+
+  .description {
+    font-size: var(--font-size-sm); /* 14px */
+    margin-bottom: var(--spacing-md); /* 16px */
+  }
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .iconBadge,
+  .title,
+  .cta strong,
+  .cta strong svg {
+    transition: none;
+  }
+  
+  .cta strong:hover svg {
+    transform: none;
+  }
+}

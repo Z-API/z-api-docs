@@ -1,0 +1,87 @@
+.comparisonContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--ifm-background-color);
+}
+
+.typographyScale,
+.fontWeights {
+  padding: 1.5rem;
+  border-radius: var(--border-radius-lg);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-light);
+}
+
+.scaleTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-content);
+}
+
+.scaleGrid,
+.weightsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.scaleItem,
+.weightItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: 1rem;
+  background: var(--ifm-background-color);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-light);
+}
+
+.scaleLabel,
+.weightLabel {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--ifm-color-content-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.scaleText,
+.weightText {
+  color: var(--ifm-color-content);
+  line-height: var(--line-height-relaxed);
+}
+
+.scaleInfo {
+  display: flex;
+  gap: 1rem;
+  font-size: var(--font-size-xs);
+  font-family: var(--ifm-font-family-mono);
+  color: var(--ifm-color-content-secondary);
+}
+
+.weightValue {
+  font-size: var(--font-size-xs);
+  font-family: var(--ifm-font-family-mono);
+  color: var(--ifm-color-content-secondary);
+  background: var(--ifm-background-surface-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  display: inline-block;
+  width: fit-content;
+}
+
+/* Tema Classic */
+[data-theme="classic"] .typographyScale,
+[data-theme="classic"] .fontWeights {
+  border-top: 3px solid var(--zapi-green);
+}
+
+/* Tema Z-API */
+[data-theme="zapi"] .typographyScale,
+[data-theme="zapi"] .fontWeights {
+  border-top: 3px solid var(--zapi-primary);
+}
+

@@ -1,0 +1,148 @@
+/**
+ * Melhorias de Acessibilidade
+ * 
+ * Adiciona focus visible e melhorias de acessibilidade conforme WCAG AA.
+ */
+
+/* ============================================
+   FOCUS VISIBLE - Melhorar navegação por teclado
+   ============================================ */
+
+/* Focus visible para elementos interativos */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* Focus visible para cards clicáveis */
+.card:focus-visible,
+.card-link:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-md);
+}
+
+/* Remover outline padrão (substituído por focus-visible) */
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============================================
+   SKIP LINKS - Melhorar navegação por teclado
+   ============================================ */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--ifm-color-primary);
+  color: var(--text-inverse);
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 0 0 var(--border-radius-md) 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ============================================
+   ARIA LIVE REGIONS - Anúncios para screen readers
+   ============================================ */
+
+[aria-live="polite"],
+[aria-live="assertive"] {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ============================================
+   CONTRASTE - Garantir contraste WCAG AA
+   ============================================ */
+
+/* Verificar contraste de textos */
+.text-primary {
+  color: var(--text-primary);
+
+  /* Contraste: 12.6:1 sobre branco - WCAG AAA */
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+
+  /* Contraste: 4.5:1 sobre branco - WCAG AA */
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+
+  /* Contraste: 4.5:1+ sobre branco - WCAG AA (ajustado) */
+}
+
+/* ============================================
+   REDUCED MOTION - Respeitar preferências
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE - Suporte a modo de alto contraste
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  .card,
+  .button,
+  .badge {
+    border: 2px solid currentColor;
+  }
+}
+
+/* ============================================
+   SCREEN READER ONLY - Texto apenas para screen readers
+   ============================================ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}

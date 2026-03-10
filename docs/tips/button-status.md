@@ -7,7 +7,7 @@ title: Funcionamento dos Botões
 
 Nas ultimas semanas as mensagens contendo botões estão sofrendo uma instabilidade em seu funcionamento.
 
-**É importante lembrar que isso não se trata de um problema exclusivo da Z-API.**
+**É importante lembrar que isso não se trata de um problema exclusivo do Z-API.**
 
 Este tópico descreve como está o comportamento dos botões no WhatsApp em diferentes cenários.
 
@@ -31,7 +31,7 @@ Essa documentação foi atualizada no dia 27/08/2024 então os fatos sobre o fun
 
 Para utilizar a funcionalidade dos botões, é necessário que você aceite os termos de uso, reconhecendo que está ciente de que futuras atualizações do WhatsApp podem causar instabilidades nessa funcionalidade.
 
-![img](../../img/buttons-terms.jpeg)
+![img](/img/buttons-terms.jpeg)
 
 ## Tipos de botões
 
@@ -49,49 +49,49 @@ Para utilizar a funcionalidade dos botões, é necessário que você aceite os t
 
 ## Comportamento dos botões:
 
-### [Botão simples com texto:](https://developer.z-api.io/message/send-button-list)
+### [Botão simples com texto:](/docs/messages/botoes)
 
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Grupo: **FUNCIONA**
 
-### [Botão simples com imagem:](https://developer.z-api.io/message/send-button-list-image)
+### [Botão simples com imagem:](/docs/messages/botoes-imagem)
 
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
 - Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Grupo: **FUNCIONA**
 
-### [Botão simples com video:](https://developer.z-api.io/message/send-button-list-video)
+### [Botão simples com video:](/docs/messages/botoes-video)
 
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
 - Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Grupo: **FUNCIONA**
 
-### [Lista de opções:](https://developer.z-api.io/message/send-option-list)
+### [Lista de opções:](/docs/messages/lista-opcoes)
 
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
 - Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Grupo: **FUNCIONA**
 
-### [Botões de ações:](https://developer.z-api.io/message/send-button-actions)
+### [Botões de ações:](/docs/messages/texto-botoes-acao)
 
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
 - Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Grupo: **FUNCIONA**
 
-### [Botão de cópia:](https://developer.z-api.io/message/send-button-otp)
+### [Botão de cópia:](/docs/messages/botao-otp)
 
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**
 - Enviando de WhatsApp Business para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Business para Grupo: **FUNCIONA**
 
-### [Botão de chave PIX:](https://developer.z-api.io/message/send-button-pix)
+### [Botão de chave PIX:](/docs/messages/botao-pix)
 
 - Enviando de WhatsApp Normal para Chat Normal: **FUNCIONA**
 - Enviando de WhatsApp Normal para Grupo: **FUNCIONA**

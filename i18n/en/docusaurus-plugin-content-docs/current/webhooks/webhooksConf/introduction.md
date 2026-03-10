@@ -1,38 +1,36 @@
 ---
 id: introduction
-title: Introdução
+title: Introduction
 ---
+## What is a Webhook and for What Purpose?
 
-## O que é e para que serve?
+According to Google, a Webhook is a resource used on the internet to enable one application to communicate with another by providing real-time data whenever an event occurs. In this way, the two systems can exchange information without any external action needing to be performed.
 
-Segundo o Google, Webhook é um recurso usado na internet para que uma aplicação se comunique com outra, fornecendo dados em tempo real sempre que um evento acontecer. Desta forma os dois sistemas realizam trocas de informações sem que nenhuma ação externa precise ser realizada.
+So if you are integrating with the _Z-API_ and need to receive information via WhatsApp, it is necessary to provide these endpoints in your application so that we can notify you about everything that happens on your WhatsApp. That is, every time the connected number receives an interaction, we will make a POST request to the previously configured URL. (For each request, there is a specific JSON body)
 
-Então se você está se integrando com o _Z-API_ e precisa receber informações pelo WhatsApp, é necessário prover estes end-points na sua aplicação para conseguirmos te avisar sobre tudo que acontece no seu WhatsApp. Ou seja, toda vez que o número conectado receber uma interação, vamos fazer uma requisição com o método POST para a URL configurada previamente. (Para cada requisição há um corpo em JSON específico)
+The _Z-API_ offers within the settings of the instance in the admin panel the pointing of webhooks so it can notify you about interactions with your chats/contatos, updates on your messages, and changes in the state of your instance.
 
-O Z-API oferece dentro das configurações da instância no painel admin o apontamento de webhooks para que ele possa notificar você sobre interações com seus chats/contatos, atualiações sobre suas mensagem e mudanças na estado da sua instância.
-
-### Nossos webhooks
+### Our Webhooks
 
 #### Delivery
 
-Responsavel por avisar você que sua mensagem foi entregue ao WhatsApp, mas isso não significa necessáriamente que seu contato a recebeu, para informações de recebimento e leitura você vai precisar observar o webhook de status.
+Responsible for notifying you that your message was delivered to WhatsApp, but this does not necessarily mean that your contact received it. For information about receipt and reading, you will need to observe the status webhook.
 
 #### Receive
 
-Este webhook será chamado toda vez que alguem interagir com seu numero no whatsapp.
+This webhook will be called every time someone interacts with your number on WhatsApp.
 
 #### Status
 
-Este método vai lhe avisar de todas mudanças de status que sua mensagem sofrer, se ela for recebida, lida, respondida ou excluida, ou seja uma mesma mensagem pode passar por varios status, e ter o mesmo status mais de uma vez, que é o caso de respondida.
+This method will notify you of all status changes that your message has undergone, whether it was received, read, responded to, or deleted. In other words, a single message can go through several statuses and have the same status more than once, such as being responded to.
 
 #### Disconnected
 
-Este webhook será chamado sempre que nosso serviço identificar alguma indisponibiidade na comunicação, seja do seu celular com o whatsapp ou mesmo da conexão entre seu celular e o Z-API.
+This webhook will be called whenever our service detects any unavailability in communication, whether from your phone with WhatsApp or even from the connection between your phone and the Z-API.
 
-:::tip Dicas
+:::tip Tips
 
-- Não deixe de ler nossa sessão dicas, lá você vai encontrar alguns tópicos de como melhorar sua conexão com Z-API e ter mais qualidade no serviço.
-
-- Você não precisa configurar todos webhookds, mas quanto mais controle você possuir sobre sua instância mais vai conseguir extrair recursos e desenvolver negócios com _Z-API_
+- Don't forget to read our tips section, where you can find some topics on how to improve your connection with _Z-API_ and have better quality in the service.
+- You don't need to configure all webhooks, but the more control you have over your instance, the more you will be able to extract resources and develop businesses with _Z-API_.
 
 :::

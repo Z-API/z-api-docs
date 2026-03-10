@@ -1,0 +1,431 @@
+.exclusiveFeatures {
+  padding: 80px var(--spacing-lg); /* 80px vertical, 24px horizontal - consistente com outras seções */
+  /* Light Mode - Background claro usando --official-bg-light */
+  background: #F8F9FA;
+  /* Separação visual */
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.exclusiveFeatures[data-theme='official'] {
+  background: #F8F9FA;
+}
+
+/* Dark Mode - Background escuro para exclusive features section */
+html[data-theme='dark'] .exclusiveFeatures,
+[data-theme='dark'] .exclusiveFeatures {
+  background: #1A1D29 !important;
+  border-top-color: var(--background-white-alpha-05);
+  border-bottom-color: var(--background-white-alpha-05);
+}
+
+html[data-theme='dark'] .exclusiveFeatures[data-theme='official'],
+[data-theme='dark'] .exclusiveFeatures[data-theme='official'] {
+  background: #1A1D29 !important;
+  border-top-color: var(--background-white-alpha-05);
+  border-bottom-color: var(--background-white-alpha-05);
+}
+
+.featuresHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+/* Dark Mode - Removido background escuro do header */
+/* Mantém apenas o texto claro para visibilidade */
+
+.featuresTitle {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  color: #091E42;
+}
+
+.exclusiveFeatures[data-theme='official'] .featuresTitle {
+  color: #091E42;
+}
+
+/* Dark Mode - garantir visibilidade mesmo com tema official */
+[data-theme='dark'] .exclusiveFeatures .featuresTitle,
+[data-theme='dark'] .exclusiveFeatures[data-theme='official'] .featuresTitle {
+  color: #FFFFFF !important;
+}
+
+.featuresSubtitle {
+  font-size: var(--font-size-lg);
+  color: #677483;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: var(--line-height-relaxed);
+}
+
+.exclusiveFeatures[data-theme='official'] .featuresSubtitle {
+  color: #677483;
+}
+
+/* Dark Mode - garantir visibilidade do subtítulo */
+[data-theme='dark'] .featuresSubtitle,
+[data-theme='dark'] .featuresHeader .featuresSubtitle {
+  color: #B3BAC5 !important;
+}
+
+.featuresGrid {
+  display: grid;
+  width: 100%;
+  align-items: stretch;
+}
+
+.featureItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.featureLink {
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  transition: none; /* Removido transform no hover */
+}
+
+/* Hover removido do link - apenas no card */
+.featureLink:hover {
+  transform: none;
+}
+
+.featureLink:focus-visible {
+  outline: 2px solid var(--zapi-green);
+  outline-offset: 4px;
+  border-radius: var(--border-radius-lg);
+}
+
+.featureCard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: var(--spacing-xl); /* 32px - padding generoso */
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+  border: 1px solid var(--border-light);
+  border-radius: 12px; /* Mais suave */
+  flex-grow: 1;
+  background: var(--background-white);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1); /* Sombra sutil */
+}
+
+.featureCardInner {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: var(--spacing-xl);
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+/* Tema Official - Background claro em light mode */
+.exclusiveFeatures[data-theme='official'] .featureCard {
+  background: var(--official-bg-white);
+  border: 1px solid var(--border-light);
+  color: #091E42;
+}
+
+/* Dark Mode - Cards com background escuro (hero) e texto claro */
+[data-theme='dark'] .exclusiveFeatures[data-theme='official'] .featureCard {
+  background: #0A0E27 !important;
+  border: 1px solid var(--official-border-light, rgba(0, 166, 133, 0.2)) !important;
+  color: var(--text-inverse) !important;
+}
+
+/* Hover sutil - apenas mudança de borda e sombra leve */
+.featureLink:hover .featureCard {
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 0.08);
+  border-color: var(--official-accent-green);
+}
+
+.exclusiveFeatures[data-theme='official'] .featureLink:hover .featureCard {
+  box-shadow: 0 4px 12px 0 rgba(0, 166, 133, 0.15);
+  border-color: var(--official-accent-green);
+}
+
+.featureIcon {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  color: #091E42;
+  align-self: flex-start;
+}
+
+/* Tema Official - Light Mode: ícone escuro para contraste com fundo branco */
+.exclusiveFeatures[data-theme='official'] .featureIcon {
+  color: #091E42;
+}
+
+/* Tema Official - Dark Mode: ícone claro para contraste com fundo escuro */
+html[data-theme='dark'] .exclusiveFeatures[data-theme='official'] .featureIcon,
+[data-theme='dark'] .exclusiveFeatures[data-theme='official'] .featureIcon {
+  color: var(--official-accent-green);
+}
+
+.featureTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  padding: 0;
+  color: #091E42;
+  line-height: var(--line-height-tight);
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  letter-spacing: -0.48px;
+}
+
+/* Garantir que o Heading do Docusaurus não adicione estilos extras */
+.featureTitle h3,
+.featureTitle * {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+/* Tema Official - texto escuro em light mode */
+.exclusiveFeatures[data-theme='official'] .featureTitle {
+  color: #091E42;
+}
+
+/* Dark Mode - texto claro */
+[data-theme='dark'] .exclusiveFeatures[data-theme='official'] .featureTitle {
+  color: var(--text-inverse) !important;
+}
+
+.featureBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-md);
+  flex: 1 1 0;
+  min-width: 160px;
+  width: 100%;
+  height: 100%;
+}
+
+.featureDescription {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  color: #677483;
+  line-height: 1.4;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Tema Official - texto escuro em light mode */
+.exclusiveFeatures[data-theme='official'] .featureDescription {
+  color: #677483;
+}
+
+/* Dark Mode - texto claro com opacidade */
+[data-theme='dark'] .exclusiveFeatures[data-theme='official'] .featureDescription {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Dark Mode - garantir contraste adequado */
+[data-theme='dark'] .exclusiveFeatures .featureDescription {
+  color: #B3BAC5 !important;
+}
+
+/* Dark Mode + Tema Official - manter contraste em cards escuros */
+[data-theme='dark'] .exclusiveFeatures[data-theme='official'] .featureCard .featureDescription {
+  color: var(--official-text-light-alpha-80, rgba(255, 255, 255, 0.8)) !important;
+}
+
+.featureCta {
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: left; /* Alinhado à esquerda */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinhado à esquerda */
+}
+
+.featureCta strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinhado à esquerda */
+  gap: var(--spacing-sm); /* 8px */
+  padding: 0;
+  font-size: var(--font-size-base); /* 16px */
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-base);
+  border: none;
+  background: transparent;
+  color: var(--official-accent-green);
+  min-width: auto;
+  min-height: auto;
+  transition: color 200ms ease, gap 200ms ease;
+  box-shadow: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.featureCta strong:hover {
+  background: transparent;
+  color: var(--official-accent-green-dark);
+  gap: var(--spacing-md); /* 12px no hover */
+}
+
+.featureCta strong:active {
+  color: var(--official-accent-green-dark);
+}
+
+.featureCta strong:focus-visible {
+  outline: 2px solid var(--official-accent-green);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+/* Ícones no botão CTA */
+.featureCta strong svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  transition: transform 200ms ease;
+}
+
+.featureCta strong:hover svg {
+  transform: translateX(4px);
+}
+
+/* Responsive - Tablet */
+@media screen and (max-width: 996px) {
+  .exclusiveFeatures {
+    padding: 64px var(--spacing-md); /* 64px vertical, 16px horizontal */
+  }
+
+  .featureCard {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .featureIcon {
+    margin-bottom: var(--spacing-md);
+    height: 40px;
+  }
+
+  .featureTitle {
+    margin-bottom: var(--spacing-sm);
+    min-height: 3em;
+  }
+
+  .featuresTitle {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+/* Responsive - Mobile */
+@media screen and (max-width: 768px) {
+  .exclusiveFeatures {
+    padding: 48px var(--spacing-sm); /* 48px vertical, 8px horizontal */
+  }
+
+  .featureCard {
+    padding: var(--spacing-md);
+  }
+
+  .featureCardInner {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: center;
+  }
+
+  .featureIcon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    align-items: center;
+  }
+
+  .featureBody {
+    align-items: center;
+    text-align: center;
+  }
+
+  .featureTitle {
+    font-size: var(--font-size-xl);
+    text-align: center;
+  }
+
+  .featureDescription {
+    font-size: var(--font-size-base) !important;
+    font-family: var(--font-family-base) !important;
+    text-align: center;
+  }
+
+  .featureCta {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .featureCta strong {
+    min-width: 160px;
+    min-height: 48px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+
+  .featuresTitle {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featureLink {
+    transition: none;
+  }
+
+  .featureLink:hover {
+    transform: none;
+  }
+
+  .featureCard {
+    transition: none;
+  }
+
+  .featureCta strong {
+    transition: color 200ms ease !important;
+    will-change: auto;
+  }
+
+  .featureCta strong:hover {
+    gap: var(--spacing-sm) !important; /* Mantém gap original */
+  }
+
+  .featureCta strong svg {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .featureCta strong:hover svg {
+    transform: none !important;
+  }
+}
+

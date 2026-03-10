@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-label="Capa ilustrativa Bem-vindo">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#075E54"/>
+      <stop offset="100%" stop-color="#033D35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="810" fill="url(#g3)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2">
+    <path d="M120 640 C 420 520, 720 720, 1080 520" />
+    <path d="M180 700 C 540 540, 840 800, 1260 580" />
+  </g>
+  <text x="72" y="120" fill="#FFFFFF" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="48">Bem-vindo ao Z-API Central</text>
+  <text x="72" y="168" fill="#E5FFFA" font-family="Segoe UI, Roboto, Arial" font-size="20" opacity="0.9">Documentação completa da API Z-API</text>
+</svg>
+

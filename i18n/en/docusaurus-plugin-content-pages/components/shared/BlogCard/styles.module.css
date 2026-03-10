@@ -1,0 +1,210 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--ifm-box-shadow-card);
+  transition: box-shadow var(--transition-normal) var(--ease-out),
+              transform var(--transition-normal) var(--ease-out),
+              border-color var(--transition-normal) var(--ease-out);
+  text-decoration: none;
+  color: inherit;
+}
+
+.root:hover {
+  box-shadow: var(--ifm-box-shadow-card-hover);
+  transform: translateY(-4px);
+  border-color: var(--border-medium);
+}
+
+.root:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root {
+    transition: box-shadow var(--transition-normal) var(--ease-out),
+                border-color var(--transition-normal) var(--ease-out);
+  }
+  
+  .root:hover {
+    transform: none;
+  }
+}
+
+/* Variante Featured - Layout grande para post destacado */
+.featured {
+  padding: var(--spacing-xl);
+}
+
+.featured .cover {
+  aspect-ratio: 21 / 9;
+  margin-bottom: var(--spacing-lg);
+}
+
+.featured .title {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.featured .excerpt {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Variante Compact - Lista simples sem imagem */
+.compact {
+  flex-direction: row;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  height: auto;
+  min-height: auto;
+}
+
+.compact .title {
+  font-size: var(--font-size-base);
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.compact:hover {
+  transform: none;
+  border-color: var(--ifm-color-primary);
+}
+
+/* Categoria - Estilo de link azul acima do título */
+.category {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
+  margin-bottom: var(--spacing-sm);
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block !important;
+  width: 100%;
+  /* Estilo de link, mas não é clicável (filtro será implementado no futuro) */
+  cursor: default;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Garantir espaçamento correto quando há imagem */
+.root:not(.compact) .cover ~ .category {
+  margin-top: var(--spacing-sm);
+}
+
+/* Featured variant - Categoria com mais destaque */
+.featured .category {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Dark Mode - Categoria */
+[data-theme='dark'] .category {
+  color: var(--ifm-color-primary-light) !important;
+}
+
+[data-theme='dark'] .category:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Read More - Link verde com seta */
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--official-accent-green);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  margin-top: var(--spacing-md);
+  transition: gap var(--transition-normal) var(--ease-out);
+}
+
+.readMore:hover {
+  gap: var(--spacing-sm);
+  text-decoration: underline;
+}
+
+.readMoreIcon {
+  transition: transform var(--transition-normal) var(--ease-out);
+}
+
+.root:hover .readMoreIcon {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .readMore {
+    transition: none;
+  }
+  
+  .root:hover .readMoreIcon {
+    transform: none;
+  }
+}
+
+.cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-md);
+  background: var(--hybrid-gradient-card);
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.excerpt {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+  flex: 1 1 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  align-items: center;
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+/* Dark Mode - Garantir texto branco nos cards do blog */
+[data-theme='dark'] .root {
+  color: #FFFFFF !important;
+  background: #0A0E27 !important;
+}
+
+[data-theme='dark'] .title {
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .excerpt {
+  color: #B3BAC5 !important;
+}
+
+[data-theme='dark'] .meta {
+  color: #9CA3AF !important;
+}
+
+[data-theme='dark'] .readMore {
+  color: #00A685 !important;
+}
+

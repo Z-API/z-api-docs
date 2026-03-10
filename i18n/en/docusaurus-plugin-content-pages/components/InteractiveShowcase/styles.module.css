@@ -1,0 +1,177 @@
+.showcaseCard {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  padding: var(--ifm-spacing-lg);
+  background: var(--ifm-background-surface-color);
+  box-shadow: var(--shadow-md);
+  margin: var(--ifm-spacing-lg) 0;
+}
+
+.showcaseTitle {
+  font-size: var(--font-size-base);
+
+  /* 16px - equivalente a 1rem */
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  margin-bottom: var(--ifm-spacing-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.showcaseDescription {
+  margin-bottom: var(--ifm-spacing-md);
+  color: var(--ifm-font-color-base);
+}
+
+.flowCanvas {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 400px;
+  max-height: 600px;
+  border-radius: calc(var(--ifm-global-radius) / 1.5);
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+}
+
+/* Labels de edges do React Flow dentro do flowCanvas */
+.flowCanvas :global(.react-flow__edge-text),
+.flowCanvas :global(.react-flow__edge-textbg),
+.flowCanvas :global(.react-flow__edge-label) {
+  fill: var(--text-primary);
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+/* Dark mode - Labels de edges */
+[data-theme='dark'] .flowCanvas :global(.react-flow__edge-text),
+[data-theme='dark'] .flowCanvas :global(.react-flow__edge-textbg),
+[data-theme='dark'] .flowCanvas :global(.react-flow__edge-label) {
+  fill: var(--text-primary);
+  color: var(--text-primary);
+}
+
+/* Mobile: proporção quadrada */
+@media (max-width: 768px) {
+  .flowCanvas {
+    aspect-ratio: 1 / 1;
+    min-height: 350px;
+    max-height: 450px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .flowCanvas {
+    aspect-ratio: 16 / 9;
+    min-height: 380px;
+    max-height: 500px;
+  }
+}
+
+/* Desktop large */
+@media (min-width: 1200px) {
+  .flowCanvas {
+    max-height: 650px;
+  }
+}
+
+.listActions {
+  display: flex;
+  gap: var(--ifm-spacing-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--ifm-spacing-md);
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-darkest));
+  color: var(--text-inverse);
+  transition: transform 180ms var(--easing-standard, ease-out), opacity 180ms ease;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
+  transform: translateY(-1px) scale(1.01);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--ifm-spacing-sm);
+}
+
+.listItem {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: calc(var(--ifm-global-radius) / 1.2);
+  padding: var(--ifm-spacing-sm) var(--ifm-spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--zapi-primary-alpha-10);
+
+  /* Usando variável CSS --zapi-primary-alpha-10 para verde Z-API com opacidade leve */
+}
+
+.badge {
+  font-size: var(--font-size-xs);
+
+  /* 12px - equivalente a 0.75rem */
+  font-weight: 700;
+  color: var(--ifm-color-success-darkest);
+  background: var(--zapi-primary-alpha-20);
+
+  /* Usando variável CSS --zapi-primary-alpha-20 para verde Z-API com opacidade média */
+  border-radius: 999px;
+  padding: 0.15rem 0.65rem;
+}
+
+.lottieWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ifm-spacing-md);
+}
+
+.lottieMessage {
+  font-weight: 500;
+  text-align: center;
+  color: var(--ifm-font-color-base);
+}
+
+.showcaseGrid {
+  display: grid;
+  gap: var(--ifm-spacing-xl);
+}
+
+@media (min-width: 996px) {
+  .showcaseGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.lazyFallback {
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  padding: var(--ifm-spacing-lg);
+  background: var(--zapi-primary-alpha-10);
+
+  /* Usando variável CSS --zapi-primary-alpha-10 para verde Z-API com opacidade leve */
+  text-align: center;
+}
+
+

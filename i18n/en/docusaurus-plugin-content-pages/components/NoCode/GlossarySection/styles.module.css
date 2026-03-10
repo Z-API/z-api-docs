@@ -1,0 +1,436 @@
+/* Glossary Section */
+.glossary {
+  padding: var(--spacing-3xl) var(--spacing-md);
+  background: var(--background-white);
+  color: var(--official-text-dark);
+
+  /* Scroll margin já definido globalmente no custom.css para #glossario */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.glossary[data-theme='official'] {
+  background: var(--background-white);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary,
+[data-theme='dark'] .glossary[data-theme='official'] {
+  background: var(--official-bg-dark);
+  color: var(--official-text-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0 0 var(--spacing-md);
+  color: var(--official-text-dark);
+}
+
+.glossary[data-theme='official'] .title {
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .title,
+[data-theme='dark'] .glossary[data-theme='official'] .title {
+  color: var(--official-text-white);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--official-text-dark);
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: var(--line-height-relaxed);
+  opacity: 0.8;
+}
+
+.glossary[data-theme='official'] .subtitle {
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .subtitle,
+[data-theme='dark'] .glossary[data-theme='official'] .subtitle {
+  color: var(--official-text-light);
+}
+
+/* Busca e Filtros */
+.filters {
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.searchWrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.searchIcon {
+  position: absolute;
+  left: var(--spacing-md);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .searchIcon,
+[data-theme='dark'] .glossary[data-theme='official'] .searchIcon {
+  color: var(--background-white-alpha-60);
+}
+
+.searchInput {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  padding-left: var(--spacing-xl);
+  border: 2px solid var(--border-light);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  transition: all var(--motion-duration-normal) var(--ease-in-out);
+  background: var(--background-white);
+  color: var(--official-text-dark);
+}
+
+.glossary[data-theme='official'] .searchInput {
+  color: var(--official-text-dark);
+  background: var(--background-white);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .searchInput,
+[data-theme='dark'] .glossary[data-theme='official'] .searchInput {
+  background: var(--official-bg-card-dark);
+  color: var(--official-text-white);
+  border-color: var(--border-medium);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--official-accent-green);
+  box-shadow: 0 0 0 3px var(--official-accent-green-alpha-15);
+}
+
+.searchInput::placeholder {
+  color: var(--text-secondary);
+}
+
+.glossary[data-theme='official'] .searchInput::placeholder {
+  color: var(--text-secondary);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .searchInput::placeholder,
+[data-theme='dark'] .glossary[data-theme='official'] .searchInput::placeholder {
+  color: var(--background-white-alpha-60); /* Usando alpha-60 como aproximação mais próxima de 0.5 */
+}
+
+.categoryFilters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.categoryButton {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-full);
+  background: var(--official-bg-button-light);
+  color: var(--official-text-black);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--motion-duration-normal) var(--ease-in-out);
+}
+
+.glossary[data-theme='official'] .categoryButton {
+  color: var(--official-text-black);
+  background: var(--official-bg-button-light);
+}
+
+.categoryButton:hover {
+  border-color: var(--official-accent-green);
+  color: var(--official-text-black);
+  background: var(--official-bg-button-hover);
+}
+
+.categoryButtonActive {
+  background: var(--official-accent-green) !important;
+  border-color: var(--official-accent-green) !important;
+  color: var(--official-text-white) !important;
+  font-weight: var(--font-weight-semibold);
+  box-shadow: var(--official-shadow-sm, var(--official-shadow-glow));
+  transform: scale(1.05);
+}
+
+/* Garantir que o estado ativo funcione no light mode */
+.glossary[data-theme='official'] .categoryButtonActive {
+  background: var(--official-accent-green) !important;
+  border-color: var(--official-accent-green) !important;
+  color: var(--official-text-white) !important;
+}
+
+/* Dark Mode - manter chips cinza com texto preto quando não selecionados */
+[data-theme='dark'] .glossary .categoryButton,
+[data-theme='dark'] .glossary[data-theme='official'] .categoryButton {
+  background: var(--official-bg-button-light);
+  color: var(--official-text-black);
+  border-color: var(--border-light);
+}
+
+[data-theme='dark'] .glossary .categoryButton:hover,
+[data-theme='dark'] .glossary[data-theme='official'] .categoryButton:hover {
+  background: var(--official-bg-button-hover);
+  color: var(--official-text-black);
+}
+
+/* Dark Mode - chips selecionados também devem ter background verde e texto branco */
+[data-theme='dark'] .glossary .categoryButtonActive,
+[data-theme='dark'] .glossary[data-theme='official'] .categoryButtonActive {
+  background: var(--official-accent-green) !important;
+  border-color: var(--official-accent-green) !important;
+  color: var(--official-text-white) !important;
+  font-weight: var(--font-weight-semibold);
+  box-shadow: var(--official-shadow-sm, var(--official-shadow-glow));
+  transform: scale(1.05);
+}
+
+.noResults {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.glossary[data-theme='official'] .noResults {
+  color: var(--text-secondary);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .noResults,
+[data-theme='dark'] .glossary[data-theme='official'] .noResults {
+  color: var(--official-text-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+/* Card Styles */
+.cardWrapper {
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  background: var(--background-white);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--motion-duration-normal) var(--ease-in-out);
+  position: relative;
+  overflow: hidden;
+  color: var(--official-text-dark);
+}
+
+.card[data-theme='official'] {
+  background: var(--background-white);
+  border-color: var(--border-light);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .card,
+[data-theme='dark'] .glossary .card[data-theme='official'] {
+  background: var(--official-bg-card-dark);
+  border-color: var(--border-medium);
+  color: var(--official-text-white);
+}
+
+.card:hover {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-md);
+}
+
+.card[data-expanded='true'] {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-lg);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  position: relative;
+}
+
+.expandIcon {
+  margin-left: auto;
+  color: var(--official-accent-green);
+  transition: transform var(--motion-duration-normal) var(--ease-in-out);
+  flex-shrink: 0;
+}
+
+.expandIcon.expanded {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expandIcon {
+    transition: none;
+  }
+}
+
+.cardIcon {
+  flex-shrink: 0;
+  color: var(--official-accent-green);
+}
+
+.cardTerm {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  color: var(--official-text-dark);
+}
+
+.card[data-theme='official'] .cardTerm {
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .card .cardTerm,
+[data-theme='dark'] .glossary .card[data-theme='official'] .cardTerm {
+  color: var(--official-text-white);
+}
+
+.cardContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--motion-duration-normal) var(--ease-in-out);
+}
+
+.cardContent[data-expanded='true'] {
+  max-height: 1000px;
+}
+
+.simpleExplanation {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--official-text-dark);
+  margin: 0 0 var(--spacing-md);
+}
+
+.card[data-theme='official'] .simpleExplanation {
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .card .simpleExplanation,
+[data-theme='dark'] .glossary .card[data-theme='official'] .simpleExplanation {
+  color: var(--official-text-white);
+}
+
+.technicalSection,
+.exampleSection {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-light);
+}
+
+.technicalTitle,
+.exampleTitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--official-accent-green);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.technicalExplanation,
+.example {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.card[data-theme='official'] .technicalExplanation,
+.card[data-theme='official'] .example {
+  color: var(--text-secondary);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .glossary .card .technicalExplanation,
+[data-theme='dark'] .glossary .card .example,
+[data-theme='dark'] .glossary .card[data-theme='official'] .technicalExplanation,
+[data-theme='dark'] .glossary .card[data-theme='official'] .example {
+  color: var(--official-text-light);
+}
+
+/* Ripple Effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--official-accent-green-alpha-30);
+  transform: scale(0);
+  animation: ripple-animation var(--motion-duration-complex) var(--ease-out);
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ripple {
+    animation: none;
+  }
+
+  .cardContent {
+    transition: none;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-base);
+  }
+}

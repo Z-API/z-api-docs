@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  aspect-ratio: var(--diagram-aspect-ratio-desktop, 16 / 9);
+  min-height: var(--diagram-container-min-height-sm, 280px);
+  max-height: var(--diagram-container-max-height-lg, 600px);
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  overflow: hidden;
+  margin: var(--diagram-container-margin, var(--space-8) 0);
+  background: var(--ifm-background-surface-color);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    var(--ifm-color-primary) 0%, 
+    var(--official-accent-green) 100%);
+  z-index: 1;
+}
+
+.reactFlow {
+  background: var(--ifm-background-color);
+  width: 100%;
+  height: 100%;
+}
+
+.nodeContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.nodeIcon {
+  flex-shrink: 0;
+}
+
+.nodeText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.nodeLabel {
+  font-weight: 700;
+  font-size: var(--font-size-base);
+
+  /* 16px (0.9375rem → 15px fora da escala, usando base) */
+  text-align: center;
+  line-height: 1.3;
+  color: var(--text-inverse);
+  /* Texto branco para contraste sobre fundo colorido dos nós */
+}
+
+.nodeDescription {
+  font-size: var(--font-size-xs);
+
+  /* 12px (0.7rem → 11.2px fora da escala, usando xs) */
+  opacity: 0.9;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--text-inverse);
+  /* Texto branco para contraste sobre fundo colorido dos nós */
+}
+
+/* Dark mode - Garantir que texto seja visível mesmo com fundos escuros */
+[data-theme='dark'] .nodeLabel,
+[data-theme='dark'] .nodeDescription {
+  color: var(--text-inverse);
+  /* Mantém branco no dark mode para contraste sobre nós coloridos */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    aspect-ratio: var(--diagram-aspect-ratio-mobile, 4 / 3);
+    min-height: var(--diagram-container-min-height-sm, 280px);
+    max-height: var(--diagram-container-max-height-sm, 400px);
+  }
+
+  .nodeContent {
+    font-size: var(--font-size-sm);
+
+    /* 14px (0.875rem) */
+  }
+
+  .nodeIcon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Tablet: manter 16:9 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    aspect-ratio: var(--diagram-aspect-ratio-desktop, 16 / 9);
+    min-height: var(--diagram-container-min-height-sm, 280px);
+    max-height: var(--diagram-container-max-height-md, 500px);
+  }
+}
+

@@ -1,0 +1,140 @@
+.trustedBy {
+  padding: var(--spacing-3xl) 0;
+  background: var(--background-white);
+}
+
+.trustedBy[data-theme='official'] {
+  background: var(--official-bg-light);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.trustedBy[data-theme='official'] .title {
+  color: var(--official-text-dark);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: var(--line-height-relaxed);
+}
+
+.trustedBy[data-theme='official'] .subtitle {
+  color: var(--official-text-muted);
+}
+
+.companiesGrid {
+  display: grid;
+  width: 100%;
+  align-items: center;
+}
+
+.companyCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
+  background: var(--background-white);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-light);
+  transition:
+    box-shadow 0.3s cubic-bezier(0.42, 0, 0.58, 1),
+    transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  min-height: 120px;
+}
+
+/* Tema Official - Background azul marinho do hero e footer */
+.trustedBy[data-theme='official'] .companyCard {
+  background: var(--official-bg-dark-hero);
+  border: 1px solid var(--official-accent-green-alpha-20);
+}
+
+.companyCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--zapi-green);
+}
+
+.trustedBy[data-theme='official'] .companyCard:hover {
+  box-shadow: 0 8px 24px var(--official-accent-green-alpha-30);
+  border-color: var(--official-accent-green);
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: var(--spacing-sm);
+
+  /* Aspect ratio para prevenir CLS (Cumulative Layout Shift) */
+  aspect-ratio: 16 / 9;
+  min-height: 60px;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition:
+    filter 0.3s cubic-bezier(0.42, 0, 0.58, 1),
+    opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.companyCard:hover .logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.highlight {
+  margin-top: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.trustedBy[data-theme='official'] .highlight {
+  color: var(--official-text-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .companyCard {
+    transition: none;
+  }
+
+  .companyCard:hover {
+    transform: none;
+  }
+
+  .logo {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .companyCard {
+    min-height: 100px;
+    padding: var(--spacing-md);
+  }
+
+  .logoWrapper {
+    height: 50px;
+  }
+}
+

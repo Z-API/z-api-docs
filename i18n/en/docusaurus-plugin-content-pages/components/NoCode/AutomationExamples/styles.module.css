@@ -1,0 +1,265 @@
+/* Automation Examples Section */
+.examples {
+  padding: var(--spacing-3xl) var(--spacing-md);
+  background: var(--background-white);
+  color: var(--official-text-dark);
+
+  /* Scroll margin já definido globalmente no custom.css para #exemplos */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.examples[data-theme='official'] {
+  background: var(--background-white);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .examples,
+[data-theme='dark'] .examples[data-theme='official'] {
+  background: var(--official-bg-dark);
+  color: var(--official-text-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0 0 var(--spacing-md);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .examples .title,
+[data-theme='dark'] .examples[data-theme='official'] .title {
+  color: var(--official-text-white);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .examples .subtitle,
+[data-theme='dark'] .examples[data-theme='official'] .subtitle {
+  color: var(--official-text-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+/* Card Styles */
+.cardWrapper {
+  position: relative;
+}
+
+.card {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-xl);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  background: var(--background-white);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--motion-duration-normal) var(--ease-in-out);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--official-text-dark);
+}
+
+.card[data-theme='official'] {
+  background: var(--background-white);
+  border-color: var(--border-light);
+  color: var(--official-text-dark);
+}
+
+.card[data-theme='official'] .cardTitle,
+.card[data-theme='official'] .cardDescription,
+.card[data-theme='official'] .cardUseCase strong,
+.card[data-theme='official'] .cardLink {
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .examples .card,
+[data-theme='dark'] .examples .card[data-theme='official'] {
+  background: var(--official-bg-card-dark);
+  border-color: var(--border-medium);
+  color: var(--official-text-white);
+}
+
+[data-theme='dark'] .examples .card .cardTitle,
+[data-theme='dark'] .examples .card .cardDescription,
+[data-theme='dark'] .examples .card .cardUseCase strong,
+[data-theme='dark'] .examples .card .cardLink,
+[data-theme='dark'] .examples .card[data-theme='official'] .cardTitle,
+[data-theme='dark'] .examples .card[data-theme='official'] .cardDescription,
+[data-theme='dark'] .examples .card[data-theme='official'] .cardUseCase strong,
+[data-theme='dark'] .examples .card[data-theme='official'] .cardLink {
+  color: var(--official-text-white);
+}
+
+.card:hover {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-lg);
+  transform: var(--transform-hover-lift);
+}
+
+.cardIcon {
+  margin-bottom: var(--spacing-md);
+  color: var(--official-accent-green);
+}
+
+.cardTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0 0 var(--spacing-sm);
+  color: var(--official-text-dark);
+}
+
+.cardDescription {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--official-text-dark);
+  margin: 0 0 var(--spacing-md);
+}
+
+.cardUseCase {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-secondary);
+  margin: 0 0 var(--spacing-md);
+  padding: var(--spacing-sm);
+  background: var(--background-off-white);
+  border-radius: var(--border-radius-md);
+}
+
+.cardUseCase strong {
+  color: var(--official-text-dark);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .examples .card .cardUseCase {
+  background: var(--background-white-alpha-05);
+  color: var(--official-text-light);
+}
+
+[data-theme='dark'] .examples .card .cardUseCase strong {
+  color: var(--official-text-white);
+}
+
+.cardBenefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-md);
+}
+
+.cardBenefits li {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
+  padding-left: var(--spacing-lg);
+  position: relative;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .examples .card .cardBenefits li {
+  color: var(--official-text-light);
+}
+
+.cardBenefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--official-accent-green);
+  font-weight: var(--font-weight-semibold);
+}
+
+.cardBenefits li:last-child {
+  margin-bottom: 0;
+}
+
+.cardLink {
+  display: block;
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-light);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .examples .card .cardLink {
+  border-top-color: var(--border-medium);
+  color: var(--official-text-white);
+}
+
+.cardLink strong {
+  color: var(--official-accent-green);
+}
+
+/* Ripple Effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--official-accent-green-alpha-30);
+  transform: scale(0);
+  animation: ripple-animation var(--motion-duration-complex) var(--ease-out);
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ripple {
+    animation: none;
+  }
+
+  .card {
+    transition: none;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .card {
+    padding: var(--spacing-lg);
+  }
+}

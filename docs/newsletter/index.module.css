@@ -1,0 +1,137 @@
+/* ============================================
+   NEWSLETTER INDEX PAGE STYLES
+   ============================================ */
+
+/* Hero Section */
+.heroSection {
+    font-size: var(--font-size-body-large);
+    line-height: var(--line-height-relaxed);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-xl);
+    background: var(--background-off-white);
+    border-radius: var(--border-radius-lg);
+    border-left: 4px solid #00A685;
+}
+
+/* Cards Grid */
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+/* Responsive Grid */
+@media screen and (max-width: 768px) {
+    .cardsGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .cardsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-xl);
+    background: var(--background-white);
+    border: 2px solid var(--border-light);
+    border-radius: var(--border-radius-lg);
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--official-accent-green);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--official-accent-green);
+    box-shadow: var(--official-shadow-lg);
+    transform: translateY(-4px);
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Dark Mode Support */
+[data-theme='dark'] .card {
+    background: #1A1D29 !important;
+    border-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .card:hover {
+    border-color: var(--official-accent-green);
+}
+
+[data-theme='dark'] .heroSection {
+    background: #1A1D29 !important;
+    border-left-color: var(--official-accent-green);
+}
+
+/* Card Header */
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.cardIcon {
+    color: var(--official-accent-green) !important;
+    flex-shrink: 0;
+}
+
+.cardTitle {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+    color: var(--text-primary);
+}
+
+/* Card Description */
+.cardDescription {
+    font-size: var(--font-size-body);
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+}
+
+/* Card Link */
+.cardLink {
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-medium);
+    color: var(--official-accent-green) !important;
+    margin-top: auto;
+    transition: gap 0.2s ease;
+}
+
+.cardLink:hover {
+    text-decoration: none;
+    gap: 4px;
+}

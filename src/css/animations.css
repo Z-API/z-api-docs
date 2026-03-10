@@ -1,0 +1,799 @@
+/**
+ * Animações Avançadas - Z-API Central
+ * 
+ * Este arquivo contém animações sofisticadas para melhorar a experiência do usuário:
+ * - Micro-animações para interações
+ * - Animações de scroll reveal
+ * - Efeitos de ripple
+ * - Page transitions
+ * 
+ * Todas as animações respeitam prefers-reduced-motion
+ */
+
+/* ============================================
+   EASING FUNCTIONS AVANÇADAS
+   ============================================ */
+:root {
+  /* Easing customizados para animações mais naturais */
+  --ease-spring: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-bounce: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  --ease-smooth-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ============================================
+   KEYFRAMES AVANÇADOS
+   ============================================ */
+
+/* Fade In com Scale - Entrada suave com zoom */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Slide In com Bounce - Entrada com efeito de bounce */
+@keyframes slideInBounce {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+
+  80% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Scale In com Elastic - Entrada com efeito elástico */
+@keyframes scaleInElastic {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  70% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Rotate In - Entrada com rotação sutil */
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-5deg) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+/* Fade In Up com Stagger - Versão melhorada */
+@keyframes fadeInUpStagger {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Shimmer Effect - Efeito de brilho para loading */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Pulse - Pulsação suave */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Ripple Effect - Efeito de onda para clicks */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Float - Flutuação suave */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Glow Pulse - Pulsação com brilho */
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--zapi-primary-alpha-50);
+  }
+
+  50% {
+    box-shadow: 0 0 20px var(--zapi-primary-alpha-80), 0 0 30px var(--zapi-primary-alpha-60);
+  }
+}
+
+/* Slide Up Reveal - Revelação de baixo para cima */
+@keyframes slideUpReveal {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+    clip-path: inset(100% 0 0 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Fade In Right - Entrada da direita */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade In Left - Entrada da esquerda */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Zoom In - Zoom suave */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Spin - Rotação contínua (para loaders) */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================
+   CLASSES DE ANIMAÇÃO UTILITÁRIAS
+   ============================================ */
+
+/* Animações de Entrada */
+.animate-fade-in-scale {
+  animation: fadeInScale var(--transition-slow) var(--ease-smooth-in-out) forwards;
+}
+
+.animate-slide-in-bounce {
+  animation: slideInBounce 0.6s var(--ease-bounce) forwards;
+}
+
+.animate-scale-in-elastic {
+  animation: scaleInElastic 0.8s var(--ease-elastic) forwards;
+}
+
+.animate-rotate-in {
+  animation: rotateIn var(--transition-normal) var(--ease-out) forwards;
+}
+
+.animate-fade-in-up-stagger {
+  animation: fadeInUpStagger var(--transition-slow) var(--ease-smooth-in-out) forwards;
+}
+
+.animate-slide-up-reveal {
+  animation: slideUpReveal 0.8s var(--ease-smooth-in-out) forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight var(--transition-normal) var(--ease-out) forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft var(--transition-normal) var(--ease-out) forwards;
+}
+
+.animate-zoom-in {
+  animation: zoomIn var(--transition-normal) var(--ease-out) forwards;
+}
+
+/* Animações Contínuas */
+.animate-pulse {
+  animation: pulse 2s var(--ease-in-out) infinite;
+}
+
+.animate-float {
+  animation: float 3s var(--ease-in-out) infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 2s var(--ease-in-out) infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s linear infinite;
+  background: linear-gradient(
+    90deg,
+    var(--ifm-background-surface-color) 0%,
+    var(--background-white-alpha-10) 50%,
+    var(--ifm-background-surface-color) 100%
+  );
+  background-size: 1000px 100%;
+}
+
+/* ============================================
+   STAGGER ANIMATIONS MELHORADAS
+   ============================================ */
+
+/* Stagger com delays mais sofisticados */
+.stagger-item-advanced {
+  opacity: 0;
+  animation: fadeInUpStagger var(--transition-slow) var(--ease-smooth-in-out) forwards;
+}
+
+.stagger-item-advanced:nth-child(1) { animation-delay: 0ms; }
+.stagger-item-advanced:nth-child(2) { animation-delay: 100ms; }
+.stagger-item-advanced:nth-child(3) { animation-delay: 200ms; }
+.stagger-item-advanced:nth-child(4) { animation-delay: 300ms; }
+.stagger-item-advanced:nth-child(5) { animation-delay: 400ms; }
+.stagger-item-advanced:nth-child(6) { animation-delay: 500ms; }
+.stagger-item-advanced:nth-child(7) { animation-delay: 600ms; }
+.stagger-item-advanced:nth-child(8) { animation-delay: 700ms; }
+
+/* Stagger com diferentes direções */
+.stagger-item-left {
+  opacity: 0;
+  animation: fadeInLeft var(--transition-slow) var(--ease-out) forwards;
+}
+
+.stagger-item-right {
+  opacity: 0;
+  animation: fadeInRight var(--transition-slow) var(--ease-out) forwards;
+}
+
+.stagger-item-left:nth-child(1),
+.stagger-item-right:nth-child(1) { animation-delay: 0ms; }
+
+.stagger-item-left:nth-child(2),
+.stagger-item-right:nth-child(2) { animation-delay: 100ms; }
+
+.stagger-item-left:nth-child(3),
+.stagger-item-right:nth-child(3) { animation-delay: 200ms; }
+
+.stagger-item-left:nth-child(4),
+.stagger-item-right:nth-child(4) { animation-delay: 300ms; }
+
+/* ============================================
+   RIPPLE EFFECT
+   ============================================ */
+
+/* Classe base para elementos com ripple */
+.has-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Elemento ripple (adicionado via JavaScript) */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--background-white-alpha-60);
+  transform: scale(0);
+  animation: ripple 0.6s var(--ease-out);
+  pointer-events: none;
+}
+
+/* Ripple para elementos escuros */
+.has-ripple-dark .ripple {
+  background: var(--background-black-alpha-20);
+}
+
+/* ============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================ */
+
+/* Animações que são ativadas via Intersection Observer */
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity var(--transition-slow) var(--ease-out),
+              transform var(--transition-slow) var(--ease-out);
+}
+
+.scroll-reveal-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity var(--transition-slow) var(--ease-smooth-in-out),
+              transform var(--transition-slow) var(--ease-smooth-in-out);
+}
+
+.scroll-reveal-fade-down {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity var(--transition-slow) var(--ease-smooth-in-out),
+              transform var(--transition-slow) var(--ease-smooth-in-out);
+}
+
+.scroll-reveal-fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity var(--transition-slow) var(--ease-smooth-in-out),
+              transform var(--transition-slow) var(--ease-smooth-in-out);
+}
+
+.scroll-reveal-fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity var(--transition-slow) var(--ease-smooth-in-out),
+              transform var(--transition-slow) var(--ease-smooth-in-out);
+}
+
+.scroll-reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity var(--transition-slow) var(--ease-smooth-in-out),
+              transform var(--transition-slow) var(--ease-smooth-in-out);
+}
+
+/* Estado visível */
+.scroll-reveal.visible,
+.scroll-reveal-fade-up.visible,
+.scroll-reveal-fade-down.visible,
+.scroll-reveal-fade-left.visible,
+.scroll-reveal-fade-right.visible,
+.scroll-reveal-scale.visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* ============================================
+   SKELETON LOADER
+   ============================================ */
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--ifm-background-surface-color) 0%,
+    var(--background-light-gray) 50%,
+    var(--ifm-background-surface-color) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: var(--border-radius-md);
+}
+
+.skeleton-text {
+  height: 1em;
+  margin-bottom: 0.5em;
+  border-radius: var(--border-radius-sm);
+}
+
+.skeleton-title {
+  height: 1.5em;
+  width: 60%;
+  margin-bottom: 1em;
+  border-radius: var(--border-radius-sm);
+}
+
+.skeleton-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.skeleton-card {
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+}
+
+/* ============================================
+   PAGE TRANSITIONS
+   ============================================ */
+
+/* Transição de página suave */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--transition-slow) var(--ease-out),
+              transform var(--transition-slow) var(--ease-out);
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity var(--transition-fast) var(--ease-in),
+              transform var(--transition-fast) var(--ease-in);
+}
+
+/* ============================================
+   ACESSIBILIDADE - REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .stagger-item-advanced,
+  .stagger-item-left,
+  .stagger-item-right {
+    animation-delay: 0ms !important;
+  }
+  
+  .animate-pulse,
+  .animate-float,
+  .animate-glow-pulse,
+  .animate-spin,
+  .animate-shimmer {
+    animation: none !important;
+  }
+  
+  .scroll-reveal,
+  .scroll-reveal-fade-up,
+  .scroll-reveal-fade-down,
+  .scroll-reveal-fade-left,
+  .scroll-reveal-fade-right,
+  .scroll-reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* GPU Acceleration base - SEM will-change por padrão */
+.animate-fade-in-scale,
+.animate-slide-in-bounce,
+.animate-scale-in-elastic,
+.animate-rotate-in,
+.animate-fade-in-up-stagger,
+.animate-slide-up-reveal,
+.scroll-reveal,
+.scroll-reveal-fade-up,
+.scroll-reveal-fade-down,
+.scroll-reveal-fade-left,
+.scroll-reveal-fade-right,
+.scroll-reveal-scale {
+  /* will-change removido - será aplicado dinamicamente via JavaScript */
+  backface-visibility: hidden;
+  transform: translateZ(0); /* Force GPU acceleration */
+  contain: layout style paint; /* CSS Containment para melhor performance */
+}
+
+/* Classe para aplicar will-change dinamicamente quando animação está ativa */
+.will-animate {
+  will-change: transform, opacity;
+}
+
+/* Remover will-change após animação completar (via JavaScript) */
+.animation-complete {
+  will-change: auto;
+}
+
+/* CSS Containment para componentes isolados */
+.card,
+.featureCard {
+  contain: layout style paint;
+}
+
+/* Containment estrito para componentes que não afetam outros */
+.skeleton,
+.ripple {
+  contain: strict;
+}
+
+/* ============================================
+   ANIMAÇÕES Z-API
+   ============================================ */
+
+/* Fade In Z-API - Versão Z-API */
+@keyframes zapi-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide In Up Z-API */
+@keyframes zapi-slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale In Z-API */
+@keyframes zapi-scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Pulse Z-API - Com cores Z-API */
+@keyframes zapi-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 var(--zapi-blue-alpha-70);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px transparent;
+  }
+}
+
+/* Glow Pulse Z-API */
+@keyframes zapi-glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--zapi-blue-alpha-50);
+  }
+
+  50% {
+    box-shadow: 0 0 20px var(--zapi-blue-alpha-80), 0 0 30px var(--official-accent-green-alpha-60);
+  }
+}
+
+/* Shimmer Z-API */
+@keyframes zapi-shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* ============================================
+   ANIMAÇÕES HÍBRIDAS
+   ============================================ */
+
+/* Pulse Híbrido - Combina Z-API Classic e Z-API */
+@keyframes hybrid-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 var(--zapi-primary-alpha-70), 0 0 0 0 var(--zapi-blue-alpha-70);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px var(--zapi-primary-alpha-40), 0 0 0 12px var(--zapi-blue-alpha-40);
+  }
+}
+
+/* Glow Pulse Híbrido - Efeito de brilho combinado */
+@keyframes hybrid-glowPulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 5px var(--zapi-primary-alpha-50), 
+      0 0 10px var(--zapi-primary-alpha-30),
+      0 0 5px var(--zapi-blue-alpha-50),
+      0 0 10px var(--zapi-blue-alpha-30);
+  }
+
+  50% {
+    box-shadow: 
+      0 0 20px var(--zapi-primary-alpha-80), 
+      0 0 30px var(--zapi-primary-alpha-60),
+      0 0 20px var(--zapi-blue-alpha-80),
+      0 0 30px var(--zapi-blue-alpha-60);
+  }
+}
+
+/* Fade In Híbrido - Transição suave combinada */
+@keyframes hybrid-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Slide In Up Híbrido */
+@keyframes hybrid-slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   CLASSES DE ANIMAÇÃO Z-API
+   ============================================ */
+
+.animate-zapi-fade-in {
+  animation: zapi-fadeIn var(--zapi-duration-normal) var(--zapi-ease-out) forwards;
+}
+
+.animate-zapi-slide-in-up {
+  animation: zapi-slideInUp var(--zapi-duration-slow) var(--zapi-ease-out) forwards;
+}
+
+.animate-zapi-scale-in {
+  animation: zapi-scaleIn var(--zapi-duration-normal) var(--zapi-ease-out) forwards;
+}
+
+.animate-zapi-pulse {
+  animation: zapi-pulse 2s var(--zapi-ease-in-out) infinite;
+}
+
+.animate-zapi-glow-pulse {
+  animation: zapi-glowPulse 2s var(--zapi-ease-in-out) infinite;
+}
+
+.animate-zapi-shimmer {
+  animation: zapi-shimmer 2s linear infinite;
+  background: linear-gradient(
+    90deg,
+    var(--zapi-bg-secondary) 0%,
+    var(--zapi-blue-alpha-10) 50%,
+    var(--zapi-bg-secondary) 100%
+  );
+  background-size: 1000px 100%;
+}
+
+/* ============================================
+   CLASSES DE ANIMAÇÃO HÍBRIDAS
+   ============================================ */
+
+.animate-hybrid-pulse {
+  animation: hybrid-pulse 2s var(--ease-in-out) infinite;
+}
+
+.animate-hybrid-glow-pulse {
+  animation: hybrid-glowPulse 2s var(--ease-in-out) infinite;
+}
+
+.animate-hybrid-fade-in {
+  animation: hybrid-fadeIn var(--transition-slow) var(--ease-out) forwards;
+}
+
+.animate-hybrid-slide-in-up {
+  animation: hybrid-slideInUp var(--transition-slow) var(--ease-out) forwards;
+}
+
+/* ============================================
+   REDUCED MOTION - Z-API
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-zapi-fade-in,
+  .animate-zapi-slide-in-up,
+  .animate-zapi-scale-in,
+  .animate-zapi-pulse,
+  .animate-zapi-glow-pulse,
+  .animate-zapi-shimmer,
+  .animate-hybrid-pulse,
+  .animate-hybrid-glow-pulse {
+    animation: none !important;
+  }
+}
+

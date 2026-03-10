@@ -1,0 +1,22 @@
+{
+  "description": "Lista de posts mais vistos (placeholder - será substituído por dados reais de analytics no futuro)",
+  "lastUpdated": "2025-01-27",
+  "posts": [
+    {
+      "slug": "configurando-webhooks",
+      "views": 1250,
+      "rank": 1
+    },
+    {
+      "slug": "guia-rapido-envio-mensagens",
+      "views": 980,
+      "rank": 2
+    },
+    {
+      "slug": "bem-vindo-zapi-central",
+      "views": 750,
+      "rank": 3
+    }
+  ]
+}
+

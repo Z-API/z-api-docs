@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://CJBiohacker.github.io/Z-API-Central-Dev/sitemap.xml
+

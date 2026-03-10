@@ -1,0 +1,485 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: calc(var(--spacing-2xl) + var(--spacing-md)) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: var(--spacing-xl);
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Learning Section - Espaçamento extra antes do footer */
+.learningSection {
+  padding: 80px var(--spacing-lg) var(--spacing-3xl) var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+  /* Light Mode - Background claro usando hexadecimal fixo */
+  background: #F8F9FA;
+}
+
+/* Dark Mode - Background escuro para learning section */
+html[data-theme='dark'] .learningSection,
+[data-theme='dark'] .learningSection {
+  background: #1A1D29 !important;
+  /* Remover margin mas manter padding para espaçamento antes do footer */
+  margin-bottom: 0;
+  padding: 80px var(--spacing-lg) var(--spacing-3xl) var(--spacing-lg) !important;
+}
+
+@media (max-width: 996px) {
+  .learningSection {
+    padding-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  /* Dark Mode - Remover margin em mobile também */
+  [data-theme='dark'] .learningSection {
+    margin-bottom: 0;
+  }
+}
+
+.sectionEyebrow {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: var(--font-weight-semibold);
+  color: var(--official-accent-green);
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+}
+
+/* Dark Mode - manter verde visível (já é claro, mas garantir contraste) */
+html[data-theme='dark'] .sectionEyebrow,
+[data-theme='dark'] .sectionEyebrow {
+  color: #00A685 !important;
+}
+
+.sectionTitle {
+  /* Typography - Responsivo usando clamp com variáveis CSS */
+  /* clamp(min: 1.75rem/28px, preferido: 4vw, max: 2.5rem/40px) */
+  /* Mapeado para --font-size-4xl (40px) como máximo, --font-size-2xl (24px) como mínimo */
+  font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
+  margin-bottom: var(--spacing-xl);
+  /* Light Mode - Texto escuro usando hexadecimal fixo */
+  color: #091E42;
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+}
+
+/* Dark Mode - garantir visibilidade dos títulos com texto claro */
+html[data-theme='dark'] .sectionTitle,
+[data-theme='dark'] .sectionTitle {
+  color: #FFFFFF !important;
+}
+
+/* Dark Mode + Tema Official - mesmo com data-section="light", usar texto claro */
+html[data-theme='dark'] [data-theme="official"] .sectionTitle,
+html[data-theme='dark'] [data-theme="official"][data-section="light"] .sectionTitle,
+[data-theme='dark'] [data-theme="official"] .sectionTitle,
+[data-theme='dark'] [data-theme="official"][data-section="light"] .sectionTitle {
+  color: #FFFFFF !important;
+}
+
+/* Dark Mode - Removido background escuro dos títulos e descrições */
+/* Mantém apenas o texto claro para visibilidade */
+
+/* ============================================
+   SEÇÕES - Separação Visual Clara
+   Inspirado no WhatsApp Business Developer Hub
+   ============================================ */
+
+/* Seção padrão - Padding generoso */
+section[data-theme="official"][data-section="light"] {
+  padding: 80px var(--spacing-lg); /* 80px vertical, 24px horizontal */
+  /* Light Mode - Background claro usando hexadecimal fixo */
+  background: #F8F9FA;
+}
+
+/* Dark Mode - Seções padrão */
+html[data-theme='dark'] section[data-theme="official"][data-section="light"],
+[data-theme='dark'] section[data-theme="official"][data-section="light"] {
+  background: #1A1D29 !important;
+}
+
+/* Products Section - Padding horizontal consistente com outras seções */
+.productsSection {
+  padding: 80px var(--spacing-lg); /* 80px vertical, 24px horizontal */
+  /* Light Mode - Background claro usando hexadecimal fixo */
+  background: #F8F9FA;
+}
+
+/* Dark Mode - Background escuro para Products Section */
+html[data-theme='dark'] .productsSection,
+[data-theme='dark'] .productsSection {
+  background: #1A1D29 !important;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 996px) {
+  /* Seções padrão */
+  section[data-theme="official"][data-section="light"] {
+    padding: 64px var(--spacing-md); /* 64px vertical, 16px horizontal */
+  }
+
+  .productsSection {
+    padding: 64px var(--spacing-md); /* 64px vertical, 16px horizontal */
+  }
+
+  .resourcesSection {
+    padding: 64px var(--spacing-md); /* 64px vertical, 16px horizontal */
+  }
+
+  .learningSection {
+    padding: 64px var(--spacing-md) var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .sectionTitle {
+    font-size: var(--font-size-2xl); /* 24px - H4 */
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  /* Seções padrão */
+  section[data-theme="official"][data-section="light"] {
+    padding: 48px var(--spacing-sm); /* 48px vertical, 8px horizontal */
+  }
+
+  .productsSection {
+    padding: 48px var(--spacing-sm); /* 48px vertical, 8px horizontal */
+  }
+
+  .resourcesSection {
+    padding: 48px var(--spacing-sm); /* 48px vertical, 8px horizontal */
+  }
+
+  .learningSection {
+    padding: 48px var(--spacing-sm) var(--spacing-xl) var(--spacing-sm);
+  }
+
+  .sectionTitle {
+    font-size: var(--font-size-xl); /* 20px - H5 */
+  }
+}
+
+/* Products Grid - Design System Breakpoints: 640/768/1024/1280px */
+/* gap mais generoso - 40px conforme WhatsApp Business Developer Hub */
+.productsGrid {
+  display: grid;
+  gap: 40px; /* Gap mais generoso para design mais limpo */
+  align-items: stretch;
+
+  /* Mobile first: 1 coluna */
+  grid-template-columns: 1fr;
+}
+
+/* Small devices (640px+) */
+@media (min-width: 640px) {
+  .productsGrid {
+    grid-template-columns: 1fr; /* Mantém 1 col até tablet */
+  }
+}
+
+/* Medium devices / Tablet (768px+) */
+@media (min-width: 768px) {
+  .productsGrid {
+    /* Tablet: 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Gap mais generoso */
+  }
+}
+
+/* Large devices / Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .productsGrid {
+    /* Desktop: 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Gap mais generoso */
+  }
+}
+
+/* iPhone SE (375px) e dispositivos pequenos */
+@media (max-width: 375px) {
+  .productsGrid {
+    gap: var(--spacing-sm); /* 8px - gap ainda menor em telas muito pequenas */
+  }
+}
+
+/* Galaxy S8 e dispositivos muito pequenos (360px) */
+@media (max-width: 360px) {
+  .productsGrid {
+    gap: var(--spacing-xs); /* 4px - gap mínimo em telas extremamente pequenas */
+  }
+}
+
+.featuresSection {
+  padding: var(--spacing-3xl) 0;
+}
+
+.featuresSection .container {
+  display: grid;
+  gap: var(--spacing-2xl);
+}
+
+.featuresContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.featuresList li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-weight: var(--font-weight-medium);
+  color: #091E42;
+}
+
+.featuresStatsGrid {
+  display: grid;
+
+  /* Grid adaptativo com minmax conservador */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+/* Breakpoints específicos para featuresStatsGrid */
+@media (max-width: 768px) {
+  .featuresStatsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+/* iPhone SE (375px) e dispositivos pequenos */
+@media (max-width: 375px) {
+  .featuresStatsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+}
+
+.featureStatCard {
+  border-radius: 20px;
+  padding: var(--spacing-xl);
+  background: var(--background-white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.featureStatValue {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+}
+
+.featureStatLabel {
+  margin: 0;
+  color: #677483;
+}
+
+.mint {
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.blue {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.lilac {
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.peach {
+  background: rgba(251, 146, 60, 0.15);
+}
+
+/* Resources Section - Padding horizontal consistente com outras seções */
+.resourcesSection {
+  padding: 80px var(--spacing-lg); /* 80px vertical, 24px horizontal */
+  /* Light Mode - Background claro usando hexadecimal fixo */
+  background: #F8F9FA;
+}
+
+/* Dark Mode - Background escuro para Resources Section */
+html[data-theme='dark'] .resourcesSection,
+[data-theme='dark'] .resourcesSection {
+  background: #1A1D29 !important;
+}
+
+@media (max-width: 996px) {
+  .resourcesSection {
+    padding: var(--spacing-2xl) var(--spacing-md); /* 48px vertical, 16px horizontal */
+  }
+}
+
+@media (max-width: 768px) {
+  .resourcesSection {
+    padding: var(--spacing-xl) var(--spacing-sm); /* 32px vertical, 8px horizontal */
+  }
+}
+
+/* Resources Grid - Design System Breakpoints: 640/768/1024/1280px */
+/* gap mais generoso - 40px conforme WhatsApp Business Developer Hub */
+.resourcesGrid {
+  display: grid;
+  gap: 40px; /* Gap mais generoso para design mais limpo */
+
+  /* Mobile first: 1 coluna */
+  grid-template-columns: 1fr;
+}
+
+/* Medium devices / Tablet (768px+) */
+@media (min-width: 768px) {
+  .resourcesGrid {
+    /* Tablet: 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Gap mais generoso */
+  }
+}
+
+/* Large devices / Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .resourcesGrid {
+    /* Desktop: 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Gap mais generoso */
+  }
+}
+
+/* iPhone SE (375px) e dispositivos pequenos */
+@media (max-width: 375px) {
+  .resourcesGrid {
+    gap: var(--spacing-sm);
+  }
+}
+
+/* Galaxy S8 e dispositivos muito pequenos (360px) */
+@media (max-width: 360px) {
+  .resourcesGrid {
+    gap: var(--spacing-xs);
+  }
+}
+
+.resourcesCta {
+  margin-top: var(--spacing-xl);
+  display: flex;
+  justify-content: center;
+}
+
+/* Botão estilo Ghost adaptado para página index */
+.secondaryButton {
+  /* Base do estilo Ghost: layout flexbox */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Padding compacto estilo Ghost - adaptado para md */
+  /* Usando variáveis CSS: 4px = --spacing-xs/2, 12px = --spacing-sm */
+  padding: calc(var(--spacing-xs) / 2) var(--spacing-sm); /* Ghost md: 4px 12px */
+  gap: var(--spacing-xs); /* Espaçamento entre ícone e texto */
+
+  /* Tamanho compacto estilo Ghost */
+  /* 28px = 7 × 4px, usando --spacing-md (16px) + --spacing-sm (8px) + --spacing-xs (4px) = 28px */
+  min-height: calc(var(--spacing-md) + var(--spacing-sm) + var(--spacing-xs)); /* Ghost md: 28px */
+  box-sizing: border-box;
+
+  /* Border fino estilo Ghost - verde oficial */
+  border: 1px solid var(--official-accent-green); /* 1px solid estilo Ghost */
+  border-radius: var(--border-radius-md); /* 8px - radius consistente */
+
+  /* Background transparente estilo Ghost */
+  background: transparent;
+
+  /* Tipografia refinada estilo Ghost */
+  font-family: var(--zapi-font-family-heading);
+  font-weight: var(--zapi-font-weight-medium); /* 500 - Medium */
+  font-size: var(--font-size-sm);
+
+  /* 14px - mais próximo de 13px (Ghost md) na escala tipográfica */
+  line-height: var(--line-height-normal);
+
+  /* 1.5 - equivalente a ~20px para font-size-sm */
+  /* Cor texto - verde oficial estilo Ghost */
+  color: var(--official-accent-green);
+  text-decoration: none;
+
+  /* Opacidade inicial estilo Ghost */
+  opacity: 0.9;
+
+  /* Transições suaves estilo Ghost */
+  transition: border-color var(--motion-duration-fast) var(--zapi-ease-in-out),
+              color var(--motion-duration-fast) var(--zapi-ease-in-out),
+              opacity var(--motion-duration-fast) var(--zapi-ease-in-out);
+
+  /* Sem sombra - design limpo estilo Ghost */
+  box-shadow: none;
+}
+
+/* Estado Hover - Cor mais escura para feedback visual claro */
+.secondaryButton:hover {
+  /* Border e texto mudam para verde escuro no hover */
+  border-color: var(--official-accent-green-dark); /* Verde escuro */
+  color: var(--official-accent-green-dark); /* Verde escuro */
+
+  /* Opacidade total no hover */
+  opacity: 1;
+
+  /* Background permanece transparente estilo Ghost */
+  background: transparent;
+}
+
+/* Estado Active/Pressed - Feedback tátil */
+.secondaryButton:active {
+  /* Mantém cor escura no active */
+  border-color: var(--official-accent-green-dark);
+  color: var(--official-accent-green-dark);
+
+  /* Opacidade total */
+  opacity: 1;
+
+  /* Background permanece transparente estilo Ghost */
+  background: transparent;
+}
+
+/* Focus visible para acessibilidade - estilo Ghost */
+.secondaryButton:focus-visible {
+  outline: 2px solid var(--official-accent-green);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 0 0 3px var(--official-border-light, rgba(0, 166, 133, 0.2));
+}
+
+@media (min-width: 1024px) {
+  .featuresSection .container {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+
+  .sectionTitle,
+  .sectionEyebrow {
+    text-align: left;
+  }
+}

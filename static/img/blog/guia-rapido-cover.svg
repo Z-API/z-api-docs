@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-label="Capa ilustrativa Guia Rápido">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34B7F1"/>
+      <stop offset="100%" stop-color="#128C7E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="810" fill="url(#g2)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2">
+    <rect x="180" y="160" width="320" height="200" rx="12"/>
+    <rect x="940" y="260" width="320" height="200" rx="12"/>
+    <rect x="560" y="420" width="320" height="200" rx="12"/>
+  </g>
+  <text x="72" y="120" fill="#FFFFFF" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="48">Guia Rápido</text>
+  <text x="72" y="168" fill="#E5FFFA" font-family="Segoe UI, Roboto, Arial" font-size="20" opacity="0.9">Z-API • Primeira mensagem em minutos</text>
+</svg>
+

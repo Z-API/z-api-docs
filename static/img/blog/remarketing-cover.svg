@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-label="Capa ilustrativa Remarketing">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#128C7E"/>
+      <stop offset="100%" stop-color="#34B7F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="810" fill="url(#g4)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2">
+    <circle cx="380" cy="240" r="100"/>
+    <circle cx="1060" cy="420" r="140"/>
+  </g>
+  <text x="72" y="120" fill="#FFFFFF" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="48">Remarketing</text>
+  <text x="72" y="168" fill="#E5FFFA" font-family="Segoe UI, Roboto, Arial" font-size="20" opacity="0.9">Reengajando com mensagens no WhatsApp</text>
+</svg>
+

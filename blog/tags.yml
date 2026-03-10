@@ -1,0 +1,316 @@
+z-api:
+  label: Z-API
+  permalink: /z-api
+  description: Posts sobre o Z-API
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Tutoriais e guias passo a passo
+
+documentação:
+  label: Documentação
+  permalink: /documentacao
+  description: Posts sobre documentação
+
+introducao:
+  label: Introdução
+  permalink: /introducao
+  description: Posts introdutórios
+
+mensagens:
+  label: Mensagens
+  permalink: /mensagens
+  description: Posts sobre envio e recebimento de mensagens
+
+webhooks:
+  label: Webhooks
+  permalink: /webhooks
+  description: Posts sobre configuração e uso de webhooks
+
+integração:
+  label: Integração
+  permalink: /integracao
+  description: Posts sobre integração com Z-API
+
+quick-start:
+  label: Quick Start
+  permalink: /quick-start
+  description: Guias rápidos para começar
+
+# Novas tags usadas nas postagens recentes
+marketing:
+  label: Marketing
+  permalink: /marketing
+  description: Conteúdos de marketing e growth
+
+whatsapp:
+  label: WhatsApp
+  permalink: /whatsapp
+  description: Estratégias e recursos no ecossistema WhatsApp
+
+remarketing:
+  label: Remarketing
+  permalink: /remarketing
+  description: Estratégias de remarketing e retargeting
+
+campanhas:
+  label: Campanhas
+  permalink: /campanhas
+  description: Planejamento e execução de campanhas
+
+# Níveis de dificuldade
+iniciantes:
+  label: Iniciantes
+  permalink: /iniciantes
+  description: Conteúdos para desenvolvedores iniciantes
+
+intermediario:
+  label: Intermediário
+  permalink: /intermediario
+  description: Conteúdos para desenvolvedores com conhecimento intermediário
+
+avancado:
+  label: Avançado
+  permalink: /avancado
+  description: Conteúdos para desenvolvedores avançados
+
+# Conceitos gerais
+conceitos:
+  label: Conceitos
+  permalink: /conceitos
+  description: Posts sobre conceitos fundamentais
+
+eventos:
+  label: Eventos
+  permalink: /eventos
+  description: Posts sobre eventos e notificações em tempo real
+
+# Arquitetura e DevOps
+arquitetura:
+  label: Arquitetura
+  permalink: /arquitetura
+  description: Posts sobre arquitetura de sistemas e design de software
+
+escalabilidade:
+  label: Escalabilidade
+  permalink: /escalabilidade
+  description: Posts sobre escalabilidade e performance
+
+resiliencia:
+  label: Resiliência
+  permalink: /resiliencia
+  description: Posts sobre resiliência e tolerância a falhas
+
+producao:
+  label: Produção
+  permalink: /producao
+  description: Posts sobre deploy e operação em produção
+
+devops:
+  label: DevOps
+  permalink: /devops
+  description: Posts sobre DevOps e CI/CD
+
+observabilidade:
+  label: Observabilidade
+  permalink: /observabilidade
+  description: Posts sobre monitoramento, logs e métricas
+
+# Segurança
+seguranca:
+  label: Segurança
+  permalink: /seguranca
+  description: Posts sobre segurança e boas práticas
+
+# WhatsApp Business
+whatsapp-business:
+  label: WhatsApp Business
+  permalink: /whatsapp-business
+  description: Posts sobre WhatsApp Business e funcionalidades comerciais
+
+vendas:
+  label: Vendas
+  permalink: /vendas
+  description: Posts sobre automação de vendas e funil de conversão
+
+catalogo:
+  label: Catálogo
+  permalink: /catalogo
+  description: Posts sobre catálogos de produtos no WhatsApp
+
+# Mensagens
+interatividade:
+  label: Interatividade
+  permalink: /interatividade
+  description: Posts sobre mensagens interativas e experiências ricas
+
+# Grupos e Comunidades
+grupos:
+  label: Grupos
+  permalink: /grupos
+  description: Posts sobre gerenciamento de grupos do WhatsApp
+
+comunidades:
+  label: Comunidades
+  permalink: /comunidades
+  description: Posts sobre comunidades e gerenciamento em escala
+
+# Automação e IA
+automacao:
+  label: Automação
+  permalink: /automacao
+  description: Posts sobre automação de processos e workflows
+
+ia:
+  label: Inteligência Artificial
+  permalink: /ia
+  description: Posts sobre IA e integração com LLMs
+
+agentes:
+  label: Agentes
+  permalink: /agentes
+  description: Posts sobre agentes de IA e chatbots inteligentes
+
+chatbot:
+  label: Chatbot
+  permalink: /chatbot
+  description: Posts sobre desenvolvimento de chatbots
+
+# API e Integração
+api:
+  label: API
+  permalink: /api
+  description: Posts sobre APIs, REST, e integração de sistemas
+
+# No-Code e Ferramentas
+no-code:
+  label: No Code
+  permalink: /no-code
+  description: Posts sobre automações sem código e ferramentas no-code
+
+zapier:
+  label: Zapier
+  permalink: /zapier
+  description: Posts sobre integração com Zapier
+
+make:
+  label: Make
+  permalink: /make
+  description: Posts sobre integração com Make (Integromat)
+
+n8n:
+  label: n8n
+  permalink: /n8n
+  description: Posts sobre integração com n8n e automações workflow
+
+postman:
+  label: Postman
+  permalink: /postman
+  description: Posts sobre uso do Postman com Z-API
+
+# Casos de Uso por Indústria
+casos-de-uso:
+  label: Casos de Uso
+  permalink: /casos-de-uso
+  description: Posts sobre casos de uso práticos e exemplos reais
+
+e-commerce:
+  label: E-commerce
+  permalink: /e-commerce
+  description: Posts sobre automações para e-commerce
+
+saude:
+  label: Saúde
+  permalink: /saude
+  description: Posts sobre automações para área da saúde
+
+educacao:
+  label: Educação
+  permalink: /educacao
+  description: Posts sobre automações para área educacional
+
+# Inteligência Artificial
+inteligencia-artificial:
+  label: Inteligência Artificial
+  permalink: /inteligencia-artificial
+  description: Posts sobre IA e integração com LLMs
+
+# Tutoriais Hands-On
+hands-on:
+  label: Hands-On
+  permalink: /hands-on
+  description: Tutoriais práticos hands-on com exemplos passo a passo
+
+batch-processing:
+  label: Processamento em Lote
+  permalink: /batch-processing
+  description: Posts sobre processamento em lote e otimização de performance
+
+message-queue:
+  label: Fila de Mensagens
+  permalink: /message-queue
+  description: Posts sobre filas de mensagens e processamento assíncrono
+
+google-sheets:
+  label: Google Sheets
+  permalink: /google-sheets
+  description: Posts sobre integração com Google Sheets
+
+calendly:
+  label: Calendly
+  permalink: /calendly
+  description: Posts sobre integração com Calendly
+
+typeform:
+  label: Typeform
+  permalink: /typeform
+  description: Posts sobre integração com Typeform
+
+customer-success:
+  label: Customer Success
+  permalink: /customer-success
+  description: Posts sobre Customer Success e retenção de clientes
+
+apps-script:
+  label: Apps Script
+  permalink: /apps-script
+  description: Posts sobre Google Apps Script e automação
+
+estoque:
+  label: Estoque
+  permalink: /estoque
+  description: Posts sobre gestão e monitoramento de estoque
+
+# Boas Práticas e Conformidade
+boas-praticas:
+  label: Boas Práticas
+  permalink: /boas-praticas
+  description: Posts sobre boas práticas e padrões de desenvolvimento
+
+limites:
+  label: Limites
+  permalink: /limites
+  description: Posts sobre limites, quotas e restrições de uso
+
+conformidade:
+  label: Conformidade
+  permalink: /conformidade
+  description: Posts sobre conformidade com políticas e regulamentações
+
+# Estratégia e Engajamento
+estratégia:
+  label: Estratégia
+  permalink: /estrategia
+  description: Posts sobre estratégias de comunicação e marketing
+
+engajamento:
+  label: Engajamento
+  permalink: /engajamento
+  description: Posts sobre estratégias de engajamento e interação com usuários
+
+# Instâncias
+instancias:
+  label: Instâncias
+  permalink: /instancias
+  description: Posts sobre instâncias do Z-API e gerenciamento de conexões

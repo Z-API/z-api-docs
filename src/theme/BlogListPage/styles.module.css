@@ -1,0 +1,257 @@
+.blogListPage {
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var(--font-family-base);
+
+  /* Usando variável CSS do design system */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+  padding: var(--spacing-2xl) 0;
+}
+
+.heroTitle {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--zapi-font-family-heading);
+
+  /* Inter para headings */
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.heroDescription {
+  font-size: var(--font-size-xl);
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section Styles - Espaçamento generoso entre seções */
+.section {
+  margin-bottom: var(--spacing-3xl);
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: var(--spacing-2xl);
+  }
+}
+
+.sectionTitle {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--zapi-font-family-heading);
+
+  /* Inter para headings */
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: var(--spacing-sm);
+}
+
+.postCount {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-secondary);
+  margin-left: var(--spacing-xs);
+}
+
+/* Featured Container - Layout de coluna única para featured post */
+.featuredContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .heroDescription {
+    font-size: var(--font-size-lg);
+  }
+}
+
+/* Most Viewed List - Lista vertical simples */
+.mostViewedList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* All Posts Grid - Layout mais flexível e espaçado */
+.allPostsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .allPostsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-2xl);
+  }
+}
+
+@media (min-width: 996px) {
+  .allPostsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--spacing-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .allPostsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+/* Hands-On Tutorials Grid - Espaçamento generoso */
+.handsOnGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 996px) {
+  .handsOnGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .handsOnGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+}
+
+/* Meta Information */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  align-items: center;
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+  margin-top: auto;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  align-items: center;
+}
+
+.author {
+  font-weight: var(--font-weight-medium);
+}
+
+.tags {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  display: inline-block;
+}
+
+/* Dark Mode - Tags com fundo claro e texto escuro para melhor legibilidade */
+/* NOTA: Exceção documentada - Tags usam fundo claro e texto escuro no dark mode por design */
+/* Garante legibilidade melhorada mesmo em dark mode (fundo claro destaca no contexto escuro) */
+[data-theme='dark'] .tags {
+  background: #FFFFFF !important; /* Fundo branco para contraste */
+  color: #111827 !important; /* Texto escuro para contraste 4.5:1+ sobre branco */
+  border: 1px solid rgba(209, 213, 219, 0.5); /* Borda sutil cinza */
+}
+
+/* Light Mode - Garantir contraste adequado com texto escuro */
+html:not([data-theme='dark']) .tags {
+  background: var(--ifm-color-primary-lightest) !important;
+  color: var(--ifm-color-primary-darkest) !important; /* Texto escuro para contraste com fundo claro */
+}
+
+.date {
+  color: var(--text-tertiary);
+}
+
+/* Archives Section */
+.archives {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  background: var(--ifm-background-surface-color);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-light);
+}
+
+/* Dark Mode - Archives Section - UNIFORME */
+[data-theme='dark'] .archives {
+  background: #1A1D29 !important;
+}
+
+.archivesDescription {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.archiveLink {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: var(--ifm-color-primary);
+  color: var(--text-inverse);
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: background-color var(--transition-normal) var(--ease-out),
+              transform var(--transition-normal) var(--ease-out);
+}
+
+/* Dark Mode - Botão Archive - Texto branco quando background verde */
+[data-theme='dark'] .archiveLink {
+  background: var(--ifm-color-primary) !important;
+  color: #FFFFFF !important;
+}
+
+.archiveLink:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.archiveLink:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .archiveLink {
+    transition: none;
+  }
+  
+  .archiveLink:hover {
+    transform: none;
+  }
+}
+
+/* Dark Mode - Garantir texto branco na lista do blog - UNIFORME */
+[data-theme='dark'] .heroTitle,
+[data-theme='dark'] .heroDescription,
+[data-theme='dark'] .sectionTitle {
+  color: #FFFFFF !important;
+  background-color: #1A1D29 !important;
+}
+

@@ -1,0 +1,148 @@
+/* ============================================
+   ICON BASE
+   ============================================ */
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1;
+  flex-shrink: 0;
+
+  /* GPU acceleration para animações Framer Motion */
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none; /* Sem preenchimento - apenas bordas */
+  stroke: currentColor;
+  stroke-width: 2; /* Espessura da borda */
+  display: block;
+}
+
+/* ============================================
+   SIZES
+   ============================================ */
+
+.xs {
+  width: var(--font-size-xs);
+  height: var(--font-size-xs);
+  font-size: var(--font-size-xs);
+}
+
+.sm {
+  width: var(--font-size-base);
+  height: var(--font-size-base);
+  font-size: var(--font-size-base);
+}
+
+.md {
+  width: var(--font-size-lg);
+  height: var(--font-size-lg);
+  font-size: var(--font-size-lg);
+}
+
+.lg {
+  width: var(--font-size-2xl);
+  height: var(--font-size-2xl);
+  font-size: var(--font-size-2xl);
+}
+
+.xl {
+  width: var(--font-size-3xl);
+  height: var(--font-size-3xl);
+  font-size: var(--font-size-3xl);
+}
+
+/* ============================================
+   CLICKABLE
+   ============================================ */
+
+.clickable {
+  cursor: pointer;
+
+  /* Otimização: usar propriedades específicas ao invés de 'all' */
+  transition: transform var(--transition-fast) var(--ease-out),
+              background-color var(--transition-fast) var(--ease-out);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-xs);
+  margin: calc(var(--spacing-xs) * -1);
+}
+
+/* Touch Targets Mínimo 44x44px para Mobile (WCAG 2.5.5) */
+@media screen and (max-width: 768px) {
+  .clickable {
+    /* Garantir touch target mínimo de 44x44px em mobile */
+    min-height: 44px;
+    min-width: 44px;
+
+    /* Ajustar padding para garantir área clicável adequada */
+    padding: calc((44px - var(--spacing-xs) * 2) / 2);
+  }
+}
+
+.clickable:hover:not(.disabled) {
+  background: var(--background-light-gray);
+  transform: scale(1.1);
+}
+
+.clickable:active:not(.disabled) {
+  transform: scale(0.95);
+}
+
+[data-theme='dark'] .clickable:hover:not(.disabled) {
+  background: var(--background-white-alpha-10);
+}
+
+/* ============================================
+   DISABLED
+   ============================================ */
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ============================================
+   FOCUS STATES
+   ============================================ */
+
+.clickable:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   PLACEHOLDER (temporário)
+   ============================================ */
+
+.placeholder {
+  font-size: inherit;
+  color: currentColor;
+  opacity: 0.5;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .icon {
+    will-change: auto;
+    transform: none;
+  }
+  
+  .clickable {
+    transition: none;
+  }
+  
+  .clickable:hover:not(.disabled) {
+    transform: none;
+  }
+}
+

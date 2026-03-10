@@ -1,0 +1,391 @@
+/* Tutorials Section Styles */
+.tutorials {
+  width: 100%;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  background: var(--background-white);
+  color: var(--official-text-dark);
+
+  /* Scroll margin já definido globalmente no custom.css para #tutoriais */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.tutorials[data-theme='official'] {
+  background: var(--background-white);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials,
+[data-theme='dark'] .tutorials[data-theme='official'] {
+  background: var(--official-bg-dark);
+  color: var(--official-text-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-md);
+  color: var(--official-text-dark);
+}
+
+.tutorials[data-theme='official'] .title {
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .title,
+[data-theme='dark'] .tutorials[data-theme='official'] .title {
+  color: var(--official-text-white);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--official-text-dark);
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+.tutorials[data-theme='official'] .subtitle {
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .subtitle,
+[data-theme='dark'] .tutorials[data-theme='official'] .subtitle {
+  color: var(--official-text-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Card Styles */
+.cardWrapper {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  padding: var(--spacing-xl);
+  background: var(--background-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--motion-duration-normal) var(--ease-in-out);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--official-text-dark);
+  text-decoration: none;
+  display: block;
+}
+
+.tutorials[data-theme='official'] .card {
+  background: var(--background-white);
+  border-color: var(--border-light);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .card,
+[data-theme='dark'] .tutorials[data-theme='official'] .card {
+  background: var(--official-bg-card-dark);
+  border-color: var(--border-medium);
+  color: var(--official-text-white);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--official-accent-green);
+}
+
+.tutorials[data-theme='official'] .card:hover {
+  border-color: var(--official-accent-green);
+  background: var(--background-white);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .card:hover,
+[data-theme='dark'] .tutorials[data-theme='official'] .card:hover {
+  background: var(--background-white-alpha-10);
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--official-accent-green-alpha-20);
+  transform: scale(0);
+  animation: ripple-animation var(--motion-duration-complex) var(--ease-out);
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ripple {
+    animation: none;
+  }
+
+  .card {
+    transition: none;
+  }
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-sm);
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--official-accent-green-alpha-15);
+  border-radius: var(--border-radius-md);
+  color: var(--official-accent-green);
+}
+
+.cardMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  align-items: flex-end;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+.tutorials[data-theme='official'] .duration {
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .duration,
+[data-theme='dark'] .tutorials[data-theme='official'] .duration {
+  color: var(--official-text-light);
+  opacity: 1;
+}
+
+.difficulty {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  background: var(--official-accent-green-alpha-15);
+  color: var(--official-accent-green);
+}
+
+.tutorials[data-theme='official'] .difficulty {
+  color: var(--official-accent-green);
+}
+
+.cardTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+  color: var(--official-text-dark);
+}
+
+.tutorials[data-theme='official'] .cardTitle {
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .cardTitle,
+[data-theme='dark'] .tutorials[data-theme='official'] .cardTitle {
+  color: var(--official-text-white);
+}
+
+.cardDescription {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+.tutorials[data-theme='official'] .cardDescription {
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .cardDescription,
+[data-theme='dark'] .tutorials[data-theme='official'] .cardDescription {
+  color: var(--official-text-light);
+  opacity: 1;
+}
+
+.cardStats {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) 0;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+.tutorials[data-theme='official'] .stat {
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .stat,
+[data-theme='dark'] .tutorials[data-theme='official'] .stat {
+  color: var(--official-text-light);
+  opacity: 1;
+}
+
+.cardPrerequisites,
+.cardLearn {
+  font-size: var(--font-size-sm);
+}
+
+.cardPrerequisites strong,
+.cardLearn strong {
+  display: block;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+  color: var(--official-text-dark);
+}
+
+.tutorials[data-theme='official'] .cardPrerequisites strong,
+.tutorials[data-theme='official'] .cardLearn strong {
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .cardPrerequisites strong,
+[data-theme='dark'] .tutorials .cardLearn strong,
+[data-theme='dark'] .tutorials[data-theme='official'] .cardPrerequisites strong,
+[data-theme='dark'] .tutorials[data-theme='official'] .cardLearn strong {
+  color: var(--official-text-white);
+}
+
+.cardPrerequisites ul,
+.cardLearn ul {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-xs) 0;
+}
+
+.cardPrerequisites li,
+.cardLearn li {
+  padding: var(--spacing-xs) 0;
+  padding-left: var(--spacing-md);
+  position: relative;
+  line-height: var(--line-height-relaxed);
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+.tutorials[data-theme='official'] .cardPrerequisites li,
+.tutorials[data-theme='official'] .cardLearn li {
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tutorials .cardPrerequisites li,
+[data-theme='dark'] .tutorials .cardLearn li,
+[data-theme='dark'] .tutorials[data-theme='official'] .cardPrerequisites li,
+[data-theme='dark'] .tutorials[data-theme='official'] .cardLearn li {
+  color: var(--official-text-light);
+  opacity: 1;
+}
+
+.cardPrerequisites li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--official-accent-green);
+  font-weight: var(--font-weight-bold);
+}
+
+.cardLearn li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+  text-decoration: none;
+  transition: opacity var(--motion-duration-fast) var(--ease-out);
+}
+
+.cardLink:hover {
+  opacity: 0.8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardLink {
+    transition: none;
+  }
+}
+

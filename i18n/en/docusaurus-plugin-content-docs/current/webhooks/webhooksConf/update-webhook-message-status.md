@@ -1,40 +1,39 @@
 ---
 id:id: update-webhook-message-status
-
 title: Status
 ---
 
-## Método
+## Method
 
-### Atualiza webhook
+### Update webhook
 
 #### /update-webhook-status
 
 `PUT` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/update-webhook-message-status
 
-## Conceituação
+## Concept
 
-Este método é responsável por atualizar/adicionar o seu EndPoint para o webhook de status via API ou seja, sem a necessidade de acessar o admin Z-API.
+This method is responsible for updating/adding your Endpoint for the status webhook via API, i.e., without needing to access the Z-API admin panel.
 
-:::caution Atenção
+:::caution Attention
 
-O Z-API não aceita webhooks que não sejam HTTPS
+Z-API does not accept webhooks that are not HTTPS
 
 :::
 
 ---
 
-## Atributos
+## Attributes
 
-### Obrigatórios
+### Required
 
-| Atributos |  Tipo  | Descrição                         |
+| Attributes |  Type  | Description                         |
 | :-------- | :----: | :-------------------------------- |
-| value     | string | Webhook/EndPoint da sua aplicação |
+| value     | string | Webhook/Endpoint of your application |
 
-### Opcionais
+### Optional
 
-| Atributos | Tipo | Descrição |
+| Attributes | Type | Description |
 | :-------- | :--: | :-------- |
 
 ---
@@ -49,7 +48,7 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ```json
 {
-  "value": "https://endereco-do-seu-sistema.com.br/instancia/SUA_INSTANCIA/status"
+  "value": "https://address-of-your-system.com.br/instance/YOUR_INSTANCE/status"
 }
 ```
 
@@ -61,11 +60,11 @@ O Z-API não aceita webhooks que não sejam HTTPS
 
 ### 405
 
-Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou PUT conforme especificado no inicio deste tópico.
+In this case, make sure you are sending the method specification correctly, i.e., check if you sent POST or PUT as specified at the beginning of this topic.
 
 ### 415
 
-Caso você receba um erro 415, certifique de adicionar na headers da requisição o "Content-Type" do objeto que você está enviando, em sua grande maioria "application/json"
+If you receive a 415 error, make sure to add the "Content-Type" header of the object you are sending, in most cases "application/json"
 
 ---
 

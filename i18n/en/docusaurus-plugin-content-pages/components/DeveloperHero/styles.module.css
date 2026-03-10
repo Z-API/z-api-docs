@@ -1,0 +1,78 @@
+.hero {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.08), rgba(255, 255, 255, 0.9));
+  padding: var(--spacing-3xl) 0;
+}
+
+.container {
+  display: grid;
+  gap: var(--spacing-2xl);
+}
+
+.content {
+  max-width: 720px;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  margin-bottom: var(--spacing-lg);
+  color: var(--official-text-dark);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--official-text-muted);
+  margin-bottom: var(--spacing-xl);
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.primaryCta,
+.secondaryCta {
+  text-decoration: none;
+}
+
+.ctaButton {
+  gap: var(--spacing-xs);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.statCard {
+  background: var(--background-white);
+  border-radius: 16px;
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  padding: var(--spacing-lg);
+  box-shadow: 0 15px 35px rgba(5, 77, 66, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.statValue {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  color: var(--official-text-dark);
+}
+
+.statLabel {
+  margin: 0;
+  color: var(--official-text-muted);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+}
+
+

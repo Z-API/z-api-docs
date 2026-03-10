@@ -1,0 +1,644 @@
+/* Tools Section Styles */
+.tools {
+  width: 100%;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  background: var(--background-white);
+  color: var(--official-text-dark);
+
+  /* Scroll margin já definido globalmente no custom.css para #ferramentas */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + var(--spacing-md));
+}
+
+.tools[data-theme='official'] {
+  background: var(--background-white);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools,
+[data-theme='dark'] .tools[data-theme='official'] {
+  background: var(--official-bg-dark);
+  color: var(--official-text-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-md);
+  color: var(--official-text-dark);
+}
+
+.tools[data-theme='official'] .title {
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools .title,
+[data-theme='dark'] .tools[data-theme='official'] .title {
+  color: var(--official-text-white);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--official-text-dark);
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+.tools[data-theme='official'] .subtitle {
+  color: var(--official-text-dark);
+  opacity: 0.8;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools .subtitle,
+[data-theme='dark'] .tools[data-theme='official'] .subtitle {
+  color: var(--official-text-light);
+}
+
+.grid {
+  display: grid;
+
+  /* Grid responsivo com gap responsivo usando clamp */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .tools[data-theme='official'] .title {
+    color: var(--official-text-dark);
+  }
+
+  [data-theme='dark'] .tools .title,
+  [data-theme='dark'] .tools[data-theme='official'] .title {
+    color: var(--official-text-white);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .tools[data-theme='official'] .subtitle {
+    color: var(--official-text-dark);
+    opacity: 0.8;
+  }
+
+  [data-theme='dark'] .tools .subtitle,
+  [data-theme='dark'] .tools[data-theme='official'] .subtitle {
+    color: var(--official-text-light);
+  }
+}
+
+/* Card Styles */
+.cardWrapper {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  padding: var(--spacing-xl);
+  background: var(--background-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--motion-duration-normal) var(--ease-in-out);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--official-text-dark);
+}
+
+/* Cards - Light Mode: brancos com texto escuro */
+.tools[data-theme='official'] .card {
+  /* Variáveis CSS locais para melhor manutenibilidade */
+  --card-bg: var(--official-bg-white);
+  --card-border: var(--border-light);
+  --card-text: var(--official-text-dark);
+  --card-shadow: var(--shadow-md);
+  
+  background: var(--card-bg);
+  border-color: var(--card-border);
+  color: var(--card-text);
+  box-shadow: var(--card-shadow);
+}
+
+/* Dark Mode - Cards escuros com texto claro */
+[data-theme='dark'] .tools .card,
+[data-theme='dark'] .tools[data-theme='official'] .card {
+  --card-bg: var(--official-bg-card-dark);
+  --card-border: var(--border-medium);
+  --card-text: var(--official-text-white);
+  --card-shadow: var(--shadow-md);
+  
+  background: var(--card-bg);
+  border-color: var(--card-border);
+  color: var(--card-text);
+  box-shadow: var(--card-shadow);
+}
+
+/* Garantir que TODOS os textos dentro dos cards sejam escuros no light mode - usando variáveis CSS locais */
+.tools[data-theme='official'] .card h1,
+.tools[data-theme='official'] .card h2,
+.tools[data-theme='official'] .card h3,
+.tools[data-theme='official'] .card h4,
+.tools[data-theme='official'] .card h5,
+.tools[data-theme='official'] .card h6,
+.tools[data-theme='official'] .card p,
+.tools[data-theme='official'] .card span,
+.tools[data-theme='official'] .card div,
+.tools[data-theme='official'] .card li,
+.tools[data-theme='official'] .card ul,
+.tools[data-theme='official'] .card ol {
+  color: var(--card-text);
+}
+
+/* Dark Mode - Garantir que TODOS os textos dentro dos cards sejam claros */
+[data-theme='dark'] .tools .card h1,
+[data-theme='dark'] .tools .card h2,
+[data-theme='dark'] .tools .card h3,
+[data-theme='dark'] .tools .card h4,
+[data-theme='dark'] .tools .card h5,
+[data-theme='dark'] .tools .card h6,
+[data-theme='dark'] .tools .card p,
+[data-theme='dark'] .tools .card span,
+[data-theme='dark'] .tools .card div,
+[data-theme='dark'] .tools .card li,
+[data-theme='dark'] .tools .card ul,
+[data-theme='dark'] .tools .card ol,
+[data-theme='dark'] .tools[data-theme='official'] .card h1,
+[data-theme='dark'] .tools[data-theme='official'] .card h2,
+[data-theme='dark'] .tools[data-theme='official'] .card h3,
+[data-theme='dark'] .tools[data-theme='official'] .card h4,
+[data-theme='dark'] .tools[data-theme='official'] .card h5,
+[data-theme='dark'] .tools[data-theme='official'] .card h6,
+[data-theme='dark'] .tools[data-theme='official'] .card p,
+[data-theme='dark'] .tools[data-theme='official'] .card span,
+[data-theme='dark'] .tools[data-theme='official'] .card div,
+[data-theme='dark'] .tools[data-theme='official'] .card li,
+[data-theme='dark'] .tools[data-theme='official'] .card ul,
+[data-theme='dark'] .tools[data-theme='official'] .card ol {
+  color: var(--card-text);
+}
+
+/* Regras específicas removidas - agora consolidadas na seção REGRA FINAL acima
+ * usando variáveis CSS locais para melhor manutenibilidade e performance
+ */
+
+.card:hover {
+  transform: var(--transform-hover-lift);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--official-accent-green);
+}
+
+.tools[data-theme='official'] .card:hover {
+  border-color: var(--official-accent-green);
+  background: var(--card-bg);
+  box-shadow: var(--official-shadow-lg);
+}
+
+.card[data-expanded='true'] {
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-lg);
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--official-accent-green-alpha-20);
+  transform: scale(0);
+  animation: ripple-animation var(--motion-duration-complex) var(--ease-out);
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ripple {
+    animation: none;
+  }
+
+  .card {
+    transition: none;
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+  width: 100%;
+}
+
+.cardHeaderLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  flex: 1;
+}
+
+.cardHeaderRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-sm);
+}
+
+.cardTitleWrapper {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools .cardTitle,
+[data-theme='dark'] .tools[data-theme='official'] .cardTitle {
+  color: var(--official-text-white);
+}
+
+.cardDescription {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--official-text-dark);
+  margin: 0;
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools .cardDescription,
+[data-theme='dark'] .tools[data-theme='official'] .cardDescription {
+  color: var(--official-text-light);
+}
+
+.expandIcon {
+  margin-left: auto;
+  color: var(--official-accent-green);
+  transition: transform var(--motion-duration-normal) var(--ease-in-out);
+  flex-shrink: 0;
+}
+
+.expandIcon.expanded {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expandIcon {
+    transition: none;
+  }
+}
+
+.cardContent {
+  /* Altura inicial colapsada - apenas header visível para evitar CLS */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--motion-duration-normal) var(--ease-in-out);
+  margin-top: 0;
+  opacity: 0;
+}
+
+.cardContent[data-expanded='true'] {
+  /* Altura máxima expandida - suficiente para conteúdo completo */
+  max-height: 800px;
+  margin-top: var(--spacing-md);
+  opacity: 1;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--official-accent-green-alpha-15);
+  border-radius: var(--border-radius-md);
+  color: var(--official-accent-green);
+}
+
+.cardMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  align-items: flex-end;
+}
+
+.category,
+.pricing {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  background: var(--background-light-gray);
+  color: var(--official-text-dark);
+  border: 1px solid var(--border-light);
+}
+
+/* Badges sempre com cores escuras no light mode */
+.tools[data-theme='official'] .category,
+.tools[data-theme='official'] .pricing {
+  background: var(--background-light-gray);
+  color: var(--official-text-dark);
+  border: 1px solid var(--border-light);
+}
+
+/* Dark Mode - tags com background escuro e texto claro para contraste */
+[data-theme='dark'] .tools .category,
+[data-theme='dark'] .tools .pricing,
+[data-theme='dark'] .tools[data-theme='official'] .category,
+[data-theme='dark'] .tools[data-theme='official'] .pricing {
+  background: var(--official-bg-card-dark);
+  color: var(--official-text-white);
+  border: 1px solid var(--border-medium);
+}
+
+/* Estilos duplicados removidos - já definidos acima em cardTitleWrapper */
+
+.cardBestFor {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--official-accent-green-alpha-15);
+  border-left: 3px solid var(--official-accent-green);
+  border-radius: var(--border-radius-sm);
+  color: var(--official-text-dark);
+}
+
+/* CardBestFor sempre com fundo claro e texto escuro no light mode */
+.tools[data-theme='official'] .cardBestFor {
+  background: var(--official-accent-green-alpha-15);
+  border-left-color: var(--official-accent-green);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode - texto claro */
+[data-theme='dark'] .tools .cardBestFor,
+[data-theme='dark'] .tools[data-theme='official'] .cardBestFor {
+  color: var(--official-text-white);
+}
+
+.cardBestFor strong {
+  color: var(--official-accent-green);
+  font-weight: var(--font-weight-semibold);
+}
+
+.cardFeatures {
+  margin-bottom: var(--spacing-md);
+}
+
+.cardFeatures strong {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools .cardFeatures strong,
+[data-theme='dark'] .tools[data-theme='official'] .cardFeatures strong {
+  color: var(--official-text-white);
+}
+
+.cardFeatures ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cardFeatures li {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  padding: var(--spacing-xs) 0;
+  padding-left: var(--spacing-md);
+  position: relative;
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools .cardFeatures li,
+[data-theme='dark'] .tools[data-theme='official'] .cardFeatures li {
+  color: var(--official-text-light);
+}
+
+.cardFeatures li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--official-accent-green);
+  font-weight: var(--font-weight-bold);
+}
+
+.cardProsCons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 640px) {
+  .cardProsCons {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pros,
+.cons {
+  font-size: var(--font-size-sm);
+}
+
+.pros strong,
+.cons strong {
+  display: block;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools .pros strong,
+[data-theme='dark'] .tools .cons strong,
+[data-theme='dark'] .tools[data-theme='official'] .pros strong,
+[data-theme='dark'] .tools[data-theme='official'] .cons strong {
+  color: var(--official-text-white);
+}
+
+.pros strong {
+  color: var(--color-success);
+}
+
+.cons strong {
+  color: var(--color-warning);
+}
+
+.pros ul,
+.cons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pros li,
+.cons li {
+  padding: var(--spacing-xs) 0;
+  padding-left: var(--spacing-md);
+  position: relative;
+  line-height: var(--line-height-relaxed);
+  color: var(--official-text-dark);
+}
+
+/* Dark Mode */
+[data-theme='dark'] .tools .pros li,
+[data-theme='dark'] .tools .cons li,
+[data-theme='dark'] .tools[data-theme='official'] .pros li,
+[data-theme='dark'] .tools[data-theme='official'] .cons li {
+  color: var(--official-text-light);
+}
+
+.pros li::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  color: var(--color-success);
+  font-weight: var(--font-weight-bold);
+}
+
+.cons li::before {
+  content: '−';
+  position: absolute;
+  left: 0;
+  color: var(--color-warning);
+  font-weight: var(--font-weight-bold);
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+  text-decoration: none;
+  transition: opacity var(--motion-duration-micro) var(--ease-out);
+}
+
+/* ============================================
+   REGRA FINAL - FORÇAR TEXTO ESCURO NOS CARDS
+   Esta regra deve ser a última para sobrescrever QUALQUER outra regra
+   Usa variáveis CSS locais para funcionar corretamente em dark mode
+   ============================================ */
+.tools[data-theme='official'] .card {
+  /* Variáveis CSS locais para reduzir redundância e melhorar manutenibilidade */
+  --card-text-primary: var(--official-text-dark);
+  --card-text-secondary: var(--text-secondary);
+  --card-accent-color: var(--official-accent-green);
+  --card-success-color: var(--color-success);
+  --card-warning-color: var(--color-warning);
+  
+  /* Aplicar cor primária por padrão em todos os elementos de texto */
+  color: var(--card-text-primary);
+}
+
+/* Dark Mode - Atualizar variáveis CSS locais para texto claro */
+[data-theme='dark'] .tools .card,
+[data-theme='dark'] .tools[data-theme='official'] .card {
+  --card-text-primary: var(--official-text-white);
+  --card-text-secondary: var(--official-text-light);
+  --card-accent-color: var(--official-accent-green);
+  --card-success-color: var(--color-success);
+  --card-warning-color: var(--color-warning);
+  
+  /* Aplicar cor primária por padrão em todos os elementos de texto */
+  color: var(--card-text-primary);
+}
+
+/* Aplicar cor escura em TODOS os elementos de texto usando variáveis CSS locais */
+.tools[data-theme='official'] .card p,
+.tools[data-theme='official'] .card span:not(.expandIcon):not(.cardIcon),
+.tools[data-theme='official'] .card div:not(.cardIcon),
+.tools[data-theme='official'] .card li,
+.tools[data-theme='official'] .card ul,
+.tools[data-theme='official'] .card ol,
+.tools[data-theme='official'] .card h1,
+.tools[data-theme='official'] .card h2,
+.tools[data-theme='official'] .card h3,
+.tools[data-theme='official'] .card h4,
+.tools[data-theme='official'] .card h5,
+.tools[data-theme='official'] .card h6,
+.tools[data-theme='official'] .card .cardTitle,
+.tools[data-theme='official'] .card .cardBestFor,
+.tools[data-theme='official'] .card .cardFeatures,
+.tools[data-theme='official'] .card .pros,
+.tools[data-theme='official'] .card .cons,
+.tools[data-theme='official'] .card .cardFeatures strong,
+.tools[data-theme='official'] .card .pros strong,
+.tools[data-theme='official'] .card .cons strong,
+.tools[data-theme='official'] .card .cardDescription strong {
+  color: var(--card-text-primary);
+}
+
+/* Elementos específicos com cor secundária usando variáveis CSS locais */
+.tools[data-theme='official'] .card .cardDescription,
+.tools[data-theme='official'] .card .cardFeatures li,
+.tools[data-theme='official'] .card .pros li,
+.tools[data-theme='official'] .card .cons li,
+.tools[data-theme='official'] .card .category,
+.tools[data-theme='official'] .card .pricing {
+  color: var(--card-text-secondary);
+}
+
+/* Elementos com cores de destaque usando variáveis CSS locais */
+.tools[data-theme='official'] .card .expandIcon,
+.tools[data-theme='official'] .card .cardBestFor strong,
+.tools[data-theme='official'] .card .text--success,
+.tools[data-theme='official'] .card .cardIcon {
+  color: var(--card-accent-color);
+}
+
+.tools[data-theme='official'] .card .pros strong {
+  color: var(--card-success-color);
+}
+
+.tools[data-theme='official'] .card .cons strong {
+  color: var(--card-warning-color);
+}
+
+.cardLink:hover {
+  opacity: 0.8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardLink {
+    transition: none;
+  }
+}
+

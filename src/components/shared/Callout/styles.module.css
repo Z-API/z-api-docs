@@ -1,0 +1,43 @@
+ .callout {
+   border-radius: var(--border-radius-md);
+   border: 1px solid var(--border-light);
+   padding: var(--spacing-md);
+   margin: var(--spacing-md) 0;
+   background: var(--ifm-background-surface-color);
+ }
+ 
+ .title {
+   font-weight: var(--font-weight-semibold);
+   margin-bottom: var(--spacing-xs);
+ }
+ 
+ .info {
+   border-left: 4px solid var(--zapi-info);
+ }
+ 
+ .success {
+   border-left: 4px solid var(--zapi-success);
+ }
+ 
+ .warning {
+   border-left: 4px solid var(--zapi-warning);
+ }
+ 
+.error {
+  border-left: 4px solid var(--zapi-error);
+}
+
+/* ============================================
+   COMPOUND PATTERN STYLES
+   ============================================ */
+
+.calloutIcon {
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-xl);
+}
+
+.calloutBody {
+  line-height: var(--line-height-relaxed);
+}
+
+

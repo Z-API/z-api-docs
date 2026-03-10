@@ -1,0 +1,577 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  /* GPU acceleration para animações Framer Motion */
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: var(--spacing-2xl);
+  min-height: 220px;
+  height: 100%;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+
+  /* Otimização: usar propriedades específicas ao invés de 'all' */
+  /* Remover transition de transform - Framer Motion controla */
+  transition: color var(--transition-normal) var(--ease-smooth-in-out),
+              box-shadow var(--transition-normal) var(--ease-smooth-in-out);
+  transform-origin: center;
+
+  /* CSS Containment para melhor performance */
+  contain: layout style paint;
+}
+
+.cardIcon {
+  margin-bottom: var(--spacing-lg);
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza ícone horizontalmente para consistência visual */
+  color: var(--ifm-color-primary);
+  transition: color var(--transition-normal) var(--ease-smooth-in-out);
+  flex-shrink: 0;
+  height: 48px;
+  width: 100%;
+}
+
+.card:hover .cardIcon {
+  color: var(--ifm-color-primary-dark);
+}
+
+/* Removido: transform no hover - agora controlado apenas por Framer Motion */
+.card:hover {
+  text-decoration: none;
+  color: inherit;
+
+  /* Transform removido - Framer Motion controla elevação via hoverElevationVariants */
+  /* Não adicionar transform aqui - conflita com Framer Motion */
+}
+
+.card:active {
+  /* Transform removido - Framer Motion controla via whileTap */
+  transition: color var(--transition-fast) var(--ease-out),
+              box-shadow var(--transition-fast) var(--ease-out);
+}
+
+.cardTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  margin-bottom: var(--spacing-md);
+  padding: 0;
+  /* Light Mode - Cor escura fixa para contraste com fundo branco */
+  color: #091E42;
+  line-height: var(--line-height-tight);
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-height: 3.5em;
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-normal) var(--ease-smooth-in-out),
+              transform var(--transition-normal) var(--ease-smooth-in-out);
+  transform-origin: left;
+}
+
+/* Garantir que o Heading do Docusaurus não adicione estilos extras */
+.cardTitle h3,
+.cardTitle * {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+/* Light Mode - Hover mantém cor escura ou muda para verde primário */
+html:not([data-theme='dark']) .card:hover .cardTitle {
+  color: #00A685;
+  transform: translateX(2px);
+}
+
+/* Dark Mode - Hover com cor clara */
+[data-theme='dark'] .card:hover .cardTitle {
+  color: #FFFFFF;
+  transform: translateX(2px);
+}
+
+.cardDescription {
+  font-size: var(--font-size-base) !important;
+  font-family: var(--font-family-base) !important;
+  /* Light Mode - Cor escura fixa para contraste com fundo branco */
+  color: #677483;
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+  margin-bottom: var(--spacing-md);
+  padding: 0;
+  flex-grow: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: color var(--transition-normal) var(--ease-smooth-in-out);
+}
+
+/* Light Mode - Hover mantém cor escura ou muda para cor mais escura */
+html:not([data-theme='dark']) .card:hover .cardDescription {
+  color: #091E42;
+}
+
+/* Dark Mode - Hover com cor clara */
+[data-theme='dark'] .card:hover .cardDescription {
+  color: #FFFFFF;
+}
+
+.cardLink {
+  /* Botão outline vazado - seguindo padrão do hero */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  margin-top: auto;
+  padding: var(--spacing-md) var(--zapi-spacing-10);
+  min-height: 52px;
+  min-width: 180px;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-base);
+  text-decoration: none;
+
+  /* Botão vazado - border e background transparente */
+  border: 2px solid var(--official-button-outline);
+  border-radius: var(--border-radius-full);
+  background: transparent;
+  /* Light Mode - Texto escuro para contraste com fundo branco (padrão) */
+  color: #091E42 !important;
+
+  /* Transições suaves */
+  transition: border-color var(--transition-normal) var(--ease-smooth-in-out),
+              background-color var(--transition-normal) var(--ease-smooth-in-out),
+              transform var(--transition-normal) var(--ease-smooth-in-out);
+  box-shadow: none;
+  position: relative;
+  transform-origin: center;
+  cursor: pointer;
+
+  /* GPU acceleration para animações */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Seta removida - não usar ::after para seta */
+/* .cardLink::after {
+  content: '→';
+  transition: transform var(--transition-normal) var(--ease-smooth-in-out);
+  display: inline-block;
+  transform-origin: center;
+  margin-left: var(--spacing-xs);
+} */
+
+/* ============================================
+   COMPOUND PATTERN STYLES
+   ============================================ */
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.cardBody {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.cardFooter {
+  margin-top: auto;
+  padding-top: var(--spacing-md);
+}
+
+/* Link wrapper não necessário - Link já aplica estilos do .card */
+
+.card:hover .cardLink {
+  /* Hover mantém estilo outline com cor mais clara */
+  border-color: var(--official-accent-green-light);
+  /* Light Mode - Texto escuro por padrão */
+  color: #091E42;
+  background: transparent;
+  transform: translateZ(0);
+  box-shadow: none;
+}
+
+/* Light Mode - Garantir texto escuro mesmo no hover quando card tem fundo branco */
+html:not([data-theme='dark']) [data-theme="official"][data-section="light"] .card:hover .cardLink,
+html:not([data-theme='dark']) [data-theme="official"] .card:hover .cardLink,
+html:not([data-theme='dark']) .card:hover .cardLink {
+  color: #091E42 !important;
+}
+
+/* Dark Mode - Texto claro no hover */
+html[data-theme='dark'] .card:hover .cardLink,
+[data-theme='dark'] .card:hover .cardLink {
+  color: #FFFFFF !important;
+}
+
+/* Animação de seta removida */
+/* .card:hover .cardLink::after {
+  transform: translateX(4px) scale(1.1);
+} */
+
+.card:active .cardLink {
+  /* Active feedback */
+  border-color: var(--official-button-green-active);
+  transform: translateZ(0);
+  box-shadow: none;
+}
+
+/* Efeito de brilho sutil no hover */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--background-white-alpha-08),
+    transparent
+  );
+  transition: left var(--transition-slow) var(--ease-out);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+/* Melhorar acessibilidade - focus visible */
+.card:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-lg);
+}
+
+/* Focus visible para o botão cardLink */
+.cardLink:focus-visible {
+  outline: 2px solid var(--official-button-green-alpha-60);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-full);
+  box-shadow: none;
+}
+
+/* Tema Híbrido - Borda com gradiente */
+[data-theme="hybrid"] .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--hybrid-gradient-border);
+  opacity: 0;
+  transition: opacity var(--transition-normal) var(--ease-out);
+}
+
+[data-theme="hybrid"] .card:hover::after {
+  opacity: 1;
+}
+
+/* Tema Official - Borda com gradiente verde claro */
+[data-theme="official"] .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--official-gradient-text);
+  opacity: 0;
+  transition: opacity var(--transition-normal) var(--ease-out);
+}
+
+[data-theme="official"] .card:hover::after {
+  opacity: 1;
+}
+
+[data-theme="official"] .card:hover {
+  box-shadow: var(--official-shadow-md);
+  border-color: var(--official-accent-green);
+}
+
+/* Tema Official com seção light - Background claro em light mode */
+html:not([data-theme='dark']) [data-theme="official"][data-section="light"] .card {
+  background: #F8F9FA !important;
+  border: 1px solid var(--border-light);
+  color: #091E42;
+}
+
+html:not([data-theme='dark']) [data-theme="official"][data-section="light"] .card:hover {
+  background: #F8F9FA !important;
+  border-color: var(--official-accent-green);
+  box-shadow: var(--official-shadow-md);
+}
+
+/* Dark Mode - Cards com background escuro (hero) e texto claro */
+[data-theme='dark'] [data-theme="official"][data-section="light"] .card {
+  background: #0A0E27 !important;
+  border: 1px solid var(--official-accent-green-alpha-20) !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] [data-theme="official"][data-section="light"] .card:hover {
+  background: #0A0E27 !important;
+  border-color: var(--official-accent-green) !important;
+  box-shadow: var(--official-shadow-md) !important;
+}
+
+/* Light Mode - Textos escuros para cards no tema Official (fixo em hex) */
+html:not([data-theme='dark']) [data-theme="official"] .card {
+  color: #091E42 !important;
+}
+
+html:not([data-theme='dark']) [data-theme="official"] .card h3,
+html:not([data-theme='dark']) [data-theme="official"] .card h4,
+html:not([data-theme='dark']) [data-theme="official"] .card .cardTitle {
+  color: #091E42 !important;
+}
+
+html:not([data-theme='dark']) [data-theme="official"] .card p,
+html:not([data-theme='dark']) [data-theme="official"] .card .cardDescription {
+  color: #677483 !important;
+}
+
+/* Dark Mode - Textos claros para cards (fixo em hex) */
+[data-theme='dark'] [data-theme="official"] .card {
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] [data-theme="official"] .card h3,
+[data-theme='dark'] [data-theme="official"] .card h4,
+[data-theme='dark'] [data-theme="official"] .card .cardTitle {
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] [data-theme="official"] .card p,
+[data-theme='dark'] [data-theme="official"] .card .cardDescription {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Light Mode - Garantir cores escuras para todos os cards (não apenas official) */
+html:not([data-theme='dark']) .card .cardTitle {
+  color: #091E42 !important;
+}
+
+html:not([data-theme='dark']) .card .cardDescription {
+  color: #677483 !important;
+}
+
+/* Botão outline para tema Official - Light Mode: texto escuro */
+html:not([data-theme='dark']) [data-theme="official"] .cardLink,
+html:not([data-theme='dark']) [data-theme="official"][data-section="light"] .cardLink,
+html:not([data-theme='dark']) [data-theme="official"] .card .cardLink,
+html:not([data-theme='dark']) [data-theme="official"][data-section="light"] .card .cardLink {
+  border: 2px solid var(--official-accent-green);
+  background: transparent;
+  color: #091E42 !important;
+}
+
+html:not([data-theme='dark']) [data-theme="official"] .card:hover .cardLink,
+html:not([data-theme='dark']) [data-theme="official"][data-section="light"] .card:hover .cardLink {
+  border-color: var(--official-accent-green-light);
+  color: #091E42 !important;
+}
+
+html:not([data-theme='dark']) [data-theme="official"] .card:active .cardLink,
+html:not([data-theme='dark']) [data-theme="official"][data-section="light"] .card:active .cardLink {
+  border-color: var(--official-accent-green-dark);
+  color: #091E42 !important;
+}
+
+/* Dark Mode - Texto claro para contraste com fundo escuro */
+html[data-theme='dark'] [data-theme="official"] .cardLink,
+html[data-theme='dark'] [data-theme="official"][data-section="light"] .cardLink,
+html[data-theme='dark'] [data-theme="official"] .card .cardLink,
+html[data-theme='dark'] [data-theme="official"][data-section="light"] .card .cardLink {
+  color: #FFFFFF !important;
+}
+
+html[data-theme='dark'] [data-theme="official"] .card:hover .cardLink,
+html[data-theme='dark'] [data-theme="official"][data-section="light"] .card:hover .cardLink {
+  color: #FFFFFF !important;
+}
+
+html[data-theme='dark'] [data-theme="official"] .card:active .cardLink,
+html[data-theme='dark'] [data-theme="official"][data-section="light"] .card:active .cardLink {
+  color: #FFFFFF !important;
+}
+
+@media screen and (max-width: 996px) {
+  .card {
+    padding: var(--spacing-md);
+  }
+
+  .cardIcon {
+    margin-bottom: var(--spacing-md);
+    height: 40px;
+  }
+  
+  .cardTitle {
+    font-size: var(--font-size-lg);
+    min-height: 3em;
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardLink {
+    min-width: 160px;
+    min-height: 48px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+}
+
+/* Acessibilidade: Respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .cardWrapper {
+    will-change: auto;
+    transform: none;
+  }
+  
+  .card,
+  .cardIcon,
+  .cardTitle,
+  .cardDescription {
+    transition: none;
+  }
+
+  .cardLink {
+    transition: border-color var(--transition-normal) var(--ease-smooth-in-out),
+                background-color var(--transition-normal) var(--ease-smooth-in-out) !important;
+    will-change: auto;
+    transform: none !important;
+  }
+
+  .card:hover .cardLink,
+  .card:active .cardLink {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .card:hover .cardTitle {
+    transform: none;
+  }
+  
+  .card:hover .cardLink {
+    transform: none;
+  }
+  
+  .card:hover .cardLink {
+    transform: none;
+  }
+  
+  /* Animação de seta removida - não há mais ::after */
+  
+  .cardLink {
+    will-change: auto;
+    transform: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease !important;
+  }
+
+  .cardLink:hover,
+  .cardLink:active {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .card::before {
+    transition: none;
+  }
+  
+  [data-theme="hybrid"] .card::after,
+  [data-theme="official"] .card::after {
+    transition: none;
+  }
+  
+  .ripple {
+    display: none;
+  }
+}
+
+/* ============================================
+   RIPPLE EFFECT
+   ============================================ */
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--background-white-alpha-08);
+  transform: scale(0);
+  animation: ripple 0.6s var(--ease-out);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.has-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ripple para elementos escuros */
+[data-theme='dark'] .ripple {
+  background: var(--background-black-alpha-20);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: var(--spacing-md) var(--spacing-sm);
+    min-height: auto;
+  }
+
+  .cardIcon {
+    height: 36px;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .cardTitle {
+    font-size: var(--font-size-lg);
+    min-height: 2.5em;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .cardDescription {
+    font-size: var(--font-size-base) !important;
+    font-family: var(--font-family-base) !important;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  /* Garantir tamanho mínimo do botão em mobile (WCAG 2.5.5) */
+  .cardLink {
+    min-height: 52px;
+    min-width: 180px;
+    font-size: var(--font-size-base);
+    padding: var(--spacing-md) var(--zapi-spacing-10);
+  }
+}
+

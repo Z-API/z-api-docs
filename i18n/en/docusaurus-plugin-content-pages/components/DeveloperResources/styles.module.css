@@ -1,0 +1,239 @@
+.developerResources {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background: var(--official-bg-white);
+}
+
+.developerResources[data-breakpoint="tablet"] {
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.developerResources[data-breakpoint="mobile"] {
+  padding: var(--spacing-xl) var(--spacing-sm);
+}
+
+.developerResources[data-theme="official"] {
+  background: var(--official-bg-white);
+  color: var(--official-text-dark);
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+  color: var(--official-text-dark);
+  line-height: var(--line-height-tight);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-slow) var(--ease-out),
+              transform var(--transition-slow) var(--ease-out);
+}
+
+/* Dark Mode - garantir que título use branco, nunca azul */
+[data-theme='dark'] .developerResources .title {
+  color: var(--text-primary) !important;
+
+  /* Branco - NÃO usar cor primária azul no dark mode */
+}
+
+.resourcesGrid {
+  display: grid;
+  gap: var(--space-8); /* 32px */
+
+  /* Mobile first: 1 coluna */
+  grid-template-columns: 1fr;
+}
+
+/* Medium devices / Tablet (768px+) */
+@media screen and (min-width: 768px) {
+  .resourcesGrid {
+    /* Tablet: 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6); /* 24px */
+  }
+}
+
+/* Large devices / Desktop (1024px+) */
+@media screen and (min-width: 1024px) {
+  .resourcesGrid {
+    /* Desktop: 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8); /* 32px */
+  }
+}
+
+/* Manter compatibilidade com data-breakpoint (deprecated) */
+.developerResources[data-breakpoint="tablet"] .resourcesGrid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.developerResources[data-breakpoint="mobile"] .resourcesGrid {
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.resourceCard {
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  border-radius: 20px;
+  padding: var(--spacing-xl);
+  background: var(--background-white);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  box-shadow: 0 15px 35px rgba(5, 77, 66, 0.06);
+}
+
+/* Ajustes mobile para resourceCard */
+.developerResources[data-breakpoint="mobile"] .resourceCard {
+  padding: var(--spacing-lg);
+  min-height: auto;
+  gap: var(--spacing-sm);
+}
+
+.iconBadge {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--official-accent-green);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  color: var(--official-text-dark);
+}
+
+.cardDescription {
+  flex: 1;
+  margin: 0;
+  color: var(--official-text-muted);
+  line-height: var(--line-height-relaxed);
+}
+
+.cardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+
+  /* Touch target mínimo de 44x44px para acessibilidade mobile */
+  min-height: 44px;
+  min-width: 44px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+
+  /* Garantir área clicável adequada */
+  -webkit-tap-highlight-color: var(--official-accent-green-alpha-15, rgba(0, 166, 133, 0.1));
+}
+
+.cardCta strong {
+  font-weight: inherit;
+}
+
+.cardCta svg {
+  transition: transform var(--transition-normal) var(--ease-out);
+  color: var(--official-accent-green);
+
+  /* Garantir que ícone tenha tamanho adequado em mobile */
+  flex-shrink: 0;
+}
+
+.cardCta:hover svg,
+.cardCta:active svg {
+  transform: translateX(4px);
+}
+
+/* Ajustes mobile para CTA */
+.developerResources[data-breakpoint="mobile"] .cardCta {
+  min-height: 44px;
+  padding: var(--spacing-sm);
+}
+
+/* Breakpoints específicos para diferentes dispositivos */
+@media screen and (max-width: 996px) {
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* Tablet e dispositivos médios */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .iconBadge {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .cardTitle {
+    font-size: var(--font-size-lg);
+  }
+  
+  .cardDescription {
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* iPhone SE (375px) e dispositivos pequenos */
+@media screen and (max-width: 375px) {
+  .developerResources {
+    padding: var(--spacing-lg) var(--spacing-xs);
+  }
+  
+  .title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .resourceCard {
+    padding: var(--spacing-md);
+    border-radius: 16px;
+  }
+  
+  .iconBadge {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+  
+  .cardTitle {
+    font-size: var(--font-size-base);
+  }
+  
+  .cardDescription {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-normal);
+  }
+}
+
+/* Galaxy S8 e dispositivos muito pequenos (360px) */
+@media screen and (max-width: 360px) {
+  .developerResources {
+    padding: var(--spacing-md) var(--spacing-xs);
+  }
+  
+  .resourcesGrid {
+    gap: var(--spacing-sm);
+  }
+  
+  .resourceCard {
+    padding: var(--spacing-sm);
+    min-height: auto;
+  }
+  
+  .iconBadge {
+    width: 36px;
+    height: 36px;
+  }
+}
+

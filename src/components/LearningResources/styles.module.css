@@ -1,0 +1,199 @@
+.learningResources {
+  padding: 80px var(--spacing-lg); /* 80px vertical, 24px horizontal - consistente com outras seções */
+  /* Light Mode - Background claro usando --official-bg-light */
+  background: #F8F9FA;
+  /* Remover margin para evitar espaços brancos */
+  margin: 0;
+  /* Separação visual */
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+/* Tema Official - Background claro em light mode */
+html:not([data-theme='dark']) .learningResources[data-theme="official"] {
+  background: var(--official-bg-light) !important;
+  color: #091E42;
+}
+
+/* Tema Official com seção light - Background claro em light mode */
+html:not([data-theme='dark']) .learningResources[data-theme="official"][data-section="light"],
+html:not([data-theme='dark']) section[data-theme="official"][data-section="light"] .learningResources {
+  background: var(--official-bg-light) !important;
+  color: #091E42;
+}
+
+/* Dark Mode - Background escuro para learning resources section */
+html[data-theme='dark'] .learningResources,
+[data-theme='dark'] .learningResources {
+  background: #1A1D29 !important;
+  /* Manter padding consistente em dark mode */
+  padding: 80px var(--spacing-lg);
+  border-top-color: var(--background-white-alpha-05);
+  border-bottom-color: var(--background-white-alpha-05);
+}
+
+html[data-theme='dark'] .learningResources[data-theme="official"],
+[data-theme='dark'] .learningResources[data-theme="official"] {
+  background: #1A1D29 !important;
+  color: #FFFFFF !important;
+  padding: 80px var(--spacing-lg);
+  border-top-color: var(--background-white-alpha-05);
+  border-bottom-color: var(--background-white-alpha-05);
+}
+
+html[data-theme='dark'] .learningResources[data-theme="official"][data-section="light"],
+html[data-theme='dark'] section[data-theme="official"][data-section="light"] .learningResources,
+[data-theme='dark'] .learningResources[data-theme="official"][data-section="light"],
+[data-theme='dark'] section[data-theme="official"][data-section="light"] .learningResources {
+  background: #1A1D29 !important;
+  color: #FFFFFF !important;
+  padding: 80px var(--spacing-lg);
+  border-top-color: var(--background-white-alpha-05);
+  border-bottom-color: var(--background-white-alpha-05);
+}
+
+.title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+  color: var(--ifm-color-content);
+  line-height: var(--line-height-tight);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-slow) var(--ease-out),
+              transform var(--transition-slow) var(--ease-out);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+}
+
+/* Tema Official - Texto escuro em light mode */
+.learningResources[data-theme="official"] .title {
+  color: #091E42;
+}
+
+/* Dark Mode - Removido background escuro do título */
+/* Mantém apenas o texto claro para visibilidade */
+[data-theme='dark'] .title {
+  color: #FFFFFF !important;
+}
+
+/* Dark Mode - Texto claro para tema official */
+[data-theme='dark'] .learningResources[data-theme="official"] .title {
+  color: #FFFFFF !important;
+}
+
+.title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cardsGrid {
+  display: grid;
+  gap: var(--space-12); /* 48px */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* Mobile first: 1 coluna */
+  grid-template-columns: 1fr;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Medium devices / Tablet (768px+) */
+@media screen and (min-width: 768px) {
+  .cardsGrid {
+    /* Tablet: 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6); /* 24px */
+  }
+}
+
+/* Large devices / Desktop (1024px+) */
+@media screen and (min-width: 1024px) {
+  .cardsGrid {
+    /* Desktop: 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-12); /* 48px */
+  }
+}
+
+/* Responsive - Tablet */
+@media screen and (max-width: 996px) {
+  .learningResources {
+    padding: 64px var(--spacing-md); /* 64px vertical, 16px horizontal */
+  }
+  
+  /* Dark Mode - Tablet */
+  html[data-theme='dark'] .learningResources,
+  [data-theme='dark'] .learningResources {
+    padding: 64px var(--spacing-md);
+  }
+
+  html[data-theme='dark'] .learningResources[data-theme="official"],
+  [data-theme='dark'] .learningResources[data-theme="official"] {
+    padding: 64px var(--spacing-md);
+  }
+  
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* Responsive - Mobile */
+@media screen and (max-width: 768px) {
+  .learningResources {
+    padding: 48px var(--spacing-sm); /* 48px vertical, 8px horizontal */
+  }
+  
+  /* Dark Mode - Mobile */
+  html[data-theme='dark'] .learningResources,
+  [data-theme='dark'] .learningResources {
+    padding: 48px var(--spacing-sm);
+  }
+
+  html[data-theme='dark'] .learningResources[data-theme="official"],
+  [data-theme='dark'] .learningResources[data-theme="official"] {
+    padding: 48px var(--spacing-sm);
+  }
+  
+  .title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .cardsGrid {
+    gap: var(--spacing-md);
+  }
+}
+
+/* iPhone SE (375px) e dispositivos pequenos */
+@media screen and (max-width: 375px) {
+  .learningResources {
+    padding: var(--spacing-md) var(--spacing-xs);
+  }
+  
+  .title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .cardsGrid {
+    gap: var(--spacing-sm);
+  }
+}
+
+/* Galaxy S8 e dispositivos muito pequenos (360px) */
+@media screen and (max-width: 360px) {
+  .learningResources {
+    padding: var(--spacing-sm) var(--spacing-xs);
+  }
+  
+  .cardsGrid {
+    gap: var(--spacing-xs);
+  }
+}
+
