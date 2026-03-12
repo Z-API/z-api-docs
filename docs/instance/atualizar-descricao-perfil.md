@@ -22,7 +22,7 @@ Este método permite alterar a descrição de perfil (status) exibida no WhatsAp
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/profile-description
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/profile-description
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -35,6 +35,14 @@ PUT /instances/{instanceId}/token/{token}/profile-description
 ---
 
 ## <Icon name="Settings" size="md" /> Atributos {#atributos}
+
+### Corpo da Requisição
+
+```json
+{
+  "value": "Descrição do perfil"
+}
+```
 
 ### Obrigatórios
 

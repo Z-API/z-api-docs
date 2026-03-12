@@ -157,9 +157,9 @@ curl -X GET "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalo
 |-------|------|-----------|
 | `nextCursor` | string \| null | Token para paginação. Se presente, há mais resultados disponíveis. Use este token na próxima requisição para obter mais coleções |
 | `collections` | array | Lista de coleções do catálogo |
-| `collections[].id` | string | ID único da coleção |
-| `collections[].name` | string | Nome da coleção |
-| `collections[].status` | string | Status da coleção. Valores possíveis: `"PENDING"` (pendente de aprovação), `"APPROVED"` (aprovada) |
+| `id` | string | ID único da coleção |
+| `name` | string | Nome da coleção |
+| `status` | string | Status da coleção. Valores possíveis: `"PENDING"` (pendente de aprovação), `"APPROVED"` (aprovada) |
 
 ---
 

@@ -22,7 +22,7 @@ Este método retorna informações completas sobre o dispositivo conectado à in
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/device
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/device
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

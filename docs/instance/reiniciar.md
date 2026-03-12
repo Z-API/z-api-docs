@@ -5,7 +5,7 @@ Reinicie sua instância do WhatsApp para resolver problemas de conexão ou atual
 ## Endpoint {#endpoint}
 
 ```http
-POST https://api.z-api.io/instances/{instanceId}/restart
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/restart
 ```
 
 ### Headers {#headers}
@@ -18,8 +18,7 @@ POST https://api.z-api.io/instances/{instanceId}/restart
 
 ```json
 {
- "value": true,
- "message": "Instância reiniciada com sucesso"
+ "value": true
 }
 ```
 

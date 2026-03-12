@@ -30,7 +30,7 @@ Certifique-se de usar o formato correto do `groupId` baseado na data de criaçã
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-link/{groupId}
+GET https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-link/{groupId}
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -57,7 +57,7 @@ POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitati
 <TabItem value="http" label="HTTP">
 
 ```http
-POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-link/120363019502650977-group
+GET https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-link/120363019502650977-group
 Client-Token: SEU_CLIENT_TOKEN
 ```
 
@@ -1313,7 +1313,7 @@ int main() {
 
 | Código | Motivo | Como resolver |
 |--------|--------|---------------|
-| `405` | Método HTTP incorreto | Certifique-se de estar usando `POST` conforme especificado |
+| `405` | Método HTTP incorreto | Certifique-se de estar usando `GET` conforme especificado |
 | `401` | Token inválido | Verifique o header `Client-Token` |
 | `404` | Grupo não encontrado | Verifique se o `groupId` está correto |
 

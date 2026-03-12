@@ -1481,7 +1481,6 @@ Para melhorar o preview do link, adicione estas meta tags no `<head>` do seu sit
 
 - O WhatsApp detecta automaticamente URLs na mensagem
 - O preview é gerado pelo WhatsApp, não pela API do Z-API
-- Para desabilitar o preview, defina `linkPreview: false`
 - Links devem ser URLs válidas e acessíveis publicamente
 - O preview pode levar alguns segundos para ser gerado
 

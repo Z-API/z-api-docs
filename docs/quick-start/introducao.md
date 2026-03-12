@@ -254,7 +254,8 @@ Não está familiarizado com árvores de decisão? Leia nosso [guia completo sob
 | <Icon name="MessageSquare" size="xs" /> **Mensagem não é enviada** | Instância desconectada ou número inválido | Verifique o status da instância e o formato do número (deve incluir código do país) |
 
 :::tip Dica Pro
-Se o problema persistir, verifique os logs da sua instância no painel do Z-API. Eles geralmente contêm informações detalhadas sobre o que está acontecendo.
+Caso o problema persista, entre em contato com o suporte da Z-API para que possamos realizar uma análise mais detalhada.
+
 :::
 
 ---

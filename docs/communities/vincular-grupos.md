@@ -26,7 +26,7 @@ Com essa API você consegue adicionar outros grupos a uma comunidade. Para isso,
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/communities/link
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/communities/link
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -44,7 +44,7 @@ POST /instances/{instanceId}/token/{token}/communities/link
 
 | Atributo | Tipo | Descrição |
 |----------|------|-----------|
-| `phone` | string | ID da comunidade que terá os grupos adicionados |
+| `communityId` | string | ID da comunidade que terá os grupos adicionados |
 | `groupsPhones` | array[string] | Array com os números dos grupos a serem vinculados (formato: `{id}-group`) |
 
 ---
@@ -60,7 +60,7 @@ Content-Type: application/json
 Client-Token: seu-token-de-seguranca
 
 {
-  "phone": "98372465382764532938",
+  "communityId": "98372465382764532938",
   "groupsPhones": ["1345353454354354-group", "1203634230225498-group"]
 }
 ```

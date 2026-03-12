@@ -7,7 +7,7 @@ featured: true
 category: Hands-On
 summary: Guia passo a passo completo para configurar webhooks do Z-API em plataformas no-code como n8n, Make, Zapier e outras, incluindo exemplos práticos e diagramas de fluxo.
 description: Tutorial completo sobre configuração de webhooks do Z-API em plataformas no-code, incluindo processo passo a passo, exemplos de fluxos de automação, diagramas e melhores práticas para integrações eficientes.
-image: /img/blog/webhooks-no-code.png
+image: https://ascenty.com/wp-content/uploads/2022/04/tecnologia-na-educa%C3%A7%C3%A3o-1920x1000-c-default.png
 ---
 
 # Configurando Webhooks do Z-API em Plataformas No-Code: Um Guia Completo
@@ -196,7 +196,7 @@ flowchart LR
    - Route 3: Outras mensagens
 
 3. **HTTP Module** (Z-API - Enviar Mensagem)
-   - URL: `https://api.z-api.io/instance/XXX/send-text`
+   - URL: `https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/send-text`
    - Method: POST
    - Headers: `Client-Token: SEU_TOKEN`
    - Body: JSON com phone e message
@@ -223,7 +223,7 @@ flowchart LR
 
 4. **Webhooks by Zapier** (Ação)
    - Event: POST
-   - URL: `https://api.z-api.io/instance/XXX/send-text`
+   - URL: `https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/send-text`
    - Data: Phone e Message
 
 ---

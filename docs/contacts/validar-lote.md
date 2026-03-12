@@ -46,6 +46,14 @@ POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-exists-b
 
 ## <Icon name="Settings" size="md" /> Atributos {#atributos}
 
+### Corpo da Requisição
+
+```json
+{
+  "phones": ["554499999999","554488888888"]
+}
+```
+
 ### Obrigatórios
 
 | Atributo | Tipo | Descrição |

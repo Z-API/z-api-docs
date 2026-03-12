@@ -26,7 +26,7 @@ Atenção: somente administradores podem alterar as preferências da comunidade.
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/update-community-description
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/update-community-description
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -44,7 +44,7 @@ POST /instances/{instanceId}/token/{token}/update-community-description
 
 | Atributo | Tipo | Descrição |
 |----------|------|-----------|
-| `phone` | string | ID/Fone da comunidade (obtido ao listar ou criar comunidades) |
+| `communityId` | string | ID/Fone da comunidade (obtido ao listar ou criar comunidades) |
 | `communityDescription` | string | Nova descrição da comunidade |
 
 ---
@@ -60,7 +60,7 @@ Content-Type: application/json
 Client-Token: seu-token-de-seguranca
 
 {
-  "phone": "120363019502650977",
+  "communityId": "120363019502650977",
   "communityDescription": "Nova descrição da comunidade"
 }
 ```

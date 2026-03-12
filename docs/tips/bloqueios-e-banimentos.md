@@ -36,7 +36,7 @@ O WhatsApp é muito rigoroso quando o assunto é envio de spam e por isso damos 
 
 Quantidade é algo importante sim, mas não é só sobre a quantidade enviada, o fator **PARA QUEM** muitas vezes é o ponto chave.
 
-Sempre em nossas conversas utilizamos o case de um dos nossos clientes mais antigos, que hoje envia mensagens promocionais pelo WhatsApp para mais de 80 mil pessoas diariamente e nunca teve seu número bloqueado. Quando o procuramos e indagamos sobre como ele conseguia tal façanha, ele gentilmente compartilhou a seguinte técnica:
+Sempre em nossas conversas utilizamos o case de um dos nossos clientes mais antigos, que hoje envia mensagens promocionais pelo WhatsApp para várias pessoas diariamente e nunca teve seu número bloqueado. Quando o procuramos e indagamos sobre como ele conseguia tal façanha, ele gentilmente compartilhou a seguinte técnica:
 
 1. **Fazer maturação do chip**: Isso significa usar o número de telefone no WhatsApp de maneira normal antes de começar a enviar muitas mensagens através do Z-API.
 2. **Interagir pelo celular ou WhatsApp Web antes de conectar no Z-API**: Isso ajuda a mostrar para o WhatsApp que você é um usuário real e não um bot.

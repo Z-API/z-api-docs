@@ -29,7 +29,7 @@ Este método é utilizado para confirmar o código que você recebeu. Para utili
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/mobile/confirm-registration-code
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/mobile/confirm-registration-code
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

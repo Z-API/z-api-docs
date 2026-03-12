@@ -7,7 +7,7 @@ featured: true
 category: Conceitos
 summary: Compreenda em detalhes como uma mensagem percorre o sistema desde o envio até a confirmação de leitura, incluindo todas as etapas e estratégias de tratamento de erros.
 description: Guia completo sobre o ciclo de vida de mensagens no Z-API, explicando cada etapa do processo, estados possíveis, tratamento de erros e implementação de retry logic para integrações robustas.
-image: /img/blog/ciclo-vida-mensagens.png
+image: https://ascenty.com/wp-content/uploads/2022/04/tecnologia-na-educa%C3%A7%C3%A3o-1920x1000-c-default.png
 ---
 
 # Como Funciona o Ciclo de Vida de Mensagens no Z-API
@@ -59,8 +59,7 @@ O Z-API recebe sua requisição, valida os dados e adiciona a mensagem a uma fil
 **Resposta típica:**
 ```json
 {
-  "messageId": "3EB0C767F26A",
-  "status": "queued"
+  "messageId": "3EB0C767F26A"
 }
 ```
 
@@ -70,21 +69,23 @@ A instância do WhatsApp conectada ao Z-API processa a mensagem da fila e realiz
 
 **Características:**
 - Processamento assíncrono (ocorre em background)
-- Retry automático até 3x em caso de falhas temporárias
-- Timeout configurável
+- Retry automático em caso de falhas temporárias
 
 ### 4. Notificação de Envio
 
-Após o processamento, o Z-API envia um webhook para seu sistema informando o resultado: sucesso (status `SENT`) ou falha (status `FAILED`).
+Após o processamento, o Z-API envia um webhook (MessageStatusCallback) para seu sistema informando o resultado: sucesso (status `SENT`).
 
 **Webhook de sucesso:**
 ```json
 {
-  "event": "message.status",
-  "data": {
-    "messageId": "3EB0C767F26A",
-    "status": "SENT"
-  }
+  "instanceId": "instance.id",
+  "status": "SENT",
+  "ids": ["999999999999999999999"],
+  "momment": 1632234645000,
+  "phoneDevice": 0,
+  "phone": "5544999999999",
+  "type": "MessageStatusCallback",
+  "isGroup": false
 }
 ```
 
@@ -95,11 +96,14 @@ Quando o WhatsApp confirma que a mensagem foi entregue ao dispositivo do destina
 **Webhook de recebimento:**
 ```json
 {
-  "event": "message.status",
-  "data": {
-    "messageId": "3EB0C767F26A",
-    "status": "RECEIVED"
-  }
+  "instanceId": "instance.id",
+  "status": "RECEIVED",
+  "ids": ["999999999999999999999"],
+  "momment": 1632234645000,
+  "phoneDevice": 0,
+  "phone": "5544999999999",
+  "type": "MessageStatusCallback",
+  "isGroup": false
 }
 ```
 
@@ -158,7 +162,7 @@ sequenceDiagram
 - **Seta sólida (→)**: Fluxo de dados normal
 - **Seta tracejada (-->>)**: Notificações/Webhooks
 - **Caixa "alt"**: Condições alternativas (se/senão)
-- **Caixa "loop"**: Tentativas automáticas (até 3x)
+- **Caixa "loop"**: Tentativas automáticas
 - **429 Too Many Requests**: Rate limit atingido - aguarde antes de tentar novamente
 - **Falha Temporária**: Erro que será tentado novamente automaticamente
 - **Falha Permanente**: Erro que não será tentado novamente - requer ação manual
@@ -171,11 +175,9 @@ Durante o ciclo de vida, uma mensagem pode estar em diferentes estados:
 
 | Estado | Descrição | Quando Ocorre |
 |--------|-----------|---------------|
-| `QUEUED` | Na fila aguardando processamento | Imediatamente após envio bem-sucedido |
 | `SENT` | Enviada ao WhatsApp | Após processamento e envio bem-sucedido |
 | `RECEIVED` | Entregue ao destinatário | Quando WhatsApp confirma entrega |
 | `READ` | Lida pelo destinatário | Quando destinatário visualiza a mensagem |
-| `FAILED` | Falha no envio | Quando ocorre erro permanente |
 
 ---
 
@@ -201,7 +203,6 @@ await db.messages.create({
   messageId,
   phone: '5511999999999',
   content: 'Olá!',
-  status: 'QUEUED',
   createdAt: new Date()
 });
 ```
@@ -335,10 +336,10 @@ O sistema de webhooks do Z-API fornece visibilidade completa sobre o status de c
   Geralmente menos de 1 segundo após a requisição, mas pode variar dependendo da carga do sistema e da fila.
 
 * * **O que fazer se uma mensagem falhar?**
-  Implemente retry logic com backoff exponencial. O Z-API já tenta automaticamente até 3x, mas você pode implementar retries adicionais se necessário.
+  Implemente retry logic com backoff exponencial. O Z-API já tenta automaticamente realizar um novo retry, mas você pode implementar retries adicionais se necessário.
 
 * * **Como rastrear mensagens sem webhooks?**
   Você pode consultar o status através da API, mas webhooks são mais eficientes e fornecem atualizações em tempo real.
 
 * * **Posso confiar apenas no status da resposta inicial?**
-  Não. O status inicial é apenas "queued". Sempre configure webhooks para receber atualizações de status em tempo real.
+  Não. Sempre configure webhooks para receber atualizações de status em tempo real.

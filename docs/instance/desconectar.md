@@ -5,7 +5,7 @@ Desconecte sua instância do WhatsApp de forma controlada. Use este endpoint qua
 ## Endpoint {#endpoint}
 
 ```http
-POST https://api.z-api.io/instances/{instanceId}/disconnect
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/disconnect
 ```
 
 ### Headers {#headers}
@@ -18,8 +18,7 @@ POST https://api.z-api.io/instances/{instanceId}/disconnect
 
 ```json
 {
- "value": true,
- "message": "Instância desconectada com sucesso"
+ "value": true
 }
 ```
 

@@ -31,7 +31,7 @@ Você pode optar por um dos métodos disponíveis para ler o QR Code do WhatsApp
 ### 1. QR Code - Bytes
 
 ```http
-GET /instances/{instanceId}/token/{token}/qr-code
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/qr-code
 ```
 
 Este método retorna os bytes do QR Code. Você poderá renderizar em um componente do tipo QR Code compatível com sua linguagem de programação.
@@ -39,7 +39,7 @@ Este método retorna os bytes do QR Code. Você poderá renderizar em um compone
 ### 2. QR Code - Imagem Base64
 
 ```http
-GET /instances/{instanceId}/token/{token}/qr-code/image
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/qr-code/image
 ```
 
 Este método retorna uma imagem do tipo base64. Você poderá renderizar em um componente do tipo imagem compatível com sua linguagem de programação.
@@ -47,7 +47,7 @@ Este método retorna uma imagem do tipo base64. Você poderá renderizar em um c
 ### 3. Código de Telefone
 
 ```http
-GET /instances/{instanceId}/token/{token}/phone-code/{phone}
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/phone-code/{phone}
 ```
 
 Este método retorna um código para que seja possível conectar o número à API sem a necessidade de leitura de QR Code, apenas inserindo o código gerado.

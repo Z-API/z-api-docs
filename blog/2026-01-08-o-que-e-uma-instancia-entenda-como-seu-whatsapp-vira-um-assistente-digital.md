@@ -270,7 +270,6 @@ Assim como você cuida do seu celular pra ele funcionar bem, você precisa cuida
 
 **4. Se persistir:**
 
-* Verifique os logs da instância pra detalhes do erro
 * Entre em contato com o suporte do Z-API se necessário
 
 ---

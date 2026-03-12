@@ -31,7 +31,7 @@ Essa API está disponível apenas para instâncias mobile.
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/security/two-fa-code/remove
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/security/two-fa-code/remove
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

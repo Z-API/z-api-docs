@@ -7,6 +7,7 @@ sidebar_position: 1
 # <Icon name="Handshake" size="lg" /> Partner API
 
 Gerencie instâncias através da API de parceiros do Z-API. Crie, assine e cancele instâncias programaticamente para seus clientes ou usuários.
+Agora que você alcançou 10 instâncias, já nos conhecemos bem e nossa parceria está ainda mais fortalecida. Estaremos sempre disponíveis para apoiá-lo e crescermos juntos. Pode contar com a gente!
 
 :::tip Para Parceiros
 A Partner API é exclusiva para parceiros Z-API que precisam gerenciar múltiplas instâncias para diferentes clientes ou usuários!
@@ -16,7 +17,9 @@ A Partner API é exclusiva para parceiros Z-API que precisam gerenciar múltipla
 
 ## <Icon name="Info" size="md" /> Visão geral
 
-A seção Partner API fornece funcionalidades para gerenciar múltiplas instâncias através de uma API exclusiva para parceiros. Use estas operações para criar instâncias para seus clientes, gerenciar assinaturas e controlar o ciclo de vida das instâncias.
+A seção Partner API fornece funcionalidades para gerenciar múltiplas instâncias por meio de uma API exclusiva para parceiros. Com ela, é possível criar instâncias para seus clientes, gerenciar assinaturas e controlar todo o ciclo de vida das instâncias.
+
+Ao participar do programa de parceria, você receberá um token exclusivo de integração, juntamente com a documentação necessária para criar, assinar ou cancelar instâncias diretamente via API, eliminando a necessidade de acessar a interface administrativa.
 
 :::info Importante
 
@@ -27,6 +30,19 @@ A seção Partner API fornece funcionalidades para gerenciar múltiplas instânc
 - O Modelo de integrador neste momento é feito **pós-pago**. Em breve teremos opção pré-pago.
 
 :::
+
+---
+
+## <Icon name="KeyRound" size="md" /> Tokens
+
+O token de segurança da conta contém um número limite de utilização, mas durante nossa parceria este limite passa por algumas mudanças conforme abaixo:
+
+### <Icon name="Code2" size="sm" /> **Primeiro token (Token de segurança da conta)**
+Permite criar 25 instâncias.
+
+### <Icon name="Code2" size="sm" /> **Token Integrador (Token de Parceiro)**
+
+A partir das primeiras 10 instâncias criadas com o primeiro token, você pode solicitar ao nosso suporte, o novo token definitivo de parceiro, para conseguir criar mais instâncias, até o infinito. 
 
 ---
 

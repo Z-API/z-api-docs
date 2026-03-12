@@ -26,7 +26,7 @@ Essa API está disponível apenas para instâncias mobile.
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/security/email
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/security/email
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

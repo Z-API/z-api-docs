@@ -47,7 +47,7 @@ Configure este webhook na sua ferramenta de automação (n8n, Make, etc.) para r
 #### Via API
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-webhook-chat-presence
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-webhook-chat-presence
 ```
 
 **Headers:**

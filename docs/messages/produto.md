@@ -60,7 +60,7 @@ Para enviar produtos, você precisa:
 
 :::tip Dica
 
-Consulte a seção [WhatsApp Business](../whatsapp-business/introducao) para aprender como criar e gerenciar produtos no seu catálogo. O `productId` pode ser obtido através da API de listagem de produtos ou via webhook quando um produto é criado.
+Consulte a seção [WhatsApp Business](../whatsapp-business/introducao) para aprender como criar e gerenciar produtos no seu catálogo. O `productId` pode ser obtido através da API de listagem de produtos.
 
 :::
 
@@ -74,9 +74,8 @@ Na sua ferramenta de automação (n8n, Make, Zapier), você preencherá os segui
 
 2. **`catalogPhone`**: O telefone da conta WhatsApp Business que possui o catálogo onde o produto está cadastrado. **Importante:** Este deve ser o número da conta business onde o produto foi criado. Use o formato completo: DDI + DDD + Número (ex: `5511999999999`).
 
-3. **`productId`**: O ID único do produto que você deseja enviar. Este ID é gerado quando você cria o produto no catálogo. Você pode obter o `productId` de duas formas:
+3. **`productId`**: O ID único do produto que você deseja enviar. Este ID é gerado quando você cria o produto no catálogo. Você pode obter o `productId` dessa forma:
    - **Via API**: Use a API de [listar produtos](../whatsapp-business/produtos) para buscar todos os produtos e seus IDs
-   - **Via Webhook**: Quando um produto é criado, o webhook retorna o `productId` do produto criado
 
 **Dica:** Se você não souber o `productId`, primeiro liste os produtos do catálogo usando a API de listagem. Cada produto retornado terá um `productId` único que você pode usar aqui.
 

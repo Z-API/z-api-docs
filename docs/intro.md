@@ -176,11 +176,9 @@ Cada etapa é notificada através de webhooks, permitindo rastreamento completo 
 
 **Estados possíveis:**
 
-- `QUEUED`: Na fila aguardando processamento
 - `SENT`: Enviada ao WhatsApp
 - `RECEIVED`: Entregue ao destinatário
 - `READ`: Lida pelo destinatário
-- `FAILED`: Falha no envio
 
 :::info Artigo Detalhado
 Para compreensão completa do ciclo de vida de mensagens, incluindo diagramas detalhados e estratégias de tratamento de erros, consulte o artigo: [Como Funciona o Ciclo de Vida de Mensagens no Z-API](/blog/ciclo-vida-mensagens-zapi).

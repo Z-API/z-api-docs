@@ -28,7 +28,7 @@ Agora, quando uma solicitação é enviada para adicionar 10 clientes a um grupo
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/add-participant
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/add-participant
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -47,7 +47,7 @@ POST /instances/{instanceId}/token/{token}/add-participant
 | Atributo | Tipo | Descrição |
 |----------|------|-----------|
 | `autoInvite` | boolean | Envia link de convite da comunidade no privado para contatos que não puderam ser adicionados diretamente |
-| `phone` | string | ID da comunidade (obtido ao listar ou criar comunidades) |
+| `communityId` | string | ID da comunidade (obtido ao listar ou criar comunidades) |
 | `phones` | array[string] | Array com os números dos participantes a serem adicionados (formato internacional, sem espaços) |
 
 ---
@@ -64,7 +64,7 @@ Client-Token: seu-token-de-seguranca
 
 {
   "autoInvite": true,
-  "phone": "120363019502650977",
+  "communityId": "120363019502650977",
   "phones": ["5544999999999", "5544888888888"]
 }
 ```

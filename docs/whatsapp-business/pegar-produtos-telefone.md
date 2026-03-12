@@ -27,7 +27,7 @@ Este método permite que você obtenha os produtos de um catálogo do WhatsApp B
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/catalogs/{phoneNumber}
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/catalogs/{phoneNumber}
 ```
 
 ### Parâmetros de Path
@@ -176,16 +176,16 @@ curl -X GET "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalo
 | `cartEnabled` | boolean | Indica se o carrinho de compras está ativo no catálogo consultado |
 | `nextCursor` | string \| null | Token para paginação. Se presente, há mais resultados disponíveis. Use este token na próxima requisição para obter mais produtos |
 | `products` | array | Lista de produtos do catálogo |
-| `products[].availability` | string | Disponibilidade do produto (`"in stock"`, `"out of stock"`, etc.) |
-| `products[].id` | string | ID único do produto |
-| `products[].retailerId` | string \| null | ID do varejista (pode ser null) |
-| `products[].description` | string | Descrição do produto |
-| `products[].price` | string | Preço do produto (em centavos) |
-| `products[].salePrice` | string | Preço promocional (em centavos) |
-| `products[].currency` | string | Moeda do produto (ex: `"BRL"`) |
-| `products[].name` | string | Nome do produto |
-| `products[].quantity` | number \| null | Quantidade disponível (pode ser null) |
-| `products[].images` | array | Array de URLs das imagens do produto |
+| `availability` | string | Disponibilidade do produto (`"in stock"`, `"out of stock"`, etc.) |
+| `id` | string | ID único do produto |
+| `retailerId` | string \| null | ID do varejista (pode ser null) |
+| `description` | string | Descrição do produto |
+| `price` | string | Preço do produto (em centavos) |
+| `salePrice` | string | Preço promocional (em centavos) |
+| `currency` | string | Moeda do produto (ex: `"BRL"`) |
+| `name` | string | Nome do produto |
+| `quantity` | number \| null | Quantidade disponível (pode ser null) |
+| `images` | array | Array de URLs das imagens do produto |
 
 ---
 

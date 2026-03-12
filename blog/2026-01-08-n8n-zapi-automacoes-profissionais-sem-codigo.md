@@ -200,7 +200,7 @@ Faz requisições HTTP pra API do Z-API. Use pra enviar mensagens, consultar sta
 **Exemplo de URL:**
 
 ```
-https://api.z-api.io/instances/SEU_INSTANCE_ID/send-text
+https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/send-text
 ```
 
 **Exemplo de headers:**
@@ -304,7 +304,7 @@ Responde automaticamente quando alguém manda mensagem, com respostas baseadas e
 
 * Arraste nó "HTTP Request"
 * Método: POST
-* URL: `https://api.z-api.io/instances/SEU_ID/send-text`
+* URL: `https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/send-text`
 * Headers: `Client-Token: seu-token`
 * Body: 
   ```json
@@ -353,7 +353,7 @@ Quando um pedido é feito no seu e-commerce, envia notificação automática pro
 
 * Arraste nó "HTTP Request"
 * Método: POST
-* URL: `https://api.z-api.io/instances/SEU_ID/send-text`
+* URL: `https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/send-text`
 * Headers: `Client-Token: seu-token`
 * Body:
   ```json
@@ -465,7 +465,7 @@ Agora vou te mostrar os problemas mais comuns que as pessoas enfrentam e como re
 
 2. **Verifique Instance ID:**
    * Confirme que Instance ID está correto na URL
-   * URL deve ser: `https://api.z-api.io/instances/SEU_ID/send-text`
+   * URL deve ser: `https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/send-text`
 
 3. **Verifique formato do body:**
    * Body deve ser JSON válido

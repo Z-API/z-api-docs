@@ -31,7 +31,7 @@ Não se esqueça que o número de telefone que você deve enviar nesta requisiç
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/mobile/request-registration-code
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/mobile/request-registration-code
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

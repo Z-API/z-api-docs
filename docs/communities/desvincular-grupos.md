@@ -26,7 +26,7 @@ Uma comunidade deve ter no mínimo 1 grupo vinculado a ela, isso sem contar com 
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/communities/unlink
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/communities/unlink
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

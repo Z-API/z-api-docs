@@ -219,7 +219,7 @@ Faz requisições HTTP pra API do Z-API. Use pra enviar mensagens, consultar sta
 
 **Exemplo de configuração:**
 
-* **URL**: `https://api.z-api.io/instances/SEU_INSTANCE_ID/send-text`
+* **URL**: `https://api.z-api.io/instances/SEU_INSTANCE_ID/token/SEU_TOKEN/send-text`
 * **Method**: POST
 * **Headers**:
 
@@ -362,7 +362,7 @@ Automatiza todo o processo de e-commerce: notificações de pedido, rastreamento
 
 * Arraste módulo "HTTP"
 * Método: POST
-* URL: `https://api.z-api.io/instances/SEU_ID/send-text`
+* URL: `https://api.z-api.io/instances/SEU_INSTANCE_ID/token/SEU_TOKEN/send-text`
 * Headers: `Client-Token: seu-token`
 * Body:
 
@@ -377,7 +377,7 @@ Automatiza todo o processo de e-commerce: notificações de pedido, rastreamento
 
 * Arraste módulo "HTTP"
 * Método: GET
-* URL: `https://api.z-api.io/instances/SEU_ID/status`
+* URL: `https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/status`
 * Headers: `Client-Token: seu-token`
 * Use dados retornados pra enviar atualização
 
@@ -668,7 +668,7 @@ Agora vou te mostrar os problemas mais comuns que as pessoas enfrentam e como re
 
 2. **Verifique Instance ID:**
    * Confirme que Instance ID está correto na URL
-   * URL deve ser: `https://api.z-api.io/instances/SEU_ID/send-text`
+   * URL deve ser: `https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/send-text`
 
 3. **Verifique formato do body:**
    * Body deve ser JSON válido

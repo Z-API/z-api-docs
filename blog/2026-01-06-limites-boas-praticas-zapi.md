@@ -7,7 +7,7 @@ featured: true
 category: Boas Práticas
 summary: Guia completo sobre limites, boas práticas e considerações importantes para usar o Z-API de forma responsável e em conformidade com as políticas do WhatsApp.
 description: Aprenda sobre limites de envio, padrões de uso responsável, conformidade com políticas do WhatsApp, privacidade, segurança e melhores práticas para evitar bloqueios e manter sua conta segura.
-image: /img/blog/limites-boas-praticas.png
+image: https://ascenty.com/wp-content/uploads/2022/04/tecnologia-na-educa%C3%A7%C3%A3o-1920x1000-c-default.png
 ---
 
 # Limites e Boas Práticas: Guia Completo de Uso Responsável

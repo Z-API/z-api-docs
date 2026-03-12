@@ -92,7 +92,6 @@ Na sua ferramenta de automação (n8n, Make, Zapier), você preencherá os segui
 - **Obter messageId**: O `messageId` pode ser obtido através dos webhooks quando uma mensagem é recebida ou enviada. Guarde este ID se você quiser reencaminhar a mensagem posteriormente.
 - **messagePhone**: É importante informar corretamente o número do chat onde a mensagem original está localizada. Isso permite que a API encontre a mensagem correta para reencaminhar.
 - **Webhook necessário**: ⚠️ **IMPORTANTE:** Para utilizar este método, é necessário configurar o webhook. Caso ainda não tenha configurado, a mensagem não será reencaminhada.
-- **Response**: A resposta será um objeto com `zaapId`, que é o ID da mensagem reencaminhada no Z-API.
 
 **Casos de uso comuns:**
 
@@ -106,13 +105,17 @@ Na sua ferramenta de automação (n8n, Make, Zapier), você preencherá os segui
 
 ```json
 {
-  "zaapId": "3999984263738042930CD6ECDE9VDWSA"
+    "zaapId": "019BC85B8F177B568F393E5D1FDD346A",
+    "messageId": "71B2D1A84A1F786E3226",
+    "id": "71B2D1A84A1F786E3226"
 }
 ```
 
 | Campo | Tipo | Descrição |
-|-----------|--------|----------------------------------------------|
-| `zaapId` | string | ID da mensagem reencaminhada no Z-API. Use este ID para rastrear o status da mensagem através dos webhooks |
+|:--- |:--- |:--- |
+| `zaapId` | string | id no z-api. |
+| `messageId` | string | id no whatsapp. |
+| `id` | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId. |
 
 ### Erros comuns {#erros-comuns}
 

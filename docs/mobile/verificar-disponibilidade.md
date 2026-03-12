@@ -29,7 +29,7 @@ Este método é utilizado para verificar disponibilidade de registro de um núme
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/mobile/registration-available
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/mobile/registration-available
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

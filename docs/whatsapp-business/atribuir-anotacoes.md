@@ -41,7 +41,7 @@ Se você está usando uma plataforma de automação como n8n ou Make, use este e
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/chats/{phone}/notes
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/chats/{phone}/notes
 ```
 
 ### <Icon name="Settings" size="sm" /> Atributos {#atributos}

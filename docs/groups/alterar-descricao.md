@@ -34,7 +34,7 @@ Certifique-se de usar o formato correto do `groupId` baseado na data de criaçã
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/update-group-description
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/update-group-description
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

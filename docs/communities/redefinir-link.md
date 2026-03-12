@@ -26,7 +26,7 @@ Após redefinir o link, o link anterior deixa de funcionar. Certifique-se de com
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/redefine-invitation-link/{idDaComunidade}
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/redefine-invitation-link/{idDaComunidade}
 ```
 
 ### Parâmetros de URL

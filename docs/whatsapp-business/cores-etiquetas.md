@@ -40,7 +40,7 @@ Se você está usando uma plataforma de automação como n8n ou Make, use este e
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/business/tags/colors
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/business/tags/colors
 ```
 
 ### <Icon name="Info" size="sm" /> Conceituação {#conceituacao}

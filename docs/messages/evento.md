@@ -135,7 +135,7 @@ Após criar um evento, você pode:
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/send-event
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-event
 ```
 
 ### <Icon name="Info" size="sm" /> Conceituação {#conceituacao}

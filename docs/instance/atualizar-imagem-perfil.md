@@ -22,7 +22,7 @@ Este método permite alterar a imagem de perfil exibida no WhatsApp. A imagem de
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/profile-picture
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/profile-picture
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -35,6 +35,14 @@ PUT /instances/{instanceId}/token/{token}/profile-picture
 ---
 
 ## <Icon name="Settings" size="md" /> Atributos {#atributos}
+
+### Corpo da Requisição
+
+```json
+{
+  "value": "URL da imagem"
+}
+```
 
 ### Obrigatórios
 

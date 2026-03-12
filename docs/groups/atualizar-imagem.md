@@ -34,7 +34,7 @@ Se você tem dúvidas sobre como enviar uma imagem Base64, acesse o tópico [Env
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/update-group-photo
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/update-group-photo
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

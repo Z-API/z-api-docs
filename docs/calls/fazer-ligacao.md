@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 # Fazer ligação
 
-Inicie uma chamada de voz através da API do Z-API. Use este endpoint para fazer chamadas programaticamente.
+Neste método você enviar uma ligação a um número que possua whatsapp, seja ele seu contato ou não.
 
 ## Endpoint
 
@@ -36,22 +36,24 @@ POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-call
 | phone | string | Sim | Número do destinatário no formato DDI + DDD + NÚMERO (ex: `5511999999999`) |
 | callDuration | number | Não | Aqui você define por quanto tempo você quer que a ligação dure, por padrão a ligação terá duração de 5 segundos, mas você pode aumentar até 15 segundos |
 
-### Parâmetros de rota
-
-| Parâmetro | Tipo | Descrição |
-|-----------|--------|----------------------------------------------|
-| phone | string | ID do chat (formato: `5511999999999@c.us` ou `120363@g.us`) |
 
 ## Respostas
 
-### 200 OK
+### 200 OK {#200-ok}
 
 ```json
 {
- "value": true,
- "message": "Chamada iniciada"
+    "zaapId": "019BC85B8F177B568F393E5D1FDD346A",
+    "messageId": "71B2D1A84A1F786E3226",
+    "id": "71B2D1A84A1F786E3226"
 }
 ```
+
+| Campo | Tipo | Descrição |
+|:--- |:--- |:--- |
+| `zaapId` | string | id no z-api. |
+| `messageId` | string | id no whatsapp. |
+| `id` | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId. |
 
 ### Erros comuns
 
@@ -1320,19 +1322,3 @@ int main() {
 
 </TabItem>
 </Tabs>
-
-## Formato do phone
-
-O `phone` pode ter diferentes formatos dependendo do tipo de chat:
-
-- **Chat individual**: `5511999999999@c.us`
-- **Grupo**: `120363@g.us`
-- **Comunidade**: `120363@c.us`
-
-## Notas
-
-- Marcar um chat como lido remove o contador de mensagens não lidas
-- O status de leitura é atualizado no WhatsApp
-- Use este endpoint para manter seus chats organizados
-- Você pode marcar chats individuais ou de grupos como lidos
-- Após marcar como lido, o chat não aparecerá mais com notificações de não lido

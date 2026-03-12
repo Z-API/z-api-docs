@@ -27,7 +27,7 @@ Este método é utilizado para solicitar email para recuperação do código PIN
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/mobile/recovery-pin-code
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/mobile/recovery-pin-code
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

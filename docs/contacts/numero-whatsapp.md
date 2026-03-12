@@ -1206,7 +1206,7 @@ int main() {
   {
     "exists": "true ou false",
     "phone": "5544999999999",
-    "lid": "999999999@lid"
+    "lid": "999999999@lid" // Será "null" caso "exists" seja false
   }
 ]
 ```

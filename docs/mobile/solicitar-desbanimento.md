@@ -27,7 +27,7 @@ Este método é utilizado para solicitar desbanimento de um número. Quando um n
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/mobile/request-unbanning
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/mobile/request-unbanning
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

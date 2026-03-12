@@ -70,8 +70,6 @@ Se você notar qualquer um desses sinais, reduza imediatamente o volume de mensa
 
 Se, apesar de seguir as boas práticas, sua conta for bloqueada, o processo de recuperação geralmente envolve entrar em contato com o suporte oficial do WhatsApp.
 
-Para mais detalhes sobre como proceder, consulte a documentação sobre **[solicitar desbanimento](/docs/mobile/solicitar-desbanimento)**.
-
 :::info Suporte
 O processo de recuperação pode levar alguns dias. Seja paciente e forneça todas as informações solicitadas pelo suporte do WhatsApp.
 :::

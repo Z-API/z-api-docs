@@ -22,7 +22,7 @@ Com essa API você consegue alterar as configurações de uma comunidade. Atualm
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/communities/settings
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/communities/settings
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

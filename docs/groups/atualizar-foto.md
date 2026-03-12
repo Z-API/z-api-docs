@@ -31,7 +31,7 @@ No dia 4 de novembro de 2021 o WhatsApp alterou o formato da criação de novos 
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/update-group-photo
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/update-group-photo
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

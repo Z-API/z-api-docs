@@ -22,7 +22,7 @@ Este método te permite obter os dados completos da sua instância, incluindo in
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/me
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/me
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

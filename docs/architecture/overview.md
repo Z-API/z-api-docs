@@ -179,7 +179,6 @@ Seu servidor que recebe notificações do Z-API.
 ### Autenticação
 
 - **Client-Token**: Token único por instância usado em todas as requisições
-- **x-token**: Token de segurança para validação de webhooks
 - **HTTPS**: Todas as comunicações são criptografadas
 
 ### Validação

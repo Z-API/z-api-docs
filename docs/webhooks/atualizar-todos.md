@@ -28,7 +28,7 @@ O Z-API não aceita webhooks que não sejam HTTPS.
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-every-webhooks
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-every-webhooks
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

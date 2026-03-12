@@ -1,20 +1,20 @@
 ﻿---
 id: criar
-title: Criar grupo
+title: Criar comunidade
 sidebar_position: 1
 ---
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-# Criar grupo
+# Criar comunidade
 
-Crie um novo grupo do WhatsApp através da API do Z-API. Você será automaticamente adicionado como administrador do grupo.
+Crie uma nova comunidade do WhatsApp através da API do Z-API. Você será automaticamente adicionado como administrador da comunidade.
 
 ## Endpoint
 
 ```http
-POST https://api.z-api.io/instances/{instanceId}/token/{instanceToken}/create-group
+POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/communities
 ```
 
 ### Headers
@@ -26,49 +26,58 @@ POST https://api.z-api.io/instances/{instanceId}/token/{instanceToken}/create-gr
 
 ```json
 {
-  "autoInvite": true,
-  "groupName": "Nome do Grupo",
-  "phones": ["5511999999999", "5511888888888"]
+  "name": "Nome da Comunidade"
 }
 ```
 
-| Campo      | Tipo    | Obrigatório | Descrição                                                  |
-| ---------- | ------- | ----------- | ---------------------------------------------------------- |
-| autoInvite | boolean | Sim         | true ou false (Envia link de convite do grupo no privado)  |
-| groupName  | string  | Sim         | Nome do grupo (máximo 25 caracteres)                       |
-| phones     | array   | Sim         | Array de números dos participantes (formato internacional) |
+### Atributos
+
+**Obrigatórios**
+
+| Atributos | Tipo   | Descrição                           |
+| :-------- | :----- | :---------------------------------- |
+| name      | string | Nome da comunidade que deseja criar |
+
+**Opcionais**
+
+| Atributos   | Tipo   | Descrição               |
+| :---------- | :----- | :---------------------- |
+| description | string | Descrição da comunidade |
 
 ## Respostas
 
 ### 200 OK
 
-Forma antiga -
-
 ```json
 {
-  "phone": "551199999999-1623281429",
-  "invitationLink": "https://chat.whatsapp.com/DCaqftVlS6dHWtlvfd3hUa"
+  "id": "98372465382764532938",
+  "subGroups": [
+    {
+      "name": "Minha primeira Comunidade",
+      "phone": "342532456234453-group",
+      "isGroupAnnouncement": true
+    }
+  ]
 }
 ```
 
----
+### Atributos
 
-Forma nova
-
-```json
-{
-  "phone": "120363019502650977-group",
-  "invitationLink": "https://chat.whatsapp.com/GONwbGGDkLe8BifUWwLgct"
-}
-```
+| Atributos                     | Tipo    | Descrição                                   |
+| :---------------------------- | :------ | :------------------------------------------ |
+| id                            | string  | Identificador único da comunidade criada    |
+| subGroups                     | array   | Lista de grupos vinculados à comunidade     |
+| name                          | string  | Nome do grupo                               |
+| phone                         | string  | Identificador do grupo                      |
+| isGroupAnnouncement           | boolean | Indica se é o grupo de avisos da comunidade |
 
 ### Erros comuns
 
 | Código | Motivo               | Como resolver                              |
 | ------ | -------------------- | ------------------------------------------ |
-| 400    | Parâmetros inválidos | Verifique o `groupName`                    |
+| 400    | Parâmetros inválidos | Verifique o `name`                         |
 | 401    | Token inválido       | Verifique o header `Client-Token`          |
-| 404    | Chat não encontrado  | Verifique se o `groupName` está correto    |
+| 404    | Chat não encontrado  | Verifique se o `name` está correto         |
 | 429    | Rate limit           | Aguarde e tente novamente                  |
 | 5xx    | Erro interno         | Tente novamente; abra suporte se persistir |
 
@@ -84,30 +93,24 @@ const instanceToken = process.env.ZAPI_INSTANCE_TOKEN || "SEU_TOKEN";
 const clientToken = process.env.ZAPI_CLIENT_TOKEN || "seu-token-de-seguranca";
 
 // Validação de entrada (segurança)
-function validateGroupData(groupName, phones) {
-  if (!groupName || groupName.trim().length === 0) {
-    throw new Error("Nome do grupo é obrigatório");
+function validateCommunityName(name) {
+  if (!name || name.trim().length === 0) {
+    throw new Error("Nome da comunidade é obrigatório");
   }
-  if (groupName.length > 25) {
-    throw new Error("Nome do grupo deve ter no máximo 25 caracteres");
+  if (name.length > 24) {
+    throw new Error("Nome da comunidade deve ter no máximo 24 caracteres");
   }
-  if (!Array.isArray(phones) || phones.length === 0) {
-    throw new Error("É necessário pelo menos um participante");
-  }
-  return { name: groupName.trim(), participants: phones };
+  return name.trim();
 }
 
 // Dados da requisição com validação
-const { name: groupName, participants: phones } = validateGroupData(
-  "Nome do Grupo",
-  ["5511999999999", "5511888888888"]
-);
+const communityName = validateCommunityName("Nome da Comunidade");
 
-// Criar grupo com tratamento seguro de erros
-async function createGroup() {
+// Criar comunidade com tratamento seguro de erros
+async function createCommunity() {
   try {
     // ⚠️ SEGURANÇA: Sempre use HTTPS (nunca HTTP)
-    const url = `https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-group`;
+    const url = `https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-community`;
 
     const response = await fetch(url, {
       method: "POST",
@@ -116,9 +119,8 @@ async function createGroup() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        autoInvite: true,
-        groupName: groupName,
-        phones: phones,
+        name: communityName,
+        description: "Descrição da comunidade",
       }),
     });
 
@@ -129,21 +131,21 @@ async function createGroup() {
 
     const result = await response.json();
     // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-    if (result.value) {
-      console.log("Grupo criado com sucesso");
+    if (result.id) {
+      console.log("Comunidade criada com sucesso");
     } else {
-      console.error("Erro ao criar grupo");
+      console.error("Erro ao criar comunidade");
     }
     return result;
   } catch (error) {
     // ⚠️ SEGURANÇA: Tratamento genérico de erro
-    console.error("Erro ao criar grupo:", error.message);
+    console.error("Erro ao criar comunidade:", error.message);
     throw error;
   }
 }
 
 // Executar função
-createGroup();
+createCommunity();
 ```
 
 </TabItem>
@@ -157,40 +159,38 @@ const clientToken: string =
   process.env.ZAPI_CLIENT_TOKEN || "seu-token-de-seguranca";
 
 // Interface para resposta
-interface CreateGroupResponse {
-  phone?: string;
+interface CreateCommunityResponse {
+  id?: string;
+  communityId?: string;
+  subGroups?: Array<{
+    name: string;
+    phone: string;
+    isGroupAnnouncement: boolean;
+  }>;
+  name?: string;
+  description?: string;
   invitationLink?: string;
-  value?: boolean;
   message?: string;
 }
 
 // Validação de entrada (segurança)
-function validateGroupData(
-  groupName: string,
-  phones: string[]
-): { name: string; participants: string[] } {
-  if (!groupName || groupName.trim().length === 0) {
-    throw new Error("Nome do grupo é obrigatório");
+function validateCommunityName(name: string): string {
+  if (!name || name.trim().length === 0) {
+    throw new Error("Nome da comunidade é obrigatório");
   }
-  if (groupName.length > 25) {
-    throw new Error("Nome do grupo deve ter no máximo 25 caracteres");
+  if (name.length > 24) {
+    throw new Error("Nome da comunidade deve ter no máximo 24 caracteres");
   }
-  if (!Array.isArray(phones) || phones.length === 0) {
-    throw new Error("É necessário pelo menos um participante");
-  }
-  return { name: groupName.trim(), participants: phones };
+  return name.trim();
 }
 
 // Dados da requisição com validação
-const { name: groupName, participants: phones } = validateGroupData(
-  "Nome do Grupo",
-  ["5511999999999", "5511888888888"]
-);
+const communityName: string = validateCommunityName("Nome da Comunidade");
 
-// Função para criar grupo
-async function createGroup(): Promise<CreateGroupResponse> {
+// Função para criar comunidade
+async function createCommunity(): Promise<CreateCommunityResponse> {
   // ⚠️ SEGURANÇA: Sempre use HTTPS e encode URI components
-  const url = `https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-group`;
+  const url = `https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-community`;
 
   const response = await fetch(url, {
     method: "POST",
@@ -199,9 +199,8 @@ async function createGroup(): Promise<CreateGroupResponse> {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      autoInvite: true,
-      groupName: groupName,
-      phones: phones,
+      name: communityName,
+      description: "Descrição da comunidade",
     }),
   });
 
@@ -214,7 +213,7 @@ async function createGroup(): Promise<CreateGroupResponse> {
 }
 
 // Executar com tratamento seguro
-createGroup()
+createCommunity()
   .then((result) => console.log("Sucesso:", result.message))
   .catch((error) => console.error("Erro:", error.message));
 ```
@@ -232,21 +231,25 @@ INSTANCE_ID = os.getenv('ZAPI_INSTANCE_ID', 'SUA_INSTANCIA')
 INSTANCE_TOKEN = os.getenv('ZAPI_INSTANCE_TOKEN', 'SEU_TOKEN')
 CLIENT_TOKEN = os.getenv('ZAPI_CLIENT_TOKEN', 'seu-token-de-seguranca')
 
-def validate_group_data(group_name: str, phones: list) -> dict:
-    """Valida dados do grupo."""
-    if not group_name or not group_name.strip():
-        raise ValueError('Nome do grupo é obrigatório')
-    if len(group_name) > 25:
-        raise ValueError('Nome do grupo deve ter no máximo 25 caracteres')
-    if not isinstance(phones, list) or len(phones) == 0:
-        raise ValueError('É necessário pelo menos um participante')
-    return {"name": group_name.strip(), "participants": phones}
+def validate_community_name(name: str) -> str:
+    """Valida formato do nome da comunidade."""
+    if not name or not name.strip():
+        raise ValueError('Nome da comunidade é obrigatório')
+    if len(name) > 24:
+        raise ValueError('Nome da comunidade deve ter no máximo 24 caracteres')
+    return name.strip()
 
 # Dados da requisição com validação
-group_data = validate_group_data("Nome do Grupo", ["5511999999999", "5511888888888"])
+community_name = validate_community_name("Nome da Comunidade")
 
 # URL do endpoint (sempre HTTPS)
-url = f"https://api.z-api.io/instances/{INSTANCE_ID}/token/{INSTANCE_TOKEN}/create-group"
+url = f"https://api.z-api.io/instances/{INSTANCE_ID}/token/{INSTANCE_TOKEN}/create-community"
+
+# Body da requisição
+payload = {
+    "name": community_name,
+    "description": "Descrição da comunidade"
+}
 
 # Headers obrigatórios
 headers = {
@@ -254,14 +257,7 @@ headers = {
     "Content-Type": "application/json"
 }
 
-# Body da requisição
-payload = {
-    "autoInvite": True,
-    "groupName": group_data["name"],
-    "phones": group_data["participants"]
-}
-
-# Criar grupo com tratamento seguro de erros
+# Criar comunidade com tratamento seguro de erros
 try:
     # ⚠️ SEGURANÇA: Sempre use HTTPS (verify=True por padrão)
     response = requests.post(url, json=payload, headers=headers, timeout=30)
@@ -270,10 +266,10 @@ try:
 
     result: Dict[str, Any] = response.json()
     # ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-    if result.get('value'):
-        print('Grupo criado com sucesso')
+    if result.get('id'):
+        print('Comunidade criada com sucesso')
     else:
-        print('Erro ao criar grupo')
+        print('Erro ao criar comunidade')
 
 except requests.exceptions.HTTPError as e:
     # ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
@@ -294,17 +290,14 @@ INSTANCE_TOKEN="${ZAPI_INSTANCE_TOKEN:-SEU_TOKEN}"
 CLIENT_TOKEN="${ZAPI_CLIENT_TOKEN:-seu-token-de-seguranca}"
 
 # ⚠️ SEGURANÇA: Sempre use HTTPS (nunca HTTP)
-# Criar grupo via cURL
+# Criar comunidade via cURL
 curl -X POST \
-  "https://api.z-api.io/instances/${INSTANCE_ID}/token/${INSTANCE_TOKEN}/create-group" \
+  "https://api.z-api.io/instances/${INSTANCE_ID}/token/${INSTANCE_TOKEN}/create-community" \
   -H "Client-Token: ${CLIENT_TOKEN}" \
   -H "Content-Type: application/json" \
   -d '{
-    "groupName": "Nome do Grupo",
-    "phones": [
-      "5511999999999",
-      "5511888888888"
-    ]
+    "name": "Nome da Comunidade",
+    "description": "Descrição da comunidade"
   }' \
   --fail-with-body \
   --max-time 30
@@ -326,34 +319,28 @@ const instanceToken = process.env.ZAPI_INSTANCE_TOKEN || "SEU_TOKEN";
 const clientToken = process.env.ZAPI_CLIENT_TOKEN || "seu-token-de-seguranca";
 
 // Validação de entrada (segurança)
-function validateGroupData(groupName, phones) {
-  if (!groupName || groupName.trim().length === 0) {
-    throw new Error("Nome do grupo é obrigatório");
+function validateCommunityName(name) {
+  if (!name || name.trim().length === 0) {
+    throw new Error("Nome da comunidade é obrigatório");
   }
-  if (groupName.length > 25) {
-    throw new Error("Nome do grupo deve ter no máximo 25 caracteres");
+  if (name.length > 24) {
+    throw new Error("Nome da comunidade deve ter no máximo 24 caracteres");
   }
-  if (!Array.isArray(phones) || phones.length === 0) {
-    throw new Error("É necessário pelo menos um participante");
-  }
-  return { name: groupName.trim(), participants: phones };
+  return name.trim();
 }
 
 // Dados da requisição com validação
-const { name: groupName, participants: phones } = validateGroupData(
-  "Nome do Grupo",
-  ["5511999999999", "5511888888888"]
-);
+const communityName = validateCommunityName("Nome da Comunidade");
+const communityDescription = "Descrição da comunidade";
 
-// Criar grupo
+// Criar comunidade
 const url = new URL(
-  `https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-group`
+  `https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-community`
 );
 
 const body = JSON.stringify({
-  autoInvite: true,
-  groupName: groupName,
-  phones: phones,
+  name: communityName,
+  description: communityDescription,
 });
 
 const options = {
@@ -379,10 +366,10 @@ const req = https.request(options, (res) => {
     if (res.statusCode >= 200 && res.statusCode < 300) {
       const result = JSON.parse(data);
       // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-      if (result.value) {
-        console.log("Grupo criado");
+      if (result.id) {
+        console.log("Comunidade criada");
       } else {
-        console.error("Erro ao criar grupo");
+        console.error("Erro ao criar comunidade");
       }
     } else {
       // ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
@@ -408,75 +395,70 @@ req.end();
 <TabItem value="nodejs-express" label="Node.js (Express)">
 
 ```javascript
-const express = require('express');
-const https = require('https');
-const { URL } = require('url');
+const express = require("express");
+const https = require("https");
+const { URL } = require("url");
 
 const app = express();
 app.use(express.json());
 
 // ⚠️ SEGURANÇA: Use variáveis de ambiente para credenciais
-const instanceId = process.env.ZAPI_INSTANCE_ID || 'SUA_INSTANCIA';
-const instanceToken = process.env.ZAPI_INSTANCE_TOKEN || 'SEU_TOKEN';
-const clientToken = process.env.ZAPI_CLIENT_TOKEN || 'seu-token-de-seguranca';
+const instanceId = process.env.ZAPI_INSTANCE_ID || "SUA_INSTANCIA";
+const instanceToken = process.env.ZAPI_INSTANCE_TOKEN || "SEU_TOKEN";
+const clientToken = process.env.ZAPI_CLIENT_TOKEN || "seu-token-de-seguranca";
 
 // Validação de entrada (segurança)
-function validateGroupData(groupName, phones) {
-  if (!groupName || groupName.trim().length === 0) {
-    throw new Error('Nome do grupo é obrigatório');
+function validateCommunityName(name) {
+  if (!name || name.trim().length === 0) {
+    throw new Error("Nome da comunidade é obrigatório");
   }
-  if (groupName.length > 25) {
-    throw new Error('Nome do grupo deve ter no máximo 25 caracteres');
+  if (name.length > 24) {
+    throw new Error("Nome da comunidade deve ter no máximo 24 caracteres");
   }
-  if (!Array.isArray(phones) || phones.length === 0) {
-    throw new Error('É necessário pelo menos um participante');
-  }
-  return { name: groupName.trim(), participants: phones };
-}
-  if (!groupName.includes('@')) {
-    throw new Error('GroupName deve estar no formato: número@c.us ou número@g.us');
-  }
-  return groupName.trim();
+  return name.trim();
 }
 
-// Rota para criar grupo
-app.post('/groups', async (req, res) => {
+// Rota para criar comunidade
+app.post("/communities", async (req, res) => {
   try {
     // Dados da requisição com validação
-    const rawGroupName = req.body.groupName || "Nome do Grupo";
-    const rawPhones = req.body.phones || ["5511999999999", "5511888888888"];
-    const { name: groupName, participants: phones } = validateGroupData(rawGroupName, rawPhones);
+    const rawCommunityName = req.body.communityName || "Nome da Comunidade";
+    const communityName = validateCommunityName(rawCommunityName);
+    const communityDescription =
+      req.body.communityDescription || "Descrição da comunidade";
 
     // ⚠️ SEGURANÇA: Sempre use HTTPS (nunca HTTP)
-    const url = new URL(`https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-group`);
+    const url = new URL(
+      `https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-community`
+    );
 
     const options = {
       hostname: url.hostname,
       path: url.pathname,
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Client-Token': clientToken,
-        'Content-Type': 'application/json',
+        "Client-Token": clientToken,
+        "Content-Type": "application/json",
       },
       timeout: 30000, // 30 segundos
     };
 
     const result = await new Promise((resolve, reject) => {
       const req = https.request(options, (response) => {
-        let data = '';
+        let data = "";
 
-        response.on('data', (chunk) => {
+        response.on("data", (chunk) => {
           data += chunk;
         });
 
-        response.on('end', () => {
+        response.on("end", () => {
           if (response.statusCode >= 200 && response.statusCode < 300) {
             try {
               const parsed = JSON.parse(data);
               // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
               resolve({ success: true, data: parsed });
             } catch (error) {
-              reject(new Error('Erro ao processar resposta'));
+              reject(new Error("Erro ao processar resposta"));
             }
           } else {
             // ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
@@ -485,19 +467,20 @@ app.post('/groups', async (req, res) => {
         });
       });
 
-      req.on('error', (error) => {
+      req.on("error", (error) => {
         reject(error);
       });
 
-      req.on('timeout', () => {
+      req.on("timeout", () => {
         req.destroy();
-        reject(new Error('Timeout na requisição'));
+        reject(new Error("Timeout na requisição"));
       });
 
       const body = JSON.stringify({
-        groupName: groupName,
-        phones: phones
+        name: communityName,
+        description: communityDescription,
       });
+
       req.write(body);
       req.end();
     });
@@ -505,13 +488,13 @@ app.post('/groups', async (req, res) => {
     res.status(200).json(result);
   } catch (error) {
     // ⚠️ SEGURANÇA: Tratamento genérico de erro
-    console.error('Erro ao criar grupo:', error.message);
+    console.error("Erro ao criar comunidade:", error.message);
     res.status(500).json({ error: error.message });
   }
 });
 
 app.listen(3000, () => {
-  console.log('Servidor Express rodando na porta 3000');
+  console.log("Servidor Express rodando na porta 3000");
 });
 ```
 
@@ -519,79 +502,75 @@ app.listen(3000, () => {
 <TabItem value="nodejs-koa" label="Node.js (Koa)">
 
 ```javascript
-const Koa = require('koa');
-const Router = require('@koa/router');
-const https = require('https');
-const { URL } = require('url');
+const Koa = require("koa");
+const Router = require("@koa/router");
+const https = require("https");
+const { URL } = require("url");
 
 const app = new Koa();
 const router = new Router();
 
 // ⚠️ SEGURANÇA: Use variáveis de ambiente para credenciais
-const instanceId = process.env.ZAPI_INSTANCE_ID || 'SUA_INSTANCIA';
-const instanceToken = process.env.ZAPI_INSTANCE_TOKEN || 'SEU_TOKEN';
-const clientToken = process.env.ZAPI_CLIENT_TOKEN || 'seu-token-de-seguranca';
+const instanceId = process.env.ZAPI_INSTANCE_ID || "SUA_INSTANCIA";
+const instanceToken = process.env.ZAPI_INSTANCE_TOKEN || "SEU_TOKEN";
+const clientToken = process.env.ZAPI_CLIENT_TOKEN || "seu-token-de-seguranca";
 
 // Middleware para parsing JSON
-app.use(require('koa-bodyparser')());
+app.use(require("koa-bodyparser")());
 
 // Validação de entrada (segurança)
-function validateGroupData(groupName, phones) {
-  if (!groupName || groupName.trim().length === 0) {
-    throw new Error('Nome do grupo é obrigatório');
+function validateCommunityName(name) {
+  if (!name || name.trim().length === 0) {
+    throw new Error("Nome da comunidade é obrigatório");
   }
-  if (groupName.length > 25) {
-    throw new Error('Nome do grupo deve ter no máximo 25 caracteres');
+  if (name.length > 24) {
+    throw new Error("Nome da comunidade deve ter no máximo 24 caracteres");
   }
-  if (!Array.isArray(phones) || phones.length === 0) {
-    throw new Error('É necessário pelo menos um participante');
-  }
-  return { name: groupName.trim(), participants: phones };
-}
-  if (!groupName.includes('@')) {
-    throw new Error('GroupName deve estar no formato: número@c.us ou número@g.us');
-  }
-  return groupName.trim();
+  return name.trim();
 }
 
-// Rota para criar grupo
-router.post('/groups', async (ctx) => {
+// Rota para criar comunidade
+router.post("/communities", async (ctx) => {
   try {
     // Dados da requisição com validação
-    const rawGroupName = ctx.request.body.groupName || "Nome do Grupo";
-    const rawPhones = ctx.request.body.phones || ["5511999999999", "5511888888888"];
-    const { name: groupName, participants: phones } = validateGroupData(rawGroupName, rawPhones);
+    const rawCommunityName =
+      ctx.request.body.communityName || "Nome da Comunidade";
+    const communityName = validateCommunityName(rawCommunityName);
+    const communityDescription =
+      ctx.request.body.communityDescription || "Descrição da comunidade";
 
     // ⚠️ SEGURANÇA: Sempre use HTTPS (nunca HTTP)
-    const url = new URL(`https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-group`);
+    const url = new URL(
+      `https://api.z-api.io/instances/${encodeURIComponent(instanceId)}/token/${encodeURIComponent(instanceToken)}/create-community`
+    );
 
     const options = {
       hostname: url.hostname,
       path: url.pathname,
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Client-Token': clientToken,
-        'Content-Type': 'application/json',
+        "Client-Token": clientToken,
+        "Content-Type": "application/json",
       },
       timeout: 30000, // 30 segundos
     };
 
     const result = await new Promise((resolve, reject) => {
       const req = https.request(options, (response) => {
-        let data = '';
+        let data = "";
 
-        response.on('data', (chunk) => {
+        response.on("data", (chunk) => {
           data += chunk;
         });
 
-        response.on('end', () => {
+        response.on("end", () => {
           if (response.statusCode >= 200 && response.statusCode < 300) {
             try {
               const parsed = JSON.parse(data);
               // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
               resolve({ success: true, data: parsed });
             } catch (error) {
-              reject(new Error('Erro ao processar resposta'));
+              reject(new Error("Erro ao processar resposta"));
             }
           } else {
             // ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
@@ -600,18 +579,18 @@ router.post('/groups', async (ctx) => {
         });
       });
 
-      req.on('error', (error) => {
+      req.on("error", (error) => {
         reject(error);
       });
 
-      req.on('timeout', () => {
+      req.on("timeout", () => {
         req.destroy();
-        reject(new Error('Timeout na requisição'));
+        reject(new Error("Timeout na requisição"));
       });
 
       const body = JSON.stringify({
-        groupName: groupName,
-        phones: phones
+        name: communityName,
+        description: communityDescription,
       });
       req.write(body);
       req.end();
@@ -621,7 +600,7 @@ router.post('/groups', async (ctx) => {
     ctx.body = result;
   } catch (error) {
     // ⚠️ SEGURANÇA: Tratamento genérico de erro
-    ctx.app.emit('error', error, ctx);
+    ctx.app.emit("error", error, ctx);
     ctx.status = 500;
     ctx.body = { error: error.message };
   }
@@ -631,12 +610,12 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 // Error handler
-app.on('error', (err, ctx) => {
-  console.error('Erro ao criar grupo:', err.message);
+app.on("error", (err, ctx) => {
+  console.error("Erro ao criar comunidade:", err.message);
 });
 
 app.listen(3000, () => {
-  console.log('Servidor Koa rodando na porta 3000');
+  console.log("Servidor Koa rodando na porta 3000");
 });
 ```
 
@@ -651,7 +630,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
-public class CreateGroup {
+public class CreateCommunity {
     // ⚠️ SEGURANÇA: Use variáveis de ambiente para credenciais
     private static final String INSTANCE_ID = System.getenv("ZAPI_INSTANCE_ID") != null
         ? System.getenv("ZAPI_INSTANCE_ID") : "SUA_INSTANCIA";
@@ -661,28 +640,25 @@ public class CreateGroup {
         ? System.getenv("ZAPI_CLIENT_TOKEN") : "seu-token-de-seguranca";
 
     // Validação de entrada (segurança)
-    private static void validateGroupData(String groupName, String[] phones) {
-        if (groupName == null || groupName.trim().isEmpty()) {
-            throw new IllegalArgumentException("Nome do grupo é obrigatório");
+    private static String validateCommunityName(String name) {
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Nome da comunidade é obrigatório");
         }
-        if (groupName.length() > 25) {
-            throw new IllegalArgumentException("Nome do grupo deve ter no máximo 25 caracteres");
+        if (name.length() > 24) {
+            throw new IllegalArgumentException("Nome da comunidade deve ter no máximo 24 caracteres");
         }
-        if (phones == null || phones.length == 0) {
-            throw new IllegalArgumentException("É necessário pelo menos um participante");
-        }
+        return name.trim();
     }
 
     public static void main(String[] args) {
         try {
             // Dados da requisição com validação
-            String groupName = "Nome do Grupo";
-            String[] phones = {"5511999999999", "5511888888888"};
-            validateGroupData(groupName, phones);
+            String communityName = validateCommunityName("Nome da Comunidade");
+            String communityDescription = "Descrição da comunidade";
 
             // ⚠️ SEGURANÇA: Sempre use HTTPS
             String urlString = String.format(
-                "https://api.z-api.io/instances/%s/token/%s/create-group",
+                "https://api.z-api.io/instances/%s/token/%s/create-community",
                 java.net.URLEncoder.encode(INSTANCE_ID, StandardCharsets.UTF_8),
                 java.net.URLEncoder.encode(INSTANCE_TOKEN, StandardCharsets.UTF_8)
             );
@@ -698,9 +674,9 @@ public class CreateGroup {
 
             // Body da requisição
             String jsonBody = String.format(
-                "{\"autoInvite\":true,\"groupName\":\"%s\",\"phones\":[\"%s\",\"%s\"]}",
-                groupName.replace("\"", "\\\""),
-                phones[0], phones[1]
+                "{\"name\":\"%s\",\"description\":\"%s\"}",
+                communityName.replace("\"", "\\\""),
+                communityDescription.replace("\"", "\\\"")
             );
 
             try (OutputStream os = conn.getOutputStream()) {
@@ -719,7 +695,7 @@ public class CreateGroup {
                         response.append(responseLine.trim());
                     }
                     // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-                    System.out.println("Grupo criado com sucesso");
+                    System.out.println("Comunidade criada com sucesso");
                 }
             } else {
                 // ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
@@ -742,7 +718,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-public class CreateGroup
+public class CreateCommunity
 {
     // ⚠️ SEGURANÇA: Use variáveis de ambiente para credenciais
     private static readonly string InstanceId = Environment.GetEnvironmentVariable("ZAPI_INSTANCE_ID")
@@ -753,20 +729,17 @@ public class CreateGroup
         ?? "seu-token-de-seguranca";
 
     // Validação de entrada (segurança)
-    private static void ValidateGroupData(string groupName, string[] phones)
+    private static string ValidateCommunityName(string name)
     {
-        if (string.IsNullOrWhiteSpace(groupName))
+        if (string.IsNullOrWhiteSpace(name))
         {
-            throw new ArgumentException("Nome do grupo é obrigatório");
+            throw new ArgumentException("Nome da comunidade é obrigatório");
         }
-        if (groupName.Length > 25)
+        if (name.Length > 24)
         {
-            throw new ArgumentException("Nome do grupo deve ter no máximo 25 caracteres");
+            throw new ArgumentException("Nome da comunidade deve ter no máximo 24 caracteres");
         }
-        if (phones == null || phones.Length == 0)
-        {
-            throw new ArgumentException("É necessário pelo menos um participante");
-        }
+        return name.Trim();
     }
 
     public static async Task Main(string[] args)
@@ -774,19 +747,18 @@ public class CreateGroup
         try
         {
             // Dados da requisição com validação
-            string groupName = "Nome do Grupo";
-            string[] phones = {"5511999999999", "5511888888888"};
-            ValidateGroupData(groupName, phones);
+            string communityName = ValidateCommunityName("Nome da Comunidade");
+            string communityDescription = "Descrição da comunidade";
 
             // ⚠️ SEGURANÇA: Sempre use HTTPS
-            string url = $"https://api.z-api.io/instances/{Uri.EscapeDataString(InstanceId)}/token/{Uri.EscapeDataString(InstanceToken)}/create-group";
+            string url = $"https://api.z-api.io/instances/{Uri.EscapeDataString(InstanceId)}/token/{Uri.EscapeDataString(InstanceToken)}/create-community";
 
             using (HttpClient client = new HttpClient())
             {
                 client.Timeout = TimeSpan.FromSeconds(30);
                 client.DefaultRequestHeaders.Add("Client-Token", ClientToken);
 
-                var jsonBody = $"{{\"autoInvite\":true,\"groupName\":\"{groupName}\",\"phones\":[\"{phones[0]}\",\"{phones[1]}\"]}}";
+                var jsonBody = $"{{\"name\":\"{communityName}\",\"description\":\"{communityDescription}\"}}";
                 var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
 
                 var response = await client.PostAsync(url, content);
@@ -795,7 +767,7 @@ public class CreateGroup
                 {
                     var result = await response.Content.ReadAsStringAsync();
                     // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-                    Console.WriteLine("Grupo criado com sucesso");
+                    Console.WriteLine("Comunidade criada com sucesso");
                 }
                 else
                 {
@@ -843,35 +815,32 @@ func getEnv(key, defaultValue string) string {
 }
 
 // Validação de entrada (segurança)
-func validateGroupData(groupName string, phones []string) error {
-    trimmed := strings.TrimSpace(groupName)
+func validateCommunityName(name string) (string, error) {
+    trimmed := strings.TrimSpace(name)
     if trimmed == "" {
-        return fmt.Errorf("Nome do grupo é obrigatório")
+        return "", fmt.Errorf("Nome da comunidade é obrigatório")
     }
-    if len(trimmed) > 25 {
-        return fmt.Errorf("Nome do grupo deve ter no máximo 25 caracteres")
+    if len(trimmed) > 24 {
+        return "", fmt.Errorf("Nome da comunidade deve ter no máximo 24 caracteres")
     }
-    if len(phones) == 0 {
-        return fmt.Errorf("É necessário pelo menos um participante")
-    }
-    return nil
+    return trimmed, nil
 }
 
 func main() {
     // Dados da requisição com validação
-    groupName := "Nome do Grupo"
-    phones := []string{"5511999999999", "5511888888888"}
-    if err := validateGroupData(groupName, phones); err != nil {
+    communityName, err := validateCommunityName("Nome da Comunidade")
+    if err != nil {
         fmt.Printf("Erro de validação: %v\n", err)
         return
     }
+    communityDescription := "Descrição da comunidade"
 
     // ⚠️ SEGURANÇA: Sempre use HTTPS
-    url := fmt.Sprintf("https://api.z-api.io/instances/%s/token/%s/create-group",
+    url := fmt.Sprintf("https://api.z-api.io/instances/%s/token/%s/create-community",
         instanceId, instanceToken)
 
     // Body da requisição
-    jsonBody := fmt.Sprintf(`{"autoInvite":true,"groupName":"%s","phones":["%s","%s"]}`, groupName, phones[0], phones[1])
+    jsonBody := fmt.Sprintf(`{"name":"%s","description":"%s"}`, communityName, communityDescription)
     body := strings.NewReader(jsonBody)
 
     client := &http.Client{
@@ -908,7 +877,7 @@ func main() {
         }
 
         // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-        fmt.Printf("Grupo criado com sucesso\n")
+        fmt.Printf("Comunidade criada com sucesso\n")
     } else {
         // ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
         fmt.Printf("Erro HTTP %d: Requisição falhou\n", resp.StatusCode)
@@ -927,37 +896,32 @@ $instanceToken = getenv('ZAPI_INSTANCE_TOKEN') ?: 'SEU_TOKEN';
 $clientToken = getenv('ZAPI_CLIENT_TOKEN') ?: 'seu-token-de-seguranca';
 
 // Validação de entrada (segurança)
-function validateGroupData($groupName, $phones) {
-    $trimmed = trim($groupName);
+function validateCommunityName($name) {
+    $trimmed = trim($name);
     if (empty($trimmed)) {
-        throw new Exception('Nome do grupo é obrigatório');
+        throw new Exception('Nome da comunidade é obrigatório');
     }
-    if (strlen($trimmed) > 25) {
-        throw new Exception('Nome do grupo deve ter no máximo 25 caracteres');
+    if (strlen($trimmed) > 24) {
+        throw new Exception('Nome da comunidade deve ter no máximo 24 caracteres');
     }
-    if (!is_array($phones) || count($phones) === 0) {
-        throw new Exception('É necessário pelo menos um participante');
-    }
-    return ['name' => $trimmed, 'participants' => $phones];
+    return $trimmed;
 }
 
 try {
     // Dados da requisição com validação
-    $groupData = validateGroupData("Nome do Grupo", ["5511999999999", "5511888888888"]);
-    $groupName = $groupData['name'];
-    $phones = $groupData['participants'];
+    $communityName = validateCommunityName("Nome da Comunidade");
+    $communityDescription = "Descrição da comunidade";
 
     // ⚠️ SEGURANÇA: Sempre use HTTPS
     $url = sprintf(
-        'https://api.z-api.io/instances/%s/token/%s/create-group',
+        'https://api.z-api.io/instances/%s/token/%s/create-community',
         urlencode($instanceId),
         urlencode($instanceToken)
     );
 
     $jsonBody = json_encode([
-        'autoInvite' => true,
-        'groupName' => $groupName,
-        'phones' => $phones
+        'name' => $communityName,
+        'description' => $communityDescription
     ]);
 
     $ch = curl_init($url);
@@ -978,10 +942,10 @@ try {
     if ($httpCode >= 200 && $httpCode < 300) {
         $result = json_decode($response, true);
         // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-        if ($result['value'] ?? false) {
-            echo "Grupo criado com sucesso\n";
+        if ($result['id'] ?? false) {
+            echo "Comunidade criada com sucesso\n";
         } else {
-            echo "Erro ao criar grupo\n";
+            echo "Erro ao criar comunidade\n";
         }
     } else {
         // ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
@@ -1008,28 +972,24 @@ INSTANCE_TOKEN = ENV['ZAPI_INSTANCE_TOKEN'] || 'SEU_TOKEN'
 CLIENT_TOKEN = ENV['ZAPI_CLIENT_TOKEN'] || 'seu-token-de-seguranca'
 
 # Validação de entrada (segurança)
-def validate_group_data(group_name, phones)
-  trimmed = group_name.to_s.strip
+def validate_community_name(name)
+  trimmed = name.to_s.strip
   if trimmed.empty?
-    raise ArgumentError, 'Nome do grupo é obrigatório'
+    raise ArgumentError, 'Nome da comunidade é obrigatório'
   end
-  if trimmed.length > 25
-    raise ArgumentError, 'Nome do grupo deve ter no máximo 25 caracteres'
+  if trimmed.length > 24
+    raise ArgumentError, 'Nome da comunidade deve ter no máximo 24 caracteres'
   end
-  if !phones.is_a?(Array) || phones.empty?
-    raise ArgumentError, 'É necessário pelo menos um participante'
-  end
-  { name: trimmed, participants: phones }
+  trimmed
 end
 
 begin
   # Dados da requisição com validação
-  group_data = validate_group_data("Nome do Grupo", ["5511999999999", "5511888888888"])
-  group_name = group_data[:name]
-  phones = group_data[:participants]
+  community_name = validate_community_name("Nome da Comunidade")
+  community_description = "Descrição da comunidade"
 
   # ⚠️ SEGURANÇA: Sempre use HTTPS
-  url = URI("https://api.z-api.io/instances/#{URI.encode_www_form_component(INSTANCE_ID)}/token/#{URI.encode_www_form_component(INSTANCE_TOKEN)}/create-group")
+  url = URI("https://api.z-api.io/instances/#{URI.encode_www_form_component(INSTANCE_ID)}/token/#{URI.encode_www_form_component(INSTANCE_TOKEN)}/create-community")
 
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = true
@@ -1040,9 +1000,8 @@ begin
   request['Client-Token'] = CLIENT_TOKEN
   request['Content-Type'] = 'application/json'
   request.body = JSON.generate({
-    autoInvite: true,
-    groupName: group_name,
-    phones: phones
+    name: community_name,
+    description: community_description
   })
 
   response = http.request(request)
@@ -1050,10 +1009,10 @@ begin
   if response.code.to_i >= 200 && response.code.to_i < 300
     result = JSON.parse(response.body)
     # ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-    if result['value']
-      puts "Grupo criado com sucesso"
+    if result['id']
+      puts "Comunidade criada com sucesso"
     else
-      puts "Erro ao criar grupo"
+      puts "Erro ao criar comunidade"
     end
   else
     # ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
@@ -1076,25 +1035,23 @@ let instanceToken = ProcessInfo.processInfo.environment["ZAPI_INSTANCE_TOKEN"] ?
 let clientToken = ProcessInfo.processInfo.environment["ZAPI_CLIENT_TOKEN"] ?? "seu-token-de-seguranca"
 
 // Validação de entrada (segurança)
-func validateGroupData(_ groupName: String, _ phones: [String]) throws -> (name: String, participants: [String]) {
-    let trimmed = groupName.trimmingCharacters(in: .whitespacesAndNewlines)
+func validateCommunityName(_ name: String) throws -> String {
+    let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
     guard !trimmed.isEmpty else {
-        throw NSError(domain: "ValidationError", code: 400, userInfo: [NSLocalizedDescriptionKey: "Nome do grupo é obrigatório"])
+        throw NSError(domain: "ValidationError", code: 400, userInfo: [NSLocalizedDescriptionKey: "Nome da comunidade é obrigatório"])
     }
-    guard trimmed.count <= 25 else {
-        throw NSError(domain: "ValidationError", code: 400, userInfo: [NSLocalizedDescriptionKey: "Nome do grupo deve ter no máximo 25 caracteres"])
+    guard trimmed.count <= 24 else {
+        throw NSError(domain: "ValidationError", code: 400, userInfo: [NSLocalizedDescriptionKey: "Nome da comunidade deve ter no máximo 24 caracteres"])
     }
-    guard !phones.isEmpty else {
-        throw NSError(domain: "ValidationError", code: 400, userInfo: [NSLocalizedDescriptionKey: "É necessário pelo menos um participante"])
-    }
-    return (trimmed, phones)
+    return trimmed
 }
 
 // Dados da requisição com validação
-let (groupName, phones) = try validateGroupData("Nome do Grupo", ["5511999999999", "5511888888888"])
+let communityName = try validateCommunityName("Nome da Comunidade")
+let communityDescription = "Descrição da comunidade"
 
 // ⚠️ SEGURANÇA: Sempre use HTTPS
-guard let url = URL(string: "https://api.z-api.io/instances/\(instanceId.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "")/token/\(instanceToken.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "")/create-group") else {
+guard let url = URL(string: "https://api.z-api.io/instances/\(instanceId.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "")/token/\(instanceToken.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? "")/create-community") else {
     fatalError("URL inválida")
 }
 
@@ -1106,9 +1063,8 @@ request.timeoutInterval = 30
 
 // Body da requisição
 let jsonBody: [String: Any] = [
-    "autoInvite": true,
-    "groupName": groupName,
-    "phones": phones
+    "name": communityName,
+    "description": communityDescription
 ]
 request.httpBody = try? JSONSerialization.data(withJSONObject: jsonBody)
 
@@ -1125,10 +1081,10 @@ let task = URLSession.shared.dataTask(with: request) { data, response, error in
             do {
                 let result = try JSONSerialization.jsonObject(with: data) as? [String: Any]
                 // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-                if let value = result?["value"] as? Bool, value {
-                    print("Grupo criado com sucesso")
+                if let id = result?["id"] as? String, !id.isEmpty {
+                    print("Comunidade criada com sucesso")
                 } else {
-                    print("Erro ao criar grupo")
+                    print("Erro ao criar comunidade")
                 }
             } catch {
                 print("Erro ao processar JSON: \(error.localizedDescription)")
@@ -1153,29 +1109,25 @@ $instanceToken = if ($env:ZAPI_INSTANCE_TOKEN) { $env:ZAPI_INSTANCE_TOKEN } else
 $clientToken = if ($env:ZAPI_CLIENT_TOKEN) { $env:ZAPI_CLIENT_TOKEN } else { "seu-token-de-seguranca" }
 
 # Validação de entrada (segurança)
-function Validate-GroupData {
-    param([string]$GroupName, [string[]]$Phones)
-    $trimmed = $GroupName.Trim()
+function Validate-CommunityName {
+    param([string]$Name)
+    $trimmed = $Name.Trim()
     if ([string]::IsNullOrWhiteSpace($trimmed)) {
-        throw "Nome do grupo é obrigatório"
+        throw "Nome da comunidade é obrigatório"
     }
-    if ($trimmed.Length -gt 25) {
-        throw "Nome do grupo deve ter no máximo 25 caracteres"
+    if ($trimmed.Length -gt 24) {
+        throw "Nome da comunidade deve ter no máximo 24 caracteres"
     }
-    if ($Phones -eq $null -or $Phones.Count -eq 0) {
-        throw "É necessário pelo menos um participante"
-    }
-    return @{ Name = $trimmed; Participants = $Phones }
+    return $trimmed
 }
 
 try {
     # Dados da requisição com validação
-    $groupData = Validate-GroupData -GroupName "Nome do Grupo" -Phones @("5511999999999", "5511888888888")
-    $groupName = $groupData.Name
-    $phones = $groupData.Participants
+    $communityName = Validate-CommunityName -Name "Nome da Comunidade"
+    $communityDescription = "Descrição da comunidade"
 
     # ⚠️ SEGURANÇA: Sempre use HTTPS
-    $url = "https://api.z-api.io/instances/$([System.Web.HttpUtility]::UrlEncode($instanceId))/token/$([System.Web.HttpUtility]::UrlEncode($instanceToken))/create-group"
+    $url = "https://api.z-api.io/instances/$([System.Web.HttpUtility]::UrlEncode($instanceId))/token/$([System.Web.HttpUtility]::UrlEncode($instanceToken))/create-community"
 
     $headers = @{
         "Client-Token" = $clientToken
@@ -1183,18 +1135,17 @@ try {
     }
 
     $body = @{
-        autoInvite = $true
-        groupName = $groupName
-        phones = $phones
+        name = $communityName
+        description = $communityDescription
     } | ConvertTo-Json
 
     $response = Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $body -TimeoutSec 30
 
     # ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-    if ($response.value) {
-        Write-Host "Grupo criado com sucesso"
+    if ($response.id) {
+        Write-Host "Comunidade criada com sucesso"
     } else {
-        Write-Host "Erro ao criar grupo"
+        Write-Host "Erro ao criar comunidade"
     }
 } catch {
     # ⚠️ SEGURANÇA: Tratamento genérico de erro
@@ -1206,18 +1157,14 @@ try {
 <TabItem value="http" label="HTTP (Raw)">
 
 ```http
-POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-group HTTP/1.1
+POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-community HTTP/1.1
 Host: api.z-api.io
 Client-Token: seu-token-de-seguranca
 Content-Type: application/json
 
 {
-  "autoInvite": true,
-  "groupName": "Nome do Grupo",
-  "phones": [
-    "5511999999999",
-    "5511888888888"
-  ]
+  "name": "Nome da Comunidade",
+  "description": "Descrição da comunidade"
 }
 ```
 
@@ -1240,20 +1187,18 @@ std::string instanceToken = getEnv("ZAPI_INSTANCE_TOKEN", "SEU_TOKEN");
 std::string clientToken = getEnv("ZAPI_CLIENT_TOKEN", "seu-token-de-seguranca");
 
 // Validação de entrada (segurança)
-void validateGroupData(const std::string& groupName, const std::vector<std::string>& phones) {
-    std::string trimmed = groupName;
+std::string validateCommunityName(const std::string& name) {
+    std::string trimmed = name;
     trimmed.erase(0, trimmed.find_first_not_of(" \t\n\r"));
     trimmed.erase(trimmed.find_last_not_of(" \t\n\r") + 1);
 
     if (trimmed.empty()) {
-        throw std::runtime_error("Nome do grupo é obrigatório");
+        throw std::runtime_error("Nome da comunidade é obrigatório");
     }
-    if (trimmed.length() > 25) {
-        throw std::runtime_error("Nome do grupo deve ter no máximo 25 caracteres");
+    if (trimmed.length() > 24) {
+        throw std::runtime_error("Nome da comunidade deve ter no máximo 24 caracteres");
     }
-    if (phones.empty()) {
-        throw std::runtime_error("É necessário pelo menos um participante");
-    }
+    return trimmed;
 }
 
 static size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* data) {
@@ -1265,17 +1210,16 @@ static size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::stri
 int main() {
     try {
         // Dados da requisição com validação
-        std::string groupName = "Nome do Grupo";
-        std::vector<std::string> phones = {"5511999999999", "5511888888888"};
-        validateGroupData(groupName, phones);
+        std::string communityName = validateCommunityName("Nome da Comunidade");
+        std::string communityDescription = "Descrição da comunidade";
 
         CURL* curl = curl_easy_init();
         if (curl) {
-            std::string url = "https://api.z-api.io/instances/" + instanceId + "/token/" + instanceToken + "/create-group";
+            std::string url = "https://api.z-api.io/instances/" + instanceId + "/token/" + instanceToken + "/create-community";
             std::string responseData;
 
             // Body da requisição
-            std::string jsonBody = "{\"autoInvite\":true,\"groupName\":\"" + groupName + "\",\"phones\":[\"" + phones[0] + "\",\"" + phones[1] + "\"]}";
+            std::string jsonBody = "{\"name\":\"" + communityName + "\",\"description\":\"" + communityDescription + "\"}";
 
             struct curl_slist* headers = NULL;
             std::string tokenHeader = "Client-Token: " + clientToken;
@@ -1297,7 +1241,7 @@ int main() {
 
             if (res == CURLE_OK && responseCode >= 200 && responseCode < 300) {
                 // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-                std::cout << "Grupo criado com sucesso" << std::endl;
+                std::cout << "Comunidade criada com sucesso" << std::endl;
             } else {
                 // ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
                 std::cerr << "Erro HTTP " << responseCode << ": Requisição falhou" << std::endl;
@@ -1334,19 +1278,26 @@ char* instanceToken = getEnv("ZAPI_INSTANCE_TOKEN", "SEU_TOKEN");
 char* clientToken = getEnv("ZAPI_CLIENT_TOKEN", "seu-token-de-seguranca");
 
 // Validação de entrada (segurança)
-int validateGroupData(const char* groupName) {
-    int len = strlen(groupName);
+int validateCommunityName(const char* name, char* cleaned) {
+    int len = strlen(name);
+    int j = 0;
+
+    // Remove espaços iniciais e finais
     int start = 0;
-    while (start < len && (groupName[start] == ' ' || groupName[start] == '\t')) start++;
+    while (start < len && (name[start] == ' ' || name[start] == '\t')) start++;
     int end = len - 1;
-    while (end >= start && (groupName[end] == ' ' || groupName[end] == '\t')) end--;
+    while (end >= start && (name[end] == ' ' || name[end] == '\t')) end--;
 
     if (end < start) {
-        return 0; // Inválido - vazio
+        return 0; // Inválido
     }
 
-    int nameLen = end - start + 1;
-    if (nameLen > 25) {
+    for (int i = start; i <= end; i++) {
+        cleaned[j++] = name[i];
+    }
+    cleaned[j] = '\0';
+
+    if (strlen(cleaned) > 24) {
         return 0; // Inválido - muito longo
     }
 
@@ -1376,21 +1327,22 @@ static size_t WriteMemoryCallback(void* contents, size_t size, size_t nmemb, voi
 }
 
 int main() {
-    char groupName[] = "Nome do Grupo";
-    char phones[2][20] = {"5511999999999", "5511888888888"};
+    char communityName[] = "Nome da Comunidade";
+    char cleaned[256];
 
-    if (!validateGroupData(groupName)) {
-        fprintf(stderr, "Nome do grupo inválido. Deve ter no máximo 25 caracteres\n");
+    if (!validateCommunityName(communityName, cleaned)) {
+        fprintf(stderr, "Nome da comunidade inválido. Deve ter no máximo 24 caracteres\n");
         return 1;
     }
 
-    char jsonBody[256];
-    snprintf(jsonBody, sizeof(jsonBody), "{\"autoInvite\":true,\"groupName\":\"%s\",\"phones\":[\"%s\",\"%s\"]}", groupName, phones[0], phones[1]);
+    char communityDescription[] = "Descrição da comunidade";
+    char jsonBody[512];
+    snprintf(jsonBody, sizeof(jsonBody), "{\"name\":\"%s\",\"description\":\"%s\"}", cleaned, communityDescription);
 
     CURL* curl = curl_easy_init();
     if (curl) {
         char url[512];
-        snprintf(url, sizeof(url), "https://api.z-api.io/instances/%s/token/%s/create-group",
+        snprintf(url, sizeof(url), "https://api.z-api.io/instances/%s/token/%s/create-community",
                  instanceId, instanceToken);
 
         struct curl_slist* headers = NULL;
@@ -1418,7 +1370,7 @@ int main() {
 
         if (res == CURLE_OK && responseCode >= 200 && responseCode < 300) {
             // ⚠️ SEGURANÇA: Não logue tokens ou dados sensíveis
-            printf("Grupo criado com sucesso\n");
+            printf("Comunidade criada com sucesso\n");
         } else {
             // ⚠️ SEGURANÇA: Não exponha detalhes sensíveis em logs
             fprintf(stderr, "Erro HTTP %ld: Requisição falhou\n", responseCode);
@@ -1438,8 +1390,8 @@ int main() {
 
 ## Notas
 
-- Mínimo de 1 participante (além de você)
-- Máximo de 256 participantes
-- Nome máximo: 25 caracteres
-- Você é automaticamente administrador do grupo criado
-- O grupo retornado inclui `phone` (groupId) e `invitationLink` para convites
+- Você é automaticamente adicionado como administrador da comunidade criada
+- Nome máximo: 24 caracteres
+- Descrição máxima: 512 caracteres
+- Use o `id` retornado para outras operações
+- Após criar, você pode vincular grupos existentes à comunidade

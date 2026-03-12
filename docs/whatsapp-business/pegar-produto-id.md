@@ -130,15 +130,15 @@ curl -X GET "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/produc
 | `cartEnabled` | boolean | Indica se o carrinho de compras está ativo no catálogo |
 | `catalogId` | string | ID do catálogo ao qual o produto pertence |
 | `product` | object | Objeto com informações do produto |
-| `product.availability` | string | Disponibilidade do produto (`"in stock"`, `"out of stock"`, etc.) |
-| `product.id` | string | ID único do produto |
-| `product.retailerId` | string \| null | ID do varejista (pode ser null) |
-| `product.description` | string | Descrição do produto |
-| `product.price` | string | Preço do produto (em centavos) |
-| `product.salePrice` | string | Preço promocional (em centavos) |
-| `product.currency` | string | Moeda do produto (ex: `"BRL"`) |
-| `product.name` | string | Nome do produto |
-| `product.images` | array | Array de URLs das imagens do produto |
+| `availability` | string | Disponibilidade do produto (`"in stock"`, `"out of stock"`, etc.) |
+| `id` | string | ID único do produto |
+| `retailerId` | string \| null | ID do varejista (pode ser null) |
+| `description` | string | Descrição do produto |
+| `price` | string | Preço do produto (em centavos) |
+| `salePrice` | string | Preço promocional (em centavos) |
+| `currency` | string | Moeda do produto (ex: `"BRL"`) |
+| `name` | string | Nome do produto |
+| `images` | array | Array de URLs das imagens do produto |
 
 ---
 

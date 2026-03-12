@@ -22,7 +22,7 @@ Este método é responsável por remover participantes da comunidade. Os partici
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/remove-participant
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/remove-participant
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -40,7 +40,7 @@ POST /instances/{instanceId}/token/{token}/remove-participant
 
 | Atributo | Tipo | Descrição |
 |----------|------|-----------|
-| `phone` | string | ID/Fone da comunidade (obtido ao listar ou criar comunidades) |
+| `communityId` | string | ID/Fone da comunidade (obtido ao listar ou criar comunidades) |
 | `phones` | array[string] | Array com os números dos participantes a serem removidos (formato internacional, sem espaços) |
 
 ---
@@ -56,7 +56,7 @@ Content-Type: application/json
 Client-Token: seu-token-de-seguranca
 
 {
-  "phone": "5511999999999",
+  "communityId": "5511999999999",
   "phones": ["5544999999999", "5544888888888"]
 }
 ```
@@ -153,14 +153,14 @@ curl -X POST "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remov
 | `405` | Método HTTP incorreto | Certifique-se de estar usando `POST` conforme especificado |
 | `401` | Token inválido | Verifique o header `Client-Token` |
 | `415` | Content-Type ausente | Adicione `Content-Type: application/json` no header |
-| `400` | Dados inválidos | Verifique se `phone` e `phones` foram fornecidos corretamente |
+| `400` | Dados inválidos | Verifique se `communityId` e `phones` foram fornecidos corretamente |
 | `403` | Sem permissão | Apenas administradores podem remover participantes |
 
 ---
 
 ## <Icon name="Info" size="md" /> Observações {#observacoes}
 
-- **Formato do telefone**: Use formato internacional sem espaços (ex: `5544999999999`)
+- **Formato do telefone**: Use formato internacional sem espaços (ex: `120363186053925765`)
 - **Permissões**: Apenas administradores da comunidade podem remover participantes
 - **Múltiplos participantes**: Você pode remover vários participantes de uma vez, enviando um array com os números
 - **Efeito**: Os participantes removidos perderão acesso à comunidade e aos grupos vinculados

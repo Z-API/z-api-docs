@@ -432,7 +432,7 @@ Quanto tempo uma mensagem fica na fila antes de ser processada. Se esse tempo cr
 
 **No painel do Z-API:**
 
-Você pode ver a fila diretamente no painel. É só acessar a seção de fila da sua instância e ver todas as mensagens pendentes.
+Você pode ver o número de mensagens na fila diretamente no painel da sua instância.
 
 **Via API:**
 
@@ -572,10 +572,6 @@ Se você envia muitas mensagens, fila é essencial. Não é opcional - é necess
 * **Fila atrasa o envio das mensagens?**
 
   Um pouco, mas é necessário. Sem fila, sistema trava ou WhatsApp bloqueia. Com fila, mensagens são enviadas no ritmo certo, garantindo que todas sejam entregues.
-
-* **Posso priorizar algumas mensagens na fila?**
-
-  Sim, em alguns casos. Depende da configuração do Z-API. Mas use com moderação - priorizar demais pode atrapalhar o processamento normal.
 
 * **Quantas mensagens posso ter na fila?**
 

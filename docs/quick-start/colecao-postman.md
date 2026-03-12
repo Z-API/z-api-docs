@@ -52,6 +52,7 @@ Após importar a coleção, você precisa informar ao Postman quais são as suas
 3. <Icon name="Edit3" size="xs" /> Preencha os seguintes campos em **"Current Value"**:
    - <Icon name="IdCard" size="xs" /> `instanceId`: Cole aqui o ID da sua instância Z-API.
    - <Icon name="KeySquare" size="xs" /> `token`: Cole aqui o seu Token de acesso.
+4. <Icon name="Settings" size="xs" /> Na Header da requisição, insira o seu token de segurança **"Client-Token"**.
 
 :::warning Não Esqueça de Salvar
 Lembre-se de salvar suas alterações clicando no botão **"Save"** após preencher as credenciais!

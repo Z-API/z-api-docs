@@ -22,7 +22,7 @@ Este método permite alterar o nome de perfil exibido no WhatsApp. O nome será 
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/profile-name
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/profile-name
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -35,6 +35,14 @@ PUT /instances/{instanceId}/token/{token}/profile-name
 ---
 
 ## <Icon name="Settings" size="md" /> Atributos {#atributos}
+
+### Corpo da Requisição
+
+```json
+{
+  "value": "Nome do perfil"
+}
+```
 
 ### Obrigatórios
 

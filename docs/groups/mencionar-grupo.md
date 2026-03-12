@@ -77,6 +77,12 @@ Exemplo
 }
 ```
 
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `zaapId` | string | ID único da mensagem no sistema Z-API (para rastreamento interno) |
+| `messageId` | string | ID único da mensagem no WhatsApp. **Guarde este ID!** Use-o para rastrear o status da entrega através dos webhooks |
+| `id` | string | ID de compatibilidade com Zapier e sistemas legados. Tem o mesmo valor do `messageId` 
+
 ### 405 {#405}
 
 Neste caso certifique que esteja enviando o corretamente a especificação do método, ou seja verifique se você enviou o POST ou GET conforme especificado no inicio deste tópico.

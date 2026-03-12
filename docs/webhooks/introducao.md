@@ -102,12 +102,10 @@ Webhooks implementam um padrão de comunicação **push-based** (baseado em push
 **Confiabilidade:**
 
 - O Z-API tenta reenviar webhooks que falharam (retry automático)
-- Timeout configurável para respostas
-- Logs de tentativas de entrega disponíveis
+- Logs internos de tentativas de entrega 
 
 **Segurança:**
 
-- Validação através de token no header `x-token`
 - Suporte a HTTPS para criptografia em trânsito
 - Validação de origem recomendada
 
@@ -147,8 +145,6 @@ Seu endpoint webhook deve atender aos seguintes requisitos:
 
 - **Resposta rápida**: Deve responder com status HTTP 200 em poucos segundos (recomendado: < 3 segundos)
 
-- **Validação de token**: Deve validar o header `x-token` para segurança
-
 ### <Icon name="ListTree" size="sm" /> Fluxo Técnico Detalhado
 
 O processo completo de um webhook segue estas etapas:
@@ -158,13 +154,10 @@ O processo completo de um webhook segue estas etapas:
 2. <Icon name="Webhook" size="xs" /> **Z-API Processa**: O Z-API detecta o evento, coleta todos os dados relevantes e monta um payload JSON estruturado
 
 3. <Icon name="Send" size="xs" /> **Requisição HTTP POST**: O Z-API faz uma requisição POST para a URL que você configurou no painel, incluindo:
-   - Headers HTTP (incluindo `x-token` para validação)
    - Body JSON com os dados do evento
-   - Timeout configurável (geralmente 30 segundos)
 
 4. <Icon name="Terminal" size="xs" /> **Seu Servidor Processa**: Seu servidor deve executar estas ações em ordem:
 
-   - <Icon name="ShieldCheck" size="xs" /> **Validar a requisição**: Verificar o token `x-token` no header para garantir autenticidade
    - <Icon name="Database" size="xs" /> **Processar os dados**: Executar sua lógica de negócio (salvar no banco de dados, acionar outras APIs, processar comandos, etc.)
    - <Icon name="CircleCheck" size="xs" /> **Responder rapidamente**: Retornar status HTTP 200 OK o mais rápido possível
 
@@ -238,56 +231,6 @@ Todo webhook enviado pelo Z-API segue uma estrutura JSON consistente, facilitand
 Todos os webhooks seguem esta estrutura base consistente, independentemente do tipo de evento. Isso facilita a criação de processadores genéricos que podem lidar com múltiplos tipos de eventos de forma unificada.
 :::
 
-### <Icon name="Shield" size="sm" /> Segurança: Validação do Token `x-token`
-
-**Por que a validação é essencial:**
-
-Qualquer pessoa com conhecimento da sua URL de webhook pode enviar requisições para ela. Sem validação, sua URL está vulnerável a:
-
-- Requisições maliciosas com dados falsos
-
-- Ataques de negação de serviço (DoS)
-
-- Injeção de dados inválidos no seu sistema
-
-- Consumo indevido de recursos do servidor
-
-**Como o Z-API protege:**
-
-O Z-API envia um **token de segurança** em cada requisição webhook, no cabeçalho HTTP `x-token`. Este token é único para sua instância e é configurado no painel do Z-API.
-
-**Implementação da validação:**
-
-Seu código deve **sempre** verificar se o token recebido corresponde ao token configurado:
-
-```javascript
-// Exemplo em Node.js/Express
-app.post('/webhook', (req, res) => {
-  const receivedToken = req.headers['x-token'];
-  const expectedToken = process.env.ZAPI_WEBHOOK_TOKEN;
-  
-  if (receivedToken !== expectedToken) {
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
-  
-  // Processar webhook apenas se token for válido
-  // ... sua lógica aqui
-});
-```
-
-**O que fazer se o token não corresponder:**
-
-- Retornar status HTTP 401 (Unauthorized)
-- Não processar os dados recebidos
-- Registrar tentativa de acesso não autorizado (para auditoria)
-- Opcionalmente, bloquear o IP de origem após múltiplas tentativas
-
-:::warning Segurança Crítica
-Nunca processe webhooks sem validar o token `x-token`. Esta é a única forma de garantir que as requisições realmente vieram do Z-API. Sem esta validação, sua URL está completamente vulnerável a requisições maliciosas que podem comprometer seu sistema.
-:::
-
----
-
 ## <Icon name="ListTree" size="md" /> Tipos de Webhooks Disponíveis
 
 O Z-API oferece webhooks para diversos tipos de eventos. Cada tipo possui sua própria documentação detalhada com estrutura de dados específica, exemplos e casos de uso.
@@ -326,8 +269,26 @@ Agora que você compreende os conceitos fundamentais de webhooks:
 1. **Escolha o tipo de evento** que deseja monitorar
 2. **Configure sua URL** no painel do Z-API
 3. **Implemente o endpoint** no seu servidor ou plataforma no-code
-4. **Valide o token** `x-token` para segurança
-5. **Processe os dados** recebidos conforme sua necessidade
-6. **Teste e itere** baseado nos resultados
+4. **Processe os dados** recebidos conforme sua necessidade
+5. **Teste e itere** baseado nos resultados
 
 Cada página de tipo de webhook inclui exemplos completos e funcionais. Comece com eventos simples (como recebimento de mensagens) e expanda conforme sua necessidade cresce.
+
+---
+
+## <Icon name="Code2" size="md" /> Como configurar o seu Webhook
+
+É possível atualizar o webhook de uma instância de duas formas:
+
+### <Icon name="Server" size="sm" /> Via painel
+
+Acesse o painel administrativo, vá até Instâncias, clique na instância desejada e, em seguida, selecione a opção de Webhooks e configurações gerais.
+
+### <Icon name="Server" size="sm" /> Via API
+
+Também é possível atualizar a rota do seu webhook utilizando o endpoint de [Atualizar Todos os Webhooks](/docs/webhooks/atualizar-todos). A documentação e os detalhes de uso desse endpoint estão disponíveis nos próximos tópicos.
+
+
+
+
+

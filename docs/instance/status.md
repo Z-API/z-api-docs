@@ -22,7 +22,7 @@ Este método te permite descobrir se sua instância está ou não conectada a um
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/status
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/status
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

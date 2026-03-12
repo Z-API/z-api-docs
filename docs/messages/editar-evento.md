@@ -155,7 +155,7 @@ Na sua ferramenta de automação (n8n, Make, Zapier), você preencherá os segui
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/send-edit-event
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-edit-event
 ```
 
 ### <Icon name="Info" size="sm" /> Conceituação {#conceituacao}

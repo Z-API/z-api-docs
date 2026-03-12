@@ -16,6 +16,12 @@ A fila de mensagens permite monitorar e controlar mensagens que aguardam process
 Para uma explicação didática sobre filas de mensagens usando analogias simples e práticas, especialmente útil para entender por que filas são essenciais ao enviar milhares de mensagens, consulte o artigo: [Fila de Mensagens: Como Enviar Milhares de Mensagens Sem Travar o Sistema](/blog/fila-mensagens-como-enviar-milhares-sem-travar).
 :::
 
+:::tip Tempo de Fila
+Nossa fila trabalha com tempo de envio alternado entre uma mensagem e outra afim de simular o comportamento humano este intervalo fica em um range default randômico entre 1~3 segundos por mensagem.
+
+Caso queria aumentar o delay das mensagens, você pode passar o atributo delayMessage no body da requisição. Para saber como veja em: [Enviar texto](/docs/messages/texto-simples)
+:::
+
 ---
 
 ## <Icon name="Info" size="md" /> Visão geral
@@ -140,6 +146,10 @@ Para trabalhar com a fila de mensagens, você precisa de:
 
 :::tip Monitoramento Contínuo
 Monitore a fila regularmente para identificar problemas antes que afetem o desempenho do sistema!
+:::
+
+:::tip Limite da Fila
+O Z-API permite até 1000 mensagens para celulares desconectados em sua fila antes de começar a rejeitar novas mensagens para fila.
 :::
 
 ---

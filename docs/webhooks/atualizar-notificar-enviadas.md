@@ -45,7 +45,7 @@ Se você usa ferramentas como n8n ou Make, ative esta opção para receber todas
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-notify-sent-by-me
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-notify-sent-by-me
 ```
 
 ### <Icon name="Settings" size="sm" /> Atributos {#atributos}

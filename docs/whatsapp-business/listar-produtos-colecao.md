@@ -22,7 +22,7 @@ Este método permite que você liste todos os produtos que fazem parte de uma co
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/catalogs/collection-products/{phoneNumber}
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/catalogs/collection-products/{phoneNumber}
 ```
 
 ### Parâmetros de Path
@@ -177,17 +177,17 @@ curl -X GET "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalo
 |-------|------|-----------|
 | `nextCursor` | string \| null | Token para paginação. Se presente, há mais resultados disponíveis. Use este token na próxima requisição para obter mais produtos |
 | `products` | array | Lista de produtos da coleção |
-| `products[].id` | string | ID único do produto |
-| `products[].name` | string | Nome do produto |
-| `products[].description` | string | Descrição do produto |
-| `products[].url` | string | URL do produto (link para página do produto) |
-| `products[].price` | string | Preço do produto (em centavos) |
-| `products[].currency` | string | Moeda do produto (ex: `"BRL"`) |
-| `products[].isHidden` | boolean | Indica se o produto está oculto na coleção |
-| `products[].availability` | string | Disponibilidade do produto (`"in stock"`, `"out of stock"`, etc.) |
-| `products[].retailerId` | string | ID do varejista |
-| `products[].images` | array | Array de URLs das imagens do produto |
-| `products[].quantity` | string | Quantidade disponível do produto |
+| `id` | string | ID único do produto |
+| `name` | string | Nome do produto |
+| `description` | string | Descrição do produto |
+| `url` | string | URL do produto (link para página do produto) |
+| `price` | string | Preço do produto (em centavos) |
+| `currency` | string | Moeda do produto (ex: `"BRL"`) |
+| `isHidden` | boolean | Indica se o produto está oculto na coleção |
+| `availability` | string | Disponibilidade do produto (`"in stock"`, `"out of stock"`, etc.) |
+| `retailerId` | string | ID do varejista |
+| `images` | array | Array de URLs das imagens do produto |
+| `quantity` | string | Quantidade disponível do produto |
 
 ---
 

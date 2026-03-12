@@ -22,7 +22,7 @@ Este método é responsável por remover um ou mais administradores de uma comun
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/remove-admin
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/remove-admin
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -40,7 +40,7 @@ POST /instances/{instanceId}/token/{token}/remove-admin
 
 | Atributo | Tipo | Descrição |
 |----------|------|-----------|
-| `phone` | string | ID/Fone da comunidade (obtido ao listar ou criar comunidades) |
+| `communityId` | string | ID/Fone da comunidade (obtido ao listar ou criar comunidades) |
 | `phones` | array[string] | Array com os números dos administradores a serem removidos (formato internacional, sem espaços) |
 
 ---
@@ -56,7 +56,7 @@ Content-Type: application/json
 Client-Token: seu-token-de-seguranca
 
 {
-  "phone": "120363019502650977",
+  "communityId": "120363019502650977",
   "phones": ["5544999999999", "5544888888888"]
 }
 ```
@@ -153,14 +153,14 @@ curl -X POST "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remov
 | `405` | Método HTTP incorreto | Certifique-se de estar usando `POST` conforme especificado |
 | `401` | Token inválido | Verifique o header `Client-Token` |
 | `415` | Content-Type ausente | Adicione `Content-Type: application/json` no header |
-| `400` | Dados inválidos | Verifique se `phone` e `phones` foram fornecidos corretamente |
+| `400` | Dados inválidos | Verifique se `communityId` e `phones` foram fornecidos corretamente |
 | `403` | Sem permissão | Apenas administradores podem remover outros administradores |
 
 ---
 
 ## <Icon name="Info" size="md" /> Observações {#observacoes}
 
-- **Formato do telefone**: Use formato internacional sem espaços (ex: `5544999999999`)
+- **Formato do telefone**: Use formato internacional sem espaços (ex: `120363186053925765`)
 - **Permissões**: Apenas administradores da comunidade podem remover outros administradores
 - **Múltiplos administradores**: Você pode remover vários administradores de uma vez, enviando um array com os números
 - **Status após remoção**: Os administradores removidos continuarão como participantes da comunidade, mas perderão as permissões de administrador

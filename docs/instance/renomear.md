@@ -22,7 +22,7 @@ Este método permite renomear uma instância existente. O nome da instância é 
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-name
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-name
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -35,6 +35,14 @@ PUT /instances/{instanceId}/token/{token}/update-name
 ---
 
 ## <Icon name="Settings" size="md" /> Atributos {#atributos}
+
+### Corpo da Requisição
+
+```json
+{
+  "value": "novo nome"
+}
+```
 
 ### Obrigatórios
 

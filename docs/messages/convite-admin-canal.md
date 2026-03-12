@@ -28,7 +28,7 @@ Neste método você poderá enviar mensagens convidando pessoas para serem admin
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/send-newsletter-admin-invite
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-newsletter-admin-invite
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

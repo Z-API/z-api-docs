@@ -26,7 +26,7 @@ Essa API está disponível apenas para instâncias mobile.
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/security/two-fa-code
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/security/two-fa-code
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

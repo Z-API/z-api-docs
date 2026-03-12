@@ -6,17 +6,17 @@ sidebar_position: 1
 
 # <Icon name="Phone" size="lg" /> Chamadas
 
-Faça chamadas de voz e vídeo através da API do Z-API. Inicie chamadas para seus contatos e gerencie comunicações por voz e vídeo programaticamente.
+Faça chamadas de voz através da API do Z-API. Inicie chamadas para seus contatos e gerencie comunicações por voz programaticamente.
 
 :::tip Comunicação Completa
-Além de mensagens, você também pode fazer chamadas de voz e vídeo através da API, expandindo as possibilidades de comunicação com seus contatos!
+Além de mensagens, você também pode fazer chamadas de voz através da API, expandindo as possibilidades de comunicação com seus contatos!
 :::
 
 ---
 
 ## <Icon name="Info" size="md" /> Visão geral
 
-A seção Chamadas fornece funcionalidades para realizar chamadas de voz e vídeo através do WhatsApp. Use estas operações para iniciar chamadas para seus contatos e integrar comunicação por voz e vídeo em suas aplicações.
+A seção Chamadas fornece funcionalidades para realizar chamadas de voz através do WhatsApp. Use estas operações para iniciar chamadas para seus contatos e integrar comunicação por voz em suas aplicações.
 
 ---
 
@@ -24,7 +24,7 @@ A seção Chamadas fornece funcionalidades para realizar chamadas de voz e víde
 
 Gerencie chamadas com estas operações:
 
-- <Icon name="PhoneCall" size="sm" /> [Fazer ligação](/docs/calls/fazer-ligacao) - Inicie uma chamada de voz ou vídeo para um contato
+- <Icon name="PhoneCall" size="sm" /> [Fazer ligação](/docs/calls/fazer-ligacao) - Inicie uma chamada de voz para um contato
 
 ---
 

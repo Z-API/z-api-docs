@@ -1282,16 +1282,16 @@ int main() {
 | `email` | string | Email da empresa |
 | `websites` | array | URLs dos websites da empresa |
 | `categories` | array | Dados das categorias da empresa |
-| `categories[].displayName` | string | Nome da categoria |
-| `categories[].label` | string | Label da categoria |
-| `categories[].id` | string | ID da categoria |
+| `displayName` | string | Nome da categoria |
+| `label` | string | Label da categoria |
+| `id` | string | ID da categoria |
 | `businessHours` | object | Dados do horário de funcionamento |
-| `businessHours.timezone` | string | Fuso horário |
-| `businessHours.days` | array | Dados de funcionamento dos dias |
-| `businessHours.days[].dayOfWeek` | string | Dia da semana (MONDAY, TUESDAY, etc.) |
-| `businessHours.days[].openTime` | string | Horário de abertura (formato HH:MM) |
-| `businessHours.days[].closeTime` | string | Horário de fechamento (formato HH:MM) |
-| `businessHours.mode` | string | Tipo do horário de funcionamento (`specificHours` ou `alwaysOpen`) |
+| `timezone` | string | Fuso horário |
+| `days` | array | Dados de funcionamento dos dias |
+| `dayOfWeek` | string | Dia da semana (MONDAY, TUESDAY, etc.) |
+| `openTime` | string | Horário de abertura (formato HH:MM) |
+| `closeTime` | string | Horário de fechamento (formato HH:MM) |
+| `mode` | string | Tipo do horário de funcionamento (`specificHours` ou `alwaysOpen`) |
 | `hasCoverPhoto` | boolean | Indica se a conta possui foto de capa |
 
 ---

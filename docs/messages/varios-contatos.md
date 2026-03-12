@@ -1772,7 +1772,6 @@ Não use este endpoint para SPAM ou envio de mensagens indesejadas. Respeite os 
 - A mensagem é enviada para todos os destinatários simultaneamente
 - Cada envio gera um `messageId` único para rastreamento individual
 - Use este endpoint para campanhas legítimas e com consentimento dos destinatários
-- Para melhor performance, agrupe envios em lotes de até 100 destinatários
 
 ## <Icon name="ArrowRight" size="md" /> Próximos passos {#proximos-passos}
 

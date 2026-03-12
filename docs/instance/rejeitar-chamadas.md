@@ -22,7 +22,7 @@ Este método permite configurar a rejeição automática de chamadas de voz. Qua
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-call-reject-auto
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-call-reject-auto
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -35,6 +35,14 @@ PUT /instances/{instanceId}/token/{token}/update-call-reject-auto
 ---
 
 ## <Icon name="Settings" size="md" /> Atributos {#atributos}
+
+### Corpo da Requisição
+
+```json
+{
+  "value": true ou false
+}
+```
 
 ### Obrigatórios
 

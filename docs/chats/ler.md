@@ -38,7 +38,7 @@ Exemplo
 ```json
 {
   "phone": "5544999999999",
-  "action": "read"
+  "action": "read" ou "unread"
 }
 ```
 

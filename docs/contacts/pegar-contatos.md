@@ -74,7 +74,7 @@ Inserir atributos de `page` e `pageSize`, é possível inserir na URL da requisi
 **Exemplo:**
 
 ```
-{{BASE_URL}}/instances/{INSTANCE_ID}/token/{INSTANCE_TOKEN}/chats?page=1&pageSize=20
+https://api.z-api.io/instances/{INSTANCE_ID}/token/{INSTANCE_TOKEN}/chats?page=1&pageSize=20
 ```
 
 ### Erros comuns

@@ -1942,8 +1942,6 @@ gcc -o send_contact send_contact.c -lcurl
 
 - **Nome**: Máximo de 100 caracteres
 - **Telefone**: Deve estar no formato internacional
-- **Email**: Máximo de 100 caracteres (formato de email válido)
-- **Organização**: Máximo de 100 caracteres
 
 :::
 
@@ -1953,7 +1951,6 @@ gcc -o send_contact send_contact.c -lcurl
 - O destinatário pode tocar no contato para salvá-lo na agenda do celular
 - Use o formato internacional para o número de telefone do contato
 - Campos opcionais melhoram a experiência do usuário
-- O WhatsApp valida o formato do email antes de exibir
 
 :::
 
