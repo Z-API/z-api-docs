@@ -1942,8 +1942,6 @@ gcc -o send_contact send_contact.c -lcurl
 
 - **Name**: Maximum 100 characters
 - **Phone Number**: Must be in international format
-- **Email**: Maximum 100 characters (valid email format)
-- **Organization**: Maximum 100 characters
 
 :::
 
@@ -1953,7 +1951,6 @@ gcc -o send_contact send_contact.c -lcurl
 - The recipient can tap the contact to save it in their mobile phone's address book
 - Use international format for the contact's phone number
 - Optional fields improve user experience
-- WhatsApp validates the email format before displaying
 
 :::
 

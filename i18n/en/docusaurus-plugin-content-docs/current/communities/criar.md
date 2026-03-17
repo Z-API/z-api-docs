@@ -67,9 +67,9 @@ POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/communities
 | :----------------------------- | :------ | :-------------------------------------------- |
 | id                            | string  | Unique identifier of the created community    |
 | subGroups                      | array   | List of groups linked to the community        |
-| subGroups.name                | string  | Group name                                    |
-| subGroups.phone               | string  | Group identifier                              |
-| subGroups.isGroupAnnouncement | boolean | Indicates if it is the community's announcement group |
+| name                | string  | Group name                                    |
+| phone               | string  | Group identifier                              |
+| isGroupAnnouncement | boolean | Indicates if it is the community's announcement group |
 
 ### Common Errors
 

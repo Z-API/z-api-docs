@@ -92,7 +92,6 @@ In your automation tool (n8n, Make, Zapier), you will fill in the following fiel
 - **Obtaining messageId**: The `messageId` can be obtained through webhooks when a message is received or sent. Save this ID if you want to forward the message later.
 - **messagePhone**: It is important to correctly inform the number of the chat where the original message is located. This allows the API to find the correct message to forward.
 - **Webhook required**: ⚠️ **IMPORTANT:** To use this method, you need to configure the webhook. If you haven't configured it yet, the message will not be forwarded.
-- **Response**: The response will be an object with `zaapId`, which is the ID of the forwarded message in Z-API.
 
 **Common use cases:**
 
@@ -106,13 +105,17 @@ In your automation tool (n8n, Make, Zapier), you will fill in the following fiel
 
 ```json
 {
-  "zaapId": "3999984263738042930CD6ECDE9VDWSA"
+    "zaapId": "019BC85B8F177B568F393E5D1FDD346A",
+    "messageId": "71B2D1A84A1F786E3226",
+    "id": "71B2D1A84A1F786E3226"
 }
 ```
 
 | Field | Type | Description |
-|-----------|--------|----------------------------------------------|
-| `zaapId` | string | ID of the forwarded message in Z-API. Use this ID to track the message status through webhooks |
+|:------|:-----|:------------|
+| `zaapId` | string | ID in z-api. |
+| `messageId` | string | ID in WhatsApp. |
+| `id` | string | Added for Zapier compatibility; it has the same value as `messageId`. |
 
 ### Common errors {#erros-comuns}
 

@@ -47,7 +47,7 @@ Configure this webhook in your automation tool (n8n, Make, etc.) to receive noti
 #### Via API
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-webhook-chat-presence
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-webhook-chat-presence
 ```
 
 **Headers:**

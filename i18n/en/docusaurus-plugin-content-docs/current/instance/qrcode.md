@@ -30,13 +30,31 @@ You may opt for one of the available methods to read the WhatsApp QR Code.
 
 ### 1. QR Code - Bytes
 
+`/qr-code`
+
+```http
+GET https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/qr-code
+```
+
 This method returns the bytes of the QR Code. You can render it in a compatible QR Code component in your programming language.
 
 ### 2. QR Code - Image Base64
 
+`/qr-code/image`
+
+```http
+GET https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/qr-code/image
+```
+
 This method returns an image in base64 format. You can render it in a compatible image component in your programming language.
 
 ### 3. Phone Code
+
+`/phone-code/{phone}`
+
+```http
+GET https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/phone-code/{phone}
+```
 
 This method returns a code to connect the number to the API without the need for reading the QR Code, just by entering the generated code.
 

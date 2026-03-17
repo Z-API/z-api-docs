@@ -130,15 +130,15 @@ curl -X GET "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/produc
 | `cartEnabled` | boolean | Indicates if the shopping cart is active in the catalog |
 | `catalogId` | string | ID of the catalog to which the product belongs |
 | `product` | object | Object with product information |
-| `product.availability` | string | Product availability (`"in stock"`, `"out of stock"`, etc.) |
-| `product.id` | string | Unique product ID |
-| `product.retailerId` | string \| null | Retailer ID (can be null) |
-| `product.description` | string | Product description |
-| `product.price` | string | Product price (in cents) |
-| `product.salePrice` | string | Promotional price (in cents) |
-| `product.currency` | string | Product currency (ex: `"BRL"`) |
-| `product.name` | string | Product name |
-| `product.images` | array | Array of product image URLs |
+| `availability` | string | Product availability (`"in stock"`, `"out of stock"`, etc.) |
+| `id` | string | Unique product ID |
+| `retailerId` | string \| null | Retailer ID (can be null) |
+| `description` | string | Product description |
+| `price` | string | Product price (in cents) |
+| `salePrice` | string | Promotional price (in cents) |
+| `currency` | string | Product currency (ex: `"BRL"`) |
+| `name` | string | Product name |
+| `images` | array | Array of product image URLs |
 
 ---
 

@@ -22,7 +22,7 @@ This method allows you to determine if your instance is connected to a WhatsApp 
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/status
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/status
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

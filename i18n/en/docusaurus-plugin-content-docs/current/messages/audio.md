@@ -55,7 +55,7 @@ To send an audio, make a request `POST` to the endpoint below.
 ### Endpoint
 
 ```http
-POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-video
+POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/send-audio
 ```
 
 ### Request Body

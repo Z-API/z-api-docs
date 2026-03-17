@@ -26,7 +26,7 @@ It is important to note that disabling the Community **will not delete** its gro
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-DELETE /instances/{instanceId}/token/{token}/communities/{idDaComunidade}
+DELETE https://api.z-api.io/instances/{instanceId}/token/{token}/communities/{idDaComunidade}
 ```
 
 ### URL Parameters

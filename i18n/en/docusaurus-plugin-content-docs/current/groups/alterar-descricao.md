@@ -38,7 +38,7 @@ Make sure to use the correct format of __PROTECTED_1e25b89d-e136-431f-bd83-f3f4c
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/update-group-description
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/update-group-description
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

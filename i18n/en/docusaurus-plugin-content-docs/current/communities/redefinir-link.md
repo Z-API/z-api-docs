@@ -26,7 +26,7 @@ After resetting the link, the previous link no longer works. Make sure to share 
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/redefine-invitation-link/{idDaComunidade}
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/redefine-invitation-link/{idDaComunidade}
 ```
 
 ### URL Parameters

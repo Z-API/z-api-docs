@@ -5,7 +5,7 @@ Restart your WhatsApp instance to resolve connection issues or update the sessio
 ## Endpoint {#endpoint}
 
 ```http
-POST https://api.z-api.io/instances/{instanceId}/restart
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/restart
 ```
 
 ### Headers {#headers}
@@ -18,8 +18,7 @@ POST https://api.z-api.io/instances/{instanceId}/restart
 
 ```json
 {
- "value": true,
- "message": "Instância reiniciada com sucesso"
+ "value": true
 }
 ```
 

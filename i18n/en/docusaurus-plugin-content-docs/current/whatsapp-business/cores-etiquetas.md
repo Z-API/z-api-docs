@@ -40,7 +40,7 @@ If you are using an automation platform like n8n or Make, use this endpoint to g
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/business/tags/colors
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/business/tags/colors
 ```
 
 ### <Icon name="Info" size="sm" /> Conceptualization {#conceituacao}

@@ -35,7 +35,7 @@ WhatsApp is very strict when it comes to sending spam, which is why we pay more 
 
 Quantity is important, but it's not just about the number of messages sent; the **TO WHOM** factor often is the key point.
 
-In our conversations, we always use the case of one of our oldest clients, who today sends promotional messages to over 80,000 people daily via WhatsApp and has never had their number blocked. When we contacted them and asked how they achieved this feat, they kindly shared the following technique:
+In our conversations, we always use the case of one of our oldest clients, who today sends promotional messages to many people daily via WhatsApp and has never had their number blocked. When we contacted them and asked how they achieved this feat, they kindly shared the following technique:
 
 1. **Do chip maturation**: This means using the phone number on WhatsApp in a normal way before starting to send many messages through the Z-API.
 2. **Interact via mobile or WhatsApp Web before connecting to the Z-API**: This helps show WhatsApp that you are a real user and not a bot.

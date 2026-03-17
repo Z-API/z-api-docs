@@ -22,7 +22,7 @@ This method allows you to change the profile description (status) displayed in W
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/profile-description
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/profile-description
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -35,6 +35,14 @@ PUT /instances/{instanceId}/token/{token}/profile-description
 ---
 
 ## <Icon name="Settings" size="md" /> Attributes {#atributos}
+
+### Request Body
+
+```json
+{
+  "value": "Profile Description"
+}
+```
 
 ### Required
 

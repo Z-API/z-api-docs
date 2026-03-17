@@ -31,7 +31,7 @@ On November 4, 2021, WhatsApp changed the format for creating new groups:
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/update-group-photo
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/update-group-photo
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

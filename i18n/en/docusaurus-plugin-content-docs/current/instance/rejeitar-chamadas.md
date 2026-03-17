@@ -22,7 +22,7 @@ This method allows you to configure automatic call rejection. When activated, al
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-call-reject-auto
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-call-reject-auto
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -35,6 +35,13 @@ PUT /instances/{instanceId}/token/{token}/update-call-reject-auto
 ---
 
 ## <Icon name="Settings" size="md" /> Attributes {#atributos}
+
+### Request Body
+```json
+{
+  "value": "true" or "false"
+}
+```
 
 ### Required
 

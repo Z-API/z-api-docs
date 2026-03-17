@@ -48,7 +48,7 @@ POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/contacts/modif
 ```json
 {
   "phone": "5544999999999",
-  "action": "block"
+  "action": "block" or "unblock"
 }
 ```
 

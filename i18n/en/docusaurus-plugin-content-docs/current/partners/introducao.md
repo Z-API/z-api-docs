@@ -7,6 +7,7 @@ title: Partner API
 # <Icon name="Handshake" size="lg" /> Partner API
 
 Manage instances through the Z-API Partner API. Create, subscribe and cancel instances programmatically for your clients or users.
+Now that you've reached 10 instances, we know each other well and our partnership is even stronger. We'll always be available to support you and grow together. You can count on us!
 
 :::tip For Partners
 The Partner API is exclusive for Z-API partners who need to manage multiple instances for different clients or users!
@@ -16,7 +17,9 @@ The Partner API is exclusive for Z-API partners who need to manage multiple inst
 
 ## <Icon name="Info" size="md" /> Overview
 
-The Partner API section provides functionalities to manage multiple instances through a dedicated API for partners. Use these operations to create instances for your clients, manage subscriptions and control the lifecycle of instances.
+The Partner API section provides functionality for managing multiple instances through a dedicated API for partners. With it, you can create instances for your clients, manage subscriptions, and control the entire instance lifecycle.
+
+By participating in the partner program, you will receive a unique integration token, along with the necessary documentation to create, subscribe to, or cancel instances directly via the API, eliminating the need to access the administrative interface.
 
 :::info Important
 
@@ -27,6 +30,19 @@ The Partner API section provides functionalities to manage multiple instances th
 - The Integrator Model at this moment is **post-paid**. We will have a pre-paid option soon.
 
 :::
+
+---
+
+## <Icon name="KeyRound" size="md" /> Tokens
+
+The account security token has a usage limit, but during our partnership this limit will undergo some changes as follows:
+
+### <Icon name="Code2" size="sm" /> **First token (Account security token)**
+Allows you to create 25 instances.
+
+### <Icon name="Code2" size="sm" /> **Integrator Token (Partner Token)**
+
+From the first 10 instances created with the first token, you can request the new definitive partner token from our support team to create more instances, up to infinity.
 
 ---
 

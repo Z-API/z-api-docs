@@ -104,7 +104,7 @@ Button sends are currently available, but have some critical factors for functio
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/send-button-otp
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-button-otp
 ```
 
 ### <Icon name="Settings" size="sm" /> Attributes {#attributes}

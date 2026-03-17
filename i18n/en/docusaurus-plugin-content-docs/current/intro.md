@@ -160,11 +160,9 @@ Each stage is notified through webhooks, allowing full tracking of the message's
 
 **Possible states:**
 
-- `QUEUED`: In queue waiting for processing
 - `SENT`: Sent to WhatsApp
 - `RECEIVED`: Delivered to the recipient
 - `READ`: Read by the recipient
-- `FAILED`: Send failure
 
 :::info Detailed Article
 For a complete understanding of the message lifecycle, including detailed diagrams and error handling strategies, consult the article: [How the Message Lifecycle Works in Z-API](/blog/ciclo-vida-mensagens-zapi).

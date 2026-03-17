@@ -48,7 +48,7 @@ POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/newsletter/set
 
 ```json
 {
-  "reactionCodes": "all"
+  "reactionCodes": "basic" or "all"
 }
 ```
 

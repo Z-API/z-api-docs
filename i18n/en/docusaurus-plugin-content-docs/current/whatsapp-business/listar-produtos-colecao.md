@@ -22,7 +22,7 @@ This method allows you to list all products that belong to a specific collection
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/catalogs/collection-products/{phoneNumber}
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/catalogs/collection-products/{phoneNumber}
 ```
 
 ### Path Parameters
@@ -177,17 +177,17 @@ curl -X GET "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalo
 |-------|------|-------------|
 | `nextCursor` | string \| null | Pagination token. If present, there are more results available. Use this token in the next request to get more products |
 | `products` | array | List of products from the collection |
-| `products[].id` | string | Unique product ID |
-| `products[].name` | string | Product name |
-| `products[].description` | string | Product description |
-| `products[].url` | string | Product URL (link to product page) |
-| `products[].price` | string | Product price (in cents) |
-| `products[].currency` | string | Currency of the product (e.g., `"BRL"`) |
-| `products[].isHidden` | boolean | Indicates if the product is hidden in the collection |
-| `products[].availability` | string | Product availability (`"in stock"`, `"out of stock"`, etc.) |
-| `products[].retailerId` | string | Merchant ID |
-| `products[].images` | array | Array of product image URLs |
-| `products[].quantity` | string | Available quantity of the product |
+| `id` | string | Unique product ID |
+| `name` | string | Product name |
+| `description` | string | Product description |
+| `url` | string | Product URL (link to product page) |
+| `price` | string | Product price (in cents) |
+| `currency` | string | Currency of the product (e.g., `"BRL"`) |
+| `isHidden` | boolean | Indicates if the product is hidden in the collection |
+| `availability` | string | Product availability (`"in stock"`, `"out of stock"`, etc.) |
+| `retailerId` | string | Merchant ID |
+| `images` | array | Array of product image URLs |
+| `quantity` | string | Available quantity of the product |
 
 ---
 

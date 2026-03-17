@@ -16,6 +16,12 @@ The message queue allows you to monitor and control messages that are waiting fo
 For a didactic explanation about message queues using simple and practical analogies, especially useful for understanding why queues are crucial when sending thousands of messages, see the article: [Message Queue: How to Send Thousands of Messages Without Locking the System](/blog/fila-mensagens-como-enviar-milhares-sem-travar).
 :::
 
+:::tip Queue Timeout
+Our queue uses alternating message sending times to simulate human behavior; this interval is set to a random default range of 1-3 seconds per message.
+
+If you want to increase the message delay, you can pass the delayMessage attribute in the request body. To learn how, see: [Send text](/en/docs/messages/texto-simples)
+:::
+
 ---
 
 ## <Icon name="Info" size="md" /> Overview
@@ -139,6 +145,11 @@ To work with the message queue, you need:
 
 :::tip Continuous Monitoring
 Regularly monitor the queue to identify issues before they affect system performance!
+:::
+
+:::tip Queue Limit
+The Z-API allows up to 1000 messages to disconnected mobile phones in its queue before it starts rejecting new messages for the queue.
+
 :::
 
 ---

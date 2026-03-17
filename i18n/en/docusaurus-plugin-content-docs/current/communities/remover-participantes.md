@@ -22,7 +22,7 @@ This method is responsible for removing participants from the community. Removed
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/remove-participant
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/remove-participant
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -40,7 +40,7 @@ POST /instances/{instanceId}/token/{token}/remove-participant
 
 | Attribute | Type | Description |
 |----------|------|------------|
-| `phone` | string | Community ID/Fone (obtained by listing or creating communities) |
+| `communityId` | string | Community ID (obtained when listing or creating communities) |
 | `phones` | array[string] | Array with the numbers of participants to be removed (international format, no spaces) |
 
 ---
@@ -56,7 +56,7 @@ Content-Type: application/json
 Client-Token: seu-token-de-seguranca
 
 {
-  "phone": "5511999999999",
+  "communityId": "5511999999999",
   "phones": ["5544999999999", "5544888888888"]
 }
 ```
@@ -153,14 +153,14 @@ curl -X POST "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remov
 | `405` | Incorrect HTTP method | Make sure you are using `POST` as specified |
 | `401` | Invalid token | Check the header `Client-Token` |
 | `415` | Missing Content-Type | Add `Content-Type: application/json` to the header |
-| `400` | Invalid data | Check if `phone` and `phones` were provided correctly |
+| `400` | Invalid data | Check if `communityId` and `phones` were provided correctly |
 | `403` | No permission | Only administrators can remove participants |
 
 ---
 
 ## <Icon name="Info" size="md" /> Notes {#observacoes}
 
-- **Phone format**: Use international format without spaces (ex: `5544999999999`)
+- **Phone format**: Use international format without spaces (ex: `120363186053925765`)
 - **Permissions**: Only community administrators can remove participants
 - **Multiple participants**: You can remove multiple participants at once, sending an array with the numbers
 - **Effect**: Removed participants will lose access to the community and linked groups

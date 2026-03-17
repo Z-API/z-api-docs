@@ -27,7 +27,7 @@ This method is used to confirm the code PIN of your account. This method is only
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/mobile/confirm-pin-code
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/mobile/confirm-pin-code
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

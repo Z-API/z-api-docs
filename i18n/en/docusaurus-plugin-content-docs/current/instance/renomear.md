@@ -22,7 +22,7 @@ This method allows renaming an existing instance. The instance name is used only
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-name
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-name
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -35,6 +35,13 @@ PUT /instances/{instanceId}/token/{token}/update-name
 ---
 
 ## <Icon name="Settings" size="md" /> Attributes {#atributos}
+
+### Request Body
+```json
+{
+  "value": "New Name"
+}
+```
 
 ### Required
 

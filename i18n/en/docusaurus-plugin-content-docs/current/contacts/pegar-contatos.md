@@ -74,7 +74,7 @@ Insert attributes of `page` and `pageSize`, it is possible to insert in the URL 
 **Example:**
 
 ```
-{{BASE_URL}}/instances/{INSTANCE_ID}/token/{INSTANCE_TOKEN}/chats?page=1&pageSize=20
+https://api.z-api.io/instances/{INSTANCE_ID}/token/{INSTANCE_TOKEN}/chats?page=1&pageSize=20
 ```
 
 ### Common Errors

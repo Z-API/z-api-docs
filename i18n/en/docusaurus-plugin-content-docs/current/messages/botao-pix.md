@@ -134,7 +134,7 @@ In WhatsApp Web, received PIX messages do not change the chat state (do not mark
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/send-button-pix
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-button-pix
 ```
 
 ### <Icon name="Info" size="sm" /> Concept {#conceituacao}

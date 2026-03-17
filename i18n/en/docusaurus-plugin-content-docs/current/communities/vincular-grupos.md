@@ -26,7 +26,7 @@ It is important to remember that **the same group cannot be linked in more than 
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/communities/link
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/communities/link
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -44,7 +44,7 @@ POST /instances/{instanceId}/token/{token}/communities/link
 
 | Attribute | Type | Description |
 |----------|------|------------|
-| `phone` | string | ID of the community to which groups will be added |
+| `communityId` | string | ID of the community to which groups will be added |
 | `groupsPhones` | array[string] | Array with the numbers of the groups to be linked (format: `{id}-group`) |
 
 ---
@@ -60,7 +60,7 @@ Content-Type: application/json
 Client-Token: seu-token-de-seguranca
 
 {
-  "phone": "98372465382764532938",
+  "communityId": "98372465382764532938",
   "groupsPhones": ["1345353454354354-group", "1203634230225498-group"]
 }
 ```

@@ -34,7 +34,7 @@ Make sure to use the correct format of `groupId` based on the creation date of t
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-link/{groupId}
+GET https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-link/{groupId}
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -61,7 +61,7 @@ POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitati
 <TabItem value="http" label="HTTP">
 
 ```http
-POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-link/120363019502650977-group
+GET https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/group-invitation-link/120363019502650977-group
 Client-Token: SEU_CLIENT_TOKEN
 ```
 
@@ -1317,7 +1317,7 @@ int main() {
 
 | Code | Reason | How to resolve |
 |------|--------|---------------|
-| `405` | Incorrect HTTP method | Make sure you are using `POST` as specified |
+| `405` | Incorrect HTTP method | Make sure you are using `GET` as specified |
 | `401` | Invalid token | Check the header `Client-Token` |
 | `404` | Group not found | Check if the `groupId` is correct |
 

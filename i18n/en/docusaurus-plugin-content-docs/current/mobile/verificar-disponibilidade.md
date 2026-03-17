@@ -29,7 +29,7 @@ This method is used to verify the availability of registration for a number. Thi
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/mobile/registration-available
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/mobile/registration-available
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

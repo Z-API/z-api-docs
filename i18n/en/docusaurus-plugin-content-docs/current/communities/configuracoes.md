@@ -22,7 +22,7 @@ With this API you can change the settings of a community. Currently, it is possi
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/communities/settings
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/communities/settings
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

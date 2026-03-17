@@ -22,7 +22,7 @@ This method returns complete information about the device connected to the insta
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/device
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/device
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

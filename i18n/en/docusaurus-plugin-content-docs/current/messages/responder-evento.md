@@ -102,7 +102,7 @@ In your automation tool (n8n, Make, Zapier), you will fill in the following fiel
 ### <Icon name="Link" size="sm" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/send-event-response
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-event-response
 ```
 
 ### <Icon name="Info" size="sm" /> Conceptualization {#conceituacao}

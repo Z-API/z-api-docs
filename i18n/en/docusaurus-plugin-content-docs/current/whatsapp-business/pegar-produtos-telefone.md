@@ -27,7 +27,7 @@ This method allows you to get products from a WhatsApp Business catalog of any n
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/catalogs/{phoneNumber}
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/catalogs/{phoneNumber}
 ```
 
 ### Path Parameters
@@ -176,16 +176,16 @@ curl -X GET "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/catalo
 | `cartEnabled` | boolean | Indicates if shopping cart is active in the consulted catalog |
 | `nextCursor` | string \| null | Pagination token. If present, there are more results available. Use this token in the next request to get more products |
 | `products` | array | List of products from the catalog |
-| `products[].availability` | string | Product availability (`"in stock"`, `"out of stock"`, etc.) |
-| `products[].id` | string | Unique product ID |
-| `products[].retailerId` | string \| null | Retailer ID (can be null) |
-| `products[].description` | string | Product description |
-| `products[].price` | string | Product price (in cents) |
-| `products[].salePrice` | string | Promotional price (in cents) |
-| `products[].currency` | string | Product currency (ex: `"BRL"`) |
-| `products[].name` | string | Product name |
-| `products[].quantity` | number \| null | Available quantity (can be null) |
-| `products[].images` | array | Array of product image URLs |
+| `availability` | string | Product availability (`"in stock"`, `"out of stock"`, etc.) |
+| `id` | string | Unique product ID |
+| `retailerId` | string \| null | Retailer ID (can be null) |
+| `description` | string | Product description |
+| `price` | string | Product price (in cents) |
+| `salePrice` | string | Promotional price (in cents) |
+| `currency` | string | Product currency (ex: `"BRL"`) |
+| `name` | string | Product name |
+| `quantity` | number \| null | Available quantity (can be null) |
+| `images` | array | Array of product image URLs |
 
 ---
 

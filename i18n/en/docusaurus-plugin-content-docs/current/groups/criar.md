@@ -26,6 +26,21 @@ POST https://api.z-api.io/instances/{instanceId}/token/{instanceToken}/create-gr
 - Client-Token: string (required)
 - Content-Type: application/json
 
+:::tip Note
+Just like on WhatsApp Web, you will need to add at least one contact to create a group.
+
+:::
+
+:::caution Attention
+You should not include the number connected to the Z-API, which is responsible for creating the group, in the array of numbers that will make up the group.
+
+:::
+
+:::tip Note
+Recently, WhatsApp implemented a validation to check if the phone number connected to the API has the client's contact saved. However, Z-API developed a solution to bypass this validation, introducing a new feature called "autoInvite". Now, when a request is sent to add 10 clients to a group and only 5 of them are successfully added, the API sends private invitations to the five clients who were not added. These invitations allow them to join the group, even if their phone numbers are not saved as contacts.
+
+:::
+
 ### Request body
 
 ```json
@@ -46,7 +61,7 @@ POST https://api.z-api.io/instances/{instanceId}/token/{instanceToken}/create-gr
 
 ### 200 OK
 
-Old format -
+Old format 
 
 ```json
 {

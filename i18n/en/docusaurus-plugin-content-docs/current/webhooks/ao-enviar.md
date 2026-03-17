@@ -62,7 +62,6 @@ function markMessageAsSent(messageId) {
 
 ## Errors and considerations {#errors-and-considerations}
 
-- **Security validation**: Always validate the security header (e.g., `x-token`) before processing the payload
 - **Idempotence**: Multiple notifications may be sent for the same message; implement verification of `messageId` or `zaapId`
 - **Asynchronous processing**: For better performance, process notifications asynchronously
 - **Tracking**: Use this webhook to track the lifecycle of sent messages

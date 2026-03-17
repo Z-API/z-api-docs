@@ -22,7 +22,7 @@ This method allows you to get the complete data of your instance, including conn
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/me
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/me
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

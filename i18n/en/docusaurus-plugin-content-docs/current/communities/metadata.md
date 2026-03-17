@@ -22,7 +22,7 @@ This method returns the metadata of the community, such as name, description and
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/communities-metadata/{idDaComunidade}
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/communities-metadata/{idDaComunidade}
 ```
 
 ### URL Parameters

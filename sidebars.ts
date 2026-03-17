@@ -105,6 +105,9 @@ const sidebars: SidebarsConfig = {
           items: [
             "instance/dados-celular",
             "instance/renomear",
+            "instance/atualizar-nome-perfil",
+            "instance/atualizar-imagem-perfil",
+            "instance/atualizar-descricao-perfil",
           ],
         },
         

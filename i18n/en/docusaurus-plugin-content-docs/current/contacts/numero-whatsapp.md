@@ -1,9 +1,5 @@
 ---
 id: numero-whatsapp
-sidebar_position: 4
-title: Verify Number with WhatsApp
----
-id: numero-whatsapp
 title: Check Number with WhatsApp
 sidebar_position: 4
 ---
@@ -1210,7 +1206,7 @@ int main() {
   {
     "exists": "true ou false",
     "phone": "5544999999999",
-    "lid": "999999999@lid"
+    "lid": "999999999@lid" // It will be "null" if "exists" is false.
   }
 ]
 ```

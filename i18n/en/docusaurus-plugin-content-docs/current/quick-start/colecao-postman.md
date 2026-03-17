@@ -5,7 +5,7 @@ title: Testing the API with Postman
 ---
 # <Icon name="Plug" size="lg" /> Testing the API with Postman Collection
 
-To facilitate your tests and development, Z-API offers a **Postman Collection**. It is a pre-configured file that contains all the endpoints (the "functions") of our API, allowing you to experiment with each one visually without writing a single line of code.
+To facilitate your tests and development, Z-API offers a **[Postman Collection](https://www.postman.com/docs-z-api/z-api-s-public-workspace/collection/gwri249/z-api-collection?sideView=agentMode)**. It is a pre-configured file that contains all the endpoints (the "functions") of our API, allowing you to experiment with each one visually without writing a single line of code.
 
 :::tip Essential Tool
 The Postman Collection is the fastest and most visual way to test all features of Z-API without having to write any code!
@@ -29,7 +29,7 @@ It's the perfect tool for:
 
 The easiest way to start is by using the official collection, which is always up-to-date.
 
-1. <Icon name="Globe" size="xs" /> Access the **[Postman Collection](/docs/tips/colecao-postman)** section in this documentation.
+1. <Icon name="Globe" size="xs" /> Access the **[Postman Collection](https://www.postman.com/docs-z-api/z-api-s-public-workspace/collection/gwri249/z-api-collection?sideView=agentMode)** section in this documentation.
 2. <Icon name="MousePointerClick" size="xs" /> Follow the instructions to import the collection into Postman. The collection includes all Z-API endpoints with ready-to-use examples.
 
 :::info Automatic Import
@@ -51,6 +51,7 @@ After importing the collection, you need to inform Postman of your credentials s
 3. <Icon name="Edit3" size="xs" /> Fill in the following fields in **"Current Value"**:
    - <Icon name="IdCard" size="xs" /> `instanceId`: Paste your Z-API instance ID here.
    - <Icon name="KeySquare" size="xs" /> `token`: Paste your access token here.
+4. <Icon name="Settings" size="xs" /> In the request header, enter your security token **"Client-Token"**.
 
 :::warning Don't Forget to Save
 Remember to save your changes by clicking the **"Save"** button after filling in the credentials!

@@ -26,6 +26,10 @@ POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/add-participan
 - Client-Token: string (required)
 - Content-Type: application/json
 
+:::tip Note
+Recently, WhatsApp implemented a validation to check if the phone number connected to the API has the customer's contact saved. However, Z-API developed a solution to bypass this validation, introducing a new feature called "autoInvite". Now, when a request is sent to add 10 customers to a group and only 5 of them are successfully added, the API sends private invitations to the five customers who were not added. These invitations allow them to join the group, even if their phone numbers are not saved as contacts.
+:::
+
 ### Attributes
 
 ### Required

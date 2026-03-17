@@ -29,7 +29,7 @@ This method is used to respond to the captcha required for sending the confirmat
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/mobile/respond-captcha
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/mobile/respond-captcha
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # <Icon name="Phone" size="lg" /> Calls
 
-Make voice and video calls through the Z-API API. Initiate calls to your contacts and manage voice and video communications programmatically.
+Make voice calls through the Z-API API. Initiate calls to your contacts and manage voice communications programmatically.
 
 :::tip Complete Communication
 In addition to messages, you can also make voice and video calls through the API, expanding the possibilities of communication with your contacts!
@@ -16,7 +16,7 @@ In addition to messages, you can also make voice and video calls through the API
 
 ## <Icon name="Info" size="md" /> Overview
 
-The Calls section provides functionalities to make voice and video calls through WhatsApp. Use these operations to initiate calls to your contacts and integrate voice and video communication into your applications.
+The Calls section provides functionality for making voice calls through WhatsApp. Use these features to initiate calls to your contacts and integrate voice communication into your applications.
 
 ---
 
@@ -24,7 +24,7 @@ The Calls section provides functionalities to make voice and video calls through
 
 Manage calls with these operations:
 
-- <Icon name="PhoneCall" size="sm" /> [Make Call](/docs/calls/fazer-ligacao) - Initiate a voice or video call to a contact
+- <Icon name="PhoneCall" size="sm" /> [Make Call](/docs/calls/fazer-ligacao) - Initiate a voice call to a contact
 
 ---
 

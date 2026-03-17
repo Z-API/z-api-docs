@@ -22,7 +22,7 @@ This method allows configuring automatic message reading. When activated, all me
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-auto-read-message
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-auto-read-message
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

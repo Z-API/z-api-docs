@@ -28,7 +28,7 @@ This method is only available for WhatsApp Business accounts.
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-GET /instances/{instanceId}/token/{token}/business/available-categories
+GET https://api.z-api.io/instances/{instanceId}/token/{token}/business/available-categories
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

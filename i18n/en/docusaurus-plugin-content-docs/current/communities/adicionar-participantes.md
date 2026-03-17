@@ -28,7 +28,7 @@ Now, when a request is sent to add 10 customers to a group and only 5 of them ar
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/add-participant
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/add-participant
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -48,7 +48,7 @@ POST /instances/{instanceId}/token/{token}/add-participant
 |----------|------|------------|
 | `autoInvite` | boolean | Sends community invite link in private to contacts that could not be added directly |
 | `phone` | string | ID of the community (obtained by listing or creating communities) |
-| `phones` | array[string] | Array with the numbers of participants to be added (international format, no spaces) |
+| `communityId` | string | Community ID (obtained when listing or creating communities) |
 
 ---
 
@@ -64,7 +64,7 @@ Client-Token: seu-token-de-seguranca
 
 {
   "autoInvite": true,
-  "phone": "120363019502650977",
+  "communityId": "120363019502650977",
   "phones": ["5544999999999", "5544888888888"]
 }
 ```

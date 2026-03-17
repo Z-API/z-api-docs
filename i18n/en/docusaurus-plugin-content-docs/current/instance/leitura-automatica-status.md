@@ -28,7 +28,7 @@ For it to work, you must have [Automatic Reading](/docs/instance/leitura-automat
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-auto-read-status
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-auto-read-status
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

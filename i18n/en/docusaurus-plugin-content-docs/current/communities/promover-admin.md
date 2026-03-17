@@ -28,7 +28,7 @@ Administrators have special permissions, such as:
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/add-admin
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/add-admin
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

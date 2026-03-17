@@ -1,9 +1,5 @@
 ---
 id: validar-lote
-sidebar_position: 5
-title: Validate Numbers in Batch
----
-id: validar-lote
 title: Validate Numbers in Batch
 sidebar_position: 5
 ---
@@ -49,6 +45,14 @@ POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/phone-exists-b
 ---
 
 ## <Icon name="Settings" size="md" /> Attributes {#atributos}
+
+### Request Body
+
+```json
+{
+  "phones": ["554499999999","554488888888"]
+}
+```
 
 ### Required
 

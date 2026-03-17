@@ -22,7 +22,7 @@ This method is responsible for removing one or more administrators from a commun
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/remove-admin
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/remove-admin
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
@@ -40,7 +40,7 @@ POST /instances/{instanceId}/token/{token}/remove-admin
 
 | Attribute | Type | Description |
 |----------|------|------------|
-| `phone` | string | ID/Fone of the community (obtained by listing or creating communities) |
+| `communityId` | string | Community ID (obtained when listing or creating communities) |
 | `phones` | array[string] | Array with the numbers of administrators to be removed (international format, no spaces) |
 
 ---
@@ -56,7 +56,7 @@ Content-Type: application/json
 Client-Token: seu-token-de-seguranca
 
 {
-  "phone": "120363019502650977",
+  "communityId": "120363019502650977",
   "phones": ["5544999999999", "5544888888888"]
 }
 ```
@@ -153,14 +153,14 @@ curl -X POST "https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/remov
 | `405` | Incorrect HTTP method | Make sure you are using `POST` as specified |
 | `401` | Invalid token | Check the header `Client-Token` |
 | `415` | Missing Content-Type | Add `Content-Type: application/json` to the header |
-| `400` | Invalid data | Check if `phone` and `phones` were provided correctly |
+| `400` | Invalid data | Check if `communityId` and `phones` were provided correctly |
 | `403` | No permission | Only administrators can remove other administrators |
 
 ---
 
 ## <Icon name="Info" size="md" /> Notes {#observacoes}
 
-- **Phone Format**: Use international format without spaces (ex: `5544999999999`)
+- **Phone Format**: Use international format without spaces (ex: `120363186053925765`)
 - **Permissions**: Only community administrators can remove other administrators
 - **Multiple Administrators**: You can remove multiple administrators at once, sending an array with the numbers
 - **Status After Removal**: The removed administrators will continue as participants in the community but will lose their admin permissions

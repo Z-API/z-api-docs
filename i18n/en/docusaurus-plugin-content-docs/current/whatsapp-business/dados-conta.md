@@ -1282,16 +1282,16 @@ int main() {
 | `email` | string | Company email |
 | `websites` | array | URLs of the company websites |
 | `categories` | array | Company category data |
-| `categories[].displayName` | string | Category name |
-| `categories[].label` | string | Category label |
-| `categories[].id` | string | Category ID |
+| `displayName` | string | Category name |
+| `label` | string | Category label |
+| `id` | string | Category ID |
 | `businessHours` | object | Operating hours data |
-| `businessHours.timezone` | string | Timezone |
-| `businessHours.days` | array | Operating hours data for days |
-| `businessHours.days[].dayOfWeek` | string | Day of the week (MONDAY, TUESDAY, etc.) |
-| `businessHours.days[].openTime` | string | Opening time (format HH:MM) |
-| `businessHours.days[].closeTime` | string | Closing time (format HH:MM) |
-| `businessHours.mode` | string | Operating hours type (`specificHours` or `alwaysOpen`) |
+| `timezone` | string | Timezone |
+| `days` | array | Operating hours data for days |
+| `dayOfWeek` | string | Day of the week (MONDAY, TUESDAY, etc.) |
+| `openTime` | string | Opening time (format HH:MM) |
+| `closeTime` | string | Closing time (format HH:MM) |
+| `mode` | string | Operating hours type (`specificHours` or `alwaysOpen`) |
 | `hasCoverPhoto` |  boolean | Indicates if the account has a cover photo |
 
 ---

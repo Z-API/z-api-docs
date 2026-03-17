@@ -1,9 +1,5 @@
 ---
 id: remover
-sidebar_position: 1
-title: Remove Contacts
----
-id: remover
 title: Remove Contacts
 sidebar_position: 1
 ---

@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "npx cross-env NO_UPDATE_NOTIFIER=1 NODE_ENV=development docusaurus start --port 3000 --host 0.0.0.0 --no-open",
+    "start:en": "npx cross-env NO_UPDATE_NOTIFIER=1 NODE_ENV=development docusaurus start --port 3000 --host 0.0.0.0 --no-open --locale en",
     "start:open": "npx cross-env NO_UPDATE_NOTIFIER=1 NODE_ENV=development docusaurus start --port 3000",
     "start:fast": "npx cross-env NO_UPDATE_NOTIFIER=1 NODE_ENV=development FAST_REFRESH=true docusaurus start --port 3000 --no-open --no-minify",
     "start:watch": "npx cross-env NO_UPDATE_NOTIFIER=1 NODE_ENV=development docusaurus start --port 3000 --poll",

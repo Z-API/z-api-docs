@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 # Make a Call
 
-Initiate a voice call through the Z-API API. Use this endpoint to make calls programmatically.
+In this method, you send a connection request to a number that has WhatsApp, whether it's your contact or not.
 
 ## Endpoint
 
@@ -36,22 +36,23 @@ POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-call
 | phone | string | Yes | Recipient number in DDI + DDD + NUMBER format (ex: `5511999999999`) |
 | callDuration | number | No | Here you define how long you want the call to last, by default the call will have a duration of 5 seconds, but you can increase up to 15 seconds |
 
-### Route Parameters
-
-| Parameter | Type | Description |
-|-----------|--------|----------------------------------------------|
-| phone | string | Chat ID (format: `5511999999999@c.us` or `120363@g.us`) |
-
 ## Responses
 
-### 200 OK
+### 200 OK {#200-ok}
 
 ```json
 {
- "value": true,
- "message": "Chamada iniciada"
+  "zaapId": "019BC85B8F177B568F393E5D1FDD346A",
+  "messageId": "71B2D1A84A1F786E3226",
+  "id": "71B2D1A84A1F786E3226"
 }
 ```
+
+| Field | Type | Description |
+|:------|:-----|:------------|
+| `zaapId` | string | ID in z-api. |
+| `messageId` | string | ID in WhatsApp. |
+| `id` | string | Added for Zapier compatibility; it has the same value as `messageId`. |
 
 ### Common Errors
 
@@ -1319,19 +1320,3 @@ int main() {
 
 </TabItem>
 </Tabs>
-
-## Phone Format
-
-The `phone` can have different formats depending on the type of chat:
-
-- **Individual Chat**: `5511999999999@c.us`
-- **Group**: `120363@g.us`
-- **Community**: `120363@c.us`
-
-## Notes
-
-- Marking a chat as read removes the unread message counter
-- The read status is updated in WhatsApp
-- Use this endpoint to keep your chats organized
-- You can mark individual chats or groups as read
-- After marking as read, the chat will no longer appear with unread notifications

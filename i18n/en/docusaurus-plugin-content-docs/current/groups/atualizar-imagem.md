@@ -38,7 +38,7 @@ If you have questions about sending a Base64 image, access the topic [Send Image
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/update-group-photo
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/update-group-photo
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

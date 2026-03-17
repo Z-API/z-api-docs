@@ -69,8 +69,6 @@ If you notice any of these signs, immediately reduce your message volume and rev
 
 Even if you follow best practices, your account may still be blocked. The recovery process generally involves contacting official WhatsApp support.
 
-For more details on how to proceed, see the documentation on **[Request Unban](/docs/mobile/solicitar-desbanimento)**.
-
 :::info Support
 The recovery process may take several days. Be patient and provide all requested information to WhatsApp support.
 :::

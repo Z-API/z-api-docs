@@ -60,7 +60,7 @@ To send products, you need:
 
 :::tip Tip
 
-Consult the [WhatsApp Business](../whatsapp-business/introducao) section to learn how to create and manage products in your catalog. The `productId` can be obtained through the product listing API or via webhook when a product is created.
+Consult the [WhatsApp Business](../whatsapp-business/introducao) section to learn how to create and manage products in your catalog. The `productId` can be obtained through the product listing API.
 
 :::
 
@@ -74,9 +74,8 @@ In your automation tool (n8n, Make, Zapier), you will fill in the following fiel
 
 2. **`catalogPhone`**: The phone number of the WhatsApp Business account that owns the catalog where the product is registered. **Important:** This must be the business account number where the product was created. Use the full format: DDI + DDD + Number (ex: `5511999999999`).
 
-3. **`productId`**: The unique ID of the product you want to send. This ID is generated when you create the product in the catalog. You can obtain the `productId` in two ways:
+3. **`productId`**: The unique ID of the product you want to send. This ID is generated when you create the product in the catalog. You can obtain the `productId` this way::
    - **Via API**: Use the [list products](../whatsapp-business/produtos) API to search for all products and their IDs
-   - **Via Webhook**: When a product is created, the webhook returns the `productId` of the created product
 
 **Tip:** If you do not know the `productId`, first list the products in the catalog using the product listing API. Each returned product will have a unique `productId` that you can use here.
 

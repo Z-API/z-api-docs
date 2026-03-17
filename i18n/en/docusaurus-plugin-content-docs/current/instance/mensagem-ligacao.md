@@ -28,7 +28,7 @@ For the message to be sent, the [Reject Calls](/docs/instance/rejeitar-chamadas)
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-PUT /instances/{instanceId}/token/{token}/update-call-reject-message
+PUT https://api.z-api.io/instances/{instanceId}/token/{token}/update-call-reject-message
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}

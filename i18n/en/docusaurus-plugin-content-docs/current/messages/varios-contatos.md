@@ -1772,7 +1772,6 @@ Do not use this endpoint for spam or unsolicited message sends. Respect WhatsApp
 - The message is sent to all recipients simultaneously
 - Each send generates a `messageId` for individual tracking
 - Use this endpoint for legitimate campaigns and with the consent of recipients
-- For better performance, batch sends in groups of up to 100 recipients
 
 ## <Icon name="ArrowRight" size="md" /> Next Steps {#proximos-passos}
 

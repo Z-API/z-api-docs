@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # <Icon name="Plug" size="lg" /> Testando a API com a Coleção Postman
 
-Para facilitar seus testes e desenvolvimento, o Z-API oferece uma **Coleção Postman**. Ele é um arquivo pré-configurado que contém todos os endpoints (as "funções") da nossa API, permitindo que você experimente cada um deles de forma visual, sem escrever uma única linha de código.
+Para facilitar seus testes e desenvolvimento, o Z-API oferece uma **[Coleção Postman](https://www.postman.com/docs-z-api/z-api-s-public-workspace/collection/gwri249/z-api-collection?sideView=agentMode)**. Ele é um arquivo pré-configurado que contém todos os endpoints (as "funções") da nossa API, permitindo que você experimente cada um deles de forma visual, sem escrever uma única linha de código.
 
 :::tip Ferramenta Essencial
 A Coleção Postman é a maneira mais rápida e visual de testar todos os recursos do Z-API, sem precisar escrever código!
@@ -30,7 +30,7 @@ O [Postman](https://www.postman.com/) é uma ferramenta gratuita que ajuda desen
 
 A maneira mais fácil de começar é usar a coleção oficial, que está sempre atualizada.
 
-1. <Icon name="Globe" size="xs" /> Acesse a seção [**Coleção Postman**](/docs/tips/colecao-postman) nesta documentação.
+1. <Icon name="Globe" size="xs" /> Acesse a seção [**Coleção Postman**](https://www.postman.com/docs-z-api/z-api-s-public-workspace/collection/gwri249/z-api-collection?sideView=agentMode) nesta documentação.
 2. <Icon name="MousePointerClick" size="xs" /> Siga as instruções para importar a coleção no Postman. A coleção inclui todos os endpoints do Z-API com exemplos prontos para uso.
 
 :::info Importação Automática

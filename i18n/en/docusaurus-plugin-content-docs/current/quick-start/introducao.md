@@ -254,7 +254,7 @@ Not familiar with decision trees? Read our [complete guide on how to interpret d
 | <Icon name="MessageSquare" size="xs" /> **Message not sent** | Instance disconnected or invalid number | Check the instance status and the format of the number (must include country code) |
 
 :::tip Pro Tip
-If the problem persists, check the logs for your instance in the Z-API panel. They usually contain detailed information about what is happening.
+If the problem persists, please contact Z-API support so we can conduct a more detailed analysis.
 :::
 
 ---

@@ -76,6 +76,12 @@ Example
 }
 ```
 
+| Field | Type | Description |
+|:------|:-----|:------------|
+| `zaapId` | string | ID in z-api. |
+| `messageId` | string | ID in WhatsApp. |
+| `id` | string | Added for Zapier compatibility; it has the same value as `messageId`. |
+
 ### 405 {#405}
 
 In this case, make sure you are sending the correct method specification, that is, check if you sent POST or GET as specified at the beginning of this topic.

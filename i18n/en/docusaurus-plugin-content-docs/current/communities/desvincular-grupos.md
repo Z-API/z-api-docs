@@ -26,7 +26,7 @@ A community must have at least 1 group linked to it, not counting the warning gr
 ## <Icon name="Link" size="md" /> Endpoint {#endpoint}
 
 ```http
-POST /instances/{instanceId}/token/{token}/communities/unlink
+POST https://api.z-api.io/instances/{instanceId}/token/{token}/communities/unlink
 ```
 
 ### <Icon name="Settings" size="sm" /> Headers {#headers}
