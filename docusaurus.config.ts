@@ -38,7 +38,7 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   // Em desenvolvimento, usar '/' para evitar problemas com chunks
   // Em produção, usar '/Z-API-Central-Dev/' para GitHub Pages
-  baseUrl: isDev ? "/" : "/Z-API-Central-Dev/",
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: "CJBiohacker",
