@@ -26,7 +26,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Entenda como gerenciar configurações de privacidade do WhatsApp através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/introducao" className={styles.cardLink}>
+  <a href="/docs/privacy/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Configure quem pode ver quando você esteve online pela última vez.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/visto-por-ultimo" className={styles.cardLink}>
+  <a href="/docs/privacy/visto-por-ultimo" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -52,7 +52,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Controle quem pode ver sua foto de perfil no WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/visualizacao-foto-perfil" className={styles.cardLink}>
+  <a href="/docs/privacy/visualizacao-foto-perfil" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -65,7 +65,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Configure quem pode ver seu recado (status) no WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/visualizacao-recado" className={styles.cardLink}>
+  <a href="/docs/privacy/visualizacao-recado" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -78,7 +78,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Controle o envio de confirmações de leitura (duplo check azul) para suas mensagens.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/confirmacoes-leitura" className={styles.cardLink}>
+  <a href="/docs/privacy/confirmacoes-leitura" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -91,7 +91,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Configure quem pode adicionar você em grupos do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/permissao-adicionar-grupos" className={styles.cardLink}>
+  <a href="/docs/privacy/permissao-adicionar-grupos" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -104,7 +104,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Gerencie a lista de contatos que não podem entrar em contato com você.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/contatos-nao-permitidos" className={styles.cardLink}>
+  <a href="/docs/privacy/contatos-nao-permitidos" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -117,7 +117,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Configure quem pode ver quando você está online no WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/visualizacao-online" className={styles.cardLink}>
+  <a href="/docs/privacy/visualizacao-online" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -130,7 +130,7 @@ Gerencie configurações de privacidade do WhatsApp através da API do Z-API. Co
   <div className={styles.cardDescription}>
     Configure mensagens temporárias que desaparecem automaticamente após um período definido.
   </div>
-  <a href="/Z-API-Central-Dev/docs/privacy/duracao-mensagens" className={styles.cardLink}>
+  <a href="/docs/privacy/duracao-mensagens" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

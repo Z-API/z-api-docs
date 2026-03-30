@@ -27,7 +27,7 @@ Discover and integrate third-party solutions compatible with the Z-API. Find pla
   <div className={styles.cardDescription}>
     Understand how to find and use integrators compatible with the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/integradors/introducao" className={styles.cardLink}>
+  <a href="/docs/integradors/introducao" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -40,7 +40,7 @@ Discover and integrate third-party solutions compatible with the Z-API. Find pla
   <div className={styles.cardDescription}>
     Discover which package or integrator is best for your specific needs.
   </div>
-  <a href="/Z-API-Central-Dev/docs/integradors/encontrar-meu-pacote" className={styles.cardLink}>
+  <a href="/docs/integradors/encontrar-meu-pacote" className={styles.cardLink}>
     See guide →
   </a>
 </div>

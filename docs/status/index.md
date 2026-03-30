@@ -28,7 +28,7 @@ Gerencie status (stories) do WhatsApp através da API do Z-API. Os status são m
   <div className={styles.cardDescription}>
     Entenda como gerenciar status (stories) do WhatsApp através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/introducao" className={styles.cardLink}>
+  <a href="/docs/status/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -41,7 +41,7 @@ Gerencie status (stories) do WhatsApp através da API do Z-API. Os status são m
   <div className={styles.cardDescription}>
     Envie status de texto para compartilhar mensagens temporárias com seus contatos.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/enviando-texto" className={styles.cardLink}>
+  <a href="/docs/status/enviando-texto" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -54,7 +54,7 @@ Gerencie status (stories) do WhatsApp através da API do Z-API. Os status são m
   <div className={styles.cardDescription}>
     Compartilhe imagens como status temporários que desaparecem após 24 horas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/enviando-imagem" className={styles.cardLink}>
+  <a href="/docs/status/enviando-imagem" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -67,7 +67,7 @@ Gerencie status (stories) do WhatsApp através da API do Z-API. Os status são m
   <div className={styles.cardDescription}>
     Compartilhe vídeos como status temporários para engajar seus contatos visualmente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/enviando-video" className={styles.cardLink}>
+  <a href="/docs/status/enviando-video" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -88,7 +88,7 @@ Gerencie status (stories) do WhatsApp através da API do Z-API. Os status são m
   <div className={styles.cardDescription}>
     Responda a status de outros usuários com mensagens de texto.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/responder-texto" className={styles.cardLink}>
+  <a href="/docs/status/responder-texto" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -101,7 +101,7 @@ Gerencie status (stories) do WhatsApp através da API do Z-API. Os status são m
   <div className={styles.cardDescription}>
     Responda a status com animações GIF para tornar suas respostas mais dinâmicas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/responder-gif" className={styles.cardLink}>
+  <a href="/docs/status/responder-gif" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -114,7 +114,7 @@ Gerencie status (stories) do WhatsApp através da API do Z-API. Os status são m
   <div className={styles.cardDescription}>
     Responda a status com stickers animados ou estáticos para expressar emoções.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/responder-sticker" className={styles.cardLink}>
+  <a href="/docs/status/responder-sticker" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

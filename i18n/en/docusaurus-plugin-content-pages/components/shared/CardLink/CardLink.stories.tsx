@@ -69,22 +69,22 @@ export const MultipleLinks: Story = {
       <CardLink
         title="Documentação"
         description="Acesse a documentação completa"
-        href="/Z-API-Central-Dev/docs/intro"
+        href="/docs/intro"
       />
       <CardLink
         title="Quick Start"
         description="Comece rapidamente"
-        href="/Z-API-Central-Dev/docs/quick-start/introducao"
+        href="/docs/quick-start/introducao"
       />
       <CardLink
         title="API Reference"
         description="Referência completa da API"
-        href="/Z-API-Central-Dev/docs/api-reference"
+        href="/docs/api-reference"
       />
       <CardLink
         title="Exemplos"
         description="Exemplos práticos de uso"
-        href="/Z-API-Central-Dev/docs/examples"
+        href="/docs/examples"
       />
     </div>
   ),

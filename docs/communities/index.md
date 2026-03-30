@@ -28,7 +28,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Entenda como gerenciar comunidades do WhatsApp através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/introducao" className={styles.cardLink}>
+  <a href="/docs/communities/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -41,7 +41,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Crie novas comunidades do WhatsApp para organizar grupos relacionados.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/criar" className={styles.cardLink}>
+  <a href="/docs/communities/criar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -54,7 +54,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Liste todas as comunidades da sua instância do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/listar" className={styles.cardLink}>
+  <a href="/docs/communities/listar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -67,7 +67,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Obtenha informações detalhadas sobre uma comunidade específica.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/metadata" className={styles.cardLink}>
+  <a href="/docs/communities/metadata" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -80,7 +80,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Desative uma comunidade do WhatsApp através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/desativar" className={styles.cardLink}>
+  <a href="/docs/communities/desativar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -101,7 +101,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Adicione novos participantes a uma comunidade existente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/adicionar-participantes" className={styles.cardLink}>
+  <a href="/docs/communities/adicionar-participantes" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -114,7 +114,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Remova participantes de uma comunidade através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/remover-participantes" className={styles.cardLink}>
+  <a href="/docs/communities/remover-participantes" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -127,7 +127,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Promova participantes a administradores da comunidade.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/promover-admin" className={styles.cardLink}>
+  <a href="/docs/communities/promover-admin" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -140,7 +140,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Remova privilégios de administrador de participantes da comunidade.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/remover-admin" className={styles.cardLink}>
+  <a href="/docs/communities/remover-admin" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -161,7 +161,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Vincule grupos existentes a uma comunidade para organizá-los hierarquicamente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/vincular-grupos" className={styles.cardLink}>
+  <a href="/docs/communities/vincular-grupos" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -174,7 +174,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Remova grupos de uma comunidade, desvinculando-os da estrutura hierárquica.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/desvincular-grupos" className={styles.cardLink}>
+  <a href="/docs/communities/desvincular-grupos" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -195,7 +195,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Atualize a descrição de uma comunidade através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/alterar-descricao" className={styles.cardLink}>
+  <a href="/docs/communities/alterar-descricao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -208,7 +208,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Configure as opções e permissões de uma comunidade.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/configuracoes" className={styles.cardLink}>
+  <a href="/docs/communities/configuracoes" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -221,7 +221,7 @@ Gerencie comunidades do WhatsApp através da API do Z-API. Crie comunidades, vin
   <div className={styles.cardDescription}>
     Gere um novo link de convite para a comunidade, invalidando o link anterior.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/redefinir-link" className={styles.cardLink}>
+  <a href="/docs/communities/redefinir-link" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

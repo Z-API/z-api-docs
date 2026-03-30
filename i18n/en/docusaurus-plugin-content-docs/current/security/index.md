@@ -27,7 +27,7 @@ Security is fundamental when using the Z-API. Protect your account, credentials,
   <div className={styles.cardDescription}>
     Learn how to use ID and Token for secure authentication of your requests to the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/security/id-e-token" className={styles.cardLink}>
+  <a href="/docs/security/id-e-token" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -40,7 +40,7 @@ Security is fundamental when using the Z-API. Protect your account, credentials,
   <div className={styles.cardDescription}>
     Configure additional security tokens to further protect your integrations and endpoints.
   </div>
-  <a href="/Z-API-Central-Dev/docs/security/token-seguranca" className={styles.cardLink}>
+  <a href="/docs/security/token-seguranca" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -53,7 +53,7 @@ Security is fundamental when using the Z-API. Protect your account, credentials,
   <div className={styles.cardDescription}>
     Configure IP restrictions to limit access to your API only to authorized IP addresses.
   </div>
-  <a href="/Z-API-Central-Dev/docs/security/restricao-ip" className={styles.cardLink}>
+  <a href="/docs/security/restricao-ip" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -66,7 +66,7 @@ Security is fundamental when using the Z-API. Protect your account, credentials,
   <div className={styles.cardDescription}>
     Configure two-factor authentication (2FA) to add an extra layer of security to your account.
   </div>
-  <a href="/Z-API-Central-Dev/docs/security/autenticacao-2fa" className={styles.cardLink}>
+  <a href="/docs/security/autenticacao-2fa" className={styles.cardLink}>
     See guide →
   </a>
 </div>

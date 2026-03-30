@@ -27,7 +27,7 @@ Use AI resources from Meta through the Z-API. Interact with integrated AI assist
   <div className={styles.cardDescription}>
     Understand how to use Meta AI resources through the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/meta-ai/introducao" className={styles.cardLink}>
+  <a href="/docs/meta-ai/introducao" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -40,7 +40,7 @@ Use AI resources from Meta through the Z-API. Interact with integrated AI assist
   <div className={styles.cardDescription}>
     Start chatting with Meta AI assistants on WhatsApp for research, recommendations, and more.
   </div>
-  <a href="/Z-API-Central-Dev/docs/meta-ai/conversar" className={styles.cardLink}>
+  <a href="/docs/meta-ai/conversar" className={styles.cardLink}>
     See guide →
   </a>
 </div>

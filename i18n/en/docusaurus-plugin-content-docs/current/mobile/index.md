@@ -28,7 +28,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Understand how to register and manage mobile numbers on WhatsApp through the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/introducao" className={styles.cardLink}>
+  <a href="/docs/mobile/introducao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -41,7 +41,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Check if a phone number is available for registration on WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/verificar-disponibilidade" className={styles.cardLink}>
+  <a href="/docs/mobile/verificar-disponibilidade" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -54,7 +54,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Request a verification code to register a number on WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/solicitar-codigo" className={styles.cardLink}>
+  <a href="/docs/mobile/solicitar-codigo" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -67,7 +67,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Confirm the received verification code to complete the number registration.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/confirmar-codigo" className={styles.cardLink}>
+  <a href="/docs/mobile/confirmar-codigo" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -88,7 +88,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Get the registered email associated with a number on WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/buscar-email" className={styles.cardLink}>
+  <a href="/docs/mobile/buscar-email" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -101,7 +101,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Register an email for account recovery and additional security.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/cadastrar-email" className={styles.cardLink}>
+  <a href="/docs/mobile/cadastrar-email" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -114,7 +114,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Remove the registered email from a number on WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/remover-email" className={styles.cardLink}>
+  <a href="/docs/mobile/remover-email" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -127,7 +127,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Check if an email is registered and validated for a number.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/verificar-email" className={styles.cardLink}>
+  <a href="/docs/mobile/verificar-email" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -148,7 +148,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Check if a PIN code is registered for a number on WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/verificar-codigo-pin" className={styles.cardLink}>
+  <a href="/docs/mobile/verificar-codigo-pin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -161,7 +161,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Register a PIN code for additional security on the WhatsApp account.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/cadastrar-codigo-pin" className={styles.cardLink}>
+  <a href="/docs/mobile/cadastrar-codigo-pin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -174,7 +174,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Confirm the received PIN code to activate the additional protection.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/confirmar-codigo-pin" className={styles.cardLink}>
+  <a href="/docs/mobile/confirmar-codigo-pin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -187,7 +187,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Request PIN code recovery if you have forgotten it.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/recuperacao-codigo-pin" className={styles.cardLink}>
+  <a href="/docs/mobile/recuperacao-codigo-pin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -200,7 +200,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Remove the registered PIN code from a number on WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/remover-codigo-pin" className={styles.cardLink}>
+  <a href="/docs/mobile/remover-codigo-pin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -221,7 +221,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Answer captcha challenges when prompted during registration.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/responder-captcha" className={styles.cardLink}>
+  <a href="/docs/mobile/responder-captcha" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -234,7 +234,7 @@ Use the Z-API to register and manage mobile numbers on WhatsApp. Check availabil
   <div className={styles.cardDescription}>
     Request the unban of a number that has been banned from WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/mobile/solicitar-desbanimento" className={styles.cardLink}>
+  <a href="/docs/mobile/solicitar-desbanimento" className={styles.cardLink}>
     View guide →
   </a>
 </div>

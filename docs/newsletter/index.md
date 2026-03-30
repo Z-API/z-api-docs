@@ -32,7 +32,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Entenda o que são os Canais do WhatsApp e como eles funcionam na Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/introducao" className={styles.cardLink}>
+  <a href="/docs/newsletter/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -45,7 +45,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Crie novos canais diretamente pela API (sem imagem inicial inicialmente).
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/criar-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/criar-canal" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -58,7 +58,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Defina ou atualize a foto de perfil do canal.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/atualizar-imagem" className={styles.cardLink}>
+  <a href="/docs/newsletter/atualizar-imagem" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -71,7 +71,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Modifique o nome de exibição do seu canal.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/atualizar-nome" className={styles.cardLink}>
+  <a href="/docs/newsletter/atualizar-nome" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -84,7 +84,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Altere a descrição pública do canal.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/atualizar-descricao" className={styles.cardLink}>
+  <a href="/docs/newsletter/atualizar-descricao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -97,7 +97,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Siga canais de terceiros para receber atualizações.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/seguir-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/seguir-canal" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -110,7 +110,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Pare de seguir um canal específico (Unfollow).
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/deixar-seguir" className={styles.cardLink}>
+  <a href="/docs/newsletter/deixar-seguir" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -123,7 +123,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Mute as notificações de um canal.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/silenciar-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/silenciar-canal" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -136,7 +136,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Volte a receber notificações de um canal (Unmute).
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/reativar-som" className={styles.cardLink}>
+  <a href="/docs/newsletter/reativar-som" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -149,7 +149,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Exclua permanentemente um canal que você administra.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/deletar-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/deletar-canal" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -162,7 +162,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Obtenha informações detalhadas sobre um canal específico via ID.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/metadata-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/metadata-canal" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -175,7 +175,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Liste todos os canais que a instância segue ou administra.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/listar-canais" className={styles.cardLink}>
+  <a href="/docs/newsletter/listar-canais" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -188,7 +188,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Pesquise canais por país, relevância ou termo de busca.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/buscar-canais" className={styles.cardLink}>
+  <a href="/docs/newsletter/buscar-canais" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -201,7 +201,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Altere configurações do canal, como permissões de reação.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/configuracoes-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/configuracoes-canal" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -214,7 +214,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Aceite convites recebidos para se tornar admin.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/aceitar-admin" className={styles.cardLink}>
+  <a href="/docs/newsletter/aceitar-admin" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -227,7 +227,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Remova privilégios de administrador de um usuário.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/remover-admin" className={styles.cardLink}>
+  <a href="/docs/newsletter/remover-admin" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -240,7 +240,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Cancele convites de admin enviados anteriormente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/revogar-convite-admin" className={styles.cardLink}>
+  <a href="/docs/newsletter/revogar-convite-admin" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -253,7 +253,7 @@ Gerencie canais do WhatsApp (Newsletters) através da API do Z-API. Crie, siga, 
   <div className={styles.cardDescription}>
     Transfira a propriedade total do canal para outro admin.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/transferir-propriedade" className={styles.cardLink}>
+  <a href="/docs/newsletter/transferir-propriedade" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

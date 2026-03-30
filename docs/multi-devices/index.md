@@ -26,7 +26,7 @@ Entenda o que é o Multi-Devices do WhatsApp e como o Z-API está totalmente com
   <div className={styles.cardDescription}>
     Entenda o Multi-Devices do WhatsApp e como o Z-API está totalmente compatível com esta nova versão.
   </div>
-  <a href="/Z-API-Central-Dev/docs/multi-devices/introducao" className={styles.cardLink}>
+  <a href="/docs/multi-devices/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Entenda o que é o Multi-Devices do WhatsApp e como o Z-API está totalmente com
   <div className={styles.cardDescription}>
     Informações sobre a versão beta do Multi-Devices e recursos experimentais.
   </div>
-  <a href="/Z-API-Central-Dev/docs/multi-devices/beta" className={styles.cardLink}>
+  <a href="/docs/multi-devices/beta" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

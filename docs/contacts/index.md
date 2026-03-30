@@ -26,7 +26,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Entenda como gerenciar sua lista de contatos do WhatsApp através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/introducao" className={styles.cardLink}>
+  <a href="/docs/contacts/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Liste todos os contatos salvos na sua instância do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/pegar-contatos" className={styles.cardLink}>
+  <a href="/docs/contacts/pegar-contatos" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -52,7 +52,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Obtenha informações detalhadas sobre um contato específico, incluindo nome, foto e status.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/metadata" className={styles.cardLink}>
+  <a href="/docs/contacts/metadata" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -65,7 +65,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Obtenha a foto de perfil de um contato específico através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/imagem" className={styles.cardLink}>
+  <a href="/docs/contacts/imagem" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -78,7 +78,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Verifique se um número de telefone possui WhatsApp e obtenha informações relacionadas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/numero-whatsapp" className={styles.cardLink}>
+  <a href="/docs/contacts/numero-whatsapp" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -91,7 +91,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Adicione novos contatos à sua lista de contatos do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/adicionar" className={styles.cardLink}>
+  <a href="/docs/contacts/adicionar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -104,7 +104,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Remova contatos da sua lista de contatos do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/remover" className={styles.cardLink}>
+  <a href="/docs/contacts/remover" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -117,7 +117,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Valide múltiplos números de telefone de uma vez para verificar quais possuem WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/validar-lote" className={styles.cardLink}>
+  <a href="/docs/contacts/validar-lote" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -130,7 +130,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Bloqueie um contato para impedir que ele envie mensagens para sua instância.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/bloquear" className={styles.cardLink}>
+  <a href="/docs/contacts/bloquear" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -143,7 +143,7 @@ Gerencie contatos do WhatsApp através da API do Z-API. Adicione, remova e valid
   <div className={styles.cardDescription}>
     Denuncie um contato por comportamento inadequado ou spam através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/denunciar" className={styles.cardLink}>
+  <a href="/docs/contacts/denunciar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

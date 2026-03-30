@@ -26,7 +26,7 @@ Make voice and video calls through the Z-API API. Initiate calls to your contact
   <div className={styles.cardDescription}>
     Understand how to make voice and video calls through the Z-API API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/calls/introducao" className={styles.cardLink}>
+  <a href="/docs/calls/introducao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -39,7 +39,7 @@ Make voice and video calls through the Z-API API. Initiate calls to your contact
   <div className={styles.cardDescription}>
     Initiate voice or video calls to your contacts through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/calls/fazer-ligacao" className={styles.cardLink}>
+  <a href="/docs/calls/fazer-ligacao" className={styles.cardLink}>
     View guide →
   </a>
 </div>

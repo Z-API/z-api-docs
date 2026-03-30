@@ -26,7 +26,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Learn the concept of webhooks and how they transform your automation from reactive to proactive.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/introducao" className={styles.cardLink}>
+  <a href="/docs/webhooks/introducao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -39,7 +39,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Configure webhooks to receive notifications when messages are received in your instance.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/ao-receber" className={styles.cardLink}>
+  <a href="/docs/webhooks/ao-receber" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -52,7 +52,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Receive updates on the delivery and read status of messages you have sent.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/status-mensagem" className={styles.cardLink}>
+  <a href="/docs/webhooks/status-mensagem" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -65,7 +65,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Configure webhooks to be notified when your instance is successfully connected.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/ao-conectar" className={styles.cardLink}>
+  <a href="/docs/webhooks/ao-conectar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -78,7 +78,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Receive notifications when your instance is disconnected to take immediate corrective actions.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/ao-desconectar" className={styles.cardLink}>
+  <a href="/docs/webhooks/ao-desconectar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -91,7 +91,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Monitor when users are typing, online, or viewing messages in real-time.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/chat-presence" className={styles.cardLink}>
+  <a href="/docs/webhooks/chat-presence" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -104,7 +104,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Receive confirmations when messages are successfully sent through your instance.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/ao-enviar" className={styles.cardLink}>
+  <a href="/docs/webhooks/ao-enviar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -117,7 +117,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Configure all webhooks at once using a single endpoint to simplify setup.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/atualizar-todos" className={styles.cardLink}>
+  <a href="/docs/webhooks/atualizar-todos" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -130,7 +130,7 @@ Webhooks are the backbone of any intelligent automation. They allow Z-API to not
   <div className={styles.cardDescription}>
     Configure specific notifications for sent messages, allowing granular control over events.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/atualizar-notificar-enviadas" className={styles.cardLink}>
+  <a href="/docs/webhooks/atualizar-notificar-enviadas" className={styles.cardLink}>
     View guide →
   </a>
 </div>

@@ -26,7 +26,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Entenda como gerenciar conversas e chats do WhatsApp através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/introducao" className={styles.cardLink}>
+  <a href="/docs/chats/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Liste todos os chats da sua instância do WhatsApp, incluindo conversas individuais e grupos.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/pegar" className={styles.cardLink}>
+  <a href="/docs/chats/pegar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -52,7 +52,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Obtenha informações detalhadas sobre um chat específico, incluindo participantes e configurações.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/metadata" className={styles.cardLink}>
+  <a href="/docs/chats/metadata" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -65,7 +65,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Marque mensagens de um chat como lidas para remover indicadores de "não lido".
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/ler" className={styles.cardLink}>
+  <a href="/docs/chats/ler" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -78,7 +78,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Arquivar ou desarquivar chats para organizar suas conversas e ocultar chats menos importantes.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/arquivar" className={styles.cardLink}>
+  <a href="/docs/chats/arquivar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -91,7 +91,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Fixe ou desafixe chats no topo da lista para acesso rápido aos mais importantes.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/fixar" className={styles.cardLink}>
+  <a href="/docs/chats/fixar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -104,7 +104,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Silencie ou ative notificações de chats específicos para controlar interrupções.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/mutar" className={styles.cardLink}>
+  <a href="/docs/chats/mutar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -117,7 +117,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Limpe todas as mensagens de um chat sem deletar o chat permanentemente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/limpar" className={styles.cardLink}>
+  <a href="/docs/chats/limpar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -130,7 +130,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Exclua permanentemente um chat da sua instância do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/deletar" className={styles.cardLink}>
+  <a href="/docs/chats/deletar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -143,7 +143,7 @@ Gerencie conversas e chats do WhatsApp através da API do Z-API. Liste chats, co
   <div className={styles.cardDescription}>
     Configure mensagens temporárias que desaparecem automaticamente após um período definido.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/expiracao" className={styles.cardLink}>
+  <a href="/docs/chats/expiracao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

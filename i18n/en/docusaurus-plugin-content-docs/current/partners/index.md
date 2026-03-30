@@ -27,7 +27,7 @@ Manage instances through the Z-API partner API. Create, sign up and cancel insta
   <div className={styles.cardDescription}>
     Understand how to use the partner API to manage multiple Z-API instances.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/introducao" className={styles.cardLink}>
+  <a href="/docs/partners/introducao" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -40,7 +40,7 @@ Manage instances through the Z-API partner API. Create, sign up and cancel insta
   <div className={styles.cardDescription}>
     Create new Z-API instances programmatically through the partner API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/criar-instancia" className={styles.cardLink}>
+  <a href="/docs/partners/criar-instancia" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -53,7 +53,7 @@ Manage instances through the Z-API partner API. Create, sign up and cancel insta
   <div className={styles.cardDescription}>
     List all instances associated with your partner account.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/listar-instancias" className={styles.cardLink}>
+  <a href="/docs/partners/listar-instancias" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -66,7 +66,7 @@ Manage instances through the Z-API partner API. Create, sign up and cancel insta
   <div className={styles.cardDescription}>
     Sign up an existing instance to activate it and start using it.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/assinar-instancia" className={styles.cardLink}>
+  <a href="/docs/partners/assinar-instancia" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -79,7 +79,7 @@ Manage instances through the Z-API partner API. Create, sign up and cancel insta
   <div className={styles.cardDescription}>
     Cancel an instance subscription to deactivate it or remove access.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/cancelar-instancia" className={styles.cardLink}>
+  <a href="/docs/partners/cancelar-instancia" className={styles.cardLink}>
     See guide →
   </a>
 </div>

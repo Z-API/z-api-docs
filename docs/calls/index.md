@@ -26,7 +26,7 @@ Faça chamadas de voz e vídeo através da API do Z-API. Inicie chamadas para se
   <div className={styles.cardDescription}>
     Entenda como fazer chamadas de voz e vídeo através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/calls/introducao" className={styles.cardLink}>
+  <a href="/docs/calls/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Faça chamadas de voz e vídeo através da API do Z-API. Inicie chamadas para se
   <div className={styles.cardDescription}>
     Inicie chamadas de voz ou vídeo para seus contatos através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/calls/fazer-ligacao" className={styles.cardLink}>
+  <a href="/docs/calls/fazer-ligacao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

@@ -29,7 +29,7 @@ Manage WhatsApp status (stories) through the Z-API. Status are temporary message
   <div className={styles.cardDescription}>
     Understand how to manage WhatsApp status (stories) through the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/introducao" className={styles.cardLink}>
+  <a href="/docs/status/introducao" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -42,7 +42,7 @@ Manage WhatsApp status (stories) through the Z-API. Status are temporary message
   <div className={styles.cardDescription}>
     Send text status to share temporary messages with your contacts.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/enviando-texto" className={styles.cardLink}>
+  <a href="/docs/status/enviando-texto" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -55,7 +55,7 @@ Manage WhatsApp status (stories) through the Z-API. Status are temporary message
   <div className={styles.cardDescription}>
     Share images as temporary status to engage your contacts visually.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/enviando-imagem" className={styles.cardLink}>
+  <a href="/docs/status/enviando-imagem" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -68,7 +68,7 @@ Manage WhatsApp status (stories) through the Z-API. Status are temporary message
   <div className={styles.cardDescription}>
     Share videos as temporary status to visually engage your contacts.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/enviando-video" className={styles.cardLink}>
+  <a href="/docs/status/enviando-video" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -89,7 +89,7 @@ Manage WhatsApp status (stories) through the Z-API. Status are temporary message
   <div className={styles.cardDescription}>
     Respond to other users' status with text messages.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/responder-texto" className={styles.cardLink}>
+  <a href="/docs/status/responder-texto" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -102,7 +102,7 @@ Manage WhatsApp status (stories) through the Z-API. Status are temporary message
   <div className={styles.cardDescription}>
     Respond to status with GIFs for more dynamic responses.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/responder-gif" className={styles.cardLink}>
+  <a href="/docs/status/responder-gif" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -115,7 +115,7 @@ Manage WhatsApp status (stories) through the Z-API. Status are temporary message
   <div className={styles.cardDescription}>
     Respond to status with animated or static stickers to express emotions.
   </div>
-  <a href="/Z-API-Central-Dev/docs/status/responder-sticker" className={styles.cardLink}>
+  <a href="/docs/status/responder-sticker" className={styles.cardLink}>
     See guide →
   </a>
 </div>

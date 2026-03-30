@@ -27,7 +27,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Understand how to avoid blocking and bans from WhatsApp, and what to do if this happens.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/bloqueios-e-banimentos" className={styles.cardLink}>
+  <a href="/docs/tips/bloqueios-e-banimentos" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -40,7 +40,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Updated guide for 2025 on how to avoid blocking and bans from WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/bloqueios-e-banimentos-2025" className={styles.cardLink}>
+  <a href="/docs/tips/bloqueios-e-banimentos-2025" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -53,7 +53,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Understand how interactive buttons work in WhatsApp messages.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/funcionamento-botoes" className={styles.cardLink}>
+  <a href="/docs/tips/funcionamento-botoes" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -66,7 +66,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Learn about LID (Linked ID) and how to use this unique identifier from WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/lid" className={styles.cardLink}>
+  <a href="/docs/tips/lid" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -79,7 +79,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Import the official Z-API collection in Postman to quickly test all endpoints.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/colecao-postman" className={styles.cardLink}>
+  <a href="/docs/tips/colecao-postman" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -92,7 +92,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Understand how file expiration works in WhatsApp and how to manage it.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/expiracao-arquivos" className={styles.cardLink}>
+  <a href="/docs/tips/expiracao-arquivos" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -105,7 +105,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Compare the Z-API with the official WhatsApp Business API and understand the differences.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/z-api-vs-api-oficial" className={styles.cardLink}>
+  <a href="/docs/tips/z-api-vs-api-oficial" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -118,7 +118,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Learn how to enable fixed numbers in WhatsApp for use with the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/habilitar-numero-fixo" className={styles.cardLink}>
+  <a href="/docs/tips/habilitar-numero-fixo" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -131,7 +131,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Tips on using Android emulators with the Z-API and best practices.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/emuladores" className={styles.cardLink}>
+  <a href="/docs/tips/emuladores" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -144,7 +144,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Tips to maintain stability and avoid frequent disconnections.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/estabilidade" className={styles.cardLink}>
+  <a href="/docs/tips/estabilidade" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -157,7 +157,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Configure your Android device to keep WhatsApp always active and connected.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/android-sempre-ativo" className={styles.cardLink}>
+  <a href="/docs/tips/android-sempre-ativo" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -170,7 +170,7 @@ Practical tips, troubleshooting, and best practices for using the Z-API efficien
   <div className={styles.cardDescription}>
     Configure screen lock to keep WhatsApp active even when the device is locked.
   </div>
-  <a href="/Z-API-Central-Dev/docs/tips/bloqueio-tela" className={styles.cardLink}>
+  <a href="/docs/tips/bloqueio-tela" className={styles.cardLink}>
     See guide →
   </a>
 </div>

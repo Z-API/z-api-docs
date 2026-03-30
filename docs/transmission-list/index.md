@@ -26,7 +26,7 @@ Envie mensagens para múltiplos destinatários usando listas de transmissão atr
   <div className={styles.cardDescription}>
     Entenda como usar listas de transmissão para enviar mensagens em massa mantendo a privacidade.
   </div>
-  <a href="/Z-API-Central-Dev/docs/transmission-list/introducao" className={styles.cardLink}>
+  <a href="/docs/transmission-list/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Envie mensagens para múltiplos destinatários usando listas de transmissão atr
   <div className={styles.cardDescription}>
     Crie novas listas de transmissão com contatos específicos para envio em massa.
   </div>
-  <a href="/Z-API-Central-Dev/docs/transmission-list/criar" className={styles.cardLink}>
+  <a href="/docs/transmission-list/criar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -54,7 +54,7 @@ Envie mensagens para múltiplos destinatários usando listas de transmissão atr
   <div className={styles.cardDescription}>
     Envie mensagens para todos os contatos de uma lista de transmissão de uma vez.
   </div>
-  <a href="/Z-API-Central-Dev/docs/transmission-list/enviar" className={styles.cardLink}>
+  <a href="/docs/transmission-list/enviar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -68,7 +68,7 @@ Envie mensagens para múltiplos destinatários usando listas de transmissão atr
   <div className={styles.cardDescription}>
     Gerencie suas listas de transmissão: adicione, remova contatos e atualize configurações.
   </div>
-  <a href="/Z-API-Central-Dev/docs/transmission-list/gerenciar" className={styles.cardLink}>
+  <a href="/docs/transmission-list/gerenciar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

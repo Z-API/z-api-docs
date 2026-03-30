@@ -206,7 +206,7 @@ function BlogListPage(props: BlogListPageProps): React.JSX.Element {
             <p className={styles.archivesDescription}>
               Explore todos os posts organizados por data.
             </p>
-            <a href="/Z-API-Central-Dev/blog/archive" className={styles.archiveLink}>
+            <a href="/blog/archive" className={styles.archiveLink}>
               Ver Arquivo Completo →
             </a>
           </div>

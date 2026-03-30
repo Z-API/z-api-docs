@@ -30,7 +30,7 @@ Comece com o essencial. Estas são as mensagens mais fundamentais para comunica�
   <div className={styles.cardDescription}>
     Bem-vindo à seção de mensagens do Z-API! Aprenda os conceitos fundamentais que se aplicam a todos os tipos de mensagem.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/introducao" className={styles.cardLink}>
+  <a href="/docs/messages/introducao" className={styles.cardLink}>
     Ver introdução →
   </a>
 </div>
@@ -43,7 +43,7 @@ Comece com o essencial. Estas são as mensagens mais fundamentais para comunica�
   <div className={styles.cardDescription}>
     O tipo de mensagem mais fundamental. Permite enviar qualquer conteúdo em formato de texto para um contato no WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/texto-simples" className={styles.cardLink}>
+  <a href="/docs/messages/texto-simples" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -56,7 +56,7 @@ Comece com o essencial. Estas são as mensagens mais fundamentais para comunica�
   <div className={styles.cardDescription}>
     Reencaminhe uma mensagem existente para um ou mais destinatários usando a API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/reencaminhar" className={styles.cardLink}>
+  <a href="/docs/messages/reencaminhar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -69,7 +69,7 @@ Comece com o essencial. Estas são as mensagens mais fundamentais para comunica�
   <div className={styles.cardDescription}>
     Adicione uma reação emoji a uma mensagem existente. Reações permitem responder rapidamente com emojis.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/reacao" className={styles.cardLink}>
+  <a href="/docs/messages/reacao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -92,7 +92,7 @@ Torne suas mensagens mais visuais e engajadoras com imagens, vídeos, áudios e 
   <div className={styles.cardDescription}>
     Envie imagens para tornar suas mensagens mais visuais e informativas. Inclua uma legenda opcional para dar contexto.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/imagem" className={styles.cardLink}>
+  <a href="/docs/messages/imagem" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -105,7 +105,7 @@ Torne suas mensagens mais visuais e engajadoras com imagens, vídeos, áudios e 
   <div className={styles.cardDescription}>
     Vídeos são uma forma poderosa de engajar seu público. Demonstre produtos, conte histórias ou ofereça suporte visual.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/video" className={styles.cardLink}>
+  <a href="/docs/messages/video" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -118,7 +118,7 @@ Torne suas mensagens mais visuais e engajadoras com imagens, vídeos, áudios e 
   <div className={styles.cardDescription}>
     Envie mensagens de áudio para comunicação mais pessoal e direta. Suporta arquivos de áudio e mensagens de voz.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/audio" className={styles.cardLink}>
+  <a href="/docs/messages/audio" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -131,7 +131,7 @@ Torne suas mensagens mais visuais e engajadoras com imagens, vídeos, áudios e 
   <div className={styles.cardDescription}>
     Envie arquivos diversos como PDFs, planilhas e documentos. Ideal para compartilhar informações detalhadas e contratos.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/documentos" className={styles.cardLink}>
+  <a href="/docs/messages/documentos" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -144,7 +144,7 @@ Torne suas mensagens mais visuais e engajadoras com imagens, vídeos, áudios e 
   <div className={styles.cardDescription}>
     Envie stickers animados ou estáticos para expressar emoções e reações de forma divertida.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/sticker" className={styles.cardLink}>
+  <a href="/docs/messages/sticker" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -157,7 +157,7 @@ Torne suas mensagens mais visuais e engajadoras com imagens, vídeos, áudios e 
   <div className={styles.cardDescription}>
     Envie animações GIF que se reproduzem automaticamente no WhatsApp para tornar suas mensagens mais dinâmicas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/gif" className={styles.cardLink}>
+  <a href="/docs/messages/gif" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -180,7 +180,7 @@ Crie experiências ricas e engajadoras com botões, listas, carrosséis e mais r
   <div className={styles.cardDescription}>
     Explore todos os tipos de mensagens interativas: botões, listas de opções, carrosséis e muito mais.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/botoes" className={styles.cardLink}>
+  <a href="/docs/messages/botoes" className={styles.cardLink}>
     Ver categoria →
   </a>
 </div>
@@ -193,7 +193,7 @@ Crie experiências ricas e engajadoras com botões, listas, carrosséis e mais r
   <div className={styles.cardDescription}>
     Crie menus interativos com listas de opções para guiar usuários através de fluxos de atendimento.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/lista-opcoes" className={styles.cardLink}>
+  <a href="/docs/messages/lista-opcoes" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -206,7 +206,7 @@ Crie experiências ricas e engajadoras com botões, listas, carrosséis e mais r
   <div className={styles.cardDescription}>
     Crie carrosséis de imagens interativos para mostrar múltiplos produtos ou opções de forma visual.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/carrossel" className={styles.cardLink}>
+  <a href="/docs/messages/carrossel" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -229,7 +229,7 @@ Compartilhe links, localizações, contatos e crie enquetes para coletar feedbac
   <div className={styles.cardDescription}>
     Envie links com preview automático. O WhatsApp gera automaticamente um preview com título, descrição e imagem.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/link" className={styles.cardLink}>
+  <a href="/docs/messages/link" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -242,7 +242,7 @@ Compartilhe links, localizações, contatos e crie enquetes para coletar feedbac
   <div className={styles.cardDescription}>
     Envie uma localização geográfica que aparece como um ponto no mapa do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/localizacao" className={styles.cardLink}>
+  <a href="/docs/messages/localizacao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -255,7 +255,7 @@ Compartilhe links, localizações, contatos e crie enquetes para coletar feedbac
   <div className={styles.cardDescription}>
     Envie informações de contato (vCard) que podem ser salvas diretamente no WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/contato" className={styles.cardLink}>
+  <a href="/docs/messages/contato" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -268,7 +268,7 @@ Compartilhe links, localizações, contatos e crie enquetes para coletar feedbac
   <div className={styles.cardDescription}>
     Envie a mesma mensagem para múltiplos destinatários de uma vez para comunicação em massa eficiente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/varios-contatos" className={styles.cardLink}>
+  <a href="/docs/messages/varios-contatos" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -281,7 +281,7 @@ Compartilhe links, localizações, contatos e crie enquetes para coletar feedbac
   <div className={styles.cardDescription}>
     Crie enquetes interativas para coletar opiniões e feedback. Permite votação em uma ou múltiplas opções.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/enquete" className={styles.cardLink}>
+  <a href="/docs/messages/enquete" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -304,7 +304,7 @@ Funcionalidades do WhatsApp Business para vendas, catálogos e gerenciamento de 
   <div className={styles.cardDescription}>
     Envie informações de produtos do seu catálogo WhatsApp Business com imagem, preço e descrição.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/produto" className={styles.cardLink}>
+  <a href="/docs/messages/produto" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -317,7 +317,7 @@ Funcionalidades do WhatsApp Business para vendas, catálogos e gerenciamento de 
   <div className={styles.cardDescription}>
     Envie um link para seu catálogo WhatsApp Business completo para navegação organizada de produtos.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/catalogo" className={styles.cardLink}>
+  <a href="/docs/messages/catalogo" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -330,7 +330,7 @@ Funcionalidades do WhatsApp Business para vendas, catálogos e gerenciamento de 
   <div className={styles.cardDescription}>
     Envie pedidos completos com produtos do catálogo ou customizados. Ideal para e-commerce e cobranças.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/aprovacao-pedido" className={styles.cardLink}>
+  <a href="/docs/messages/aprovacao-pedido" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -353,7 +353,7 @@ Gerencie suas mensagens: delete, marque como lida, responda e fixe mensagens imp
   <div className={styles.cardDescription}>
     Delete uma mensagem enviada. A mensagem será removida para todos os participantes da conversa.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/deletar" className={styles.cardLink}>
+  <a href="/docs/messages/deletar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -366,7 +366,7 @@ Gerencie suas mensagens: delete, marque como lida, responda e fixe mensagens imp
   <div className={styles.cardDescription}>
     Marque mensagens de um chat como lidas para remover indicadores de "não lido" e atualizar status.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/ler" className={styles.cardLink}>
+  <a href="/docs/messages/ler" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -379,7 +379,7 @@ Gerencie suas mensagens: delete, marque como lida, responda e fixe mensagens imp
   <div className={styles.cardDescription}>
     Responda a uma mensagem específica. A resposta aparecerá como uma resposta encadeada no WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/responder" className={styles.cardLink}>
+  <a href="/docs/messages/responder" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -392,7 +392,7 @@ Gerencie suas mensagens: delete, marque como lida, responda e fixe mensagens imp
   <div className={styles.cardDescription}>
     Fixe ou desafixe mensagens em um chat. Mensagens fixadas aparecem no topo e são destacadas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/fixar-desafixar" className={styles.cardLink}>
+  <a href="/docs/messages/fixar-desafixar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -415,7 +415,7 @@ Explore as funcionalidades mais recentes adicionadas à API, incluindo novos tip
   <div className={styles.cardDescription}>
     Envie códigos de autenticação (OTP) com botão de cópia fácil. Ótimo para 2FA.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/botao-otp" className={styles.cardLink}>
+  <a href="/docs/messages/botao-otp" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -428,7 +428,7 @@ Explore as funcionalidades mais recentes adicionadas à API, incluindo novos tip
   <div className={styles.cardDescription}>
     Envie códigos PIX copia e cola com botão dedicado para facilitar pagamentos.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/botao-pix" className={styles.cardLink}>
+  <a href="/docs/messages/botao-pix" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -441,7 +441,7 @@ Explore as funcionalidades mais recentes adicionadas à API, incluindo novos tip
   <div className={styles.cardDescription}>
     Atualize o status de pedidos com mensagens estruturadas para seus clientes.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/atualizacao-status-pedido" className={styles.cardLink}>
+  <a href="/docs/messages/atualizacao-status-pedido" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -454,7 +454,7 @@ Explore as funcionalidades mais recentes adicionadas à API, incluindo novos tip
   <div className={styles.cardDescription}>
     Envie convites para adicionar novos administradores aos seus canais (newsletter).
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/convite-admin-canal" className={styles.cardLink}>
+  <a href="/docs/messages/convite-admin-canal" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -467,7 +467,7 @@ Explore as funcionalidades mais recentes adicionadas à API, incluindo novos tip
   <div className={styles.cardDescription}>
     Envie convites para eventos com data, hora, localização e opção de chamada de vídeo.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/evento" className={styles.cardLink}>
+  <a href="/docs/messages/evento" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -480,7 +480,7 @@ Explore as funcionalidades mais recentes adicionadas à API, incluindo novos tip
   <div className={styles.cardDescription}>
     Edite informações de eventos já enviados, notificando os participantes.
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/editar-evento" className={styles.cardLink}>
+  <a href="/docs/messages/editar-evento" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -493,7 +493,7 @@ Explore as funcionalidades mais recentes adicionadas à API, incluindo novos tip
   <div className={styles.cardDescription}>
     Responda a convites de eventos via API (Comparecer, Talvez, Recusar).
   </div>
-  <a href="/Z-API-Central-Dev/docs/messages/responder-evento" className={styles.cardLink}>
+  <a href="/docs/messages/responder-evento" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

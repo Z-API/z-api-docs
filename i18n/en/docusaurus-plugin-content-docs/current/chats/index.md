@@ -27,7 +27,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     List all chats from your WhatsApp instance, including individual conversations and groups.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/pegar" className={styles.cardLink}>
+  <a href="/docs/chats/pegar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -40,7 +40,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     Obtain detailed information about a specific chat, including participants and settings.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/metadata" className={styles.cardLink}>
+  <a href="/docs/chats/metadata" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -53,7 +53,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     Mark messages from a chat as read to remove "unread" indicators.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/ler" className={styles.cardLink}>
+  <a href="/docs/chats/ler" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -66,7 +66,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     Archive or unarchive chats to organize your conversations and hide less important chats.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/arquivar" className={styles.cardLink}>
+  <a href="/docs/chats/arquivar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -79,7 +79,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     Pin or unpin chats to the top of the list for quick access to the most important ones.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/fixar" className={styles.cardLink}>
+  <a href="/docs/chats/fixar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -92,7 +92,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     Silence or enable notifications for specific chats to control interruptions.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/mutar" className={styles.cardLink}>
+  <a href="/docs/chats/mutar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -105,7 +105,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     Clear all messages from a chat without permanently deleting the chat.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/limpar" className={styles.cardLink}>
+  <a href="/docs/chats/limpar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -118,7 +118,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     Permanently delete a chat from your WhatsApp instance.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/deletar" className={styles.cardLink}>
+  <a href="/docs/chats/deletar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -131,7 +131,7 @@ Manage WhatsApp chats and conversations through the Z-API. List chats, control r
   <div className={styles.cardDescription}>
     Configure temporary messages that automatically disappear after a defined period.
   </div>
-  <a href="/Z-API-Central-Dev/docs/chats/expiracao" className={styles.cardLink}>
+  <a href="/docs/chats/expiracao" className={styles.cardLink}>
     View guide →
   </a>
 </div>

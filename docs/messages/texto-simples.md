@@ -100,7 +100,7 @@ A maioria das linguagens modernas suporta `\n` nativamente. Em JavaScript/TypeSc
 const message = "Primeira linha\nSegunda linha\nTerceira linha";
 ```
 
-Se você descobrir uma nova forma de fazer quebra de linha que funcione, [nos avise](https://github.com/CJBiohacker/Z-API-Central-Dev/issues) para incluirmos na documentação!
+Se você descobrir uma nova forma de fazer quebra de linha que funcione, [nos avise](https://github.com/CJBiohacker/issues) para incluirmos na documentação!
 
 ---
 

@@ -29,7 +29,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Understand how to manage WhatsApp communities through the Z-API API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/introducao" className={styles.cardLink}>
+  <a href="/docs/communities/introducao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -42,7 +42,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Create new WhatsApp communities to organize related groups.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/criar" className={styles.cardLink}>
+  <a href="/docs/communities/criar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -55,7 +55,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     List all communities from your WhatsApp instance.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/listar" className={styles.cardLink}>
+  <a href="/docs/communities/listar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -68,7 +68,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Get detailed information about a specific community.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/metadata" className={styles.cardLink}>
+  <a href="/docs/communities/metadata" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -81,7 +81,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   __PROTECTED_87d714b8-03d9-421d-89ca-cdd239639389__
     Disable a WhatsApp community through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/desativar" className={styles.cardLink}>
+  <a href="/docs/communities/desativar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -100,7 +100,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Add new participants to an existing community.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/adicionar-participantes" className={styles.cardLink}>
+  <a href="/docs/communities/adicionar-participantes" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -113,7 +113,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Remove participants from a community through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/remover-participantes" className={styles.cardLink}>
+  <a href="/docs/communities/remover-participantes" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -126,7 +126,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Promote participants to community administrators.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/promover-admin" className={styles.cardLink}>
+  <a href="/docs/communities/promover-admin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -139,7 +139,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Remove administrator privileges from community participants.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/remover-admin" className={styles.cardLink}>
+  <a href="/docs/communities/remover-admin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -160,7 +160,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Link existing groups to a community to organize them hierarchically.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/vincular-grupos" className={styles.cardLink}>
+  <a href="/docs/communities/vincular-grupos" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -173,7 +173,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Remove groups from a community, unlinking them from the hierarchical structure.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/desvincular-grupos" className={styles.cardLink}>
+  <a href="/docs/communities/desvincular-grupos" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -194,7 +194,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Update the description of a community through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/alterar-descricao" className={styles.cardLink}>
+  <a href="/docs/communities/alterar-descricao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -207,7 +207,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Configure the options and permissions of a community.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/configuracoes" className={styles.cardLink}>
+  <a href="/docs/communities/configuracoes" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -220,7 +220,7 @@ Manage WhatsApp communities through the Z-API API. Create communities, link grou
   <div className={styles.cardDescription}>
     Generate a new invitation link for the community, invalidating the previous one.
   </div>
-  <a href="/Z-API-Central-Dev/docs/communities/redefinir-link" className={styles.cardLink}>
+  <a href="/docs/communities/redefinir-link" className={styles.cardLink}>
     View guide →
   </a>
 </div>

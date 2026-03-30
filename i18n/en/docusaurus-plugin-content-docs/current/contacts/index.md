@@ -28,7 +28,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Understand how to manage your WhatsApp contact list through the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/introducao" className={styles.cardLink}>
+  <a href="/docs/contacts/introducao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -41,7 +41,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     List all contacts saved in your WhatsApp instance.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/pegar-contatos" className={styles.cardLink}>
+  <a href="/docs/contacts/pegar-contatos" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -54,7 +54,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Get detailed information about a specific contact, including name, photo and status.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/metadata" className={styles.cardLink}>
+  <a href="/docs/contacts/metadata" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -67,7 +67,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Get the profile photo of a specific contact through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/imagem" className={styles.cardLink}>
+  <a href="/docs/contacts/imagem" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -80,7 +80,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Check if a phone number has WhatsApp and get related information.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/numero-whatsapp" className={styles.cardLink}>
+  <a href="/docs/contacts/numero-whatsapp" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -93,7 +93,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Add new contacts to your WhatsApp contact list.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/adicionar" className={styles.cardLink}>
+  <a href="/docs/contacts/adicionar" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -106,7 +106,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Remove contacts from your WhatsApp contact list.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/remover" className={styles.cardLink}>
+  <a href="/docs/contacts/remover" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -119,7 +119,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Validate multiple phone numbers at once to check which ones have WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/validar-lote" className={styles.cardLink}>
+  <a href="/docs/contacts/validar-lote" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -132,7 +132,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Block a contact to prevent them from sending messages to your instance.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/bloquear" className={styles.cardLink}>
+  <a href="/docs/contacts/bloquear" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -145,7 +145,7 @@ Manage WhatsApp contacts through the Z-API. Add, remove and validate contacts, g
   <div className={styles.cardDescription}>
     Report a contact for inappropriate behavior or spam through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/contacts/denunciar" className={styles.cardLink}>
+  <a href="/docs/contacts/denunciar" className={styles.cardLink}>
     View guide →
   </a>
 </div>

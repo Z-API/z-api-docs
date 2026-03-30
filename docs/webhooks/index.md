@@ -26,7 +26,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Aprenda o conceito de webhooks e como eles transformam sua automação de reativa para proativa.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/introducao" className={styles.cardLink}>
+  <a href="/docs/webhooks/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Configure webhooks para receber notificações quando mensagens são recebidas na sua instância.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/ao-receber" className={styles.cardLink}>
+  <a href="/docs/webhooks/ao-receber" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -52,7 +52,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Receba atualizações sobre o status de entrega e leitura das mensagens que você enviou.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/status-mensagem" className={styles.cardLink}>
+  <a href="/docs/webhooks/status-mensagem" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -65,7 +65,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Configure webhooks para ser notificado quando sua instância é conectada com sucesso.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/ao-conectar" className={styles.cardLink}>
+  <a href="/docs/webhooks/ao-conectar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -78,7 +78,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Receba notificações quando sua instância é desconectada para tomar ações corretivas imediatas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/ao-desconectar" className={styles.cardLink}>
+  <a href="/docs/webhooks/ao-desconectar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -91,7 +91,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Monitore quando usuários estão digitando, online ou visualizando mensagens em tempo real.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/chat-presence" className={styles.cardLink}>
+  <a href="/docs/webhooks/chat-presence" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -104,7 +104,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Receba confirmações quando mensagens são enviadas com sucesso através da sua instância.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/ao-enviar" className={styles.cardLink}>
+  <a href="/docs/webhooks/ao-enviar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -117,7 +117,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Configure todos os webhooks de uma vez usando um único endpoint para simplificar a configuração.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/atualizar-todos" className={styles.cardLink}>
+  <a href="/docs/webhooks/atualizar-todos" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -130,7 +130,7 @@ Webhooks são a espinha dorsal de qualquer automação inteligente. Eles permite
   <div className={styles.cardDescription}>
     Configure notificações específicas para mensagens enviadas, permitindo controle granular sobre eventos.
   </div>
-  <a href="/Z-API-Central-Dev/docs/webhooks/atualizar-notificar-enviadas" className={styles.cardLink}>
+  <a href="/docs/webhooks/atualizar-notificar-enviadas" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

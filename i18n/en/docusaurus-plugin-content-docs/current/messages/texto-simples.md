@@ -100,7 +100,7 @@ Most modern languages support `\n` natively. In JavaScript/TypeScript, Python, P
 const message = "First line\nSecond line\nThird line";
 ```
 
-If you discover a new way to create line breaks that works, [let us know](https://github.com/CJBiohacker/Z-API-Central-Dev/issues) so we can include it in the documentation!
+If you discover a new way to create line breaks that works, [let us know](https://github.com/CJBiohacker/issues) so we can include it in the documentation!
 
 ---
 

@@ -29,7 +29,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Understand how to manage WhatsApp groups through the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/introducao" className={styles.cardLink}>
+  <a href="/docs/groups/introducao" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -42,7 +42,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Create new WhatsApp groups programmatically through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/criar" className={styles.cardLink}>
+  <a href="/docs/groups/criar" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -55,7 +55,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Search existing groups in your WhatsApp instance.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/buscar" className={styles.cardLink}>
+  <a href="/docs/groups/buscar" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -68,7 +68,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Get detailed information about a specific group.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/metadata" className={styles.cardLink}>
+  <a href="/docs/groups/metadata" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -81,7 +81,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Leave a WhatsApp group through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/sair" className={styles.cardLink}>
+  <a href="/docs/groups/sair" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -102,7 +102,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Add new participants to an existing group.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/adicionar-participantes" className={styles.cardLink}>
+  <a href="/docs/groups/adicionar-participantes" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -115,7 +115,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Remove participants from a group through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/remover-participantes" className={styles.cardLink}>
+  <a href="/docs/groups/remover-participantes" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -128,7 +128,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Promote participants to group administrators.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/promover-admin" className={styles.cardLink}>
+  <a href="/docs/groups/promover-admin" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -141,7 +141,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Demote participants from group administrators.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/remover-admin" className={styles.cardLink}>
+  <a href="/docs/groups/remover-admin" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -162,7 +162,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Update the name of a group through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/atualizar-nome" className={styles.cardLink}>
+  <a href="/docs/groups/atualizar-nome" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -175,7 +175,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Update the group profile picture.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/atualizar-imagem" className={styles.cardLink}>
+  <a href="/docs/groups/atualizar-imagem" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -188,7 +188,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Update the group description through the API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/alterar-descricao" className={styles.cardLink}>
+  <a href="/docs/groups/alterar-descricao" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -201,7 +201,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Configure the options and permissions of a group.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/configuracoes" className={styles.cardLink}>
+  <a href="/docs/groups/configuracoes" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -222,7 +222,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Get the group invitation link to share with new participants.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/obter-link" className={styles.cardLink}>
+  <a href="/docs/groups/obter-link" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -235,7 +235,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Generate a new group invitation link, invalidating the previous one.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/redefinir-link" className={styles.cardLink}>
+  <a href="/docs/groups/redefinir-link" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -248,7 +248,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Accept a group invitation through the invitation link.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/aceitar-convite" className={styles.cardLink}>
+  <a href="/docs/groups/aceitar-convite" className={styles.cardLink}>
     See guide →
   </a>
 </div>
@@ -261,7 +261,7 @@ Manage WhatsApp groups through the Z-API. Create groups, add and remove particip
   <div className={styles.cardDescription}>
     Get information about a group invitation link.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/metadata-convite" className={styles.cardLink}>
+  <a href="/docs/groups/metadata-convite" className={styles.cardLink}>
     See guide →
   </a>
 </div>

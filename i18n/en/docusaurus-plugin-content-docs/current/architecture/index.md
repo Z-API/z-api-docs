@@ -27,7 +27,7 @@ This page provides an overview of the Z-API architecture, showing how the main c
   <div className={styles.cardDescription}>
     Understand the complete Z-API architecture, including components, data flow and system interactions.
   </div>
-  <a href="/Z-API-Central-Dev/docs/architecture/overview" className={styles.cardLink}>
+  <a href="/docs/architecture/overview" className={styles.cardLink}>
     View guide →
   </a>
 </div>

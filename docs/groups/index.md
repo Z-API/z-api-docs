@@ -28,7 +28,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Entenda como gerenciar grupos do WhatsApp através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/introducao" className={styles.cardLink}>
+  <a href="/docs/groups/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -41,7 +41,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Crie novos grupos do WhatsApp programaticamente através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/criar" className={styles.cardLink}>
+  <a href="/docs/groups/criar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -54,7 +54,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Busque grupos existentes na sua instância do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/buscar" className={styles.cardLink}>
+  <a href="/docs/groups/buscar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -67,7 +67,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Obtenha informações detalhadas sobre um grupo específico.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/metadata" className={styles.cardLink}>
+  <a href="/docs/groups/metadata" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -80,7 +80,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Saia de um grupo do WhatsApp através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/sair" className={styles.cardLink}>
+  <a href="/docs/groups/sair" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -101,7 +101,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Adicione novos participantes a um grupo existente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/adicionar-participantes" className={styles.cardLink}>
+  <a href="/docs/groups/adicionar-participantes" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -114,7 +114,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Remova participantes de um grupo através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/remover-participantes" className={styles.cardLink}>
+  <a href="/docs/groups/remover-participantes" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -127,7 +127,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Promova participantes a administradores do grupo.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/promover-admin" className={styles.cardLink}>
+  <a href="/docs/groups/promover-admin" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -140,7 +140,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Remova privilégios de administrador de participantes do grupo.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/remover-admin" className={styles.cardLink}>
+  <a href="/docs/groups/remover-admin" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -161,7 +161,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Altere o nome de um grupo através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/atualizar-nome" className={styles.cardLink}>
+  <a href="/docs/groups/atualizar-nome" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -174,7 +174,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Atualize a foto de perfil de um grupo.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/atualizar-imagem" className={styles.cardLink}>
+  <a href="/docs/groups/atualizar-imagem" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -187,7 +187,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Altere a descrição do grupo através da API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/alterar-descricao" className={styles.cardLink}>
+  <a href="/docs/groups/alterar-descricao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -200,7 +200,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Configure as opções e permissões de um grupo.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/configuracoes" className={styles.cardLink}>
+  <a href="/docs/groups/configuracoes" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -221,7 +221,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Obtenha o link de convite de um grupo para compartilhar com novos participantes.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/obter-link" className={styles.cardLink}>
+  <a href="/docs/groups/obter-link" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -234,7 +234,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Gere um novo link de convite para o grupo, invalidando o link anterior.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/redefinir-link" className={styles.cardLink}>
+  <a href="/docs/groups/redefinir-link" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -247,7 +247,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Aceite um convite para entrar em um grupo através do link de convite.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/aceitar-convite" className={styles.cardLink}>
+  <a href="/docs/groups/aceitar-convite" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -260,7 +260,7 @@ Gerencie grupos do WhatsApp através da API do Z-API. Crie grupos, adicione e re
   <div className={styles.cardDescription}>
     Obtenha informações sobre um link de convite de grupo.
   </div>
-  <a href="/Z-API-Central-Dev/docs/groups/metadata-convite" className={styles.cardLink}>
+  <a href="/docs/groups/metadata-convite" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

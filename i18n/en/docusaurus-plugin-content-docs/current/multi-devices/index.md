@@ -27,7 +27,7 @@ Understand what the WhatsApp Multi-Devices is and how the Z-API is fully compati
   <div className={styles.cardDescription}>
     Understand the WhatsApp Multi-Devices and how the Z-API is fully compatible with this new version.
   </div>
-  <a href="/Z-API-Central-Dev/docs/multi-devices/introducao" className={styles.cardLink}>
+  <a href="/docs/multi-devices/introducao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -40,7 +40,7 @@ Understand what the WhatsApp Multi-Devices is and how the Z-API is fully compati
   <div className={styles.cardDescription}>
     Information about the beta version of Multi-Devices and experimental features.
   </div>
-  <a href="/Z-API-Central-Dev/docs/multi-devices/beta" className={styles.cardLink}>
+  <a href="/docs/multi-devices/beta" className={styles.cardLink}>
     View guide →
   </a>
 </div>

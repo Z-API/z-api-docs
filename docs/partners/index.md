@@ -26,7 +26,7 @@ Gerencie instâncias através da API de parceiros do Z-API. Crie, assine e cance
   <div className={styles.cardDescription}>
     Entenda como usar a API de parceiros para gerenciar múltiplas instâncias do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/introducao" className={styles.cardLink}>
+  <a href="/docs/partners/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Gerencie instâncias através da API de parceiros do Z-API. Crie, assine e cance
   <div className={styles.cardDescription}>
     Crie novas instâncias do Z-API programaticamente através da API de parceiros.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/criar-instancia" className={styles.cardLink}>
+  <a href="/docs/partners/criar-instancia" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -52,7 +52,7 @@ Gerencie instâncias através da API de parceiros do Z-API. Crie, assine e cance
   <div className={styles.cardDescription}>
     Liste todas as instâncias associadas à sua conta de parceiro.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/listar-instancias" className={styles.cardLink}>
+  <a href="/docs/partners/listar-instancias" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -65,7 +65,7 @@ Gerencie instâncias através da API de parceiros do Z-API. Crie, assine e cance
   <div className={styles.cardDescription}>
     Assine uma instância existente para ativá-la e começar a usá-la.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/assinar-instancia" className={styles.cardLink}>
+  <a href="/docs/partners/assinar-instancia" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -78,7 +78,7 @@ Gerencie instâncias através da API de parceiros do Z-API. Crie, assine e cance
   <div className={styles.cardDescription}>
     Cancele uma assinatura de instância para desativá-la ou remover o acesso.
   </div>
-  <a href="/Z-API-Central-Dev/docs/partners/cancelar-instancia" className={styles.cardLink}>
+  <a href="/docs/partners/cancelar-instancia" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

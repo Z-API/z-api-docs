@@ -28,7 +28,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Understand the advanced WhatsApp Business features available through the Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/introducao" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/introducao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -41,7 +41,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Create new products in your WhatsApp Business catalog with name, description, price and image.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/criar-produto" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/criar-produto" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -54,7 +54,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Update information of existing products in your catalog.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/editar-produto" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/editar-produto" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -67,7 +67,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     List all products from your WhatsApp Business catalog.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/pegar-produtos" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/pegar-produtos" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -80,7 +80,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Get products from a WhatsApp Business catalog using the phone number.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/pegar-produtos-telefone" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/pegar-produtos-telefone" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -93,7 +93,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Get detailed information of a specific product using its ID.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/pegar-produto-id" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/pegar-produto-id" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -106,7 +106,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Remove products from your WhatsApp Business catalog.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/deletar-produto" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/deletar-produto" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -119,7 +119,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Configure and manage options of your WhatsApp Business catalog.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/configuracao-catalogo" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/configuracao-catalogo" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -140,7 +140,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Create collections to organize your products into categories in the catalog.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/criar-colecao" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/criar-colecao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -153,7 +153,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     List all collections from your WhatsApp Business catalog.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/listar-colecoes" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/listar-colecoes" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -166,7 +166,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Update information of existing collections in your catalog.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/editar-colecao" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/editar-colecao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -179,7 +179,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Remove collections from your WhatsApp Business catalog.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/deletar-colecao" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/deletar-colecao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -192,7 +192,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Add existing products to a specific collection.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/adicionar-produtos-colecao" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/adicionar-produtos-colecao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -205,7 +205,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Remove products from a specific collection.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/remover-produtos-colecao" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/remover-produtos-colecao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -226,7 +226,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Search and list all available labels in your WhatsApp Business account.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/buscar-etiquetas" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/buscar-etiquetas" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -239,7 +239,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Create new labels to organize and categorize your conversations.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/criar-etiqueta" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/criar-etiqueta" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -252,7 +252,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Update the name and color of existing labels.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/editar-etiqueta" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/editar-etiqueta" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -265,7 +265,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Remove labels that are no longer needed.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/deletar-etiqueta" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/deletar-etiqueta" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -278,7 +278,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Assign labels to conversations to organize them by category or status.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/atribuir-etiquetas" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/atribuir-etiquetas" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -291,7 +291,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Remove labels from specific conversations.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/remover-etiquetas" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/remover-etiquetas" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -312,7 +312,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Get complete information about your WhatsApp Business account.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/dados-conta" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/dados-conta" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -325,7 +325,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Update your company description in the WhatsApp Business profile.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/alterar-descricao-empresa" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/alterar-descricao-empresa" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -338,7 +338,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Update your company address in the WhatsApp Business profile.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/alterar-endereco-empresa" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/alterar-endereco-empresa" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -351,7 +351,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Update your company contact email in the WhatsApp Business profile.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/alterar-email-empresa" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/alterar-email-empresa" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -364,7 +364,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Update your company websites in the WhatsApp Business profile.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/alterar-websites-empresa" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/alterar-websites-empresa" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -377,7 +377,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Configure your company's business hours in the WhatsApp Business profile.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/alterar-horario-funcionamento" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/alterar-horario-funcionamento" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -390,7 +390,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Assign categories to your WhatsApp Business account for better identification.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/atribuir-categorias" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/atribuir-categorias" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -411,7 +411,7 @@ Use specific WhatsApp Business features through the Z-API. Manage products, cata
   <div className={styles.cardDescription}>
     Add custom notes to conversations in WhatsApp Business.
   </div>
-  <a href="/Z-API-Central-Dev/docs/whatsapp-business/atribuir-anotacoes" className={styles.cardLink}>
+  <a href="/docs/whatsapp-business/atribuir-anotacoes" className={styles.cardLink}>
     View guide →
   </a>
 </div>

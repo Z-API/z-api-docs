@@ -28,7 +28,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Entenda o conceito de instância e como ela funciona como ponte entre seu WhatsApp e a plataforma Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/introducao" className={styles.cardLink}>
+  <a href="/docs/instance/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -41,7 +41,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Conecte sua instância escaneando o QR Code gerado pelo Z-API usando o WhatsApp do seu celular.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/qrcode" className={styles.cardLink}>
+  <a href="/docs/instance/qrcode" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -54,7 +54,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Verifique o status da sua instância para saber se está conectada, desconectada ou em processo de conexão.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/status" className={styles.cardLink}>
+  <a href="/docs/instance/status" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -67,7 +67,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Reinicie sua instância quando necessário para resolver problemas de conexão ou atualizar configurações.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/reiniciar" className={styles.cardLink}>
+  <a href="/docs/instance/reiniciar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -80,7 +80,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Desconecte sua instância de forma segura quando precisar encerrar a conexão temporariamente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/desconectar" className={styles.cardLink}>
+  <a href="/docs/instance/desconectar" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -93,7 +93,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Configure a leitura automática de mensagens para marcar mensagens recebidas como lidas automaticamente.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/leitura-automatica" className={styles.cardLink}>
+  <a href="/docs/instance/leitura-automatica" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -106,7 +106,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Configure sua instância para rejeitar automaticamente chamadas de voz e vídeo recebidas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/rejeitar-chamadas" className={styles.cardLink}>
+  <a href="/docs/instance/rejeitar-chamadas" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -127,7 +127,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Atualize a foto de perfil da sua instância do WhatsApp através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/atualizar-imagem-perfil" className={styles.cardLink}>
+  <a href="/docs/instance/atualizar-imagem-perfil" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -140,7 +140,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Altere o nome exibido no perfil da sua instância do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/atualizar-nome-perfil" className={styles.cardLink}>
+  <a href="/docs/instance/atualizar-nome-perfil" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -153,7 +153,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Atualize a descrição (status) do perfil da sua instância do WhatsApp.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/atualizar-descricao-perfil" className={styles.cardLink}>
+  <a href="/docs/instance/atualizar-descricao-perfil" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -174,7 +174,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Obtenha informações completas sobre sua instância, incluindo status, configurações e metadados.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/dados" className={styles.cardLink}>
+  <a href="/docs/instance/dados" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -187,7 +187,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Obtenha informações sobre o dispositivo celular associado à sua instância.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/dados-celular" className={styles.cardLink}>
+  <a href="/docs/instance/dados-celular" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -200,7 +200,7 @@ A instância é o coração da sua conexão com o Z-API. É a ponte digital que 
   <div className={styles.cardDescription}>
     Renomeie sua instância para facilitar a identificação e organização no painel do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/instance/renomear" className={styles.cardLink}>
+  <a href="/docs/instance/renomear" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

@@ -26,7 +26,7 @@ Descubra e integre soluções de terceiros compatíveis com o Z-API. Encontre pl
   <div className={styles.cardDescription}>
     Entenda como encontrar e usar integradores compatíveis com o Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/integradors/introducao" className={styles.cardLink}>
+  <a href="/docs/integradors/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Descubra e integre soluções de terceiros compatíveis com o Z-API. Encontre pl
   <div className={styles.cardDescription}>
     Descubra qual pacote ou integrador é melhor para suas necessidades específicas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/integradors/encontrar-meu-pacote" className={styles.cardLink}>
+  <a href="/docs/integradors/encontrar-meu-pacote" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>

@@ -32,7 +32,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Understand what WhatsApp Channels are and how they work with Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/introducao" className={styles.cardLink}>
+  <a href="/docs/newsletter/introducao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -45,7 +45,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Create new channels directly via API (initially without an image).
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/criar-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/criar-canal" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -58,7 +58,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Set or update the channel's profile picture.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/atualizar-imagem" className={styles.cardLink}>
+  <a href="/docs/newsletter/atualizar-imagem" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -71,7 +71,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Modify your channel's display name.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/atualizar-nome" className={styles.cardLink}>
+  <a href="/docs/newsletter/atualizar-nome" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -84,7 +84,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Change the channel's public description.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/atualizar-descricao" className={styles.cardLink}>
+  <a href="/docs/newsletter/atualizar-descricao" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -97,7 +97,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Follow third-party channels to receive updates.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/seguir-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/seguir-canal" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -110,7 +110,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Stop following a specific channel (Unfollow).
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/deixar-seguir" className={styles.cardLink}>
+  <a href="/docs/newsletter/deixar-seguir" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -123,7 +123,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Mute notifications from a channel.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/silenciar-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/silenciar-canal" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -136,7 +136,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Start receiving notifications from a channel again (Unmute).
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/reativar-som" className={styles.cardLink}>
+  <a href="/docs/newsletter/reativar-som" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -149,7 +149,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Permanently delete a channel you administer.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/deletar-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/deletar-canal" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -162,7 +162,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Get detailed information about a specific channel via ID.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/metadata-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/metadata-canal" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -175,7 +175,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     List all channels the instance follows or administers.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/listar-canais" className={styles.cardLink}>
+  <a href="/docs/newsletter/listar-canais" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -188,7 +188,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Search channels by country, relevance, or search term.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/buscar-canais" className={styles.cardLink}>
+  <a href="/docs/newsletter/buscar-canais" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -201,7 +201,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Change channel settings, such as reaction permissions.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/configuracoes-canal" className={styles.cardLink}>
+  <a href="/docs/newsletter/configuracoes-canal" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -214,7 +214,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Accept received invites to become an admin.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/aceitar-admin" className={styles.cardLink}>
+  <a href="/docs/newsletter/aceitar-admin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -227,7 +227,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Remove administrator privileges from a user.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/remover-admin" className={styles.cardLink}>
+  <a href="/docs/newsletter/remover-admin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -240,7 +240,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Cancel previously sent admin invites.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/revogar-convite-admin" className={styles.cardLink}>
+  <a href="/docs/newsletter/revogar-convite-admin" className={styles.cardLink}>
     View guide →
   </a>
 </div>
@@ -253,7 +253,7 @@ Manage WhatsApp Channels (Newsletters) through the Z-API. Create, follow, manage
   <div className={styles.cardDescription}>
     Transfer full channel ownership to another admin.
   </div>
-  <a href="/Z-API-Central-Dev/docs/newsletter/transferir-propriedade" className={styles.cardLink}>
+  <a href="/docs/newsletter/transferir-propriedade" className={styles.cardLink}>
     View guide →
   </a>
 </div>

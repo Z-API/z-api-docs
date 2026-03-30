@@ -26,7 +26,7 @@ Gerencie a fila de mensagens da sua instância do Z-API. Visualize mensagens pen
   <div className={styles.cardDescription}>
     Entenda como funciona a fila de mensagens e como gerenciá-la através da API do Z-API.
   </div>
-  <a href="/Z-API-Central-Dev/docs/message-queue/introducao" className={styles.cardLink}>
+  <a href="/docs/message-queue/introducao" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -39,7 +39,7 @@ Gerencie a fila de mensagens da sua instância do Z-API. Visualize mensagens pen
   <div className={styles.cardDescription}>
     Visualize todas as mensagens pendentes na fila da sua instância, incluindo status e informações detalhadas.
   </div>
-  <a href="/Z-API-Central-Dev/docs/message-queue/fila" className={styles.cardLink}>
+  <a href="/docs/message-queue/fila" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -52,7 +52,7 @@ Gerencie a fila de mensagens da sua instância do Z-API. Visualize mensagens pen
   <div className={styles.cardDescription}>
     Esvazie completamente a fila de mensagens, removendo todas as mensagens pendentes de uma vez.
   </div>
-  <a href="/Z-API-Central-Dev/docs/message-queue/apagar-fila" className={styles.cardLink}>
+  <a href="/docs/message-queue/apagar-fila" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
@@ -65,7 +65,7 @@ Gerencie a fila de mensagens da sua instância do Z-API. Visualize mensagens pen
   <div className={styles.cardDescription}>
     Remova uma mensagem específica da fila usando seu ID, sem afetar outras mensagens pendentes.
   </div>
-  <a href="/Z-API-Central-Dev/docs/message-queue/apagar-mensagem" className={styles.cardLink}>
+  <a href="/docs/message-queue/apagar-mensagem" className={styles.cardLink}>
     Ver guia →
   </a>
 </div>
