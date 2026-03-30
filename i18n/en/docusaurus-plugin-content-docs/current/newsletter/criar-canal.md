@@ -120,7 +120,7 @@ CURLcode ret = curl_easy_perform(hnd);
                                                                                                              :description "Canal oficial Z-API"}})
 ```
   </TabItem>
-  <TabItem value="go-native" label="Go (Native)">
+ <TabItem value="csharp-restsharp" label="C# (RestSharp)">
 
 ```csharp
 var client = new RestClient("https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/create-newsletter");

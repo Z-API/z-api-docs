@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 
 ## Method
 
-### /newsletter/revoke-admin-invite/{newsletterId}
+### /newsletter/revoke-admin-invite/newsletterId
 
 ```http
-POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/newsletter/revoke-admin-invite/{newsletterId}
+POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/newsletter/revoke-admin-invite/newsletterId
 ```
 
 ## Header

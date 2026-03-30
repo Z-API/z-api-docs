@@ -11,10 +11,10 @@ import TabItem from '@theme/TabItem';
 
 ## Method
 
-### /newsletter/settings/{newsletterId}
+### /newsletter/settings/newsletterId
 
 ```http
-POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/newsletter/settings/{newsletterId}
+POST https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/newsletter/settings/newsletterId
 ```
 
 ## Header

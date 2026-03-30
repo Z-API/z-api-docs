@@ -217,7 +217,7 @@ except ValueError as e:
 ```
 
 </TabItem>
-<TabItem value="typescript" label="TypeScript">
+<TabItem value="bash" label="cURL">
 
 ```bash
 # ⚠️ SEGURANÇA: Use variáveis de ambiente para credenciais
