@@ -35,6 +35,13 @@ POST https://api.z-api.io/instances/{instanceId}/token/{token}/send-call
 |-----------|---------|-------------|--------------------------------------------------|
 | phone | string | Sim | Número do destinatário no formato DDI + DDD + NÚMERO (ex: `5511999999999`) |
 | callDuration | number | Não | Aqui você define por quanto tempo você quer que a ligação dure, por padrão a ligação terá duração de 5 segundos, mas você pode aumentar até 15 segundos |
+| callAudioUrl | string | Não | Link do áudio (bitrate 16k) |
+
+:::caution Atenção
+
+O atributo **callAudioUrl** está disponível apenas para contas que possuem a funcionalidade de chamadas habilitada.
+
+:::
 
 
 ## Respostas

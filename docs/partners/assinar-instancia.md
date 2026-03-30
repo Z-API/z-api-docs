@@ -17,8 +17,26 @@ Ative a assinatura de uma instância criada via Partner API.
 
 ## Corpo da requisição
 
-Os campos aceitos (por exemplo, identificador da instância, plano, ciclo de cobrança) devem seguir exatamente o schema descrito nesta página. Consulte a seção [**API de Partners**](/docs/partners/assinar-instancia) para detalhes.
+### Parâmetros Opcionais
+
+| Campo | Tipo | Obrigatório | Descrição |
+|-------|------|-------------|-----------|
+| `withCalls` | boolean | Não | Define se a instância será criada com suporte a chamadas (ligações) |
+
+:::caution Atenção
+
+O atributo **withCalls** é opcional. Caso não seja enviado, a requisição continuará funcionando normalmente com o comportamento padrão. Este recurso está disponível apenas para contas que possuem a funcionalidade de chamadas habilitada.
+
+:::
+
+### Exemplo de Request Body
+
+```json
+{
+    "withCalls": true
+}
+```
 
 ## Resposta
 
-A resposta confirma a ativação da assinatura para a instância e retorna os dados atualizados (plano, status, datas de início/fim, etc.). Consulte esta documentação para o formato completo e exemplos de uso.
+Retorna o status `200 OK`, indicando que a requisição foi processada com sucesso. Nenhum conteúdo é retornado no corpo da resposta.

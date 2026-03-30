@@ -297,7 +297,11 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: true,
       customProps: { icon: "Phone" },
-      items: ["calls/introducao", "calls/fazer-ligacao"],
+      items: [
+        "calls/introducao",
+        "calls/fazer-ligacao",
+        "calls/call-token"
+      ],
     },
     {
       type: "category",
@@ -602,6 +606,7 @@ const sidebars: SidebarsConfig = {
         "partners/listar-instancias",
         "partners/assinar-instancia",
         "partners/cancelar-instancia",
+        "partners/atualizar-instancia",
       ],
     },
     {
