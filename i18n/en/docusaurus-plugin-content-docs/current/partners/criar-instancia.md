@@ -32,34 +32,44 @@ Create a new on-demand instance for a customer through the Partner API.
 
 ### Optional Parameters
 
-| Field | Type | Required | Description |
-|-------|------|----------|------------|
-| `deliveryCallbackUrl` | string | No | Callback URL for message delivery notifications |
-| `receivedCallbackUrl` | string | No | Callback URL for message receipt notifications |
-| `receivedAndDeliveryCallbackUrl` | string | No | Unified callback URL for received and delivered messages |
-| `disconnectedCallbackUrl` | string | No | Callback URL for disconnection notifications |
-| `connectedCallbackUrl` | string | No | Callback URL for connection notifications |
-| `messageStatusCallbackUrl` | string | No | Callback URL for message status updates |
-| `callRejectAuto` | boolean | No | If `true`, automatically rejects incoming calls |
-| `isDevice` | boolean | No | Indicates if the instance is a physical device |
-| `businessDevice` | boolean | No | Indicates if the instance is a business device (WhatsApp Business) |
-| `disableEnqueueWhenDisconnected` | boolean | No | This parameter enables /desabilita message queuing when creating the instance. |
+| Field                            | Type    | Required | Description                                                                      |
+| -------------------------------- | ------- | -------- | -------------------------------------------------------------------------------- |
+| `sessionName`                    | string  | No       | Attribute to change the session name on WhatsApp (on connected devices)          |
+| `deliveryCallbackUrl`            | string  | No       | Webhook endpoint for delivered messages (delivery)                               |
+| `receivedCallbackUrl`            | string  | No       | Webhook endpoint for received messages (receive)                                 |
+| `receivedAndDeliveryCallbackUrl` | string  | No       | Webhook endpoint for messages received and sent by me (receive)                  |
+| `presenceChatCallbackUrl`        | string  | No       | Webhook endpoint for chat status (PresenceChat)                                  |
+| `disconnectedCallbackUrl`        | string  | No       | Webhook endpoint for disconnection or communication loss (disconnected)          |
+| `connectedCallbackUrl`           | string  | No       | Webhook endpoint for connection (connected)                                      |
+| `messageStatusCallbackUrl`       | string  | No       | Webhook endpoint for message status                                              |
+| `callRejectAuto`                 | boolean | No       | If `true`, automatically rejects incoming calls                                  |
+| `callRejectMessage`              | string  | No       | Message sent after automatically rejecting a call                                |
+| `autoReadMessage`                | boolean | No       | Automatically marks messages as read                                             |
+| `autoReadStatus`                 | boolean | No       | Automatically marks status as read                                               |
+| `isDevice`                       | boolean | No       | Defines whether the instance will be mobile or web; if `true`, it will be mobile |
+| `businessDevice`                 | boolean | No       | Choose between WhatsApp Business or regular version                              |
+| `disableEnqueueWhenDisconnected` | boolean | No       | Enables/disables message queueing when the instance is disconnected              |
 
 ### Example of Request Body
 
 ```json
 {
-  "name": "Meu cliente X",
-  "sessionName": "cliente-x-session",
-  "deliveryCallbackUrl": "https://meuservidor.com/webhooks/delivery",
-  "receivedCallbackUrl": "https://meuservidor.com/webhooks/received",
-  "receivedAndDeliveryCallbackUrl": "https://meuservidor.com/webhooks/unified",
-  "disconnectedCallbackUrl": "https://meuservidor.com/webhooks/disconnected",
-  "connectedCallbackUrl": "https://meuservidor.com/webhooks/connected",
-  "messageStatusCallbackUrl": "https://meuservidor.com/webhooks/status",
-  "callRejectAuto": false,
-  "isDevice": false,
-  "businessDevice": true
+    "name": "Instancia Z-API - 9292812",
+    "sessionName": "Testes testes",
+    "deliveryCallbackUrl": "https://mywebhook.com/delivery",
+    "receivedCallbackUrl": "https://mywebhook.com/receive",
+    "receivedAndDeliveryCallbackUrl": "https://mywebhook.com/receivedanddelivery",
+    "disconnectedCallbackUrl": "https://mywebhook.com/disconnected",
+    "connectedCallbackUrl": "https://mywebhook.com/connected",
+    "presenceChatCallbackUrl": "https://mywebhook.com/presencechat",
+    "messageStatusCallbackUrl": "https://mywebhook.com/status",
+    "callRejectAuto": false,
+    "callRejectMessage": "Test message for rejected calls",
+    "autoReadMessage": false,
+    "autoReadStatus": false,
+    "isDevice": false,
+    "businessDevice": false,
+    "disableEnqueueWhenDisconnected": true
 }
 ```
 

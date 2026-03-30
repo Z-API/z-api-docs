@@ -29,38 +29,47 @@ Crie uma nova instância on-demand para um cliente através da Partner API.
 | Campo | Tipo | Obrigatório | Descrição |
 |-------|------|-------------|-----------|
 | `name` | string | Sim | Nome da instância a ser criada |
-| `sessionName` | string | Sim | Nome da sessão da instância |
 
 ### Parâmetros Opcionais
 
 | Campo | Tipo | Obrigatório | Descrição |
 |-------|------|-------------|-----------|
-| `deliveryCallbackUrl` | string | Não | URL de callback para notificações de entrega de mensagens |
-| `receivedCallbackUrl` | string | Não | URL de callback para notificações de mensagens recebidas |
-| `receivedAndDeliveryCallbackUrl` | string | Não | URL de callback unificada para mensagens recebidas e entregues |
-| `disconnectedCallbackUrl` | string | Não | URL de callback para notificações de desconexão |
-| `connectedCallbackUrl` | string | Não | URL de callback para notificações de conexão |
-| `messageStatusCallbackUrl` | string | Não | URL de callback para atualizações de status de mensagens |
+| `sessionName` | string | Não | Atributo para alterar o nome da sessão no whatsapp (em aparelhos conectados) |
+| `deliveryCallbackUrl` | string | Não | EndPoint do webhook de mensagens entregues - delivery |
+| `receivedCallbackUrl` | string | Não | EndPoint do webhook de mensagens recebidas - receive |
+| `receivedAndDeliveryCallbackUrl` | string | Não | EndPoint do webhook de mensagens recebidas e enviadas por mim - receive |
+| `presenceChatCallbackUrl` | string | Não | EndPoint do webhook de status do chat - PresenceChat |
+| `disconnectedCallbackUrl` | string | Não | EndPoint do webhook de desconexão ou perca de comunicação - disconnected |
+| `connectedCallbackUrl` | string | Não | EndPoint do webhook de conexão - connected |
+| `messageStatusCallbackUrl` | string | Não | EndPoint do webhook de status da mensagem |
 | `callRejectAuto` | boolean | Não | Se `true`, rejeita automaticamente chamadas recebidas |
-| `isDevice` | boolean | Não | Indica se a instância é um dispositivo físico |
-| `businessDevice` | boolean | Não | Indica se a instância é um dispositivo de negócios (WhatsApp Business) |
-| `disableEnqueueWhenDisconnected` | boolean | Não | Esse parâmetro habilita/desabilita enfileiramento de mensagem na hora de criar a instância. |
+| `callRejectMessage` | string | Não | Mensagem após rejeitar uma chamada automáticamente |
+| `autoReadMessage` | boolean | Não | Leitura automática das mensagens |
+| `autoReadStatus` | boolean | Não | Leitura automática dos status |
+| `isDevice` | boolean | Não | Define se a instância será mobile ou web, se `true`, a instância será mobile |
+| `businessDevice` | boolean | Não | Escolha entre a versão empresarial ou normal do WhatsApp |
+| `disableEnqueueWhenDisconnected` | boolean | Não | Habilita/desabilita enfileiramento de mensagem na hora de criar a instância |
 
 ### Exemplo de Request Body
 
 ```json
 {
-  "name": "Meu cliente X",
-  "sessionName": "cliente-x-session",
-  "deliveryCallbackUrl": "https://meuservidor.com/webhooks/delivery",
-  "receivedCallbackUrl": "https://meuservidor.com/webhooks/received",
-  "receivedAndDeliveryCallbackUrl": "https://meuservidor.com/webhooks/unified",
-  "disconnectedCallbackUrl": "https://meuservidor.com/webhooks/disconnected",
-  "connectedCallbackUrl": "https://meuservidor.com/webhooks/connected",
-  "messageStatusCallbackUrl": "https://meuservidor.com/webhooks/status",
-  "callRejectAuto": false,
-  "isDevice": false,
-  "businessDevice": true
+    "name": "Instancia Z-API - 9292812",
+    "sessionName": "Testes testes",
+    "deliveryCallbackUrl": "https://meuwebhook.com.br/delivery",
+    "receivedCallbackUrl": "https://meuwebhook.com.br/receive",
+    "receivedAndDeliveryCallbackUrl": "https://meuwebhook.com.br/receivedanddelivery",
+    "disconnectedCallbackUrl": "https://meuwebhook.com.br/disconnected",
+    "connectedCallbackUrl": "https://meuwebhook.com.br/connected",
+    "presenceChatCallbackUrl": "https://meuwebhook.com.br/presenceChat",
+    "messageStatusCallbackUrl": "https://meuwebhook.com.br/status",
+    "callRejectAuto": false,
+    "callRejectMessage": "Teste de mensagem ao rejeitar",
+    "autoReadMessage": false,
+    "autoReadStatus": false,
+    "isDevice": false,
+    "businessDevice": false,
+    "disableEnqueueWhenDisconnected": true
 }
 ```
 
