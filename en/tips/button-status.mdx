@@ -1,0 +1,103 @@
+---
+title: Button Behavior
+---
+
+## Introduction
+
+In recent weeks, messages containing buttons have been experiencing instability in their behavior.
+
+**It's important to note that this is not an issue exclusive to Z-API.**
+
+This topic describes how buttons behave on WhatsApp in different scenarios.
+
+---
+
+<Warning>
+**Attention**
+
+This documentation was updated on 08/27/2024, so the facts about button behavior are based on the reality of that date. Remember that with each WhatsApp update, buttons may change.
+</Warning>
+
+## Decisive factors:
+
+#### For buttons to work on WhatsApp, there are two decisive factors:
+
+- Whether the WhatsApp sending the message is Business or regular
+- Whether the message is being sent to a regular chat or a group
+- Accepting the button terms of use
+
+## Accepting the Button Terms of Use
+
+To use the button feature, you must accept the terms of use, acknowledging that you are aware that future WhatsApp updates may cause instability in this feature.
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img src="/images/buttons-terms.jpeg" width="400" />
+</div>
+
+## Button types
+
+#### There are seven types of buttons on WhatsApp:
+
+- Simple text button (/send-button-list)
+- Simple image button (/send-button-list-image)
+- Simple video button (/send-button-list-video)
+- Option list (/send-option-list)
+- Action buttons (/send-button-actions)
+- Copy button (/send-button-otp)
+- PIX button (/send-button-pix)
+
+---
+
+## Button behavior:
+
+### [Simple text button:](https://developer.z-api.io/message/send-button-list)
+
+- Sending from Regular WhatsApp to Group: **WORKS**
+- Sending from Regular WhatsApp to Regular Chat: **WORKS**
+- Sending from WhatsApp Business to Regular Chat: **WORKS**
+- Sending from WhatsApp Business to Group: **WORKS**
+
+### [Simple image button:](https://developer.z-api.io/message/send-button-list-image)
+
+- Sending from Regular WhatsApp to Regular Chat: **WORKS**
+- Sending from Regular WhatsApp to Group: **WORKS**
+- Sending from WhatsApp Business to Regular Chat: **WORKS**
+- Sending from WhatsApp Business to Group: **WORKS**
+
+### [Simple video button:](https://developer.z-api.io/message/send-button-list-video)
+
+- Sending from Regular WhatsApp to Regular Chat: **WORKS**
+- Sending from Regular WhatsApp to Group: **WORKS**
+- Sending from WhatsApp Business to Regular Chat: **WORKS**
+- Sending from WhatsApp Business to Group: **WORKS**
+
+### [Option list:](https://developer.z-api.io/message/send-option-list)
+
+- Sending from Regular WhatsApp to Regular Chat: **WORKS**
+- Sending from Regular WhatsApp to Group: **WORKS**
+- Sending from WhatsApp Business to Regular Chat: **WORKS**
+- Sending from WhatsApp Business to Group: **WORKS**
+
+### [Action buttons:](https://developer.z-api.io/message/send-button-actions)
+
+- Sending from Regular WhatsApp to Regular Chat: **WORKS**
+- Sending from Regular WhatsApp to Group: **WORKS**
+- Sending from WhatsApp Business to Regular Chat: **WORKS**
+- Sending from WhatsApp Business to Group: **WORKS**
+
+### [Copy button:](https://developer.z-api.io/message/send-button-otp)
+
+- Sending from Regular WhatsApp to Regular Chat: **WORKS**
+- Sending from Regular WhatsApp to Group: **WORKS**
+- Sending from WhatsApp Business to Regular Chat: **WORKS**
+- Sending from WhatsApp Business to Group: **WORKS**
+
+### [PIX button:](https://developer.z-api.io/message/send-button-pix)
+
+- Sending from Regular WhatsApp to Regular Chat: **WORKS**
+- Sending from Regular WhatsApp to Group: **WORKS**
+- Sending from WhatsApp Business to Regular Chat: **WORKS**
+- Sending from WhatsApp Business to Group: **WORKS**
+
+## Summary
+
+In summary, the use of button features on WhatsApp is subject to instability. Both for regular WhatsApp and WhatsApp Business, there are difficulties sending these button types in regular chats and groups. Option lists for regular chats work. If you're using WhatsApp Business, the only thing working is the option list for regular chat, with issues for groups.

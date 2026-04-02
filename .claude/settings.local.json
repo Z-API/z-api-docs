@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:mintlify.com)",
+      "Bash(__NEW_LINE_e14b8475268b1741__ cat:*)",
+      "Bash(/Users/rai/nova-doc-zapi/instance/introduction.mdx:*)",
+      "Bash(/Users/rai/nova-doc-zapi/webhooks/introduction.mdx:*)",
+      "Bash(/Users/rai/nova-doc-zapi/contacts/introduction.mdx:*)",
+      "Bash(curl:*)",
+      "Bash(find /opt/homebrew/lib/node_modules/mintlify -maxdepth 2 -name *.js -not -path */node_modules/*)",
+      "Bash(find /opt/homebrew/lib/node_modules/mintlify/node_modules/@mintlify/models -name *.d.ts)"
+    ]
+  }
+}

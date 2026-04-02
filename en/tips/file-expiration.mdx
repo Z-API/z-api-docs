@@ -1,0 +1,22 @@
+---
+title: File Expiration Period
+---
+
+## How it works
+
+<Warning>
+**What is the expiration period for Z-API files?**
+
+All media files received from Z-API through your webhook have an expiration period of **30 days**. After this period, all files — audio, PDF, image, etc. — will be deleted from storage.
+</Warning>
+
+Z-API offers webhook functionality to receive text and files directly in your application, without the need to store this information on our servers. This means your application has full control over the data received, which is especially important for complying with data protection laws.
+
+If you want to store all received media, you must implement an internal storage system in your own application to manage this data according to your own privacy and security policies. Our webhook solution helps ensure the security of your customers' data while simplifying the process of receiving information in your application.
+
+---
+
+To implement this storage, you can use various technologies available on the market, such as:
+
+- Amazon S3
+- Google Cloud Storage

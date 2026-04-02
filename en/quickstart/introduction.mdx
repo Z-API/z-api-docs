@@ -1,0 +1,78 @@
+---
+title: Introduction
+slug: /en
+---
+
+## Z-API - Wings for your imagination!
+
+**Z-API** was developed by **developers for developers**, so we value simplicity and objectivity in everything we do — no fluff, just results. **Let's go!**
+
+---
+
+## But what is Z-API?
+
+You probably already know, but let's reaffirm!
+
+**Z-API** is a RESTful service that provides an API allowing you to interact with your WhatsApp through a simple and intuitive interface, along with webhooks to notify you about interactions with your number.
+
+<Warning>
+**Important**
+
+Z-API reaffirms that it is not intended for SPAM, sending unwanted messages, or any action that violates WhatsApp's terms of service.
+
+Use the API wisely by creating features that generate value for your customers and WhatsApp users.
+</Warning>
+
+---
+
+## Who can use Z-API?
+
+We have no restrictions on usage, but generally there are 2 distinct audiences who use our services:
+
+- Developers with knowledge of RESTful APIs. If you're not one, but know someone with these skills, that works too :)
+
+- Users of third-party solutions that allow integration with Z-API
+
+---
+
+## What can I do with it?
+
+Simply put, everything you do with WhatsApp Web you can do using our service. Just scan Z-API's QR code and start using our service!
+
+---
+
+## Technically, how does the sending flow work?
+
+Here are the steps for sending a simple text message:
+
+1. You send a message to Z-API via API;
+
+2. Z-API adds it to a queue and returns the message ID;
+
+3. Your instance processes the queue, sending it to WhatsApp;
+
+4. Your delivery webhook is called when the message is processed, notifying you that it was sent or that there was a failure.
+
+5. As soon as the recipient receives the message, the message-status webhook is called with RECEIVED.
+
+6. Finally, when the recipient reads the message, messages-status is called with READ.
+
+---
+
+## Limits
+
+We start here because people often ask about sending limits with Z-API. We have **NO LIMIT** on the number of messages sent! But it's important to understand that you are using a WhatsApp Web session, so usage patterns need to be compatible. We also always recommend carefully reading WhatsApp's policies at https://www.whatsapp.com/legal.
+
+---
+
+<Note>
+**WE DO NOT STORE MESSAGES!**
+
+All messages sent to our API will be forwarded to a message queue and deleted after sending.
+</Note>
+
+<Warning>
+**Remember**
+
+Facebook has different behaviors for each version of WhatsApp. Our API provides methods compatible with the WEB version.
+</Warning>

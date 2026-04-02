@@ -1,0 +1,51 @@
+---
+title: Blocks and Bans (2025)
+---
+
+## Introduction
+
+The discussion around WhatsApp bans involving IPs, ASNs, and phone numbers is complex and involves multiple variables. Over the past four years, we've conducted various tests with both WhatsApp Web (QR code generator) and the device connected to that QR code.
+
+What we've learned is that while IP and ASN have some relevance, they are not the primary factors determining a ban. We've already implemented an IP rotation strategy in cycles of 15, 30, 45, and 60 days, and this action alone had no significant impact on reducing blocks.
+
+## Main Factors Influencing Bans
+
+### 1. Global Events and Fake News Volume
+High-profile media events — such as elections, political crises, and fake news — directly impact ban rates. Whenever there's a major media event, we notice an increase in banned accounts, regardless of IP, ASN, or connection method.
+
+### 2. Message Content and Sensitive Keywords
+WhatsApp has an advanced algorithm that analyzes content patterns. Messages of interest only to the sender (i.e., that don't generate natural interactions) are flagged.
+
+Financial topics carry a higher risk, especially messages containing keywords like "boleto", "PIX", "card", and others associated with financial scams.
+
+### 3. New Numbers and Mass Sending
+New numbers sending messages to many different recipients in a short period are easily flagged as suspicious. Multiple reports indicate that recently activated numbers are being banned quickly, even without automated tools.
+
+### 4. Number Recycling and Usage History
+High turnover of recycled numbers can be beneficial or harmful depending on the number's history. If a number was previously used for suspicious activities, it may be quickly banned after scanning the QR code.
+
+### 5. Message Volume vs. Number of Recipients
+The most relevant factor for bans is the number of **unique recipients**, not just the total number of messages sent. The more different contacts a number tries to reach in a short period, the higher the chance of being classified as spam.
+
+### 6. Reusing Patterns on Replacement Numbers
+A common practice after a ban is to configure a new number exactly like the previous one. WhatsApp can identify this, especially if the new number keeps the same name, photo, description, and message patterns.
+
+To mitigate this risk:
+
+- ✅ Change the profile picture before activating the number.
+- ✅ Modify the description and contact name before starting use.
+- ✅ Make small changes to initial sending behavior to avoid repetitive patterns.
+
+## Tests and Comparison with Previous Years
+The most surprising finding is that in many cases, simply connecting a new number to the platform can trigger a ban. Additionally, there are cases where blocking occurs after only 10 messages sent to different recipients.
+
+## Conclusion: What Really Matters?
+
+WhatsApp's algorithm changes constantly, making a single foolproof strategy unfeasible. The two main factors determining bans are:
+
+- ✅ Number of different recipients a number tries to reach.
+- ✅ Message content (keywords, context, and sending pattern).
+
+Secondary factors such as number history, IP/ASN, and connection method still have an impact but are less decisive than the above.
+
+There is no 100% effective best practice to avoid bans. The only viable approach is to monitor, continuously adapt strategies, and work within the platform's acceptable limits.
