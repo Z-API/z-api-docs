@@ -10,8 +10,8 @@
   "styling": {
     "codeblocks": {
       "theme": {
-        "light": "github-light",
-        "dark": "poimandres"
+        "dark": "poimandres",
+        "light": "github-light"
       }
     }
   },
