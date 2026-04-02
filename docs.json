@@ -25,6 +25,13 @@
     "light": "#00D455",
     "dark": "#007A2C"
   },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Painel",
+      "href": "https://app.z-api.io/"
+    }
+  },
   "api": {
     "mdx": {
       "server": "https://api.z-api.io",
@@ -42,94 +49,132 @@
       {
         "language": "pt-BR",
         "default": true,
-        "groups": [
+        "tabs": [
           {
-            "group": "Quick Start",
-            "pages": ["quickstart/introduction"]
-          },
-          {
-            "group": "Tips",
-            "pages": [
-              "tips/blockednumber",
-              "tips/blockednumbernew",
-              "tips/lid",
-              "tips/enable-fix-number",
-              "tips/emulators",
-              "tips/Z-APIvsAPI-OFICIAL",
-              "tips/button-status",
-              "tips/file-expiration",
-              "tips/postman-collection"
+            "tab": "Documentação",
+            "groups": [
+              {
+                "group": "Quick Start",
+                "pages": ["quickstart/introduction"]
+              },
+              {
+                "group": "Tips",
+                "pages": [
+                  "tips/blockednumber",
+                  "tips/blockednumbernew",
+                  "tips/lid",
+                  "tips/enable-fix-number",
+                  "tips/emulators",
+                  "tips/Z-APIvsAPI-OFICIAL",
+                  "tips/button-status",
+                  "tips/file-expiration",
+                  "tips/postman-collection"
+                ]
+              }
             ]
           },
           {
-            "group": "API Reference",
-            "pages": [
-              { "group": "Security",          "pages": ["security/introduction"] },
-              { "group": "Instance",          "pages": ["instance/introduction"] },
-              { "group": "Mobile",            "pages": ["mobile/introduction"] },
-              { "group": "Messages",          "pages": ["message/send-text"] },
-              { "group": "Privacy",           "pages": ["privacy/introduction"] },
-              { "group": "Contacts",          "pages": ["contacts/introduction"] },
-              { "group": "Chats",             "pages": ["chats/introduction"] },
-              { "group": "Calls",             "pages": ["calls/introduction"] },
-              { "group": "Groups",            "pages": ["group/introduction"] },
-              { "group": "Communities",       "pages": ["communities/introduction"] },
-              { "group": "Meta AI",           "pages": ["metaai/introduction"] },
-              { "group": "Newsletter",        "pages": ["newsletter/introduction"] },
-              { "group": "Transmission List", "pages": ["broadcast/introduction"] },
-              { "group": "Status",            "pages": ["status/introduction"] },
-              { "group": "Message Queue",     "pages": ["queue/introduction"] },
-              { "group": "WhatsApp Business", "pages": ["business/introduction"] },
-              { "group": "Webhooks",          "pages": ["webhooks/introduction"] },
-              { "group": "Partners",          "pages": ["partner/introduction"] },
-              { "group": "Integrators",       "pages": ["integrators/introduction"] }
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "API Reference",
+                "pages": [
+                  { "group": "Security",          "pages": ["security/introduction"] },
+                  { "group": "Instance",          "pages": ["instance/introduction"] },
+                  { "group": "Mobile",            "pages": ["mobile/introduction"] },
+                  { "group": "Messages",          "pages": ["message/send-text"] },
+                  { "group": "Privacy",           "pages": ["privacy/introduction"] },
+                  { "group": "Contacts",          "pages": ["contacts/introduction"] },
+                  { "group": "Chats",             "pages": ["chats/introduction"] },
+                  { "group": "Calls",             "pages": ["calls/introduction"] },
+                  { "group": "Groups",            "pages": ["group/introduction"] },
+                  { "group": "Communities",       "pages": ["communities/introduction"] },
+                  { "group": "Meta AI",           "pages": ["metaai/introduction"] },
+                  { "group": "Newsletter",        "pages": ["newsletter/introduction"] },
+                  { "group": "Transmission List", "pages": ["broadcast/introduction"] },
+                  { "group": "Status",            "pages": ["status/introduction"] },
+                  { "group": "Message Queue",     "pages": ["queue/introduction"] },
+                  { "group": "WhatsApp Business", "pages": ["business/introduction"] },
+                  { "group": "Webhooks",          "pages": ["webhooks/introduction"] },
+                  { "group": "Partners",          "pages": ["partner/introduction"] },
+                  { "group": "Integrators",       "pages": ["integrators/introduction"] }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Blog",
+            "groups": [
+              {
+                "group": "Blog",
+                "pages": ["blog/introduction"]
+              }
             ]
           }
         ]
       },
       {
         "language": "en",
-        "groups": [
+        "tabs": [
           {
-            "group": "Quick Start",
-            "pages": ["en/quickstart/introduction"]
-          },
-          {
-            "group": "Tips",
-            "pages": [
-              "en/tips/blockednumber",
-              "en/tips/blockednumbernew",
-              "en/tips/lid",
-              "en/tips/enable-fix-number",
-              "en/tips/emulators",
-              "en/tips/Z-APIvsAPI-OFICIAL",
-              "en/tips/button-status",
-              "en/tips/file-expiration",
-              "en/tips/postman-collection"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Quick Start",
+                "pages": ["en/quickstart/introduction"]
+              },
+              {
+                "group": "Tips",
+                "pages": [
+                  "en/tips/blockednumber",
+                  "en/tips/blockednumbernew",
+                  "en/tips/lid",
+                  "en/tips/enable-fix-number",
+                  "en/tips/emulators",
+                  "en/tips/Z-APIvsAPI-OFICIAL",
+                  "en/tips/button-status",
+                  "en/tips/file-expiration",
+                  "en/tips/postman-collection"
+                ]
+              }
             ]
           },
           {
-            "group": "API Reference",
-            "pages": [
-              { "group": "Security",          "pages": ["en/security/introduction"] },
-              { "group": "Instance",          "pages": ["en/instance/introduction"] },
-              { "group": "Mobile",            "pages": ["en/mobile/introduction"] },
-              { "group": "Messages",          "pages": ["en/message/send-text"] },
-              { "group": "Privacy",           "pages": ["en/privacy/introduction"] },
-              { "group": "Contacts",          "pages": ["en/contacts/introduction"] },
-              { "group": "Chats",             "pages": ["en/chats/introduction"] },
-              { "group": "Calls",             "pages": ["en/calls/introduction"] },
-              { "group": "Groups",            "pages": ["en/group/introduction"] },
-              { "group": "Communities",       "pages": ["en/communities/introduction"] },
-              { "group": "Meta AI",           "pages": ["en/metaai/introduction"] },
-              { "group": "Newsletter",        "pages": ["en/newsletter/introduction"] },
-              { "group": "Transmission List", "pages": ["en/broadcast/introduction"] },
-              { "group": "Status",            "pages": ["en/status/introduction"] },
-              { "group": "Message Queue",     "pages": ["en/queue/introduction"] },
-              { "group": "WhatsApp Business", "pages": ["en/business/introduction"] },
-              { "group": "Webhooks",          "pages": ["en/webhooks/introduction"] },
-              { "group": "Partners",          "pages": ["en/partner/introduction"] },
-              { "group": "Integrators",       "pages": ["en/integrators/introduction"] }
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "API Reference",
+                "pages": [
+                  { "group": "Security",          "pages": ["en/security/introduction"] },
+                  { "group": "Instance",          "pages": ["en/instance/introduction"] },
+                  { "group": "Mobile",            "pages": ["en/mobile/introduction"] },
+                  { "group": "Messages",          "pages": ["en/message/send-text"] },
+                  { "group": "Privacy",           "pages": ["en/privacy/introduction"] },
+                  { "group": "Contacts",          "pages": ["en/contacts/introduction"] },
+                  { "group": "Chats",             "pages": ["en/chats/introduction"] },
+                  { "group": "Calls",             "pages": ["en/calls/introduction"] },
+                  { "group": "Groups",            "pages": ["en/group/introduction"] },
+                  { "group": "Communities",       "pages": ["en/communities/introduction"] },
+                  { "group": "Meta AI",           "pages": ["en/metaai/introduction"] },
+                  { "group": "Newsletter",        "pages": ["en/newsletter/introduction"] },
+                  { "group": "Transmission List", "pages": ["en/broadcast/introduction"] },
+                  { "group": "Status",            "pages": ["en/status/introduction"] },
+                  { "group": "Message Queue",     "pages": ["en/queue/introduction"] },
+                  { "group": "WhatsApp Business", "pages": ["en/business/introduction"] },
+                  { "group": "Webhooks",          "pages": ["en/webhooks/introduction"] },
+                  { "group": "Partners",          "pages": ["en/partner/introduction"] },
+                  { "group": "Integrators",       "pages": ["en/integrators/introduction"] }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Blog",
+            "groups": [
+              {
+                "group": "Blog",
+                "pages": ["en/blog/introduction"]
+              }
             ]
           }
         ]
