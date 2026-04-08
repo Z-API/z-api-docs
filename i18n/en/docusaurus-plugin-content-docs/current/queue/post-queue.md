@@ -117,6 +117,7 @@ This method returns messages from the queue that are waiting to be processed.
 
 - If `pagingState` is not provided, the first page will be returned automatically
 - If `pageSize` is not provided, the default value of **20 messages** will be used
+- The maximum number of messages that can be returned per page is **50 messages**
 - Use the returned `pagingState` to fetch the next pages
 - When `hasMore` is `false`, there are no more messages available
 
