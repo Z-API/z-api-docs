@@ -1,7 +1,14 @@
 ---
 id: get-queue
-title: Fila
+title: Fila (Depreciada)
 ---
+
+:::danger Endpoint obsoleto e em descontinuação
+Este endpoint está **obsoleto**, pois o modelo de paginação foi atualizado para um formato baseado em **cursor (pagingState)**.
+**Descontinuação programada:** Este endpoint será removido em **30/04**.
+Recomendamos que todas as integrações sejam migradas para o novo endpoint [**POST /queue**](./post-queue), que utiliza o novo modelo de paginação.
+
+:::
 
 ## Método
 
@@ -14,6 +21,7 @@ title: Fila
 |      Key       |            Value            |
 | :------------: |     :-----------------:     |
 |  Client-Token  | **[TOKEN DE SEGURANÇA DA CONTA](../security/client-token)** |
+
 ---
 
 ## Conceituação
@@ -28,13 +36,13 @@ Este método é responsável por retornar todas mensagens que estão em sua fila
 
 | Atributos | Tipo    | Descrição |
 | :-------- | :---:   | :-------- |
-| page      | integer | Utilizado para paginação você de informar aqui a pagina de mensagens que quer buscar |
-| pageSize  | integer | Especifica o tamanho do retorno de mensagens por pagina |
+| page      | integer | **Não possui mais efeito** |
+| pageSize  | integer | Especifica o tamanho do retorno de mensagens por página |
 
 ### Opcionais
 
-| Atributos | Tipo | Descrição |
-| :-------- | :--: | :-------- |
+| Atributos | Tipo   | Descrição |
+| :-------- | :--:   | :-------- |
 | count     | string | Atributo utilizado para retornar o número de mensagens na fila |
 
 ---
@@ -47,10 +55,9 @@ Método
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue?page=1&pageSize=100
 
- ou
+ou
 
 `GET` https://api.z-api.io/instances/SUA_INSTANCIA/token/SEU_TOKEN/queue/count
-
 
 ---
 
@@ -60,7 +67,7 @@ Método
 
 | Atributos | Tipo         | Descrição                       |
 | :-------- | :----------- | :------------------------------ |
-| messages  | array string | Array com as menssagens da fila |
+| messages  | array string | Array com as mensagens da fila  |
 
 Array Messages
 
@@ -69,13 +76,13 @@ Array Messages
 | _id          | string   | ID da mensagem no Z-API     |
 | DelayMessage | string   | Tempo em segundos entre o envio das mensagens |
 | Message      | string   | Texto da Mensagem           |
-| IsTrial      | boolean  | Indica se a instância está utilizando trial   |
+| IsTrial      | boolean  | Indica se a instância está utilizando trial |
 | InstanceId   | string   | ID da instância             |
 | Phone        | string   | Número do destinatário      |
 | ZaapId       | string   | ID da mensagem no Z-API     |
-| DelayTyping  | string   | Duração do indicador do chat "digitando..."   |
+| DelayTyping  | string   | Duração do indicador do chat "digitando..." |
 | MessageId    | string   | ID da mensagem              |
-| Created      | timetamp | Data da mensagem            |
+| Created      | timestamp | Data da mensagem           |
 
 Exemplo
 
@@ -92,8 +99,7 @@ Exemplo
       "ZaapId": "39BB1684570F00E91090F6BBC7EE7646",
       "DelayTyping": 0,
       "MessageId": "7AD29EAA5EF34C301F0B",
-      "Created": 1624977905648,
-      
+      "Created": 1624977905648
     },
     {
       "_id": "39BB1684570F00E91090F6BBC7EE7646",
@@ -105,7 +111,7 @@ Exemplo
       "ZaapId": "39BB1684570F00E91090F6BBC7EE7646",
       "DelayTyping": 5,
       "MessageId": "7AD29EAA5EF34C301F0B",
-      "Created": 1624977906907,
+      "Created": 1624977906907
     }
   ]
 }

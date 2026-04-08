@@ -227,6 +227,7 @@ module.exports = {
     ],
     'Message queue': [
       'queue/introduction',
+      'queue/post-queue',
       'queue/get-queue',
       'queue/delete-queue',
       'queue/delete-queue-id',
