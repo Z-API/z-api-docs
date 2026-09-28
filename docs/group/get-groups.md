@@ -66,6 +66,7 @@ Método
 | isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |
 | isGroup      | boolean | true ou false indica se é um grupo ou não |
 | messagesUnread | integer | **descontinuado** |
+| isSuperAdmin | boolean | true ou false indica se o usuário é o criador do grupo |
 
 Exemplo
 
