@@ -59,7 +59,7 @@ With this method, you can send PIX key messages with a button to copy.
 ---
 
 :::warning Observação
-On whatsapp web, pix messages received do not change the chat state, which means that the chat is not marked as unread and it also does not go to the top of the chat list. However, the message is rendered normally. This is a bug in the whatsapp web itself.
+On the web application, pix messages received do not change the chat state, which means that the chat is not marked as unread and it also does not go to the top of the chat list. However, the message is rendered normally. This is a bug in the web application itself.
 :::
 
 ## Response
@@ -69,7 +69,7 @@ On whatsapp web, pix messages received do not change the chat state, which means
 | Attributes | Type   | Description                                      |
 | :--------- | :----- | :----------------------------------------------- |
 | zaapId     | string | ID in z-api                                      |
-| messageId  | string | ID in WhatsApp                                    |
+| messageId  | string | ID in the application                                    |
 | id         | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 Example

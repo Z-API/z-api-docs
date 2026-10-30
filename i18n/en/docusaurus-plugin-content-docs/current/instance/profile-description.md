@@ -13,7 +13,7 @@ title: Update profile description
 
 ## Concept
 
-This method is responsible for changing your profile description on WhatsApp.
+This method is responsible for changing your profile description on the application.
 
 ---
 

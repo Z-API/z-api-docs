@@ -18,15 +18,15 @@ title: Add Contacts
 
 ## Concept
 
-This method is responsible for saving WhatsApp contacts to your phone's contact list.
+This method is responsible for saving application contacts to your phone's contact list.
 
 ---
 
 :::caution About This Feature
 
-The method for adding contacts to the WhatsApp list will only work for accounts that have already received the necessary update. Make sure your WhatsApp account has received the update before using this feature; otherwise, the operation will not be completed successfully.
+The method for adding contacts to the application list will only work for accounts that have already received the necessary update. Make sure your application account has received the update before using this feature; otherwise, the operation will not be completed successfully.
 
-Additionally, you must allow WhatsApp to add contacts directly on your device. To do this, go to your app’s privacy settings and adjust the permissions so that WhatsApp can access and modify your contacts.
+Additionally, you must allow the application to add contacts directly on your device. To do this, go to your app’s privacy settings and adjust the permissions so that the application can access and modify your contacts.
 
 See the example in the images below: 
 :::

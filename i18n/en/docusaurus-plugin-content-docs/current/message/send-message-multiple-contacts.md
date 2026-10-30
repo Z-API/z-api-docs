@@ -83,7 +83,7 @@ Simple and straightforward, this method allows you to send multiple contacts. Yo
 | Attributes| Type   | Description    |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 | id        | string | Added for compatibility with Zapier, it has the same value as the messageId |
 
 Example

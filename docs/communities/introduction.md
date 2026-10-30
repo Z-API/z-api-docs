@@ -5,7 +5,7 @@ title: Introdução
 
 ### Conceituação
 
-O WhatsApp agora oferece a funcionalidade de Comunidades, que permite aos usuários agrupar grupos ao redor de um assunto ou interesse em comum. É uma maneira fácil de conectar com outras pessoas que compartilham dos mesmos objetivos e ideias.
+O aplicativo agora oferece a funcionalidade de Comunidades, que permite aos usuários agrupar grupos ao redor de um assunto ou interesse em comum. É uma maneira fácil de conectar com outras pessoas que compartilham dos mesmos objetivos e ideias.
 
 Para exemplificar como funciona a estrutura de comunidades, veja a imagem abaixo:
 
@@ -27,7 +27,7 @@ Cada comunidade pode ter até 50 grupos, e o(s) administrador(es) das comunidade
 
 #### 1. Como faço para criar uma nova comunidades?
 
-Primeiro é importante verificar se o aplicativo do whatsapp do seu celular já está compatível com as comunidades, caso não esteja, aguarde a atualização do aplicativo para sua conta, agora caso já tenha acesso a comunidades, veja a documentação de como <a href="/communities/create-community">criar comunidade via API.</a>
+Primeiro é importante verificar se o aplicativo do seu celular já está compatível com as comunidades, caso não esteja, aguarde a atualização do aplicativo para sua conta, agora caso já tenha acesso a comunidades, veja a documentação de como <a href="/communities/create-community">criar comunidade via API.</a>
 
 #### 2. Consigo listar as comunidades que faço parte?
 
@@ -47,7 +47,7 @@ Existem 3 formas de se pegar os grupos de anúncio. <br /> - A primeira é na <a
 
 #### 6. Posso desativar uma comunidade?
 
-Sim, você pode <a href="/communities/deactivate-community">desativar uma Comunidade</a> no WhatsApp, o que resultará na desconexão de todos os grupos relacionados a ela. É importante ressaltar que desativar a Comunidade não excluirá seus grupos, mas sim os removerá da Comunidade em questão.
+Sim, você pode <a href="/communities/deactivate-community">desativar uma Comunidade</a> no aplicativo, o que resultará na desconexão de todos os grupos relacionados a ela. É importante ressaltar que desativar a Comunidade não excluirá seus grupos, mas sim os removerá da Comunidade em questão.
 
 #### 7. Como adicionar ou remover pessoas da comunidade?
 

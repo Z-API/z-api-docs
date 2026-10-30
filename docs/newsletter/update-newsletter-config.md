@@ -59,7 +59,7 @@ Método
 
 :::warning
 
-O id do canal sempre deve conter o sufixo "@newsletter", pois esse é o padrão utilizado pelo próprio WhatsApp.
+O id do canal sempre deve conter o sufixo "@newsletter", pois esse é o padrão utilizado pelo próprio aplicativo.
 
 :::
 

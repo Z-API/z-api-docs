@@ -21,7 +21,7 @@ title: Add Products to Collection
 Using this method, you will be able to add products to a collection in your catalog.
 
 :::warning Attention
-When adding or removing products from a **collection**, the ID of the collection is changed by WhatsApp. This means that when you register a product in the collection and try to perform any other operation using the "old" ID, it will result in a non-functional route. Remember to use the ID returned by this route, which is already updated for subsequent operations.
+When adding or removing products from a **collection**, the ID of the collection is changed by the application. This means that when you register a product in the collection and try to perform any other operation using the "old" ID, it will result in a non-functional route. Remember to use the ID returned by this route, which is already updated for subsequent operations.
 :::
 
 ---

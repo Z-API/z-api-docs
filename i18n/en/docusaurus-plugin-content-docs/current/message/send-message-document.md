@@ -10,13 +10,13 @@ title: Send documents
 `POST` https://api.z-api.io/instances/YOUR_INSTANCE/token/YOUR_TOKEN/send-document/ **{extension}**
 
 
-> **Don’t forget!** You need to inform the **{extension}** parameter with the extension of the file you want to send! Theoretically this method should support all types of documents, as long as they are within WhatsApp's own file size policies (to know more about these limits [click here]).
+> **Don’t forget!** You need to inform the **{extension}** parameter with the extension of the file you want to send! Theoretically this method should support all types of documents, as long as they are within the application's own file size policies (to know more about these limits [click here]).
 
 [Click here]: https://developers.facebook.com/docs/whatsapp/api/media/#post-processing
 
 ### Size and formats 
 
-WhatsApp limits the size of files, and its policy changes frequently. That's why we always recommend checking directly on the WhatsApp website for the latest information.
+The application limits the size of files, and its policy changes frequently. That's why we always recommend checking directly on the application website for the latest information.
 In this [link], you'll find everything you need to know about file formats and sizes.
 
 [link]: https://developers.facebook.com/docs/whatsapp/api/media
@@ -53,7 +53,7 @@ Method responsible for sending documents to your contacts. It is simple and obje
 | fileName | String | Documents name |
 | messageId | String | Attribute used to answer a chat message. All you have to do is add the messageID of the message that you want to respond to this attribute |
 | delayMessage | number | In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs. |
-| editDocumentMessageId | string | This attribute allows you to edit the caption of previously sent documents on WhatsApp. Use the message ID and the new caption in the JSON to make changes. It's necessary to configure the webhook before edit (Only the caption of the message can be edited). |
+| editDocumentMessageId | string | This attribute allows you to edit the caption of previously sent documents on the application. Use the message ID and the new caption in the JSON to make changes. It's necessary to configure the webhook before edit (Only the caption of the message can be edited). |
 
 ---
 
@@ -86,7 +86,7 @@ Method responsible for sending documents to your contacts. It is simple and obje
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example 
 

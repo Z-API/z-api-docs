@@ -74,7 +74,7 @@ This method allows you to send text messages with a button to copy a value.
 | Attributes | Type   | Description      |
 | :--------- | :----- | :--------------- |
 | zaapId     | string | ID on Z-API      |
-| messageId  | string | ID on WhatsApp   |
+| messageId  | string | ID on the application   |
 | id         | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 Example

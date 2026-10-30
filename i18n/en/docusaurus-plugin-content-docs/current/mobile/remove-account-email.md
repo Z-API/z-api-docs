@@ -18,7 +18,7 @@ title: Remove account email
 
 ## Concept
 
-Method used to remove the email configured on your WhatsApp account.
+Method used to remove the email configured on your application account.
 
 :::caution
 This API is available only for mobile instances.

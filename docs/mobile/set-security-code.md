@@ -18,7 +18,7 @@ title: Cadastrar código PIN
 
 ## Conceituação
 
-Método utilizado para cadastrar um código PIN de segurança na sua conta do WhatsApp.
+Método utilizado para cadastrar um código PIN de segurança na sua conta do aplicativo.
 
 :::caution Atenção
 Essa API está disponível apenas para instâncias mobile.

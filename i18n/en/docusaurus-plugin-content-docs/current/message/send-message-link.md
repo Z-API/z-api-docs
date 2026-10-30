@@ -75,7 +75,7 @@ It is important for you to know that the link is only clickable if the recipient
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example
 

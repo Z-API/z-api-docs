@@ -19,7 +19,7 @@ title: Make a call
 
 ## Conceituação
 
-In this method you send a call to a number that has whatsapp, whether it is your contact or not.
+In this method you send a call to a number that has an application account, whether it is your contact or not.
 
 ---
 
@@ -64,7 +64,7 @@ The **callAudioUrl** attribute is only available for accounts that have the call
 | Attributes | Type   | Description    |
 | :--------- | :----- | :------------- |
 | zaapId     | string | id on z-api    |
-| messageId  | string | id on whatsapp |
+| messageId  | string | id on the application |
 
 Exemplo
 

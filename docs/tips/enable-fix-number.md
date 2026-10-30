@@ -5,11 +5,11 @@ title: Habilitando um número fixo
 
 ## Introdução
 
-Para habilitar um número fixo, você vai precisar ter um aparelho celular para hospedar seu número fixo. (esta opção fica disponível no WhatsApp Business). No passo a passo que criamos utilizamos um celular com Android.
+Para habilitar um número fixo, você vai precisar ter um aparelho celular para hospedar seu número fixo. (esta opção fica disponível no aplicativo Business). No passo a passo que criamos utilizamos um celular com Android.
 
 ### Primeiro passo
 
-Baixe o aplicativo WhatsApp Business em um celular
+Baixe o aplicativo Business em um celular
 
 [Android]
 
@@ -24,7 +24,7 @@ Baixe o aplicativo WhatsApp Business em um celular
 
 ### Segundo passo
 
-O WhatsApp Business vai pedir autorização para acessar os arquivos do celular, escolha a opção continuar para liberar o acesso. Na tela seguinte, escolha o país e informe o número do seu telefone fixo.
+O aplicativo Business vai pedir autorização para acessar os arquivos do celular, escolha a opção continuar para liberar o acesso. Na tela seguinte, escolha o país e informe o número do seu telefone fixo.
 
 ![img](../../img/WABTermos.png)
 
@@ -34,7 +34,7 @@ O WhatsApp Business vai pedir autorização para acessar os arquivos do celular,
 
 Você receberá um código, mas como não é possível receber um SMS em um telefone fixo, aguarde até que a contagem e escolha a opção **Me ligue**.
 
-E pronto você receberá uma ligação do WhatsApp Business que falará o código de ativação, aí é só digitar no campo indicado ;)
+E pronto você receberá uma ligação do aplicativo Business que falará o código de ativação, aí é só digitar no campo indicado ;)
 
 ![img](../../img/WABCodigo.png)
 
@@ -44,4 +44,4 @@ E pronto você receberá uma ligação do WhatsApp Business que falará o códig
 
 Seja Feliz!
 
-Faça as configurações no app WhatsApp Bussines e leia o QrCode Z-API para dar Asas para sua imaginação!
+Faça as configurações no aplicativo Business e leia o QrCode Z-API para dar Asas para sua imaginação!

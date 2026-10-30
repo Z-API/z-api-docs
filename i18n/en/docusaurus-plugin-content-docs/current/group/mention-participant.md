@@ -57,7 +57,7 @@ This method is responsible for mentioning participants in a group.
 
 ## Mention everyone in the group.
 
-This method allows you to mention multiple members of a WhatsApp group without the need to explicitly include the '@' before the numbers. This is useful for tagging multiple members at once.
+This method allows you to mention multiple members of an application group without the need to explicitly include the '@' before the numbers. This is useful for tagging multiple members at once.
 
 ```json
 {
@@ -75,7 +75,7 @@ This method allows you to mention multiple members of a WhatsApp group without t
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 | id | string | Added for compatibility with Zapier, it has the same value as the messageId.|
 
 Exemplo

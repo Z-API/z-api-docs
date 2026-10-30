@@ -18,7 +18,7 @@ title: Buscar email da conta
 
 ## Conceituação
 
-Método utilizado para buscar o email configurado na conta do WhatsApp.
+Método utilizado para buscar o email configurado na conta do aplicativo.
 
 :::caution Atenção
 Essa API está disponível apenas para instâncias mobile.

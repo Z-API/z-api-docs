@@ -18,7 +18,7 @@ title: Verify account email
 
 ## Concept
 
-Method used to verify the account email. You can register an email on your WhatsApp account through the **[Set Account Email](./set-account-email.md)** API.
+Method used to verify the account email. You can register an email on your application account through the **[Set Account Email](./set-account-email.md)** API.
 
 :::caution
 This API is available only for mobile instances.

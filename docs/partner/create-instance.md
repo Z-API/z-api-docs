@@ -43,7 +43,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 
 | Atributos                       |  Tipo  | Descrição                      |
 | :--------                       | :----: | :----------------------------- |
-| sessionName                     | string | Atributo para alterar o nome da sessão no whatsapp (em aparelhos conectados) |
+| sessionName                     | string | Atributo para alterar o nome da sessão no aplicativo (em aparelhos conectados) |
 | deliveryCallbackUrl             | string | EndPoint do webhook de mensagens entregues - delivery |
 | receivedCallbackUrl             | string | EndPoint do webhook de mensagens recebidas - receive |
 | receivedAndDeliveryCallbackUrl  | string | EndPoint do webhook de mensagens recebidas e enviadas por mim - receive |
@@ -56,7 +56,7 @@ Caso você não realize a assinatura em até 2 dias nosso devops vai automaticam
 | autoReadMessage                 | boolean | Leitura automática das mensagens - "true" ou "false" |
 | autoReadStatus                  | boolean | Leitura automática dos status - "true" ou "false" |
 | isDevice                        | boolean | Define se a instância será mobile ou web, se "true", a instância será mobile |
-| businessDevice                  | boolean | Escolha entre a versão empresarial ou normal do WhatsApp |
+| businessDevice                  | boolean | Escolha entre a versão empresarial ou normal do aplicativo |
 | disableEnqueueWhenDisconnected  | boolean | Habilita/desabilita enfileiramento de mensagem na hora de criar a instância |
 
 ---

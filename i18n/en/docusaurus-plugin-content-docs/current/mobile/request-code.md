@@ -34,7 +34,7 @@ Remember that the phone number you should send in this request is the same one y
 | :-------- | :-: | :-- |
 | ddi       | string | DDI of the number |
 | phone     | string | Phone number you want to register. Should include only the **number with area code** (E.g., 4499999999), without formatting or mask |
-| method    | string | Defines the code sending method. SMS, voice call, or pop-up in the WhatsApp application. (sms, voice, wa_old) |
+| method    | string | Defines the code sending method. SMS, voice call, or pop-up in the application. (sms, voice, wa_old) |
 
 ---
 
@@ -62,7 +62,7 @@ Remember that the phone number you should send in this request is the same one y
 | retryAfter  | string | Time in seconds to wait for a new code request |
 | smsWaitSeconds   | number | Time to wait for **sms** request. If the value is 0, it means that the request can already be sent to this method |
 | voiceWaitSeconds | number | Time to wait for **voice call** request. Same purpose as **smsWaitSeconds** |
-| waOldWaitSeconds | number | Time to wait for **pop-up in the cell phone app** request. Same purpose as **smsWaitSeconds**. **Attention**: do not use this method if you do not have access to the cell phone where the number is currently linked. This method is useful to speed up the code confirmation process without waiting for SMS or voice call reception, but it requires you to have the device in hand and with the WhatsApp application open. |
+| waOldWaitSeconds | number | Time to wait for **pop-up in the cell phone app** request. Same purpose as **smsWaitSeconds**. **Attention**: do not use this method if you do not have access to the cell phone where the number is currently linked. This method is useful to speed up the code confirmation process without waiting for SMS or voice call reception, but it requires you to have the device in hand and with the application open. |
 | method | string | Code sending method |
 
 

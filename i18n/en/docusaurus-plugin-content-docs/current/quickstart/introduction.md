@@ -15,15 +15,15 @@ slug: /
 You probably already know but let's go over it!
 
 
-**Z-API** is a RestFul service that provides an API that allows you to interact with whatsapp through a simple and intuitive API as well as webhooks to alert you of interactions with your number.
+**Z-API** is a RestFul service that provides an API that allows you to interact with the application through a simple and intuitive API as well as webhooks to alert you of interactions with your number.
 
 
 :::important Important
 
 
-Z-API utilizes the same channel of communication used by whatsapp web to make the APIs accessible . In case you use a common version of whatsapp, it **won't** be possible to make use of our Z-API with whatsapp web.
+Z-API utilizes the same channel of communication used by the web application to make the APIs accessible . In case you use a common version of the application, it **won't** be possible to make use of our Z-API with the web application.
 
-Recently, WhatsApp launched a functionality that **allows** you to use multiple devices, this allows you to connect up to **4** devices on the same number. In case this option **is enabled** on your device, you will be able to take advantage of our Z-API coupled with WhatsApp without having to keep your device connected to the internet at every moment.
+Recently, the application launched a functionality that **allows** you to use multiple devices, this allows you to connect up to **4** devices on the same number. In case this option **is enabled** on your device, you will be able to take advantage of our Z-API coupled with the application without having to keep your device connected to the internet at every moment.
 
 
 
@@ -44,7 +44,7 @@ While we don't have restrictions on how it is used, we normally have two very di
 
 ## Enough! What are we able to do with it??
 
-To be straight forward, everything that you are able to do with WhatsApp you will be able to do while using our service. To do this all you have to do is read the Z-API QRcode and get straight to it!
+To be straight forward, everything that you are able to do with the application you will be able to do while using our service. To do this all you have to do is read the Z-API QRcode and get straight to it!
 
 ---
 
@@ -56,7 +56,7 @@ For an example, follow the steps of sending simple text:
 
 2. Z-API then adds you to a queue and returns a message ID;
 
-3. Your instance will process your queue and send it to WhatsApp.
+3. Your instance will process your queue and send it to the application.
 
 4. Your webhook of delivery is called when your message is sent 
 
@@ -70,7 +70,7 @@ For an example, follow the steps of sending simple text:
 
 ## Limits
 
-Start with this topic because it is very common for people to ask about what the limits of delivery are with Z-API. we **DON'T HAVE LIMITS** for number of messages sent! However, it is important that you understand you are using a WhatsApp web session. Therefore, the pattern of usage needs to be compatible. Furthermore, we always recommend that you intently read the politics established by WhatsApp web on their official website https://www.whatsapp.com/legal. 
+Start with this topic because it is very common for people to ask about what the limits of delivery are with Z-API. we **DON'T HAVE LIMITS** for number of messages sent! However, it is important that you understand you are using an application web session. Therefore, the pattern of usage needs to be compatible. Furthermore, we always recommend that you intently read the politics established by the web application on their official website https://www.whatsapp.com/legal. 
 
 
 ---
@@ -83,12 +83,12 @@ All of the messages sent to our API will be forwarded to a queue of messages and
 
 :::important Remember 
 
-Facebook behaves differently with each version of WhatsApp web, our API makes available methods compatible with the WEB versions. 
+Facebook behaves differently with each version of the web application, our API makes available methods compatible with the WEB versions. 
 
 :::
 
 :::caution Point of attention 
 
-Be cautious! Don't forget once you connect your number with our service you won't be able to use the same number on WhatsApp web. This limitation is only temporary, keeping in mind that WhatsApp is already unveiling a new functionality that will allow more than one instance connected simultaneously. 
+Be cautious! Don't forget once you connect your number with our service you won't be able to use the same number on the web application. This limitation is only temporary, keeping in mind that the application is already unveiling a new functionality that will allow more than one instance connected simultaneously. 
 
 

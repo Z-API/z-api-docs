@@ -13,12 +13,12 @@ Sabemos que nem sempre é possível, mas se conseguir evitar a utilização do a
 
 ## Aparelho sempre conectado
 
-Para o funcionamento do Z-API ele precisa o aparelho esteja ligado e conectado na internet o tempo todo, assim como no versão do WhatsWeb se o aparelho perder a conexão, nosso serviço para de funcionar. Por isso é muito importante que ele esteja sempre conectado a internet.
+Para o funcionamento do Z-API ele precisa o aparelho esteja ligado e conectado na internet o tempo todo, assim como na versão do aplicativo web se o aparelho perder a conexão, nosso serviço para de funcionar. Por isso é muito importante que ele esteja sempre conectado a internet.
 
 ## Boa conexão de internet
 
 Mantenha seu celular conectado a um wi-fi com boa velocidade de conexão e evite utilizar apenas o plano de dados do celular.a velocidade de sua internet impacta diretamente na qualidade da troca de informações entre seu celular e o Z-API.
 
-## WhatsApp sempre aberto
+## O aplicativo sempre aberto
 
-Manter o aplicativo do WhatsApp sempre aberto ajuda a manter a conexão entre nosso serviço e seu celular, assim como no Whatsweb precisamos nos comunicar com seu celular, quando você travar ou bloquear o celular o whatsapp pode parar de rodar em segundo plano e ocasionar em perda de conexão com a internet, isso vai causar indisponibilidade do nosso serviço. Por fim, caso consiga, recomendamos instalar o aplicativo Keep Phone On, ele ajuda a manter seu telefone sempre ligado.
+Manter o aplicativo sempre aberto ajuda a manter a conexão entre nosso serviço e seu celular, assim como no aplicativo web precisamos nos comunicar com seu celular, quando você travar ou bloquear o celular o aplicativo pode parar de rodar em segundo plano e ocasionar em perda de conexão com a internet, isso vai causar indisponibilidade do nosso serviço. Por fim, caso consiga, recomendamos instalar o aplicativo Keep Phone On, ele ajuda a manter seu telefone sempre ligado.

@@ -19,7 +19,7 @@ title: Create community
 
 ## Concept
 
-Before using this feature, it's important to check if the WhatsApp application on your mobile phone already supports communities. If it's available, you can use this API to create new communities.
+Before using this feature, it's important to check if the application on your mobile phone already supports communities. If it's available, you can use this API to create new communities.
 
 ## Attributes
 

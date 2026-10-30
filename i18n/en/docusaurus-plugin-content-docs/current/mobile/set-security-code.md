@@ -18,7 +18,7 @@ title: Set PIN code
 
 ## Concept
 
-Method used to register a security PIN code on your WhatsApp account.
+Method used to register a security PIN code on your application account.
 
 :::caution
 This API is available only for mobile instances.

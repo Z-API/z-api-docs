@@ -109,7 +109,7 @@ Method
 
 :::tip Attribute "cursor" in the response object
 
-The WhatsApp API provides the "limit" attribute to perform newsletter searches, which means there is pagination of results. However, the response does not indicate the "cursor" of the records. Therefore, for now, the "cursor" attribute will always be "null" until WhatsApp implements this functionality.
+The application API provides the "limit" attribute to perform newsletter searches, which means there is pagination of results. However, the response does not indicate the "cursor" of the records. Therefore, for now, the "cursor" attribute will always be "null" until the application implements this functionality.
 
 :::
 

@@ -7,7 +7,7 @@ title: Introduction
 
 Firstly you need to understand about the messages and how they can be sent to a contact, a group or a transmission list. 
 
-In the topic “contacts” we will talk about this again however, it is also important for you to know that for WhatsApp everything is a chat whether it is a contact, group or transmission list.
+In the topic “contacts” we will talk about this again however, it is also important for you to know that for the application everything is a chat whether it is a contact, group or transmission list.
 
 To send any type of message you need a chat ID, the ids being:
 

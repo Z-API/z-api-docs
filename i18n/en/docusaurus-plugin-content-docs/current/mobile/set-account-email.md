@@ -18,7 +18,7 @@ title: Set account email
 
 ## Concept
 
-Method used to register an email on your WhatsApp account. This email could be used later to recovery the security PIN code of your account.
+Method used to register an email on your application account. This email could be used later to recovery the security PIN code of your account.
 
 :::caution
 This API is available only for mobile instances.
@@ -32,7 +32,7 @@ This API is available only for mobile instances.
 
 | Attributes | Type | Description |
 | :-------- | :--: | :-- |
-| email     | string | Email to be registered on your WhatsApp account |
+| email     | string | Email to be registered on your application account |
 
 ---
 

@@ -18,7 +18,7 @@ title: Enviar lista de opções
 
 :::caution ATENÇÃO
 
-A funcionalidade de lista de opções não funciona mais em grupos. Essa limitação ocorre porque a função foi descontinuada pelo próprio WhatsApp para chats em grupo. Em conversas individuais, a lista de botões continua funcionando normalmente.
+A funcionalidade de lista de opções não funciona mais em grupos. Essa limitação ocorre porque a função foi descontinuada pelo próprio aplicativo para chats em grupo. Em conversas individuais, a lista de botões continua funcionando normalmente.
 
 :::
 
@@ -105,7 +105,7 @@ Neste método você poderá enviar mensagens de texto com uma lista de opções,
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

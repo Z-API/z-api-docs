@@ -7,7 +7,7 @@ title: Lock screen
 
 
 
-Like you might have already noticed when your phone locks and brings you to the lockscreen. WhatsApp will stop running in the background which might make you lose your connection to the internet and WhatsApp Web. In this case, if you are using Z-API your connection to it will be affected. For this, we made a step by step guide on how to avoid this issue.
+Like you might have already noticed when your phone locks and brings you to the lockscreen. The application will stop running in the background which might make you lose your connection to the internet and the web application. In this case, if you are using Z-API your connection to it will be affected. For this, we made a step by step guide on how to avoid this issue.
 
 
 **The examples below were made on an Android**

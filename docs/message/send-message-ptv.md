@@ -28,7 +28,7 @@ Por Base64, se você optar por esta opção precisará ter em sua aplicação um
 
 ### Tamanho e formatos
 
-O WhatsApp limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio WhatsApp.
+O aplicativo limita o tamanho de arquivos e sua politica muda constantemente, por isso sempre recomendamos a verificação direto no site do próprio aplicativo.
 
 Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de arquivos.
 
@@ -83,7 +83,7 @@ Neste [link] você encontra tudo que precisa saber sobre formatos e tamanhos de 
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

@@ -67,7 +67,7 @@ Method responsible for sending a fixed location to your contacts, it is mostly u
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example 
 

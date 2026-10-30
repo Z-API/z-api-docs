@@ -72,7 +72,7 @@ Método
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 
 Exemplo
 

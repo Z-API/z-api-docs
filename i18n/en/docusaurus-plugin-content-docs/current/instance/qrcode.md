@@ -29,7 +29,7 @@ Getting QRCode - Phone
 
 This method returns a code that allows you to connect the phone number to the API without the need to scan a QR code, simply by entering the generated code.
 
-You can enter the code generated through the API directly in WhatsApp, on the same tab where you scan the QR code, by clicking on 'Connect with a phone number'."
+You can enter the code generated through the API directly in the application, on the same tab where you scan the QR code, by clicking on 'Connect with a phone number'."
 
 ### Header
 
@@ -41,14 +41,14 @@ You can enter the code generated through the API directly in WhatsApp, on the sa
 
 ## Concept
 
-Yes! Just like on WhatsApp Web you will need to read a QR code to connect to Z-API.
+Yes! Just like on the web application you will need to read a QR code to connect to Z-API.
 
 There are two ways that you can do the reading of the QR code. They are:
 
 - Connect through our admin panel or
 - Make this experience available within your own application using the methods described in this section.
 
-You can opt for one of the methods available to read WhatsApps Qr code, as shown below: 
+You can opt for one of the methods available to read the application's Qr code, as shown below: 
 
 ---
 
@@ -66,11 +66,11 @@ You can opt for one of the methods available to read WhatsApps Qr code, as shown
 
 :::note
 
-If you opted to implement the Qr code reading feature in your app, you need to know that WhatsApp invalidades the Qr code every 20 seconds.
+If you opted to implement the Qr code reading feature in your app, you need to know that the application invalidades the Qr code every 20 seconds.
 
 In case you call on this method and it is already connected it will not allow you to connect again.
 
-Once you care connected you can start using Z-API’s methods to manipulate WhatsApp 
+Once you care connected you can start using Z-API’s methods to manipulate the application 
 :::
 
 :::important
@@ -78,5 +78,5 @@ Once you care connected you can start using Z-API’s methods to manipulate What
 **Recommendations:**
 
 - Create a method with intervals of 10 to 20 seconds to call the API and get a new Qr code.
-- If the user does not read the Qr code after 3 calls, stop the flow and add a button to request its interaction to avoid unnecessary calls to the WhatsApp API. If the user does not read the QRCode after 3 calls, stop the flow and add a button requesting its interaction to avoid unnecessary calls to the WhatsApp API.
+- If the user does not read the Qr code after 3 calls, stop the flow and add a button to request its interaction to avoid unnecessary calls to the application API. If the user does not read the QRCode after 3 calls, stop the flow and add a button requesting its interaction to avoid unnecessary calls to the application API.
 :::

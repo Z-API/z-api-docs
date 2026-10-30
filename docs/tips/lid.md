@@ -5,16 +5,16 @@ title: Lid
 
 ## Introdução
 
-O `@lid` (Linked ID) é um _identificador único e privado_ criado pelo WhatsApp para representar contatos sem expor diretamente o número de telefone.
-Essa mudança faz parte das _atualizações de privacidade_ do WhatsApp, permitindo que o usuário oculte seu número em determinados contextos.
+O `@lid` (Linked ID) é um _identificador único e privado_ criado pelo aplicativo para representar contatos sem expor diretamente o número de telefone.
+Essa mudança faz parte das _atualizações de privacidade_ do aplicativo, permitindo que o usuário oculte seu número em determinados contextos.
 
-Em alguns casos, o WhatsApp está enviando o `@lid` como identificação primária do usuário, mesmo que ele não tenha ativado nenhuma opção para esconder o número.
+Em alguns casos, o aplicativo está enviando o `@lid` como identificação primária do usuário, mesmo que ele não tenha ativado nenhuma opção para esconder o número.
 
 ---
 
 ### Diferença entre `@lid` e `phone`
 
-O WhatsApp pode retornar os identificadores de contato de diferentes formas, dependendo do tipo de conversa, grupo ou configuração de privacidade:
+O aplicativo pode retornar os identificadores de contato de diferentes formas, dependendo do tipo de conversa, grupo ou configuração de privacidade:
 
 * `phone`: Pode conter o número real (`"554499999999"`) ou o próprio `@lid` (`"999999999999999@lid"`).
 
@@ -24,7 +24,7 @@ O WhatsApp pode retornar os identificadores de contato de diferentes formas, dep
 
 ### Exemplo de Webhook
 
-Nos webhooks da Z-API, o WhatsApp pode retornar o identificador do contato de diferentes formas, dependendo do tipo de interação e das configurações de privacidade do usuário.
+Nos webhooks da Z-API, o aplicativo pode retornar o identificador do contato de diferentes formas, dependendo do tipo de interação e das configurações de privacidade do usuário.
 
 #### Exemplo – Retorno completo com número e `@lid`:
 
@@ -72,24 +72,24 @@ O envio funciona normalmente, pois o `@lid` _já é suportado_ pela API da Z-API
 ### Conversão de `@lid` para número
 
 Não é possível converter um `@lid` em número de telefone (`phone`).
-Essa limitação existe _por motivos de privacidade definidos pelo WhatsApp_.
+Essa limitação existe _por motivos de privacidade definidos pelo aplicativo_.
 Permitir essa conversão invalidaria o propósito do recurso de ocultação de número.
 
-O mapeamento direto entre `@lid` e `phone` _não é disponibilizado pelo WhatsApp nem pela Z-API_.
+O mapeamento direto entre `@lid` e `phone` _não é disponibilizado pelo aplicativo nem pela Z-API_.
 
 ---
 
 ### Conversão de número (`phone`) para `@lid`
 
-Por outro lado, é possível obter o `@lid` correspondente a um número de telefone utilizando o método ["Número com Whatsapp ?"](https://developer.z-api.io/contacts/get-iswhatsapp).
+Por outro lado, é possível obter o `@lid` correspondente a um número de telefone utilizando o método ["Número com conta no aplicativo ?"](https://developer.z-api.io/contacts/get-iswhatsapp).
 
-Esse endpoint permite verificar se um número possui conta no WhatsApp e, quando aplicável, retorna também o _identificador `@lid`_ associado a esse número.
+Esse endpoint permite verificar se um número possui conta no aplicativo e, quando aplicável, retorna também o _identificador `@lid`_ associado a esse número.
 
 ---
 
 ### Importante
 
-* Essa mudança é _nativa do WhatsApp_, e a Z-API apenas repassa as informações conforme recebidas.
+* Essa mudança é _nativa do aplicativo_, e a Z-API apenas repassa as informações conforme recebidas.
 * O comportamento de retorno (`@lid` ou `phone`) pode variar.
 * O atributo `chatLid` já está implementado nos webhooks da Z-API e pode ser usado tanto para identificar quanto para enviar mensagens normalmente.
-* O `@lid` é uma medida que está sendo implementada pelo próprio WhatsApp; as mudanças estão sendo aplicadas gradualmente e ele ainda não está completamente implementado, por isso o comportamento pode ser inconsistente.
+* O `@lid` é uma medida que está sendo implementada pelo próprio aplicativo; as mudanças estão sendo aplicadas gradualmente e ele ainda não está completamente implementado, por isso o comportamento pode ser inconsistente.

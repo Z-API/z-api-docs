@@ -9,7 +9,7 @@ In this topic, you will get to know all the methods available to register a numb
 
 **What are mobile instances?** Mobile instances are basically like your cell phone! Instead of being connected as a secondary "device" - as is the case with the web instance - they are the primary device. This means that, in addition to connecting a number to this instance, you can also connect other devices - such as web and desktop - through it! Amazing, right?!
 
-Moreover, there are several **advantages** to connecting your number to a mobile instance. One of them would be the WhatsApp account security configurations, for example: [set an email](./set-account-email.md), [set a PIN code](./set-security-code.md), [remove email](./remove-account-email.md), [remove PIN code](./remove-security-code.md), [get account email](./get-account-email.md), [verify if has PIN code](./get-has-security-code.md) e etc...
+Moreover, there are several **advantages** to connecting your number to a mobile instance. One of them would be the application account security configurations, for example: [set an email](./set-account-email.md), [set a PIN code](./set-security-code.md), [remove email](./remove-account-email.md), [remove PIN code](./remove-security-code.md), [get account email](./get-account-email.md), [verify if has PIN code](./get-has-security-code.md) e etc...
 
 Now that you understand and have seen the advantages of the mobile instance, **let's code**!
 
@@ -32,7 +32,7 @@ After verifying the captcha - if that was your case - we can proceed to confirm 
 
 - [Confirm code](./confirm-code)
 
-If you set up a security PIN code on your WhatsApp account, after confirming the registration code (previous step) you will be asked to confirm your PIN code. 
+If you set up a security PIN code on your application account, after confirming the registration code (previous step) you will be asked to confirm your PIN code. 
 
 - [Confirm PIN code](./confirm-security-code.md)
 
@@ -43,5 +43,5 @@ In case you have forgotten your two-step PIN code, you can request an email to r
 Phew! If you followed this step-by-step, you should already be connected to a mobile instance! Now, just give **Wings to your imagination!**
 
 :::tip Tip
-Remember that other APIs related to WhatsApp - such as sending messages and interactions on the account - work in the same way of web instances. In other words, the methods are fully compatible between instances.
+Remember that other APIs related to the application - such as sending messages and interactions on the account - work in the same way of web instances. In other words, the methods are fully compatible between instances.
 :::

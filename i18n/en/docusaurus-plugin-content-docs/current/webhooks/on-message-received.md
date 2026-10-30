@@ -72,7 +72,7 @@ The possible returns of the **on-message-received** webhook are registered below
 | Attributes                   |   Type    | Description                                                                                           |
 | :----------------------------| :-------: | :---------------------------------------------------------------------------------------------------- |
 | isStatusReply                | boolean   | Identifies if the received message is a status reply                                                  |
-| senderLid                    | string    | WhatsApp contact ID                                                                                   |
+| senderLid                    | string    | Application contact ID                                                                                   |
 | connectedPhone               | string    | Phone number connected to the API                                                                     |
 | waitingMessage               | boolean   | Identifies if your message is in the "Waiting for message" status                                     |
 | isEdit                       | boolean   | Identifies if the received message was edited                                                         |
@@ -81,7 +81,7 @@ The possible returns of the **on-message-received** webhook are registered below
 | phone                        | string    | Phone number or group that sent the message                                                           |
 | fromMe                       | boolean   | Indicates if the message was sent from the number connected to the API                                |
 | participantPhone             | string    | Phone number of the group member who sent the message                                                 |
-| participantLid               | string    | WhatsApp contact ID of the group participant who sent the message                                     |
+| participantLid               | string    | Application contact ID of the group participant who sent the message                                     |
 | messageId                    | string    | Message identifier in the conversation                                                                |
 | status                       | string    | Status of the message at the time of sending (PENDING, SENT, RECEIVED, READ, or PLAYED)               |
 | referenceMessageId           | string    | References the message if the received message is a reply to a previous message in the conversation   |
@@ -1664,7 +1664,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Example of return for changing the connected WhatsApp name
+### Example of return for changing the connected application name
 
 ```json
 {
@@ -1693,7 +1693,7 @@ The possible returns of the **on-message-received** webhook are registered below
 }
 ```
 
-### Example of return for changing the connected WhatsApp photo
+### Example of return for changing the connected application photo
 
 ```json
 {
@@ -1980,13 +1980,13 @@ break;
 
 ```json
 case "BLUE_MSG_SELF_PREMISE_UNVERIFIED":
-campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Você está conversando com uma conta comercial, mas ainda não foi confirmada pelo WhatsApp.<br><br></span>" + campohora + "</div></div>"
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Você está conversando com uma conta comercial, mas ainda não foi confirmada pelo aplicativo.<br><br></span>" + campohora + "</div></div>"
 break;
 ```
 
 ```json
 case "BLUE_MSG_SELF_PREMISE_VERIFIED":
-campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Você está conversando com uma conta comercial verificada pelo WhatsApp.<br><br></span>" + campohora + "</div></div>"
+campo_html = "<div align='center'><div class='alert alert-primary' role='alert'><span>Você está conversando com uma conta comercial verificada pelo aplicativo.<br><br></span>" + campohora + "</div></div>"
 break;
 ```
 

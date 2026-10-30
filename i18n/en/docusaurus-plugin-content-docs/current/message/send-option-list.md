@@ -18,7 +18,7 @@ title: Sending options list
 
 :::caution ATTENTION
 
-The list of options functionality no longer works in groups. This limitation occurs because the feature was discontinued by WhatsApp itself for group chats. In individual conversations, the list of buttons continues to function normally.
+The list of options functionality no longer works in groups. This limitation occurs because the feature was discontinued by the application itself for group chats. In individual conversations, the list of buttons continues to function normally.
 
 :::
 
@@ -105,7 +105,7 @@ In this method you will be able to send text messages with a list of options whe
 | Attributes | Type   | Description       |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example 
 

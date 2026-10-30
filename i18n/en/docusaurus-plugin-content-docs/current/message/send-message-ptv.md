@@ -29,7 +29,7 @@ By Base64: If you choose this option, you will need to have a method in your app
 
 ### Size and formats
 
-WhatsApp limits the size of files, and its policy changes constantly. Therefore, we always recommend checking directly on WhatsApp's website for the most up-to-date information.
+The application limits the size of files, and its policy changes constantly. Therefore, we always recommend checking directly on the application's website for the most up-to-date information.
 
 In this [link], you will find everything you need to know about file formats and sizes.
 
@@ -83,7 +83,7 @@ In this [link], you will find everything you need to know about file formats and
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 | id        | string | Added for compatibility with Zapier, it has the same value as the messageId |
 
 Example

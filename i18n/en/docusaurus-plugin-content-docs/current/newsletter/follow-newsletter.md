@@ -51,7 +51,7 @@ Method
 
 :::warning
 
-The newsletter ID must always include the "@newsletter" suffix, as this is the standard used by WhatsApp itself.
+The newsletter ID must always include the "@newsletter" suffix, as this is the standard used by the application itself.
 
 :::
 

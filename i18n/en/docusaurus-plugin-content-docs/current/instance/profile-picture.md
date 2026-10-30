@@ -19,7 +19,7 @@ title: Update profile picture
 
 ## Concept
 
-This method is responsible for changing your profile picture on WhatsApp.
+This method is responsible for changing your profile picture on the application.
 
 ---
 

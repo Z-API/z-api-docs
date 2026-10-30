@@ -22,7 +22,7 @@ This method is responsible for adding new participants to the community.
 
 :::tip New Attribute
 
-Recently, WhatsApp implemented a validation to check if the phone number connected to the API has the client's contact saved. However, Z-API has developed a solution to bypass this validation by introducing a new feature called **"autoInvite"**. Now, when a request is sent to add 10 clients to a group and only 5 of them are successfully added, the API sends private invites to the five clients who were not added. These invites allow them to join the community, even if their phone numbers are not saved as contacts.
+Recently, the application implemented a validation to check if the phone number connected to the API has the client's contact saved. However, Z-API has developed a solution to bypass this validation by introducing a new feature called **"autoInvite"**. Now, when a request is sent to add 10 clients to a group and only 5 of them are successfully added, the API sends private invites to the five clients who were not added. These invites allow them to join the community, even if their phone numbers are not saved as contacts.
 
 :::
 

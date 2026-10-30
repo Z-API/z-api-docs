@@ -22,7 +22,7 @@ This method allows you to redefine the invitation link of a group.
 
 :::caution Attention
 
-On November 4, 2021, WhatsApp changed the format for creating new groups, previously: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
+On November 4, 2021, the application changed the format for creating new groups, previously: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
 
 :::
 

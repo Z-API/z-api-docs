@@ -74,7 +74,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 | Atributos                   |   Tipo    | Descrição                                                                                           |
 | :-------------------------  | :-------: | :-------------------------------------------------------------------------------------------------- |
 | isStatusReply               | boolean   | Identifica se a mensagem recebida é uma resposta de status                                          |
-| senderLid                   | string    | ID do contato no whatsapp                                                                           |                                     
+| senderLid                   | string    | ID do contato no aplicativo                                                                           |                                     
 | connectedPhone              | string    | Número de telefone conectado à API                                                                  |
 | waitingMessage              | boolean   | Identifica se a sua mensagem está com status de "Aguardando a mensagem"                             |
 | isEdit                      | boolean   | Identifica se a mensagem recebida foi editada                                                       |
@@ -83,7 +83,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 | phone                       | string    | Número de telefone, ou do grupo que enviou a mensagem.                                              |
 | fromMe                      | boolean   | Indica se a mensagem enviada partiu do número conectado a API                                       |
 | participantPhone            | string    | Número de telefone do membro do grupo que enviou a mensagem.                                        |
-| participantLid              | string    | ID do contado no whatsapp, do participante que enviou a mensagem dentro de um grupo                 |
+| participantLid              | string    | ID do contado no aplicativo, do participante que enviou a mensagem dentro de um grupo                 |
 | messageId                   | string    | Idetificador da mensagem na conversa.                                                               |
 | status                      | string    | Status que a mensagem se encontra no momento do envio (PENDING, SENT, RECEIVED, READ ou PLAYED).    |
 | referenceMessageId          | string    | Referência a mensagem que foi respondida para o caso da mensagem recebida ser uma resposta a uma mensagem da conversa. |
@@ -1908,7 +1908,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de alteração do Nome do Whatsapp conectado
+### Exemplo de retorno de alteração do Nome do aplicativo conectado
 
 ```json
 {
@@ -1937,7 +1937,7 @@ Os possíveis retornos do webhook **on-message-received** estão cadastrado logo
 }
 ```
 
-### Exemplo de retorno de alteração da foto do Whatsapp conectado
+### Exemplo de retorno de alteração da foto do aplicativo conectado
 
 ```json
 {
@@ -2167,7 +2167,7 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ### Conceituação
 
-As notificações são mensagens de WhatsApp que se baseiam em modelos de mensagens prévias do WhatsApp.
+As notificações são mensagens do aplicativo que se baseiam em modelos de mensagens prévias do aplicativo.
 
 Posto dessa forma, aqui estão documentadas as notificações que recebemos, caso não queira receber essas notificações é necessário ignorar a mensagem quando ela chegar com o atributo notification.
 

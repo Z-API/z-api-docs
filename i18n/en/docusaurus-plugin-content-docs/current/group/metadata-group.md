@@ -24,7 +24,7 @@ This method returns the group metadata with all information about the group and 
 
 :::caution Attention
 
-On November 4, 2021 whatsapp changed the format of creating new groups. before: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
+On November 4, 2021 the application changed the format of creating new groups. before: "phone": "5511999999999-1623281429" now: "phone": "120363019502650977-group"
 
 :::
 

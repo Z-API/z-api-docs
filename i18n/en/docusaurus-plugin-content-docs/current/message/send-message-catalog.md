@@ -18,7 +18,7 @@ title: Send catalog
 
 ## Concept
 
-In this method, you can send messages with a link to your catalog. The catalog feature is only available for **business** WhatsApp accounts. It is also necessary for the account to have products and a configured catalog. Operations related to products and collections can be found in the **[WhatsApp Business](../business/edit-product.md)** section of our documentation.
+In this method, you can send messages with a link to your catalog. The catalog feature is only available for **business** application accounts. It is also necessary for the account to have products and a configured catalog. Operations related to products and collections can be found in the **[the Business application](../business/edit-product.md)** section of our documentation.
 
 ![image](../../../../../img/catalog-message.jpeg)
 
@@ -64,7 +64,7 @@ In this method, you can send messages with a link to your catalog. The catalog f
 | Attribute | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id in z-api    |
-| messageId | string | id in WhatsApp |
+| messageId | string | id in the application |
 | id        | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 

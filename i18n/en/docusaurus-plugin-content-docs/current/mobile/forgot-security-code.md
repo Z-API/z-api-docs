@@ -18,7 +18,7 @@ title: Recovery PIN code
 
 ## Concept
 
-Method used to request an email for recovery of your account's PIN code. This method is only necessary if you have set up two-step verification on WhatsApp and no longer remember this code. This way, WhatsApp will send a link to reset the PIN code in the email that you linked to your WhatsApp account.
+Method used to request an email for recovery of your account's PIN code. This method is only necessary if you have set up two-step verification on the application and no longer remember this code. This way, the application will send a link to reset the PIN code in the email that you linked to your application account.
 
 ---
 

@@ -21,7 +21,7 @@ title: Assign Categories
 This method allows you to assign categories to a business/company.
 
 :::important Important
-This method is only available for WhatsApp Business accounts. 
+This method is only available for Business application accounts. 
 :::
 
 :::warning Warning

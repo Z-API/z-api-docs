@@ -18,7 +18,7 @@ title: Verificar disponibilidade de registro
 
 ## Conceituação
 
-Método utilizado para verificar disponibilidade de registro de um número. Este método é obrigatóriamente **precedente** ao método de solicitar o envio do código, pois além de buscar as informções sobre a disponibilidade, também realiza um setup de onboarding do número no WhatsApp. Através dessa API você também pode ver os métodos disponíveis para solicitação do código de confirmação, além de saber se o número está banido ou não.
+Método utilizado para verificar disponibilidade de registro de um número. Este método é obrigatóriamente **precedente** ao método de solicitar o envio do código, pois além de buscar as informções sobre a disponibilidade, também realiza um setup de onboarding do número no aplicativo. Através dessa API você também pode ver os métodos disponíveis para solicitação do código de confirmação, além de saber se o número está banido ou não.
 
 ---
 
@@ -55,7 +55,7 @@ Método utilizado para verificar disponibilidade de registro de um número. Este
 | appealToken | string | No caso do número estar banido, esse atributo será retornado contendo um token para **[solicitação de desbanimento](./request-unbanning)** |
 | smsWaitSeconds   | number | Tempo que deve ser aguardado para solicitação de **sms**. Caso o valor seja 0, significa que a solicitação já pode ser enviada para este método |
 | voiceWaitSeconds | number | Tempo que deve ser aguardado para solicitação de **chamada de voz**. Mesmo objetivo do **smsWaitSeconds** |
-| waOldWaitSeconds | number | Tempo que deve ser aguardado para solicitação de **pop-up no aplicativo do celular**. Mesmo objetivo do **smsWaitSeconds**. **Atenção**: não utilize esse método se você não tem acesso ao celular onde o número está atualmente vinculado. Este método é útil para agilizar o processo de confirmação do código, sem ter que esperar o recebimento de um SMS ou chamada de voz, porém necessita que você tenha o dispositivo em mãos e com o aplicativo do WhatsApp aberto. |
+| waOldWaitSeconds | number | Tempo que deve ser aguardado para solicitação de **pop-up no aplicativo do celular**. Mesmo objetivo do **smsWaitSeconds**. **Atenção**: não utilize esse método se você não tem acesso ao celular onde o número está atualmente vinculado. Este método é útil para agilizar o processo de confirmação do código, sem ter que esperar o recebimento de um SMS ou chamada de voz, porém necessita que você tenha o dispositivo em mãos e com o aplicativo aberto. |
 | waOldEligible | boolean | Define se o método de solicitação do código via **pop-up no aplicativo do celular** está disponível. |
 | reason | string | Em caso de erro, esse atributo diz a razão pela qual o erro aconteceu |
 
@@ -85,7 +85,7 @@ Método utilizado para verificar disponibilidade de registro de um número. Este
 ```
 
 :::warning Atenção
-Existem alguns cenários onde o número é impedido de ser conectado até mesmo no aplicativo oficial do WhatsApp. Nesse caso, a API de verificar disponibilidade do número não é capaz de identificar isso, e acaba sendo retornado que o número está bloqueado somente no momento de solicitar o código. Infelizmente, até o momento não há nada que possamos fazer a esse respeito, pois, diferente do banimento padrão, não é disponibilizado um token (appealToken) para realizar uma solicitação de desbanimento.
+Existem alguns cenários onde o número é impedido de ser conectado até mesmo no aplicativo oficial do aplicativo. Nesse caso, a API de verificar disponibilidade do número não é capaz de identificar isso, e acaba sendo retornado que o número está bloqueado somente no momento de solicitar o código. Infelizmente, até o momento não há nada que possamos fazer a esse respeito, pois, diferente do banimento padrão, não é disponibilizado um token (appealToken) para realizar uma solicitação de desbanimento.
 :::
 
 ### 400

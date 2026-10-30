@@ -21,7 +21,7 @@ title: Change Company Address
 Through this method, it is possible to change the company's commercial address.
 
 :::important Important
-This method is only available for Business WhatsApp accounts.
+This method is only available for Business application accounts.
 :::
 
 ---

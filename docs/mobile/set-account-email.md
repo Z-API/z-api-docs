@@ -18,7 +18,7 @@ title: Cadastrar email na conta
 
 ## Conceituação
 
-Método utilizado para cadastrar um email na sua conta do WhatsApp. Esse email pode ser utilizado mais tarde para recuperação do código PIN de segurança da sua conta.
+Método utilizado para cadastrar um email na sua conta do aplicativo. Esse email pode ser utilizado mais tarde para recuperação do código PIN de segurança da sua conta.
 
 :::caution Atenção
 Essa API está disponível apenas para instâncias mobile.
@@ -32,7 +32,7 @@ Essa API está disponível apenas para instâncias mobile.
 
 | Atributos | Tipo | Descrição |
 | :-------- | :--: | :-- |
-| email     | string | Email a ser cadastrado na sua conta do WhatsApp |
+| email     | string | Email a ser cadastrado na sua conta do aplicativo |
 
 ---
 

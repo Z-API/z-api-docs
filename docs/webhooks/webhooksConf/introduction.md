@@ -7,7 +7,7 @@ title: Introdução
 
 Segundo o Google, Webhook é um recurso usado na internet para que uma aplicação se comunique com outra, fornecendo dados em tempo real sempre que um evento acontecer. Desta forma os dois sistemas realizam trocas de informações sem que nenhuma ação externa precise ser realizada.
 
-Então se você está se integrando com o _Z-API_ e precisa receber informações pelo WhatsApp, é necessário prover estes end-points na sua aplicação para conseguirmos te avisar sobre tudo que acontece no seu WhatsApp. Ou seja, toda vez que o número conectado receber uma interação, vamos fazer uma requisição com o método POST para a URL configurada previamente. (Para cada requisição há um corpo em JSON específico)
+Então se você está se integrando com o _Z-API_ e precisa receber informações pelo aplicativo, é necessário prover estes end-points na sua aplicação para conseguirmos te avisar sobre tudo que acontece no seu aplicativo. Ou seja, toda vez que o número conectado receber uma interação, vamos fazer uma requisição com o método POST para a URL configurada previamente. (Para cada requisição há um corpo em JSON específico)
 
 O Z-API oferece dentro das configurações da instância no painel admin o apontamento de webhooks para que ele possa notificar você sobre interações com seus chats/contatos, atualiações sobre suas mensagem e mudanças na estado da sua instância.
 
@@ -15,11 +15,11 @@ O Z-API oferece dentro das configurações da instância no painel admin o apont
 
 #### Delivery
 
-Responsavel por avisar você que sua mensagem foi entregue ao WhatsApp, mas isso não significa necessáriamente que seu contato a recebeu, para informações de recebimento e leitura você vai precisar observar o webhook de status.
+Responsavel por avisar você que sua mensagem foi entregue ao aplicativo, mas isso não significa necessáriamente que seu contato a recebeu, para informações de recebimento e leitura você vai precisar observar o webhook de status.
 
 #### Receive
 
-Este webhook será chamado toda vez que alguem interagir com seu número no whatsapp.
+Este webhook será chamado toda vez que alguem interagir com seu número no aplicativo.
 
 #### Status
 
@@ -27,7 +27,7 @@ Este método vai lhe avisar de todas mudanças de status que sua mensagem sofrer
 
 #### Disconnected
 
-Este webhook será chamado sempre que nosso serviço identificar alguma indisponibiidade na comunicação, seja do seu celular com o whatsapp ou mesmo da conexão entre seu celular e o Z-API.
+Este webhook será chamado sempre que nosso serviço identificar alguma indisponibiidade na comunicação, seja do seu celular com o aplicativo ou mesmo da conexão entre seu celular e o Z-API.
 
 :::tip Dicas
 

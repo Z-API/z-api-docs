@@ -18,14 +18,14 @@ title: Adicionar Contatos
 
 ## Conceituação
 
-Este método é reponsavel por salvar os contatos do Whatsapp em sua lista de contatos no celular.
+Este método é reponsavel por salvar os contatos do aplicativo em sua lista de contatos no celular.
 
 ---
 
 :::caution Sobre Esse recurso
-O método para adicionar contatos à lista do WhatsApp só funcionará para contas que já receberam a atualização necessária. Certifique-se de que sua conta **do Whatsapp** tenha recebido a atualização antes de utilizar este recurso. Caso contrário, a operação não será concluída com sucesso.
+O método para adicionar contatos à lista do aplicativo só funcionará para contas que já receberam a atualização necessária. Certifique-se de que sua conta **do aplicativo** tenha recebido a atualização antes de utilizar este recurso. Caso contrário, a operação não será concluída com sucesso.
 
-Além disso, é necessário permitir que o WhatsApp adicione contatos diretamente no celular. Para isso, vá até as configurações de privacidade do seu aplicativo e ajuste as permissões de forma que o WhatsApp possa acessar e modificar seus contatos.
+Além disso, é necessário permitir que o aplicativo adicione contatos diretamente no celular. Para isso, vá até as configurações de privacidade do seu aplicativo e ajuste as permissões de forma que o aplicativo possa acessar e modificar seus contatos.
 
 **Veja o exemplo nas imagens abaixo:**
 :::

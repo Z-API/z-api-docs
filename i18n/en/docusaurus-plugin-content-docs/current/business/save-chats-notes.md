@@ -18,10 +18,10 @@ title: Assign Notes to a Chat
 
 ## Concept
 
-This method allows you to assign notes to a chat in WhatsApp Business.
+This method allows you to assign notes to a chat in the Business application.
 
 :::important Important
-This method is only available for devices connected to the Multi-Device version of WhatsApp.
+This method is only available for devices connected to the Multi-Device version of the application.
 :::
 
 ## Attributes

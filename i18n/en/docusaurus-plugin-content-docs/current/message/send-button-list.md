@@ -96,7 +96,7 @@ In this method you will be able to send text messages with action buttons. Butto
 | Attributes | Type   | Description       |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 
 Example 
 

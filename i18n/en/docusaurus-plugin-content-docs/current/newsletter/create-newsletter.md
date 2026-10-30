@@ -74,7 +74,7 @@ This method is responsible for creating a newsletter. Unfortunately, it's not po
 
 :::tip
 
-The returned ID will always include the "@newsletter" suffix, which is the standard used by WhatsApp itself. It should be used in the same format in requests that require the ID as a parameter.
+The returned ID will always include the "@newsletter" suffix, which is the standard used by the application itself. It should be used in the same format in requests that require the ID as a parameter.
 
 :::
 

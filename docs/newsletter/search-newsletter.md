@@ -108,7 +108,7 @@ Método
 
 :::tip Atributo "cursor" no objeto de resposta
 
-A api do WhatsApp fornece o atributo "limit" para realizar a busca dos canais, o que significa que existe paginação dos resultados. Porém, na resposta não existe a indicação do "cursor" dos registros. Sendo assim, por enquanto, o atributo "cursor" sempre será "null", até que o WhatsApp implemente essa funcionalidade.
+A api do aplicativo fornece o atributo "limit" para realizar a busca dos canais, o que significa que existe paginação dos resultados. Porém, na resposta não existe a indicação do "cursor" dos registros. Sendo assim, por enquanto, o atributo "cursor" sempre será "null", até que o aplicativo implemente essa funcionalidade.
 
 :::
 

@@ -57,10 +57,10 @@ Método
 | lastMessageTime | string | Timestamp com a data e hora da ultima ingeração com o chat |
 | isMuted | string | 0 ou 1 indica se você silênciou ou não este chat |
 | isMarkedSpam | boolean | true ou false indica se você marcou este chat como spam |
-| profileThumbnail | string | URL da foto do chat **o Whatsapp apaga após 48h** |
+| profileThumbnail | string | URL da foto do chat **o aplicativo apaga após 48h** |
 | isGroupAnnouncement   | boolean | true ou false indica se o chat é um grupo de avisos   |
 | isGroup   | boolean | true ou false indica se o chat é um grupo   |
-| notes        | object (Note) | Anotações atribuidas ao chat **(somente whatsapp business)** |
+| notes        | object (Note) | Anotações atribuidas ao chat **(somente o aplicativo Business)** |
 | messagesUnread | integer | **descontinuado** |
 | about          | string  | Recado do perfil  |
 

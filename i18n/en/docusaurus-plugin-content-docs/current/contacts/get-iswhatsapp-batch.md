@@ -18,14 +18,14 @@ title: Batch Validate Numbers
 
 ## Concept
 
-Unlike the previous method that individually validates whether a number has WhatsApp through a GET request, this API provides batch verification.
+Unlike the previous method that individually validates whether a number has an application account through a GET request, this API provides batch verification.
 
 :::caution Attention
 Batch Validation Limit: The maximum number of batch validations per request is 50,000 numbers.
 :::
 
 :::important Important
-This method remains the ideal choice when you need to check if a number has WhatsApp, especially useful for form validation. However, it is crucial to note that it is not recommended to use this API to verify the existence of the number before sending a message. The Z-API automatically performs this validation with every message sent, and duplicate use of this method can lead to issues.
+This method remains the ideal choice when you need to check if a number has an application account, especially useful for form validation. However, it is crucial to note that it is not recommended to use this API to verify the existence of the number before sending a message. The Z-API automatically performs this validation with every message sent, and duplicate use of this method can lead to issues.
 :::
 
 ---
@@ -63,10 +63,10 @@ Method
 
 | Attributes   | Type    | Description |
 | :------     | :----   | :------   |
-| exists      | boolean | true if it exists, false for cases where the number doesn't have WhatsApp |
+| exists      | boolean | true if it exists, false for cases where the number doesn't have an application account |
 | inputPhone  | string  | Number sent in the request, may or may not include the ninth digit.|
-| outputPhone | string  | Formatted number according to the WhatsApp response, reflecting the WhatsApp registration and including the ninth digit if applicable. |
-| lid | string  | A unique and private identifier created by WhatsApp to represent contacts without directly exposing their phone number |
+| outputPhone | string  | Formatted number according to the application response, reflecting the application registration and including the ninth digit if applicable. |
+| lid | string  | A unique and private identifier created by the application to represent contacts without directly exposing their phone number |
 
 Example
 

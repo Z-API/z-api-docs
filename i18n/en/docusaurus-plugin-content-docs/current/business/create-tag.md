@@ -22,7 +22,7 @@ title: Create new tag
 This method allows you to create a new tag. When you create a tag, it becomes available for use when assigning it to a chat.
 
 :::important Important
-This method is only available for WhatsApp Business accounts.
+This method is only available for Business application accounts.
 :::
 
 ## Attributes

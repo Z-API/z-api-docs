@@ -21,7 +21,7 @@ title: Sending plain text
 
 In this method you will be able to send simple texts, you can add to them by using the formatting of text and emojis. In case you don’t know how to do that, you can click the links below and follow the instructions:
 
-- To format texts on WhatsApp [click here] 
+- To format texts on the application [click here] 
 
 - You can also use line breaks in your messages however, this can be done in different ways. This will depend on the platform that you are using as well as the language, up until this moment we have identified the following.
 
@@ -46,7 +46,7 @@ What you need to know is that it is a normal ASCII character. Just like there ar
 
 To test this, just copy an emoji and paste into your text! You can use this one 🤪  if you’d like
 
-::: Exemplo no WhatsApp
+::: Exemplo no aplicativo
 
 ![image](../../../../../img/Plaintext.jpeg)
 
@@ -67,7 +67,7 @@ To test this, just copy an emoji and paste into your text! You can use this one 
 | :-- | :-: | :-- |
 | delayMessage | number |In this attribute a delay is added to the message. You can decide between a range of 1 - 15 secs (this is for how many seconds it will wait to send the next message EX: “delayMessage”:5,). The default delay is between 1 - 3 secs|
 | delayTyping  | number | In this attribute, a delay is added to the message. You can choose from a range of 1 to 15 seconds, which indicates how many seconds it will remain in the "Typing..." status. (For example, "delayTyping": 5). The default delay if not specified is 0.|
-| editMessageId | string | This attribute allows you to edit previously sent messages on WhatsApp. Use the message ID and the new content in the JSON to make changes. It's necessary to configure the webhook before edit. |
+| editMessageId | string | This attribute allows you to edit previously sent messages on the application. Use the message ID and the new content in the JSON to make changes. It's necessary to configure the webhook before edit. |
 
 ---
 
@@ -89,7 +89,7 @@ To test this, just copy an emoji and paste into your text! You can use this one 
 | Attributes| Type   | Description   |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example
 

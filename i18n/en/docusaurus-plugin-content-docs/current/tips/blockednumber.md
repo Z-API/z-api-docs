@@ -3,7 +3,7 @@ id: blockednumber
 title: Blocks and bans 
 ---
 
-:::caution Are there any possibilities that WhatsApp will block my number? 
+:::caution Are there any possibilities that the application will block my number? 
 
 **YEAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH THERE SURE IS.**
 
@@ -16,18 +16,18 @@ title: Blocks and bans
 ### Good practices! 
 
 
-We created this topic to share a little bit of what we learned about good practices with the intention of avoiding the nuisance of being blocked or banned on WhatsApp.
+We created this topic to share a little bit of what we learned about good practices with the intention of avoiding the nuisance of being blocked or banned on the application.
 
 
 
-We would like to start by sharing the following reflection with you, it is very probable that you receive various messages in a day, those being sent by stores, promotions, telemarketers and so on. Now think, just through WhatsApp how many of those messages do you recieve? Probably none or very few isn’t that true? Even with that being the case WhatsApp allows you to mark those messages as spam and lets you block those numbers and contacts. 
+We would like to start by sharing the following reflection with you, it is very probable that you receive various messages in a day, those being sent by stores, promotions, telemarketers and so on. Now think, just through the application how many of those messages do you recieve? Probably none or very few isn’t that true? Even with that being the case the application allows you to mark those messages as spam and lets you block those numbers and contacts. 
 
 
 
-# WHATSAPP DOESN'T ALLOW SPAM
+# THE APPLICATION DOESN'T ALLOW SPAM
 
 
-WhatsApp is very rigorous when the topic is about sending spam and that is why we pay more attention to them than regular SMS messages. Why is it that we let various texts accumulate and yet we just can’t keep ourselves from looking at our phone when someone sends us a WhatsApp? Because we know that we rarely receive spam on WhatsApp and we know it will most likely be someone that we know trying to get into contact and rarely does someone we know send us promotions or things alike.
+The application is very rigorous when the topic is about sending spam and that is why we pay more attention to them than regular SMS messages. Why is it that we let various texts accumulate and yet we just can’t keep ourselves from looking at our phone when someone sends us a message? Because we know that we rarely receive spam on the application and we know it will most likely be someone that we know trying to get into contact and rarely does someone we know send us promotions or things alike.
 
 
 ---

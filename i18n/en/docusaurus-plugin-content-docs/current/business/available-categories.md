@@ -21,7 +21,7 @@ title: List Categories
 This method allows you to list the available categories that can be assigned to a business/company.
 
 :::important Important
-This method is only available for WhatsApp Business accounts. 
+This method is only available for Business application accounts. 
 :::
 
 ---

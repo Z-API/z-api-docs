@@ -21,7 +21,7 @@ title: Listar categorias
 Através deste método, é possível listar as categorias disponíveis para atribuir a empresa / compania.
 
 :::important Importante
-Este método está disponível apenas para contas Business do whatsapp. 
+Este método está disponível apenas para contas Business do aplicativo. 
 :::
 
 ---

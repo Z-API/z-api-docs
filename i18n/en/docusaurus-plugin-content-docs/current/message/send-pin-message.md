@@ -58,7 +58,7 @@ In this method you will be able to pin chat messages, whether private chats or g
 | Attributes| Type   | Description   |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example
 

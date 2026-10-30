@@ -18,7 +18,7 @@ title: Pegar contatos
 
 ## Conceituação
 
-Este método é responsável por retornar todos os contatos do WhatsApp. Lembre-se do que foi dito na introdução sobre número de contatos, caso tenho pulado esta parte, sugiro que você volte um passo e leia a nossa introdução sobre contatos.
+Este método é responsável por retornar todos os contatos do aplicativo. Lembre-se do que foi dito na introdução sobre número de contatos, caso tenho pulado esta parte, sugiro que você volte um passo e leia a nossa introdução sobre contatos.
 
 ---
 
@@ -59,7 +59,7 @@ Método
 | name | string | **Nome e sobrenome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
 | short | string | **Nome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
 | vname | string | Nome do contato caso você tenha ele como contato |
-| notify | string | Nome informado nas configurações de nome do WhatsApp |
+| notify | string | Nome informado nas configurações de nome do aplicativo |
 
 Exemplo
 

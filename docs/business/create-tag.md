@@ -22,7 +22,7 @@ title: Criar nova etiqueta
 Através deste método, é possível criar uma nova etiqueta. Quando você cria uma etiqueta, ela fica disponível para ser utilizada ao atribuí-la em um chat.
 
 :::important Importante
-Este método está disponível apenas para contas Business do whatsapp.
+Este método está disponível apenas para contas Business do aplicativo.
 :::
 
 ## Atributos

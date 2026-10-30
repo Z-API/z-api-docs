@@ -5,16 +5,16 @@ title: Lid
 
 ## Introduction
 
-The `@lid` (Linked ID) is a _unique and private identifier_ created by WhatsApp to represent contacts without directly exposing the phone number.
-This change is part of WhatsApp's _privacy updates_, allowing users to hide their number in certain contexts.
+The `@lid` (Linked ID) is a _unique and private identifier_ created by the application to represent contacts without directly exposing the phone number.
+This change is part of the application's _privacy updates_, allowing users to hide their number in certain contexts.
 
-In some cases, WhatsApp is sending the `@lid` as the user's primary identification, even if they have not enabled any option to hide their number.
+In some cases, the application is sending the `@lid` as the user's primary identification, even if they have not enabled any option to hide their number.
 
 ---
 
 ### Difference between `@lid` and `phone`
 
-WhatsApp can return contact identifiers in different ways, depending on the type of conversation, group, or privacy settings:
+The application can return contact identifiers in different ways, depending on the type of conversation, group, or privacy settings:
 
 * `phone`: Can contain the actual number (`"554499999999"`) or the `@lid` itself (`"999999999999999@lid"`).
 
@@ -24,7 +24,7 @@ WhatsApp can return contact identifiers in different ways, depending on the type
 
 ### Webhook Example
 
-In Z-API webhooks, WhatsApp can return the contact identifier in different ways, depending on the type of interaction and the user's privacy settings.
+In Z-API webhooks, the application can return the contact identifier in different ways, depending on the type of interaction and the user's privacy settings.
 
 #### Example – Complete return with number and `@lid`:
 
@@ -74,27 +74,27 @@ Sending works normally, as `@lid` _is already supported_ by the Z-API in most en
 ### Converting `@lid` to Number
 
 It is not possible to convert an `@lid` to a phone number (`phone`).
-This limitation exists _for privacy reasons defined by WhatsApp_.
+This limitation exists _for privacy reasons defined by the application_.
 Allowing this conversion would invalidate the purpose of the number hiding feature.
 
-Direct mapping between `@lid` and `phone` _is not provided by WhatsApp or Z-API_.
+Direct mapping between `@lid` and `phone` _is not provided by the application or Z-API_.
 
 ---
 
 ### Converting Number (`phone`) to `@lid`
 
-On the other hand, it is possible to obtain the `@lid` corresponding to a phone number using the ["Is WhatsApp Number?"](https://developer.z-api.io/contacts/get-iswhatsapp) method.
+On the other hand, it is possible to obtain the `@lid` corresponding to a phone number using the ["Has Application Account?"](https://developer.z-api.io/contacts/get-iswhatsapp) method.
 
-This endpoint allows you to check if a number has a WhatsApp account and, when applicable, also returns the `@lid` identifier associated with that number.
+This endpoint allows you to check if a number has an application account and, when applicable, also returns the `@lid` identifier associated with that number.
 
 ---
 
 ### Important
 
-* This change is _native to WhatsApp_, and Z-API only forwards the information as received.
+* This change is _native to the application_, and Z-API only forwards the information as received.
 
 * The return behavior (`@lid` or `phone`) may vary.
 
 * The `chatLid` attribute is already implemented in Z-API webhooks and can be used both to identify and send messages normally.
 
-* The `@lid` is a measure being implemented by WhatsApp itself; changes are being applied gradually and it is not yet fully implemented, so behavior may be inconsistent.
+* The `@lid` is a measure being implemented by the application itself; changes are being applied gradually and it is not yet fully implemented, so behavior may be inconsistent.

@@ -40,7 +40,7 @@ Simples e objetivo este método permite você enviar um contato, você não prec
 | :-- | :-: | :-- |
 | messageId | String | Atributo utilizado para responder uma mensagem do chat, basta adicionar o messageId da mensagem que queira responder neste atributo |
 | delayMessage | number | Nesse atributo um delay é adicionado na mensagem. Você pode decidir entre um range de 1~15 sec, significa quantos segundos ele vai esperar para enviar a próxima mensagem. (Ex "delayMessage": 5, ). O delay default caso não seja informado é de 1~3 sec |
-| contactBusinessDescription | string | Breve descrição sobre o contato (não é exibido no whatsapp web) |
+| contactBusinessDescription | string | Breve descrição sobre o contato (não é exibido no aplicativo web) |
 
 ---
 
@@ -63,7 +63,7 @@ Simples e objetivo este método permite você enviar um contato, você não prec
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

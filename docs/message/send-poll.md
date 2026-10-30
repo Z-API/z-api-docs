@@ -87,7 +87,7 @@ Escolha única
 | Atributos | Tipo | Descrição |
 | :-- | :-- | :-- |
 | zaapId | string | id no z-api |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

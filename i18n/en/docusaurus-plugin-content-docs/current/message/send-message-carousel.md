@@ -143,7 +143,7 @@ With this method, you can send carousel messages with images, text, and action b
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id in z-api    |
-| messageId | string | id in WhatsApp |
+| messageId | string | id in the application |
 | id | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 Example

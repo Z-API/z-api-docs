@@ -47,7 +47,7 @@ In this method, you will be able to send text messages with action buttons. You 
 | label     | string | Text for the button |
 
 :::tip Dica:
-The WhatsApp has a specific link for copying texts. By using this link in the 'url' attribute, your button becomes a copy button (https://www.whatsapp.com/otp/code/?otp_type=COPY_CODE&code=otpyourcode)
+The application has a specific link for copying texts. By using this link in the 'url' attribute, your button becomes a copy button (https://www.whatsapp.com/otp/code/?otp_type=COPY_CODE&code=otpyourcode)
 :::
 
 ### Optional buttons
@@ -66,7 +66,7 @@ The WhatsApp has a specific link for copying texts. By using this link in the 'u
 ---
 
 :::tip Observation:
-Currently, when sending the three types of buttons simultaneously, WhatsApp Web generates an error, which also occurs when using Meta's own API. An alternative is to send only the CALL and URL buttons together, and always send the REPLY button separately.
+Currently, when sending the three types of buttons simultaneously, the web application generates an error, which also occurs when using Meta's own API. An alternative is to send only the CALL and URL buttons together, and always send the REPLY button separately.
 :::
 
 ## Request Body
@@ -119,7 +119,7 @@ Currently, when sending the three types of buttons simultaneously, WhatsApp Web 
 | Attributes| Type   | Description    |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 | id        | string | Added for compatibility with Zapier, it has the same value as the messageId |
 
 Example

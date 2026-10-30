@@ -18,12 +18,12 @@ title: Remover Contatos
 
 ## Conceituação
 
-Este método é reponsavel por remover os contatos do Whatsapp da sua lista de contatos no celular.
+Este método é reponsavel por remover os contatos do aplicativo da sua lista de contatos no celular.
 
 ---
 
 :::caution Sobre Esse recurso
-O método para remover contatos da lista do WhatsApp só funcionará para contas que já receberam a atualização necessária. Certifique-se de que sua conta **do Whatsapp** tenha recebido a atualização antes de utilizar este recurso. Caso contrário, a operação não será concluída com sucesso.
+O método para remover contatos da lista do aplicativo só funcionará para contas que já receberam a atualização necessária. Certifique-se de que sua conta **do aplicativo** tenha recebido a atualização antes de utilizar este recurso. Caso contrário, a operação não será concluída com sucesso.
 :::
 
 

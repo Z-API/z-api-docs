@@ -23,7 +23,7 @@ This method is responsible for creating a group with its respective participants
 
 :::tip Tip
 
-Just like WhatsApp you will need to add at least one contact to be able to create a group 
+Just like the application you will need to add at least one contact to be able to create a group 
 
 :::
 
@@ -35,7 +35,7 @@ You should never let anyone have or know the number that's connected to Z-API an
 
 :::tip Novo atributo
 
-WhatsApp has recently implemented a validation process to check if the phone number connected to the API has the client's contact saved. However, Z-API has developed a solution to bypass this validation by introducing a new attribute called "autoInvite." Now, when a request is made to add 10 clients to a group and only 5 of them are successfully added, the API sends private invitations to the remaining five clients who were not added. These invitations allow them to join the group even if their phone numbers are not saved as contacts.
+The application has recently implemented a validation process to check if the phone number connected to the API has the client's contact saved. However, Z-API has developed a solution to bypass this validation by introducing a new attribute called "autoInvite." Now, when a request is made to add 10 clients to a group and only 5 of them are successfully added, the API sends private invitations to the remaining five clients who were not added. These invitations allow them to join the group even if their phone numbers are not saved as contacts.
 
 :::
 ---

@@ -18,7 +18,7 @@ title: Confirmar código PIN
 
 ## Conceituação
 
-Método utilizado para confirmar código PIN da sua conta. Esse método somente é necessário caso você tenha configurado a verificação em duas etapas no WhatsApp. Se esse for o seu caso, é necessário que esse código PIN seja confirmado, caso contrário, não será possível conectar o número em uma instância mobile.
+Método utilizado para confirmar código PIN da sua conta. Esse método somente é necessário caso você tenha configurado a verificação em duas etapas no aplicativo. Se esse for o seu caso, é necessário que esse código PIN seja confirmado, caso contrário, não será possível conectar o número em uma instância mobile.
 
 ---
 

@@ -18,7 +18,7 @@ title: Pegar Produtos
 
 ## Conceituação
 
-Nesse método você será capaz de pegar os produtos de um catálogo do whatsapp Business
+Nesse método você será capaz de pegar os produtos de um catálogo do aplicativo Business
 
 ## Atributos
 

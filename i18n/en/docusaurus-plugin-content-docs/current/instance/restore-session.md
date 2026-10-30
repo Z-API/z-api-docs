@@ -19,7 +19,7 @@ title: Restoring session
 
 ## Concept
 
-This method tries to restore your connection with WhatsApp based off of the information saved in the Z-API session.
+This method tries to restore your connection with the application based off of the information saved in the Z-API session.
 
 ---
 

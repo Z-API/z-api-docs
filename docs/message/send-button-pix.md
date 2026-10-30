@@ -59,7 +59,7 @@ Neste método você poderá enviar mensagens de chave pix com botão para copiar
 ---
 
 :::warning Observação
-No whatsapp web, as mensagens de pix recebidas não alteram o estado do chat, ou seja, o chat não é marcado como não lido e também não vai para o topo da lista de chats. Contudo, a mensagem é renderizada normalmente. Isso se trata de um bug do próprio whatsapp web.
+No aplicativo web, as mensagens de pix recebidas não alteram o estado do chat, ou seja, o chat não é marcado como não lido e também não vai para o topo da lista de chats. Contudo, a mensagem é renderizada normalmente. Isso se trata de um bug do próprio aplicativo web.
 :::
 
 ## Response
@@ -69,7 +69,7 @@ No whatsapp web, as mensagens de pix recebidas não alteram o estado do chat, ou
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

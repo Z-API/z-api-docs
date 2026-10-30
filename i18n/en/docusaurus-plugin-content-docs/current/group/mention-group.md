@@ -78,7 +78,7 @@ It is also possible to mention participants in the message along with the group 
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | ID in Z-API    |
-| messageId | string | ID in WhatsApp |
+| messageId | string | ID in the application |
 | id | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 Example

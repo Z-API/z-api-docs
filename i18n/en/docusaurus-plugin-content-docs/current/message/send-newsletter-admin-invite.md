@@ -18,7 +18,7 @@ title: Send newsletter admin invitation
 
 ## Concept
 
-In this method, you can send messages inviting people to become administrators of your newsletter on WhatsApp.
+In this method, you can send messages inviting people to become administrators of your newsletter on the application.
 
 ![image](../../../../../img/NewsletterAdminInvite.jpeg)
 
@@ -61,7 +61,7 @@ Object (adminInviteMessage)
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id in z-api    |
-| messageId | string | id in WhatsApp |
+| messageId | string | id in the application |
 | id        | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 

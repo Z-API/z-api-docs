@@ -21,7 +21,7 @@ title: Change Company Description
 Through this method, it is possible to change the company's description.
 
 :::important Important
-This method is only available for Business WhatsApp accounts.
+This method is only available for Business application accounts.
 :::
 
 ---

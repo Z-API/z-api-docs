@@ -18,7 +18,7 @@ title: Get Products V2 (Phone)
 
 ## Concept
 
-In this method, you will be able to get products from a WhatsApp Business catalog of any phone number, whether it's your catalog or someone else's.
+In this method, you will be able to get products from an application Business catalog of any phone number, whether it's your catalog or someone else's.
 
 ## Request Body
 

@@ -59,7 +59,7 @@ Não é possível responder a um evento que você mesmo criou. Nesse caso, sua r
 | Atributos | Tipo | Descrição |
 | :-- | :-- | :-- |
 | zaapId | string | id no z-api |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

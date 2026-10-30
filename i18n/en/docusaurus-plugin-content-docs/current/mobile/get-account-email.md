@@ -19,7 +19,7 @@ title: Get account email
 
 ## Concept
 
-Method used to retrieve the email configured in the WhatsApp account.
+Method used to retrieve the email configured in the application account.
 
 :::caution
 This API is available only for mobile instances.

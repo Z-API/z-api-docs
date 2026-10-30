@@ -22,7 +22,7 @@ title: Tags colors
 This method allows you to list available tags colors.
 
 :::important Important
-This method is only available for WhatsApp Business accounts.
+This method is only available for Business application accounts.
 :::
 
 ## Response

@@ -25,7 +25,7 @@ With this method, you can send order messages containing products from your cata
 ---
 
 :::important Important
-This method is available only for WhatsApp Business accounts.
+This method is available only for Business application accounts.
 :::
 
 ---
@@ -38,7 +38,7 @@ This method is available only for WhatsApp Business accounts.
 | :------          | :----: | :------   |
 | phone            | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks. |
 | order            | object | Information about the order to be sent |
-| paymentSettings  | object | Payment settings (for cards to work, it must be configured in the WhatsApp account on the cell phone) |
+| paymentSettings  | object | Payment settings (for cards to work, it must be configured in the application account on the cell phone) |
 
 Object (order)
 
@@ -157,7 +157,7 @@ When sending a product in the "products" list without the "productId" attribute,
 | Attribute | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | z-api ID    |
-| messageId | string | WhatsApp ID |
+| messageId | string | Application ID |
 | id        | string | Added for compatibility with Zapier; it has the same value as messageId |
 
 Example

@@ -75,7 +75,7 @@ If you have doubts about how to send a Base64 image, access the "Send Image" mes
 | Attributos| Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Exemplo
 

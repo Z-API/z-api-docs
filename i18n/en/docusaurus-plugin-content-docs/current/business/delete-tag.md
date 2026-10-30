@@ -22,7 +22,7 @@ title: Delete tag
 This method allows you to delete a tag.
 
 :::important Important
-This method is only available for WhatsApp Business accounts.
+This method is only available for Business application accounts.
 :::
 
 ## Request Params

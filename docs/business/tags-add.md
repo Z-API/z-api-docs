@@ -18,10 +18,10 @@ title: Atribuir etiquetas a um chat
 
 ## Conceituação
 
-Através deste método, é possível atribuir uma etiqueta a um chat no whatsapp business
+Através deste método, é possível atribuir uma etiqueta a um chat no aplicativo Business
 
 :::important Importante
-Este método está disponível apenas para dispositivos conectados a versão Multi-Devices do whatsapp. 
+Este método está disponível apenas para dispositivos conectados a versão Multi-Devices do aplicativo. 
 :::
 
 ## Response

@@ -23,7 +23,7 @@ This method is responsible for rejecting the entry of participants into the grou
 
 :::caution Atenção
 
-On November 4, 2021, WhatsApp changed the format for creating new groups. Previously: "phone": "5511999999999-1623281429," and now: "phone": "120363019502650977-group"
+On November 4, 2021, the application changed the format for creating new groups. Previously: "phone": "5511999999999-1623281429," and now: "phone": "120363019502650977-group"
 
 :::
 

@@ -18,7 +18,7 @@ title: Enviar produto
 
 ## Conceituação
 
-Neste método você poderá enviar mensagens de seus produtos. O recurso de produtos está disponível apenas para contas **business** do WhatsApp. É necessário também, que a conta possua produtos cadastrados. Operações realacionadas a produtos podem ser encontradas na sessão **[WhatsApp Business](../business/get-products.md)** da nossa documentação.
+Neste método você poderá enviar mensagens de seus produtos. O recurso de produtos está disponível apenas para contas **business** do aplicativo. É necessário também, que a conta possua produtos cadastrados. Operações realacionadas a produtos podem ser encontradas na sessão **[Aplicativo Business](../business/get-products.md)** da nossa documentação.
 
 ![image](../../img/product-message.jpeg)
 
@@ -53,7 +53,7 @@ Neste método você poderá enviar mensagens de seus produtos. O recurso de prod
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id        | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 

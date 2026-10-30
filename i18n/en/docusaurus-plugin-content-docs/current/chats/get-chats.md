@@ -62,10 +62,10 @@ Method
 | lastMessageTime | string | Timestamp with date and time of your last interaction with that chat  |
 | isMuted | string | 0 or 1 indicates if you have silenced or not a certain chat |
 | isMarkedSpam | boolean | True or false indicates if you have marked a chat as spam |
-| profileThumbnail | string | Chat photo URL that **Whatsapp deletes after 48h** |
+| profileThumbnail | string | Chat photo URL that **the application deletes after 48h** |
 | isGroupAnnouncement   | boolean | true or false indicates if the chat is an announcement group |
 | isGroup   | boolean | true or false indicates if the chat is a group  |
-| notes        | object (Note) | Chat notes **(only whatsapp business)** |
+| notes        | object (Note) | Chat notes **(only the Business application)** |
 | messagesUnread | integer | **discontinued** |
 
 Object (Note)

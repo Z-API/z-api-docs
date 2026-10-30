@@ -18,7 +18,7 @@ title: Recuperação de código PIN
 
 ## Conceituação
 
-Método utilizado para solicitar email para recuperação do código PIN da sua conta. Esse será útil caso você tenha configurado a verificação em duas etapas no WhatsApp e não se lembre mais desse código. Dessa forma, o WhatsApp enviará um link para redefinição de código PIN no email que você vinculou à sua conta do WhatsApp.
+Método utilizado para solicitar email para recuperação do código PIN da sua conta. Esse será útil caso você tenha configurado a verificação em duas etapas no aplicativo e não se lembre mais desse código. Dessa forma, o aplicativo enviará um link para redefinição de código PIN no email que você vinculou à sua conta do aplicativo.
 
 ---
 

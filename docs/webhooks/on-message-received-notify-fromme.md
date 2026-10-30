@@ -684,7 +684,7 @@ Caso você receba um erro 415, certifique de adicionar na headers da requisiçã
 
 ### Conceituação
 
-As notificações são mensagens de WhatsApp que se baseiam em modelos de mensagens prévias do WhatsApp.
+As notificações são mensagens do aplicativo que se baseiam em modelos de mensagens prévias do aplicativo.
 
 Posto dessa forma, aqui estão documentadas as notificações que recebemos, caso não queira receber essas notificações é necessário ignorar a mensagem quando ela chegar com o atributo notification.
 

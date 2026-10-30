@@ -22,7 +22,7 @@ title: Editar etiqueta
 Através deste método, é possível editar uma etiqueta.
 
 :::important Importante
-Este método está disponível apenas para contas Business do whatsapp.
+Este método está disponível apenas para contas Business do aplicativo.
 :::
 
 ## Atributos

@@ -22,7 +22,7 @@ Este método é responsável por criar um grupo com seus respectivos participant
 
 :::tip Dica
 
-Assim como no WhatsApp Web você vai precisar adicionar ao menos um contato para conseguir criar um grupo.
+Assim como no aplicativo web você vai precisar adicionar ao menos um contato para conseguir criar um grupo.
 
 :::
 
@@ -33,7 +33,7 @@ Assim como no WhatsApp Web você vai precisar adicionar ao menos um contato para
 
 :::tip Novo atributo
 
-Recentemente, o WhatsApp implementou uma validação para verificar se o número de telefone conectado à API possui o contato do cliente salvo. No entanto, a Z-API desenvolveu uma solução para contornar essa validação, introduzindo um novo recurso chamado **"autoInvite"**. Agora, quando uma solicitação é enviada para adicionar 10 clientes a um grupo e apenas 5 deles são adicionados com sucesso, a API envia convites privados para os cinco clientes que não foram adicionados. Esses convites permitem que eles entrem no grupo, mesmo que seus números de telefone não estejam salvos como contatos.
+Recentemente, o aplicativo implementou uma validação para verificar se o número de telefone conectado à API possui o contato do cliente salvo. No entanto, a Z-API desenvolveu uma solução para contornar essa validação, introduzindo um novo recurso chamado **"autoInvite"**. Agora, quando uma solicitação é enviada para adicionar 10 clientes a um grupo e apenas 5 deles são adicionados com sucesso, a API envia convites privados para os cinco clientes que não foram adicionados. Esses convites permitem que eles entrem no grupo, mesmo que seus números de telefone não estejam salvos como contatos.
 
 :::
 ---

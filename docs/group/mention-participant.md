@@ -58,7 +58,7 @@ Este método é responsável por fazer a menção dos participantes em um grupo.
 
 ## Marcar todos no grupo
 
-Este método permite mencionar vários membros de um grupo no WhatsApp sem a necessidade de incluir explicitamente o "@" antes dos números. Isso é útil para marcar vários membros de uma só vez.
+Este método permite mencionar vários membros de um grupo no aplicativo sem a necessidade de incluir explicitamente o "@" antes dos números. Isso é útil para marcar vários membros de uma só vez.
 
 ```json
 {
@@ -76,7 +76,7 @@ Este método permite mencionar vários membros de um grupo no WhatsApp sem a nec
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

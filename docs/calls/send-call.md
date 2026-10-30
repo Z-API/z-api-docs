@@ -18,7 +18,7 @@ title: Fazer ligação
 
 ## Conceituação
 
-Neste método você enviar uma ligação a um número que possua whatsapp, seja ele seu contato ou não.
+Neste método você enviar uma ligação a um número que possua conta no aplicativo, seja ele seu contato ou não.
 
 ---
 
@@ -63,7 +63,7 @@ O atributo **callAudioUrl** está disponível apenas para contas que possuem a f
 | Atributos | Tipo | Descrição |
 | :-- | :-- | :-- |
 | zaapId | string | id no z-api |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

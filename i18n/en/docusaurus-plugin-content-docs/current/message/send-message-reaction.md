@@ -66,7 +66,7 @@ In this method you will be able to react to messages that were sent or recieved 
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example 
 

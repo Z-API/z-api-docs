@@ -15,7 +15,7 @@ title: Chat with Meta AI
 
 ## Concept
 
-This method allows direct interaction with Meta AI on WhatsApp through the Z-API, facilitating the sending of text messages to obtain automated and contextual responses. With it, you can send questions and commands to Meta AI in private conversations by directing messages to the exclusive number 13135550002, or include the AI in groups by using the group ID as the recipient.
+This method allows direct interaction with Meta AI on the application through the Z-API, facilitating the sending of text messages to obtain automated and contextual responses. With it, you can send questions and commands to Meta AI in private conversations by directing messages to the exclusive number 13135550002, or include the AI in groups by using the group ID as the recipient.
 
 ## How to Use
 
@@ -24,7 +24,7 @@ To start using Meta AI with the Z-API, simply send a text message to the Meta AI
 :::warning Atenção
 Currently, Meta AI on the Z-API only supports text messages. This means that audio, documents, images, and other multimedia files are not compatible with this integration. Therefore, it is necessary to send only text messages to ensure proper functionality.
 
-Furthermore, this feature is only available for personal WhatsApp accounts, meaning it is not accessible for business accounts.
+Furthermore, this feature is only available for personal application accounts, meaning it is not accessible for business accounts.
 :::
 
 ## Attributes
@@ -74,7 +74,7 @@ Furthermore, this feature is only available for personal WhatsApp accounts, mean
 | Attributes | Type   | Description      |
 | :--------  | :----- | :-------------   |
 | zaapId     | string | ID in Z-API      |
-| messageId  | string | ID in WhatsApp   |
+| messageId  | string | ID in the application   |
 | id         | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 Example

@@ -18,10 +18,10 @@ title: Buscar etiquetas
 
 ## Conceituação
 
-Nesse método você busca todas suas etiquetas cadastradas em seu whatsapp business.
+Nesse método você busca todas suas etiquetas cadastradas em seu aplicativo Business.
 
 :::important Importante
-Este método está disponível apenas para dispositivos conectados a versão Multi-Devices do whatsapp.
+Este método está disponível apenas para dispositivos conectados a versão Multi-Devices do aplicativo.
 :::
 
 ## Response

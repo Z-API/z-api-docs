@@ -5,12 +5,12 @@ title: Enabling a fixed number
 
 ## Introduction 
 
-To enable a fixed number, you need to have a cellphone in order to host your fixed number. (This option is available for WhatsApp business). In this step by step guide that we created we used an Android. 
+To enable a fixed number, you need to have a cellphone in order to host your fixed number. (This option is available for the Business application). In this step by step guide that we created we used an Android. 
 
 
 ### First step
 
-Download the app “WhatsApp business” on your phone.
+Download the app “Business application” on your phone.
 
 [Android]
 
@@ -26,7 +26,7 @@ Download the app “WhatsApp business” on your phone.
 
 ### Second step 
 
-WhatsApp business will ask for your permission to access the files on your phone, choose the continue option to allow them to do so. On the following screen, choose your country and enter your fixed number. 
+The Business application will ask for your permission to access the files on your phone, choose the continue option to allow them to do so. On the following screen, choose your country and enter your fixed number. 
 
 ![img](../../../../../img/WhatsAppSecond.jpeg)
 
@@ -48,4 +48,4 @@ You will receive a code, however since you can't receive texts on a fixed number
 ### Fourth step
 Be happy!
 
-Make any alterations to your settings on WhatsApp business and read Z-API’s QrCode to give wings to your imagination !
+Make any alterations to your settings on the Business application and read Z-API’s QrCode to give wings to your imagination !

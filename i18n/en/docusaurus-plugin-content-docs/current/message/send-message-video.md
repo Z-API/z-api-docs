@@ -27,7 +27,7 @@ Method responsible for sending videos to your chats, you can work with two types
 
 ### Size and formats 
 
-WhatsApp limits the sizes of files and its politics constantly changes and because of that we always recommend that you verify directly on WhatsApp’s website.
+The application limits the sizes of files and its politics constantly changes and because of that we always recommend that you verify directly on the application's website.
 
 In this [link] you can find everything that you need to know about formatting and file sizing.
 [link]: https://developers.facebook.com/docs/whatsapp/api/media
@@ -89,7 +89,7 @@ In this [link] you can find everything that you need to know about formatting an
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example
 

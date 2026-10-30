@@ -18,7 +18,7 @@ title: Enviar convite de admin do canal
 
 ## Conceituação
 
-Neste método você poderá enviar mensagens convidando pessoas para serem administradoras dos seus canais no WhatsApp.
+Neste método você poderá enviar mensagens convidando pessoas para serem administradoras dos seus canais no aplicativo.
 
 ![image](../../img/NewsletterAdminInvite.jpeg)
 
@@ -62,7 +62,7 @@ Object (adminInviteMessage)
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id        | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 

@@ -29,7 +29,7 @@ Method used to request the unbanning of a number.
 | Attributes | Type | Description |
 | :-- | :-: | :-- |
 | appealToken | string | Token for unbanning a specific number |
-| description | string | Description to be sent for WhatsApp analysis   |
+| description | string | Description to be sent for the application analysis   |
 
 ---
 

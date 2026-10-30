@@ -25,7 +25,7 @@ In this method, you can send messages to update the payment status of previously
 ---
 
 :::important Important
-This method is available only for WhatsApp Business accounts.
+This method is available only for Business application accounts.
 :::
 
 ---
@@ -37,7 +37,7 @@ This method is available only for WhatsApp Business accounts.
 | Attributes       | Type   | Description |
 | :-------------- | :----: | :-------- |
 | phone           | string | Recipient's phone number in the format DDI DDD NUMBER, e.g., 551199999999. **IMPORTANT**: Send only numbers, without formatting or masks |
-| messageId       | string | ID of the original WhatsApp message of the order |
+| messageId       | string | ID of the original application message of the order |
 | referenceId     | string | Reference ID of the order (returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**) |
 | orderRequestId  | string | Order request reference ID (returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**) |
 | orderStatus     | string | Current order status (pending, processing, shipped, completed, canceled) (returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)**) |
@@ -118,7 +118,7 @@ In the request, you must include all the data previously provided when sending t
 ```
 
 :::tip Tip
-You can notice that the product with the "isCustomItem" attribute set to true has an ID with the "custom-item" prefix. This occurs when no product ID is provided when sending an order, meaning WhatsApp assumes it's a custom product. This ID is returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)** and is a mandatory parameter, along with "isCustomItem," for order updates.
+You can notice that the product with the "isCustomItem" attribute set to true has an ID with the "custom-item" prefix. This occurs when no product ID is provided when sending an order, meaning the application assumes it's a custom product. This ID is returned in the **[webhook](../webhooks/on-message-received#send-order-return-example)** and is a mandatory parameter, along with "isCustomItem," for order updates.
 :::
 
 ## Response
@@ -128,7 +128,7 @@ You can notice that the product with the "isCustomItem" attribute set to true ha
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | z-api ID    |
-| messageId | string | WhatsApp ID |
+| messageId | string | Application ID |
 | id        | string | Added for compatibility with Zapier; it has the same value as messageId |
 
 Example

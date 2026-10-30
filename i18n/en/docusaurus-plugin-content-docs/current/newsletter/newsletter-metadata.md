@@ -41,7 +41,7 @@ This method returns the metadata of a newsletter, including all newsletter infor
 
 :::warning
 
-The newsletter ID must always include the "@newsletter" suffix, as this is the standard used by WhatsApp itself.
+The newsletter ID must always include the "@newsletter" suffix, as this is the standard used by the application itself.
 
 :::
 

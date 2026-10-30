@@ -3,9 +3,9 @@ id: introduction
 title: Introduction
 ---
 
-## about WhatsApp Business
+## about the Business application
 
-We now have new APIs for **WhatsApp Business**:
+We now have new APIs for **the Business application**:
 
 - Create or edit a product 
 - Get my product catalogs 
@@ -18,6 +18,6 @@ We now have new APIs for **WhatsApp Business**:
 
 :::note
 
-All new APIs only work in WhatsApp Business and are also only available for WhatsApp Business while using [**Multi Device**](../multidevices/introduction)
+All new APIs only work in the Business application and are also only available for the Business application while using [**Multi Device**](../multidevices/introduction)
 
 :::

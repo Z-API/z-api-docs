@@ -18,12 +18,12 @@ title: Remove Contacts
 
 ## Concept
 
-This method is responsible for removing WhatsApp contacts from your contact list on your phone.
+This method is responsible for removing application contacts from your contact list on your phone.
 
 ---
 
 :::caution About This Feature
-The method for removing contacts from the WhatsApp list will only work for accounts that have already received the necessary update. Ensure that your **WhatsApp** account has received this update before using this feature. Otherwise, the operation will not be completed successfully.
+The method for removing contacts from the application list will only work for accounts that have already received the necessary update. Ensure that your **application** account has received this update before using this feature. Otherwise, the operation will not be completed successfully.
 :::
 
 ---

@@ -22,7 +22,7 @@ Este método é responsável por retornar as informações do metadata do contat
 
 :::tip Dica sobre imagem do contato
 
-Se você pretente armazenar a imagem do seu contato observe que sempre retornamos no get-contacts o atribucom imgUrl com ela para você, porém é importante lembrar que esta fica disponivel por apenas **48 horas**, após este periodo o link da imagem é excluido pelo próprio WhatsApp. Sugerimos que caso precise atualizar a imagem do seu contato você utilize o proximo método desta documentação, o **get-profile-picture**.
+Se você pretente armazenar a imagem do seu contato observe que sempre retornamos no get-contacts o atribucom imgUrl com ela para você, porém é importante lembrar que esta fica disponivel por apenas **48 horas**, após este periodo o link da imagem é excluido pelo próprio aplicativo. Sugerimos que caso precise atualizar a imagem do seu contato você utilize o proximo método desta documentação, o **get-profile-picture**.
 
 :::
 
@@ -64,8 +64,8 @@ Método
 | name | string | **Nome e sobrenome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
 | short | string | **Nome** do contato, só vai retornar preenchido caso você tenha o número em seus contatos |
 | vname | string | Nome do Vcard do contato, caso ele tenha |
-| notify | string | Nome informado nas configurações de nome do WhatsApp |
-| imgUrl | string | URL da foto do contato **o WhatsApp apaga após 48h** |
+| notify | string | Nome informado nas configurações de nome do aplicativo |
+| imgUrl | string | URL da foto do contato **o aplicativo apaga após 48h** |
 | about | string | Recado do perfil do contato |
 
 Exemplo

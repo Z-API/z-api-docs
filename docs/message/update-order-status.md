@@ -25,7 +25,7 @@ Neste método você poderá enviar mensagens de atualização de status dos pedi
 ---
 
 :::important Importante
-Este método está disponível apenas para contas Business do whatsapp. 
+Este método está disponível apenas para contas Business do aplicativo. 
 :::
 
 ---
@@ -37,7 +37,7 @@ Este método está disponível apenas para contas Business do whatsapp.
 | Atributos       | Tipo   | Descrição |
 | :-------------- | :----: | :-------- |
 | phone           | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
-| messageId       | string | Id do whatsapp da mensagem original do pedido                                                                         |
+| messageId       | string | Id do aplicativo da mensagem original do pedido                                                                         |
 | referenceId     | string | Id de referência do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)**) |
 | orderRequestId  | string | Id de referência da requisição do pedido (retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)**) |
 | orderStatus     | string | Novo status do pedido (pending, processing, shipped, completed, canceled) |
@@ -118,7 +118,7 @@ Object (order)
 ```
 
 :::tip Dica
-É possível notar que o produto com o atributo "isCustomItem" com o valor true, tem um id com o prefixo "custom-item". Isso ocorre quando ao enviar um pedido não é informado nenhum id de produto, ou seja, o whatsapp assume que é um produto customizado. Esse id é retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)** e é um parâmetro obrigatório, juntamente com o "isCustomItem", para atualizações do pedido.
+É possível notar que o produto com o atributo "isCustomItem" com o valor true, tem um id com o prefixo "custom-item". Isso ocorre quando ao enviar um pedido não é informado nenhum id de produto, ou seja, o aplicativo assume que é um produto customizado. Esse id é retornado no **[webhook](../webhooks/on-message-received#exemplo-de-retorno-de-envio-de-pedido)** e é um parâmetro obrigatório, juntamente com o "isCustomItem", para atualizações do pedido.
 :::
 
 ## Response
@@ -128,7 +128,7 @@ Object (order)
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id        | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 

@@ -18,7 +18,7 @@ title: Send product
 
 ## Concept
 
-In this method, you can send messages of your products. The product feature is only available for **business** WhatsApp accounts. It is also necessary for the account to have registered products. Operations related to products can be found in the **[WhatsApp Business](../business/get-products.md)** section of our documentation.
+In this method, you can send messages of your products. The product feature is only available for **business** application accounts. It is also necessary for the account to have registered products. Operations related to products can be found in the **[the Business application](../business/get-products.md)** section of our documentation.
 
 ![image](../../../../../img/product-message.jpeg)
 
@@ -53,7 +53,7 @@ In this method, you can send messages of your products. The product feature is o
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id in z-api    |
-| messageId | string | id in WhatsApp |
+| messageId | string | id in the application |
 | id        | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 

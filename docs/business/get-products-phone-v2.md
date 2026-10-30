@@ -18,7 +18,7 @@ title: Pegar Produtos V2 (Telefone)
 
 ## Conceituação
 
-Nesse método você será capaz de pegar os produtos de um catálogo do whatsapp Business de qualquer número, sendo o seu catáçogo ou de outra pessoa
+Nesse método você será capaz de pegar os produtos de um catálogo do aplicativo Business de qualquer número, sendo o seu catáçogo ou de outra pessoa
 
 ## Request Body
 

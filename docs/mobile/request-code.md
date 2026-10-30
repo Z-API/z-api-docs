@@ -34,7 +34,7 @@ Não se esqueça que o número de telefone que você deve enviar nesta requisiç
 | :-------- | :-: | :-- |
 | ddi       | string | DDI do número |
 | phone     | string | Número de telefone que você deseja registrar. Deve incluir apenas o **número com DDD** (Ex: 4499999999), sem formatação ou máscara |
-| method    | string | Define o método de envio do código. SMS, chamada de voz ou pop-up no aplicativo do WhatsApp. (sms, voice, wa_old) |
+| method    | string | Define o método de envio do código. SMS, chamada de voz ou pop-up no aplicativo. (sms, voice, wa_old) |
 
 ---
 
@@ -62,7 +62,7 @@ Não se esqueça que o número de telefone que você deve enviar nesta requisiç
 | retryAfter  | string | Tempo em segundos que deve ser aguardado para nova solicitação do código |
 | smsWaitSeconds   | number | Tempo que deve ser aguardado para solicitação de **sms**. Caso o valor seja 0, significa que a solicitação já pode ser enviada para este método |
 | voiceWaitSeconds | number | Tempo que deve ser aguardado para solicitação de **chamada de voz**. Mesmo objetivo do **smsWaitSeconds** |
-| waOldWaitSeconds | number | Tempo que deve ser aguardado para solicitação de **pop-up no aplicativo do celular**. Mesmo objetivo do **smsWaitSeconds**. **Atenção**: não utilize esse método se você não tem acesso ao celular onde o número está atualmente vinculado. Este método é útil para agilizar o processo de confirmação do código, sem ter que esperar o recebimento de um SMS ou chamada de voz, porém necessita que você tenha o dispositivo em mãos e com o aplicativo do WhatsApp aberto. |
+| waOldWaitSeconds | number | Tempo que deve ser aguardado para solicitação de **pop-up no aplicativo do celular**. Mesmo objetivo do **smsWaitSeconds**. **Atenção**: não utilize esse método se você não tem acesso ao celular onde o número está atualmente vinculado. Este método é útil para agilizar o processo de confirmação do código, sem ter que esperar o recebimento de um SMS ou chamada de voz, porém necessita que você tenha o dispositivo em mãos e com o aplicativo aberto. |
 | method | string | Método de envio do código |
 
 

@@ -18,7 +18,7 @@ title: Remover email da conta
 
 ## Conceituação
 
-Método utilizado para remover o email configurado na sua conta do WhatsApp.
+Método utilizado para remover o email configurado na sua conta do aplicativo.
 
 :::caution Atenção
 Essa API está disponível apenas para instâncias mobile.

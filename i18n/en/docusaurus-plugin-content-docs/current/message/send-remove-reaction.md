@@ -62,7 +62,7 @@ In this method you will remove the reaction from sent or received messages. You 
 | Attributes | Type   | Description      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id on z-api    |
-| messageId | string | id on whatsapp |
+| messageId | string | id on the application |
 
 Example
 

@@ -18,7 +18,7 @@ title: Enviar catálogo
 
 ## Conceituação
 
-Neste método você poderá enviar mensagens com o link para o seu catálogo. O recurso de catálogos está disponível apenas para contas **business** do WhatsApp. É necessário também, que a conta possua produtos e um catálogo configurado. Operações realacionadas a produtos e coleções podem ser encontradas na sessão **[WhatsApp Business](../business/edit-product.md)** da nossa documentação.
+Neste método você poderá enviar mensagens com o link para o seu catálogo. O recurso de catálogos está disponível apenas para contas **business** do aplicativo. É necessário também, que a conta possua produtos e um catálogo configurado. Operações realacionadas a produtos e coleções podem ser encontradas na sessão **[Aplicativo Business](../business/edit-product.md)** da nossa documentação.
 
 ![image](../../img/catalog-message.jpeg)
 
@@ -64,7 +64,7 @@ Neste método você poderá enviar mensagens com o link para o seu catálogo. O 
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id        | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 

@@ -19,10 +19,10 @@ title: Removing labels from a chat.
 
 ## Concept
 
-Through this method, it is possible to remove the labels from a chat in WhatsApp Business.
+Through this method, it is possible to remove the labels from a chat in the Business application.
 
 :::important Importante
-This method is only available for devices connected to the Multi-Devices version of WhatsApp.
+This method is only available for devices connected to the Multi-Devices version of the application.
 :::
 
 ## Response

@@ -21,7 +21,7 @@ title: Alterar websites da empresa
 Através deste método, é possível alterar os websites da empresa / compania.
 
 :::important Importante
-Este método está disponível apenas para contas Business do whatsapp. 
+Este método está disponível apenas para contas Business do aplicativo. 
 :::
 
 ---

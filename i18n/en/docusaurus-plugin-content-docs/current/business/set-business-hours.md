@@ -21,7 +21,7 @@ title: Change Business Hours
 Through this method, it is possible to change the operating hours of the company.
 
 :::important Important
-This method is only available for Business WhatsApp accounts.
+This method is only available for Business application accounts.
 :::
 
 ---

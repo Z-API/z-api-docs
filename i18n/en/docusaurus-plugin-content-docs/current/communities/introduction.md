@@ -5,7 +5,7 @@ title: Introduction
 
 ### Concept
 
-WhatsApp now offers the Communities feature, which allows users to group chats around a common subject or interest. It's an easy way to connect with others who share the same goals and ideas.
+The application now offers the Communities feature, which allows users to group chats around a common subject or interest. It's an easy way to connect with others who share the same goals and ideas.
 
 To illustrate how the community structure works, see the image below:
 
@@ -27,7 +27,7 @@ Each community can have up to 50 groups, and community administrators can send m
 
 #### 1. How do I create a new community?
 
-First, it's important to check if the WhatsApp application on your mobile phone already supports communities. If it doesn't, wait for the application to be updated for your account. If you already have access to communities, check the documentation on how to [create a community via API](/communities/create-community).
+First, it's important to check if the application on your mobile phone already supports communities. If it doesn't, wait for the application to be updated for your account. If you already have access to communities, check the documentation on how to [create a community via API](/communities/create-community).
 
 #### 2. Can I list the communities I am part of?
 
@@ -51,7 +51,7 @@ There are three ways to obtain the announcement groups:
 
 #### 6. Can I deactivate a community?
 
-Yes, you can [deactivate a Community](/communities/deactivate-community) on WhatsApp, which will result in the disconnection of all groups related to it. It's important to note that deactivating the Community will not delete its groups but will remove them from the specific Community.
+Yes, you can [deactivate a Community](/communities/deactivate-community) on the application, which will result in the disconnection of all groups related to it. It's important to note that deactivating the Community will not delete its groups but will remove them from the specific Community.
 
 #### 7. How do I add or remove people from the community?
 

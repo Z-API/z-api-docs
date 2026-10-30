@@ -13,7 +13,7 @@ title: Update profile name
 
 ## Concept
 
-This method is responsible for changing your profile name on WhatsApp.
+This method is responsible for changing your profile name on the application.
 
 ---
 

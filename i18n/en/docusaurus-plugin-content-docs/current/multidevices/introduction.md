@@ -9,9 +9,9 @@ Let's talk about Multi-Devices ?
 
 What is it? Where does it live? What does it feed off of?
 
-Jokes apart, today we are here to talk a little about this new WhatsApp version and its main characteristics. We will devide the topics to give you better context.
+Jokes apart, today we are here to talk a little about this new application version and its main characteristics. We will devide the topics to give you better context.
 
-Before that, no one better than WhatsApp themselves to talk about this new feature and that is why we will leave a link here so you can hear it straight from the source :)
+Before that, no one better than the application themselves to talk about this new feature and that is why we will leave a link here so you can hear it straight from the source :)
 
 https://faq.whatsapp.com/general/download-and-installation/about-multi-device-beta/?lang=pt_br
 
@@ -23,11 +23,11 @@ It comes with a number of new features, but I will highlight 2 that we consider 
 
 - **4 devices simultaneously**
 
-You can have up to four devices connected at once, but it is only possible to connect one mobile phone to your WhatsApp account. This means that you can have a mobile device and up to 3 whatsapp web or desktop open simultaneously.
+You can have up to four devices connected at once, but it is only possible to connect one mobile phone to your application account. This means that you can have a mobile device and up to 3 the web application or desktop open simultaneously.
 
 - **Send and receive messages without needing a cell phone to be on** 
 
-You no longer need to have your cell phone connected to send and receive messages via WhatsApp web or desktop. However, your additional devices will be disconnected if you do not use WhatsApp on your mobile for more than 14 days.
+You no longer need to have your cell phone connected to send and receive messages via the web application or desktop. However, your additional devices will be disconnected if you do not use the application on your mobile for more than 14 days.
 
 ---
 
@@ -38,12 +38,12 @@ Curious to know the limitations right? :)
 Ok maybe it's not really about limitations however it is about features not yet supported. Below I'll list the main ones:
 
 - View real-time location on additional devices.
-- Pin conversations on WhatsApp Web and WhatsApp for desktop.
-- Join groups, view and reset group invites on WhatsApp Web and WhatsApp desktop. You will need to use your cell phone to perform these actions.
-- Send messages or make calls to contacts who use very old versions of WhatsApp using your connected device.
-- Make calls using Portal or desktop WhatsApp to connected devices that are not participating in the multi-device beta.
-- Other WhatsApp accounts on your Portal will only work if they are participating in the multi-device beta.
-- Change business name or labels in WhatsApp Business using WhatsApp Web or WhatsApp desktop.
+- Pin conversations on the web application and the desktop application.
+- Join groups, view and reset group invites on the web application and the desktop application. You will need to use your cell phone to perform these actions.
+- Send messages or make calls to contacts who use very old versions of the application using your connected device.
+- Make calls using Portal or the desktop application to connected devices that are not participating in the multi-device beta.
+- Other application accounts on your Portal will only work if they are participating in the multi-device beta.
+- Change business name or labels in the Business application using the web application or the desktop application.
 
 ---
 

@@ -46,7 +46,7 @@ Neste método você poderá enviar mensagens de texto com botões de ação, voc
 | label     | string | Texto para o botão |
 
 :::tip Dica:
- O WhatsApp possui um link específico para copiar textos, passando esse link no atributo url, o seu botão passa a ser um botão de copiar (https://www.whatsapp.com/otp/code/?otp_type=COPY_CODE&code=otpseucodigo)
+ O aplicativo possui um link específico para copiar textos, passando esse link no atributo url, o seu botão passa a ser um botão de copiar (https://www.whatsapp.com/otp/code/?otp_type=COPY_CODE&code=otpseucodigo)
 :::
 
 ### Opcionais Button
@@ -65,7 +65,7 @@ Neste método você poderá enviar mensagens de texto com botões de ação, voc
 ---
 
 :::tip Observação
-Atualmente, ao enviar os três tipos de botões simultaneamente, o WhatsApp Web gera um erro, o que também ocorre ao utilizar a própria API da Meta. Uma alternativa é enviar apenas os botões do tipo CALL e URL juntos, e sempre enviar o botão do tipo REPLY separadamente.
+Atualmente, ao enviar os três tipos de botões simultaneamente, o aplicativo web gera um erro, o que também ocorre ao utilizar a própria API da Meta. Uma alternativa é enviar apenas os botões do tipo CALL e URL juntos, e sempre enviar o botão do tipo REPLY separadamente.
 :::
 
 ## Request Body
@@ -118,7 +118,7 @@ Atualmente, ao enviar os três tipos de botões simultaneamente, o WhatsApp Web 
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 Exemplo

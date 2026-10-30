@@ -14,13 +14,13 @@ slug: /
 
 Você provavelmente já deve saber, mas vamos reafirmar!
 
-**Z-API** é um serviço RestFul que provê uma API que permite que você interaja com seu WhatsApp através de uma API simples e intuitiva, além de webhooks para te avisar sobre interações com seu número.
+**Z-API** é um serviço RestFul que provê uma API que permite que você interaja com seu aplicativo através de uma API simples e intuitiva, além de webhooks para te avisar sobre interações com seu número.
 
 :::important Importante
 
-O Z-API reafirma que não é destinada para prática de SPAM e envio de mensagens indesejadas ou qualquer ação que viole os termos de serviço do WhatsApp.
+O Z-API reafirma que não é destinada para prática de SPAM e envio de mensagens indesejadas ou qualquer ação que viole os termos de serviço do aplicativo.
 
-Utilize a API com sabedoria criando funcionalidades que gere valor aos seus clientes e aos usuários do WhatsApp.
+Utilize a API com sabedoria criando funcionalidades que gere valor aos seus clientes e aos usuários do aplicativo.
 
 :::
 
@@ -38,7 +38,7 @@ Não temos restrições quanto a utilização, mas geralmente são 2 públicos b
 
 ## Tá bom! Mas o que dá para fazer com ele?
 
-De forma bem direta, tudo que você faz com WhatsApp Web você poderá fazer utilizando nosso serviço. Para isso basta ler o QRcode do Z-API e utilizar nosso serviço!
+De forma bem direta, tudo que você faz com o aplicativo Web você poderá fazer utilizando nosso serviço. Para isso basta ler o QRcode do Z-API e utilizar nosso serviço!
 
 ---
 
@@ -50,7 +50,7 @@ Para exemplificar, segue os passos de envio de uma mensagem de texto simples:
 
 2. O Z-API adiciona em uma fila e te retorna o ID da mensagem;
 
-3. Sua instância processa a fila enviando para o WhatsApp;
+3. Sua instância processa a fila enviando para o aplicativo;
 
 4. Seu Webhook de delivery é chamado quando a mensagem é processada, te avisando que foi enviada ou que houve falha.
 
@@ -62,7 +62,7 @@ Para exemplificar, segue os passos de envio de uma mensagem de texto simples:
 
 ## Limites
 
-Iniciei por este tópico porque é bem comum as pessoas perguntarem sobre quais os limites de envios com Z-API. Nós **NÃO TEMOS LIMITE** para número de mensagens enviadas! Mas é importante você entender que esta utilizando uma sessão do WhatsApp Web, então o padrão de utilização precisa ser compatível, além disso sempre recomendamos que você leia atentamente as políticas estabelecidas pelo proprio WhatsApp em sua pagina oficial https://www.whatsapp.com/legal.
+Iniciei por este tópico porque é bem comum as pessoas perguntarem sobre quais os limites de envios com Z-API. Nós **NÃO TEMOS LIMITE** para número de mensagens enviadas! Mas é importante você entender que esta utilizando uma sessão do aplicativo web, então o padrão de utilização precisa ser compatível, além disso sempre recomendamos que você leia atentamente as políticas estabelecidas pelo proprio aplicativo em sua pagina oficial https://www.whatsapp.com/legal.
 
 ---
 
@@ -74,6 +74,6 @@ Todas as mensagens enviadas para nossa API serão encaminhadas para uma fila de 
 
 :::important Lembre-se
 
-O Facebook tem comportamentos diferentes para cada uma das versões do WhatsApp, nossa API disponibiliza métodos compativeis com a versão WEB.
+O Facebook tem comportamentos diferentes para cada uma das versões do aplicativo, nossa API disponibiliza métodos compativeis com a versão WEB.
 
 :::

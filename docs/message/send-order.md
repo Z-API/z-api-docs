@@ -26,7 +26,7 @@ Neste método você poderá enviar mensagens de pedidos, contendo produtos do se
 ---
 
 :::important Importante
-Este método está disponível apenas para contas Business do whatsapp. 
+Este método está disponível apenas para contas Business do aplicativo. 
 :::
 
 ---
@@ -39,7 +39,7 @@ Este método está disponível apenas para contas Business do whatsapp.
 | :---------------  | :----: | :------   |
 | phone             | string | Telefone do destinatário no formato DDI DDD NÚMERO Ex: 551199999999. **IMPORTANTE** Envie somente números, sem formatação ou máscara |
 | order             | object | Informações do pedido a ser enviado |
-| paymentSettings   | object | Configurações de pagamento (para o funcionamento de cartões, é necessário que seja configurado na conta do WhatsApp pelo celular) |
+| paymentSettings   | object | Configurações de pagamento (para o funcionamento de cartões, é necessário que seja configurado na conta do aplicativo pelo celular) |
 
 Object (order)
 
@@ -158,7 +158,7 @@ Ao enviar um produto na lista "products" sem o atributo "productId", isso é car
 | Atributos | Tipo   | Descrição      |
 | :-------- | :----- | :------------- |
 | zaapId    | string | id no z-api    |
-| messageId | string | id no whatsapp |
+| messageId | string | id no aplicativo |
 | id        | string | Adicionado para compatibilidade com zapier, ele tem o mesmo valor do messageId |
 
 

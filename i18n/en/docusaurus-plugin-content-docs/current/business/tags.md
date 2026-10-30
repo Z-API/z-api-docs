@@ -19,10 +19,10 @@ title: Search for labels.
 
 ## Concept
 
-In this method, you retrieve all your registered labels in your WhatsApp Business.
+In this method, you retrieve all your registered labels in your Business application.
 
 :::important Importante
-This method is only available for devices connected to the Multi-Devices version of WhatsApp.
+This method is only available for devices connected to the Multi-Devices version of the application.
 :::
 
 ## Response

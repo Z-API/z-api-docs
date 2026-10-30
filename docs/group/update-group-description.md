@@ -28,7 +28,7 @@ Atenção somente administradores podem alterar as preferências do grupo.
 
 :::caution Atenção
 
-No dia 4 de novembro de 2021 o whatsapp alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
+No dia 4 de novembro de 2021 o aplicativo alterou a formato da criação de novos grupos, antes: "phone": "5511999999999-1623281429" agora: "phone": "120363019502650977-group"
 
 :::
 

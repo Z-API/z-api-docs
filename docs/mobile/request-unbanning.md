@@ -29,7 +29,7 @@ Método utilizado para solicitar desbanimento de um número.
 | Atributos | Tipo | Descrição |
 | :-- | :-: | :-- |
 | appealToken | string | Token para desbanimento de um número em específico |
-| description | string | Descrição a ser enviada para análise do WhatsApp   |
+| description | string | Descrição a ser enviada para análise do aplicativo   |
 
 ---
 

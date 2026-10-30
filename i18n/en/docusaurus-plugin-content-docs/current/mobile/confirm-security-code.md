@@ -18,7 +18,7 @@ title: Confirm PIN code
 
 ## Concept
 
-Method used to confirm your account's PIN code. This method is only necessary if you have set up two-step verification on WhatsApp. If this is your case, you need to confirm this PIN code, otherwise, it will not be possible to connect the number to a mobile instance.
+Method used to confirm your account's PIN code. This method is only necessary if you have set up two-step verification on the application. If this is your case, you need to confirm this PIN code, otherwise, it will not be possible to connect the number to a mobile instance.
 
 ---
 

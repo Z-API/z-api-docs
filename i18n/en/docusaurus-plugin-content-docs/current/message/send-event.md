@@ -76,7 +76,7 @@ In this method, you can send messages of type Event. You can only send this type
 | Attributes | Type | Description |
 | :-- | :-- | :-- |
 | zaapId | string | Z-api id |
-| messageId | string | WhatsApp id |
+| messageId | string | Application id |
 | id | string | Added for compatibility with Zapier, it has the same value as messageId |
 
 Example

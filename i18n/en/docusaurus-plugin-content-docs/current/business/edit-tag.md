@@ -22,7 +22,7 @@ title: Edit tag
 This method allows you to edit a tag.
 
 :::important Important
-This method is only available for WhatsApp Business accounts.
+This method is only available for Business application accounts.
 :::
 
 ## Attributes

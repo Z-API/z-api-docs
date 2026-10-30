@@ -21,7 +21,7 @@ title: Alterar descrição da empresa
 Através deste método, é possível alterar a descrição da empresa / compania.
 
 :::important Importante
-Este método está disponível apenas para contas Business do whatsapp. 
+Este método está disponível apenas para contas Business do aplicativo. 
 :::
 
 ---

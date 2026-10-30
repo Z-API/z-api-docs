@@ -42,7 +42,7 @@ If you do not subscribe within 2 days, our devops will automatically delete the 
 
 | Attributes| Type | Description |
 | :-- | :-: | :-- |
-| sessionName                    | string  | Attribute to change the session name on WhatsApp (on connected devices) |
+| sessionName                    | string  | Attribute to change the session name on the application (on connected devices) |
 | deliveryCallbackUrl            | string  | Webhook endpoint for delivered messages - delivery |
 | receivedCallbackUrl            | string  | Webhook endpoint for received messages - receive |
 | receivedAndDeliveryCallbackUrl | string  | Webhook endpoint for received and sent messages - receive |
@@ -55,7 +55,7 @@ If you do not subscribe within 2 days, our devops will automatically delete the 
 | autoReadMessage                | boolean | Automatically mark messages as read - "true" or "false" |
 | autoReadStatus                 | boolean | Automatically mark status as read - "true" or "false" |
 | isDevice                       | boolean | Defines whether the instance is mobile or web; if "true", it will be mobile |
-| businessDevice                 | boolean | Choose between WhatsApp Business or regular WhatsApp |
+| businessDevice                 | boolean | Choose between the Business application or regular application |
 | disableEnqueueWhenDisconnected | boolean | Enable/disable message queueing when creating the instance |
 
 ---

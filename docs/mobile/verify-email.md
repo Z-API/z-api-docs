@@ -18,7 +18,7 @@ title: Verificar email da conta
 
 ## Conceituação
 
-Método utilizado para realizar verificação do email da conta. Você pode cadastrar um email na sua conta do WhatsApp através da API de **[Cadastrar email na conta](./set-account-email.md)**.
+Método utilizado para realizar verificação do email da conta. Você pode cadastrar um email na sua conta do aplicativo através da API de **[Cadastrar email na conta](./set-account-email.md)**.
 
 :::caution Atenção
 Essa API está disponível apenas para instâncias mobile.

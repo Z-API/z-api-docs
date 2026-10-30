@@ -3,35 +3,35 @@ id: Z-APIvsAPI-OFICIAL
 title: Z-API vs API Oficial
 ---
 
-## As Diferenças do Z-API e o WhatsApp Business API.
+## As Diferenças do Z-API e o aplicativo Business API.
 
 Qual é a melhor alternativa para você?
 
-Exemplificando o uso da API do WhatsApp: O WhatsApp no início da ferramenta como uma das suas decisões estratégicas optou por manter sua API fechada, bem diferente do que aconteceu com outros players mundiais do segmento. Ou seja, os desenvolvedores não tinham a oportunidade de integrar suas soluções e tecnologias de softwares ao WhatsApp.
+Exemplificando o uso da API do aplicativo: O aplicativo no início da ferramenta como uma das suas decisões estratégicas optou por manter sua API fechada, bem diferente do que aconteceu com outros players mundiais do segmento. Ou seja, os desenvolvedores não tinham a oportunidade de integrar suas soluções e tecnologias de softwares ao aplicativo.
 
-Principalmente nesse cenário estamos falando de empresas com soluções diversas no mercado, como por exemplo: Sistemas CRM e ERP, criação de bots de chat populares e até empresas de e-commerce ou do varejo para o serviço de notificação em tempo real do status de compras de um cliente. Nesse período também muitos DEV’S criavam ou procuravam gateways personalizados que poderiam fornecer esse acesso ao WhatsApp API. Essas soluções ainda podem ser encontradas no github. O problema com o uso dessas bibliotecas é que WhatsApp faz atualizações no qual torna as soluções desatualizadas e, como regra, ao usar essas bibliotecas os números eram imediatamente banidos.
+Principalmente nesse cenário estamos falando de empresas com soluções diversas no mercado, como por exemplo: Sistemas CRM e ERP, criação de bots de chat populares e até empresas de e-commerce ou do varejo para o serviço de notificação em tempo real do status de compras de um cliente. Nesse período também muitos DEV’S criavam ou procuravam gateways personalizados que poderiam fornecer esse acesso à API do aplicativo. Essas soluções ainda podem ser encontradas no github. O problema com o uso dessas bibliotecas é que o aplicativo faz atualizações no qual torna as soluções desatualizadas e, como regra, ao usar essas bibliotecas os números eram imediatamente banidos.
 
 Com o tempo, as empresas estão cada vez mais conscientes do quanto utilizar de uma API como essa pode facilitar e alavancar muito o seu negócio, sem contar as inúmeras possibilidades de criação.
 
-Todos sabem que esse mercado é gigantesco, mas vamos nos aprofundar em números, além do mensageiro mais utilizado no mundo com 1,7 bilhão de usuários hoje a grande parte dos negócios acontece na ferramenta. Algumas das razões pelo qual muitos negócios estão utilizando, o usuário pode centralizar tudo em um só canal, mais praticidade, agilidade para gerir seus negócios em um só lugar, contato mais próximos e muita praticidade. As empresas começaram a surgir no mercado oferecendo sua API para funcionar com WhatsApp. Como regra, todos funcionam com base no protocolo WhatsApp WEB. E claro, o Z-API também fornece WhatsApp API. Desenvolvemos nossa solução em 2019, quando nos integramos a uma solução Brasileira, logo inúmeros DEV’S e parceiros de negócios em diversos lugares do mundo também iniciaram o processo de integração conosco.
+Todos sabem que esse mercado é gigantesco, mas vamos nos aprofundar em números, além do mensageiro mais utilizado no mundo com 1,7 bilhão de usuários hoje a grande parte dos negócios acontece na ferramenta. Algumas das razões pelo qual muitos negócios estão utilizando, o usuário pode centralizar tudo em um só canal, mais praticidade, agilidade para gerir seus negócios em um só lugar, contato mais próximos e muita praticidade. As empresas começaram a surgir no mercado oferecendo sua API para funcionar com o aplicativo. Como regra, todos funcionam com base no protocolo aplicativo web. E claro, o Z-API também fornece a API do aplicativo. Desenvolvemos nossa solução em 2019, quando nos integramos a uma solução Brasileira, logo inúmeros DEV’S e parceiros de negócios em diversos lugares do mundo também iniciaram o processo de integração conosco.
 
 O propósito da nossa solução sempre deixamos bem claro e temos levado para todos os lugares “Z-Api, Asas para a sua imaginação”. Nós queremos dar a possibilidade para DEV’S, soluções tecnológicas e Software houses a desenvolverem produtos e negócios extraordinários com a melhor tecnologia do mercado, um atendimento de qualidade, uma solução brasileira, paga em real e que te dá liberdade para criar.
 
-Em 2017, WhatsApp abriu o acesso à sua API oficial. No início, WhatsApp API oficial foi testada a portas fechadas e apenas algumas empresas globais podiam pagá-la. Mas, com o tempo, mais e mais organizações obtiveram acesso ao WhatsApp API oficial.
+Em 2017, o aplicativo abriu o acesso à sua API oficial. No início, a API oficial do aplicativo foi testada a portas fechadas e apenas algumas empresas globais podiam pagá-la. Mas, com o tempo, mais e mais organizações obtiveram acesso à API do aplicativo oficial.
 
-A ordem de cooperação é tal que, para se conectar à API oficial, você precisará coordenar a conexão com os parceiros oficiais do WhatsApp. Ou seja, você precisará trabalhar com intermediários que são projetados para fornecer uma API e moderar suas atividades sob os regulamentos atuais do WhatsApp. Isso implica um grande número de restrições, que serão exibidas na tabela na parte inferior. Você pode conferir a lista de parceiros oficiais atuais aqui: https://www.facebook.com/business/partner-directory/search?solution_type=messaging. Isso é muito importante porque agora algumas empresas estão enganando seus clientes, chamando-se de parceiros oficiais do WhatsApp.
+A ordem de cooperação é tal que, para se conectar à API oficial, você precisará coordenar a conexão com os parceiros oficiais do aplicativo. Ou seja, você precisará trabalhar com intermediários que são projetados para fornecer uma API e moderar suas atividades sob os regulamentos atuais do aplicativo. Isso implica um grande número de restrições, que serão exibidas na tabela na parte inferior. Você pode conferir a lista de parceiros oficiais atuais aqui: https://www.facebook.com/business/partner-directory/search?solution_type=messaging. Isso é muito importante porque agora algumas empresas estão enganando seus clientes, chamando-se de parceiros oficiais do aplicativo.
 
-Nesse caso então o correto é usar a API Oficial? Vamos analisar com calma. A primeira coisa a decidir é: para que você precisa de uma API? Ambas as opções terão vantagens e desvantagens. WhatsApp API claramente tem mais notoriedade, principalmente com sua "oficialidade" e segurança. No entanto, existem várias limitações significativas devido às quais nem todas as empresas poderão trabalhar com a API oficial. Nós os destacaremos separadamente:
+Nesse caso então o correto é usar a API Oficial? Vamos analisar com calma. A primeira coisa a decidir é: para que você precisa de uma API? Ambas as opções terão vantagens e desvantagens. A API do aplicativo claramente tem mais notoriedade, principalmente com sua "oficialidade" e segurança. No entanto, existem várias limitações significativas devido às quais nem todas as empresas poderão trabalhar com a API oficial. Nós os destacaremos separadamente:
 
 ## Desvantagens da API Oficial:
 
-Preço: A taxa de adesão da API oficial pode chegar de algumas centenas de dólares a milhares de dólares. Isso, sem contar os custos de conexão e taxas de mensagens individuais no WhatsApp. Além disso, o preço das taxas é ditado pelo próprio WhatsApp (em moeda corrente), nem sempre é possível combinar com um intermediário uma abordagem mais individualizada. Você pode ler mais sobre preços no site oficial do desenvolvedor: https://developers.facebook.com/docs/whatsapp/pricing#usdusd Da mesma forma, aqueles que desejam se conectar à API oficial devem ter um volume de mensagens de no mínimo 15.000 mensais, o que não é uma condição viável para todas as empresas. WhatsApp não aprova parcerias com determinados setores. Então, por exemplo, finanças e imóveis são interessantes para WhatsApp. E, digamos, empresas que vendem vitaminas ou medicamentos não obtêm a aprovação do mensageiro. Trabalhar com um representante oficial do WhatsApp e obter a API também exigirá muita energia de sua parte. Coletar e processar documentos, aprovar inspeções, desenvolver e aprovar modelos - tudo isso pode levar um tempo significativo e terminar em falha. Infelizmente, esse risco também existe. Dependência do celular Lei Geral de Proteção de Dados Atraso em receber atualizações Suspensão e bloqueio do número
+Preço: A taxa de adesão da API oficial pode chegar de algumas centenas de dólares a milhares de dólares. Isso, sem contar os custos de conexão e taxas de mensagens individuais no aplicativo. Além disso, o preço das taxas é ditado pelo próprio aplicativo (em moeda corrente), nem sempre é possível combinar com um intermediário uma abordagem mais individualizada. Você pode ler mais sobre preços no site oficial do desenvolvedor: https://developers.facebook.com/docs/whatsapp/pricing#usdusd Da mesma forma, aqueles que desejam se conectar à API oficial devem ter um volume de mensagens de no mínimo 15.000 mensais, o que não é uma condição viável para todas as empresas. O aplicativo não aprova parcerias com determinados setores. Então, por exemplo, finanças e imóveis são interessantes para o aplicativo. E, digamos, empresas que vendem vitaminas ou medicamentos não obtêm a aprovação do mensageiro. Trabalhar com um representante oficial do aplicativo e obter a API também exigirá muita energia de sua parte. Coletar e processar documentos, aprovar inspeções, desenvolver e aprovar modelos - tudo isso pode levar um tempo significativo e terminar em falha. Infelizmente, esse risco também existe. Dependência do celular Lei Geral de Proteção de Dados Atraso em receber atualizações Suspensão e bloqueio do número
 
 ## Vantagens da API Oficial:
 
 ### Facilidade e engajamento:
 
-o WhatsApp permite responder rapidamente às mensagens. Além disso, há um aumento no retorno e engajamento por parte dos consumidores;
+o aplicativo permite responder rapidamente às mensagens. Além disso, há um aumento no retorno e engajamento por parte dos consumidores;
 
 ### Marketing:
 
@@ -45,15 +45,15 @@ a integração do app com outros sistemas inclui todas as informações presente
 
 dependendo de com qual programa o app é integrado, é possível extrair dados relevantes sobre o atendimento na plataforma (se o sistema com o qual for integrado tiver essa funcionalidade);
 
-### Já pensou, ser banido pelo WhatsApp?
+### Já pensou, ser banido pelo aplicativo?
 
-Segundo algumas estatísticas do WhatsApp, o messenger bloqueia cerca de 2.000.000 de usuários por mês que violam os termos da política do WhatsApp.
+Segundo algumas estatísticas do aplicativo, o messenger bloqueia cerca de 2.000.000 de usuários por mês que violam os termos da política do aplicativo.
 
 Mas isso não significa que API’s não oficiais sejam irresponsáveis com seus clientes. Por exemplo, o Z-API para segurança do usuário fornece aos clientes IPs individuais, executa autorização segura e insere um sistema de protetores artificiais, como uma fila para enviar mensagens para evitar envios em massa e protegê-los de banimento.
 
-Também existem sistemas para emular um telefone em um computador para que o trabalho não dependa de um dispositivo físico. Claro, esses métodos não ajudarão se o usuário negligenciar as regras para trabalhar com clientes de WhatsApp e spam. Mesmo com a API oficial, é possível ser banido por violar as políticas do WhatsApp. Mas se você combinar as ferramentas de segurança da Z-API com o uso dentro das recomendações do WhatsApp.
+Também existem sistemas para emular um telefone em um computador para que o trabalho não dependa de um dispositivo físico. Claro, esses métodos não ajudarão se o usuário negligenciar as regras para trabalhar com clientes do aplicativo e spam. Mesmo com a API oficial, é possível ser banido por violar as políticas do aplicativo. Mas se você combinar as ferramentas de segurança da Z-API com o uso dentro das recomendações do aplicativo.
 
-Depois de analisar os pontos principais, você pode ir direto ao mais interessante, ou seja, a análise, e comparar qual a solução te atende melhor com o WhatsApp. Vamos começar com os benefícios do Z-API:
+Depois de analisar os pontos principais, você pode ir direto ao mais interessante, ou seja, a análise, e comparar qual a solução te atende melhor com o aplicativo. Vamos começar com os benefícios do Z-API:
 
 ### Comparativo
 
@@ -72,6 +72,6 @@ Depois de analisar os pontos principais, você pode ir direto ao mais interessan
 | Suporte direto 24 horas por dia, 7 dias por semana, via e-mail e chats com chatbot + nossa equipe | Suporte limitado (suporte pago por meio de parceiros de solução) |
 | Possibilidade de fazer qualquer modificação e integração | Incapacidade de influenciar e adicionar funcionalidade ao serviço |
 | Qualquer nome da sua conta | Nome imutável de sua conta (por nome comercial) |
-| Pode trabalhar em todo o mundo | Não é possível trabalhar com a API do WhatsApp, por exemplo, na Crimeia, no Irã e em vários outros países |
+| Pode trabalhar em todo o mundo | Não é possível trabalhar com a API do aplicativo, por exemplo, na Crimeia, no Irã e em vários outros países |
 | Pagamento em Reais | Pagamento em dólar |
 | Ferramenta totalmente Brasileira +5 milhões de mensagens diárias | Ferramenta Americana, comunicação em inglês |

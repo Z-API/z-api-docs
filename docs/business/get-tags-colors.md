@@ -22,7 +22,7 @@ title: Cores de etiquetas
 Através deste método, é possível listar as cores de etiquetas disponíveis.
 
 :::important Importante
-Este método está disponível apenas para contas Business do whatsapp.
+Este método está disponível apenas para contas Business do aplicativo.
 :::
 
 ## Response
